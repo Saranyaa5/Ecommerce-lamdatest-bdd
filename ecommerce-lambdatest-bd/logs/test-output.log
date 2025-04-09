@@ -28,3 +28,13 @@
 2025-04-10 01:27:46 [main] INFO : Scenario passed: Register with invalid inputs
 2025-04-10 01:27:47 [main] INFO : Scenario started: Register with invalid inputs
 2025-04-10 01:27:51 [main] INFO : Scenario passed: Register with invalid inputs
+2025-04-10 01:39:50 [main] INFO : Scenario started: Register with valid inputs
+2025-04-10 01:39:54 [main] INFO : Scenario passed: Register with valid inputs
+2025-04-10 01:39:55 [main] INFO : Scenario started: Register with invalid inputs
+2025-04-10 01:40:00 [main] INFO : Scenario passed: Register with invalid inputs
+2025-04-10 01:40:01 [main] INFO : Scenario started: Register with invalid inputs
+2025-04-10 01:40:05 [main] INFO : Scenario passed: Register with invalid inputs
+2025-04-10 01:40:06 [main] INFO : Scenario started: Register with invalid inputs
+2025-04-10 01:40:11 [main] INFO : Scenario passed: Register with invalid inputs
+2025-04-10 01:40:12 [main] INFO : Scenario started: Register with invalid inputs
+2025-04-10 01:40:16 [main] INFO : Scenario passed: Register with invalid inputs
