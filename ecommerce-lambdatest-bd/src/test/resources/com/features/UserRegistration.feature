@@ -1,0 +1,31 @@
+@registration
+Feature: User Registration
+  I want to register for the ecommerce LambdaTest account
+
+  Background:
+     Given the user is on the homepage
+    When the user clicks on "My Account"
+    And clicks the register button
+    Then the user should see the registration page
+    
+    @ValidRegistrationInputs
+    Scenario Outline: Register with valid inputs
+    When the user enters "<First Name>","<Last Name>","<Email>","<Telephone>","<Password>" and "<Confirm Password>"
+    And agrees to the Privacy Policy
+    And submits the registration form
+    Then the user should see "Your Account Has Been Created!"
+    Examples:
+      |First Name|Last Name|Email|Telephone|Password|Confirm Password|
+      |priya|ram|priya123@gmail.com|1234567891|1234|1234|
+
+  @ValidRegistrationInputs
+  Scenario Outline: Register with invalid inputs
+    When the user enters the invalid inputs "<First Name>","<Last Name>","<Email>","<Telephone>","<Password>" and "<Confirm Password>"
+    Then the user should see "<ErrorMessage>"
+
+    Examples:
+      |First Name|Last Name|Email|Telephone|Password|Confirm Password|ErrorMessage|test case name|
+      |     |ram|priya123@gmail.com|1234567891|1234|1234|First Name must be between 1 and 32 characters!|empty first name|
+      |priya|ram|oign@gma.com|1234567891|1234|1234|Warning: E-Mail Address is already registered!|existing emial|
+      |priya|ram|priya123@gmail.com|1234567891|    |1234|assword must be between 4 and 20 characters!|empty password|
+      |priya|ram|priya123@gmail.com|1234567891|1234|4321|Password confirmation does not match password!|password mismatch|
