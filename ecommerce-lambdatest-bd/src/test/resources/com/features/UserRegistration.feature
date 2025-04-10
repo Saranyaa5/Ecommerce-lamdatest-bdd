@@ -3,7 +3,7 @@ Feature: User Registration
   I want to register for the ecommerce LambdaTest account
 
   Background:
-     Given the user is on the homepage
+    Given the user is on the homepage
     When the user clicks on "My Account"
     And clicks the register button
     Then the user should see the registration page

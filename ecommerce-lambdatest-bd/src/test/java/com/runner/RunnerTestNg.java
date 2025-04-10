@@ -3,14 +3,20 @@ package com.runner;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-
 @CucumberOptions(
-	    plugin = {
-	        "pretty","json:target/cucumber-reports/OrangeHrmLogin.json","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","rerun:target/failedrerun.txt" },
-	    features = {"src/test/resources/com/features/UserRegistration.feature"},
-	    glue = "com.definitions",
-	    monochrome = true,
-	    dryRun = false
-	)
-	public class RunnerTestNg extends AbstractTestNGCucumberTests {
-	}
+    features = {"src/test/resources/com/features/UserLogin.feature"},
+    glue = {"com.definitions"},
+    plugin = {
+        "pretty",
+        "html:target/cucumber-reports/cucumber.html",
+        "json:target/cucumber-reports/cucumber.json",
+        "junit:target/cucumber-reports/cucumber.xml",
+        "rerun:target/failed-scenarios.txt",
+        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+    },
+    monochrome = true,
+    dryRun = false,
+    tags = "@validCredentials"
+)
+public class RunnerTestNg extends AbstractTestNGCucumberTests {
+}

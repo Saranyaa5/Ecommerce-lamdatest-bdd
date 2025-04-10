@@ -1,4 +1,4 @@
-package com.definitions;
+/*package com.definitions;
 
 import java.io.File;
 import java.io.IOException;
@@ -44,4 +44,26 @@ public class Hooks {
 
 	        HelperClass.tearDown();
 	    }
+}*/
+
+
+
+
+package com.definitions;
+
+import com.utilities.HelperClass;
+
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+
+public class Hooks {
+    @Before
+    public static void setUp() {
+        HelperClass.setUpDriver();
+    }
+    
+    @After
+    public static void tearDown() {
+        HelperClass.tearDown();
+    }
 }
