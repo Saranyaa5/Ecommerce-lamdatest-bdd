@@ -1,65 +1,3 @@
-/*package com.actions;
-
-import java.time.Duration;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import com.pages.LoginPageLocator;
-import com.utilities.HelperClass;
-
-public class UserLoginAction {
-    LoginPageLocator lp = null;
-    Actions actions;
-    public UserLoginAction() {
-        lp = new LoginPageLocator();
-        PageFactory.initElements(HelperClass.getDriver(), lp);
-        actions = new Actions(HelperClass.getDriver());
-    }
-    public void clickMyAccounts() {
-//        actions.moveToElement(lp.myAccount).perform();
-    	lp.myAccount.click();
-    }
-    public void clickLoginMenu() {
-//    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
-//        
-//        wait.until(ExpectedConditions.visibilityOf(lp.login));
-       // lp.login.click();   
-    	}
-
-    public void setEmail(String email) {
-        lp.emailId.sendKeys(email);
-    }
-
-    public void setPassword(String pw) {
-        lp.password.sendKeys(pw);
-    }
-
-    public void clickLoginButton() {
-        lp.loginButton.click();
-    }
-
-    public boolean isMyAccountPageDisplayed() {
-        return lp.titleMyAccount.isDisplayed();
-    }
-
-    public String getWarningMessage1() {
-        return lp.warning1.getText();
-    }
-    
-    public String getWarningMessage2() {
-    	return lp.warning2.getText();
-    }
-    
-    
-}*/
-
-
-
-
 package com.actions;
 
 import java.time.Duration;
@@ -75,7 +13,7 @@ public class UserLoginAction {
     WebDriverWait wait;
     String stremail,strpassword;
 
-    public static final String UserCredentialsPath = "C:\\Users\\kirub\\git\\Ecommerce-lamdatest-bdd\\ecommerce-lambdatest-bd\\src\\test\\resources\\Cofiguration.properties";
+    public static final String UserCredentialsPath = "C:\\Users\\saran\\git\\SeleniumFinalCucumber\\ecommerce-lambdatest-bd\\src\\test\\resources\\com\\features\\Cofiguration.properties";
     public UserLoginAction() {
     	ConfigReader.loadProperties(UserCredentialsPath);
     	this.stremail = ConfigReader.getProperty("email");
