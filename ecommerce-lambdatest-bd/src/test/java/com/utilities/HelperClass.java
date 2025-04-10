@@ -17,7 +17,7 @@ public class HelperClass {
     private static WebDriverWait wait;
     public final static int TIMEOUT = 10;
 
-    public static final String ConfigPath = "C:\\Users\\kirub\\git\\Ecommerce-lamdatest-bdd\\ecommerce-lambdatest-bd\\src\\test\\resources\\Cofiguration.properties";
+    public static final String ConfigPath ="C:\\Users\\saran\\git\\SeleniumFinalCucumber\\ecommerce-lambdatest-bd\\src\\test\\resources\\Cofiguration.properties";
 
     private HelperClass() {
         

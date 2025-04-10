@@ -13,7 +13,7 @@ public class UserLoginAction {
     WebDriverWait wait;
     String stremail,strpassword;
 
-    public static final String UserCredentialsPath = "C:\\Users\\saran\\git\\SeleniumFinalCucumber\\ecommerce-lambdatest-bd\\src\\test\\resources\\com\\features\\Cofiguration.properties";
+    public static final String UserCredentialsPath = "C:\\Users\\saran\\git\\SeleniumFinalCucumber\\ecommerce-lambdatest-bd\\src\\test\\resources\\Cofiguration.properties";
     public UserLoginAction() {
     	ConfigReader.loadProperties(UserCredentialsPath);
     	this.stremail = ConfigReader.getProperty("email");
