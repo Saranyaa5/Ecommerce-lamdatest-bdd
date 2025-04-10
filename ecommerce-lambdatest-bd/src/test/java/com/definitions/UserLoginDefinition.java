@@ -1,86 +1,3 @@
-/*package com.definitions;
-
-import java.time.Duration;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-
-import com.actions.UserLoginAction;
-import com.utilities.ConfigReader;
-import com.utilities.HelperClass;
-
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-
-public class UserLoginDefinition {
-    private WebDriver driver;
-    UserLoginAction la=new UserLoginAction();
-//  public UserLoginDefinition(WebDriver driver) {
-//        this.driver =;
-//        this.la = new UserLoginAction(driver);
-//       
-//        ConfigReader.loadProperties("src\\test\\resources\\Cofiguration.properties");
-//    }
-    
-    //ConfigReader.loadProperties("src\\test\\resources\\Cofiguration.properties");
-  
-    @Given("the user is on the homepage")
-    public void the_user_is_on_the_homepage() {
-        HelperClass.openPage();
-    }
-
-    @When("the user clicks on My Account")
-    public void the_user_clicks_on_my_account() {
-        la.clickMyAccounts();
-    }
-
-    @When("clicks on login")
-    public void clicks_on_login() {
-        
-
-        la.clickLoginMenu();
-    }
-
-    @When("the user enters valid credentials")
-    public void the_user_enters_valid_credentials() {
-        la.setEmail(ConfigReader.getProperty("email"));
-        la.setPassword(ConfigReader.getProperty("password"));
-    }
-
-    @When("the user clicks on the Login button")
-    public void the_user_clicks_on_the_login_button() throws InterruptedException {
-    	Thread.sleep(2000);
-        la.clickLoginButton();
-    }
-
-    @Then("the user should see the My Account page")
-    public void the_user_should_see_the_my_account_page() {
-        Assert.assertTrue(la.isMyAccountPageDisplayed(), "My Account page is not displayed");
-    }
-
-    @When("the user enters E-Mail {string}")
-    public void the_user_enters_e_mail(String email) {
-        la.setEmail(email);
-    }
-
-    @When("the user enters Password {string}")
-    public void the_user_enters_password(String password) {
-        la.setPassword(password);
-    }
-
-    @Then("the user should see the {string}")
-    public void the_user_should_see_the(String expectedWarning) {
-        String actualWarning = la.getWarningMessage();
-        Assert.assertEquals(actualWarning, expectedWarning, "Warning message does not match");
-    }
-}
-
-*/
-
-
 package com.definitions;
 
 import org.testng.Assert;
@@ -130,11 +47,24 @@ public class UserLoginDefinition {
         userLoginAction.setPassword2(password);
     }
 
-    @Then("the user should see the {string}")
-    public void the_user_should_see_the(String expectedWarning) {
-        String actualWarning = userLoginAction.getWarningMessage();
-        Assert.assertTrue(actualWarning.contains(expectedWarning), 
-            "Expected warning to contain: " + expectedWarning + " but got: " + actualWarning);
+    @Then("the user should see the {string} and {string}")
+    public void the_user_should_see_the_and(String expectedResult, String check) {
+        String actualResult = userLoginAction.getWarningMessage();
+        
+        if ("check1".equals(check)) {
+            Assert.assertEquals(actualResult, expectedResult, 
+                "Check1 Failed: Expected warning message not displayed");
+        } 
+        else if ("check2".equals(check)) {
+            Assert.assertEquals(actualResult, expectedResult, 
+                "Check2 Failed: Empty password warning not displayed");
+        }
+        else if ("check3".equals(check)) {
+            Assert.assertEquals(actualResult, expectedResult, 
+                "Check3 Failed: Empty email warning not displayed");
+        }
+        else {
+            Assert.fail("Unknown test case identifier: " + check);
+        }
     }
 }
-
