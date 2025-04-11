@@ -1,27 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="0" failed="6" skipped="0">
+<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-11T00:44:24 IST" name="Default suite" finished-at="2025-04-11T00:44:27 IST" duration-ms="3065">
+  <suite started-at="2025-04-11T01:09:41 IST" name="Default suite" finished-at="2025-04-11T01:11:23 IST" duration-ms="101977">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@561b6512]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-04-11T00:44:24 IST" name="Default test" finished-at="2025-04-11T00:44:27 IST" duration-ms="3065">
+    <test started-at="2025-04-11T01:09:41 IST" name="Default test" finished-at="2025-04-11T01:11:23 IST" duration-ms="101977">
       <class name="com.runner.RunnerTestNg">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.RunnerTestNg@561b6512]" started-at="2025-04-11T00:44:24 IST" name="setUpClass" finished-at="2025-04-11T00:44:25 IST" duration-ms="779" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.RunnerTestNg@561b6512]" started-at="2025-04-11T01:09:41 IST" name="setUpClass" finished-at="2025-04-11T01:09:42 IST" duration-ms="1180" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@521441d5]]>
+                <![CDATA[org.testng.TestRunner@3dee3a6c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@561b6512]" started-at="2025-04-11T00:44:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:44:25 IST" duration-ms="379" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@561b6512]" started-at="2025-04-11T01:09:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T01:09:53 IST" duration-ms="11088" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User tries to login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@561b6512]" started-at="2025-04-11T01:09:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T01:10:04 IST" duration-ms="11364" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User tries to login with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@561b6512]" started-at="2025-04-11T01:10:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T01:10:13 IST" duration-ms="9215" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User tries to login with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@561b6512]" started-at="2025-04-11T01:10:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T01:10:23 IST" duration-ms="9305" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -34,22 +82,23 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
+          <exception class="org.junit.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<[Register Account]> but was:<[Your Account Has Been Created!]>]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:144)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
-at com.utilities.ConfigReader.loadProperties(ConfigReader.java:12)
-at com.utilities.HelperClass.<init>(HelperClass.java:24)
-at com.utilities.HelperClass.setUpDriver(HelperClass.java:63)
-at com.definitions.Hooks.setUp(Hooks.java:24)
+              <![CDATA[org.junit.ComparisonFailure: expected:<[Register Account]> but was:<[Your Account Has Been Created!]>
+at org.junit.Assert.assertEquals(Assert.java:117)
+at org.junit.Assert.assertEquals(Assert.java:146)
+at com.definitions.UserRegistrationDefinition.the_user_should_see(UserRegistrationDefinition.java:65)
+at ✽.the user should see "Your Account Has Been Created!"(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/UserRegistration.feature:16)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.junit.ComparisonFailure -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@561b6512]" started-at="2025-04-11T00:44:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:44:25 IST" duration-ms="18" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@561b6512]" started-at="2025-04-11T01:10:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T01:10:31 IST" duration-ms="8198" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -62,22 +111,10 @@ at com.definitions.Hooks.setUp(Hooks.java:24)
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:144)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
-at com.utilities.ConfigReader.loadProperties(ConfigReader.java:12)
-at com.utilities.HelperClass.<init>(HelperClass.java:24)
-at com.utilities.HelperClass.setUpDriver(HelperClass.java:63)
-at com.definitions.Hooks.setUp(Hooks.java:24)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@561b6512]" started-at="2025-04-11T00:44:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:44:25 IST" duration-ms="14" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@561b6512]" started-at="2025-04-11T01:10:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T01:10:40 IST" duration-ms="9218" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -90,22 +127,10 @@ at com.definitions.Hooks.setUp(Hooks.java:24)
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:144)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
-at com.utilities.ConfigReader.loadProperties(ConfigReader.java:12)
-at com.utilities.HelperClass.<init>(HelperClass.java:24)
-at com.utilities.HelperClass.setUpDriver(HelperClass.java:63)
-at com.definitions.Hooks.setUp(Hooks.java:24)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@561b6512]" started-at="2025-04-11T00:44:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:44:25 IST" duration-ms="20" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@561b6512]" started-at="2025-04-11T01:10:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T01:10:51 IST" duration-ms="11245" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -118,22 +143,10 @@ at com.definitions.Hooks.setUp(Hooks.java:24)
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:144)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
-at com.utilities.ConfigReader.loadProperties(ConfigReader.java:12)
-at com.utilities.HelperClass.<init>(HelperClass.java:24)
-at com.utilities.HelperClass.setUpDriver(HelperClass.java:63)
-at com.definitions.Hooks.setUp(Hooks.java:24)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@561b6512]" started-at="2025-04-11T00:44:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:44:25 IST" duration-ms="21" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@561b6512]" started-at="2025-04-11T01:10:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T01:11:11 IST" duration-ms="19896" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -146,22 +159,10 @@ at com.definitions.Hooks.setUp(Hooks.java:24)
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:144)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
-at com.utilities.ConfigReader.loadProperties(ConfigReader.java:12)
-at com.utilities.HelperClass.<init>(HelperClass.java:24)
-at com.utilities.HelperClass.setUpDriver(HelperClass.java:63)
-at com.definitions.Hooks.setUp(Hooks.java:24)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@561b6512]" started-at="2025-04-11T00:44:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:44:25 IST" duration-ms="18" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@561b6512]" started-at="2025-04-11T01:11:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T01:11:20 IST" duration-ms="8491" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -174,22 +175,10 @@ at com.definitions.Hooks.setUp(Hooks.java:24)
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:144)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
-at com.utilities.ConfigReader.loadProperties(ConfigReader.java:12)
-at com.utilities.HelperClass.<init>(HelperClass.java:24)
-at com.utilities.HelperClass.setUpDriver(HelperClass.java:63)
-at com.definitions.Hooks.setUp(Hooks.java:24)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.RunnerTestNg@561b6512]" started-at="2025-04-11T00:44:25 IST" name="tearDownClass" finished-at="2025-04-11T00:44:27 IST" duration-ms="1758" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.RunnerTestNg@561b6512]" started-at="2025-04-11T01:11:20 IST" name="tearDownClass" finished-at="2025-04-11T01:11:23 IST" duration-ms="2723" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

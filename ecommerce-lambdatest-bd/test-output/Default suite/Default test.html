@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/6/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Apr 11 00:44:24 IST 2025</td>
+<td>Started on:</td><td>Fri Apr 11 01:09:41 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>3 seconds (3065 ms)</td>
+<tr><td>Total time:</td><td>101 seconds (101977 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,123 +77,68 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with valid inputs", "User Registration"</td>
-<td><div><pre>java.lang.NullPointerException
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:144)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:106)
-	at com.utilities.ConfigReader.loadProperties(ConfigReader.java:12)
-	at com.utilities.HelperClass.&lt;init&gt;(HelperClass.java:24)
-	at com.utilities.HelperClass.setUpDriver(HelperClass.java:63)
-	at com.definitions.Hooks.setUp(Hooks.java:24)
-</pre></div><a href='#' onClick='toggleBox("stack-trace693275170", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace693275170'><pre>java.lang.NullPointerException
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:144)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:106)
-	at com.utilities.ConfigReader.loadProperties(ConfigReader.java:12)
-	at com.utilities.HelperClass.&lt;init&gt;(HelperClass.java:24)
-	at com.utilities.HelperClass.setUpDriver(HelperClass.java:63)
-	at com.definitions.Hooks.setUp(Hooks.java:24)
+<td><div><pre>org.junit.ComparisonFailure: expected:&lt;[Register Account]&gt; but was:&lt;[Your Account Has Been Created!]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.definitions.UserRegistrationDefinition.the_user_should_see(UserRegistrationDefinition.java:65)
+	at ✽.the user should see &quot;Your Account Has Been Created!&quot;(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/UserRegistration.feature:16)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2053668237", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2053668237'><pre>org.junit.ComparisonFailure: expected:&lt;[Register Account]&gt; but was:&lt;[Your Account Has Been Created!]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.definitions.UserRegistrationDefinition.the_user_should_see(UserRegistrationDefinition.java:65)
+	at ✽.the user should see &quot;Your Account Has Been Created!&quot;(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/UserRegistration.feature:16)
 </pre></div></td>
-<td>0</td>
+<td>9</td>
+<td>com.runner.RunnerTestNg@561b6512</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Login Functionality"</td>
+<td></td>
+<td>11</td>
+<td>com.runner.RunnerTestNg@561b6512</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "User Registration"</td>
+<td></td>
+<td>8</td>
+<td>com.runner.RunnerTestNg@561b6512</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "User Registration"</td>
+<td></td>
+<td>9</td>
+<td>com.runner.RunnerTestNg@561b6512</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with valid credentials", "Login Functionality"</td>
+<td></td>
+<td>11</td>
+<td>com.runner.RunnerTestNg@561b6512</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "User Registration"</td>
+<td></td>
+<td>11</td>
+<td>com.runner.RunnerTestNg@561b6512</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Login Functionality"</td>
+<td></td>
+<td>9</td>
 <td>com.runner.RunnerTestNg@561b6512</td></tr>
 <tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with valid inputs", "User Registration"</td>
-<td><div><pre>java.lang.NullPointerException
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:144)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:106)
-	at com.utilities.ConfigReader.loadProperties(ConfigReader.java:12)
-	at com.utilities.HelperClass.&lt;init&gt;(HelperClass.java:24)
-	at com.utilities.HelperClass.setUpDriver(HelperClass.java:63)
-	at com.definitions.Hooks.setUp(Hooks.java:24)
-</pre></div><a href='#' onClick='toggleBox("stack-trace461155951", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace461155951'><pre>java.lang.NullPointerException
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:144)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:106)
-	at com.utilities.ConfigReader.loadProperties(ConfigReader.java:12)
-	at com.utilities.HelperClass.&lt;init&gt;(HelperClass.java:24)
-	at com.utilities.HelperClass.setUpDriver(HelperClass.java:63)
-	at com.definitions.Hooks.setUp(Hooks.java:24)
-</pre></div></td>
-<td>0</td>
+<td></td>
+<td>8</td>
 <td>com.runner.RunnerTestNg@561b6512</td></tr>
 <tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "User Registration"</td>
-<td><div><pre>java.lang.NullPointerException
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:144)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:106)
-	at com.utilities.ConfigReader.loadProperties(ConfigReader.java:12)
-	at com.utilities.HelperClass.&lt;init&gt;(HelperClass.java:24)
-	at com.utilities.HelperClass.setUpDriver(HelperClass.java:63)
-	at com.definitions.Hooks.setUp(Hooks.java:24)
-</pre></div><a href='#' onClick='toggleBox("stack-trace769507769", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace769507769'><pre>java.lang.NullPointerException
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:144)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:106)
-	at com.utilities.ConfigReader.loadProperties(ConfigReader.java:12)
-	at com.utilities.HelperClass.&lt;init&gt;(HelperClass.java:24)
-	at com.utilities.HelperClass.setUpDriver(HelperClass.java:63)
-	at com.definitions.Hooks.setUp(Hooks.java:24)
-</pre></div></td>
-<td>0</td>
-<td>com.runner.RunnerTestNg@561b6512</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "User Registration"</td>
-<td><div><pre>java.lang.NullPointerException
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:144)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:106)
-	at com.utilities.ConfigReader.loadProperties(ConfigReader.java:12)
-	at com.utilities.HelperClass.&lt;init&gt;(HelperClass.java:24)
-	at com.utilities.HelperClass.setUpDriver(HelperClass.java:63)
-	at com.definitions.Hooks.setUp(Hooks.java:24)
-</pre></div><a href='#' onClick='toggleBox("stack-trace270734602", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace270734602'><pre>java.lang.NullPointerException
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:144)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:106)
-	at com.utilities.ConfigReader.loadProperties(ConfigReader.java:12)
-	at com.utilities.HelperClass.&lt;init&gt;(HelperClass.java:24)
-	at com.utilities.HelperClass.setUpDriver(HelperClass.java:63)
-	at com.definitions.Hooks.setUp(Hooks.java:24)
-</pre></div></td>
-<td>0</td>
-<td>com.runner.RunnerTestNg@561b6512</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "User Registration"</td>
-<td><div><pre>java.lang.NullPointerException
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:144)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:106)
-	at com.utilities.ConfigReader.loadProperties(ConfigReader.java:12)
-	at com.utilities.HelperClass.&lt;init&gt;(HelperClass.java:24)
-	at com.utilities.HelperClass.setUpDriver(HelperClass.java:63)
-	at com.definitions.Hooks.setUp(Hooks.java:24)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1955948959", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1955948959'><pre>java.lang.NullPointerException
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:144)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:106)
-	at com.utilities.ConfigReader.loadProperties(ConfigReader.java:12)
-	at com.utilities.HelperClass.&lt;init&gt;(HelperClass.java:24)
-	at com.utilities.HelperClass.setUpDriver(HelperClass.java:63)
-	at com.definitions.Hooks.setUp(Hooks.java:24)
-</pre></div></td>
-<td>0</td>
-<td>com.runner.RunnerTestNg@561b6512</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "User Registration"</td>
-<td><div><pre>java.lang.NullPointerException
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:144)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:106)
-	at com.utilities.ConfigReader.loadProperties(ConfigReader.java:12)
-	at com.utilities.HelperClass.&lt;init&gt;(HelperClass.java:24)
-	at com.utilities.HelperClass.setUpDriver(HelperClass.java:63)
-	at com.definitions.Hooks.setUp(Hooks.java:24)
-</pre></div><a href='#' onClick='toggleBox("stack-trace300104620", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace300104620'><pre>java.lang.NullPointerException
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:144)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:106)
-	at com.utilities.ConfigReader.loadProperties(ConfigReader.java:12)
-	at com.utilities.HelperClass.&lt;init&gt;(HelperClass.java:24)
-	at com.utilities.HelperClass.setUpDriver(HelperClass.java:63)
-	at com.definitions.Hooks.setUp(Hooks.java:24)
-</pre></div></td>
-<td>0</td>
+<td></td>
+<td>19</td>
 <td>com.runner.RunnerTestNg@561b6512</td></tr>
 </table><p>
 </body>
