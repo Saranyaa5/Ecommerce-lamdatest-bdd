@@ -16,7 +16,9 @@ public class HelperClass {
     private static ThreadLocal<WebDriverWait> wait = new ThreadLocal<>();
     public final static int TIMEOUT = 10;
 
-    public static final String ConfigPath = "C:\\Users\\admi\\git\\Ecommerce-lamdatest-bdd\\ecommerce-lambdatest-bd\\src\\test\\resources\\com\\features\\Cofiguration.properties";
+
+    public static final String ConfigPath ="C:\\Users\\saran\\git\\SeleniumFinalCucumber\\ecommerce-lambdatest-bd\\src\\test\\resources\\Cofiguration.properties";
+
 
     private HelperClass() {
         ConfigReader.loadProperties(ConfigPath);
@@ -28,6 +30,7 @@ public class HelperClass {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--disable-features=PasswordLeakDetection");
             options.addArguments("--incognito");
+            options.addArguments("--headless");
             localDriver = new ChromeDriver(options);
         } else if (browser.equalsIgnoreCase("edge")) {
             EdgeOptions options = new EdgeOptions();

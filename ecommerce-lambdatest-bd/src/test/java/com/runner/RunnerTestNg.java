@@ -5,6 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
+
     features = {
         "src/test/resources/com/features/UserLogin.feature",
         "src/test/resources/com/features/UserRegistration.feature"
