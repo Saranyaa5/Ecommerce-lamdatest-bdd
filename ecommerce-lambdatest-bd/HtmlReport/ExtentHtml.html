@@ -49,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Apr 10, 2025 11:13:39 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Apr 11, 2025 07:05:30 am</span>
 			</a>
 		</ul>
 	</div>
@@ -77,6 +77,7 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>@validCredentials</a></li>
+					<li><a href='#'>@invalidCredentials</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -137,7 +138,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>1</span> scenarios passed</span>
+                    <span class='strong'>3</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -157,7 +158,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>6</span> steps passed</span>
+                    <span class='strong'>20</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -187,7 +188,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Login Functionality</span>
-						<span class='test-time'>Apr 10, 2025 11:13:40 pm</span>
+						<span class='test-time'>Apr 11, 2025 07:05:31 am</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -200,7 +201,7 @@
 
 <div class='scenario node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 14.146</span>
+	<span class='duration right label'>00 00 12.227</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: User tries to login with valid credentials</div>
 	</div>
@@ -240,6 +241,95 @@
 			<div class="step-name" title="(com.definitions.UserLoginDefinition.the_user_should_see_the_my_account_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the My Account page</div>
 
 
+		</li>
+	</ul>
+</div>
+<div class='scenario outline node' test-id='11' status='pass'>
+
+	<span class='duration right label'>00 00 14.908</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: User tries to login with invalid credentials</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>email</td><td>password</td><td>expectedResult</td><td>check</td></tr><tr><td>jee@gmail.com</td><td>0987</td><td>Warning: No match for E-Mail Address and/or Password.</td><td>check1</td></tr><tr><td>jee@gmail.com</td><td></td><td>Warning: No match for E-Mail Address and/or Password.</td><td>check2</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='12' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User tries to login with invalid credentials</div>
+
+				<div class='category-list'>
+						<span class='category label'>@invalidCredentials</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='14' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</h6>
+
+				</li>
+				<li test-id='15' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_clicks_on_my_account()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account</h6>
+
+				</li>
+				<li test-id='16' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.clicks_on_login()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on login</h6>
+
+				</li>
+				<li test-id='17' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_enters_e_mail(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters E-Mail "jee@gmail.com"</h6>
+
+				</li>
+				<li test-id='18' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_enters_password(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters Password "0987"</h6>
+
+				</li>
+				<li test-id='19' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_clicks_on_the_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on the Login button</h6>
+
+				</li>
+				<li test-id='20' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_should_see_the_and(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the "Warning: No match for E-Mail Address and/or Password." and "check1"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='22' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User tries to login with invalid credentials</div>
+
+				<div class='category-list'>
+						<span class='category label'>@invalidCredentials</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='24' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</h6>
+
+				</li>
+				<li test-id='25' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_clicks_on_my_account()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account</h6>
+
+				</li>
+				<li test-id='26' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.clicks_on_login()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on login</h6>
+
+				</li>
+				<li test-id='27' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_enters_e_mail(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters E-Mail "jee@gmail.com"</h6>
+
+				</li>
+				<li test-id='28' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_enters_password(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters Password ""</h6>
+
+				</li>
+				<li test-id='29' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_clicks_on_the_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on the Login button</h6>
+
+				</li>
+				<li test-id='30' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_should_see_the_and(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the "Warning: No match for E-Mail Address and/or Password." and "check2"</h6>
+
+				</li>
+			</ul>
 		</li>
 	</ul>
 </div>
@@ -309,8 +399,46 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 10, 2025 11:13:40 pm</td>
+										<td>Apr 11, 2025 07:05:31 am</td>
 										<td class='linked' test-id='2'>User tries to login with valid credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@invalidCredentials</span>
+						<span class='category-status right'>
+						<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 11, 2025 07:05:43 am</td>
+										<td class='linked' test-id='12'>User tries to login with invalid credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 11, 2025 07:05:50 am</td>
+										<td class='linked' test-id='22'>User tries to login with invalid credentials</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -341,31 +469,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>6</div>
+					<div class='panel-lead'>20</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Apr 10, 2025 11:13:39 pm</div>
+					<div class='panel-lead'>Apr 11, 2025 07:05:30 am</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Apr 10, 2025 11:13:55 pm</div>
+			 		<div class='panel-lead'>Apr 11, 2025 07:05:58 am</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 15.878</div>
+					<div class='panel-lead'>00 00 28.127</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -409,6 +537,15 @@
 									100%
 							</td>
 						</tr>
+						<tr>
+							<td>@invalidCredentials</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
 					</table>
 				</div>
 			</div>
@@ -427,16 +564,16 @@
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 1,
-				passChild: 1,
+				childCount: 3,
+				passChild: 3,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 6,
-				passGrandChild: 6,
+				grandChildCount: 20,
+				passGrandChild: 20,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -448,7 +585,7 @@
 		
 		<script>
 			var timeline = {
-			        "Login Functionality":14.152
+			        "Login Functionality":27.164
 			};
 		</script>
 		

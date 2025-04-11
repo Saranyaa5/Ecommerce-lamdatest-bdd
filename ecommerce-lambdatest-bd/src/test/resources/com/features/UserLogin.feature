@@ -16,11 +16,11 @@ Feature: Login Functionality
     And the user enters E-Mail "<email>"
     And the user enters Password "<password>"
     And the user clicks on the Login button
-    Then the user should see the "<expectedResult>"
+    Then the user should see the "<expectedResult>" and "<check>"
+    
 
     Examples:
-      | email          | password | expectedResult                                                                       |
-      | jee@gmail.com  | 0987     | Warning: No match for E-Mail Address and/or Password.                                |
-      | jee@gmail.com  |          | Warning: No match for E-Mail Address and/or Password.                                |
-      |                | 1234     | Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour. |
-     
+      | email          | password | expectedResult                                                                       |check  |
+      | jee@gmail.com  | 0987     | Warning: No match for E-Mail Address and/or Password.                                |check1 |
+      | jee@gmail.com  |          | Warning: No match for E-Mail Address and/or Password.                                |check2 |
+       

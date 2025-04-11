@@ -16,7 +16,7 @@ import io.cucumber.testng.CucumberOptions;
     },
     monochrome = true,
     dryRun = false,
-    tags = "@validCredentials"
+    tags = "@validCredentials or @invalidCredentials"  
 )
 public class RunnerTestNg extends AbstractTestNGCucumberTests {
 }
