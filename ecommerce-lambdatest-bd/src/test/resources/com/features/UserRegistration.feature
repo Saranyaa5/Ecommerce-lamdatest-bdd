@@ -17,7 +17,7 @@ Feature: User Registration
 
     Examples:  
       | First Name | Last Name | Email              | Telephone   | Password | Confirm Password |  
-      | priya      | ram       | ppt2@gmail.com | 1234567891  | 1234     | 1234             |  
+      | priya      | ram       | ppt12e@gmail.com | 1234567891  | 1234     | 1234             |  
 
   @InValidRegistrationInputs
   Scenario Outline: Register with invalid inputs  

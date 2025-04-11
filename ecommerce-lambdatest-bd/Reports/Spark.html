@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Apr 11, 2025 02:53:20 pm</span></a>
+<a href="#"><span class="badge badge-primary">Apr 11, 2025 02:59:36 pm</span></a>
 </li>
 </ul>
 </div>
@@ -79,7 +79,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@registration</a><a class="dropdown-item" href="#">@ValidRegistrationInputs</a><a class="dropdown-item" href="#">@RegistrationWithoutAcceptingPrivacyPolicy</a><a class="dropdown-item" href="#">@invalidCredentials</a><a class="dropdown-item" href="#">@InValidRegistrationInputs</a><a class="dropdown-item" href="#">@validCredentials</a>
+<a class="dropdown-item" href="#">@ValidRegistrationInputs</a><a class="dropdown-item" href="#">@registration</a><a class="dropdown-item" href="#">@RegistrationWithoutAcceptingPrivacyPolicy</a><a class="dropdown-item" href="#">@invalidCredentials</a><a class="dropdown-item" href="#">@InValidRegistrationInputs</a><a class="dropdown-item" href="#">@validCredentials</a>
 </ul>
 </li>
 </ul>
@@ -90,9 +90,361 @@
           tag=""
           device="">
           <div class="test-detail">
+            <p class="name">User Registration</p>
+            <p class="text-sm">
+              <span>2:59:37 pm</span> / <span>00:00:26:921</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">User Registration</h5>
+<span class='badge badge-success'>04.11.2025 2:59:37 pm</span>
+<span class='badge badge-danger'>04.11.2025 3:00:04 pm</span>
+<span class='badge badge-default'>00:00:26:921</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> I want to register for the ecommerce LambdaTest account</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Register with valid inputs</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Register with valid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user clicks on My Account.</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the register button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see the registration page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters "priya", "ram", "ppt2e@gmail.com", "1234567891", "1234" and "1234"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And agrees to the Privacy Policy</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And submits the registration form</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see "Your Account Has Been Created!"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="4"><span class="badge log pass-bg mr-2">Pass</span>Register with invalid inputs</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="5"><span class="badge log pass-bg mr-2">Pass</span>Register with invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user clicks on My Account.</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the register button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see the registration page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the invalid inputs "priya", "ram", "priya123@gmail.com", "1234567891", "1234" and "4321"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And agrees to the Privacy Policy</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And submits the registration form</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see "Password confirmation does not match password!" for "password mismatch"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="6"><span class="badge log pass-bg mr-2">Pass</span>Register with invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user clicks on My Account.</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the register button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see the registration page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the invalid inputs "priya", "ram", "priya123@gmail.com", "1234567891", "" and "1234"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And agrees to the Privacy Policy</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And submits the registration form</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see "Password must be between 4 and 20 characters!" for "empty password"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>Register with invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user clicks on My Account.</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the register button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see the registration page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the invalid inputs "", "ram", "priya123@gmail.com", "1234567891", "1234" and "1234"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And agrees to the Privacy Policy</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And submits the registration form</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see "First Name must be between 1 and 32 characters!" for "empty first name"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="13"><span class="badge log pass-bg mr-2">Pass</span>Register with invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user clicks on My Account.</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the register button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see the registration page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the invalid inputs "priya", "ram", "oign@gma.com", "1234567891", "1234" and "1234"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And agrees to the Privacy Policy</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And submits the registration form</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see "Warning: E-Mail Address is already registered!" for "existing email"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>Register with valid inputs</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>Register with valid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user clicks on My Account.</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the register button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see the registration page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters "priya", "ram", "priya123@gmail.com", "1234567891", "1234" and "1234"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user not agrees to the privacy policy</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And submits the registration form</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see "Warning: You must agree to the Privacy Policy!" for "<Test Case Name>"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
             <p class="name">Login Functionality</p>
             <p class="text-sm">
-              <span>2:53:21 pm</span> / <span>00:00:26:738</span>
+              <span>2:59:37 pm</span> / <span>00:00:25:671</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -101,10 +453,10 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Login Functionality</h5>
-<span class='badge badge-success'>04.11.2025 2:53:21 pm</span>
-<span class='badge badge-danger'>04.11.2025 2:53:48 pm</span>
-<span class='badge badge-default'>00:00:26:738</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-success'>04.11.2025 2:59:37 pm</span>
+<span class='badge badge-danger'>04.11.2025 3:00:03 pm</span>
+<span class='badge badge-default'>00:00:25:671</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
@@ -116,58 +468,14 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>User tries to login with invalid credentials</div>
+        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>User tries to login with invalid credentials</div>
       </div>
     </div>
         <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>User tries to login with invalid credentials</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given the user is on the homepage</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When the user clicks on My Account</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And clicks on login</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And the user enters E-Mail "jee@gmail.com"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And the user enters Password ""</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And the user clicks on the Login button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then the user should see the "Warning: No match for E-Mail Address and/or Password." and "check2"</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>User tries to login with invalid credentials</div>
+                  <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>User tries to login with invalid credentials</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -203,6 +511,50 @@
                   </div>
                   <div class="step pass-bg">
                     <span>Then the user should see the "Warning: No match for E-Mail Address and/or Password." and "check1"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>User tries to login with invalid credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user clicks on My Account</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks on login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user enters E-Mail "jee@gmail.com"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user enters Password ""</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user clicks on the Login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see the "Warning: No match for E-Mail Address and/or Password." and "check2"</span>
       <div>
       </div>
                   </div>
@@ -254,358 +606,6 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="4"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">User Registration</p>
-            <p class="text-sm">
-              <span>2:53:21 pm</span> / <span>00:00:29:069</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">User Registration</h5>
-<span class='badge badge-success'>04.11.2025 2:53:21 pm</span>
-<span class='badge badge-danger'>04.11.2025 2:53:50 pm</span>
-<span class='badge badge-default'>00:00:29:069</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5"> I want to register for the ecommerce LambdaTest account</div>
-</div>
-</div>
-<div class="accordion mt-4">
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="5"><span class="badge log pass-bg mr-2">Pass</span>Register with valid inputs</div>
-      </div>
-    </div>
-        <div class="scenario_outline collapse">
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="6"><span class="badge log pass-bg mr-2">Pass</span>Register with valid inputs</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given the user is on the homepage</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When the user clicks on My Account.</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And clicks the register button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then the user should see the registration page</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When the user enters "priya", "ram", "ppt2@gmail.com", "1234567891", "1234" and "1234"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And agrees to the Privacy Policy</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And submits the registration form</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then the user should see "Your Account Has Been Created!"</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Register with valid inputs</div>
-      </div>
-    </div>
-        <div class="scenario_outline collapse">
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>Register with valid inputs</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given the user is on the homepage</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When the user clicks on My Account.</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And clicks the register button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then the user should see the registration page</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When the user enters "priya", "ram", "priya123@gmail.com", "1234567891", "1234" and "1234"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And the user not agrees to the privacy policy</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And submits the registration form</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then the user should see "Warning: You must agree to the Privacy Policy!" for "<Test Case Name>"</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>Register with invalid inputs</div>
-      </div>
-    </div>
-        <div class="scenario_outline collapse">
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>Register with invalid inputs</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given the user is on the homepage</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When the user clicks on My Account.</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And clicks the register button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then the user should see the registration page</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When the user enters the invalid inputs "priya", "ram", "oign@gma.com", "1234567891", "1234" and "1234"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And agrees to the Privacy Policy</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And submits the registration form</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then the user should see "Warning: E-Mail Address is already registered!" for "existing email"</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>Register with invalid inputs</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given the user is on the homepage</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When the user clicks on My Account.</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And clicks the register button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then the user should see the registration page</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When the user enters the invalid inputs "priya", "ram", "priya123@gmail.com", "1234567891", "1234" and "4321"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And agrees to the Privacy Policy</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And submits the registration form</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then the user should see "Password confirmation does not match password!" for "password mismatch"</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>Register with invalid inputs</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given the user is on the homepage</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When the user clicks on My Account.</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And clicks the register button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then the user should see the registration page</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When the user enters the invalid inputs "priya", "ram", "priya123@gmail.com", "1234567891", "" and "1234"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And agrees to the Privacy Policy</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And submits the registration form</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then the user should see "Password must be between 4 and 20 characters!" for "empty password"</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="13"><span class="badge log pass-bg mr-2">Pass</span>Register with invalid inputs</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given the user is on the homepage</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When the user clicks on My Account.</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And clicks the register button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then the user should see the registration page</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When the user enters the invalid inputs "", "ram", "priya123@gmail.com", "1234567891", "1234" and "1234"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And agrees to the Privacy Policy</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And submits the registration form</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then the user should see "First Name must be between 1 and 32 characters!" for "empty first name"</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-        </div>
-  </div>
-</div>
-          </div>
-        </li>
       </ul>
     </div>
   </div>
@@ -623,92 +623,6 @@
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>6</span>
-</span>
-<p class="name">@registration</p>
-<p class="duration text-sm">6 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@registration</h4>
-<span status="pass" class='badge log pass-bg'>6 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>14:53:21 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='6'>Register with valid inputs</a>
-<div class="">
-<span class="badge badge-default">User Registration.Register with valid inputs</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>14:53:21 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='8'>Register with valid inputs</a>
-<div class="">
-<span class="badge badge-default">User Registration.Register with valid inputs</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>14:53:21 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='10'>Register with invalid inputs</a>
-<div class="">
-<span class="badge badge-default">User Registration.Register with invalid inputs</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>14:53:21 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='11'>Register with invalid inputs</a>
-<div class="">
-<span class="badge badge-default">User Registration.Register with invalid inputs</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>14:53:21 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='12'>Register with invalid inputs</a>
-<div class="">
-<span class="badge badge-default">User Registration.Register with invalid inputs</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>14:53:21 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='13'>Register with invalid inputs</a>
-<div class="">
-<span class="badge badge-default">User Registration.Register with invalid inputs</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
@@ -733,11 +647,97 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:53:21 pm</td>
+<td>14:59:37 pm</td>
 <td>
-<a href="#" class="linked" test-id='4' id='6'>Register with valid inputs</a>
+<a href="#" class="linked" test-id='1' id='3'>Register with valid inputs</a>
 <div class="">
 <span class="badge badge-default">User Registration.Register with valid inputs</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">@registration</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@registration</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:59:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Register with valid inputs</a>
+<div class="">
+<span class="badge badge-default">User Registration.Register with valid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:59:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='5'>Register with invalid inputs</a>
+<div class="">
+<span class="badge badge-default">User Registration.Register with invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:59:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='6'>Register with invalid inputs</a>
+<div class="">
+<span class="badge badge-default">User Registration.Register with invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:59:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>Register with valid inputs</a>
+<div class="">
+<span class="badge badge-default">User Registration.Register with valid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:59:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>Register with invalid inputs</a>
+<div class="">
+<span class="badge badge-default">User Registration.Register with invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:59:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='13'>Register with invalid inputs</a>
+<div class="">
+<span class="badge badge-default">User Registration.Register with invalid inputs</span>
 </div>
 </td>
 </tr>
@@ -769,9 +769,9 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:53:21 pm</td>
+<td>14:59:37 pm</td>
 <td>
-<a href="#" class="linked" test-id='4' id='8'>Register with valid inputs</a>
+<a href="#" class="linked" test-id='1' id='11'>Register with valid inputs</a>
 <div class="">
 <span class="badge badge-default">User Registration.Register with valid inputs</span>
 </div>
@@ -805,9 +805,9 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:53:21 pm</td>
+<td>14:59:37 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='3'>User tries to login with invalid credentials</a>
+<a href="#" class="linked" test-id='7' id='9'>User tries to login with invalid credentials</a>
 <div class="">
 <span class="badge badge-default">Login Functionality.User tries to login with invalid credentials</span>
 </div>
@@ -815,9 +815,9 @@
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:53:21 pm</td>
+<td>14:59:37 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='15'>User tries to login with invalid credentials</a>
+<a href="#" class="linked" test-id='7' id='17'>User tries to login with invalid credentials</a>
 <div class="">
 <span class="badge badge-default">Login Functionality.User tries to login with invalid credentials</span>
 </div>
@@ -851,9 +851,9 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:53:21 pm</td>
+<td>14:59:37 pm</td>
 <td>
-<a href="#" class="linked" test-id='4' id='10'>Register with invalid inputs</a>
+<a href="#" class="linked" test-id='1' id='5'>Register with invalid inputs</a>
 <div class="">
 <span class="badge badge-default">User Registration.Register with invalid inputs</span>
 </div>
@@ -861,9 +861,9 @@
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:53:21 pm</td>
+<td>14:59:37 pm</td>
 <td>
-<a href="#" class="linked" test-id='4' id='11'>Register with invalid inputs</a>
+<a href="#" class="linked" test-id='1' id='6'>Register with invalid inputs</a>
 <div class="">
 <span class="badge badge-default">User Registration.Register with invalid inputs</span>
 </div>
@@ -871,9 +871,9 @@
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:53:21 pm</td>
+<td>14:59:37 pm</td>
 <td>
-<a href="#" class="linked" test-id='4' id='12'>Register with invalid inputs</a>
+<a href="#" class="linked" test-id='1' id='12'>Register with invalid inputs</a>
 <div class="">
 <span class="badge badge-default">User Registration.Register with invalid inputs</span>
 </div>
@@ -881,9 +881,9 @@
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:53:21 pm</td>
+<td>14:59:37 pm</td>
 <td>
-<a href="#" class="linked" test-id='4' id='13'>Register with invalid inputs</a>
+<a href="#" class="linked" test-id='1' id='13'>Register with invalid inputs</a>
 <div class="">
 <span class="badge badge-default">User Registration.Register with invalid inputs</span>
 </div>
@@ -917,9 +917,9 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:53:21 pm</td>
+<td>14:59:37 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='14'>User tries to login with valid credentials</a>
+<a href="#" class="linked" test-id='7' id='14'>User tries to login with valid credentials</a>
 <div class="">
 <span class="badge badge-default">Login Functionality.User tries to login with valid credentials</span>
 </div>
@@ -942,13 +942,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Apr 11, 2025 02:53:20 pm</h3>
+<h3>Apr 11, 2025 02:59:36 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Apr 11, 2025 02:53:50 pm</h3>
+<h3>Apr 11, 2025 03:00:04 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -1038,7 +1038,7 @@
 </div></div>
 <script>
 var timeline = {
-"Login Functionality":26.738,"User Registration":29.069
+"User Registration":26.921,"Login Functionality":25.671
 };
 </script>
 <div class="row">
@@ -1048,16 +1048,16 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@registration</td>
-<td>6</td>
+<td>@ValidRegistrationInputs</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>100%</td>
 </tr>
 <tr>
-<td>@ValidRegistrationInputs</td>
-<td>1</td>
+<td>@registration</td>
+<td>6</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
