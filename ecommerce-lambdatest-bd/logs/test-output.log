@@ -1039,3 +1039,47 @@
 2025-04-12 11:31:13 [TestNG-PoolService-8] INFO : Scenario passed: Register with invalid inputs
 2025-04-12 11:31:13 [TestNG-PoolService-6] ERROR: Scenario failed: Register with valid inputs
 2025-04-12 11:31:23 [TestNG-PoolService-4] INFO : Scenario passed: Register with valid inputs
+2025-04-12 11:58:24 [TestNG-PoolService-2] INFO : Scenario started: User requests a password reset link using invalid email
+2025-04-12 11:58:24 [TestNG-PoolService-4] INFO : Scenario started: User tries to login with invalid credentials
+2025-04-12 11:58:25 [TestNG-PoolService-1] INFO : Scenario started: User requests a password reset link using valid email
+2025-04-12 11:58:25 [TestNG-PoolService-5] INFO : Scenario started: User tries to login with invalid credentials
+2025-04-12 11:58:25 [TestNG-PoolService-6] INFO : Scenario started: Register with valid inputs
+2025-04-12 11:58:25 [TestNG-PoolService-8] INFO : Scenario started: Register with invalid inputs
+2025-04-12 11:58:26 [TestNG-PoolService-9] INFO : Scenario started: Register with invalid inputs
+2025-04-12 11:58:26 [TestNG-PoolService-3] INFO : Scenario started: User tries to login with valid credentials
+2025-04-12 11:58:26 [TestNG-PoolService-10] INFO : Scenario started: Register with invalid inputs
+2025-04-12 11:58:26 [TestNG-PoolService-7] INFO : Scenario started: Register with invalid inputs
+2025-04-12 11:58:43 [TestNG-PoolService-4] INFO : Scenario passed: User tries to login with invalid credentials
+2025-04-12 11:58:44 [TestNG-PoolService-5] INFO : Scenario passed: User tries to login with invalid credentials
+2025-04-12 11:58:45 [TestNG-PoolService-3] INFO : Scenario passed: User tries to login with valid credentials
+2025-04-12 11:58:47 [TestNG-PoolService-8] INFO : Scenario passed: Register with invalid inputs
+2025-04-12 11:58:47 [TestNG-PoolService-2] INFO : Scenario passed: User requests a password reset link using invalid email
+2025-04-12 11:58:48 [TestNG-PoolService-1] INFO : Scenario passed: User requests a password reset link using valid email
+2025-04-12 11:58:48 [TestNG-PoolService-9] INFO : Scenario passed: Register with invalid inputs
+2025-04-12 11:58:48 [TestNG-PoolService-10] INFO : Scenario passed: Register with invalid inputs
+2025-04-12 11:58:48 [TestNG-PoolService-7] INFO : Scenario passed: Register with invalid inputs
+2025-04-12 11:58:48 [TestNG-PoolService-6] ERROR: Scenario failed: Register with valid inputs
+2025-04-12 11:58:48 [TestNG-PoolService-4] INFO : Scenario started: Register with valid inputs
+2025-04-12 11:58:59 [TestNG-PoolService-4] INFO : Scenario passed: Register with valid inputs
+2025-04-12 13:27:54 [TestNG-PoolService-2] INFO : Scenario started: User requests a password reset link using invalid email
+2025-04-12 13:27:54 [TestNG-PoolService-5] INFO : Scenario started: User tries to login with invalid credentials
+2025-04-12 13:27:54 [TestNG-PoolService-1] INFO : Scenario started: User requests a password reset link using valid email
+2025-04-12 13:27:54 [TestNG-PoolService-8] INFO : Scenario started: Register with invalid inputs
+2025-04-12 13:27:54 [TestNG-PoolService-3] INFO : Scenario started: User tries to login with valid credentials
+2025-04-12 13:27:54 [TestNG-PoolService-9] INFO : Scenario started: Register with invalid inputs
+2025-04-12 13:27:54 [TestNG-PoolService-7] INFO : Scenario started: Register with invalid inputs
+2025-04-12 13:27:54 [TestNG-PoolService-6] INFO : Scenario started: Register with valid inputs
+2025-04-12 13:27:54 [TestNG-PoolService-10] INFO : Scenario started: Register with invalid inputs
+2025-04-12 13:27:54 [TestNG-PoolService-4] INFO : Scenario started: User tries to login with invalid credentials
+2025-04-12 13:28:02 [TestNG-PoolService-4] INFO : Scenario passed: User tries to login with invalid credentials
+2025-04-12 13:28:03 [TestNG-PoolService-5] INFO : Scenario passed: User tries to login with invalid credentials
+2025-04-12 13:28:05 [TestNG-PoolService-3] INFO : Scenario passed: User tries to login with valid credentials
+2025-04-12 13:28:05 [TestNG-PoolService-5] INFO : Scenario started: Register with valid inputs
+2025-04-12 13:28:05 [TestNG-PoolService-2] INFO : Scenario passed: User requests a password reset link using invalid email
+2025-04-12 13:28:06 [TestNG-PoolService-10] INFO : Scenario passed: Register with invalid inputs
+2025-04-12 13:28:06 [TestNG-PoolService-8] INFO : Scenario passed: Register with invalid inputs
+2025-04-12 13:28:06 [TestNG-PoolService-7] INFO : Scenario passed: Register with invalid inputs
+2025-04-12 13:28:06 [TestNG-PoolService-9] INFO : Scenario passed: Register with invalid inputs
+2025-04-12 13:28:06 [TestNG-PoolService-1] INFO : Scenario passed: User requests a password reset link using valid email
+2025-04-12 13:28:07 [TestNG-PoolService-6] INFO : Scenario passed: Register with valid inputs
+2025-04-12 13:28:12 [TestNG-PoolService-5] INFO : Scenario passed: Register with valid inputs

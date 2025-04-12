@@ -36,8 +36,12 @@ public class UserRegistrationDefinition {
     @When("the user enters {string}, {string}, {string}, {string}, {string} and {string}")
     public void the_user_enters_and(String firstName, String lastName, String email, 
                                   String telephone, String password, String confirmPassword) {
-        userRegistrationAction.enterRegistrationDetails(firstName, lastName, email, 
+//        userRegistrationAction.enterRegistrationDetails(firstName, lastName, email, 
+//                                                       telephone, password, confirmPassword);
+    	String uniqueEmail = "test" + System.currentTimeMillis() + "@example.com";
+        userRegistrationAction.enterRegistrationDetails(firstName, lastName, uniqueEmail, 
                                                        telephone, password, confirmPassword);
+
     }
 
     @When("agrees to the Privacy Policy")
