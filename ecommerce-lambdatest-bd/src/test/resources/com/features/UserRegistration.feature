@@ -17,7 +17,7 @@ Feature: User Registration
 
     Examples:  
       | First Name | Last Name | Email              | Telephone   | Password | Confirm Password |  
-      | priya      | ram       | 2k21eee60@kiot.ac.in | 1234567891  | 1234     | 1234             |  
+      | priya123      | ram       | 2k21eee20@kiot.ac.in | 1674987891  | 1234     | 1234             |  
 
   @InValidRegistrationInputs
   Scenario Outline: Register with invalid inputs  
@@ -41,7 +41,7 @@ Feature: User Registration
     Then the user should see "<ErrorMessage>" for "<Test Case Name>"  
 
     Examples:  
-      | First Name | Last Name | Email              | Telephone   | Password | Confirm Password | ErrorMessage                                  |TestCase                    |
+      | First Name | Last Name | Email              | Telephone   | Password | Confirm Password | ErrorMessage                                  |Test Case Name                  |
       | priya      | ram       | priya123@gmail.com | 1234567891  | 1234     | 1234             | Warning: You must agree to the Privacy Policy!|Not checking privacy policy|
    
    
