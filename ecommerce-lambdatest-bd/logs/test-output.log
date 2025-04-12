@@ -929,3 +929,51 @@
 2025-04-12 10:24:54 [TestNG-PoolService-5] INFO : Scenario passed: Register with invalid inputs
 2025-04-12 10:24:54 [TestNG-PoolService-4] ERROR: Scenario failed: Register with valid inputs
 2025-04-12 10:24:55 [TestNG-PoolService-1] INFO : Scenario passed: User tries to login with valid credentials
+2025-04-12 11:02:24 [TestNG-PoolService-6] INFO : Scenario started: Register with invalid inputs
+2025-04-12 11:02:24 [TestNG-PoolService-3] INFO : Scenario started: User tries to login with invalid credentials
+2025-04-12 11:02:24 [TestNG-PoolService-9] INFO : Scenario started: Register with valid inputs
+2025-04-12 11:02:24 [TestNG-PoolService-2] INFO : Scenario started: User tries to login with invalid credentials
+2025-04-12 11:02:25 [TestNG-PoolService-4] INFO : Scenario started: Register with valid inputs
+2025-04-12 11:02:25 [TestNG-PoolService-8] INFO : Scenario started: Register with invalid inputs
+2025-04-12 11:02:25 [TestNG-PoolService-5] INFO : Scenario started: Register with invalid inputs
+2025-04-12 11:02:25 [TestNG-PoolService-1] INFO : Scenario started: User tries to login with valid credentials
+2025-04-12 11:02:25 [TestNG-PoolService-7] INFO : Scenario started: Register with invalid inputs
+2025-04-12 11:02:33 [TestNG-PoolService-5] ERROR: Scenario failed: Register with invalid inputs
+2025-04-12 11:02:34 [TestNG-PoolService-3] INFO : Scenario passed: User tries to login with invalid credentials
+2025-04-12 11:02:36 [TestNG-PoolService-2] INFO : Scenario passed: User tries to login with invalid credentials
+2025-04-12 11:02:37 [TestNG-PoolService-6] INFO : Scenario passed: Register with invalid inputs
+2025-04-12 11:02:38 [TestNG-PoolService-9] INFO : Scenario passed: Register with valid inputs
+2025-04-12 11:02:38 [TestNG-PoolService-8] INFO : Scenario passed: Register with invalid inputs
+2025-04-12 11:02:39 [TestNG-PoolService-7] INFO : Scenario passed: Register with invalid inputs
+2025-04-12 11:02:39 [TestNG-PoolService-1] INFO : Scenario passed: User tries to login with valid credentials
+2025-04-12 11:02:40 [TestNG-PoolService-4] ERROR: Scenario failed: Register with valid inputs
+2025-04-12 11:04:10 [main] INFO : Scenario started: Register with valid inputs
+2025-04-12 11:04:27 [main] ERROR: Scenario failed: Register with valid inputs
+2025-04-12 11:04:28 [main] INFO : Scenario started: Register with invalid inputs
+2025-04-12 11:04:43 [main] INFO : Scenario passed: Register with invalid inputs
+2025-04-12 11:04:45 [main] INFO : Scenario started: Register with invalid inputs
+2025-04-12 11:05:18 [main] INFO : Scenario passed: Register with invalid inputs
+2025-04-12 11:05:20 [main] INFO : Scenario started: Register with invalid inputs
+2025-04-12 11:05:35 [main] INFO : Scenario passed: Register with invalid inputs
+2025-04-12 11:05:36 [main] INFO : Scenario started: Register with invalid inputs
+2025-04-12 11:06:01 [main] INFO : Scenario passed: Register with invalid inputs
+2025-04-12 11:06:03 [main] INFO : Scenario started: Register with valid inputs
+2025-04-12 11:06:20 [main] INFO : Scenario passed: Register with valid inputs
+2025-04-12 11:09:01 [TestNG-PoolService-3] INFO : Scenario started: User tries to login with invalid credentials
+2025-04-12 11:09:01 [TestNG-PoolService-7] INFO : Scenario started: Register with invalid inputs
+2025-04-12 11:09:01 [TestNG-PoolService-6] INFO : Scenario started: Register with invalid inputs
+2025-04-12 11:09:01 [TestNG-PoolService-9] INFO : Scenario started: Register with valid inputs
+2025-04-12 11:09:01 [TestNG-PoolService-1] INFO : Scenario started: User tries to login with valid credentials
+2025-04-12 11:09:01 [TestNG-PoolService-8] INFO : Scenario started: Register with invalid inputs
+2025-04-12 11:09:01 [TestNG-PoolService-5] INFO : Scenario started: Register with invalid inputs
+2025-04-12 11:09:01 [TestNG-PoolService-2] INFO : Scenario started: User tries to login with invalid credentials
+2025-04-12 11:09:01 [TestNG-PoolService-4] INFO : Scenario started: Register with valid inputs
+2025-04-12 11:09:12 [TestNG-PoolService-3] INFO : Scenario passed: User tries to login with invalid credentials
+2025-04-12 11:09:13 [TestNG-PoolService-2] INFO : Scenario passed: User tries to login with invalid credentials
+2025-04-12 11:09:14 [TestNG-PoolService-1] INFO : Scenario passed: User tries to login with valid credentials
+2025-04-12 11:09:15 [TestNG-PoolService-7] INFO : Scenario passed: Register with invalid inputs
+2025-04-12 11:09:15 [TestNG-PoolService-8] INFO : Scenario passed: Register with invalid inputs
+2025-04-12 11:09:15 [TestNG-PoolService-6] INFO : Scenario passed: Register with invalid inputs
+2025-04-12 11:09:15 [TestNG-PoolService-9] INFO : Scenario passed: Register with valid inputs
+2025-04-12 11:09:15 [TestNG-PoolService-5] INFO : Scenario passed: Register with invalid inputs
+2025-04-12 11:09:16 [TestNG-PoolService-4] ERROR: Scenario failed: Register with valid inputs
