@@ -8,7 +8,8 @@ import org.testng.annotations.DataProvider;
 
     features = {
         "src/test/resources/com/features/UserLogin.feature",
-        "src/test/resources/com/features/UserRegistration.feature"
+        "src/test/resources/com/features/UserRegistration.feature",
+        "src/test/resources/com/features/ForgotPassword.feature"
     },
     glue = {"com.definitions"},
     plugin = {
