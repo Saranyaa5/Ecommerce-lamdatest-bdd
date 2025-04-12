@@ -1,6 +1,9 @@
 package com.actions;
 
 import java.time.Duration;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -9,38 +12,48 @@ import com.utilities.ConfigReader;
 import com.utilities.HelperClass;
 
 public class UserLoginAction {
-    LoginPageLocator loginPageLocator=null;
+    LoginPageLocator loginPageLocator = null;
     WebDriverWait wait;
-    String stremail,strpassword;
+    String stremail, strpassword;
+    Actions actions;
 
-    public static final String UserCredentialsPath = "C:\\Users\\kirub\\git\\Ecommerce-lamdatest-bdd\\ecommerce-lambdatest-bd\\src\\test\\resources\\Cofiguration.properties";
+    public static final String UserCredentialsPath = "Configuration.properties";
+
     public UserLoginAction() {
-    	ConfigReader.loadProperties(UserCredentialsPath);
-    	this.stremail = ConfigReader.getProperty("email");
-    	this.strpassword = ConfigReader.getProperty("password");
+        ConfigReader.loadProperties(UserCredentialsPath);
+        
+        this.stremail = ConfigReader.getProperty("email");
+        this.strpassword = ConfigReader.getProperty("password");
+        
         this.loginPageLocator = new LoginPageLocator();
         PageFactory.initElements(HelperClass.getDriver(), loginPageLocator);
         
+        this.wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(HelperClass.TIMEOUT));
+        
+        actions=new Actions(HelperClass.getDriver());
     }
 
     public void clickMyAccounts() {
-       loginPageLocator.myAccount.click();
+        loginPageLocator.myAccount.click();
+//    	actions.moveToElement(loginPageLocator.myAccount).perform();
     }
 
     public void clickLoginMenu() {
-//        wait.until(ExpectedConditions.elementToBeClickable(lp.login)).click();
+        wait.until(ExpectedConditions.elementToBeClickable(loginPageLocator.login)).click();
     }
 
     public void setEmail() {
         loginPageLocator.emailId.sendKeys(stremail);
     }
+
     public void setEmail2(String email) {
-      loginPageLocator.emailId.sendKeys(email);
+        loginPageLocator.emailId.sendKeys(email);
     }
 
     public void setPassword2(String pass) {
         loginPageLocator.password.sendKeys(pass);
     }
+
     public void setPassword() {
         loginPageLocator.password.sendKeys(strpassword);
     }
@@ -50,11 +63,31 @@ public class UserLoginAction {
     }
 
     public boolean isMyAccountPageDisplayed() {
-    	System.out.println((loginPageLocator.titleMyAccount).getText());
         return loginPageLocator.titleMyAccount.isDisplayed();
     }
 
+//    public String getWarning1() {
+//    	return loginPageLocator.warningMessage1.getText();
+//    }
+//    public String getWarning2() {
+//    	return loginPageLocator.warningMessage2.getText();
+//    }
     public String getWarningMessage() {
         return loginPageLocator.warningMessage.getText();
+    }
+    
+    
+    public void clickmyAccounts2() {
+        actions.moveToElement(loginPageLocator.myAccount).perform();
+    }
+
+    public void clickLogout() {
+        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+        WebElement logoutElement = wait.until(ExpectedConditions.elementToBeClickable(loginPageLocator.logout));
+        logoutElement.click();
+    }
+
+    public String getAccountLogoutText() {
+        return loginPageLocator.accountLogout.getText();
     }
 }

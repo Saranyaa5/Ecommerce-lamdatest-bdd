@@ -47,25 +47,53 @@ public class UserLoginDefinition {
         userLoginAction.setPassword2(password);
     }
 
-    @Then("the user should see the {string} and {string}")
-    public void the_user_should_see_the_and(String expectedResult, String check) {
-        String actualResult = userLoginAction.getWarningMessage();
-        
-        if ("check1".equals(check)) {
-            Assert.assertEquals(actualResult, expectedResult, 
-                "Check1 Failed: Expected warning message not displayed");
-        } 
-        else if ("check2".equals(check)) {
-            Assert.assertEquals(actualResult, expectedResult, 
-                "Check2 Failed: Empty password warning not displayed");
-        }
-        else if ("check3".equals(check)) {
-            Assert.assertEquals(actualResult, expectedResult, 
-                "Check3 Failed: Empty email warning not displayed");
-        }
-        else {
-            Assert.fail("Unknown test case identifier: " + check);
-        }
-    }
-}
+    	@Then("the user should see the {string} and {string}")
+    	public void the_user_should_see_the_and(String expectedResult, String check) {
+    	    String actualResult;
 
+    	    switch (check) {
+    	        case "check1":
+    	            actualResult = userLoginAction.getWarningMessage();
+    	            Assert.assertEquals(actualResult, expectedResult,
+    	                "Check1 Failed: Expected warning message not displayed");
+    	            break;
+
+    	        case "check2":
+    	            actualResult = userLoginAction.getWarningMessage();
+    	            Assert.assertEquals(actualResult, expectedResult,
+    	                "Check2 Failed: Empty password warning not displayed");
+    	            break;
+
+    	        case "check3":
+    	            actualResult = userLoginAction.getWarningMessage();
+    	            Assert.assertEquals(actualResult, expectedResult,
+    	                "Check3 Failed: Empty email warning not displayed");
+    	            break;
+
+    	        case "check4":
+    	            actualResult = userLoginAction.getWarningMessage();
+    	            Assert.assertEquals(actualResult, expectedResult,
+    	                "Check4 Failed: Account lockout warning not displayed");
+    	            break;
+
+    	        default:
+    	            Assert.fail("Unknown test case identifier: " + check);
+    	    }
+    	}
+    	
+    	@Then("the user logs out")
+    	public void the_user_logs_out() {
+    		
+    		userLoginAction.clickmyAccounts2();
+    		 userLoginAction.clickLogout();
+    	}
+
+    	@Then("the user should see the Account Logout page")
+    	public void the_user_should_see_the_account_logout_page() {
+    		 String expectedText = "Account Logout";
+    	        String actualText = userLoginAction.getAccountLogoutText();
+    	        Assert.assertEquals(actualText, expectedText, "Account Logout page is not displayed");
+    	    }
+    	}
+
+    

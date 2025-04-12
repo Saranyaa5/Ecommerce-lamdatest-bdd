@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Apr 10 23:47:59 IST 2025</td>
+<td>Started on:</td><td>Fri Apr 11 15:31:08 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>25 seconds (25781 ms)</td>
+<tr><td>Total time:</td><td>321 seconds (321663 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,85 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "User Registration"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aedd95dcfb8ff8bf5e8877ce19c363ff, get {url=https://ecommerce-playground.lambdatest.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\kirub\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60422/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aedd95dcfb8ff8bf5e8877ce19c363ff
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:424)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at com.utilities.HelperClass.openPage(HelperClass.java:55)
+	at com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage(UserRegistrationDefinition.java:18)
+	at ✽.the user is on the homepage(file:///C:/Users/kirub/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/UserRegistration.feature:6)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2920)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div><a href='#' onClick='toggleBox("stack-trace404346654", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace404346654'><pre>org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aedd95dcfb8ff8bf5e8877ce19c363ff, get {url=https://ecommerce-playground.lambdatest.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\kirub\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60422/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aedd95dcfb8ff8bf5e8877ce19c363ff
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:424)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at com.utilities.HelperClass.openPage(HelperClass.java:55)
+	at com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage(UserRegistrationDefinition.java:18)
+	at ✽.the user is on the homepage(file:///C:/Users/kirub/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/UserRegistration.feature:6)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2920)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>315</td>
+<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with valid inputs", "User Registration"</td>
+<td><div><pre>org.junit.ComparisonFailure: expected:&lt;[Register Account]&gt; but was:&lt;[Your Account Has Been Created!]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.definitions.UserRegistrationDefinition.the_user_should_see(UserRegistrationDefinition.java:65)
+	at ✽.the user should see &quot;Your Account Has Been Created!&quot;(file:///C:/Users/kirub/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/UserRegistration.feature:16)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1116634802", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1116634802'><pre>org.junit.ComparisonFailure: expected:&lt;[Register Account]&gt; but was:&lt;[Your Account Has Been Created!]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.definitions.UserRegistrationDefinition.the_user_should_see(UserRegistrationDefinition.java:65)
+	at ✽.the user should see &quot;Your Account Has Been Created!&quot;(file:///C:/Users/kirub/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/UserRegistration.feature:16)
+</pre></div></td>
+<td>114</td>
+<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,14 +155,39 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Login Functionality"</td>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "User Registration"</td>
 <td></td>
-<td>11</td>
+<td>116</td>
 <td>com.runner.RunnerTestNg@26b3fd41</td></tr>
 <tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Login Functionality"</td>
 <td></td>
-<td>9</td>
+<td>93</td>
+<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with valid inputs", "User Registration"</td>
+<td></td>
+<td>100</td>
+<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "User Registration"</td>
+<td></td>
+<td>114</td>
+<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Login Functionality"</td>
+<td></td>
+<td>97</td>
+<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "User Registration"</td>
+<td></td>
+<td>126</td>
+<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with valid credentials", "Login Functionality"</td>
+<td></td>
+<td>103</td>
 <td>com.runner.RunnerTestNg@26b3fd41</td></tr>
 </table><p>
 </body>
