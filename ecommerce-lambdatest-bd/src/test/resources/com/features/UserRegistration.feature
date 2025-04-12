@@ -17,7 +17,7 @@ Feature: User Registration
 
     Examples:  
       | First Name | Last Name | Email              | Telephone   | Password | Confirm Password |  
-      | priya123      | ram       | 2k21eee20@kiot.ac.in | 1674987891  | 1234     | 1234             |  
+      | priya1234      | ram       | 2k21eee15@kiot.ac.in | 1674937891  | 1234     | 1234             |  
 
   @InValidRegistrationInputs
   Scenario Outline: Register with invalid inputs  
