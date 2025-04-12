@@ -1,24 +1,35 @@
-@tag
-Feature: Title of your feature
-  I want to use this template for my feature file
+@Checkout
+Feature: Shopping Cart CheckOut functionality
 
-  @tag1
-  Scenario: Title of your scenario
-    Given I want to write a step with precondition
-    And some other precondition
-    When I complete action
-    And some other action
-    And yet another action
-    Then I validate the outcomes
-    And check more outcomes
-
-  @tag2
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
-
-    Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+  @CheckoutAsGuest
+  Scenario: To checkout the shopping cart as a guest user
+    Given the user is on the homepage 
+    And the user adds a product into shopping cart as guest
+    When the user clicks shopping cart icon 
+    And clicks chout button
+    Then the suer sees the checkout page
+    And the user choose guest checkout
+    And fills the form as guest <fname> ,<lname>,...
+    And clicks the terms and condition checkBox and clicks continue
+    And the user confirms order details
+    Then the user see the success message
+    
+    Examples:
+    |fname|lname|email|telephone|...
+    |valid|
+    |invalid|
+    
+    @CheckoutAsregisteredUser @
+    Given the user is on the homepage 
+    When the user clicks on My Account
+    And clicks on login
+    And the user enters valid credentials 
+    And the user clicks on the Login button
+    When the user clicks shopping cart icon 
+    And clicks chout button
+    Then the user should see the shopping cart is empty 
+    
+    
+    
+    
+    
