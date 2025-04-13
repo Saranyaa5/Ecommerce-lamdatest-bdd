@@ -17,7 +17,7 @@ public class ExcelReader {
              Workbook workbook = new XSSFWorkbook(file)) {
             
             Sheet sheet = workbook.getSheetAt(0); // First sheet
-            for (int i = 1; i <= sheet.getLastRowNum(); i++) { // Skip header
+            for (int i = 0; i <= sheet.getLastRowNum(); i++) { // Skip header
                 Row row = sheet.getRow(i);
                 if (row != null) {
                     Cell testCaseCell = row.getCell(0);

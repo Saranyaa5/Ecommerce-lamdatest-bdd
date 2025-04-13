@@ -19,13 +19,10 @@ public class SearchDefinition{
         this.searchAction = new SearchAction();
         this.userLoginAction = new UserLoginAction();
         
-        // Load test data once for all scenarios
         if (testData == null) {
             testData = ExcelReader.getSearchTestData();
         }
     }
-
-    // Background steps remain the same...
 
     @When("the user searches with valid input from excel")
     public void search_with_valid_input() {
@@ -75,7 +72,7 @@ public class SearchDefinition{
     @Then("the message {string} should be displayed")
     public void verify_message_displayed(String message) {
         Assert.assertTrue(searchAction.isNoProductMessageDisplayed());
-        // Optional: Verify message text matches exactly
-        // Assert.assertEquals(message, searchAction.getNoProductMessageText());
+       
+        Assert.assertEquals(message, searchAction.getNoProductMessageText());
     }
 }
