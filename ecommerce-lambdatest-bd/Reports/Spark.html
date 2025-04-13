@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Apr 12, 2025 01:27:46 pm</span></a>
+<a href="#"><span class="badge badge-primary">Apr 13, 2025 04:31:12 pm</span></a>
 </li>
 </ul>
 </div>
@@ -79,7 +79,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@Valid</a><a class="dropdown-item" href="#">@registration</a><a class="dropdown-item" href="#">@validCredentials</a><a class="dropdown-item" href="#">@InValidRegistrationInputs</a><a class="dropdown-item" href="#">@RegistrationWithoutAcceptingPrivacyPolicy</a><a class="dropdown-item" href="#">@invalidCredentials</a><a class="dropdown-item" href="#">@ValidRegistrationInputs</a><a class="dropdown-item" href="#">@Invalid</a>
+<a class="dropdown-item" href="#">@Invalid</a><a class="dropdown-item" href="#">@addSameProductMultipleQuantity</a><a class="dropdown-item" href="#">@validCredentials</a><a class="dropdown-item" href="#">@Valid</a><a class="dropdown-item" href="#">@RegistrationWithoutAcceptingPrivacyPolicy</a><a class="dropdown-item" href="#">@AddToCartWithoutSize</a><a class="dropdown-item" href="#">@invalidCredentials</a><a class="dropdown-item" href="#">@removeProduct</a><a class="dropdown-item" href="#">@addSingleProduct</a><a class="dropdown-item" href="#">@registration</a><a class="dropdown-item" href="#">@InValidRegistrationInputs</a><a class="dropdown-item" href="#">@ValidRegistrationInputs</a>
 </ul>
 </li>
 </ul>
@@ -90,9 +90,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Forgot Password Functionality</p>
+            <p class="name">Add to Cart Functionality on eCommerce Playground</p>
             <p class="text-sm">
-              <span>1:27:47 pm</span> / <span>00:00:19:762</span>
+              <span>4:31:13 pm</span> / <span>00:02:16:767</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -100,10 +100,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Forgot Password Functionality</h5>
-<span class='badge badge-success'>04.12.2025 1:27:47 pm</span>
-<span class='badge badge-danger'>04.12.2025 1:28:07 pm</span>
-<span class='badge badge-default'>00:00:19:762</span>
+<h5 class="test-status text-pass">Add to Cart Functionality on eCommerce Playground</h5>
+<span class='badge badge-success'>04.13.2025 4:31:13 pm</span>
+<span class='badge badge-danger'>04.13.2025 4:33:30 pm</span>
+<span class='badge badge-default'>00:02:16:767</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -116,7 +116,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>User requests a password reset link using valid email</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Add multiple quantities of the same product</div>
       </div>
     </div>
         <div class="collapse">
@@ -126,35 +126,33 @@
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.UserLoginDefinition.the_user_clicks_on_my_account()">
-                <span>When the user clicks on My Account</span>
+              <div class="step pass-bg" title="com.definitions.AddToCartDefinition.clickPhonesCategory()">
+                <span>When user clicks the Phones & PDAs category</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.UserLoginDefinition.clicks_on_login()">
-                <span>And clicks on login</span>
+              <div class="step pass-bg" title="com.definitions.AddToCartDefinition.selectProduct()">
+                <span>And user selects the iPod Nano product</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.ForgotPasswordDefinition.user_clicks_on_forgotten_password_link()">
-                <span>When user clicks on Forgotten Password link</span>
+              <div class="step pass-bg" title="com.definitions.AddToCartDefinition.SetQuantity()">
+                <span>And user sets the quantity to 3</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.ForgotPasswordDefinition.user_enters_valid_email_to_receive_reset_link(io.cucumber.datatable.DataTable)">
-                <span>And user enters valid email to receive reset link</span>
-      <div><table class='markup-table table '><tr><td>email</td></tr><tr><td>2k21eee65@kiot.ac.in</td></tr></table>
-      </div>
+              <div class="step pass-bg" title="com.definitions.AddToCartDefinition.clickAddToCart()">
+                <span>And user clicks on the Add to Cart button</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.ForgotPasswordDefinition.user_clicks_continue()">
-                <span>And user clicks continue</span>
+              <div class="step pass-bg" title="com.definitions.AddToCartDefinition.verifySuccessMessage(java.lang.String)">
+                <span>Then user should see a confirmation message stating "Success: You have added iPod Nano to your shopping cart!"</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.ForgotPasswordDefinition.user_should_see_an_email_sent_confirmation_message()">
-                <span>Then user should see an email sent confirmation message</span>
+              <div class="step pass-bg" title="com.definitions.AddToCartDefinition.verifyEmptyCartMessage(java.lang.String)">
+                <span>And the shopping cart should display "3 item(s)"</span>
       <div>
       </div>
               </div>
@@ -164,7 +162,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="18"><span class="badge log pass-bg mr-2">Pass</span>User requests a password reset link using invalid email</div>
+        <div class="node" id="6"><span class="badge log pass-bg mr-2">Pass</span>Add a single product to the cart</div>
       </div>
     </div>
         <div class="collapse">
@@ -174,35 +172,105 @@
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.UserLoginDefinition.the_user_clicks_on_my_account()">
-                <span>When the user clicks on My Account</span>
+              <div class="step pass-bg" title="com.definitions.AddToCartDefinition.clickPhonesCategory()">
+                <span>When user clicks the Phones & PDAs category</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.UserLoginDefinition.clicks_on_login()">
-                <span>And clicks on login</span>
+              <div class="step pass-bg" title="com.definitions.AddToCartDefinition.selectProduct()">
+                <span>And user selects the iPod Nano product</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.ForgotPasswordDefinition.user_clicks_on_forgotten_password_link()">
-                <span>When user clicks on Forgotten Password link</span>
+              <div class="step pass-bg" title="com.definitions.AddToCartDefinition.clickAddToCart()">
+                <span>And user clicks on the Add to Cart button</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.ForgotPasswordDefinition.user_enters_invalid_email_to_receive_reset_link(io.cucumber.datatable.DataTable)">
-                <span>And user enters Invalid email to receive reset link</span>
-      <div><table class='markup-table table '><tr><td>email</td></tr><tr><td>2k21eee33@kiot.ac.in</td></tr></table>
-      </div>
+              <div class="step pass-bg" title="com.definitions.AddToCartDefinition.verifySuccessMessage(java.lang.String)">
+                <span>Then user should see a confirmation message stating "Success: You have added iPod Nano to your shopping cart!"</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.ForgotPasswordDefinition.user_clicks_continue()">
-                <span>And user clicks continue</span>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Remove a product from the cart</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage()">
+                <span>Given the user is on the homepage</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.ForgotPasswordDefinition.user_should_see_an_error_message()">
-                <span>Then user should see an Error Message</span>
+              <div class="step pass-bg" title="com.definitions.AddToCartDefinition.clickPhonesCategory()">
+                <span>When user clicks the Phones & PDAs category</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.AddToCartDefinition.selectProduct()">
+                <span>And user selects the iPod Nano product</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.AddToCartDefinition.clickAddToCart()">
+                <span>And user clicks on the Add to Cart button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.AddToCartDefinition.viewShoppingCart()">
+                <span>When user views the shopping cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.AddToCartDefinition.removeiPodNano()">
+                <span>And user removes iPod Nano from the cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.AddToCartDefinition.verifyEmptyCartMessage(java.lang.String)">
+                <span>Then the shopping cart should display "Your shopping cart is empty!"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="18"><span class="badge log pass-bg mr-2">Pass</span>Scenario: User tries to add a product to cart without selecting size</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage()">
+                <span>Given the user is on the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.AddToCartDefinition.clickPhonesCategory()">
+                <span>When user clicks the Phones & PDAs category</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.AddToCartDefinition.SelectAppleCinema30()">
+                <span>And user selects the Apple Cinema 30 product</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.AddToCartDefinition.clickAddToCart()">
+                <span>And user clicks on the Add to Cart button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.AddToCartDefinition.sizeReq(java.lang.String)">
+                <span>Then user should see a message "Size required!"</span>
       <div>
       </div>
               </div>
@@ -217,178 +285,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Login Functionality</p>
-            <p class="text-sm">
-              <span>1:27:47 pm</span> / <span>00:00:18:338</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Login Functionality</h5>
-<span class='badge badge-success'>04.12.2025 1:27:47 pm</span>
-<span class='badge badge-danger'>04.12.2025 1:28:05 pm</span>
-<span class='badge badge-default'>00:00:18:338</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div>
-<div class="accordion mt-4">
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="4"><span class="badge log pass-bg mr-2">Pass</span>User tries to login with invalid credentials</div>
-      </div>
-    </div>
-        <div class="scenario_outline collapse">
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="5"><span class="badge log pass-bg mr-2">Pass</span>User tries to login with invalid credentials</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given the user is on the homepage</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When the user clicks on My Account</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And clicks on login</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And the user enters E-Mail "jee@gmail.com"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And the user enters Password "0987"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And the user clicks on the Login button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then the user should see the "Warning: No match for E-Mail Address and/or Password." and "check1"</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="6"><span class="badge log pass-bg mr-2">Pass</span>User tries to login with invalid credentials</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given the user is on the homepage</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When the user clicks on My Account</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And clicks on login</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And the user enters E-Mail "jee@gmail.com"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And the user enters Password ""</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And the user clicks on the Login button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then the user should see the "Warning: No match for E-Mail Address and/or Password." and "check2"</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>User tries to login with valid credentials</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage()">
-                <span>Given the user is on the homepage</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.UserLoginDefinition.the_user_clicks_on_my_account()">
-                <span>When the user clicks on My Account</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.UserLoginDefinition.clicks_on_login()">
-                <span>And clicks on login</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.UserLoginDefinition.the_user_enters_valid_credentials()">
-                <span>And the user enters valid credentials</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.UserLoginDefinition.the_user_clicks_on_the_login_button()">
-                <span>And the user clicks on the Login button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.UserLoginDefinition.the_user_should_see_the_my_account_page()">
-                <span>Then the user should see the My Account page</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="7"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
             <p class="name">User Registration</p>
             <p class="text-sm">
-              <span>1:27:47 pm</span> / <span>00:00:25:489</span>
+              <span>4:31:13 pm</span> / <span>00:02:16:469</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -397,10 +296,10 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">User Registration</h5>
-<span class='badge badge-success'>04.12.2025 1:27:47 pm</span>
-<span class='badge badge-danger'>04.12.2025 1:28:12 pm</span>
-<span class='badge badge-default'>00:00:25:489</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-success'>04.13.2025 4:31:13 pm</span>
+<span class='badge badge-danger'>04.13.2025 4:33:30 pm</span>
+<span class='badge badge-default'>00:02:16:469</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
@@ -412,14 +311,14 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>Register with valid inputs</div>
+        <div class="node" id="4"><span class="badge log pass-bg mr-2">Pass</span>Register with valid inputs</div>
       </div>
     </div>
         <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>Register with valid inputs</div>
+                  <div class="node" id="5"><span class="badge log pass-bg mr-2">Pass</span>Register with valid inputs</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -470,14 +369,14 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>Register with invalid inputs</div>
+        <div class="node" id="93"><span class="badge log pass-bg mr-2">Pass</span>Register with invalid inputs</div>
       </div>
     </div>
         <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>Register with invalid inputs</div>
+                  <div class="node" id="94"><span class="badge log pass-bg mr-2">Pass</span>Register with invalid inputs</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -526,7 +425,7 @@
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>Register with invalid inputs</div>
+                  <div class="node" id="96"><span class="badge log pass-bg mr-2">Pass</span>Register with invalid inputs</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -575,7 +474,7 @@
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="13"><span class="badge log pass-bg mr-2">Pass</span>Register with invalid inputs</div>
+                  <div class="node" id="99"><span class="badge log pass-bg mr-2">Pass</span>Register with invalid inputs</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -624,7 +523,7 @@
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>Register with invalid inputs</div>
+                  <div class="node" id="101"><span class="badge log pass-bg mr-2">Pass</span>Register with invalid inputs</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -675,14 +574,14 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="81"><span class="badge log pass-bg mr-2">Pass</span>Register with valid inputs</div>
+        <div class="node" id="103"><span class="badge log pass-bg mr-2">Pass</span>Register with valid inputs</div>
       </div>
     </div>
         <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="82"><span class="badge log pass-bg mr-2">Pass</span>Register with valid inputs</div>
+                  <div class="node" id="104"><span class="badge log pass-bg mr-2">Pass</span>Register with valid inputs</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -733,6 +632,302 @@
 </div>
           </div>
         </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Functionality</p>
+            <p class="text-sm">
+              <span>4:31:13 pm</span> / <span>00:02:16:799</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Functionality</h5>
+<span class='badge badge-success'>04.13.2025 4:31:13 pm</span>
+<span class='badge badge-danger'>04.13.2025 4:33:30 pm</span>
+<span class='badge badge-default'>00:02:16:799</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>User tries to login with invalid credentials</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>User tries to login with invalid credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user clicks on My Account</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks on login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user enters E-Mail "jee@gmail.com"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user enters Password ""</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user clicks on the Login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see the "Warning: No match for E-Mail Address and/or Password." and "check2"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="16"><span class="badge log pass-bg mr-2">Pass</span>User tries to login with invalid credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user clicks on My Account</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks on login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user enters E-Mail "jee@gmail.com"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user enters Password "0987"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user clicks on the Login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see the "Warning: No match for E-Mail Address and/or Password." and "check1"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="25"><span class="badge log pass-bg mr-2">Pass</span>User tries to login with valid credentials</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage()">
+                <span>Given the user is on the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.UserLoginDefinition.the_user_clicks_on_my_account()">
+                <span>When the user clicks on My Account</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.UserLoginDefinition.clicks_on_login()">
+                <span>And clicks on login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.UserLoginDefinition.the_user_enters_valid_credentials()">
+                <span>And the user enters valid credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.UserLoginDefinition.the_user_clicks_on_the_login_button()">
+                <span>And the user clicks on the Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.UserLoginDefinition.the_user_should_see_the_my_account_page()">
+                <span>Then the user should see the My Account page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Forgot Password Functionality</p>
+            <p class="text-sm">
+              <span>4:31:13 pm</span> / <span>00:01:34:432</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Forgot Password Functionality</h5>
+<span class='badge badge-success'>04.13.2025 4:31:13 pm</span>
+<span class='badge badge-danger'>04.13.2025 4:32:48 pm</span>
+<span class='badge badge-default'>00:01:34:432</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>User requests a password reset link using invalid email</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage()">
+                <span>Given the user is on the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.UserLoginDefinition.the_user_clicks_on_my_account()">
+                <span>When the user clicks on My Account</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.UserLoginDefinition.clicks_on_login()">
+                <span>And clicks on login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.ForgotPasswordDefinition.user_clicks_on_forgotten_password_link()">
+                <span>When user clicks on Forgotten Password link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.ForgotPasswordDefinition.user_enters_invalid_email_to_receive_reset_link(io.cucumber.datatable.DataTable)">
+                <span>And user enters Invalid email to receive reset link</span>
+      <div><table class='markup-table table '><tr><td>email</td></tr><tr><td>2k21eee33@kiot.ac.in</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.ForgotPasswordDefinition.user_clicks_continue()">
+                <span>And user clicks continue</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.ForgotPasswordDefinition.user_should_see_an_error_message()">
+                <span>Then user should see an Error Message</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="23"><span class="badge log pass-bg mr-2">Pass</span>User requests a password reset link using valid email</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage()">
+                <span>Given the user is on the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.UserLoginDefinition.the_user_clicks_on_my_account()">
+                <span>When the user clicks on My Account</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.UserLoginDefinition.clicks_on_login()">
+                <span>And clicks on login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.ForgotPasswordDefinition.user_clicks_on_forgotten_password_link()">
+                <span>When user clicks on Forgotten Password link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.ForgotPasswordDefinition.user_enters_valid_email_to_receive_reset_link(io.cucumber.datatable.DataTable)">
+                <span>And user enters valid email to receive reset link</span>
+      <div><table class='markup-table table '><tr><td>email</td></tr><tr><td>2k21eee65@kiot.ac.in</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.ForgotPasswordDefinition.user_clicks_continue()">
+                <span>And user clicks continue</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.ForgotPasswordDefinition.user_should_see_an_email_sent_confirmation_message()">
+                <span>Then user should see an email sent confirmation message</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
       </ul>
     </div>
   </div>
@@ -746,7 +941,7 @@
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">8</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">12</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -755,12 +950,12 @@
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@Valid</p>
+<p class="name">@Invalid</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@Valid</h4>
+<h4>@Invalid</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -774,11 +969,11 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:27:47 pm</td>
+<td>16:31:13 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>User requests a password reset link using valid email</a>
+<a href="#" class="linked" test-id='11' id='12'>User requests a password reset link using invalid email</a>
 <div class="">
-<span class="badge badge-default">Forgot Password Functionality.User requests a password reset link using valid email</span>
+<span class="badge badge-default">Forgot Password Functionality.User requests a password reset link using invalid email</span>
 </div>
 </td>
 </tr>
@@ -789,15 +984,15 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>6</span>
+<span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@registration</p>
-<p class="duration text-sm">6 tests</p>
+<p class="name">@addSameProductMultipleQuantity</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@registration</h4>
-<span status="pass" class='badge log pass-bg'>6 passed</span>
+<h4>@addSameProductMultipleQuantity</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -810,61 +1005,11 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:27:47 pm</td>
+<td>16:31:13 pm</td>
 <td>
-<a href="#" class="linked" test-id='7' id='9'>Register with valid inputs</a>
+<a href="#" class="linked" test-id='1' id='2'>Add multiple quantities of the same product</a>
 <div class="">
-<span class="badge badge-default">User Registration.Register with valid inputs</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:27:47 pm</td>
-<td>
-<a href="#" class="linked" test-id='7' id='11'>Register with invalid inputs</a>
-<div class="">
-<span class="badge badge-default">User Registration.Register with invalid inputs</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:27:47 pm</td>
-<td>
-<a href="#" class="linked" test-id='7' id='12'>Register with invalid inputs</a>
-<div class="">
-<span class="badge badge-default">User Registration.Register with invalid inputs</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:27:47 pm</td>
-<td>
-<a href="#" class="linked" test-id='7' id='13'>Register with invalid inputs</a>
-<div class="">
-<span class="badge badge-default">User Registration.Register with invalid inputs</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:27:47 pm</td>
-<td>
-<a href="#" class="linked" test-id='7' id='14'>Register with invalid inputs</a>
-<div class="">
-<span class="badge badge-default">User Registration.Register with invalid inputs</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:28:03 pm</td>
-<td>
-<a href="#" class="linked" test-id='7' id='82'>Register with valid inputs</a>
-<div class="">
-<span class="badge badge-default">User Registration.Register with valid inputs</span>
+<span class="badge badge-default">Add to Cart Functionality on eCommerce Playground.Add multiple quantities of the same product</span>
 </div>
 </td>
 </tr>
@@ -896,9 +1041,9 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:27:47 pm</td>
+<td>16:31:13 pm</td>
 <td>
-<a href="#" class="linked" test-id='3' id='15'>User tries to login with valid credentials</a>
+<a href="#" class="linked" test-id='8' id='25'>User tries to login with valid credentials</a>
 <div class="">
 <span class="badge badge-default">Login Functionality.User tries to login with valid credentials</span>
 </div>
@@ -911,15 +1056,15 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>4</span>
+<span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@InValidRegistrationInputs</p>
-<p class="duration text-sm">4 tests</p>
+<p class="name">@Valid</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@InValidRegistrationInputs</h4>
-<span status="pass" class='badge log pass-bg'>4 passed</span>
+<h4>@Valid</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -932,41 +1077,11 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:27:47 pm</td>
+<td>16:31:13 pm</td>
 <td>
-<a href="#" class="linked" test-id='7' id='11'>Register with invalid inputs</a>
+<a href="#" class="linked" test-id='11' id='23'>User requests a password reset link using valid email</a>
 <div class="">
-<span class="badge badge-default">User Registration.Register with invalid inputs</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:27:47 pm</td>
-<td>
-<a href="#" class="linked" test-id='7' id='12'>Register with invalid inputs</a>
-<div class="">
-<span class="badge badge-default">User Registration.Register with invalid inputs</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:27:47 pm</td>
-<td>
-<a href="#" class="linked" test-id='7' id='13'>Register with invalid inputs</a>
-<div class="">
-<span class="badge badge-default">User Registration.Register with invalid inputs</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:27:47 pm</td>
-<td>
-<a href="#" class="linked" test-id='7' id='14'>Register with invalid inputs</a>
-<div class="">
-<span class="badge badge-default">User Registration.Register with invalid inputs</span>
+<span class="badge badge-default">Forgot Password Functionality.User requests a password reset link using valid email</span>
 </div>
 </td>
 </tr>
@@ -998,11 +1113,47 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:28:03 pm</td>
+<td>16:32:50 pm</td>
 <td>
-<a href="#" class="linked" test-id='7' id='82'>Register with valid inputs</a>
+<a href="#" class="linked" test-id='3' id='104'>Register with valid inputs</a>
 <div class="">
 <span class="badge badge-default">User Registration.Register with valid inputs</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@AddToCartWithoutSize</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@AddToCartWithoutSize</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:31:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>Scenario: User tries to add a product to cart without selecting size</a>
+<div class="">
+<span class="badge badge-default">Add to Cart Functionality on eCommerce Playground.Scenario: User tries to add a product to cart without selecting size</span>
 </div>
 </td>
 </tr>
@@ -1034,9 +1185,9 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:27:47 pm</td>
+<td>16:31:13 pm</td>
 <td>
-<a href="#" class="linked" test-id='3' id='5'>User tries to login with invalid credentials</a>
+<a href="#" class="linked" test-id='8' id='10'>User tries to login with invalid credentials</a>
 <div class="">
 <span class="badge badge-default">Login Functionality.User tries to login with invalid credentials</span>
 </div>
@@ -1044,11 +1195,235 @@
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:27:47 pm</td>
+<td>16:31:13 pm</td>
 <td>
-<a href="#" class="linked" test-id='3' id='6'>User tries to login with invalid credentials</a>
+<a href="#" class="linked" test-id='8' id='16'>User tries to login with invalid credentials</a>
 <div class="">
 <span class="badge badge-default">Login Functionality.User tries to login with invalid credentials</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@removeProduct</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@removeProduct</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:31:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>Remove a product from the cart</a>
+<div class="">
+<span class="badge badge-default">Add to Cart Functionality on eCommerce Playground.Remove a product from the cart</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@addSingleProduct</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@addSingleProduct</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:31:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='6'>Add a single product to the cart</a>
+<div class="">
+<span class="badge badge-default">Add to Cart Functionality on eCommerce Playground.Add a single product to the cart</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">@registration</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@registration</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:31:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='5'>Register with valid inputs</a>
+<div class="">
+<span class="badge badge-default">User Registration.Register with valid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:32:33 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='94'>Register with invalid inputs</a>
+<div class="">
+<span class="badge badge-default">User Registration.Register with invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:32:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='96'>Register with invalid inputs</a>
+<div class="">
+<span class="badge badge-default">User Registration.Register with invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:32:48 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='99'>Register with invalid inputs</a>
+<div class="">
+<span class="badge badge-default">User Registration.Register with invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:32:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='101'>Register with invalid inputs</a>
+<div class="">
+<span class="badge badge-default">User Registration.Register with invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:32:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='104'>Register with valid inputs</a>
+<div class="">
+<span class="badge badge-default">User Registration.Register with valid inputs</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@InValidRegistrationInputs</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@InValidRegistrationInputs</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:32:33 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='94'>Register with invalid inputs</a>
+<div class="">
+<span class="badge badge-default">User Registration.Register with invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:32:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='96'>Register with invalid inputs</a>
+<div class="">
+<span class="badge badge-default">User Registration.Register with invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:32:48 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='99'>Register with invalid inputs</a>
+<div class="">
+<span class="badge badge-default">User Registration.Register with invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:32:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='101'>Register with invalid inputs</a>
+<div class="">
+<span class="badge badge-default">User Registration.Register with invalid inputs</span>
 </div>
 </td>
 </tr>
@@ -1080,47 +1455,11 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:27:47 pm</td>
+<td>16:31:13 pm</td>
 <td>
-<a href="#" class="linked" test-id='7' id='9'>Register with valid inputs</a>
+<a href="#" class="linked" test-id='3' id='5'>Register with valid inputs</a>
 <div class="">
 <span class="badge badge-default">User Registration.Register with valid inputs</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@Invalid</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@Invalid</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:27:47 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='18'>User requests a password reset link using invalid email</a>
-<div class="">
-<span class="badge badge-default">Forgot Password Functionality.User requests a password reset link using invalid email</span>
 </div>
 </td>
 </tr>
@@ -1141,19 +1480,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Apr 12, 2025 01:27:46 pm</h3>
+<h3>Apr 13, 2025 04:31:12 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Apr 12, 2025 01:28:12 pm</h3>
+<h3>Apr 13, 2025 04:33:30 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>3</h3>
+<h3>4</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -1176,7 +1515,7 @@
 </div>
 <div class="card-footer">
 <div><small data-tooltip='100%'>
-<b>3</b> features passed
+<b>4</b> features passed
 </small>
 </div>
 <div>
@@ -1198,7 +1537,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>11</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>15</b> scenarios passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -1218,7 +1557,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>82</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>106</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -1237,7 +1576,7 @@
 </div></div>
 <script>
 var timeline = {
-"Forgot Password Functionality":19.762,"Login Functionality":18.338,"User Registration":25.489
+"Add to Cart Functionality on eCommerce Playground":136.767,"User Registration":136.469,"Login Functionality":136.799,"Forgot Password Functionality":94.432
 };
 </script>
 <div class="row">
@@ -1247,7 +1586,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@Valid</td>
+<td>@Invalid</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -1255,8 +1594,8 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@registration</td>
-<td>6</td>
+<td>@addSameProductMultipleQuantity</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1271,8 +1610,8 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@InValidRegistrationInputs</td>
-<td>4</td>
+<td>@Valid</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1280,6 +1619,14 @@ var timeline = {
 </tr>
 <tr>
 <td>@RegistrationWithoutAcceptingPrivacyPolicy</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@AddToCartWithoutSize</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -1295,7 +1642,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@ValidRegistrationInputs</td>
+<td>@removeProduct</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -1303,7 +1650,31 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@Invalid</td>
+<td>@addSingleProduct</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@registration</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@InValidRegistrationInputs</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@ValidRegistrationInputs</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -1337,18 +1708,18 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 3,
+passParent: 4,
 failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 11,
+passChild: 15,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 82,
+passGrandChild: 106,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
