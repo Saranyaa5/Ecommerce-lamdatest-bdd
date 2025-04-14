@@ -26,8 +26,8 @@ Scenario: To checkout the shopping cart as a guest user
   And clicks continue from the checkout page
   When the user clicks confirm order
   Then the order success message should be displayed
-  
-  
+
+
   @CheckOutEmptyCart
   Scenario: To checkout the empty shopping cart as a registered user
     #When the user clicks on My Account
@@ -36,9 +36,8 @@ Scenario: To checkout the shopping cart as a guest user
     #And the user clicks on the Login button
   And user views the shopping cart
   Then the user should see the message cart is empty
-  
+
   @CheckoutAsRegisteredUser
-  
   Scenario: To checkout the  cart as a registered user
     When the user clicks on My Account
     And clicks on login
@@ -61,7 +60,7 @@ Scenario: To checkout the shopping cart as a guest user
   And clicks continue from the checkout page
   When the user clicks confirm order
   Then the order success message should be displayed
-  
+
    @CheckoutWithExistingAddress
   Scenario: To checkout the  cart as registered user with existing address
     When the user clicks on My Account
@@ -78,5 +77,3 @@ Scenario: To checkout the shopping cart as a guest user
   And clicks continue from the checkout page
   When the user clicks confirm order
   Then the order success message should be displayed
-  
-  
