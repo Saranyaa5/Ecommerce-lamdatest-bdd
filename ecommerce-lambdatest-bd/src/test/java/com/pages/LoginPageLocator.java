@@ -27,7 +27,8 @@ public class LoginPageLocator {
     @FindBy(xpath="//input[@class='btn btn-primary']")
     public WebElement loginButton;
 
-    @FindBy(xpath="//h2[text()='My Account']")
+//    @FindBy(xpath="//h2[text()='My Account']")
+    @FindBy(xpath="//*[@id=\"content\"]/div[1]/h2")
     public WebElement titleMyAccount;
     
     @FindBy(xpath = "//div[contains(@class,'alert-danger')]")

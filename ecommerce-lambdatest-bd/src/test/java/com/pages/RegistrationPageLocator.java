@@ -55,7 +55,7 @@ public class RegistrationPageLocator {
     public WebElement PasswordMisMathError;
     
     
-    @FindBy(xpath="//*[@id=\"account-register\"]/div[1]/text()")
+    @FindBy(xpath="//*[@id=\"account-register\"]/div[1]")
     public WebElement UncheckedError;
     
 }
