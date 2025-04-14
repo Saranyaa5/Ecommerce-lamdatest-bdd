@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>23/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>18/10/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Apr 13 23:00:48 IST 2025</td>
+<td>Started on:</td><td>Mon Apr 14 15:34:33 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>58 seconds (58335 ms)</td>
+<tr><td>Total time:</td><td>173 seconds (173094 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,615 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Login Functionality"</td>
+<td><div><pre>java.lang.AssertionError: Check1 Failed: Expected warning message not displayed expected [Warning: No match for E-Mail Address and/or Password.] but found [Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.]
+	at com.definitions.UserLoginDefinition.the_user_should_see_the_and(UserLoginDefinition.java:57)
+	at ✽.the user should see the &quot;Warning: No match for E-Mail Address and/or Password.&quot; and &quot;check1&quot;(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/UserLogin.feature:19)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace651601830", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace651601830'><pre>java.lang.AssertionError: Check1 Failed: Expected warning message not displayed expected [Warning: No match for E-Mail Address and/or Password.] but found [Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.definitions.UserLoginDefinition.the_user_should_see_the_and(UserLoginDefinition.java:57)
+	at ✽.the user should see the &quot;Warning: No match for E-Mail Address and/or Password.&quot; and &quot;check1&quot;(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/UserLogin.feature:19)
+</pre></div></td>
+<td>31</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with valid inputs", "User Registration Functionality"</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4a46604da54ab29a6a2501d5596aac44, getElementText {id=f.8ADEEC32F09A78B8510EB0FD3559B170.d.2FA250810506810BD8F799FB18371ECF.e.151}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\admi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62716/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4a46604da54ab29a6a2501d5596aac44)] -&gt; xpath: //*[@id=&quot;account-register&quot;]/div[1]]
+Session ID: 4a46604da54ab29a6a2501d5596aac44
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy60.getText(Unknown Source)
+	at com.actions.UserRegistrationAction.uncheckedError(UserRegistrationAction.java:75)
+	at com.definitions.UserRegistrationDefinition.the_user_should_see_for(UserRegistrationDefinition.java:99)
+	at ✽.the user should see &quot;Warning: You must agree to the Privacy Policy!&quot; for &quot;Not checking privacy policy&quot;(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/UserRegistration.feature:41)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace528808820", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace528808820'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4a46604da54ab29a6a2501d5596aac44, getElementText {id=f.8ADEEC32F09A78B8510EB0FD3559B170.d.2FA250810506810BD8F799FB18371ECF.e.151}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\admi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62716/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4a46604da54ab29a6a2501d5596aac44)] -&gt; xpath: //*[@id=&quot;account-register&quot;]/div[1]]
+Session ID: 4a46604da54ab29a6a2501d5596aac44
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy60.getText(Unknown Source)
+	at com.actions.UserRegistrationAction.uncheckedError(UserRegistrationAction.java:75)
+	at com.definitions.UserRegistrationDefinition.the_user_should_see_for(UserRegistrationDefinition.java:99)
+	at ✽.the user should see &quot;Warning: You must agree to the Privacy Policy!&quot; for &quot;Not checking privacy policy&quot;(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/UserRegistration.feature:41)
+</pre></div></td>
+<td>22</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Change user password", "User Account Management"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@id=&apos;content&apos;]/div[1]/div/div/div[2]/a&apos; (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.actions.UserAccountAction.changePassword(UserAccountAction.java:45)
+	at com.definitions.UserAccountDefinition.the_user_clicks_the_edit_account_info_page(UserAccountDefinition.java:21)
+	at ✽.the user clicks the &quot;Change your password&quot; page(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/UserAccountManagement.feature:19)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;content&apos;]/div[1]/div/div/div[2]/a&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4a45cde5f9986ca44db9125df08094f7, findElement {using=xpath, value=//*[@id=&apos;content&apos;]/div[1]/div/div/div[2]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\admi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61931}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61931/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a45cde5f9986ca44db9125df08094f7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy60.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 3 more
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1965705663", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1965705663'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@id=&apos;content&apos;]/div[1]/div/div/div[2]/a&apos; (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.actions.UserAccountAction.changePassword(UserAccountAction.java:45)
+	at com.definitions.UserAccountDefinition.the_user_clicks_the_edit_account_info_page(UserAccountDefinition.java:21)
+	at ✽.the user clicks the &quot;Change your password&quot; page(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/UserAccountManagement.feature:19)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;content&apos;]/div[1]/div/div/div[2]/a&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4a45cde5f9986ca44db9125df08094f7, findElement {using=xpath, value=//*[@id=&apos;content&apos;]/div[1]/div/div/div[2]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\admi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61931}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61931/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a45cde5f9986ca44db9125df08094f7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy60.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 3 more
+</pre></div></td>
+<td>68</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit user account details", "User Account Management"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;content&apos;]/form/div/div[2]/input&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d0e6b390ccdd51117d238b346ef19bf1, findElement {using=xpath, value=//*[@id=&apos;content&apos;]/form/div/div[2]/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\admi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61900}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61900/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d0e6b390ccdd51117d238b346ef19bf1
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
+	at com.actions.UserAccountAction.Continue(UserAccountAction.java:37)
+	at com.definitions.UserAccountDefinition.clicks_on_the_continue_button(UserAccountDefinition.java:41)
+	at ✽.clicks on the Continue button(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/UserAccountManagement.feature:14)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace614309995", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace614309995'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;content&apos;]/form/div/div[2]/input&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d0e6b390ccdd51117d238b346ef19bf1, findElement {using=xpath, value=//*[@id=&apos;content&apos;]/form/div/div[2]/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\admi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61900}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61900/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d0e6b390ccdd51117d238b346ef19bf1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
+	at com.actions.UserAccountAction.Continue(UserAccountAction.java:37)
+	at com.definitions.UserAccountDefinition.clicks_on_the_continue_button(UserAccountDefinition.java:41)
+	at ✽.clicks on the Continue button(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/UserAccountManagement.feature:14)
+</pre></div></td>
+<td>50</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Login Functionality"</td>
+<td><div><pre>java.lang.AssertionError: Check2 Failed: Empty password warning not displayed expected [Warning: No match for E-Mail Address and/or Password.] but found [Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.]
+	at com.definitions.UserLoginDefinition.the_user_should_see_the_and(UserLoginDefinition.java:63)
+	at ✽.the user should see the &quot;Warning: No match for E-Mail Address and/or Password.&quot; and &quot;check2&quot;(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/UserLogin.feature:19)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1585104716", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1585104716'><pre>java.lang.AssertionError: Check2 Failed: Empty password warning not displayed expected [Warning: No match for E-Mail Address and/or Password.] but found [Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.definitions.UserLoginDefinition.the_user_should_see_the_and(UserLoginDefinition.java:63)
+	at ✽.the user should see the &quot;Warning: No match for E-Mail Address and/or Password.&quot; and &quot;check2&quot;(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/UserLogin.feature:19)
+</pre></div></td>
+<td>49</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with valid credentials and logs out", "Login Functionality"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;column-right&quot;]/div/a[14]&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2a86a8744a8c186e4bf6d0215e4a710c, findElement {using=xpath, value=//*[@id=&quot;column-right&quot;]/div/a[14]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\admi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62333}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62333/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a86a8744a8c186e4bf6d0215e4a710c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
+	at com.actions.UserLoginAction.clickLogout(UserLoginAction.java:74)
+	at com.definitions.UserLoginDefinition.the_user_logs_out(UserLoginDefinition.java:86)
+	at ✽.the user logs out(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/UserLogin.feature:34)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1486123724", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1486123724'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;column-right&quot;]/div/a[14]&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2a86a8744a8c186e4bf6d0215e4a710c, findElement {using=xpath, value=//*[@id=&quot;column-right&quot;]/div/a[14]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\admi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62333}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62333/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a86a8744a8c186e4bf6d0215e4a710c
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
+	at com.actions.UserLoginAction.clickLogout(UserLoginAction.java:74)
+	at com.definitions.UserLoginDefinition.the_user_logs_out(UserLoginDefinition.java:86)
+	at ✽.the user logs out(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/UserLogin.feature:34)
+</pre></div></td>
+<td>45</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Subscribe or Unsubscribe from newsletter", "User Account Management"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@id=&apos;content&apos;]/div[1]/div/div/div[5]/a&apos; (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.actions.UserAccountAction.ClickNewsLetter(UserAccountAction.java:81)
+	at com.definitions.UserAccountDefinition.the_user_clicks_the_edit_account_info_page(UserAccountDefinition.java:27)
+	at ✽.the user clicks the &quot;Newsletter&quot; page(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/UserAccountManagement.feature:33)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;content&apos;]/div[1]/div/div/div[5]/a&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d2092d3dfec42210cafd115d25321076, findElement {using=xpath, value=//*[@id=&apos;content&apos;]/div[1]/div/div/div[5]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\admi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61960}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61960/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d2092d3dfec42210cafd115d25321076
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy60.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 3 more
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace209576484", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace209576484'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@id=&apos;content&apos;]/div[1]/div/div/div[5]/a&apos; (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.actions.UserAccountAction.ClickNewsLetter(UserAccountAction.java:81)
+	at com.definitions.UserAccountDefinition.the_user_clicks_the_edit_account_info_page(UserAccountDefinition.java:27)
+	at ✽.the user clicks the &quot;Newsletter&quot; page(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/UserAccountManagement.feature:33)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;content&apos;]/div[1]/div/div/div[5]/a&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d2092d3dfec42210cafd115d25321076, findElement {using=xpath, value=//*[@id=&apos;content&apos;]/div[1]/div/div/div[5]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\admi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61960}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61960/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d2092d3dfec42210cafd115d25321076
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy60.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 3 more
+</pre></div></td>
+<td>73</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Subscribe or Unsubscribe from newsletter", "User Account Management"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@id=&apos;content&apos;]/div[1]/div/div/div[5]/a&apos; (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.actions.UserAccountAction.ClickNewsLetter(UserAccountAction.java:81)
+	at com.definitions.UserAccountDefinition.the_user_clicks_the_edit_account_info_page(UserAccountDefinition.java:27)
+	at ✽.the user clicks the &quot;Newsletter&quot; page(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/UserAccountManagement.feature:33)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;content&apos;]/div[1]/div/div/div[5]/a&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b535ad2f20ce4ebd9326ff48fcd4a83c, findElement {using=xpath, value=//*[@id=&apos;content&apos;]/div[1]/div/div/div[5]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\admi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62082}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62082/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b535ad2f20ce4ebd9326ff48fcd4a83c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy60.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 3 more
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1485044554", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1485044554'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@id=&apos;content&apos;]/div[1]/div/div/div[5]/a&apos; (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.actions.UserAccountAction.ClickNewsLetter(UserAccountAction.java:81)
+	at com.definitions.UserAccountDefinition.the_user_clicks_the_edit_account_info_page(UserAccountDefinition.java:27)
+	at ✽.the user clicks the &quot;Newsletter&quot; page(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/UserAccountManagement.feature:33)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;content&apos;]/div[1]/div/div/div[5]/a&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b535ad2f20ce4ebd9326ff48fcd4a83c, findElement {using=xpath, value=//*[@id=&apos;content&apos;]/div[1]/div/div/div[5]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\admi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62082}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62082/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b535ad2f20ce4ebd9326ff48fcd4a83c
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy60.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 3 more
+</pre></div></td>
+<td>67</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with valid credentials", "Login Functionality"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[text()=&apos;My Account&apos;]&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9559c97dfa8ad218449f7eb35fb03c67, findElement {using=xpath, value=//h2[text()=&apos;My Account&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\admi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62107/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9559c97dfa8ad218449f7eb35fb03c67
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy60.isDisplayed(Unknown Source)
+	at com.actions.UserLoginAction.isMyAccountPageDisplayed(UserLoginAction.java:66)
+	at com.definitions.UserLoginDefinition.the_user_should_see_the_my_account_page(UserLoginDefinition.java:37)
+	at ✽.the user should see the My Account page(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/UserLogin.feature:12)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace320794389", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace320794389'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[text()=&apos;My Account&apos;]&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9559c97dfa8ad218449f7eb35fb03c67, findElement {using=xpath, value=//h2[text()=&apos;My Account&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\admi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62107/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9559c97dfa8ad218449f7eb35fb03c67
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy60.isDisplayed(Unknown Source)
+	at com.actions.UserLoginAction.isMyAccountPageDisplayed(UserLoginAction.java:66)
+	at com.definitions.UserLoginDefinition.the_user_should_see_the_my_account_page(UserLoginDefinition.java:37)
+	at ✽.the user should see the My Account page(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/UserLogin.feature:12)
+</pre></div></td>
+<td>34</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Modify the wishlist by removing a product", "User Account Management"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@id=&apos;content&apos;]/div[1]/div/div/div[4]/a&apos; (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.actions.UserAccountAction.ModifyWishlist(UserAccountAction.java:63)
+	at com.definitions.UserAccountDefinition.the_user_clicks_the_edit_account_info_page(UserAccountDefinition.java:24)
+	at ✽.the user clicks the &quot;Modify your wish list&quot; page(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/UserAccountManagement.feature:26)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;content&apos;]/div[1]/div/div/div[4]/a&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c51081a7cc8b3c451d6ffa9b91c4093c, findElement {using=xpath, value=//*[@id=&apos;content&apos;]/div[1]/div/div/div[4]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\admi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61971}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61971/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c51081a7cc8b3c451d6ffa9b91c4093c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy60.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 3 more
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1327384641", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1327384641'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@id=&apos;content&apos;]/div[1]/div/div/div[4]/a&apos; (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.actions.UserAccountAction.ModifyWishlist(UserAccountAction.java:63)
+	at com.definitions.UserAccountDefinition.the_user_clicks_the_edit_account_info_page(UserAccountDefinition.java:24)
+	at ✽.the user clicks the &quot;Modify your wish list&quot; page(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/UserAccountManagement.feature:26)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;content&apos;]/div[1]/div/div/div[4]/a&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c51081a7cc8b3c451d6ffa9b91c4093c, findElement {using=xpath, value=//*[@id=&apos;content&apos;]/div[1]/div/div/div[4]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\admi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61971}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61971/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c51081a7cc8b3c451d6ffa9b91c4093c
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy60.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 3 more
+</pre></div></td>
+<td>67</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,119 +685,94 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality with invalid inputs", "Search functionality"</td>
-<td></td>
-<td>21</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Login Functionality"</td>
-<td></td>
-<td>10</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with valid inputs", "User Registration Functionality"</td>
 <td></td>
-<td>12</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality by category as input", "Search functionality"</td>
-<td></td>
-<td>9</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add multiple quantities of the same product", "Add to Cart Functionality on eCommerce Playground"</td>
-<td></td>
-<td>21</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with valid credentials and logs out", "Login Functionality"</td>
-<td></td>
-<td>15</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with valid credentials", "Login Functionality"</td>
-<td></td>
-<td>10</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "User Registration Functionality"</td>
-<td></td>
-<td>10</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with valid inputs", "User Registration Functionality"</td>
-<td></td>
-<td>11</td>
+<td>40</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 <tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality with unnecessary indentation in search", "Search functionality"</td>
 <td></td>
-<td>18</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Login Functionality"</td>
-<td></td>
-<td>9</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality with case sensitive inputs", "Search functionality"</td>
-<td></td>
-<td>17</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Remove a product from the cart", "Add to Cart Functionality on eCommerce Playground"</td>
-<td></td>
-<td>55</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality with valid inputs", "Search functionality"</td>
-<td></td>
-<td>17</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Login Functionality"</td>
-<td></td>
-<td>9</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "User Registration Functionality"</td>
-<td></td>
-<td>10</td>
+<td>74</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 <tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Scenario: User tries to add a product to cart without selecting size", "Add to Cart Functionality on eCommerce Playground"</td>
 <td></td>
-<td>21</td>
+<td>65</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "User Registration Functionality"</td>
+<td></td>
+<td>36</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 <tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User requests a password reset link using invalid email", "Forgot Password Functionality"</td>
 <td></td>
-<td>20</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a single product to the cart", "Add to Cart Functionality on eCommerce Playground"</td>
-<td></td>
-<td>20</td>
+<td>87</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 <tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "User Registration Functionality"</td>
 <td></td>
-<td>9</td>
+<td>19</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 <tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User requests a password reset link using valid email", "Forgot Password Functionality"</td>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "User Registration Functionality"</td>
 <td></td>
 <td>23</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 <tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add multiple quantities of the same product", "Add to Cart Functionality on eCommerce Playground"</td>
+<td></td>
+<td>65</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Login Functionality"</td>
 <td></td>
-<td>10</td>
+<td>48</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Remove a product from the cart", "Add to Cart Functionality on eCommerce Playground"</td>
+<td></td>
+<td>100</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 <tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "User Registration Functionality"</td>
 <td></td>
-<td>11</td>
+<td>22</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User requests a password reset link using valid email", "Forgot Password Functionality"</td>
+<td></td>
+<td>72</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a single product to the cart", "Add to Cart Functionality on eCommerce Playground"</td>
+<td></td>
+<td>89</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality by category as input", "Search functionality"</td>
+<td></td>
+<td>36</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality with valid inputs", "Search functionality"</td>
+<td></td>
+<td>63</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality with invalid inputs", "Search functionality"</td>
+<td></td>
+<td>62</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality with case sensitive inputs", "Search functionality"</td>
+<td></td>
+<td>64</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Login Functionality"</td>
+<td></td>
+<td>48</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 </table><p>
 </body>
