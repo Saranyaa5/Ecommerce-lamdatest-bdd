@@ -5,4 +5,10 @@
             <class name="com.runner.RunnerTestNg"/>
         </classes>
     </test> <!-- Test -->
+    <test name="Test2">
+        <classes>
+            <class name="com.runner.RunnerTestNg2"/>
+        </classes>
+    </test>
 </suite> <!-- Suite -->
+

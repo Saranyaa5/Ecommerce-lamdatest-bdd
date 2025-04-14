@@ -6,34 +6,44 @@ import org.openqa.selenium.support.FindBy;
 
 public class CheckOutPageLocator {
 
+	 @FindBy(xpath = "//input[@placeholder='Search' or @name='search']")
+	    public WebElement searchbox;
+	    
+	    // Search Button
+	    @FindBy(xpath = "//button[contains(text(),'Search')]")
+	    public WebElement searchbutton;
+	    
+	@FindBy(xpath="//*[@id=\"mz-product-grid-image-47-212469\"]/div/div[1]/img")
+	public WebElement productImage;
 	
 	
-	@FindBy(xpath="//*[@id=\"input-account-guest\"]")
+	@FindBy(xpath="//*[@id=\"content\"]/div[2]/a[2]")
+	public WebElement CheckoutFromCart;
+	
+	@FindBy(xpath="//*[@id=\"form-checkout\"]/div/div[1]/div/div[1]/div/div[3]")
 	public WebElement guestUser;
 	
-	@FindBy(id="input-payment-firstname")
-	public WebElement paymentFname;
-	
-	@FindBy(id="input-payment-lastname")
-	public WebElement paymentLname;
-	
-	@FindBy(id="input-payment-email")
-	public WebElement paymentemail;
-	
-	@FindBy(id="input-payment-telephone")
-	public WebElement paymentTelephone;
-	
-	@FindBy(id="input-payment-company")
-	public WebElement paymentcompany;
-	
-	@FindBy(id="input-payment-address-1")
-	public WebElement paymentadd;
-	
-	@FindBy(id="input-payment-postcode")
-	public WebElement paymentpostcode;
-	
-	@FindBy(id="input-payment-city")
-	public WebElement paymentcity;
+	@FindBy(xpath = "//input[@id='input-payment-firstname']")
+    public WebElement paymentFname;
+    
+    @FindBy(xpath = "//input[@id='input-payment-lastname']")
+    public WebElement paymentLname;
+    
+    @FindBy(xpath = "//input[@id='input-payment-email']")
+    public WebElement paymentEmail;
+    
+    @FindBy(xpath = "//input[@id='input-payment-telephone']")
+    public WebElement paymentTelephone;
+    
+    // Address Information Section
+    @FindBy(xpath = "//input[@id='input-payment-address-1']")
+    public WebElement paymentAddress;
+    
+    @FindBy(xpath = "//input[@id='input-payment-city']")
+    public WebElement paymentCity;
+    
+    @FindBy(xpath = "//input[@id='input-payment-postcode']")
+    public WebElement paymentPostcode;
 	
 	@FindBy(xpath="//*[@id=\"form-checkout\"]/div/div[2]/div/div[5]/label")
 	public WebElement paymentCheckBox;
@@ -41,26 +51,37 @@ public class CheckOutPageLocator {
 	
 	@FindBy(xpath="//button[@id='button-save']")
 	public WebElement continuePayment;
+	// Dropdown Elements
+    @FindBy(xpath = "//select[@id='input-payment-country']")
+    public WebElement countryDropdown;
+    
+    @FindBy(xpath = "//select[@id='input-payment-zone']")
+    public WebElement regionDropdown;
+    
+    @FindBy(xpath = "//*[@id=\"form-checkout\"]/div/div[2]/div/div[5]/label")
+    public WebElement termsCheckbox;
+    
+    @FindBy(xpath="//*[@id='button-save']")
+    public WebElement continueButton;
+    
+    @FindBy(xpath="//*[@id=\"button-confirm\"]")
+    public WebElement confirmOrder;
+    
+    @FindBy(xpath="//*[@id=\"content\"]/p[2]")
+    public WebElement orderSuccessMessage;
+    
+    @FindBy(xpath="//*[@id=\"form-checkout\"]/div[1]")
+    public WebElement checkBoxWarn;
+    
+    @FindBy(xpath="//*[@id=\"content\"]/p")
+    public WebElement emptyCartMessage;
+    
+    @FindBy(xpath="//*[@id=\"payment-address\"]/div[1]/div[1]")
+    public WebElement ExistingAdd;
+    
+    @FindBy(xpath="//*[@id=\"payment-address\"]/div[2]/div/label")
+    public WebElement newAdd;
+  //*[@id="payment-address"]/div[2]/div
 	
-	 public By shoppingCartIcon = By.cssSelector("div.icon.svg-icon > svg > use[xlink\\:href='#svg6aa26e8645e131bc88c5bc9fbe9d4bbc']");
-	    public By checkoutButton = By.xpath("//button[contains(text(), 'Checkout') or contains(., 'Checkout')]");
-	    
-	    @FindBy(id = "input-payment-country")
-	    WebElement countryDropdown;
-
-	    public WebElement getCountryDropdown() {
-	        return countryDropdown;
-	    }
-	    
-	   @FindBy(xpath="//button[@id='button-confirm']")
-	   public WebElement confirmOrder;
-	   
-	   @FindBy(xpath="//*[@id=\"content\"]/p[2]")
-	   public WebElement sccessPlacedOrderMsg;
-	   
-	   @FindBy(xpath="//*[@id=\"content\"]/p")
-	   public WebElement shoppingCartEmpty;
-	
-	
-	
+  //*[@id="payment-address"]/div[2]/div/label
 }

@@ -72,6 +72,8 @@ public class UserRegistrationAction {
     	return registrationLocators.PasswordMisMathError.getText();
     }
     public String uncheckedError() {
+    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(20));
+	    wait.until(ExpectedConditions.visibilityOf(registrationLocators.UncheckedError));
     	return registrationLocators.UncheckedError.getText();
     }
     
