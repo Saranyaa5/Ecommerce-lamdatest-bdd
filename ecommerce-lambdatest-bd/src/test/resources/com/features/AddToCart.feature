@@ -9,7 +9,7 @@ Feature: Add to Cart Functionality on eCommerce Playground
     And user selects the iPod Nano product
     And user clicks on the Add to Cart button
     Then user should see a confirmation message stating "Success: You have added iPod Nano to your shopping cart!"
-    
+      
     
       @removeProduct
   Scenario: Remove a product from the cart
