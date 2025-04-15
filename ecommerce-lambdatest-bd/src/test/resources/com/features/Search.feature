@@ -1,13 +1,11 @@
 Feature: Search functionality
 
   Background:
-    Given the user is on the homepage
-    #When the user clicks on My Account
-    #And clicks on login
-    #And the user enters valid credentials
-    #And the user clicks on the Login button
-    #Then the user should see the My Account page
-
+     Given the user is on the homepage  
+    When the user clicks on My Account.  
+    And clicks the register button  
+    Then the user should see the registration page  
+    
   @ValidSearchInputs
   Scenario: Search functionality with valid inputs
     When the user searches with valid input from excel

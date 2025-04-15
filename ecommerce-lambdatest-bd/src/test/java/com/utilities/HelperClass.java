@@ -108,10 +108,11 @@ public class HelperClass {
 
         if (browser.equalsIgnoreCase("chrome")) {
             ChromeOptions options = new ChromeOptions();
-//         options.addArguments("--headless");
+
             options.addArguments("--disable-features=PasswordLeakDetection");
             options.addArguments("--incognito");
-         //   options.addArguments("--headless");
+
+            options.addArguments("--headless");
             localDriver = new ChromeDriver(options);
         } else if (browser.equalsIgnoreCase("edge")) {
             EdgeOptions options = new EdgeOptions();

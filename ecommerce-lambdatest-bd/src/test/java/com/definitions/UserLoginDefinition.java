@@ -83,7 +83,7 @@ public class UserLoginDefinition {
     	
     	@Then("the user logs out")
     	public void the_user_logs_out() {
-    		 userLoginAction.clickLogout();
+    	 userLoginAction.clickLogout();
     	}
 
     	@Then("the user should see the Account Logout page")
@@ -94,4 +94,4 @@ public class UserLoginDefinition {
     	    }
     	}
 
-    
+

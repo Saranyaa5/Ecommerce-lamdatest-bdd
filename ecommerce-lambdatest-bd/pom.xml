@@ -8,7 +8,7 @@
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>RELEASE</version>
+    <version>4.31.0</version>
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/org.testng/testng -->
@@ -127,6 +127,4 @@
     </plugins>
 
   </build>
-
-
 </project>

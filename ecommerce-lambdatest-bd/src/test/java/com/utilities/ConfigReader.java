@@ -34,7 +34,7 @@ public class ConfigReader {
     private static Properties prop = new Properties();
 
     public static void loadProperties(String filePath) {
-      
+
         try (InputStream input = ConfigReader.class.getClassLoader().getResourceAsStream(filePath)) {
             if (input != null) {
                 prop.load(input);
@@ -44,7 +44,6 @@ public class ConfigReader {
             e.printStackTrace();
         }
 
-        
         try (InputStream input = new FileInputStream(Paths.get(filePath).toFile())) {
             prop.load(input);
         } catch (IOException e) {

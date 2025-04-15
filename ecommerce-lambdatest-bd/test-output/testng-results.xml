@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+=======
+<<<<<<< HEAD
 <testng-results ignored="0" total="29" passed="25" failed="4" skipped="0">
 =======
 <testng-results ignored="0" total="34" passed="22" failed="12" skipped="0">
 >>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
+>>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
+  <suite started-at="2025-04-15T15:20:30 IST" name="Suite" finished-at="2025-04-15T15:21:06 IST" duration-ms="36013">
+=======
 <<<<<<< HEAD
   <suite started-at="2025-04-15T15:20:09 IST" name="Default suite" finished-at="2025-04-15T15:22:18 IST" duration-ms="129465">
 =======
   <suite started-at="2025-04-15T15:07:30 IST" name="Suite" finished-at="2025-04-15T15:18:52 IST" duration-ms="681435">
+>>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
 >>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
     <groups>
       <group name="cucumber">
@@ -17,27 +25,42 @@
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
 =======
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@58a9760d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+<<<<<<< HEAD
+=======
+>>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
 >>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
       </group> <!-- cucumber -->
     </groups>
+<<<<<<< HEAD
+    <test started-at="2025-04-15T15:20:30 IST" name="Test" finished-at="2025-04-15T15:21:06 IST" duration-ms="36013">
+=======
 <<<<<<< HEAD
     <test started-at="2025-04-15T15:20:09 IST" name="Default test" finished-at="2025-04-15T15:22:18 IST" duration-ms="129465">
 =======
     <test started-at="2025-04-15T15:07:30 IST" name="Test" finished-at="2025-04-15T15:18:52 IST" duration-ms="681435">
 >>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
+>>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
       <class name="com.runner.RunnerTestNg">
+<<<<<<< HEAD
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.RunnerTestNg@58a9760d]" started-at="2025-04-15T15:20:30 IST" name="setUpClass" finished-at="2025-04-15T15:20:32 IST" duration-ms="1915" status="PASS">
+=======
 <<<<<<< HEAD
         <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-15T15:20:09 IST" name="setUpClass" finished-at="2025-04-15T15:20:10 IST" duration-ms="1471" status="PASS">
 =======
         <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.RunnerTestNg@58a9760d]" started-at="2025-04-15T15:07:30 IST" name="setUpClass" finished-at="2025-04-15T15:07:31 IST" duration-ms="886" status="PASS">
 >>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
+>>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
           <params>
             <param index="0">
               <value>
 <<<<<<< HEAD
+                <![CDATA[org.testng.TestRunner@6392827e]]>
+=======
+<<<<<<< HEAD
                 <![CDATA[org.testng.TestRunner@29079032]]>
 =======
                 <![CDATA[org.testng.TestRunner@342c38f8]]>
+>>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
 >>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
               </value>
             </param>
@@ -46,22 +69,77 @@
           </reporter-output>
         </test-method> <!-- setUpClass -->
 <<<<<<< HEAD
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-15T15:20:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-15T15:21:24 IST" duration-ms="73598" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@58a9760d]" started-at="2025-04-15T15:20:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-15T15:21:02 IST" duration-ms="29605" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Add multiple quantities of the same product"]]>
+                <![CDATA["Adding a valid comment to the blog"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Add to Cart Functionality on eCommerce Playground"]]>
+                <![CDATA["Blog functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@58a9760d]" started-at="2025-04-15T15:20:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-15T15:21:01 IST" duration-ms="29266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Submitting a blog comment without filling required details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Blog functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@58a9760d]" started-at="2025-04-15T15:20:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-15T15:21:03 IST" duration-ms="30411" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-15T15:20:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-15T15:21:24 IST" duration-ms="73598" status="PASS">
+>>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Submitting a blog comment without filling required details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Blog functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+<<<<<<< HEAD
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@58a9760d]" started-at="2025-04-15T15:20:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-15T15:21:03 IST" duration-ms="30629" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Submitting a blog comment without filling required details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Blog functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.RunnerTestNg@58a9760d]" started-at="2025-04-15T15:21:03 IST" name="tearDownClass" finished-at="2025-04-15T15:21:06 IST" duration-ms="3361" status="PASS">
+=======
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-15T15:20:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-15T15:20:58 IST" duration-ms="48196" status="PASS">
 =======
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@58a9760d]" started-at="2025-04-15T15:07:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-15T15:07:49 IST" duration-ms="17999" status="PASS">
@@ -1377,6 +1455,7 @@ at ✽.the user should see "Warning: You must agree to the Privacy Policy!" for 
           </reporter-output>
         </test-method> <!-- runScenario -->
         <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.RunnerTestNg@58a9760d]" started-at="2025-04-15T15:18:44 IST" name="tearDownClass" finished-at="2025-04-15T15:18:52 IST" duration-ms="7551" status="PASS">
+>>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
 >>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
           <reporter-output>
           </reporter-output>

@@ -25,12 +25,14 @@ public class UserLoginAction {
         this.stremail = ConfigReader.getProperty("email");
         this.strpassword = ConfigReader.getProperty("password");
         
+
         this.loginPageLocator = new LoginPageLocator();
         PageFactory.initElements(HelperClass.getDriver(), loginPageLocator);
-        
+
         this.wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(HelperClass.TIMEOUT));
         
         actions=new Actions(HelperClass.getDriver());
+
     }
 
     public void clickMyAccounts() {
@@ -63,13 +65,32 @@ public class UserLoginAction {
     }
 
     public boolean isMyAccountPageDisplayed() {
+        System.out.println(loginPageLocator.titleMyAccount.getText());
+
         return loginPageLocator.titleMyAccount.isDisplayed();
     }
 
+//    public String getWarning1() {
+//    	return loginPageLocator.warningMessage1.getText();
+//    }
+//    public String getWarning2() {
+//    	return loginPageLocator.warningMessage2.getText();
+//    }
     public String getWarningMessage() {
         return loginPageLocator.warningMessage.getText();
     }
     
+
+    
+  /*  public void clickmyAccounts2() {
+        actions.moveToElement(loginPageLocator.myAccount).perform();
+    }
+
+    public void clickLogout() {
+        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+        WebElement logoutElement = wait.until(ExpectedConditions.elementToBeClickable(loginPageLocator.logout));
+        logoutElement.click();
+*/
     public void clickLogout() {
     	loginPageLocator.logout.click();
     }
