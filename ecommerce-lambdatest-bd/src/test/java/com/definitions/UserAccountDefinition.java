@@ -1,15 +1,23 @@
 package com.definitions;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 
 import com.actions.UserAccountAction;
+import com.utilities.HelperClass;
 
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
 public class UserAccountDefinition {
 
     UserAccountAction userAccountAction = new UserAccountAction();
+    
+    @Given("the user is on the My Account Page")
+    public void the_user_is_on_the_My_Account_Page(){
+    	  HelperClass.getDriver().get("https://ecommerce-playground.lambdatest.io/");
+    }
 
     @Then("the user clicks the {string} page")
     public void the_user_clicks_the_edit_account_info_page(String pageName) {
@@ -36,10 +44,8 @@ public class UserAccountDefinition {
         userAccountAction.UpdateTelephoneNumber();
     }
 
-    @And("clicks on the Continue button")
-    public void clicks_on_the_continue_button() {
-        userAccountAction.Continue();
-    }
+  
+
 
     @Then("user should see {string}")
     public void user_should_see_success_message(String expectedMessage) {
@@ -50,6 +56,7 @@ public class UserAccountDefinition {
                 break;
             case "Success: Your password has been successfully updated.":
                 actualMessage = userAccountAction.PasswordChanged();
+               
                 break;
             case "Success: You have modified your wish list!":
                 actualMessage = userAccountAction.ModifiedWishList();
@@ -68,9 +75,17 @@ public class UserAccountDefinition {
         userAccountAction.EntersnewPass();
     }
 
-    @And("clicks on Continue button")
-    public void PassContinue() {
-        userAccountAction.ClickPassContinue();
+    @And("clicks on the {string} Continue button")
+    public void clicks_on_the_continue_button(String button) {
+    	if(button.equals("EditInfo")) {
+    		userAccountAction.EditContinue();
+    	}
+    	else if(button.equals("ChangePassword")) {
+    		userAccountAction.ClickPassContinue();
+    	}
+    	else {
+    		userAccountAction.clickNewsLetterContinue();
+    	}
     }
 
     @And("the user has products in their wishlist")
@@ -88,8 +103,13 @@ public class UserAccountDefinition {
         userAccountAction.selectNewsletterOption(action);
     }
 
-    @And("clicks to the Continue button")
-    public void clicks_on_continue_button() {
-        userAccountAction.clickNewsLetterContinue();
+    
+    
+    @And("the user enters the valid credentials")
+    public void the_user_enters_the_valid_credentials() {
+    	userAccountAction.EnterCredentialsForMyAccount();
+    
+    	
     }
+   
 }

@@ -6,7 +6,7 @@ Feature: Forgot Password Functionality
     And clicks on login
     When user clicks on Forgotten Password link
 
-  @Valid
+  @ForgotPasswordWithValidEmail
   Scenario: User requests a password reset link using valid email
  And user enters valid email to receive reset link
       | email              |
@@ -14,10 +14,15 @@ Feature: Forgot Password Functionality
     And user clicks continue
     Then user should see an email sent confirmation message
 
-  @Invalid
+  @ForgotPasswordWithInValidEmail
   Scenario: User requests a password reset link using invalid email
     And user enters Invalid email to receive reset link
       | email              |
       | 2k21eee33@kiot.ac.in |
+    And user clicks continue
+    Then user should see an Error Message
+    
+      @ForgotPasswordWithoutProvidingEmail
+  Scenario: User requests a password reset link without providing email
     And user clicks continue
     Then user should see an Error Message

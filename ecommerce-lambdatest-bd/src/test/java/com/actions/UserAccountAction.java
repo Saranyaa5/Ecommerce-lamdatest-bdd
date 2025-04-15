@@ -1,86 +1,106 @@
 package com.actions;
 
 import java.time.Duration;
+import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.pages.LoginPageLocator;
 import com.pages.UserAccountLocator;
 import com.utilities.HelperClass;
+
 
 public class UserAccountAction {
 
     WebDriver driver = HelperClass.getDriver();
     UserAccountLocator userAccountLocator;
+    LoginPageLocator loginPageLocator;
     WebDriverWait wait;
 
     public UserAccountAction() {
         userAccountLocator = new UserAccountLocator();
         PageFactory.initElements(driver, userAccountLocator);
+        loginPageLocator = new LoginPageLocator();
+        PageFactory.initElements(HelperClass.getDriver(), loginPageLocator);
         wait = new WebDriverWait(driver, Duration.ofSeconds(15));
     }
 
     public void EditInformation() {
-        WebElement EditInfoLink = wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.EditInfo));
-        EditInfoLink.click();
+    	 WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
+         wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.EditInfo)).click();
+    }
+    public void changePassword() {
+        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.ChangePass)).click();
     }
 
+    public void ModifyWishlist() {
+    	 WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
+         wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.ModifyWishlist)).click();
+    }
+    public void ClickNewsLetter() {
+    	 WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
+         wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.clickNewsLetter)).click();
+    }
     public void UpdateTelephoneNumber() {
         userAccountLocator.Telephone.clear();
         userAccountLocator.Telephone.sendKeys("8825428889");
     }
 
-    public void Continue() {
-        userAccountLocator.EditContinue.click();
+    public void EditContinue() {
+        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.EditContinue)).click();
     }
 
     public String Edited() {
         return userAccountLocator.Edited.getText();
     }
 
-    public void changePassword() {
-        WebElement passwordLink = wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.ChangePass));
-        passwordLink.click();
-    }
+
 
     public String PasswordChanged() {
         return userAccountLocator.PassChanged.getText();
     }
 
     public void EntersnewPass() {
-        userAccountLocator.Password.sendKeys("KIOT");
-        userAccountLocator.ConfirmPassword.sendKeys("KIOT");
+    	 userAccountLocator.Password.sendKeys("KIOT"); 
+         userAccountLocator.ConfirmPassword.sendKeys("KIOT"); 
     }
+ 
+
 
     public void ClickPassContinue() {
-        userAccountLocator.PassContinue.click();
+        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.PassContinue)).click();
     }
 
-    public void ModifyWishlist() {
-        WebElement wishlistLink = wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.ModifyWishlist));
-        wishlistLink.click();
-    }
+
+    
 
     public void RemoveFromWishList() {
-    	try {
-        userAccountLocator.RemoveFromWishlist.click();
-    	}
-    	catch(Exception e) {
-    		System.out.println("No product in Wishlist");
-    	}
+        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
+        List<WebElement> removeButtons = HelperClass.getDriver().findElements(By.cssSelector("a.btn.btn-light.btn-sm.text-danger"));
+
+        if (!removeButtons.isEmpty()) {
+            WebElement removeButton = wait.until(ExpectedConditions.elementToBeClickable(removeButtons.get(0)));
+            removeButton.click();
+            System.out.println("Product removed from wishlist.");
+        } else {
+            System.out.println("No product in Wishlist to remove.");
+        }
     }
+
 
     public String ModifiedWishList() {
         return userAccountLocator.ModifiedWishList.getText();
     }
 
-    public void ClickNewsLetter() {
-        WebElement newsletterLink = wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.clickNewsLetter));
-        newsletterLink.click();
-    }
+   
 
     public void selectNewsletterOption(String action) {
         wait.until(ExpectedConditions.visibilityOf(userAccountLocator.subscribeRadio));
@@ -92,10 +112,19 @@ public class UserAccountAction {
     }
 
     public void clickNewsLetterContinue() {
-        userAccountLocator.NewsLettercontinue.click();
+        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.NewsLettercontinue)).click();
     }
 
     public String NewsLetterUpdated() {
         return userAccountLocator.newsLetterUpdated.getText();
     }
+
+	public void EnterCredentialsForMyAccount() {
+	
+
+		loginPageLocator.emailId.sendKeys("2k21eee40@kiot.ac.in");
+		loginPageLocator.password.sendKeys("KIOT"); 
+		
+	}
 }

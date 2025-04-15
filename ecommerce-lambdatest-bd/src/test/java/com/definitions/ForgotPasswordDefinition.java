@@ -39,6 +39,7 @@ public class ForgotPasswordDefinition {
         String email = emailList.get(0).get("email");
         forgotPasswordAction.enterEmail(email);
     }
+  
 
     @And("user clicks continue")
     public void user_clicks_continue() {
