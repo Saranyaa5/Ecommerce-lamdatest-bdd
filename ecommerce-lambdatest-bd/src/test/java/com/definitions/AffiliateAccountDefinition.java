@@ -11,6 +11,11 @@ public class AffiliateAccountDefinition {
 
 	AffiliateAccountAction action = new AffiliateAccountAction(); // Ensure initialized
 
+	@When("the user clicks on continue button")
+	public void the_user_clicks_on_continue_button() throws InterruptedException {
+	   action.clickaccContinue();
+	}
+	
 	// Register
 	@When("the user clicks on register for affiliate account")
 	public void the_user_clicks_on_register_for_affiliate_account() {
@@ -80,5 +85,10 @@ public class AffiliateAccountDefinition {
 	@Then("clicks on continue")
 	public void clicks_on_continue() {
 		action.clickTrackingContinue();
+	}
+	
+	@Then("the user should see the message {string}|")
+	public void the_user_should_see_the_message(String string) {
+	   
 	}
 }

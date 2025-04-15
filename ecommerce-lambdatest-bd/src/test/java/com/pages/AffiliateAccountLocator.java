@@ -4,7 +4,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class AffiliateAccountLocator {
-	@FindBy(xpath="(//a[normalize-space()='Edit your affiliate information'])[1]")
+	
+	@FindBy(xpath="//a[@class='btn btn-primary']")
+	public WebElement accContinue;
+	
+	@FindBy(xpath="//a[@class='d-inline-flex text-decoration-none text-reset flex-column m-3']")
 	public WebElement affiliateButton;
 
 	@FindBy(xpath="(//input[@id='input-bank-account-name'])[1]")

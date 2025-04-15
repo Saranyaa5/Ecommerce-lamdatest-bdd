@@ -1,20 +1,22 @@
-Feature: Affiliate Account Creation
+Feature: User Registration and Affiliate Account Functionality
+  I want to register for the ecommerce LambdaTest account and become an affiliate partner
 
-  Background:
-    Given the user is on the homepage
-    When the user clicks on My Account
-    And clicks on login
-    And the user enters valid credentials
-    And the user clicks on the Login button
-    Then the user should see the My Account page
+  Background:  
+    Given the user is on the homepage  
+    When the user clicks on My Account  
+    And clicks the register button  
+    Then the user should see the registration page  
 
-  @Register_for_affiliate_account
-  Scenario: Register as an affiliate account
-    When the user clicks on register for affiliate account
-    And enters payee name
-    And clicks on checkbox
-    And clicks on register continue button
-    Then the user should see the edit your affiliate account
+  @ValidRegistrationInputs
+  Scenario Outline: Register with valid inputs  
+    When the user enters "<First Name>", "<Last Name>", "<Email>", "<Telephone>", "<Password>" and "<Confirm Password>"  
+    And agrees to the Privacy Policy  
+    And submits the registration form  
+    Then the user should see "Your Account Has Been Created!"  
+
+    Examples:  
+      | First Name | Last Name | Email               | Telephone  | Password | Confirm Password |  
+      | priya      | ram       | ppta12e@gmail.com   | 1234567891 | 1234     | 1234             |  
 
   @Affiliate_Account_Creation
   Scenario Outline: Edit affiliate account with valid and invalid inputs
@@ -25,13 +27,7 @@ Feature: Affiliate Account Creation
     Then the user should see account created "<Message>"
 
     Examples:
-      | Account Name | Account Number | Message                                          |
+      | Account Name | Account Number | Message                                            |
       | sbi          | 12345          | Success: Your account has been successfully updated. |
-      |              | 12345          | Account Name required!                          |
-      | sbi          |                | Account Number required!                        |
-
-  @Custom_Affiliate_TrackingCode
-  Scenario: View affiliate tracking code
-    When the user clicks on custom affiliate tracking code
-    Then the user sees tracking code
-    And clicks on continue
+      |              | 12345          | Account Name required!                            |
+      | sbi          |                | Account Number required!                          |
