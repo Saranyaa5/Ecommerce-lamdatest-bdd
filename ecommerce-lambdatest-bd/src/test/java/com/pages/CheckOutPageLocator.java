@@ -23,6 +23,12 @@ public class CheckOutPageLocator {
 	@FindBy(xpath="//*[@id=\"form-checkout\"]/div/div[1]/div/div[1]/div/div[3]")
 	public WebElement guestUser;
 	
+	@FindBy(xpath="//*[@id=\"form-checkout\"]/div/div[1]/div/div[1]/div/div[2]/label")
+	public WebElement registerUser;
+	
+	@FindBy(xpath="//*[@id=\"checkout-cart\"]/table/tbody/tr/td[3]/div/div/button[2]")
+	public WebElement removeProduct;
+	
 	@FindBy(xpath = "//input[@id='input-payment-firstname']")
     public WebElement paymentFname;
     
@@ -44,6 +50,12 @@ public class CheckOutPageLocator {
     
     @FindBy(xpath = "//input[@id='input-payment-postcode']")
     public WebElement paymentPostcode;
+    
+    @FindBy(xpath="//input[@id='input-payment-password']")
+    public WebElement pass;
+    
+    @FindBy(xpath="//input[@id='input-payment-confirm']")
+    public WebElement confirmpass;
 	
 	@FindBy(xpath="//*[@id=\"form-checkout\"]/div/div[2]/div/div[5]/label")
 	public WebElement paymentCheckBox;
@@ -60,6 +72,9 @@ public class CheckOutPageLocator {
     
     @FindBy(xpath = "//*[@id=\"form-checkout\"]/div/div[2]/div/div[5]/label")
     public WebElement termsCheckbox;
+    
+    @FindBy(xpath="//*[@id=\"form-checkout\"]/div/div[2]/div/div[4]/label")
+    public WebElement PrivacyCheckbox;
     
     @FindBy(xpath="//*[@id='button-save']")
     public WebElement continueButton;
@@ -81,6 +96,9 @@ public class CheckOutPageLocator {
     
     @FindBy(xpath="//*[@id=\"payment-address\"]/div[2]/div/label")
     public WebElement newAdd;
+    
+    @FindBy(xpath="//*[@id=\"account-detail\"]/div[4]/div/div")
+    public WebElement duplicateEmail;
   //*[@id="payment-address"]/div[2]/div
 	
   //*[@id="payment-address"]/div[2]/div/label
