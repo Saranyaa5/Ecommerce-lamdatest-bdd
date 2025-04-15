@@ -1,5 +1,5 @@
 @registration
-Feature: User Registration
+Feature: User Registration Functionality
   I want to register for the ecommerce LambdaTest account
   
    Background:  

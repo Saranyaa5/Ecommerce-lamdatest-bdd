@@ -42,9 +42,14 @@ public class LoginPageLocator {
 //    public WebElement warningMessage2;
    
     
-@FindBy(xpath="(//span[normalize-space()='Logout'])[1]")
+//@FindBy(xpath="(//span[normalize-space()='Logout'])[1]")
+//public WebElement logout;
+
+//@FindBy(xpath="//*[@id=\"content\"]/h1/text()")
+
+@FindBy(xpath="//*[@id=\"column-right\"]/div/a[14]")
 public WebElement logout;
 
-@FindBy(xpath="//*[@id=\"content\"]/h1/text()")
+@FindBy(xpath="//*[@id=\"content\"]/h1")
 public WebElement accountLogout;
 }
