@@ -112,7 +112,7 @@ public class HelperClass {
             options.addArguments("--disable-features=PasswordLeakDetection");
             options.addArguments("--incognito");
 
-            options.addArguments("--headless");
+//            options.addArguments("--headless");
             localDriver = new ChromeDriver(options);
         } else if (browser.equalsIgnoreCase("edge")) {
             EdgeOptions options = new EdgeOptions();

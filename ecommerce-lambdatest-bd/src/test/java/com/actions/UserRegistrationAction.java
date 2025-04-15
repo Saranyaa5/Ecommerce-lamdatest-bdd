@@ -36,7 +36,8 @@ public class UserRegistrationAction {
     }
     
     public void enterRegistrationDetails(String firstName, String lastName, String email, 
-                                       String telephone, String password, String confirmPassword) {
+                                       String telephone, String password, String confirmPassword) throws InterruptedException {
+    	Thread.sleep(2000);
         registrationLocators.FirstName.sendKeys(firstName);
         registrationLocators.LastName.sendKeys(lastName);
         registrationLocators.RegisterEmail.sendKeys(email);
