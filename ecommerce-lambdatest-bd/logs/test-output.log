@@ -6455,6 +6455,249 @@
 2025-04-15 15:18:44 [TestNG-test-Test-1] ERROR: Scenario failed: Register with valid inputs
 >>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
 >>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
+<<<<<<< HEAD
+2025-04-15 16:35:51 [main] INFO : Scenario started: registeration of account
+2025-04-15 16:35:58 [main] INFO : Scenario passed: registeration of account
+2025-04-15 16:36:00 [main] INFO : Scenario started: Register with valid inputs
+2025-04-15 16:36:10 [main] ERROR: Scenario failed: Register with valid inputs
+2025-04-15 16:36:13 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 16:36:55 [main] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 16:36:56 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 16:37:38 [main] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 16:37:39 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 16:38:21 [main] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 16:41:17 [TestNG-test-Test-1] INFO : Scenario started: registeration of account
+2025-04-15 16:41:30 [TestNG-test-Test-1] INFO : Scenario passed: registeration of account
+2025-04-15 16:41:31 [TestNG-test-Test-1] INFO : Scenario started: Register with valid inputs
+2025-04-15 16:41:42 [TestNG-test-Test-1] ERROR: Scenario failed: Register with valid inputs
+2025-04-15 16:41:43 [TestNG-test-Test-1] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 16:42:25 [TestNG-test-Test-1] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 16:42:26 [TestNG-test-Test-1] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 16:43:08 [TestNG-test-Test-1] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 16:43:09 [TestNG-test-Test-1] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 16:43:51 [TestNG-test-Test-1] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 16:49:33 [main] INFO : Scenario started: login for affiliate account creation
+2025-04-15 16:49:33 [main] INFO : Scenario passed: login for affiliate account creation
+2025-04-15 16:49:34 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 16:50:16 [main] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 16:50:18 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 16:50:59 [main] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 16:51:01 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 16:51:43 [main] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 16:59:20 [TestNG-test-Test-1] INFO : Scenario started: login for affiliate account creation
+2025-04-15 16:59:31 [TestNG-test-Test-1] INFO : Scenario passed: login for affiliate account creation
+2025-04-15 16:59:33 [TestNG-test-Test-1] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 17:00:23 [TestNG-test-Test-1] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 17:00:25 [TestNG-test-Test-1] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 17:01:16 [TestNG-test-Test-1] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 17:01:18 [TestNG-test-Test-1] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 17:02:08 [TestNG-test-Test-1] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 17:10:56 [TestNG-test-Test-1] INFO : Scenario started: login for affiliate account creation
+2025-04-15 17:11:06 [TestNG-test-Test-1] INFO : Scenario passed: login for affiliate account creation
+2025-04-15 17:11:08 [TestNG-test-Test-1] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 17:12:00 [TestNG-test-Test-1] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 17:12:02 [TestNG-test-Test-1] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 17:12:55 [TestNG-test-Test-1] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 17:12:57 [TestNG-test-Test-1] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 17:13:29 [main] INFO : Scenario started: login for affiliate account creation
+2025-04-15 17:13:39 [main] INFO : Scenario passed: login for affiliate account creation
+2025-04-15 17:13:40 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 17:14:23 [main] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 17:14:23 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 17:15:07 [main] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 17:15:07 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 17:15:52 [main] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 20:08:32 [main] INFO : Scenario started: Register user and register as affiliate user
+2025-04-15 20:08:46 [main] INFO : Scenario passed: Register user and register as affiliate user
+2025-04-15 20:08:46 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 20:09:38 [main] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 20:09:38 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 20:10:30 [main] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 20:10:30 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 20:11:22 [main] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 20:12:18 [main] INFO : Scenario started: Register user and register as affiliate user
+2025-04-15 20:12:28 [main] INFO : Scenario passed: Register user and register as affiliate user
+2025-04-15 20:12:28 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 20:12:28 [main] INFO : Scenario passed: Edit affiliate account with valid and invalid inputs
+2025-04-15 20:12:28 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 20:12:28 [main] INFO : Scenario passed: Edit affiliate account with valid and invalid inputs
+2025-04-15 20:12:28 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 20:12:28 [main] INFO : Scenario passed: Edit affiliate account with valid and invalid inputs
+2025-04-15 21:31:32 [main] INFO : Scenario started: Register user and register as affiliate user
+2025-04-15 21:31:45 [main] INFO : Scenario passed: Register user and register as affiliate user
+2025-04-15 21:31:45 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 21:31:50 [main] INFO : Scenario passed: Edit affiliate account with valid and invalid inputs
+2025-04-15 21:31:50 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 21:32:04 [main] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 21:41:36 [main] INFO : Scenario started: Register user and register as affiliate user
+2025-04-15 21:41:56 [main] ERROR: Scenario failed: Register user and register as affiliate user
+2025-04-15 21:41:56 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 21:41:56 [main] INFO : Scenario passed: Edit affiliate account with valid and invalid inputs
+2025-04-15 21:41:56 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 21:41:56 [main] INFO : Scenario passed: Edit affiliate account with valid and invalid inputs
+2025-04-15 21:42:18 [main] INFO : Scenario started: Register user and register as affiliate user
+2025-04-15 21:42:37 [main] ERROR: Scenario failed: Register user and register as affiliate user
+2025-04-15 21:42:37 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 21:42:37 [main] INFO : Scenario passed: Edit affiliate account with valid and invalid inputs
+2025-04-15 21:42:37 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 21:42:37 [main] INFO : Scenario passed: Edit affiliate account with valid and invalid inputs
+2025-04-15 21:51:41 [main] INFO : Scenario started: Register user and register as affiliate user
+2025-04-15 21:52:00 [main] ERROR: Scenario failed: Register user and register as affiliate user
+2025-04-15 21:52:00 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 21:52:19 [main] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 21:52:19 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 21:52:32 [main] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 21:53:45 [TestNG-test-Test-1] INFO : Scenario started: Register user and register as affiliate user
+2025-04-15 21:54:06 [TestNG-test-Test-1] ERROR: Scenario failed: Register user and register as affiliate user
+2025-04-15 21:54:06 [TestNG-test-Test-1] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 21:54:23 [TestNG-test-Test-1] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 21:54:23 [TestNG-test-Test-1] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 21:54:37 [TestNG-test-Test-1] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 21:56:06 [main] INFO : Scenario started: Register user and register as affiliate user
+2025-04-15 21:56:32 [main] ERROR: Scenario failed: Register user and register as affiliate user
+2025-04-15 21:56:32 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 21:56:49 [main] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 21:56:49 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 21:57:03 [main] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:00:01 [TestNG-test-Test-1] INFO : Scenario started: Register user and register as affiliate user
+2025-04-15 22:00:18 [TestNG-test-Test-1] ERROR: Scenario failed: Register user and register as affiliate user
+2025-04-15 22:00:18 [TestNG-test-Test-1] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:00:35 [TestNG-test-Test-1] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:00:35 [TestNG-test-Test-1] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:00:48 [TestNG-test-Test-1] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:01:34 [TestNG-test-Test-1] INFO : Scenario started: Register user and register as affiliate user
+2025-04-15 22:01:51 [TestNG-test-Test-1] ERROR: Scenario failed: Register user and register as affiliate user
+2025-04-15 22:01:51 [TestNG-test-Test-1] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:02:08 [TestNG-test-Test-1] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:02:08 [TestNG-test-Test-1] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:02:22 [TestNG-test-Test-1] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:04:33 [TestNG-test-Test-1] INFO : Scenario started: Register user and register as affiliate user
+2025-04-15 22:04:51 [TestNG-test-Test-1] ERROR: Scenario failed: Register user and register as affiliate user
+2025-04-15 22:04:51 [TestNG-test-Test-1] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:05:08 [TestNG-test-Test-1] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:05:08 [TestNG-test-Test-1] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:05:21 [TestNG-test-Test-1] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:09:14 [main] INFO : Scenario started: Search functionality with valid inputs
+2025-04-15 22:09:29 [main] INFO : Scenario passed: Search functionality with valid inputs
+2025-04-15 22:09:29 [main] INFO : Scenario started: Search functionality with invalid inputs
+2025-04-15 22:09:35 [main] INFO : Scenario passed: Search functionality with invalid inputs
+2025-04-15 22:09:35 [main] INFO : Scenario started: Search functionality with case sensitive inputs
+2025-04-15 22:09:42 [main] INFO : Scenario passed: Search functionality with case sensitive inputs
+2025-04-15 22:09:42 [main] INFO : Scenario started: Search functionality with unnecessary indentation in search
+2025-04-15 22:10:00 [main] INFO : Scenario started: Register user and register as affiliate user
+2025-04-15 22:10:19 [main] ERROR: Scenario failed: Register user and register as affiliate user
+2025-04-15 22:10:19 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:10:37 [main] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:10:37 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:14:02 [TestNG-test-Test-1] INFO : Scenario started: Register user and register as affiliate user
+2025-04-15 22:14:19 [TestNG-test-Test-1] ERROR: Scenario failed: Register user and register as affiliate user
+2025-04-15 22:14:19 [TestNG-test-Test-1] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:14:36 [TestNG-test-Test-1] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:14:36 [TestNG-test-Test-1] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:14:50 [TestNG-test-Test-1] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:18:55 [TestNG-test-Test-1] INFO : Scenario started: Register user and register as affiliate user
+2025-04-15 22:19:50 [TestNG-test-Test-1] ERROR: Scenario failed: Register user and register as affiliate user
+2025-04-15 22:19:50 [TestNG-test-Test-1] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:20:05 [TestNG-test-Test-1] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:20:05 [TestNG-test-Test-1] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:20:20 [TestNG-test-Test-1] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:20:37 [TestNG-test-Test-1] INFO : Scenario started: Register user and register as affiliate user
+2025-04-15 22:20:58 [TestNG-test-Test-1] ERROR: Scenario failed: Register user and register as affiliate user
+2025-04-15 22:20:58 [TestNG-test-Test-1] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:21:18 [TestNG-test-Test-1] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:21:18 [TestNG-test-Test-1] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:21:33 [TestNG-test-Test-1] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:23:43 [main] INFO : Scenario started: Search functionality with valid inputs
+2025-04-15 22:23:55 [main] INFO : Scenario passed: Search functionality with valid inputs
+2025-04-15 22:23:55 [main] INFO : Scenario started: Search functionality with invalid inputs
+2025-04-15 22:23:59 [main] INFO : Scenario passed: Search functionality with invalid inputs
+2025-04-15 22:23:59 [main] INFO : Scenario started: Search functionality with case sensitive inputs
+2025-04-15 22:24:04 [main] INFO : Scenario passed: Search functionality with case sensitive inputs
+2025-04-15 22:24:04 [main] INFO : Scenario started: Search functionality with unnecessary indentation in search
+2025-04-15 22:24:20 [main] INFO : Scenario started: Register user and register as affiliate user
+2025-04-15 22:24:42 [main] ERROR: Scenario failed: Register user and register as affiliate user
+2025-04-15 22:24:42 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:25:08 [main] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:25:08 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:25:21 [main] ERROR: Scenario failed: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:26:15 [main] INFO : Scenario started: Search functionality with valid inputs
+2025-04-15 22:26:31 [main] INFO : Scenario passed: Search functionality with valid inputs
+2025-04-15 22:26:31 [main] INFO : Scenario started: Search functionality with invalid inputs
+2025-04-15 22:26:35 [main] INFO : Scenario passed: Search functionality with invalid inputs
+2025-04-15 22:26:35 [main] INFO : Scenario started: Search functionality with case sensitive inputs
+2025-04-15 22:26:40 [main] INFO : Scenario passed: Search functionality with case sensitive inputs
+2025-04-15 22:26:40 [main] INFO : Scenario started: Search functionality with unnecessary indentation in search
+2025-04-15 22:26:44 [main] INFO : Scenario passed: Search functionality with unnecessary indentation in search
+2025-04-15 22:26:44 [main] INFO : Scenario started: Search functionality by category as input
+2025-04-15 22:26:49 [main] INFO : Scenario passed: Search functionality by category as input
+2025-04-15 22:27:19 [main] INFO : Scenario started: Register user and register as affiliate user
+2025-04-15 22:27:48 [main] INFO : Scenario started: Register with valid inputs
+2025-04-15 22:28:13 [main] ERROR: Scenario failed: Register with valid inputs
+2025-04-15 22:28:13 [main] INFO : Scenario started: Register with invalid inputs
+2025-04-15 22:28:35 [main] ERROR: Scenario failed: Register with invalid inputs
+2025-04-15 22:28:35 [main] INFO : Scenario started: Register with invalid inputs
+2025-04-15 22:28:58 [main] ERROR: Scenario failed: Register with invalid inputs
+2025-04-15 22:28:58 [main] INFO : Scenario started: Register with invalid inputs
+2025-04-15 22:29:21 [main] ERROR: Scenario failed: Register with invalid inputs
+2025-04-15 22:29:21 [main] INFO : Scenario started: Register with invalid inputs
+2025-04-15 22:29:31 [main] INFO : Scenario started: Register with valid inputs
+2025-04-15 22:29:50 [main] ERROR: Scenario failed: Register with invalid inputs
+2025-04-15 22:29:50 [main] INFO : Scenario started: Register with valid inputs
+2025-04-15 22:29:52 [main] ERROR: Scenario failed: Register with valid inputs
+2025-04-15 22:29:52 [main] INFO : Scenario started: Register with invalid inputs
+2025-04-15 22:30:04 [main] INFO : Scenario started: Register with invalid inputs
+2025-04-15 22:30:04 [main] INFO : Scenario started: Register with invalid inputs
+2025-04-15 22:30:04 [main] INFO : Scenario started: Register with invalid inputs
+2025-04-15 22:30:04 [main] INFO : Scenario started: Register with valid inputs
+2025-04-15 22:30:13 [main] ERROR: Scenario failed: Register with valid inputs
+2025-04-15 22:30:42 [main] INFO : Scenario started: Register user and register as affiliate user
+2025-04-15 22:31:01 [main] ERROR: Scenario failed: Register user and register as affiliate user
+2025-04-15 22:32:27 [main] INFO : Scenario started: Register user and register as affiliate user
+2025-04-15 22:32:48 [main] INFO : Scenario passed: Register user and register as affiliate user
+2025-04-15 22:38:10 [main] INFO : Scenario started: Register a new user with valid details
+2025-04-15 22:38:35 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:38:35 [main] INFO : Scenario started: Edit affiliate account with valid and invalid inputs
+2025-04-15 22:39:24 [main] INFO : Scenario started: Register with valid inputs
+2025-04-15 22:39:51 [main] INFO : Scenario passed: Register with valid inputs
+2025-04-15 22:39:51 [main] INFO : Scenario started: Register with invalid inputs
+2025-04-15 22:40:14 [main] ERROR: Scenario failed: Register with invalid inputs
+2025-04-15 22:40:15 [main] INFO : Scenario started: Register with invalid inputs
+2025-04-15 22:40:38 [main] ERROR: Scenario failed: Register with invalid inputs
+2025-04-15 22:40:38 [main] INFO : Scenario started: Register with invalid inputs
+2025-04-15 23:01:20 [TestNG-test-Test-1] INFO : Scenario started: Register user
+2025-04-15 23:01:31 [TestNG-test-Test-1] INFO : Scenario passed: Register user
+2025-04-15 23:01:31 [TestNG-test-Test-1] INFO : Scenario started: register as affiliate
+2025-04-15 23:01:54 [TestNG-test-Test-1] ERROR: Scenario failed: register as affiliate
+2025-04-15 23:01:54 [TestNG-test-Test-1] INFO : Scenario started: register as affiliate
+2025-04-15 23:07:10 [TestNG-test-Test-1] INFO : Scenario started: Register user
+2025-04-15 23:07:21 [TestNG-test-Test-1] INFO : Scenario passed: Register user
+2025-04-15 23:07:21 [TestNG-test-Test-1] INFO : Scenario started: register as affiliate
+2025-04-15 23:07:44 [TestNG-test-Test-1] ERROR: Scenario failed: register as affiliate
+2025-04-15 23:07:44 [TestNG-test-Test-1] INFO : Scenario started: register as affiliate
+2025-04-15 23:08:07 [TestNG-test-Test-1] ERROR: Scenario failed: register as affiliate
+2025-04-15 23:11:04 [TestNG-test-Test-1] INFO : Scenario started: Register a user and register as affiliate with valid and invalid inputs
+2025-04-15 23:11:50 [TestNG-test-Test-1] ERROR: Scenario failed: Register a user and register as affiliate with valid and invalid inputs
+2025-04-15 23:11:50 [TestNG-test-Test-1] INFO : Scenario started: Register a user and register as affiliate with valid and invalid inputs
+2025-04-15 23:12:13 [TestNG-test-Test-1] ERROR: Scenario failed: Register a user and register as affiliate with valid and invalid inputs
+2025-04-15 23:13:09 [TestNG-test-Test-1] INFO : Scenario started: Register a user and register as affiliate with valid and invalid inputs
+2025-04-15 23:13:38 [TestNG-test-Test-1] ERROR: Scenario failed: Register a user and register as affiliate with valid and invalid inputs
+2025-04-15 23:13:38 [TestNG-test-Test-1] INFO : Scenario started: Register a user and register as affiliate with valid and invalid inputs
+2025-04-15 23:14:01 [TestNG-test-Test-1] ERROR: Scenario failed: Register a user and register as affiliate with valid and invalid inputs
+2025-04-15 23:14:25 [main] INFO : Scenario started: Register a user and register as affiliate with valid and invalid inputs
+2025-04-15 23:14:53 [main] ERROR: Scenario failed: Register a user and register as affiliate with valid and invalid inputs
+2025-04-15 23:14:53 [main] INFO : Scenario started: Register a user and register as affiliate with valid and invalid inputs
+2025-04-15 23:15:16 [main] ERROR: Scenario failed: Register a user and register as affiliate with valid and invalid inputs
+2025-04-15 23:27:10 [TestNG-test-Test-1] INFO : Scenario started: Register a user and register as affiliate with valid and invalid inputs
+2025-04-15 23:27:33 [TestNG-test-Test-1] ERROR: Scenario failed: Register a user and register as affiliate with valid and invalid inputs
+2025-04-15 23:27:35 [TestNG-test-Test-1] INFO : Scenario started: Register a user and register as affiliate with valid and invalid inputs
+2025-04-15 23:28:06 [TestNG-test-Test-1] ERROR: Scenario failed: Register a user and register as affiliate with valid and invalid inputs
+2025-04-15 23:35:37 [TestNG-test-Test-1] INFO : Scenario started: Register a user and register as affiliate with valid and invalid inputs
+2025-04-15 23:35:48 [TestNG-test-Test-1] ERROR: Scenario failed: Register a user and register as affiliate with valid and invalid inputs
+2025-04-15 23:40:53 [TestNG-test-Test-1] INFO : Scenario started: Register a user and register as affiliate with valid and invalid inputs
+2025-04-15 23:41:22 [TestNG-test-Test-1] ERROR: Scenario failed: Register a user and register as affiliate with valid and invalid inputs
+2025-04-15 23:42:32 [TestNG-test-Test-1] INFO : Scenario started: Register a user and register as affiliate with valid and invalid inputs
+2025-04-15 23:42:50 [TestNG-test-Test-1] INFO : Scenario passed: Register a user and register as affiliate with valid and invalid inputs
+=======
 2025-04-15 16:57:22 [TestNG-test-Test-1] INFO : Scenario started: Add a single product to the cart
 2025-04-15 16:57:47 [TestNG-test-Test-1] INFO : Scenario passed: Add a single product to the cart
 2025-04-15 16:57:48 [TestNG-test-Test-1] INFO : Scenario started: Remove a product from the cart
@@ -6965,3 +7208,4 @@
 2025-04-15 20:31:22 [TestNG-PoolService-6] INFO : Scenario passed: Register with invalid inputs
 2025-04-15 20:31:22 [TestNG-PoolService-7] INFO : Scenario passed: Register with valid inputs  with out checking privacy policy
 2025-04-15 20:31:22 [TestNG-PoolService-9] INFO : Scenario passed: Register with invalid inputs
+>>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
