@@ -208,6 +208,7 @@
 //        }
 //    }
 //}
+
 package com.actions;
 
 import java.time.Duration;
@@ -265,28 +266,27 @@ public class UserRegistrationAction {
     }
 
     public String RegisterationSuccess() {
-        return wait.until(ExpectedConditions.visibilityOf(registrationLocators.RegistrationSuccessMsg))
-                  .getText();
+        return waitForElementText(registrationLocators.RegistrationSuccessMsg);
     }
 
     public String existingMailError() {
-        return waitForErrorText(registrationLocators.ExistingEmailError);
+        return waitForElementText(registrationLocators.ExistingEmailError);
     }
 
     public String emptyFirstNameError() {
-        return waitForErrorText(registrationLocators.EmptyFirstNameError);
+        return waitForElementText(registrationLocators.EmptyFirstNameError);
     }
 
     public String emptyPasswordError() {
-        return waitForErrorText(registrationLocators.EmptyPasswordError);
+        return waitForElementText(registrationLocators.EmptyPasswordError);
     }
 
     public String passwordMisMathError() {
-        return waitForErrorText(registrationLocators.PasswordMisMathError);
+        return waitForElementText(registrationLocators.PasswordMisMathError);
     }
 
     public String uncheckedError() {
-        return waitForErrorText(registrationLocators.UncheckedError);
+        return waitForElementText(registrationLocators.UncheckedError);
     }
 
     // Helper methods with proper waits
@@ -320,9 +320,9 @@ public class UserRegistrationAction {
         actions.moveToElement(el).perform();
     }
 
-    private String waitForErrorText(WebElement errorElement) {
+    private String waitForElementText(WebElement element) {
         try {
-            return wait.until(ExpectedConditions.visibilityOf(errorElement)).getText();
+            return wait.until(ExpectedConditions.visibilityOf(element)).getText();
         } catch (TimeoutException e) {
             return "";
         }
