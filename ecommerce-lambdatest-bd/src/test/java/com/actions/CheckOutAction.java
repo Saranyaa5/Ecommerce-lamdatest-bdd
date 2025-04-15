@@ -33,6 +33,9 @@ public class CheckOutAction {
 	}
 	
 	public void searchProdut(String string) {
+		
+		checkOutPageLocator.searchbox.sendKeys(Keys.CONTROL + "a");
+		checkOutPageLocator.searchbox.sendKeys(Keys.BACK_SPACE);
 		checkOutPageLocator.searchbox.sendKeys(string);
 		checkOutPageLocator.searchbutton.click();
 	}
@@ -48,6 +51,14 @@ public class CheckOutAction {
 	
 	public void selectGuestUser() {
 		checkOutPageLocator.guestUser.click();
+	}
+	public void selectRegUser() {
+		checkOutPageLocator.registerUser.click();
+	}
+	
+	
+	public void reomveProduct() {
+		checkOutPageLocator.removeProduct.click();
 	}
 	public void fillGuestCheckoutForm(String firstName, String lastName, String email, 
             String telephone, String address, String city, 
@@ -71,24 +82,20 @@ public class CheckOutAction {
 			Thread.currentThread().interrupt();
 			}
 			
-			// Handle region dropdown
 			selectDropdownByVisibleText(checkOutPageLocator.regionDropdown,"Assam");
 			
 			}
+	
 			
 			private void selectDropdownByVisibleText(WebElement dropdown, String value) {
 			Select select = new Select(dropdown);
 			select.selectByVisibleText(value);
 			}
 			
-//			public void acceptGuestTermsCondition() {
-//				checkOutPageLocator.termsCheckbox.click();
-//			}
 			public void acceptGuestTermsCondition() {
 			    try {
 			        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
-			        
-			        // First scroll to the element
+			       
 			        WebElement termsCheckbox = wait.until(ExpectedConditions.presenceOfElementLocated(
 			            By.xpath("//*[@id='form-checkout']/div/div[2]/div/div[5]/label")));
 			        
@@ -96,7 +103,6 @@ public class CheckOutAction {
 			            "arguments[0].scrollIntoView({block: 'center', behavior: 'smooth'});", 
 			            termsCheckbox);
 			        
-			        // Wait until clickable and click using JavaScript
 			        wait.until(ExpectedConditions.elementToBeClickable(termsCheckbox));
 			        ((JavascriptExecutor) HelperClass.getDriver()).executeScript(
 			            "arguments[0].click();", termsCheckbox);
@@ -107,6 +113,9 @@ public class CheckOutAction {
 			    }
 			}
 			
+			public void clickPrivacyPolicy() {
+				checkOutPageLocator.PrivacyCheckbox.click();
+			}
 			public void clickContinueCheckout() {
 			    WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
 			    wait.until(ExpectedConditions.elementToBeClickable(checkOutPageLocator.continueButton));
@@ -178,7 +187,38 @@ public class CheckOutAction {
 //			    	        Thread.currentThread().interrupt();
 //			    	    }
 //			    	}
+			       public void fillRegisterCheckoutForm(String firstName, String lastName, String email, 
+			               String telephone,String password,String confirm_pass, String address, String city, 
+			               String postcode, String country) {
+			   			// Fill basic form fields
+			   			checkOutPageLocator.paymentFname.sendKeys(firstName);
+			   			checkOutPageLocator.paymentLname.sendKeys(lastName);
+			   			checkOutPageLocator.paymentEmail.sendKeys(email);
+			   			checkOutPageLocator.paymentTelephone.sendKeys(telephone);
+			   			checkOutPageLocator.pass.sendKeys(password);
+			   			checkOutPageLocator.confirmpass.sendKeys(confirm_pass);
+			   			checkOutPageLocator.paymentAddress.sendKeys(address);
+			   			checkOutPageLocator.paymentCity.sendKeys(city);
+			   			checkOutPageLocator.paymentPostcode.sendKeys(postcode);
+			   			
+			   			
+			   			selectDropdownByVisibleText(checkOutPageLocator.countryDropdown, "India");
+			   			
+			   			// Wait for region dropdown to load (may need AJAX wait)
+			   			try {
+			   			Thread.sleep(1000); // Simple wait - replace with proper wait in real implementation
+			   			} catch (InterruptedException e) {
+			   			Thread.currentThread().interrupt();
+			   			}
+			   			
+			   			selectDropdownByVisibleText(checkOutPageLocator.regionDropdown,"Assam");
+			   			
+			   			}
 			       
-			
+			       public String getDuplicateEmailError() {
+			    	  return checkOutPageLocator.duplicateEmail.getText();
+			       }
+			       
+			       
 			
 }

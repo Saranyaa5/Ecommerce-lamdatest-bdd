@@ -2,6 +2,8 @@ package com.actions;
 
 import com.pages.SearchLocator;
 import com.utilities.HelperClass;
+
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 /*
@@ -60,9 +62,10 @@ public class SearchAction {
     }
 
     public void enterSearchTerm(String product) {
-        wait.until(ExpectedConditions.visibilityOf(searchLocator.searchbox));
-        searchLocator.searchbox.clear();
-        searchLocator.searchbox.sendKeys(product.trim());
+        wait.until(ExpectedConditions.visibilityOf(searchLocator.searchbox)); // 1. Wait for visibility
+        searchLocator.searchbox.sendKeys(Keys.CONTROL + "a");  // 2. Select all text (Ctrl+A)
+        searchLocator.searchbox.sendKeys(Keys.BACK_SPACE);     // 3. Delete selected text
+        searchLocator.searchbox.sendKeys(product.trim());      // 4. Enter new trimmed text
     }
 
     public void clickSearchButton() {

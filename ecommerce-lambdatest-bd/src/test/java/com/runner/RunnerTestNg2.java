@@ -6,8 +6,12 @@ import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
 
-    features = {
-        "src/test/resources/com/features/ProductCheckOut.feature"
+    features = { 
+       // "src/test/resources/com/features/ProductCheckOut.feature",
+        "src/test/resources/com/features/AddToCart.feature",
+    		"src/test/resources/com/features/UserAccountManagement.feature",
+    		"src/test/resources/com/features/ForgotPassword.feature"
+    		
         
     },
     glue = {"com.definitions"},
@@ -25,7 +29,7 @@ import org.testng.annotations.DataProvider;
 public class RunnerTestNg2 extends AbstractTestNGCucumberTests {
 
     @Override
-    @DataProvider(parallel = false)
+    @DataProvider(parallel = true)
     public Object[][] scenarios() {
         return super.scenarios();
     }
