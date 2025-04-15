@@ -21,7 +21,6 @@ Feature: Add to Cart Functionality on eCommerce Playground
     Then the shopping cart should display "Your shopping cart is empty!"
 
 
-
   @addSameProductMultipleQuantity
   Scenario: Add multiple quantities of the same product
     When user clicks the Phones & PDAs category
