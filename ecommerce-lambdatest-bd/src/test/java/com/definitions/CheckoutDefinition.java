@@ -39,6 +39,7 @@ public void select_guest_check_out() {
 @When("Enter the details in form:")
 public void enter_the_details_in_form(DataTable dataTable) {
     Map<String, String> formData = dataTable.asMap(String.class, String.class);
+    
     checkOutAction.fillGuestCheckoutForm(
         formData.get("First Name"),
         formData.get("Last Name"),
@@ -105,6 +106,62 @@ public void the_user_should_see_the_message_cart_is_empty() {
 	@When("the user clicks use new address button")
 	public void the_user_cliks_use_new_address_button() {
 		 checkOutAction.clickNewAddressButton();
+	}
+	
+	@When("Select Registered user CheckOut")
+	public void select_registered_user_check_out() {
+		checkOutAction.selectRegUser();
+	}
+
+	@When("the user accepts the privacy policy")
+	public void the_user_accepts_the_privacy_policy() {
+		checkOutAction.clickPrivacyPolicy() ;
+	}
+
+	@When("the user removes product from cart")
+	public void the_user_removes_product_from_cart() {
+		checkOutAction.reomveProduct();
+	}
+	@When("Enter the details in payment register form:")
+	public void enter_the_details_in_payment_register_form(io.cucumber.datatable.DataTable dataTable) {
+	    Map<String, String> formData = dataTable.asMap(String.class, String.class);
+	    
+	    checkOutAction.fillRegisterCheckoutForm(
+	        formData.get("First Name"),
+	        formData.get("Last Name"),
+	        formData.get("Email"),
+	        formData.get("Telephone"),
+	        formData.get("Pass"),
+	        formData.get("Confirm pass"),
+	        formData.get("Address"),
+	        formData.get("City"),
+	        formData.get("Postcode"),
+	        formData.get("Country") // Added country which was in your example but missing in method call
+	    );
+	}
+	@When("Enter the details in payment register form as new user in checkout:")
+	public void UniqueCheckOutMail(io.cucumber.datatable.DataTable dataTable) {
+	    Map<String, String> formData = dataTable.asMap(String.class, String.class);
+	    
+	    String uniqueEmail = "checkout" + System.currentTimeMillis() + "@test.com";
+	    checkOutAction.fillRegisterCheckoutForm(
+	        formData.get("First Name"),
+	        formData.get("Last Name"),
+	        uniqueEmail,
+	        formData.get("Telephone"),
+	        formData.get("Pass"),
+	        formData.get("Confirm pass"),
+	        formData.get("Address"),
+	        formData.get("City"),
+	        formData.get("Postcode"),
+	        formData.get("Country") // Added country which was in your example but missing in method call
+	    );
+	}
+	
+	@Then("the user sould see the email alread exist error")
+	public void the_user_sould_see_the_email_alread_exist_error() {
+		System.out.println(checkOutAction.getDuplicateEmailError());
+		Assert.assertEquals(checkOutAction.getDuplicateEmailError(),"Warning: E-Mail Address is already registered!");
 	}
 
 	
