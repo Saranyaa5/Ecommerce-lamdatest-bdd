@@ -21,8 +21,8 @@ Feature: Login Functionality
 
     Examples:
       | email          | password | expectedResult                                                                       |check  |
-      | atm12@gmail.com  | 12345     | Warning: No match for E-Mail Address and/or Password.                                |check1 |
-      | atm12@gmail.com  |          | Warning: No match for E-Mail Address and/or Password.                                |check2 |
+      | atgs2@gmail.com  | 12345     | Warning: No match for E-Mail Address and/or Password.                                |check1 |
+      | atk62@gmail.com  | 1234         | Warning: No match for E-Mail Address and/or Password.                                |check2 |
       |  | 12345         |  Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.  |check3 |
       |                 |          |Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.|check4|
 

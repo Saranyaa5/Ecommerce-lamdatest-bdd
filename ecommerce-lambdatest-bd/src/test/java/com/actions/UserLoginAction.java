@@ -76,8 +76,9 @@ public class UserLoginAction {
 //    public String getWarning2() {
 //    	return loginPageLocator.warningMessage2.getText();
 //    }
-    public String getWarningMessage() {
-        return loginPageLocator.warningMessage.getText();
+    public boolean getWarningMessage() {
+//        return loginPageLocator.warningMessage.getText();
+    	return loginPageLocator.warningMessage.isDisplayed();
     }
     
 

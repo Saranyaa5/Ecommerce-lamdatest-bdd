@@ -17,7 +17,7 @@ Feature: User Registration Functionality
 
     Examples:  
       | First Name | Last Name | Email              | Telephone   | Password | Confirm Password |  
-      | priya      | ram       | ppta12e@gmail.com | 1234567891  | 1234     | 1234             |  
+      | priya      | ram       |                    | 1234567891  | 1234     | 1234             |  
 
   @InValidRegistrationInputs
   Scenario Outline: Register with invalid inputs  
@@ -34,7 +34,7 @@ Feature: User Registration Functionality
       | priya      | ram       | priya123@gmail.com | 1234567891  | 1234     | 4321             | Password confirmation does not match password!           | password mismatch  |
       
    @RegistrationWithoutAcceptingPrivacyPolicy
-   Scenario Outline: Register with valid inputs  
+   Scenario Outline: Register with valid inputs  with out checking privacy policy
     When the user enters "<First Name>", "<Last Name>", "<Email>", "<Telephone>", "<Password>" and "<Confirm Password>"  
     And the user not agrees to the privacy policy   
     And submits the registration form  
