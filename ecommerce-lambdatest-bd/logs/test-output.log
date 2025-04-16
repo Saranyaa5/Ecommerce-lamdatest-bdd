@@ -6965,3 +6965,149 @@
 2025-04-15 20:31:22 [TestNG-PoolService-6] INFO : Scenario passed: Register with invalid inputs
 2025-04-15 20:31:22 [TestNG-PoolService-7] INFO : Scenario passed: Register with valid inputs  with out checking privacy policy
 2025-04-15 20:31:22 [TestNG-PoolService-9] INFO : Scenario passed: Register with invalid inputs
+2025-04-16 09:33:14 [TestNG-PoolService-1] INFO : Scenario started: 10.1 Submit a valid product review with rating and comment
+2025-04-16 09:33:14 [TestNG-PoolService-3] INFO : Scenario started: 10.2.2 Submit review with rating but without comment
+2025-04-16 09:33:14 [TestNG-PoolService-2] INFO : Scenario started: 10.2.1 Submit review without rating and without comment
+2025-04-16 09:33:14 [TestNG-PoolService-4] INFO : Scenario started: 10.2.3 Submit review without rating but with comment
+2025-04-16 09:33:49 [TestNG-PoolService-4] ERROR: Scenario failed: 10.2.3 Submit review without rating but with comment
+2025-04-16 09:33:49 [TestNG-PoolService-1] ERROR: Scenario failed: 10.1 Submit a valid product review with rating and comment
+2025-04-16 09:33:50 [TestNG-PoolService-2] ERROR: Scenario failed: 10.2.1 Submit review without rating and without comment
+2025-04-16 09:33:50 [TestNG-PoolService-3] ERROR: Scenario failed: 10.2.2 Submit review with rating but without comment
+2025-04-16 09:35:50 [TestNG-PoolService-4] INFO : Scenario started: Submit review without rating but with comment
+2025-04-16 09:35:50 [TestNG-PoolService-1] INFO : Scenario started: Submit a valid product review with rating and comment
+2025-04-16 09:35:50 [TestNG-PoolService-3] INFO : Scenario started: Submit review with rating but without comment
+2025-04-16 09:35:50 [TestNG-PoolService-2] INFO : Scenario started: Submit review without rating and without comment
+2025-04-16 09:36:19 [TestNG-PoolService-3] ERROR: Scenario failed: Submit review with rating but without comment
+2025-04-16 09:36:19 [TestNG-PoolService-1] ERROR: Scenario failed: Submit a valid product review with rating and comment
+2025-04-16 09:36:20 [TestNG-PoolService-2] ERROR: Scenario failed: Submit review without rating and without comment
+2025-04-16 09:36:24 [TestNG-PoolService-4] ERROR: Scenario failed: Submit review without rating but with comment
+2025-04-16 09:43:18 [TestNG-PoolService-2] INFO : Scenario started: Submit review without rating and without comment
+2025-04-16 09:43:18 [TestNG-PoolService-1] INFO : Scenario started: Submit a valid product review with rating and comment
+2025-04-16 09:43:18 [TestNG-PoolService-4] INFO : Scenario started: Submit review without rating but with comment
+2025-04-16 09:43:18 [TestNG-PoolService-3] INFO : Scenario started: Submit review with rating but without comment
+2025-04-16 09:43:39 [TestNG-PoolService-1] INFO : Scenario passed: Submit a valid product review with rating and comment
+2025-04-16 09:43:58 [TestNG-PoolService-2] ERROR: Scenario failed: Submit review without rating and without comment
+2025-04-16 09:43:58 [TestNG-PoolService-4] ERROR: Scenario failed: Submit review without rating but with comment
+2025-04-16 09:43:58 [TestNG-PoolService-3] ERROR: Scenario failed: Submit review with rating but without comment
+2025-04-16 11:55:27 [TestNG-PoolService-2] INFO : Scenario started: Submit review without rating and without comment
+2025-04-16 11:55:27 [TestNG-PoolService-3] INFO : Scenario started: Submit review with rating but without comment
+2025-04-16 11:55:27 [TestNG-PoolService-4] INFO : Scenario started: Submit review without rating but with comment
+2025-04-16 11:55:27 [TestNG-PoolService-1] INFO : Scenario started: Submit a valid product review with rating and comment
+2025-04-16 11:55:49 [TestNG-PoolService-2] ERROR: Scenario failed: Submit review without rating and without comment
+2025-04-16 11:55:49 [TestNG-PoolService-1] INFO : Scenario passed: Submit a valid product review with rating and comment
+2025-04-16 11:55:49 [TestNG-PoolService-4] ERROR: Scenario failed: Submit review without rating but with comment
+2025-04-16 11:55:50 [TestNG-PoolService-3] INFO : Scenario passed: Submit review with rating but without comment
+2025-04-16 11:57:26 [TestNG-PoolService-1] INFO : Scenario started: Submit a valid product review with rating and comment
+2025-04-16 11:57:26 [TestNG-PoolService-3] INFO : Scenario started: Submit review with rating but without comment
+2025-04-16 11:57:26 [TestNG-PoolService-4] INFO : Scenario started: Submit review without rating but with comment
+2025-04-16 11:57:26 [TestNG-PoolService-2] INFO : Scenario started: Submit review without rating and without comment
+2025-04-16 11:57:45 [TestNG-PoolService-2] ERROR: Scenario failed: Submit review without rating and without comment
+2025-04-16 11:57:46 [TestNG-PoolService-3] ERROR: Scenario failed: Submit review with rating but without comment
+2025-04-16 11:57:48 [TestNG-PoolService-1] INFO : Scenario passed: Submit a valid product review with rating and comment
+2025-04-16 11:58:07 [TestNG-PoolService-4] ERROR: Scenario failed: Submit review without rating but with comment
+2025-04-16 12:05:35 [TestNG-PoolService-3] INFO : Scenario started: Submit review with rating but without comment
+2025-04-16 12:05:35 [TestNG-PoolService-4] INFO : Scenario started: Submit review without rating but with comment
+2025-04-16 12:05:35 [TestNG-PoolService-2] INFO : Scenario started: Submit review without rating and without comment
+2025-04-16 12:05:35 [TestNG-PoolService-1] INFO : Scenario started: Submit a valid product review with rating and comment
+2025-04-16 12:05:56 [TestNG-PoolService-3] ERROR: Scenario failed: Submit review with rating but without comment
+2025-04-16 12:05:57 [TestNG-PoolService-1] INFO : Scenario passed: Submit a valid product review with rating and comment
+2025-04-16 12:05:58 [TestNG-PoolService-2] ERROR: Scenario failed: Submit review without rating and without comment
+2025-04-16 12:06:18 [TestNG-PoolService-4] ERROR: Scenario failed: Submit review without rating but with comment
+2025-04-16 12:14:05 [TestNG-PoolService-2] INFO : Scenario started: Submit review without rating and without comment
+2025-04-16 12:14:05 [TestNG-PoolService-1] INFO : Scenario started: Submit a valid product review with rating and comment
+2025-04-16 12:14:05 [TestNG-PoolService-3] INFO : Scenario started: Submit review with rating but without comment
+2025-04-16 12:14:05 [TestNG-PoolService-4] INFO : Scenario started: Submit review without rating but with comment
+2025-04-16 12:14:25 [TestNG-PoolService-1] INFO : Scenario passed: Submit a valid product review with rating and comment
+2025-04-16 12:14:28 [TestNG-PoolService-3] ERROR: Scenario failed: Submit review with rating but without comment
+2025-04-16 12:14:29 [TestNG-PoolService-2] ERROR: Scenario failed: Submit review without rating and without comment
+2025-04-16 12:14:45 [TestNG-PoolService-4] ERROR: Scenario failed: Submit review without rating but with comment
+2025-04-16 12:16:42 [TestNG-PoolService-2] INFO : Scenario started: Submit review without rating and without comment
+2025-04-16 12:16:42 [TestNG-PoolService-4] INFO : Scenario started: Submit review without rating but with comment
+2025-04-16 12:16:42 [TestNG-PoolService-1] INFO : Scenario started: Submit a valid product review with rating and comment
+2025-04-16 12:16:42 [TestNG-PoolService-3] INFO : Scenario started: Submit review with rating but without comment
+2025-04-16 12:17:03 [TestNG-PoolService-1] INFO : Scenario passed: Submit a valid product review with rating and comment
+2025-04-16 12:17:03 [TestNG-PoolService-3] ERROR: Scenario failed: Submit review with rating but without comment
+2025-04-16 12:17:05 [TestNG-PoolService-2] ERROR: Scenario failed: Submit review without rating and without comment
+2025-04-16 12:17:22 [TestNG-PoolService-4] ERROR: Scenario failed: Submit review without rating but with comment
+2025-04-16 12:18:09 [TestNG-PoolService-1] INFO : Scenario started: Submit a valid product review with rating and comment
+2025-04-16 12:18:09 [TestNG-PoolService-4] INFO : Scenario started: Submit review without rating but with comment
+2025-04-16 12:18:09 [TestNG-PoolService-3] INFO : Scenario started: Submit review with rating but without comment
+2025-04-16 12:18:09 [TestNG-PoolService-2] INFO : Scenario started: Submit review without rating and without comment
+2025-04-16 12:18:29 [TestNG-PoolService-1] INFO : Scenario passed: Submit a valid product review with rating and comment
+2025-04-16 12:18:32 [TestNG-PoolService-2] ERROR: Scenario failed: Submit review without rating and without comment
+2025-04-16 12:18:32 [TestNG-PoolService-3] ERROR: Scenario failed: Submit review with rating but without comment
+2025-04-16 12:18:50 [TestNG-PoolService-4] ERROR: Scenario failed: Submit review without rating but with comment
+2025-04-16 12:22:19 [TestNG-PoolService-4] INFO : Scenario started: Submit review without rating but with comment
+2025-04-16 12:22:20 [TestNG-PoolService-3] INFO : Scenario started: Submit review with rating but without comment
+2025-04-16 12:22:20 [TestNG-PoolService-1] INFO : Scenario started: Submit a valid product review with rating and comment
+2025-04-16 12:22:20 [TestNG-PoolService-2] INFO : Scenario started: Submit review without rating and without comment
+2025-04-16 12:22:39 [main] INFO : Scenario started: Submit a valid product review with rating and comment
+2025-04-16 12:22:54 [main] INFO : Scenario passed: Submit a valid product review with rating and comment
+2025-04-16 12:22:55 [main] INFO : Scenario started: Submit review without rating and without comment
+2025-04-16 12:23:11 [main] ERROR: Scenario failed: Submit review without rating and without comment
+2025-04-16 12:23:12 [main] INFO : Scenario started: Submit review with rating but without comment
+2025-04-16 12:23:26 [main] ERROR: Scenario failed: Submit review with rating but without comment
+2025-04-16 12:23:28 [main] INFO : Scenario started: Submit review without rating but with comment
+2025-04-16 12:24:02 [main] ERROR: Scenario failed: Submit review without rating but with comment
+2025-04-16 12:31:28 [main] INFO : Scenario started: Submit a valid product review with rating and comment
+2025-04-16 12:31:43 [main] INFO : Scenario passed: Submit a valid product review with rating and comment
+2025-04-16 12:31:45 [main] INFO : Scenario started: Submit review without rating and without comment
+2025-04-16 12:32:00 [main] ERROR: Scenario failed: Submit review without rating and without comment
+2025-04-16 12:32:01 [main] INFO : Scenario started: Submit review with rating but without comment
+2025-04-16 12:32:15 [main] ERROR: Scenario failed: Submit review with rating but without comment
+2025-04-16 12:32:16 [main] INFO : Scenario started: Submit review without rating but with comment
+2025-04-16 12:32:30 [main] ERROR: Scenario failed: Submit review without rating but with comment
+2025-04-16 12:35:12 [main] INFO : Scenario started: Submit a valid product review with rating and comment
+2025-04-16 12:35:26 [main] INFO : Scenario passed: Submit a valid product review with rating and comment
+2025-04-16 12:35:28 [main] INFO : Scenario started: Submit review without rating and without comment
+2025-04-16 12:35:42 [main] ERROR: Scenario failed: Submit review without rating and without comment
+2025-04-16 12:35:43 [main] INFO : Scenario started: Submit review with rating but without comment
+2025-04-16 12:35:58 [main] ERROR: Scenario failed: Submit review with rating but without comment
+2025-04-16 12:36:00 [main] INFO : Scenario started: Submit review without rating but with comment
+2025-04-16 12:36:13 [main] INFO : Scenario passed: Submit review without rating but with comment
+2025-04-16 12:38:14 [main] INFO : Scenario started: Submit a valid product review with rating and comment
+2025-04-16 12:38:28 [main] INFO : Scenario passed: Submit a valid product review with rating and comment
+2025-04-16 12:38:30 [main] INFO : Scenario started: Submit review without rating and without comment
+2025-04-16 12:38:43 [main] INFO : Scenario passed: Submit review without rating and without comment
+2025-04-16 12:38:44 [main] INFO : Scenario started: Submit review with rating but without comment
+2025-04-16 12:38:58 [main] ERROR: Scenario failed: Submit review with rating but without comment
+2025-04-16 12:39:00 [main] INFO : Scenario started: Submit review without rating but with comment
+2025-04-16 12:39:13 [main] INFO : Scenario passed: Submit review without rating but with comment
+2025-04-16 12:43:22 [main] INFO : Scenario started: Submit a valid product review with rating and comment
+2025-04-16 12:43:35 [main] INFO : Scenario passed: Submit a valid product review with rating and comment
+2025-04-16 12:43:37 [main] INFO : Scenario started: Submit review without rating and without comment
+2025-04-16 12:44:11 [main] ERROR: Scenario failed: Submit review without rating and without comment
+2025-04-16 12:44:12 [main] INFO : Scenario started: Submit review with rating but without comment
+2025-04-16 12:44:26 [main] ERROR: Scenario failed: Submit review with rating but without comment
+2025-04-16 12:44:28 [main] INFO : Scenario started: Submit review without rating but with comment
+2025-04-16 12:45:01 [main] ERROR: Scenario failed: Submit review without rating but with comment
+2025-04-16 12:47:39 [main] INFO : Scenario started: Submit a valid product review with rating and comment
+2025-04-16 12:47:58 [main] INFO : Scenario passed: Submit a valid product review with rating and comment
+2025-04-16 12:47:59 [main] INFO : Scenario started: Submit review without rating and without comment
+2025-04-16 12:48:36 [main] ERROR: Scenario failed: Submit review without rating and without comment
+2025-04-16 12:48:38 [main] INFO : Scenario started: Submit review without rating but with comment
+2025-04-16 12:49:11 [main] ERROR: Scenario failed: Submit review without rating but with comment
+2025-04-16 12:49:14 [main] INFO : Scenario started: Submit review with rating but without comment
+2025-04-16 12:49:18 [main] INFO : Scenario started: Submit a valid product review with rating and comment
+2025-04-16 12:49:33 [main] ERROR: Scenario failed: Submit review with rating but without comment
+2025-04-16 12:49:35 [main] INFO : Scenario passed: Submit a valid product review with rating and comment
+2025-04-16 12:49:38 [main] INFO : Scenario started: Submit review without rating and without comment
+2025-04-16 12:49:50 [main] INFO : Scenario passed: Submit review without rating and without comment
+2025-04-16 12:49:51 [main] INFO : Scenario started: Submit review without rating but with comment
+2025-04-16 12:50:03 [main] INFO : Scenario passed: Submit review without rating but with comment
+2025-04-16 12:51:08 [main] INFO : Scenario started: Submit a valid product review with rating and comment
+2025-04-16 12:51:21 [main] INFO : Scenario passed: Submit a valid product review with rating and comment
+2025-04-16 12:51:22 [main] INFO : Scenario started: Submit review without rating and without comment
+2025-04-16 12:51:34 [main] INFO : Scenario passed: Submit review without rating and without comment
+2025-04-16 12:51:36 [main] INFO : Scenario started: Submit review without rating but with comment
+2025-04-16 12:51:49 [main] INFO : Scenario passed: Submit review without rating but with comment
+2025-04-16 12:51:50 [main] INFO : Scenario started: Submit review with rating but without comment
+2025-04-16 12:52:03 [main] ERROR: Scenario failed: Submit review with rating but without comment
+2025-04-16 12:53:49 [main] INFO : Scenario started: Submit a valid product review with rating and comment
+2025-04-16 12:54:02 [main] INFO : Scenario passed: Submit a valid product review with rating and comment
+2025-04-16 12:54:03 [main] INFO : Scenario started: Submit review without rating and without comment
+2025-04-16 12:54:15 [main] INFO : Scenario passed: Submit review without rating and without comment
+2025-04-16 12:54:17 [main] INFO : Scenario started: Submit review without rating but with comment
+2025-04-16 12:54:29 [main] INFO : Scenario passed: Submit review without rating but with comment
+2025-04-16 12:54:31 [main] INFO : Scenario started: Submit review with rating but without comment
+2025-04-16 12:54:43 [main] INFO : Scenario passed: Submit review with rating but without comment

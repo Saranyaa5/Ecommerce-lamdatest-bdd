@@ -3,21 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.runner.RunnerTestNg">
+      <class name="com.runner.RunnerTestNg2">
         <methods>
           <include name="setUpClass"/>
-<<<<<<< HEAD
-          <include name="runScenario" invocation-numbers="1 2 3"/>
-=======
-<<<<<<< HEAD
-=======
-          <include name="runScenario" invocation-numbers="17 33 18 19 20 21 22 23 24 27 28 15"/>
->>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
->>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="17 18 19 22"/>
+          <include name="runScenario" invocation-numbers="3"/>
         </methods>
-      </class> <!-- com.runner.RunnerTestNg -->
+      </class> <!-- com.runner.RunnerTestNg2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
