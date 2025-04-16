@@ -36,13 +36,8 @@ public class AffiliateAccountAction {
 	
 	public void clickRegister() {
 	    JavascriptExecutor js = (JavascriptExecutor) driver;
-	    // Scroll to the element
 	    js.executeScript("arguments[0].scrollIntoView(true);", affiliate.registerAffiliate);
-
-	    // Optionally wait for the element to be clickable
 	    getWait().until(ExpectedConditions.elementToBeClickable(affiliate.registerAffiliate));
-
-	    // Click using JavaScript
 	    js.executeScript("arguments[0].click();", affiliate.registerAffiliate);
 	}
 
@@ -65,47 +60,4 @@ public class AffiliateAccountAction {
 	    ));
 	    return successMsg.getText();
 	}
-
-
-//	public String errorMessage() throws InterruptedException {
-//		Thread.sleep(2000);
-//		return affiliate.errorMsg.getText();
-//	}
-
-
-	// Edit
-//	public void clickAffiliate() {
-//		getWait().until(ExpectedConditions.elementToBeClickable(affiliate.affiliateButton)).click();
-//	}
-//
-//	public void affiliateaccName(String accName) {
-//		getWait().until(ExpectedConditions.visibilityOf(affiliate.accountName)).clear();
-//		affiliate.accountName.sendKeys(accName);
-//	}
-//
-//	public void affiliateaccNumber(String accNumber) {
-//		getWait().until(ExpectedConditions.visibilityOf(affiliate.accountNumber)).clear();
-//		affiliate.accountNumber.sendKeys(accNumber);
-//	}
-//
-//	public void clickContinue() {
-//		getWait().until(ExpectedConditions.elementToBeClickable(affiliate.affContinue2)).click();
-//	}
-//
-//	public String accountText() {
-//		return getWait().until(ExpectedConditions.visibilityOf(affiliate.affText)).getText();
-//	}
-
-	// Tracking Code
-//	public void clickTracking() {
-//		getWait().until(ExpectedConditions.elementToBeClickable(affiliate.trackingAffiliate)).click();
-//	}
-//
-//	public String getTrackingCode() {
-//		return getWait().until(ExpectedConditions.visibilityOf(affiliate.trackingCode)).getAttribute("value");
-//	}
-//
-//	public void clickTrackingContinue() {
-//		getWait().until(ExpectedConditions.elementToBeClickable(affiliate.affContinue3)).click();
-//	}
 }

@@ -69,17 +69,6 @@ public class UserLoginAction {
 
         return loginPageLocator.titleMyAccount.isDisplayed();
     }
-
-//    public String getWarning1() {
-//    	return loginPageLocator.warningMessage1.getText();
-//    }
-//    public String getWarning2() {
-//    	return loginPageLocator.warningMessage2.getText();
-//    }
-//    public boolean getWarningMessage() {
-//        return loginPageLocator.warningMessage.getText();
-//    	return loginPageLocator.warningMessage.isDisplayed();
-//    }
     
     public boolean getWarningMessage() {
         try {
@@ -91,18 +80,6 @@ public class UserLoginAction {
         }
     }
 
-//    
-
-    
-  /*  public void clickmyAccounts2() {
-        actions.moveToElement(loginPageLocator.myAccount).perform();
-    }
-
-    public void clickLogout() {
-        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
-        WebElement logoutElement = wait.until(ExpectedConditions.elementToBeClickable(loginPageLocator.logout));
-        logoutElement.click();
-*/
     public void clickLogout() {
     	loginPageLocator.logout.click();
     }

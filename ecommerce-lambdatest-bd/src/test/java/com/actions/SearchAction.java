@@ -62,10 +62,10 @@ public class SearchAction {
     }
 
     public void enterSearchTerm(String product) {
-        wait.until(ExpectedConditions.visibilityOf(searchLocator.searchbox)); // 1. Wait for visibility
-        searchLocator.searchbox.sendKeys(Keys.CONTROL + "a");  // 2. Select all text (Ctrl+A)
-        searchLocator.searchbox.sendKeys(Keys.BACK_SPACE);     // 3. Delete selected text
-        searchLocator.searchbox.sendKeys(product.trim());      // 4. Enter new trimmed text
+        wait.until(ExpectedConditions.visibilityOf(searchLocator.searchbox));
+        searchLocator.searchbox.sendKeys(Keys.CONTROL + "a");  
+        searchLocator.searchbox.sendKeys(Keys.BACK_SPACE);   
+        searchLocator.searchbox.sendKeys(product.trim());
     }
 
     public void clickSearchButton() {

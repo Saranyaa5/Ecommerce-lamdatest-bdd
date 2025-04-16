@@ -57,7 +57,7 @@ public class BlogAction {
 	public String getSuccessMessage() {
 	    try {
 	        if (blog.validMessage.isDisplayed()) {
-	            return blog.validMessage.getText(); // or getAttribute("innerText")
+	            return blog.validMessage.getText(); 
 	        } else {
 	            return "Success message not visible";
 	        }
