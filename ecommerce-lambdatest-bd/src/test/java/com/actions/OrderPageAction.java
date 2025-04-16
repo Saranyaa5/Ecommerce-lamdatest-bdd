@@ -1,8 +1,13 @@
+
 package com.actions;
 
 import java.time.Duration;
+import java.util.List;
+import java.util.concurrent.TimeoutException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver; // <-- Import added
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
@@ -13,32 +18,58 @@ import com.pages.OrderPageLocator;
 import com.utilities.HelperClass;
 
 public class OrderPageAction {
-	
-	public OrderPageLocator 	orderPageLocator=null;
-	private final WebDriverWait wait;
-	 private final Actions actions;
-	 private final JavascriptExecutor jsExecutor;
-	public OrderPageAction() {
-		orderPageLocator=new OrderPageLocator();
-		PageFactory.initElements(HelperClass.getDriver(),orderPageLocator);
-		 this.actions = new Actions(HelperClass.getDriver());
-	        this.wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
-	        this.jsExecutor = (JavascriptExecutor) HelperClass.getDriver();
-	}
- 
-	public void clickOrderHistory(){
-		orderPageLocator.myOrders.click();
-	}
-	
-	public String getOrderId() {
-		return orderPageLocator.orderid.getText();
-	}
-	public void clickAccountsButton() {
-		 waitAndMoveToElement(orderPageLocator.clickaccount);
-	}
-	private void waitAndMoveToElement(WebElement element) {
-        WebElement el = wait.until(ExpectedConditions.visibilityOf(element));
-        actions.moveToElement(el).perform();
+
+    public OrderPageLocator orderPageLocator = null;
+    private final WebDriver driver; // <-- Define WebDriver
+    private final WebDriverWait wait;
+    private final Actions actions;
+    private final JavascriptExecutor jsExecutor;
+
+    public OrderPageAction() {
+        this.driver = HelperClass.getDriver(); // <-- Initialize WebDriver
+        this.orderPageLocator = new OrderPageLocator();
+        PageFactory.initElements(driver, orderPageLocator);
+        this.actions = new Actions(driver);
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(50));
+        this.jsExecutor = (JavascriptExecutor) driver;
     }
 
+    public void continue1() {
+        WebElement continueBtn = wait.until(ExpectedConditions.elementToBeClickable(orderPageLocator.accContinue));
+        continueBtn.click();
+    }
+
+    public void clickOrderHistory() throws InterruptedException {
+        WebElement myAccountElement = wait.until(ExpectedConditions.visibilityOf(orderPageLocator.myAccount));
+        actions.moveToElement(myAccountElement).perform();
+
+        WebElement myOrderElement = wait.until(ExpectedConditions.refreshed(
+                ExpectedConditions.elementToBeClickable(orderPageLocator.orders)
+        ));
+        Thread.sleep(2000);
+        myOrderElement.click();
+        Thread.sleep(2000);
+    }
+    
+    public String getTextOrder() {
+        WebElement heading = wait.until(ExpectedConditions.visibilityOf(orderPageLocator.orderhistory));
+        return heading.getText();
+    }
+
+
+//    public boolean printOrderHistoryTable() throws InterruptedException {
+//        WebDriverWait tableWait = new WebDriverWait(driver, Duration.ofSeconds(60));
+//        WebElement tbody = tableWait.until(ExpectedConditions.visibilityOfElementLocated(
+//		        By.xpath("//div[@class='table-responsive']//table//tbody")));
+//        Thread.sleep(4000);
+//		List<WebElement> rows = tbody.findElements(By.tagName("tr"));
+//		for (WebElement row : rows) {
+//		    List<WebElement> cols = row.findElements(By.tagName("td"));
+//		    for (WebElement col : cols) {
+//		        System.out.print(col.getText() + "\t");
+//		    }
+//		    System.out.println();
+//		}
+//		return false;
+//    }
 }

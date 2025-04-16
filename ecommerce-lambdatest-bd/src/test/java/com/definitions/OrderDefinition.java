@@ -1,58 +1,36 @@
+
 package com.definitions;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
 import org.testng.Assert;
+import com.actions.OrderPageAction;
 
-import  com.actions.*;
 public class OrderDefinition {
-	OrderPageAction OrderPageAction=new OrderPageAction();
-	
-	@When("the user clicks on My Account in the top")
-	public void theUserClicksOnMyAccountInTheTop() {
-		OrderPageAction.clickAccountsButton();
-	}
-	
-	@When("clicks my order history")
-	public void clicks_my_order_history() {
-		OrderPageAction.clickOrderHistory();
-	}
+    OrderPageAction orderPageAction = new OrderPageAction();
 
-	@Then("the order history is dispalyed")
-	public void the_order_history_is_dispalyed() {
-		String id=OrderPageAction.getOrderId();
-		System.out.println("order id is:"+id);
-	   Assert.assertTrue(id!=null);
-	}
+    @When("the user clicks on My Account in the top")
+    public void theUserClicksOnMyAccountInTheTop() {
+        orderPageAction.continue1(); 
+    }
 
-	@When("user clicks view button")
-	public void user_clicks_view_button() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
+    @When("clicks my order history")
+    public void clicks_my_order_history() {
+        try {
+            orderPageAction.clickOrderHistory();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
-	@When("the user clicks reorder button")
-	public void the_user_clicks_reorder_button() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
+    @Then("the order history is displayed")
+    public void the_order_history_is_displayed(){
+//    	boolean isTableDisplayed = orderPageAction.printOrderHistoryTable();
+//    	Assert.assertTrue(isTableDisplayed, "Order history table should be visible and printable.");
+    	
+    	    String orderHeader = orderPageAction.getTextOrder();
+    	    Assert.assertTrue(orderHeader.contains("Order History"), "Order History heading should be visible.");
+    	}
 
-	@Then("the product reordered message should be displayed")
-	public void the_product_reordered_message_should_be_displayed() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
 
-	@When("the user clicks return button")
-	public void the_user_clicks_return_button() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("the product return button should be displayed")
-	public void the_product_return_button_should_be_displayed() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-}
+    }

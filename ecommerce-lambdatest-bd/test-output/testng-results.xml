@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="44" passed="44" failed="0" skipped="0">
+=======
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+>>>>>>> branch 'jeevika' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2025-04-16T19:34:33 IST" name="Suite" finished-at="2025-04-16T19:36:30 IST" duration-ms="117025">
+=======
+  <suite started-at="2025-04-16T17:02:09 IST" name="Suite" finished-at="2025-04-16T17:03:11 IST" duration-ms="61938">
+>>>>>>> branch 'jeevika' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@58a9760d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
+<<<<<<< HEAD
     <test started-at="2025-04-16T19:34:33 IST" name="Test" finished-at="2025-04-16T19:36:30 IST" duration-ms="117025">
+=======
+    <test started-at="2025-04-16T17:02:09 IST" name="Test" finished-at="2025-04-16T17:03:11 IST" duration-ms="61938">
+>>>>>>> branch 'jeevika' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
       <class name="com.runner.RunnerTestNg">
+<<<<<<< HEAD
         <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.RunnerTestNg@58a9760d]" started-at="2025-04-16T19:34:33 IST" name="setUpClass" finished-at="2025-04-16T19:34:36 IST" duration-ms="2582" status="PASS">
+=======
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.RunnerTestNg@58a9760d]" started-at="2025-04-16T17:02:09 IST" name="setUpClass" finished-at="2025-04-16T17:02:11 IST" duration-ms="1936" status="PASS">
+>>>>>>> branch 'jeevika' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
           <params>
             <param index="0">
               <value>
@@ -21,22 +37,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@58a9760d]" started-at="2025-04-16T19:34:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-16T19:35:07 IST" duration-ms="31161" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@58a9760d]" started-at="2025-04-16T17:02:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-16T17:03:08 IST" duration-ms="56935" status="PASS">
+>>>>>>> branch 'jeevika' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
           <params>
             <param index="0">
               <value>
-                <![CDATA["Adding a valid comment to the blog"]]>
+                <![CDATA["viewing order history after placing an order"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Blog functionality"]]>
+                <![CDATA["My orders feature"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@58a9760d]" started-at="2025-04-16T19:34:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-16T19:35:38 IST" duration-ms="62512" status="PASS">
           <params>
             <param index="0">
@@ -726,6 +747,9 @@
           </reporter-output>
         </test-method> <!-- runScenario -->
         <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.RunnerTestNg@58a9760d]" started-at="2025-04-16T19:36:26 IST" name="tearDownClass" finished-at="2025-04-16T19:36:30 IST" duration-ms="3892" status="PASS">
+=======
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.RunnerTestNg@58a9760d]" started-at="2025-04-16T17:03:08 IST" name="tearDownClass" finished-at="2025-04-16T17:03:11 IST" duration-ms="2960" status="PASS">
+>>>>>>> branch 'jeevika' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

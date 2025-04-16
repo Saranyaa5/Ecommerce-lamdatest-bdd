@@ -1,9 +1,11 @@
+
 @MyOrders
 
 Feature: My orders feature
   I want to check for the orders i made previously
   
   Background:
+  Scenario: viewing order history after placing an order
   Given the user is on the homepage
   When the user searches "hp lp3065"
 	  And user selects the product
@@ -30,9 +32,9 @@ Feature: My orders feature
 	  When the user clicks on My Account in the top
 	  And clicks my order history
   
- @AccessingOdersHistory
-  Scenario: To checkout view the order history after ordering
-	  Then the order history is dispalyed
+ #@AccessingOdersHistory
+  #Scenario: To checkout view the order history after ordering
+#	  Then the order history is displayed
 	  
  #@ProductReOrdering
  #Scenario: To reorder the product in the order  history
@@ -47,7 +49,3 @@ Feature: My orders feature
   #Then the product return button should be displayed
   #
  #@ReturningWithInvalidCredentials
-	  
-	  
-  
-  
