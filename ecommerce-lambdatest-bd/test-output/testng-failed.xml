@@ -3,20 +3,13 @@
 <suite thread-count="40" parallel="methods" name="Failed suite [Suite]">
   <test thread-count="40" parallel="methods" name="Test(failed)">
     <classes>
-      <class name="com.runner.RunnerTestNg2">
+      <class name="com.runner.RunnerTestNg">
         <methods>
           <include name="setUpClass"/>
-<<<<<<< HEAD
-          <include name="runScenario" invocation-numbers="17 39"/>
-=======
->>>>>>> branch 'soundaranarayanan' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
+          <include name="runScenario" invocation-numbers="28"/>
           <include name="tearDownClass"/>
-<<<<<<< HEAD
-=======
-          <include name="runScenario" invocation-numbers="3"/>
->>>>>>> branch 'soundaranarayanan' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
         </methods>
-      </class> <!-- com.runner.RunnerTestNg2 -->
+      </class> <!-- com.runner.RunnerTestNg -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
