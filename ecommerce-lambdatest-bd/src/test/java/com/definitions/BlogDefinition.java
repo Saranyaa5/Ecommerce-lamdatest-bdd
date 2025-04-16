@@ -25,7 +25,7 @@ public class BlogDefinition {
 
     @Then("the user is navigated to the selected blog page")
     public void the_user_is_navigated_to_the_selected_blog_page() {
-        // Optional: validate URL or title if needed
+      
     }
 
     @When("the user enters the following comment details:")
@@ -63,21 +63,19 @@ public class BlogDefinition {
         blogAction.clickPostComment();
     }
 
-   
-    
     @Then("the user should see the warning message {string} and {string}")
     public void the_user_should_see_the_warning_message_and(String expectedWarning, String check) {
     	 String actualWarning = "";
 
          switch (check) {
              case "check1":
-                 actualWarning = blogAction.getWarning2(); // comment error
+                 actualWarning = blogAction.getWarning2(); 
                  break;
              case "check2":
-                 actualWarning = blogAction.getWarning1(); // name error
+                 actualWarning = blogAction.getWarning1();
                  break;
              case "check3":
-                 actualWarning = blogAction.getWarning2(); // short comment
+                 actualWarning = blogAction.getWarning2(); 
                  break;
              default:
                  Assert.fail("Invalid check value provided");

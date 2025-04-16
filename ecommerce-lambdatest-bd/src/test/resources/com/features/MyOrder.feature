@@ -30,21 +30,4 @@ Feature: My orders feature
 	  When the user clicks confirm order
 	  When the user clicks on My Account in the top
 	  And clicks my order history
-  
- #@AccessingOdersHistory
-  #Scenario: To checkout view the order history after ordering
-#	  Then the order history is displayed
-	  
- #@ProductReOrdering
- #Scenario: To reorder the product in the order  history
- #And user clicks view button
- #When the user clicks reorder button
- #Then the product reordered message should be displayed
- #
- #@ProductReturning
- #Scenario: To return the product in Order History
-  #And user clicks view button
-  #When the user clicks return button
-  #Then the product return button should be displayed
-  #
- #@ReturningWithInvalidCredentials
+ 
