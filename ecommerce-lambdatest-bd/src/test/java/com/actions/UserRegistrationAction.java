@@ -245,9 +245,9 @@ public class UserRegistrationAction {
     }
 
     public boolean isRegistrationPageDisplayed() {
-        return wait.until(ExpectedConditions.visibilityOf(registrationLocators.RegisterPageTitle))
-                  .isDisplayed();
+        return wait.until(ExpectedConditions.visibilityOf(registrationLocators.RegisterPageTitle)).isDisplayed();
     }
+
 
     public void enterRegistrationDetails(String firstName, String lastName, String email,
                                        String telephone, String password, String confirmPassword) {
@@ -257,6 +257,7 @@ public class UserRegistrationAction {
         waitAndSendKeys(registrationLocators.Telephone, telephone);
         waitAndSendKeys(registrationLocators.password, password);
         waitAndSendKeys(registrationLocators.cofirmpass, confirmPassword);
+
     }
 
     public void agreeToPrivacyPolicy() {
@@ -269,6 +270,7 @@ public class UserRegistrationAction {
 
     public String RegisterationSuccess() {
         return waitForElementText(registrationLocators.RegistrationSuccessMsg);
+//      return HelperClass.getDriver().getTitle();
     }
 
     public String existingMailError() {
@@ -288,10 +290,10 @@ public class UserRegistrationAction {
     }
 
     public String uncheckedError() {
+//    	return HelperClass.getDriver().getTitle();
         return waitForElementText(registrationLocators.UncheckedError);
     }
 
-    // Helper methods with proper waits
     private void waitAndClick(WebElement element) {
         WebElement el = wait.until(ExpectedConditions.elementToBeClickable(element));
         el.click();
@@ -321,6 +323,7 @@ public class UserRegistrationAction {
         WebElement el = wait.until(ExpectedConditions.visibilityOf(element));
         actions.moveToElement(el).perform();
     }
+
 
     private String waitForElementText(WebElement element) {
         try {

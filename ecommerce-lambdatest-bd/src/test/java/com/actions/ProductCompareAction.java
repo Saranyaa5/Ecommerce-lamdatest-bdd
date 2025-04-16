@@ -1,5 +1,6 @@
 package com.actions;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.PageFactory;
 
 import com.pages.ProductCompareLocator;
@@ -28,9 +29,16 @@ public class ProductCompareAction {
 	public void clickProduct() {
 		productCompareLocator.product1.click();
 	}
+//	public void clickComparionArrow() {
+//		productCompareLocator.comparisionArrow.click();
+//	}
+	
 	public void clickComparionArrow() {
-		productCompareLocator.comparisionArrow.click();
+	    JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
+	    js.executeScript("arguments[0].click();", productCompareLocator.comparisionArrow);
 	}
+
+
 	public String getProductDescription() {
 		return productCompareLocator.ComparisionProductDesc.getText();
 	}

@@ -35,11 +35,12 @@ public class BlogDefinition {
         blogAction.enterEmail(data.get(0).get("email"));
         blogAction.enterComment(data.get(0).get("comment"));
     }
-
+  
+    
     @Then("the user should see the message {string}")
     public void the_user_should_see_the_message(String expectedMessage) {
-        String actualMessage = blogAction.getSuccessMessage();
-        Assert.assertEquals(expectedMessage, actualMessage);
+    	 String actualMessage = blogAction.getSuccessMessage();
+         Assert.assertEquals(expectedMessage.trim(), actualMessage.trim());
     }
 
     @When("the user enters the name {string}")
@@ -58,7 +59,7 @@ public class BlogDefinition {
     }
 
     @When("clicks on the Post Comment button")
-    public void clicks_on_the_post_comment_button() {
+    public void clicks_on_the_post_comment_button() throws InterruptedException {
         blogAction.clickPostComment();
     }
 

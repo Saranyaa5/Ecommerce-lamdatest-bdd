@@ -1,5 +1,7 @@
 package com.definitions;
 
+import java.time.Duration;
+
 import org.junit.Assert;
 
 
@@ -37,7 +39,7 @@ public class UserRegistrationDefinition {
 
     @When("the user enters {string}, {string}, {string}, {string}, {string} and {string}")
     public void the_user_enters_and(String firstName, String lastName, String email, 
-                                  String telephone, String password, String confirmPassword) {
+                                  String telephone, String password, String confirmPassword) throws InterruptedException {
 //        userRegistrationAction.enterRegistrationDetails(firstName, lastName, email, 
 //                                                       telephone, password, confirmPassword);
     	String uniqueEmail = "test" + System.currentTimeMillis() + "@example.com";
@@ -67,19 +69,21 @@ public class UserRegistrationDefinition {
 
     @Then("the user should see {string}")
     public void the_user_should_see(String string) throws InterruptedException {
-    	
+    	Thread.sleep(3000);
     Assert.assertEquals(userRegistrationAction.RegisterationSuccess(),string);
+//    Assert.assertEquals(userRegistrationAction.RegisterationSuccess(),"Your Account Has Been Created!");
     }
 
     @When("the user enters the invalid inputs {string}, {string}, {string}, {string}, {string} and {string}")
     public void the_user_enters_the_invalid_inputs_and(String firstName, String lastName, String email, 
-                                                      String telephone, String password, String confirmPassword) {
+                                                      String telephone, String password, String confirmPassword) throws InterruptedException {
         userRegistrationAction.enterRegistrationDetails(firstName, lastName, email, 
                                                       telephone, password, confirmPassword);
     }
 
     @Then("the user should see {string} for {string}")
-    public void the_user_should_see_for(String errorMessage, String testCaseName) {
+    public void the_user_should_see_for(String errorMessage, String testCaseName) throws InterruptedException {
+
        if(testCaseName.equals("empty first name")) {
     	   
     	   Assert.assertEquals(errorMessage,userRegistrationAction.emptyFirstNameError());
@@ -97,8 +101,9 @@ public class UserRegistrationDefinition {
     	   Assert.assertEquals(errorMessage,userRegistrationAction.passwordMisMathError());
 		}
        else if(testCaseName.equals("Not checking privacy policy")) {
-    	   
+    	   Thread.sleep(3000);
     	   Assert.assertEquals(errorMessage,userRegistrationAction.uncheckedError());
+//    	   Assert.assertEquals("Register Account",userRegistrationAction.uncheckedError());
        }
        
     }

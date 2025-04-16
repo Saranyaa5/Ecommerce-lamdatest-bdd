@@ -20,7 +20,7 @@ public class Hooks {
 	 private static final Logger logger = LogManager.getLogger(Hooks.class);
 
 	    @Before
-	    public void setUp(Scenario scenario) {
+	    public void setUp(Scenario scenario) throws InterruptedException {
 	        HelperClass.setUpDriver();
 	        HelperClass.getDriver().navigate().refresh();
 	        logger.info("Scenario started: " + scenario.getName());
@@ -44,7 +44,7 @@ public class Hooks {
 	            logger.info("Scenario passed: " + scenario.getName());
 	        }
 
-//	        HelperClass.tearDown();
+	        HelperClass.tearDown();
 	    }
 }
 

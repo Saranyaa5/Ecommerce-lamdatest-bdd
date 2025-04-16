@@ -19,10 +19,10 @@ public WebElement email;
 @FindBy(xpath="(//textarea[@id='input-comment'])[1]")
 public WebElement comment;
 
-@FindBy(xpath="(//button[normalize-space()='Post comment'])[1]")
+@FindBy(xpath="//*[@id=\"button-comment\"]")
 public WebElement postComment;
 
-@FindBy(xpath="(//div[@class='alert alert-success alert-dismissible'])[1]")
+@FindBy(css="#form-comment .alert-success")
 public WebElement validMessage;
 
 @FindBy(xpath="//*[@id=\"form-comment\"]/div[3]/div")

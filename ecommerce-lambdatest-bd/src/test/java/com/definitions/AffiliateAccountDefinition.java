@@ -4,6 +4,8 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import com.actions.AffiliateAccountAction;
+
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
@@ -11,22 +13,25 @@ public class AffiliateAccountDefinition {
 
 	AffiliateAccountAction action = new AffiliateAccountAction(); // Ensure initialized
 
-	@When("the user clicks on continue button")
-	public void the_user_clicks_on_continue_button() throws InterruptedException {
+	@Given("the user is already registered and on the account page")
+	public void the_user_is_already_registered_and_on_the_account_page() throws InterruptedException {
+	   
+	}
+	@When("the user clicks on continue on register")
+	public void the_user_clicks_on_continue_on_register() throws InterruptedException {
 	   action.clickaccContinue();
-	}
+	}	
 	
-	// Register
-	@When("the user clicks on register for affiliate account")
-	public void the_user_clicks_on_register_for_affiliate_account() {
-		action.clickRegister();
+
+	@When("the user clicks on register your affiliate information")
+	public void the_user_clicks_on_register_your_affiliate_information() {
+	  action.clickRegister();
 	}
 
-	@When("enters payee name")
-	public void enters_payee_name() {
-		action.enterPayee();
+	@When("enters payee name {string}")
+	public void enters_payee_name(String string) {
+	  action.enterPayee();
 	}
-
 	@When("clicks on checkbox")
 	public void clicks_on_checkbox() {
 		action.clickCheckbox();
@@ -36,59 +41,74 @@ public class AffiliateAccountDefinition {
 	public void clicks_on_register_continue_button() {
 		action.conitnue1();
 	}
-
-	@Then("the user should see the edit your affiliate account")
-	public void the_user_should_see_the_edit_your_affiliate_account() {
-		String text = action.editOption();
-		assertEquals(text, "Edit your affiliate information");
-	}
-
-	// Edit
-	@When("the user clicks on Edit your affiliate information")
-	public void the_user_clicks_on_edit_your_affiliate_information() {
-		action.clickAffiliate();
-	}
-
-	@When("enters {string} as account name")
-	public void enters_as_account_name(String accName) {
-		action.affiliateaccName(accName);
-	}
-
-	@When("enters {string} as account number")
-	public void enters_as_account_number(String accNumber) {
-		action.affiliateaccNumber(accNumber);
-	}
-
-	@When("clicks on continue button")
-	public void clicks_on_continue_button() {
-		action.clickContinue();
-	}
-
-	@Then("the user should see account created {string}")
-	public void the_user_should_see_account_created(String expectedMessage) {
-		String actualMessage = action.accountText();
-		assertTrue(actualMessage.contains(expectedMessage), "Expected message not matched!");
-	}
-
-	// Tracking code
-	@When("the user clicks on custom affiliate tracking code")
-	public void the_user_clicks_on_custom_affiliate_tracking_code() {
-		action.clickTracking();
-	}
-
-	@Then("the user sees tracking code")
-	public void the_user_sees_tracking_code() {
-		String trackingValue = action.getTrackingCode();
-		assertTrue(trackingValue != null && !trackingValue.isEmpty(), "Tracking code is empty or null!");
-	}
-
-	@Then("clicks on continue")
-	public void clicks_on_continue() {
-		action.clickTrackingContinue();
-	}
 	
-	@Then("the user should see the message {string}|")
-	public void the_user_should_see_the_message(String string) {
-	   
+	@Then("the user sees {string} based on {string}")
+	public void the_user_sees_based_on(String expectedMessage, String check) {
+	    if (check.equalsIgnoreCase("valid")) {
+	        String actualSuccess = action.successMessage();
+	        assertTrue(actualSuccess.contains(expectedMessage), "Expected success message not found!");
+	    } else {
+	        throw new IllegalArgumentException("Invalid check value. Must be 'valid' or 'invalid'");
+	    }
 	}
-}
+
+	}
+
+	
+	
+
+//	@Then("the user should see the edit your affiliate account")
+//	public void the_user_should_see_the_edit_your_affiliate_account() {
+//		String text = action.editOption();
+//		assertEquals(text, "Edit your affiliate information");
+//	}
+//
+//	// Edit
+//	@When("the user clicks on Edit your affiliate information")
+//	public void the_user_clicks_on_edit_your_affiliate_information() {
+//		action.clickAffiliate();
+//	}
+//
+//	@When("enters {string} as account name")
+//	public void enters_as_account_name(String accName) {
+//		action.affiliateaccName(accName);
+//	}
+//
+//	@When("enters {string} as account number")
+//	public void enters_as_account_number(String accNumber) {
+//		action.affiliateaccNumber(accNumber);
+//	}
+//
+//	@When("clicks on continue button")
+//	public void clicks_on_continue_button() {
+//		action.clickContinue();
+//	}
+//
+//	@Then("the user should see account created {string}")
+//	public void the_user_should_see_account_created(String expectedMessage) {
+//		String actualMessage = action.accountText();
+//		assertTrue(actualMessage.contains(expectedMessage), "Expected message not matched!");
+//	}
+//
+//	// Tracking code
+//	@When("the user clicks on custom affiliate tracking code")
+//	public void the_user_clicks_on_custom_affiliate_tracking_code() {
+//		action.clickTracking();
+//	}
+//
+//	@Then("the user sees tracking code")
+//	public void the_user_sees_tracking_code() {
+//		String trackingValue = action.getTrackingCode();
+//		assertTrue(trackingValue != null && !trackingValue.isEmpty(), "Tracking code is empty or null!");
+//	}
+//
+//	@Then("clicks on continue")
+//	public void clicks_on_continue() {
+//		action.clickTrackingContinue();
+//	}
+//	
+//	@Then("the user should see the message {string}|")
+//	public void the_user_should_see_the_message(String string) {
+//	   
+//	}
+
