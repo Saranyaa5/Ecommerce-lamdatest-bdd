@@ -17,7 +17,8 @@ import org.testng.annotations.DataProvider;
         "src/test/resources/com/features/ProductCompare.feature",
         "src/test/resources/com/features/ProductCheckOut.feature",
         "src/test/resources/com/features/Blog.feature",
-    	"src/test/resources/com/features/AffiliateAccount.feature"
+    	"src/test/resources/com/features/AffiliateAccount.feature",
+        "src/test/resources/com/features/ProductReview.feature"
 
         
     },

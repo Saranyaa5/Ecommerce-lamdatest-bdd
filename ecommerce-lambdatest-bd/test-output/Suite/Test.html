@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>38/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>44/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Apr 16 18:35:15 IST 2025</td>
+<td>Started on:</td><td>Wed Apr 16 18:46:46 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>102 seconds (102199 ms)</td>
+<tr><td>Total time:</td><td>105 seconds (105859 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,133 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with valid inputs  with out checking privacy policy", "User Registration Functionality"</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=135.0.7049.95)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2a9dffe5fbb01c423c633a20b81bb0d6, clickElement {id=f.966450CDCE378A6710A999B8518C3BDB.d.35B07FCC069DDA3172ABAE77AAA3FA9B.e.36}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64973}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64973/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2a9dffe5fbb01c423c633a20b81bb0d6)] -&gt; xpath: //a[@class=&apos;icon-left both dropdown-item&apos; and @href=&apos;https://ecommerce-playground.lambdatest.io/index.php?route=account/register&apos;]]
-Session ID: 2a9dffe5fbb01c423c633a20b81bb0d6
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
-	at com.actions.UserRegistrationAction.waitAndClick(UserRegistrationAction.java:299)
-	at com.actions.UserRegistrationAction.clickRegister(UserRegistrationAction.java:244)
-	at com.definitions.UserRegistrationDefinition.clicks_the_register_button(UserRegistrationDefinition.java:33)
-	at ✽.clicks the register button(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/UserRegistration.feature:8)
-... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace227282239", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace227282239'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=135.0.7049.95)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2a9dffe5fbb01c423c633a20b81bb0d6, clickElement {id=f.966450CDCE378A6710A999B8518C3BDB.d.35B07FCC069DDA3172ABAE77AAA3FA9B.e.36}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64973}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64973/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2a9dffe5fbb01c423c633a20b81bb0d6)] -&gt; xpath: //a[@class=&apos;icon-left both dropdown-item&apos; and @href=&apos;https://ecommerce-playground.lambdatest.io/index.php?route=account/register&apos;]]
-Session ID: 2a9dffe5fbb01c423c633a20b81bb0d6
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
-	at com.actions.UserRegistrationAction.waitAndClick(UserRegistrationAction.java:299)
-	at com.actions.UserRegistrationAction.clickRegister(UserRegistrationAction.java:244)
-	at com.definitions.UserRegistrationDefinition.clicks_the_register_button(UserRegistrationDefinition.java:33)
-	at ✽.clicks the register button(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/UserRegistration.feature:8)
-</pre></div></td>
-<td>17</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To Add the products to comparision list", "Product compare functionality"</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=135.0.7049.95)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [52c73fb5abf5db5d1c5e37880a8d79e1, clickElement {id=f.C1D0D5DA3FDC736630B25697248E5194.d.05B5CF64259476A18A56DB132BD51F05.e.49}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64281}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64281/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (52c73fb5abf5db5d1c5e37880a8d79e1)] -&gt; xpath: //button[contains(text(),&apos;Search&apos;)]]
-Session ID: 52c73fb5abf5db5d1c5e37880a8d79e1
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
-	at com.actions.CheckOutAction.searchProdut(CheckOutAction.java:40)
-	at com.definitions.CheckoutDefinition.the_user_searches(CheckoutDefinition.java:20)
-	at ✽.the user searches &quot;mac&quot;(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/ProductCompare.feature:15)
-... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1587796015", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1587796015'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=135.0.7049.95)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [52c73fb5abf5db5d1c5e37880a8d79e1, clickElement {id=f.C1D0D5DA3FDC736630B25697248E5194.d.05B5CF64259476A18A56DB132BD51F05.e.49}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64281}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64281/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (52c73fb5abf5db5d1c5e37880a8d79e1)] -&gt; xpath: //button[contains(text(),&apos;Search&apos;)]]
-Session ID: 52c73fb5abf5db5d1c5e37880a8d79e1
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
-	at com.actions.CheckOutAction.searchProdut(CheckOutAction.java:40)
-	at com.definitions.CheckoutDefinition.the_user_searches(CheckoutDefinition.java:20)
-	at ✽.the user searches &quot;mac&quot;(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/ProductCompare.feature:15)
-</pre></div></td>
-<td>11</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -203,14 +76,19 @@ Session ID: 52c73fb5abf5db5d1c5e37880a8d79e1
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To checkout the empty shopping cart as a registered user", "Shopping Cart CheckOut functionality"</td>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Scenario: User tries to add a product to cart without selecting size", "Add to Cart Functionality on eCommerce Playground"</td>
 <td></td>
-<td>20</td>
+<td>26</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit a valid product review with rating and comment", "Product Review"</td>
+<td></td>
+<td>19</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 <tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Subscribe or Unsubscribe from newsletter", "User Account Management"</td>
 <td></td>
-<td>19</td>
+<td>16</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 <tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "User Registration Functionality"</td>
@@ -218,59 +96,44 @@ Session ID: 52c73fb5abf5db5d1c5e37880a8d79e1
 <td>11</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 <tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add multiple quantities of the same product", "Add to Cart Functionality on eCommerce Playground"</td>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit review without rating and without comment", "Product Review"</td>
 <td></td>
-<td>28</td>
+<td>17</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 <tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Login Functionality"</td>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add multiple quantities of the same product", "Add to Cart Functionality on eCommerce Playground"</td>
 <td></td>
-<td>12</td>
+<td>25</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 <tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality with invalid inputs", "Search functionality"</td>
 <td></td>
-<td>10</td>
+<td>9</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 <tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Login Functionality"</td>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To checkout the shopping cart as a guest user", "Shopping Cart CheckOut functionality"</td>
 <td></td>
-<td>12</td>
+<td>58</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 <tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with valid credentials and logs out", "Login Functionality"</td>
 <td></td>
-<td>15</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User requests a password reset link using valid email", "Forgot Password Functionality"</td>
-<td></td>
-<td>30</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding a valid comment to the blog", "Blog functionality"</td>
-<td></td>
-<td>24</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Login Functionality"</td>
-<td></td>
 <td>12</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 <tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality with case sensitive inputs", "Search functionality"</td>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Remove a product from the cart", "Add to Cart Functionality on eCommerce Playground"</td>
 <td></td>
-<td>10</td>
+<td>51</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 <tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User requests a password reset link using invalid email", "Forgot Password Functionality"</td>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User requests a password reset link without providing email", "Forgot Password Functionality"</td>
 <td></td>
-<td>15</td>
+<td>21</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 <tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Change user password", "User Account Management"</td>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To Add the products to comparision list", "Product compare functionality"</td>
 <td></td>
-<td>17</td>
+<td>21</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 <tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit user account details", "User Account Management"</td>
@@ -278,74 +141,134 @@ Session ID: 52c73fb5abf5db5d1c5e37880a8d79e1
 <td>18</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 <tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register a user and register as affiliate with valid and invalid inputs", "User Login and Affiliate Account Functionality"</td>
-<td></td>
-<td>40</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "User Registration Functionality"</td>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with valid credentials", "Login Functionality"</td>
 <td></td>
 <td>13</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 <tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "User Registration Functionality"</td>
-<td></td>
-<td>11</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To checkout the  cart as a registered user", "Shopping Cart CheckOut functionality"</td>
-<td></td>
-<td>50</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To checkout the shopping cart as a guest user", "Shopping Cart CheckOut functionality"</td>
-<td></td>
-<td>52</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "User Registration Functionality"</td>
-<td></td>
-<td>13</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Modify the wishlist by removing a product", "User Account Management"</td>
-<td></td>
-<td>19</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To checkout the  cart with existing email", "Shopping Cart CheckOut functionality"</td>
-<td></td>
-<td>48</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Scenario: User tries to add a product to cart without selecting size", "Add to Cart Functionality on eCommerce Playground"</td>
-<td></td>
-<td>24</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality by category as input", "Search functionality"</td>
-<td></td>
-<td>11</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submitting a blog comment without filling required details", "Blog functionality"</td>
-<td></td>
-<td>27</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Subscribe or Unsubscribe from newsletter", "User Account Management"</td>
-<td></td>
-<td>18</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User requests a password reset link without providing email", "Forgot Password Functionality"</td>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User requests a password reset link using invalid email", "Forgot Password Functionality"</td>
 <td></td>
 <td>17</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 <tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Modify the wishlist by removing a product", "User Account Management"</td>
+<td></td>
+<td>16</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Change user password", "User Account Management"</td>
+<td></td>
+<td>18</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Login Functionality"</td>
+<td></td>
+<td>9</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a single product to the cart", "Add to Cart Functionality on eCommerce Playground"</td>
 <td></td>
-<td>29</td>
+<td>30</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submitting a blog comment without filling required details", "Blog functionality"</td>
+<td></td>
+<td>26</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Subscribe or Unsubscribe from newsletter", "User Account Management"</td>
+<td></td>
+<td>17</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Login Functionality"</td>
+<td></td>
+<td>12</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Login Functionality"</td>
+<td></td>
+<td>12</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submitting a blog comment without filling required details", "Blog functionality"</td>
+<td></td>
+<td>26</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To perform compare without adding products to list", "Product compare functionality"</td>
+<td></td>
+<td>20</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submitting a blog comment without filling required details", "Blog functionality"</td>
+<td></td>
+<td>21</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit review without rating but with comment", "Product Review"</td>
+<td></td>
+<td>18</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "User Registration Functionality"</td>
+<td></td>
+<td>12</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with valid inputs  with out checking privacy policy", "User Registration Functionality"</td>
+<td></td>
+<td>14</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "User Registration Functionality"</td>
+<td></td>
+<td>12</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To checkout the  cart with existing email", "Shopping Cart CheckOut functionality"</td>
+<td></td>
+<td>46</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit review with rating but without comment", "Product Review"</td>
+<td></td>
+<td>17</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding a valid comment to the blog", "Blog functionality"</td>
+<td></td>
+<td>20</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To checkout the empty shopping cart as a registered user", "Shopping Cart CheckOut functionality"</td>
+<td></td>
+<td>26</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "User Registration Functionality"</td>
+<td></td>
+<td>11</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality with case sensitive inputs", "Search functionality"</td>
+<td></td>
+<td>9</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality with unnecessary indentation in search", "Search functionality"</td>
+<td></td>
+<td>9</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register a user and register as affiliate with valid and invalid inputs", "User Login and Affiliate Account Functionality"</td>
+<td></td>
+<td>42</td>
+<td>com.runner.RunnerTestNg@58a9760d</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Login Functionality"</td>
+<td></td>
+<td>9</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 <tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality with valid inputs", "Search functionality"</td>
@@ -353,44 +276,24 @@ Session ID: 52c73fb5abf5db5d1c5e37880a8d79e1
 <td>9</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 <tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Remove a product from the cart", "Add to Cart Functionality on eCommerce Playground"</td>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To checkout the  cart as a registered user", "Shopping Cart CheckOut functionality"</td>
 <td></td>
-<td>49</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submitting a blog comment without filling required details", "Blog functionality"</td>
-<td></td>
-<td>24</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with valid credentials", "Login Functionality"</td>
-<td></td>
-<td>12</td>
+<td>63</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 <tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with valid inputs", "User Registration Functionality"</td>
 <td></td>
-<td>18</td>
+<td>15</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 <tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submitting a blog comment without filling required details", "Blog functionality"</td>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User requests a password reset link using valid email", "Forgot Password Functionality"</td>
 <td></td>
-<td>24</td>
+<td>26</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 <tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To perform compare without adding products to list", "Product compare functionality"</td>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality by category as input", "Search functionality"</td>
 <td></td>
-<td>13</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality with unnecessary indentation in search", "Search functionality"</td>
-<td></td>
-<td>11</td>
-<td>com.runner.RunnerTestNg@58a9760d</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Login Functionality"</td>
-<td></td>
-<td>12</td>
+<td>8</td>
 <td>com.runner.RunnerTestNg@58a9760d</td></tr>
 </table><p>
 </body>
