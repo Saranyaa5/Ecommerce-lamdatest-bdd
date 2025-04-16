@@ -1,7 +1,9 @@
 package com.actions;
 
 import java.time.Duration;
+import java.util.NoSuchElementException;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -43,12 +45,27 @@ public class BlogAction {
 	}
 
 	public void clickPostComment() {
-	    blog.postComment.click();
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    wait.until(ExpectedConditions.visibilityOf(blog.postComment));
+	    wait.until(ExpectedConditions.elementToBeClickable(blog.postComment));
+
+	    JavascriptExecutor js = (JavascriptExecutor) driver;
+	    js.executeScript("arguments[0].click();", blog.postComment);
 	}
 
+
 	public String getSuccessMessage() {
-	    return blog.validMessage.getText();
+	    try {
+	        if (blog.validMessage.isDisplayed()) {
+	            return blog.validMessage.getText(); // or getAttribute("innerText")
+	        } else {
+	            return "Success message not visible";
+	        }
+	    } catch (NoSuchElementException e) {
+	        return "Success message element not found";
+	    }
 	}
+
 	
 	public String getWarning1() {
 	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
