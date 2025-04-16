@@ -135,7 +135,7 @@ public class UserAccountDefinition {
     
     @And("user enters valid details")
     public void user_enters_valid_details() throws IOException {
-        List<Map<String, String>> testData = ExcelReader.getData("C:\\Users\\admi\\eclipse-workspaceProject\\Address.xlsx", "Sheet1");
+        List<Map<String, String>> testData = ExcelReader.getData("src/test/resources/Address.xlsx", "Sheet1");
         String firstName = testData.get(0).get("firstname");
         String lastName = testData.get(0).get("lastname");
         String address = testData.get(0).get("address");

@@ -21,7 +21,7 @@ public class UserAccountAction {
     UserAccountLocator userAccountLocator;
     LoginPageLocator loginPageLocator;
     WebDriverWait wait;
-
+   
     public UserAccountAction() {
         userAccountLocator = new UserAccountLocator();
         PageFactory.initElements(driver, userAccountLocator);
@@ -151,7 +151,9 @@ public class UserAccountAction {
 	}
 
 	public String NewAddressCreated() {
-	       return userAccountLocator.newAddressCreated.getText();
+		 
+	       return wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.newAddressCreated)).getText();
+	     
 	}
 
 	public void enterAddressDetails(String firstName, String lastName, String address, String city, String postcode) {
@@ -162,8 +164,9 @@ userAccountLocator.getFirstNameField.sendKeys( firstName);
     userAccountLocator.getPostcodeField.sendKeys(postcode);
     userAccountLocator.countrySelect.click();
     userAccountLocator.unitedstates.click();
-    userAccountLocator.state.click();
-    userAccountLocator.Abeerdan.click();
+    wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.state)).click();
+    wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.Abeerdan)).click();
+
 }
 
 }

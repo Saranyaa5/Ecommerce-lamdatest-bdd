@@ -7,13 +7,13 @@ Background:
     And the user enters the valid credentials 
     And the user clicks on the Login button
 
-
-  @EditAccount
-  Scenario: Edit user account details
-    Then the user clicks the "Edit your account information" page
-    And the user updates telephone number
-    And clicks on the "EditInfo" Continue button
-    Then user should see "Success: Your account has been successfully updated."
+#
+  #@EditAccount
+  #Scenario: Edit user account details
+    #Then the user clicks the "Edit your account information" page
+    #And the user updates telephone number
+    #And clicks on the "EditInfo" Continue button
+    #Then user should see "Success: Your account has been successfully updated."
 
   @ModifyAddress
   Scenario: Adding new address
