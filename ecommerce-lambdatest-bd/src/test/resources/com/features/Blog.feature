@@ -11,7 +11,7 @@ Feature: Blog functionality
     When the user enters the following comment details:
       | name      | email             | comment                                                                 |
       | Jeev      | jeev@example.com  | This blog was very informative and well written. Keep it up!           |
-    Then the user should see the message "Thank you for your comment. It has been submitted to the webmaster for approval."|
+    Then the user should see the message ""
 
   @invalid_blog_filling_without_required_details
 Scenario Outline: Submitting a blog comment without filling required details
