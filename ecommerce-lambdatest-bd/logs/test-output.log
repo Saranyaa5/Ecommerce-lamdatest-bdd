@@ -6965,3 +6965,21 @@
 2025-04-15 20:31:22 [TestNG-PoolService-6] INFO : Scenario passed: Register with invalid inputs
 2025-04-15 20:31:22 [TestNG-PoolService-7] INFO : Scenario passed: Register with valid inputs  with out checking privacy policy
 2025-04-15 20:31:22 [TestNG-PoolService-9] INFO : Scenario passed: Register with invalid inputs
+2025-04-16 09:25:58 [main] INFO : Scenario started: To checkout view the order history after ordering
+2025-04-16 09:27:32 [main] INFO : Scenario passed: To checkout view the order history after ordering
+2025-04-16 09:27:33 [main] INFO : Scenario started: To reorder the product in the order  history
+2025-04-16 09:29:03 [main] INFO : Scenario passed: To reorder the product in the order  history
+2025-04-16 09:29:05 [main] INFO : Scenario started: To return the product in Order History
+2025-04-16 09:30:21 [main] INFO : Scenario passed: To return the product in Order History
+2025-04-16 11:50:29 [main] INFO : Scenario started: To checkout view the order history after ordering
+2025-04-16 11:52:25 [main] ERROR: Scenario failed: To checkout view the order history after ordering
+2025-04-16 12:08:35 [main] INFO : Scenario started: To checkout view the order history after ordering
+2025-04-16 12:10:01 [main] ERROR: Scenario failed: To checkout view the order history after ordering
+2025-04-16 12:15:35 [main] INFO : Scenario started: To checkout view the order history after ordering
+2025-04-16 12:16:57 [main] ERROR: Scenario failed: To checkout view the order history after ordering
+2025-04-16 12:35:55 [main] INFO : Scenario started: To checkout view the order history after ordering
+2025-04-16 12:37:19 [main] ERROR: Scenario failed: To checkout view the order history after ordering
+2025-04-16 12:45:08 [main] INFO : Scenario started: To checkout view the order history after ordering
+2025-04-16 12:46:27 [main] ERROR: Scenario failed: To checkout view the order history after ordering
+2025-04-16 14:39:22 [main] INFO : Scenario started: To checkout view the order history after ordering
+2025-04-16 14:40:39 [main] ERROR: Scenario failed: To checkout view the order history after ordering

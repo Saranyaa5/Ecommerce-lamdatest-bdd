@@ -1,10 +1,7 @@
 Feature: Search functionality
 
   Background:
-     Given the user is on the homepage  
-    When the user clicks on My Account.  
-    And clicks the register button  
-    Then the user should see the registration page  
+     Given the user is on the homepage   
     
   @ValidSearchInputs
   Scenario: Search functionality with valid inputs

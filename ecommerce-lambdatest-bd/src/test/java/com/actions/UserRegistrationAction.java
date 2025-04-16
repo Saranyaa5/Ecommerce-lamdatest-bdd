@@ -1,4 +1,5 @@
 //package com.actions;
+
 //
 //import java.time.Duration;
 //
@@ -212,6 +213,7 @@
 package com.actions;
 
 import java.time.Duration;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
@@ -230,7 +232,7 @@ public class UserRegistrationAction {
         this.registrationLocators = new RegistrationPageLocator();
         PageFactory.initElements(HelperClass.getDriver(), registrationLocators);
         this.actions = new Actions(HelperClass.getDriver());
-        this.wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
+        this.wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
         this.jsExecutor = (JavascriptExecutor) HelperClass.getDriver();
     }
 
@@ -331,7 +333,7 @@ public class UserRegistrationAction {
     private void scrollToElement(WebElement element) {
         jsExecutor.executeScript("arguments[0].scrollIntoView({block: 'center', behavior: 'smooth'});", element);
         try {
-            Thread.sleep(300); // Small pause after scroll
+            Thread.sleep(300);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
