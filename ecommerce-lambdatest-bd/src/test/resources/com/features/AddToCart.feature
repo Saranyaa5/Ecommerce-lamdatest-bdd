@@ -32,6 +32,7 @@ When user clicks the Phones & PDAs category
 
 
 
+
 @AddToCartWithoutSize
 Scenario:Scenario: User tries to add a product to cart without selecting size
 

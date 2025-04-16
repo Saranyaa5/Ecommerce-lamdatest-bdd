@@ -39,7 +39,7 @@ public class UserRegistrationDefinition {
 
     @When("the user enters {string}, {string}, {string}, {string}, {string} and {string}")
     public void the_user_enters_and(String firstName, String lastName, String email, 
-                                  String telephone, String password, String confirmPassword) throws InterruptedException {
+                                  String telephone, String password, String confirmPassword) {
 //        userRegistrationAction.enterRegistrationDetails(firstName, lastName, email, 
 //                                                       telephone, password, confirmPassword);
     	String uniqueEmail = "test" + System.currentTimeMillis() + "@example.com";
@@ -76,7 +76,7 @@ public class UserRegistrationDefinition {
 
     @When("the user enters the invalid inputs {string}, {string}, {string}, {string}, {string} and {string}")
     public void the_user_enters_the_invalid_inputs_and(String firstName, String lastName, String email, 
-                                                      String telephone, String password, String confirmPassword) throws InterruptedException {
+                                                      String telephone, String password, String confirmPassword) {
         userRegistrationAction.enterRegistrationDetails(firstName, lastName, email, 
                                                       telephone, password, confirmPassword);
     }

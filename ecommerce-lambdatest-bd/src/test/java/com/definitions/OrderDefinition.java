@@ -25,12 +25,24 @@ public class OrderDefinition {
 
     @Then("the order history is displayed")
     public void the_order_history_is_displayed(){
-//    	boolean isTableDisplayed = orderPageAction.printOrderHistoryTable();
-//    	Assert.assertTrue(isTableDisplayed, "Order history table should be visible and printable.");
-    	
-    	    String orderHeader = orderPageAction.getTextOrder();
-    	    Assert.assertTrue(orderHeader.contains("Order History"), "Order History heading should be visible.");
+    	Assert.assertTrue(orderPageAction.eyeDisplayed());
+    	   
     	}
+    @When("user clicks view button")
+    public void user_clicks_view_button() {
+        orderPageAction.clickViewButton();
+    }
+
+    @When("the user clicks reorder button")
+    public void the_user_clicks_reorder_button() {
+        orderPageAction.clickReorderButton();
+    }
+
+    @Then("the product reordered message should be displayed")
+    public void the_product_reordered_message_should_be_displayed() {
+        Assert.assertTrue(orderPageAction.isReorderMessageDisplayed());
+    }
+
 
 
     }

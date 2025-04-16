@@ -10,9 +10,22 @@ public class OrderPageLocator {
 	
 	@FindBy(xpath="//a[@class='icon-left both nav-link dropdown-toggle' and @href='https://ecommerce-playground.lambdatest.io/index.php?route=account/account']")
 	public WebElement myAccount;
+    
 
     @FindBy(xpath="//*[@id=\"content\"]/div[2]/div/div/div[1]/a")
     public WebElement myOrders;
+    
+    @FindBy(xpath = "//a[contains(@href, 'order/info') and contains(@class, 'btn-info')]")
+    public WebElement viewOrderButton;
+    
+    @FindBy(xpath = "//a[contains(@href, 'order/info') and contains(@class, 'btn-info')]")
+    private WebElement viewButton;
+
+    @FindBy(xpath = "//a[contains(@href,'reorder')]")
+	public WebElement reorderButton;
+
+    @FindBy(css = ".alert-success")  // Assuming the success message has this class
+	public WebElement reorderSuccessMessage;
     
     @FindBy(xpath="//*[@id=\"content\"]/div[1]/table/tbody/tr/td[1]")
     public WebElement orderid;

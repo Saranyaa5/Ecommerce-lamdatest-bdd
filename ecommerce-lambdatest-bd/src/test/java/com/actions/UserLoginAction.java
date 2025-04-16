@@ -76,22 +76,11 @@ public class UserLoginAction {
 //    public String getWarning2() {
 //    	return loginPageLocator.warningMessage2.getText();
 //    }
-//    public boolean getWarningMessage() {
-//        return loginPageLocator.warningMessage.getText();
-//    	return loginPageLocator.warningMessage.isDisplayed();
-//    }
-    
     public boolean getWarningMessage() {
-        try {
-            WebElement warning = wait.until(ExpectedConditions.visibilityOf(loginPageLocator.warningMessage));
-            return warning.isDisplayed();
-        } catch (Exception e) {
-            System.out.println("Warning message not displayed within the wait time.");
-            return false;
-        }
+//        return loginPageLocator.warningMessage.getText();
+    	return loginPageLocator.warningMessage.isDisplayed();
     }
-
-//    
+    
 
     
   /*  public void clickmyAccounts2() {

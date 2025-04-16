@@ -248,7 +248,6 @@ public class UserRegistrationAction {
         return wait.until(ExpectedConditions.visibilityOf(registrationLocators.RegisterPageTitle)).isDisplayed();
     }
 
-
     public void enterRegistrationDetails(String firstName, String lastName, String email,
                                        String telephone, String password, String confirmPassword) {
         waitAndSendKeys(registrationLocators.FirstName, firstName);
@@ -257,7 +256,6 @@ public class UserRegistrationAction {
         waitAndSendKeys(registrationLocators.Telephone, telephone);
         waitAndSendKeys(registrationLocators.password, password);
         waitAndSendKeys(registrationLocators.cofirmpass, confirmPassword);
-
     }
 
     public void agreeToPrivacyPolicy() {
