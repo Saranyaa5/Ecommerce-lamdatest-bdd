@@ -5,34 +5,34 @@ Background:
     When user clicks the Phones & PDAs category
     And user selects the iPod Nano product
 
-@positive
+@validReview
 Scenario: Submit a valid product review with rating and comment
-    And user enters "John Doe" in the Name field
+    And user enters "soundar" in the Name field
     And user writes "Excellent product with great features" in the Review field
     And user selects a 5-star rating
     When user clicks on the Continue button to submit the review
     Then success message "Thank you for your review. It has been submitted to the webmaster for approval." should be displayed
 
-@negative
+@noRatingNoComment
 Scenario: Submit review without rating and without comment
-    And user enters "John Doe" in the Name field
+    And user enters "soundar" in the Name field
     And user leaves the Review field blank
     And user does not select any rating
     When user clicks on the Continue button to submit the review
     And error message "Please select a review rating" should be displayed
 
 
-@negative
+@noRatingWithComment
 Scenario: Submit review without rating but with comment
-    And user enters "John Doe" in the Name field
+    And user enters "soundar" in the Name field
     And user writes "Not satisfied with the sound quality" in the Review field
     And user does not select any rating
     When user clicks on the Continue button to submit the review
     Then error message "Please select a review rating" should be displayed
 
-@negative
+@withRatingNoComment
 Scenario: Submit review with rating but without comment
-    And user enters "John Doe" in the Name field
+    And user enters "soundar" in the Name field
     And user leaves the Review field blank
     And user selects a 4-star rating
     When user clicks on the Continue button to submit the review

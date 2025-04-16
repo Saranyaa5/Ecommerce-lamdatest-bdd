@@ -1,11 +1,17 @@
 package com.utilities;
 
-import org.apache.poi.ss.usermodel.*;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelReader {
     private static final String TEST_DATA_FILE = "src/test/resources/SearchTestData.xlsx";
@@ -35,5 +41,48 @@ public class ExcelReader {
         }
         return testData;
     }
+    
+    
+    public static List<Map<String, String>> getData(String filePath, String sheetName) throws IOException {
+        List<Map<String, String>> testData = new ArrayList<>();
+        FileInputStream file = new FileInputStream(filePath);
+        Workbook workbook = new XSSFWorkbook(file);
+        Sheet sheet = workbook.getSheet(sheetName);
+        Row headerRow = sheet.getRow(0);
+        int rowCount = sheet.getPhysicalNumberOfRows();
+        int colCount = headerRow.getLastCellNum();
+
+        for (int i = 1; i < rowCount; i++) {
+            Row row = sheet.getRow(i);
+            Map<String, String> dataMap = new HashMap<>();
+            for (int j = 0; j < colCount; j++) {
+                String key = headerRow.getCell(j).getStringCellValue();
+                Cell cell = row.getCell(j);
+                String value = "";
+                if (cell != null) {
+                    switch (cell.getCellType()) {
+                        case STRING:
+                            value = cell.getStringCellValue();
+                            break;
+                        case NUMERIC:
+                            value = String.valueOf((int) cell.getNumericCellValue());
+                            break;
+                        case BOOLEAN:
+                            value = String.valueOf(cell.getBooleanCellValue());
+                            break;
+                        default:
+                            value = "";
+                    }
+                }
+                dataMap.put(key, value);
+            }
+            testData.add(dataMap);
+        }
+
+        workbook.close();
+        file.close();
+        return testData;
+    }
+
 }
 

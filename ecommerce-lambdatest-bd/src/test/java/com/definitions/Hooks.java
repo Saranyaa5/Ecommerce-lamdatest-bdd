@@ -22,6 +22,7 @@ public class Hooks {
 	    @Before
 	    public void setUp(Scenario scenario) {
 	        HelperClass.setUpDriver();
+	        HelperClass.getDriver().navigate().refresh();
 	        logger.info("Scenario started: " + scenario.getName());
 	    }
 	    @After

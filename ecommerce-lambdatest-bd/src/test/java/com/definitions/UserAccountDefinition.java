@@ -1,9 +1,13 @@
 package com.definitions;
 
-import org.openqa.selenium.By;
+import java.io.IOException;
+import java.util.List;
+import java.util.Map;
+
 import org.testng.Assert;
 
 import com.actions.UserAccountAction;
+import com.utilities.ExcelReader;
 import com.utilities.HelperClass;
 
 import io.cucumber.java.en.And;
@@ -34,9 +38,16 @@ public class UserAccountDefinition {
             case "Newsletter":
                 userAccountAction.ClickNewsLetter();
                 break;
+            case "Modify your address book entries":
+            	userAccountAction.ClickModifyAddress();
+            	break;
             default:
                 throw new IllegalArgumentException("Unknown page: " + pageName);
         }
+    }
+    @And("the user clicks new address")
+    public void ClickNewAddress() {
+    	userAccountAction.clickNewAddress();
     }
 
     @And("the user updates telephone number")
@@ -64,9 +75,16 @@ public class UserAccountDefinition {
             case "Success: Your newsletter subscription has been successfully updated!":
                 actualMessage = userAccountAction.NewsLetterUpdated();
                 break;
+            case "Password must be between 4 and 20 characters!":
+            	actualMessage = userAccountAction.PasswordEmpty();
+            	break;
+            case "Your address has been successfully added":
+            	actualMessage = userAccountAction.NewAddressCreated();
+            	break;
             default:
                 throw new IllegalArgumentException("Unknown message: " + expectedMessage);
         }
+
         Assert.assertTrue(actualMessage.contains(expectedMessage));
     }
 
@@ -83,7 +101,10 @@ public class UserAccountDefinition {
     	else if(button.equals("ChangePassword")) {
     		userAccountAction.ClickPassContinue();
     	}
-    	else {
+    	else if(button.equals("NewAddress")) {
+    		userAccountAction.ModifyAddressContinue();
+    	}
+    	else{
     		userAccountAction.clickNewsLetterContinue();
     	}
     }
@@ -111,5 +132,18 @@ public class UserAccountDefinition {
     
     	
     }
+    
+    @And("user enters valid details")
+    public void user_enters_valid_details() throws IOException {
+        List<Map<String, String>> testData = ExcelReader.getData("C:\\Users\\admi\\eclipse-workspaceProject\\Address.xlsx", "Sheet1");
+        String firstName = testData.get(0).get("firstname");
+        String lastName = testData.get(0).get("lastname");
+        String address = testData.get(0).get("address");
+        String city = testData.get(0).get("city");
+        String postcode = testData.get(0).get("postcode");
+
+        userAccountAction.enterAddressDetails(firstName, lastName, address, city, postcode);
+    }
+
    
 }
