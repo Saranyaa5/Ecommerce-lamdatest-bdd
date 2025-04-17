@@ -9,7 +9,7 @@ Feature: Blog functionality
     Then the user selects any article from the blog
     And the user is navigated to the selected blog page
     When the user enters the following comment details:
-      | name      | email             | comment                                                                 |
+      | name      | email             | comment                                                                |
       | Jeev      | jeev@example.com  | This blog was very informative and well written. Keep it up!           |
     Then the user should see the message ""
 

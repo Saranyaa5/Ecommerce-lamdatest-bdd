@@ -9,15 +9,12 @@ import java.util.Map;
 
 public class ExcelReader {
     private static final String TEST_DATA_FILE = "src/test/resources/SearchTestData.xlsx";
-
     public static Map<String, String> getSearchTestData() {
         Map<String, String> testData = new HashMap<>();
-        
         try (FileInputStream file = new FileInputStream(TEST_DATA_FILE);
-             Workbook workbook = new XSSFWorkbook(file)) {
-            
+            Workbook workbook = new XSSFWorkbook(file)) {
             Sheet sheet = workbook.getSheetAt(0); // First sheet
-            for (int i = 0; i <= sheet.getLastRowNum(); i++) { // Skip header
+            for (int i = 0; i <= sheet.getLastRowNum(); i++) { 
                 Row row = sheet.getRow(i);
                 if (row != null) {
                     Cell testCaseCell = row.getCell(0);
