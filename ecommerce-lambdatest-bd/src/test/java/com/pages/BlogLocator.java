@@ -35,4 +35,10 @@ public WebElement Warning1;
 @FindBy(xpath="//div[@class='invalid-feedback'][normalize-space()='Warning: Comment Text must be between 25 and 1000 characters!']")
 public WebElement Warning2;
 
+@FindBy(xpath="//*[@id=\"entry_210963\"]/div/a[1]")
+public WebElement business;
+
+@FindBy(xpath="//h1[@class='h1']")
+public WebElement businessHeading;
+
 }

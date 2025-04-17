@@ -27,25 +27,12 @@ public class LoginPageLocator {
     @FindBy(xpath="//input[@class='btn btn-primary']")
     public WebElement loginButton;
 
-//    @FindBy(xpath="//h2[text()='My Account']")
     @FindBy(xpath="//*[@id=\"content\"]/div[1]/h2")
     public WebElement titleMyAccount;
     
     @FindBy(xpath = "//div[contains(@class,'alert-danger')]")
     public WebElement warningMessage;
-    
-    
-//    @FindBy(xpath="//*[@id=\"account-login\"]/div[1]/text()")
-//    public WebElement warningMessage1;
-//    
-//    @FindBy(xpath="//*[@id="account-login"]/div[1]/text()")
-//    public WebElement warningMessage2;
    
-    
-//@FindBy(xpath="(//span[normalize-space()='Logout'])[1]")
-//public WebElement logout;
-
-//@FindBy(xpath="//*[@id=\"content\"]/h1/text()")
 
 @FindBy(xpath="//*[@id=\"column-right\"]/div/a[14]")
 public WebElement logout;

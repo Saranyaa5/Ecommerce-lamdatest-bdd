@@ -1,9 +1,12 @@
 package com.definitions;
 
 import java.io.IOException;
+
 import java.util.List;
 import java.util.Map;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 
 import com.actions.UserAccountAction;
@@ -13,10 +16,12 @@ import com.utilities.HelperClass;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import jdk.internal.org.jline.utils.Log;
 
 public class UserAccountDefinition {
 
     UserAccountAction userAccountAction = new UserAccountAction();
+    private static final Logger logger = LogManager.getLogger(UserAccountDefinition.class);
     
     @Given("the user is on the My Account Page")
     public void the_user_is_on_the_My_Account_Page(){
@@ -111,7 +116,7 @@ public class UserAccountDefinition {
 
     @And("the user has products in their wishlist")
     public void ProductInTheWishList() {
-        // Can be expanded if you need to add logic here
+        logger.info("product in the wish list");
     }
 
     @And("the user removes a product from the wishlist")
