@@ -5,7 +5,6 @@ import java.util.NoSuchElementException;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -56,19 +55,15 @@ public class BlogAction {
 
 
 	public String getSuccessMessage() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.visibilityOf(blog.validMessage)); // wait until it's visible
-
-		return blog.validMessage.getText().trim();
-//	    try {
-//	        if (blog.validMessage.isDisplayed()) {
-//	            return blog.validMessage.getText(); // or getAttribute("innerText")
-//	        } else {
-//	            return "Success message not visible";
-//	        }
-//	    } catch (NoSuchElementException e) {
-//	        return "Success message element not found";
-//	    }
+	    try {
+	        if (blog.validMessage.isDisplayed()) {
+	            return blog.validMessage.getText(); 
+	        } else {
+	            return "Success message not visible";
+	        }
+	    } catch (NoSuchElementException e) {
+	        return "Success message element not found";
+	    }
 	}
 
 	

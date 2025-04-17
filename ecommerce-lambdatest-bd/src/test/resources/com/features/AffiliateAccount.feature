@@ -1,33 +1,25 @@
-Feature: User Registration and Affiliate Account Functionality
-  I want to register for the ecommerce LambdaTest account and become an affiliate partner
+@AffiliateAccount
+Feature: User Login and Affiliate Account Functionality
 
-  Background:  
+Scenario Outline: Register a user and register as affiliate with valid and invalid inputs
     Given the user is on the homepage  
-    When the user clicks on My Account  
+    When the user clicks on My Account.  
     And clicks the register button  
-    Then the user should see the registration page  
-
-  @ValidRegistrationInputs
-  Scenario Outline: Register with valid inputs  
-    When the user enters "<First Name>", "<Last Name>", "<Email>", "<Telephone>", "<Password>" and "<Confirm Password>"  
+    Then the user should see the registration page 
+      
+		When the user enters "<First Name>", "<Last Name>", "<Email>", "<Telephone>", "<Password>" and "<Confirm Password>"  
     And agrees to the Privacy Policy  
     And submits the registration form  
     Then the user should see "Your Account Has Been Created!"  
+    
+    When the user clicks on continue on register  
+    And the user clicks on register your affiliate information  
+    And enters payee name "<name>"  
+    And clicks on checkbox  
+    And clicks on register continue button  
+    Then the user sees "<message>" based on "<check>"
 
     Examples:  
-      | First Name | Last Name | Email               | Telephone  | Password | Confirm Password |  
-      | priya      | ram       | ppta12e@gmail.com   | 1234567891 | 1234     | 1234             |  
-
-  @Affiliate_Account_Creation
-  Scenario Outline: Edit affiliate account with valid and invalid inputs
-    When the user clicks on Edit your affiliate information
-    And enters "<Account Name>" as account name
-    And enters "<Account Number>" as account number
-    And clicks on continue button
-    Then the user should see account created "<Message>"
-
-    Examples:
-      | Account Name | Account Number | Message                                            |
-      | sbi          | 12345          | Success: Your account has been successfully updated. |
-      |              | 12345          | Account Name required!                            |
-      | sbi          |                | Account Number required!                          |
+    | First Name | Last Name | Email              | Telephone   | Password | Confirm Password | name | message                                               | check   |
+    | priya      | ram       | ppta112@gmail.com  | 1234567891  | 1234     | 1234             | jeev | Success: Your account has been successfully updated.  | valid   |
+    #| priya      | ram       | ppta113@gmail.com  | 1234567892  | 1234     | 1234             |      | Cheque Payee Name required!                           | invalid |

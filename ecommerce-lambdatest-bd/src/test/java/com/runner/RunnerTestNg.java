@@ -32,7 +32,6 @@ import org.testng.annotations.DataProvider;
     },
     monochrome = true,
     dryRun = false
-
 )
 public class RunnerTestNg extends AbstractTestNGCucumberTests {
 

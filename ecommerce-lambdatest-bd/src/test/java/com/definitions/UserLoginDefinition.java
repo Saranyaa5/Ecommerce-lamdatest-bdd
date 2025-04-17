@@ -54,31 +54,22 @@ public class UserLoginDefinition {
 
     	    switch (check) {
     	        case "check1":
-    	            actualResult = userLoginAction.getWarningMessage();
-//    	            Assert.assertEquals(actualResult, expectedResult,
-//    	                "Check1 Failed: Expected warning message not displayed");
-    	            
+    	            actualResult = userLoginAction.getWarningMessage();    	            
     	            Assert.assertTrue(actualResult);
     	            break;
 
     	        case "check2":
     	            actualResult = userLoginAction.getWarningMessage();
-//    	            Assert.assertEquals(actualResult, expectedResult,
-//    	                "Check2 Failed: Empty password warning not displayed");
     	            Assert.assertTrue(actualResult);
     	            break;
 
     	        case "check3":
     	            actualResult = userLoginAction.getWarningMessage();
-//    	            Assert.assertEquals(actualResult, expectedResult,
-//    	                "Check3 Failed: Empty email warning not displayed");
     	            Assert.assertTrue(actualResult);
     	            break;
 
     	        case "check4":
     	            actualResult = userLoginAction.getWarningMessage();
-//    	            Assert.assertEquals(actualResult, expectedResult,
-//    	                "Check4 Failed: Account lockout warning not displayed");
     	            Assert.assertTrue(actualResult);
     	            break;
 
@@ -99,5 +90,3 @@ public class UserLoginDefinition {
     	        Assert.assertEquals(actualText, expectedText, "Account Logout page is not displayed");
     	    }
     	}
-
-
