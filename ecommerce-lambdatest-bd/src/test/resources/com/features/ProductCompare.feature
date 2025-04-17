@@ -17,3 +17,8 @@ Scenario: To Add the products to comparision list
     And the user clicks the comparision button
     And the user clicks the comparision arrow
     Then the user should see the comparison page
+  
+ @CompareInvalidProduct
+ Scenario: To Add the products to comparision list
+    When the user searches "mobile"
+    Then the user should see the message no products match
