@@ -24,5 +24,8 @@ public class ProductCompareLocator {
 	@FindBy(xpath="//*[@id=\"content\"]/table/tbody[1]/tr[8]/td[2]")
 	public WebElement ComparisionProductDesc;
 	
+	@FindBy(xpath="//*[@id=\"entry_212469\"]/p")
+	public WebElement noProductsmatchError;
+	
 	
 }

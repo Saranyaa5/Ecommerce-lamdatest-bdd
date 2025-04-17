@@ -41,6 +41,12 @@ public class ProductCompareDefinition {
 	public void the_user_clicks_the_comparision_arrow() {
 		productCompareAction.clickComparionArrow();
 	}
+	
+	@Then("the user should see the message no products match")
+	public void the_user_should_see_the_message_no_products_match() {
+		productCompareAction.getNoProductsErrorMessage();
+		Assert.assertTrue(productCompareAction.getNoProductsErrorMessage());
+	}
 
 	
 	

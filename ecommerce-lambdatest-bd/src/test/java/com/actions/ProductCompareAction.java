@@ -35,4 +35,8 @@ public class ProductCompareAction {
 		return productCompareLocator.ComparisionProductDesc.getText();
 	}
 	
+	public boolean getNoProductsErrorMessage(){
+		return productCompareLocator.noProductsmatchError.isDisplayed();
+	}
+	
 }
