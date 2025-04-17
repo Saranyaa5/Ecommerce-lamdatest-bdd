@@ -1,3 +1,4 @@
+
 package com.actions;
 
 import java.time.Duration;
@@ -50,12 +51,35 @@ public class OrderPageAction {
         Thread.sleep(2000);
     }
     
+//    public boolean eyeDisplayed() {
+//    return orderPageLocator.viewOrderButton.isDisplayed();
+//    }
+    public boolean eyeDisplayed() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(orderPageLocator.viewOrderButton));
+		return orderPageLocator.viewOrderButton.isDisplayed();
+    }
+    
+    public void clickViewButton() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(orderPageLocator.viewOrderButton)).click();
+    }
+
+    public void clickReorderButton() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(orderPageLocator.reorderButton)).click();
+    }
+
+    public boolean isReorderMessageDisplayed() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(orderPageLocator.reorderSuccessMessage));
+		return orderPageLocator.reorderSuccessMessage.isDisplayed();
+    }
     public String getTextOrder() {
         WebElement heading = wait.until(ExpectedConditions.visibilityOf(orderPageLocator.orderhistory));
         return heading.getText();
     }
-
-
+//
 //    public boolean printOrderHistoryTable() throws InterruptedException {
 //        WebDriverWait tableWait = new WebDriverWait(driver, Duration.ofSeconds(60));
 //        WebElement tbody = tableWait.until(ExpectedConditions.visibilityOfElementLocated(

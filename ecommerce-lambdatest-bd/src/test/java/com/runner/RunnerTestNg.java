@@ -7,8 +7,7 @@ import org.testng.annotations.DataProvider;
 @CucumberOptions(
 
     features = {
-
-//        "src/test/resources/com/features/UserLogin.feature"
+//        "src/test/resources/com/features/UserLogin.feature",
 //        "src/test/resources/com/features/UserRegistration.feature",
 //        "src/test/resources/com/features/ForgotPassword.feature",
 //        "src/test/resources/com/features/Search.feature",
@@ -16,10 +15,10 @@ import org.testng.annotations.DataProvider;
 //        "src/test/resources/com/features/UserAccountManagement.feature",
 //        "src/test/resources/com/features/ProductCompare.feature",
 //        "src/test/resources/com/features/ProductCheckOut.feature",
-//        "src/test/resources/com/features/Blog.feature",
-    	"src/test/resources/com/features/AffiliateAccount.feature"
-//    		"src/test/resources/com/features/MyOrder.feature"
-
+        "src/test/resources/com/features/Blog.feature"
+//    	"src/test/resources/com/features/AffiliateAccount.feature"
+//        "src/test/resources/com/features/ProductReview.feature",
+//        "src/test/resources/com/features/MyOrder.feature"
         
     },
     glue = {"com.definitions"},

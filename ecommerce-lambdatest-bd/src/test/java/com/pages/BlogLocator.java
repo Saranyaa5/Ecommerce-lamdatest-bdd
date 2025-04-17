@@ -19,10 +19,11 @@ public WebElement email;
 @FindBy(xpath="(//textarea[@id='input-comment'])[1]")
 public WebElement comment;
 
-@FindBy(xpath="//*[@id=\"button-comment\"]")
+@FindBy(xpath="(//button[normalize-space()='Post comment'])[1]")
 public WebElement postComment;
 
-@FindBy(xpath="//form[@id='form-comment']/div[1]")
+
+@FindBy(css="#form-comment .alert-success")
 public WebElement validMessage;
 
 @FindBy(xpath="//*[@id=\"form-comment\"]/div[3]/div")
@@ -33,5 +34,11 @@ public WebElement Warning1;
 
 @FindBy(xpath="//div[@class='invalid-feedback'][normalize-space()='Warning: Comment Text must be between 25 and 1000 characters!']")
 public WebElement Warning2;
+
+@FindBy(xpath="//*[@id=\"entry_210963\"]/div/a[1]")
+public WebElement business;
+
+@FindBy(xpath="//h1[@class='h1']")
+public WebElement businessHeading;
 
 }

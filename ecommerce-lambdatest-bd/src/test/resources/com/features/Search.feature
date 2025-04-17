@@ -2,7 +2,7 @@ Feature: Search functionality
 
   Background:
      Given the user is on the homepage  
-    
+
   @ValidSearchInputs
   Scenario: Search functionality with valid inputs
     When the user searches with valid input from excel

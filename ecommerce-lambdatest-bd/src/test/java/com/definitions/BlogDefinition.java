@@ -35,12 +35,11 @@ public class BlogDefinition {
         blogAction.enterEmail(data.get(0).get("email"));
         blogAction.enterComment(data.get(0).get("comment"));
     }
-  
-    
+
     @Then("the user should see the message {string}")
     public void the_user_should_see_the_message(String expectedMessage) {
-    	 String actualMessage = blogAction.getSuccessMessage();
-         Assert.assertEquals(expectedMessage.trim(), actualMessage.trim());
+        String actualMessage = blogAction.getSuccessMessage();
+        Assert.assertEquals(expectedMessage, actualMessage);
     }
 
     @When("the user enters the name {string}")
@@ -59,7 +58,7 @@ public class BlogDefinition {
     }
 
     @When("clicks on the Post Comment button")
-    public void clicks_on_the_post_comment_button() throws InterruptedException {
+    public void clicks_on_the_post_comment_button() {
         blogAction.clickPostComment();
     }
 
@@ -83,5 +82,16 @@ public class BlogDefinition {
 
          Assert.assertEquals(expectedWarning, actualWarning);
     }
+    
+    @When("the user selects category")
+    public void the_user_selects_category() {
+      blogAction.clickBusiness();
+    }
+
+    @Then("the user should see article page")
+    public void the_user_should_see_article_page() {
+    	  String heading = blogAction.getArticleHeading();
+          Assert.assertTrue("Article heading not found!", heading != null && !heading.isEmpty());
+      }
 
 }

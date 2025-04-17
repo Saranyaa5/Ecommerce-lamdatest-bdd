@@ -1,6 +1,10 @@
 package com.definitions;
 
+import java.time.Duration;
+
 import org.junit.Assert;
+
+
 import org.openqa.selenium.interactions.Action;
 import com.actions.UserRegistrationAction;
 import com.utilities.HelperClass;
@@ -9,10 +13,12 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class UserRegistrationDefinition {
     UserRegistrationAction userRegistrationAction = new UserRegistrationAction();
-    
+    private static final Logger logger = LogManager.getLogger(UserRegistrationDefinition.class);
     @Given("the user is on the homepage")
     public void the_user_is_on_the_homepage() {
         HelperClass.openPage();
@@ -35,9 +41,7 @@ public class UserRegistrationDefinition {
 
     @When("the user enters {string}, {string}, {string}, {string}, {string} and {string}")
     public void the_user_enters_and(String firstName, String lastName, String email, 
-                                  String telephone, String password, String confirmPassword) throws InterruptedException {
-//        userRegistrationAction.enterRegistrationDetails(firstName, lastName, email, 
-//                                                       telephone, password, confirmPassword);
+                                  String telephone, String password, String confirmPassword) {
     	String uniqueEmail = "test" + System.currentTimeMillis() + "@example.com";
         userRegistrationAction.enterRegistrationDetails(firstName, lastName, uniqueEmail, 
                                                        telephone, password, confirmPassword);
@@ -53,7 +57,7 @@ public class UserRegistrationDefinition {
     
     @And("the user not agrees to the privacy policy")
     public void the_user_not_agrees_to_the_privacy_policy() {
-    	System.out.println("user didnt accepted the privary policy");
+    	 logger.info("User didn't accept the privacy policy");
     }
     
 
@@ -64,40 +68,59 @@ public class UserRegistrationDefinition {
     }
 
     @Then("the user should see {string}")
-    public void the_user_should_see(String string) throws InterruptedException {
-    	
-    Assert.assertEquals(userRegistrationAction.RegisterationSuccess(),string);
+    public void the_user_should_see(String expectedMessage) throws InterruptedException {
+        Thread.sleep(3000);
+        try {
+            Assert.assertEquals(expectedMessage, userRegistrationAction.RegisterationSuccess());
+            logger.info("Assertion Passed: Expected message '{}' is displayed successfully.", expectedMessage);
+        } catch (AssertionError e) {
+            logger.error("Assertion Failed: Expected '{}', but got '{}'", expectedMessage, userRegistrationAction.RegisterationSuccess());
+            throw e; 
+        }
     }
+
 
     @When("the user enters the invalid inputs {string}, {string}, {string}, {string}, {string} and {string}")
     public void the_user_enters_the_invalid_inputs_and(String firstName, String lastName, String email, 
-                                                      String telephone, String password, String confirmPassword) throws InterruptedException {
+                                                      String telephone, String password, String confirmPassword) {
         userRegistrationAction.enterRegistrationDetails(firstName, lastName, email, 
                                                       telephone, password, confirmPassword);
     }
 
     @Then("the user should see {string} for {string}")
-    public void the_user_should_see_for(String errorMessage, String testCaseName) {
-       if(testCaseName.equals("empty first name")) {
-    	   
-    	   Assert.assertEquals(errorMessage,userRegistrationAction.emptyFirstNameError());
-       }
-       else if(testCaseName.equals("existing email")) {
-    	   
-    	   Assert.assertEquals(errorMessage,userRegistrationAction.existingMailError());
-		       }
-       else if(testCaseName.equals("empty password")) {
-    	    
-    	   Assert.assertEquals(errorMessage,userRegistrationAction.emptyPasswordError());
-		}
-       else if(testCaseName.equals("password mismatch")) {
-    	   
-    	   Assert.assertEquals(errorMessage,userRegistrationAction.passwordMisMathError());
-		}
-       else if(testCaseName.equals("Not checking privacy policy")) {
-    	   
-    	   Assert.assertEquals(errorMessage,userRegistrationAction.uncheckedError());
-       }
-       
+    public void the_user_should_see_for(String expectedMessage, String testCaseName) throws InterruptedException {
+        String actualMessage = "";
+        Thread.sleep(3000);
+
+        try {
+            switch (testCaseName) {
+                case "empty first name":
+                    actualMessage = userRegistrationAction.emptyFirstNameError();
+                    break;
+                case "existing email":
+                    actualMessage = userRegistrationAction.existingMailError();
+                    break;
+                case "empty password":
+                    actualMessage = userRegistrationAction.emptyPasswordError();
+                    break;
+                case "password mismatch":
+                    actualMessage = userRegistrationAction.passwordMisMathError();
+                    break;
+                case "Not checking privacy policy":
+                    actualMessage = userRegistrationAction.uncheckedError();
+                    break;
+                default:
+                    logger.warn("Unknown test case name: {}", testCaseName);
+                    return;
+            }
+
+            Assert.assertEquals(expectedMessage, actualMessage);
+            logger.info("Assertion Passed for '{}': Expected and actual message matched: '{}'", testCaseName, expectedMessage);
+
+        } catch (AssertionError e) {
+            logger.error("Assertion Failed for '{}': Expected '{}', but got '{}'", testCaseName, expectedMessage, actualMessage);
+            throw e;
+        }
     }
+
 }

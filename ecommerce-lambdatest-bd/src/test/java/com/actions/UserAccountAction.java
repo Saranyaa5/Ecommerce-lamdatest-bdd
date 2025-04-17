@@ -127,4 +127,43 @@ public class UserAccountAction {
 		loginPageLocator.password.sendKeys("KIOT"); 
 		
 	}
+
+	public String PasswordEmpty() {
+		 return userAccountLocator.PasswordEmpty.getText();
+	}
+
+	public void ClickModifyAddress() {
+		WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.ModifyAddress)).click();
+		
+	}
+
+	public void clickNewAddress() {
+
+		 WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
+	        wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.newAddress)).click();
+	}
+
+	public void ModifyAddressContinue() {
+
+		 WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
+	        wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.modifyAddressContinue)).click();
+	}
+
+	public String NewAddressCreated() {
+	       return userAccountLocator.newAddressCreated.getText();
+	}
+
+	public void enterAddressDetails(String firstName, String lastName, String address, String city, String postcode) {
+userAccountLocator.getFirstNameField.sendKeys( firstName);
+  userAccountLocator.getLastNameField.sendKeys( lastName);
+    userAccountLocator.getAddressField.sendKeys(address);
+    userAccountLocator.getCityField.sendKeys(city);
+    userAccountLocator.getPostcodeField.sendKeys(postcode);
+    userAccountLocator.countrySelect.click();
+    userAccountLocator.unitedstates.click();
+    userAccountLocator.state.click();
+    userAccountLocator.Abeerdan.click();
+}
+
 }

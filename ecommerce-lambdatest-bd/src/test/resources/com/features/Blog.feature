@@ -11,7 +11,8 @@ Feature: Blog functionality
     When the user enters the following comment details:
       | name      | email             | comment                                                                |
       | Jeev      | jeev@example.com  | This blog was very informative and well written. Keep it up!           |
-    Then the user should see the message ""
+    And clicks on the Post Comment button
+    Then the user should see the message "Thank you for your comment. It has been submitted to the webmaster for approval."
 
   @invalid_blog_filling_without_required_details
 Scenario Outline: Submitting a blog comment without filling required details
@@ -27,5 +28,13 @@ Scenario Outline: Submitting a blog comment without filling required details
 Examples:
   | name | email            | comment                            | message           |check|
   | Jeev |                  |             |Warning: Comment Text must be between 25 and 1000 characters!|check1|
-  |      | jeev@example.com | Viverra accumsan in nisl nisi scelerisque eu. Vestibulum lorem sed risus ultricies tristique.                           | Warning: Comment Name must be between 3 and 25 characters!                |check2|
-  | Jeev | jeev@example.com | Hi                                                                                                                       | Warning: Comment Text must be between 25 and 1000 characters!             |check3|
+  |      | jeev@example.com | Viverra accumsan in nisl nisi scelerisque eu. Vestibulum lorem sed risus ultricies tristique. | Warning: Comment Name must be between 3 and 25 characters!  |check2|
+  | Jeev | jeev@example.com | Hi                                                                  | Warning: Comment Text must be between 25 and 1000 characters!             |check3|
+
+  
+  @category_selection_for_blog
+  Scenario: category wise selection and assertion
+  When the user clicks on the Blog button
+  And the user selects category
+  Then the user should see article page
+  

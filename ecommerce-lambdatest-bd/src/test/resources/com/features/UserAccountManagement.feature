@@ -15,6 +15,14 @@ Background:
     And clicks on the "EditInfo" Continue button
     Then user should see "Success: Your account has been successfully updated."
 
+  @ModifyAddress
+  Scenario: Adding new address
+  Then the user clicks the "Modify your address book entries" page
+  And the user clicks new address
+  And user enters valid details
+  And clicks on the "NewAddress" Continue button
+  Then user should see "Your address has been successfully added"
+  
   
 
   @ModifyWishlist
@@ -43,3 +51,12 @@ Background:
     And the user enters current password and new password details
     And clicks on the "ChangePassword" Continue button
     Then user should see "Success: Your password has been successfully updated."
+    
+    @ChangePassword_EmptyNewPasswordField
+      Scenario: Change user password without providing new password
+    Then the user clicks the "Change your password" page
+    And clicks on the "ChangePassword" Continue button
+    Then user should see "Password must be between 4 and 20 characters!"
+    
+    
+    

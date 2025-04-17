@@ -66,7 +66,6 @@ public class BlogAction {
 	    }
 	}
 
-	
 	public String getWarning1() {
 	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	    wait.until(ExpectedConditions.visibilityOf(blog.Warning1));
@@ -77,6 +76,13 @@ public class BlogAction {
 	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	    wait.until(ExpectedConditions.visibilityOf(blog.Warning2));
 	    return blog.Warning2.getText();
+	}
+	
+	public void clickBusiness() {
+		blog.business.click();
+	}
+	public String getArticleHeading() {
+		return blog.businessHeading.getText();
 	}
 
 }
