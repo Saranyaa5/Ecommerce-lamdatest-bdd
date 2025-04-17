@@ -62,4 +62,48 @@ public class UserAccountLocator {
 
     @FindBy(xpath="//*[@id='account-account']/div[1]")
     public WebElement newsLetterUpdated;
+    
+    @FindBy(xpath="//*[@id=\"content\"]/form/div[1]/div/div")
+    public WebElement PasswordEmpty;
+    
+    @FindBy(xpath="//*[@id=\"content\"]/div[1]/div/div/div[3]/a")
+    public WebElement ModifyAddress;
+    
+    @FindBy(xpath="//*[@id=\"content\"]/div/div[2]/a")
+    public WebElement newAddress;
+    
+    @FindBy(xpath="//*[@id=\"content\"]/form/div/div[2]/input")
+    public WebElement modifyAddressContinue;
+    
+    @FindBy(xpath="//*[@id=\"account-address\"]/div[1]")
+    public WebElement newAddressCreated;
+    
+    @FindBy(xpath="//*[@id=\"input-firstname\"]")
+    public WebElement getFirstNameField;
+    
+    @FindBy(xpath="//*[@id=\"input-lastname\"]")
+    public WebElement getLastNameField;
+    
+    @FindBy(xpath="//*[@id=\"input-address-1\"]")
+    public WebElement getAddressField;
+    
+    @FindBy(xpath="//*[@id=\"input-city\"]")
+    public WebElement getCityField;
+    
+    @FindBy(xpath="//*[@id=\"input-postcode\"]")
+    public WebElement getPostcodeField;
+    
+    @FindBy(xpath="//*[@id=\"input-country\"]")
+    public WebElement countrySelect;
+    
+    @FindBy(xpath="//*[@id=\"input-country\"]/option[240]")
+    public WebElement unitedstates;
+    
+    @FindBy(xpath="//*[@id=\"input-zone\"]")
+    public WebElement state;
+    
+    @FindBy(xpath="//*[@id=\"input-zone\"]/option[2]")
+    public WebElement Abeerdan;
+    
+    
 }

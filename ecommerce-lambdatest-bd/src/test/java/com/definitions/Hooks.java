@@ -2,6 +2,7 @@ package com.definitions;
 
 
 import java.io.File;
+
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
@@ -20,10 +21,9 @@ public class Hooks {
 	 private static final Logger logger = LogManager.getLogger(Hooks.class);
 
 	    @Before
-	    public void setUp(Scenario scenario) throws InterruptedException {
+	    public void setUp(Scenario scenario) {
 	        HelperClass.setUpDriver();
 	        HelperClass.getDriver().navigate().refresh();
-	        
 	        logger.info("Scenario started: " + scenario.getName());
 	    }
 	    @After

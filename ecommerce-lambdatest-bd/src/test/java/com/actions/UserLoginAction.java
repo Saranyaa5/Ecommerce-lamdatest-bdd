@@ -69,15 +69,10 @@ public class UserLoginAction {
 
         return loginPageLocator.titleMyAccount.isDisplayed();
     }
-    
+
     public boolean getWarningMessage() {
-        try {
-            WebElement warning = wait.until(ExpectedConditions.visibilityOf(loginPageLocator.warningMessage));
-            return warning.isDisplayed();
-        } catch (Exception e) {
-            System.out.println("Warning message not displayed within the wait time.");
-            return false;
-        }
+//        return loginPageLocator.warningMessage.getText();
+    	return loginPageLocator.warningMessage.isDisplayed();
     }
 
     public void clickLogout() {
