@@ -78,5 +78,12 @@ public class BlogAction {
 	    wait.until(ExpectedConditions.visibilityOf(blog.Warning2));
 	    return blog.Warning2.getText();
 	}
+	
+	public void clickBusiness() {
+		blog.business.click();
+	}
+	public String getArticleHeading() {
+		return blog.businessHeading.getText();
+	}
 
 }

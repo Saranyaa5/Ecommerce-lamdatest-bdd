@@ -82,5 +82,16 @@ public class BlogDefinition {
 
          Assert.assertEquals(expectedWarning, actualWarning);
     }
+    
+    @When("the user selects category")
+    public void the_user_selects_category() {
+      blogAction.clickBusiness();
+    }
+
+    @Then("the user should see article page")
+    public void the_user_should_see_article_page() {
+    	  String heading = blogAction.getArticleHeading();
+          Assert.assertTrue("Article heading not found!", heading != null && !heading.isEmpty());
+      }
 
 }

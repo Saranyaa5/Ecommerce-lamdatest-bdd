@@ -143,10 +143,6 @@ public class CheckOutAction {
 			public void fillPaymentCheckoutForm(String firstName, String lastName, 
 		            String address, String city, 
 		            String postcode) {
-//					// Fill basic form fields
-////					checkOutPageLocator.paymentFname.sendKeys(firstName);
-//				scrollToElement(checkOutPageLocator.paymentFname);
-//			    checkOutPageLocator.paymentFname.clear();
 				
 			    checkOutPageLocator.paymentFname.sendKeys(firstName);
 					checkOutPageLocator.paymentLname.sendKeys(lastName);
@@ -154,17 +150,14 @@ public class CheckOutAction {
 					checkOutPageLocator.paymentCity.sendKeys(city);
 					checkOutPageLocator.paymentPostcode.sendKeys(postcode);
 					
-					// Handle country dropdown
 					selectDropdownByVisibleText(checkOutPageLocator.countryDropdown, "India");
 					
-					// Wait for region dropdown to load (may need AJAX wait)
 					try {
-					Thread.sleep(1000); // Simple wait - replace with proper wait in real implementation
+					Thread.sleep(1000); 
 					} catch (InterruptedException e) {
 					Thread.currentThread().interrupt();
 					}
 					
-					// Handle region dropdown
 					selectDropdownByVisibleText(checkOutPageLocator.regionDropdown,"Assam");
 					
 					}
@@ -175,22 +168,11 @@ public class CheckOutAction {
 			       public void clickNewAddressButton() {
 			    	   checkOutPageLocator.newAdd.click();
 			       }
-			       
-			       
-			       
-//			       private void scrollToElement(WebElement element) {
-//			    	    ((JavascriptExecutor) HelperClass.getDriver()).executeScript(
-//			    	        "arguments[0].scrollIntoView({block: 'center'});", element);
-//			    	    try {
-//			    	        Thread.sleep(500); // Small pause after scroll
-//			    	    } catch (InterruptedException e) {
-//			    	        Thread.currentThread().interrupt();
-//			    	    }
-//			    	}
+			   
 			       public void fillRegisterCheckoutForm(String firstName, String lastName, String email, 
 			               String telephone,String password,String confirm_pass, String address, String city, 
 			               String postcode, String country) {
-			   			// Fill basic form fields
+			   			
 			   			checkOutPageLocator.paymentFname.sendKeys(firstName);
 			   			checkOutPageLocator.paymentLname.sendKeys(lastName);
 			   			checkOutPageLocator.paymentEmail.sendKeys(email);
@@ -204,9 +186,8 @@ public class CheckOutAction {
 			   			
 			   			selectDropdownByVisibleText(checkOutPageLocator.countryDropdown, "India");
 			   			
-			   			// Wait for region dropdown to load (may need AJAX wait)
 			   			try {
-			   			Thread.sleep(1000); // Simple wait - replace with proper wait in real implementation
+			   			Thread.sleep(1000);
 			   			} catch (InterruptedException e) {
 			   			Thread.currentThread().interrupt();
 			   			}
