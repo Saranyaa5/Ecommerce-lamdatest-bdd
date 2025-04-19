@@ -1,10 +1,9 @@
 package com.actions;
 
 import java.time.Duration;
-import java.util.List;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -33,9 +32,27 @@ public class OrderPageAction {
     }
 
     public void continue1() {
-        wait.until(ExpectedConditions.refreshed(
-            ExpectedConditions.elementToBeClickable(orderPageLocator.accContinue)
-        )).click();
+        int attempts = 0;
+        while (attempts < 2) {
+            try {
+                // Reinitialize the locator to make sure it's up to date
+                orderPageLocator = new OrderPageLocator(); 
+                PageFactory.initElements(driver, orderPageLocator);
+
+                // Wait and click the 'Continue' button after refreshing the element
+                WebElement continueBtn = wait.until(ExpectedConditions.refreshed(
+                    ExpectedConditions.elementToBeClickable(orderPageLocator.accContinue)
+                ));
+                continueBtn.click();
+                break;  // Exit the loop if successful
+            } catch (StaleElementReferenceException e) {
+                attempts++;
+                System.out.println("Retrying due to stale element...");
+                if (attempts == 2) {
+                    throw e;  // Throw the exception if retry fails
+                }
+            }
+        }
     }
 
     public void clickOrderHistory() throws InterruptedException {
