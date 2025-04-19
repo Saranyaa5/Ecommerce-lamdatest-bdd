@@ -2,16 +2,12 @@ package com.actions;
 
 import java.time.Duration;
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import com.google.common.base.Function;
 import com.pages.LoginPageLocator;
 import com.pages.UserAccountLocator;
 import com.utilities.HelperClass;
@@ -202,31 +198,17 @@ public class UserAccountAction {
             userAccountLocator.getAddressField.sendKeys(address);
             userAccountLocator.getCityField.sendKeys(city);
             userAccountLocator.getPostcodeField.sendKeys(postcode);
-
-            // Handling the country selection (dropdown)
             userAccountLocator.countrySelect.click();
             userAccountLocator.unitedstates.click();
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
-            // Using FluentWait to wait for state dropdown to be clickable
-            FluentWait<WebDriver> fluentWait = new FluentWait<>(driver)
-                .withTimeout(Duration.ofSeconds(20))
-                .pollingEvery(Duration.ofMillis(500))
-                .ignoring(Exception.class);  // Ignoring exceptions until the element is clickable
+         // Wait for state dropdown to be visible AND clickable
+         wait.until(ExpectedConditions.visibilityOf(userAccountLocator.state));
+         wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.state)).click();
 
-            WebElement stateDropdown = fluentWait.until(new Function<WebDriver, WebElement>() {
-                public WebElement apply(WebDriver driver) {
-                    return userAccountLocator.state.isDisplayed() && userAccountLocator.state.isEnabled() ? userAccountLocator.state : null;
-                }
-            });
-            stateDropdown.click();
-
-            // Using FluentWait to wait for the option to be clickable
-            WebElement option = fluentWait.until(new Function<WebDriver, WebElement>() {
-                public WebElement apply(WebDriver driver) {
-                    return userAccountLocator.Abeerdan.isDisplayed() && userAccountLocator.Abeerdan.isEnabled() ? userAccountLocator.Abeerdan : null;
-                }
-            });
-            option.click();
+         // Wait for the Abeerdan option to be visible AND clickable
+         wait.until(ExpectedConditions.visibilityOf(userAccountLocator.Abeerdan));
+         wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.Abeerdan)).click();
 
         } catch (Exception e) {
             System.out.println("Error entering address details: " + e.getMessage());

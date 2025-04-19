@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\admi\AppData\Local\Temp\testng-eclipse--1090973802\testng-customsuite.xml</span>
+                    <span>C:\Users\admi\AppData\Local\Temp\testng-eclipse-1502639838\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">51 methods, 4 failed,   47 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;To Add the products to comparision list&quot;, &quot;Product compare functionality&quot;)">runScenario("To Add the products to comparision list", "Product compare functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;To checkout the  cart with existing email&quot;, &quot;Shopping Cart CheckOut functionality&quot;)">runScenario("To checkout the  cart with existing email", "Shopping Cart CheckOut functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;To reorder the product in the order  history&quot;, &quot;My orders feature&quot;)">runScenario("To reorder the product in the order  history", "My orders feature")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;To checkout the  cart as a registered user&quot;, &quot;Shopping Cart CheckOut functionality&quot;)">runScenario("To checkout the  cart as a registered user", "Shopping Cart CheckOut functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +132,57 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Subscribe or Unsubscribe from newsletter&quot;, &quot;User Account Management&quot;)">runScenario("Subscribe or Unsubscribe from newsletter", "User Account Management")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Edit user account details&quot;, &quot;User Account Management&quot;)">runScenario("Edit user account details", "User Account Management")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Register a user and register as affiliate with valid and invalid inputs&quot;, &quot;User Login and Affiliate...)">runScenario("Register a user and register as affiliate with valid and invalid inputs", "User Login and Affiliate...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Subscribe or Unsubscribe from newsletter&quot;, &quot;User Account Management&quot;)">runScenario("Subscribe or Unsubscribe from newsletter", "User Account Management")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Submitting a blog comment without filling required details&quot;, &quot;Blog functionality&quot;)">runScenario("Submitting a blog comment without filling required details", "Blog functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;User requests a password reset link using invalid email&quot;, &quot;Forgot Password Functionality&quot;)">runScenario("User requests a password reset link using invalid email", "Forgot Password Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Submitting a blog comment without filling required details&quot;, &quot;Blog functionality&quot;)">runScenario("Submitting a blog comment without filling required details", "Blog functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;User requests a password reset link without providing email&quot;, &quot;Forgot Password Functionality&quot;)">runScenario("User requests a password reset link without providing email", "Forgot Password Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Submit review without rating but with comment&quot;, &quot;Product Review&quot;)">runScenario("Submit review without rating but with comment", "Product Review")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;User tries to login with invalid credentials&quot;, &quot;Login Functionality&quot;)">runScenario("User tries to login with invalid credentials", "Login Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Register with valid inputs&quot;, &quot;User Registration Functionality&quot;)">runScenario("Register with valid inputs", "User Registration Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Search functionality with unnecessary indentation in search&quot;, &quot;Search functionality&quot;)">runScenario("Search functionality with unnecessary indentation in search", "Search functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Scenario: User tries to add a product to cart without selecting size&quot;, &quot;Add to Cart Functionality o...)">runScenario("Scenario: User tries to add a product to cart without selecting size", "Add to Cart Functionality o...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -128,7 +197,27 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;To checkout view the order history after ordering&quot;, &quot;My orders feature&quot;)">runScenario("To checkout view the order history after ordering", "My orders feature")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;User tries to login with invalid credentials&quot;, &quot;Login Functionality&quot;)">runScenario("User tries to login with invalid credentials", "Login Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Change user password&quot;, &quot;User Account Management&quot;)">runScenario("Change user password", "User Account Management")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Register a user and register as affiliate with valid and invalid inputs&quot;, &quot;User Login and Affiliate...)">runScenario("Register a user and register as affiliate with valid and invalid inputs", "User Login and Affiliate...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Add multiple quantities of the same product&quot;, &quot;Add to Cart Functionality on eCommerce Playground&quot;)">runScenario("Add multiple quantities of the same product", "Add to Cart Functionality on eCommerce Playground")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,7 +227,142 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Register with invalid inputs&quot;, &quot;User Registration Functionality&quot;)">runScenario("Register with invalid inputs", "User Registration Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Register with valid inputs  with out checking privacy policy&quot;, &quot;User Registration Functionality&quot;)">runScenario("Register with valid inputs  with out checking privacy policy", "User Registration Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;To Add the products to comparision list&quot;, &quot;Product compare functionality&quot;)">runScenario("To Add the products to comparision list", "Product compare functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Submit review without rating and without comment&quot;, &quot;Product Review&quot;)">runScenario("Submit review without rating and without comment", "Product Review")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;User tries to login with invalid credentials&quot;, &quot;Login Functionality&quot;)">runScenario("User tries to login with invalid credentials", "Login Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Change user password without providing new password&quot;, &quot;User Account Management&quot;)">runScenario("Change user password without providing new password", "User Account Management")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Search functionality by category as input&quot;, &quot;Search functionality&quot;)">runScenario("Search functionality by category as input", "Search functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;User tries to login with invalid credentials&quot;, &quot;Login Functionality&quot;)">runScenario("User tries to login with invalid credentials", "Login Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Submit a valid product review with rating and comment&quot;, &quot;Product Review&quot;)">runScenario("Submit a valid product review with rating and comment", "Product Review")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Adding a valid comment to the blog&quot;, &quot;Blog functionality&quot;)">runScenario("Adding a valid comment to the blog", "Blog functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Search functionality with case sensitive inputs&quot;, &quot;Search functionality&quot;)">runScenario("Search functionality with case sensitive inputs", "Search functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;To perform compare without adding products to list&quot;, &quot;Product compare functionality&quot;)">runScenario("To perform compare without adding products to list", "Product compare functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Add a single product to the cart&quot;, &quot;Add to Cart Functionality on eCommerce Playground&quot;)">runScenario("Add a single product to the cart", "Add to Cart Functionality on eCommerce Playground")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;User tries to login with valid credentials and logs out&quot;, &quot;Login Functionality&quot;)">runScenario("User tries to login with valid credentials and logs out", "Login Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Submit review with rating but without comment&quot;, &quot;Product Review&quot;)">runScenario("Submit review with rating but without comment", "Product Review")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Remove a product from the cart&quot;, &quot;Add to Cart Functionality on eCommerce Playground&quot;)">runScenario("Remove a product from the cart", "Add to Cart Functionality on eCommerce Playground")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;To checkout the shopping cart as a guest user&quot;, &quot;Shopping Cart CheckOut functionality&quot;)">runScenario("To checkout the shopping cart as a guest user", "Shopping Cart CheckOut functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Register with invalid inputs&quot;, &quot;User Registration Functionality&quot;)">runScenario("Register with invalid inputs", "User Registration Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Search functionality with valid inputs&quot;, &quot;Search functionality&quot;)">runScenario("Search functionality with valid inputs", "Search functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Submitting a blog comment without filling required details&quot;, &quot;Blog functionality&quot;)">runScenario("Submitting a blog comment without filling required details", "Blog functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Register with invalid inputs&quot;, &quot;User Registration Functionality&quot;)">runScenario("Register with invalid inputs", "User Registration Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Register with invalid inputs&quot;, &quot;User Registration Functionality&quot;)">runScenario("Register with invalid inputs", "User Registration Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Search functionality with invalid inputs&quot;, &quot;Search functionality&quot;)">runScenario("Search functionality with invalid inputs", "Search functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;User requests a password reset link using valid email&quot;, &quot;Forgot Password Functionality&quot;)">runScenario("User requests a password reset link using valid email", "Forgot Password Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;To checkout the empty shopping cart as a registered user&quot;, &quot;Shopping Cart CheckOut functionality&quot;)">runScenario("To checkout the empty shopping cart as a registered user", "Shopping Cart CheckOut functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Register with valid inputs&quot;, &quot;User Registration Functionality&quot;)">runScenario("Register with valid inputs", "User Registration Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;User tries to login with valid credentials&quot;, &quot;Login Functionality&quot;)">runScenario("User tries to login with valid credentials", "Login Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;category wise selection and assertion&quot;, &quot;Blog functionality&quot;)">runScenario("category wise selection and assertion", "Blog functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -153,22 +377,210 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.runner.RunnerTestNg</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To Add the products to comparision list&quot;, &quot;Product compare functionality&quot;)">
+                  </a> <!-- runScenario("To Add the products to comparision list", "Product compare functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To Add the products to comparision list","Product compare functionality")</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span data-toggle=&quot;tooltip&quot; title=&quot;Compare&quot; class=&quot;icon svg-icon&quot; style=&quot;width:35px;height:35px;&quot;&gt;...&lt;/span&gt; is not clickable at point (1122, 18). Other element would receive the click: &lt;div class=&quot;toast-header&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=135.0.7049.96)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac4ba8943454624887df71079658339d, clickElement {id=f.3EFAD4EA9CD436C48A5D33B6369987B6.d.6B2BB5E779BCEFC9CF741B57AE3AB886.e.236}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\admi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63386}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63386/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ac4ba8943454624887df71079658339d)] -&gt; xpath: //*[@id=&apos;entry_217823&apos;]/a/span]
+Session ID: ac4ba8943454624887df71079658339d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
+	at com.actions.ProductCompareAction.clickComparionArrow(ProductCompareAction.java:64)
+	at com.definitions.ProductCompareDefinition.the_user_clicks_the_comparision_arrow(ProductCompareDefinition.java:42)
+	at ✽.the user clicks the comparision arrow(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/ProductCompare.feature:18)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To checkout the  cart with existing email&quot;, &quot;Shopping Cart CheckOut functionality&quot;)">
+                  </a> <!-- runScenario("To checkout the  cart with existing email", "Shopping Cart CheckOut functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To checkout the  cart with existing email","Shopping Cart CheckOut functionality")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@id=&apos;content&apos;]/div[2]/a[2]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.actions.CheckOutAction.getCheckoutFromCartButton(CheckOutAction.java:63)
+	at com.actions.CheckOutAction.productCheckOut(CheckOutAction.java:67)
+	at com.definitions.CheckoutDefinition.the_user_clicks_check_out(CheckoutDefinition.java:35)
+	at ✽.the user clicks CheckOut(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/ProductCheckOut.feature:68)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;content&apos;]/div[2]/a[2]&quot;}
+  (Session info: chrome=135.0.7049.96)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb2aa1b064974356aebac935c7f4108f, findElement {value=//*[@id=&apos;content&apos;]/div[2]/a[2], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\admi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63311}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63311/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bb2aa1b064974356aebac935c7f4108f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy60.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 4 more
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To reorder the product in the order  history&quot;, &quot;My orders feature&quot;)">
+                  </a> <!-- runScenario("To reorder the product in the order  history", "My orders feature") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To reorder the product in the order  history","My orders feature")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@id=&apos;content&apos;]/div[2]/a[2]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.actions.CheckOutAction.getCheckoutFromCartButton(CheckOutAction.java:63)
+	at com.actions.CheckOutAction.productCheckOut(CheckOutAction.java:67)
+	at com.definitions.CheckoutDefinition.the_user_clicks_check_out(CheckoutDefinition.java:35)
+	at ✽.the user clicks CheckOut(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/MyOrder.feature:13)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;content&apos;]/div[2]/a[2]&quot;}
+  (Session info: chrome=135.0.7049.96)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e9f9c3765a65ce1223e5cd9b6f57354a, findElement {value=//*[@id=&apos;content&apos;]/div[2]/a[2], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\admi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63153}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63153/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e9f9c3765a65ce1223e5cd9b6f57354a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy60.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 4 more
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To checkout the  cart as a registered user&quot;, &quot;Shopping Cart CheckOut functionality&quot;)">
+                  </a> <!-- runScenario("To checkout the  cart as a registered user", "Shopping Cart CheckOut functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To checkout the  cart as a registered user","Shopping Cart CheckOut functionality")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@id=&apos;content&apos;]/div[2]/a[2]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.actions.CheckOutAction.getCheckoutFromCartButton(CheckOutAction.java:63)
+	at com.actions.CheckOutAction.productCheckOut(CheckOutAction.java:67)
+	at com.definitions.CheckoutDefinition.the_user_clicks_check_out(CheckoutDefinition.java:35)
+	at ✽.the user clicks CheckOut(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/ProductCheckOut.feature:42)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;content&apos;]/div[2]/a[2]&quot;}
+  (Session info: chrome=135.0.7049.96)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [677b91ac2e7ab699285b9ebeff845c59, findElement {value=//*[@id=&apos;content&apos;]/div[2]/a[2], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\admi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63296}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63296/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 677b91ac2e7ab699285b9ebeff845c59
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy60.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 4 more
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.runner.RunnerTestNg</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Subscribe or Unsubscribe from newsletter&quot;, &quot;User Account Management&quot;)">
-                  </a> <!-- runScenario("Subscribe or Unsubscribe from newsletter", "User Account Management") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Subscribe or Unsubscribe from newsletter","User Account Management")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="runScenario(&quot;Edit user account details&quot;, &quot;User Account Management&quot;)">
@@ -181,10 +593,100 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Register a user and register as affiliate with valid and invalid inputs&quot;, &quot;User Login and Affiliate...)">
-                  </a> <!-- runScenario("Register a user and register as affiliate with valid and invalid inputs", "User Login and Affiliate...) -->
+                  <a name="runScenario(&quot;Subscribe or Unsubscribe from newsletter&quot;, &quot;User Account Management&quot;)">
+                  </a> <!-- runScenario("Subscribe or Unsubscribe from newsletter", "User Account Management") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Register a user and register as affiliate with valid and invalid inputs","User Login and Affiliate Account Functionality")</span>
+                  <span class="parameters">("Subscribe or Unsubscribe from newsletter","User Account Management")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Submitting a blog comment without filling required details&quot;, &quot;Blog functionality&quot;)">
+                  </a> <!-- runScenario("Submitting a blog comment without filling required details", "Blog functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Submitting a blog comment without filling required details","Blog functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User requests a password reset link using invalid email&quot;, &quot;Forgot Password Functionality&quot;)">
+                  </a> <!-- runScenario("User requests a password reset link using invalid email", "Forgot Password Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User requests a password reset link using invalid email","Forgot Password Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Submitting a blog comment without filling required details&quot;, &quot;Blog functionality&quot;)">
+                  </a> <!-- runScenario("Submitting a blog comment without filling required details", "Blog functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Submitting a blog comment without filling required details","Blog functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User requests a password reset link without providing email&quot;, &quot;Forgot Password Functionality&quot;)">
+                  </a> <!-- runScenario("User requests a password reset link without providing email", "Forgot Password Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User requests a password reset link without providing email","Forgot Password Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Submit review without rating but with comment&quot;, &quot;Product Review&quot;)">
+                  </a> <!-- runScenario("Submit review without rating but with comment", "Product Review") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Submit review without rating but with comment","Product Review")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User tries to login with invalid credentials&quot;, &quot;Login Functionality&quot;)">
+                  </a> <!-- runScenario("User tries to login with invalid credentials", "Login Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User tries to login with invalid credentials","Login Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Register with valid inputs&quot;, &quot;User Registration Functionality&quot;)">
+                  </a> <!-- runScenario("Register with valid inputs", "User Registration Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Register with valid inputs","User Registration Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search functionality with unnecessary indentation in search&quot;, &quot;Search functionality&quot;)">
+                  </a> <!-- runScenario("Search functionality with unnecessary indentation in search", "Search functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search functionality with unnecessary indentation in search","Search functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Scenario: User tries to add a product to cart without selecting size&quot;, &quot;Add to Cart Functionality o...)">
+                  </a> <!-- runScenario("Scenario: User tries to add a product to cart without selecting size", "Add to Cart Functionality o...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Scenario: User tries to add a product to cart without selecting size","Add to Cart Functionality on eCommerce Playground")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -211,10 +713,50 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="runScenario(&quot;To checkout view the order history after ordering&quot;, &quot;My orders feature&quot;)">
+                  </a> <!-- runScenario("To checkout view the order history after ordering", "My orders feature") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To checkout view the order history after ordering","My orders feature")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User tries to login with invalid credentials&quot;, &quot;Login Functionality&quot;)">
+                  </a> <!-- runScenario("User tries to login with invalid credentials", "Login Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User tries to login with invalid credentials","Login Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="runScenario(&quot;Change user password&quot;, &quot;User Account Management&quot;)">
                   </a> <!-- runScenario("Change user password", "User Account Management") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Change user password","User Account Management")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Register a user and register as affiliate with valid and invalid inputs&quot;, &quot;User Login and Affiliate...)">
+                  </a> <!-- runScenario("Register a user and register as affiliate with valid and invalid inputs", "User Login and Affiliate...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Register a user and register as affiliate with valid and invalid inputs","User Login and Affiliate Account Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Add multiple quantities of the same product&quot;, &quot;Add to Cart Functionality on eCommerce Playground&quot;)">
+                  </a> <!-- runScenario("Add multiple quantities of the same product", "Add to Cart Functionality on eCommerce Playground") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Add multiple quantities of the same product","Add to Cart Functionality on eCommerce Playground")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -231,10 +773,280 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="runScenario(&quot;Register with invalid inputs&quot;, &quot;User Registration Functionality&quot;)">
+                  </a> <!-- runScenario("Register with invalid inputs", "User Registration Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Register with invalid inputs","User Registration Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Register with valid inputs  with out checking privacy policy&quot;, &quot;User Registration Functionality&quot;)">
+                  </a> <!-- runScenario("Register with valid inputs  with out checking privacy policy", "User Registration Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Register with valid inputs  with out checking privacy policy","User Registration Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To Add the products to comparision list&quot;, &quot;Product compare functionality&quot;)">
+                  </a> <!-- runScenario("To Add the products to comparision list", "Product compare functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To Add the products to comparision list","Product compare functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Submit review without rating and without comment&quot;, &quot;Product Review&quot;)">
+                  </a> <!-- runScenario("Submit review without rating and without comment", "Product Review") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Submit review without rating and without comment","Product Review")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User tries to login with invalid credentials&quot;, &quot;Login Functionality&quot;)">
+                  </a> <!-- runScenario("User tries to login with invalid credentials", "Login Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User tries to login with invalid credentials","Login Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="runScenario(&quot;Change user password without providing new password&quot;, &quot;User Account Management&quot;)">
                   </a> <!-- runScenario("Change user password without providing new password", "User Account Management") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Change user password without providing new password","User Account Management")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search functionality by category as input&quot;, &quot;Search functionality&quot;)">
+                  </a> <!-- runScenario("Search functionality by category as input", "Search functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search functionality by category as input","Search functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User tries to login with invalid credentials&quot;, &quot;Login Functionality&quot;)">
+                  </a> <!-- runScenario("User tries to login with invalid credentials", "Login Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User tries to login with invalid credentials","Login Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Submit a valid product review with rating and comment&quot;, &quot;Product Review&quot;)">
+                  </a> <!-- runScenario("Submit a valid product review with rating and comment", "Product Review") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Submit a valid product review with rating and comment","Product Review")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Adding a valid comment to the blog&quot;, &quot;Blog functionality&quot;)">
+                  </a> <!-- runScenario("Adding a valid comment to the blog", "Blog functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Adding a valid comment to the blog","Blog functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search functionality with case sensitive inputs&quot;, &quot;Search functionality&quot;)">
+                  </a> <!-- runScenario("Search functionality with case sensitive inputs", "Search functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search functionality with case sensitive inputs","Search functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To perform compare without adding products to list&quot;, &quot;Product compare functionality&quot;)">
+                  </a> <!-- runScenario("To perform compare without adding products to list", "Product compare functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To perform compare without adding products to list","Product compare functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Add a single product to the cart&quot;, &quot;Add to Cart Functionality on eCommerce Playground&quot;)">
+                  </a> <!-- runScenario("Add a single product to the cart", "Add to Cart Functionality on eCommerce Playground") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Add a single product to the cart","Add to Cart Functionality on eCommerce Playground")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User tries to login with valid credentials and logs out&quot;, &quot;Login Functionality&quot;)">
+                  </a> <!-- runScenario("User tries to login with valid credentials and logs out", "Login Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User tries to login with valid credentials and logs out","Login Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Submit review with rating but without comment&quot;, &quot;Product Review&quot;)">
+                  </a> <!-- runScenario("Submit review with rating but without comment", "Product Review") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Submit review with rating but without comment","Product Review")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Remove a product from the cart&quot;, &quot;Add to Cart Functionality on eCommerce Playground&quot;)">
+                  </a> <!-- runScenario("Remove a product from the cart", "Add to Cart Functionality on eCommerce Playground") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Remove a product from the cart","Add to Cart Functionality on eCommerce Playground")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To checkout the shopping cart as a guest user&quot;, &quot;Shopping Cart CheckOut functionality&quot;)">
+                  </a> <!-- runScenario("To checkout the shopping cart as a guest user", "Shopping Cart CheckOut functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To checkout the shopping cart as a guest user","Shopping Cart CheckOut functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Register with invalid inputs&quot;, &quot;User Registration Functionality&quot;)">
+                  </a> <!-- runScenario("Register with invalid inputs", "User Registration Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Register with invalid inputs","User Registration Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search functionality with valid inputs&quot;, &quot;Search functionality&quot;)">
+                  </a> <!-- runScenario("Search functionality with valid inputs", "Search functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search functionality with valid inputs","Search functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Submitting a blog comment without filling required details&quot;, &quot;Blog functionality&quot;)">
+                  </a> <!-- runScenario("Submitting a blog comment without filling required details", "Blog functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Submitting a blog comment without filling required details","Blog functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Register with invalid inputs&quot;, &quot;User Registration Functionality&quot;)">
+                  </a> <!-- runScenario("Register with invalid inputs", "User Registration Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Register with invalid inputs","User Registration Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Register with invalid inputs&quot;, &quot;User Registration Functionality&quot;)">
+                  </a> <!-- runScenario("Register with invalid inputs", "User Registration Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Register with invalid inputs","User Registration Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search functionality with invalid inputs&quot;, &quot;Search functionality&quot;)">
+                  </a> <!-- runScenario("Search functionality with invalid inputs", "Search functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search functionality with invalid inputs","Search functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User requests a password reset link using valid email&quot;, &quot;Forgot Password Functionality&quot;)">
+                  </a> <!-- runScenario("User requests a password reset link using valid email", "Forgot Password Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User requests a password reset link using valid email","Forgot Password Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To checkout the empty shopping cart as a registered user&quot;, &quot;Shopping Cart CheckOut functionality&quot;)">
+                  </a> <!-- runScenario("To checkout the empty shopping cart as a registered user", "Shopping Cart CheckOut functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To checkout the empty shopping cart as a registered user","Shopping Cart CheckOut functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Register with valid inputs&quot;, &quot;User Registration Functionality&quot;)">
+                  </a> <!-- runScenario("Register with valid inputs", "User Registration Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Register with valid inputs","User Registration Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User tries to login with valid credentials&quot;, &quot;Login Functionality&quot;)">
+                  </a> <!-- runScenario("User tries to login with valid credentials", "Login Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User tries to login with valid credentials","Login Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;category wise selection and assertion&quot;, &quot;Blog functionality&quot;)">
+                  </a> <!-- runScenario("category wise selection and assertion", "Blog functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("category wise selection and assertion","Blog functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -244,7 +1056,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\admi\AppData\Local\Temp\testng-eclipse--1090973802\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\admi\AppData\Local\Temp\testng-eclipse-1502639838\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -301,44 +1113,216 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(51);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.runner.RunnerTestNg')
-data.setCell(0, 3, 53528);
+data.setCell(0, 3, 147693);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'com.runner.RunnerTestNg')
-data.setCell(1, 3, 45678);
+data.setCell(1, 3, 144770);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'com.runner.RunnerTestNg')
-data.setCell(2, 3, 41092);
+data.setCell(2, 3, 131555);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'com.runner.RunnerTestNg')
-data.setCell(3, 3, 41090);
+data.setCell(3, 3, 130440);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'com.runner.RunnerTestNg')
-data.setCell(4, 3, 41042);
+data.setCell(4, 3, 127997);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'runScenario')
 data.setCell(5, 2, 'com.runner.RunnerTestNg')
-data.setCell(5, 3, 40966);
+data.setCell(5, 3, 111651);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'runScenario')
 data.setCell(6, 2, 'com.runner.RunnerTestNg')
-data.setCell(6, 3, 40759);
+data.setCell(6, 3, 110787);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'runScenario')
 data.setCell(7, 2, 'com.runner.RunnerTestNg')
-data.setCell(7, 3, 40167);
+data.setCell(7, 3, 107633);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'com.runner.RunnerTestNg')
+data.setCell(8, 3, 91369);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'com.runner.RunnerTestNg')
+data.setCell(9, 3, 91047);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'com.runner.RunnerTestNg')
+data.setCell(10, 3, 88901);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'com.runner.RunnerTestNg')
+data.setCell(11, 3, 82994);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'com.runner.RunnerTestNg')
+data.setCell(12, 3, 80714);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'com.runner.RunnerTestNg')
+data.setCell(13, 3, 80356);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'com.runner.RunnerTestNg')
+data.setCell(14, 3, 77206);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'com.runner.RunnerTestNg')
+data.setCell(15, 3, 75649);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'com.runner.RunnerTestNg')
+data.setCell(16, 3, 75214);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'runScenario')
+data.setCell(17, 2, 'com.runner.RunnerTestNg')
+data.setCell(17, 3, 72937);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'runScenario')
+data.setCell(18, 2, 'com.runner.RunnerTestNg')
+data.setCell(18, 3, 72381);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'runScenario')
+data.setCell(19, 2, 'com.runner.RunnerTestNg')
+data.setCell(19, 3, 72012);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'runScenario')
+data.setCell(20, 2, 'com.runner.RunnerTestNg')
+data.setCell(20, 3, 71301);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'runScenario')
+data.setCell(21, 2, 'com.runner.RunnerTestNg')
+data.setCell(21, 3, 70294);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'runScenario')
+data.setCell(22, 2, 'com.runner.RunnerTestNg')
+data.setCell(22, 3, 69755);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'runScenario')
+data.setCell(23, 2, 'com.runner.RunnerTestNg')
+data.setCell(23, 3, 67564);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'runScenario')
+data.setCell(24, 2, 'com.runner.RunnerTestNg')
+data.setCell(24, 3, 61800);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'runScenario')
+data.setCell(25, 2, 'com.runner.RunnerTestNg')
+data.setCell(25, 3, 60818);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'runScenario')
+data.setCell(26, 2, 'com.runner.RunnerTestNg')
+data.setCell(26, 3, 55124);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'runScenario')
+data.setCell(27, 2, 'com.runner.RunnerTestNg')
+data.setCell(27, 3, 52777);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'runScenario')
+data.setCell(28, 2, 'com.runner.RunnerTestNg')
+data.setCell(28, 3, 51352);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'runScenario')
+data.setCell(29, 2, 'com.runner.RunnerTestNg')
+data.setCell(29, 3, 50278);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'runScenario')
+data.setCell(30, 2, 'com.runner.RunnerTestNg')
+data.setCell(30, 3, 49557);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'runScenario')
+data.setCell(31, 2, 'com.runner.RunnerTestNg')
+data.setCell(31, 3, 49120);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'runScenario')
+data.setCell(32, 2, 'com.runner.RunnerTestNg')
+data.setCell(32, 3, 46773);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'runScenario')
+data.setCell(33, 2, 'com.runner.RunnerTestNg')
+data.setCell(33, 3, 45410);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'runScenario')
+data.setCell(34, 2, 'com.runner.RunnerTestNg')
+data.setCell(34, 3, 43507);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'runScenario')
+data.setCell(35, 2, 'com.runner.RunnerTestNg')
+data.setCell(35, 3, 41944);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'runScenario')
+data.setCell(36, 2, 'com.runner.RunnerTestNg')
+data.setCell(36, 3, 41823);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'runScenario')
+data.setCell(37, 2, 'com.runner.RunnerTestNg')
+data.setCell(37, 3, 41548);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'runScenario')
+data.setCell(38, 2, 'com.runner.RunnerTestNg')
+data.setCell(38, 3, 41319);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'runScenario')
+data.setCell(39, 2, 'com.runner.RunnerTestNg')
+data.setCell(39, 3, 36651);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'runScenario')
+data.setCell(40, 2, 'com.runner.RunnerTestNg')
+data.setCell(40, 3, 32223);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'runScenario')
+data.setCell(41, 2, 'com.runner.RunnerTestNg')
+data.setCell(41, 3, 31414);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'runScenario')
+data.setCell(42, 2, 'com.runner.RunnerTestNg')
+data.setCell(42, 3, 31191);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'runScenario')
+data.setCell(43, 2, 'com.runner.RunnerTestNg')
+data.setCell(43, 3, 30701);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'runScenario')
+data.setCell(44, 2, 'com.runner.RunnerTestNg')
+data.setCell(44, 3, 30577);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'runScenario')
+data.setCell(45, 2, 'com.runner.RunnerTestNg')
+data.setCell(45, 3, 29778);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'runScenario')
+data.setCell(46, 2, 'com.runner.RunnerTestNg')
+data.setCell(46, 3, 26638);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'runScenario')
+data.setCell(47, 2, 'com.runner.RunnerTestNg')
+data.setCell(47, 3, 23073);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'runScenario')
+data.setCell(48, 2, 'com.runner.RunnerTestNg')
+data.setCell(48, 3, 22997);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'runScenario')
+data.setCell(49, 2, 'com.runner.RunnerTestNg')
+data.setCell(49, 3, 22377);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'runScenario')
+data.setCell(50, 2, 'com.runner.RunnerTestNg')
+data.setCell(50, 3, 22259);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <span class="suite-total-time">Total running time: 55 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -366,44 +1350,224 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.runner.RunnerTestNg</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@1989e8c6)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@4fa86cb8)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Subscribe or Unsubscribe from newsletter", "User Account Management")</span>
-                <span class="method-start">1591 ms</span>
+                <span class="method-name">runScenario("Add a single product to the cart", "Add to Cart Functionality on eCommerce Playground")</span>
+                <span class="method-start">1582 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Edit user account details", "User Account Management")</span>
-                <span class="method-start">1591 ms</span>
+                <span class="method-name">runScenario("Remove a product from the cart", "Add to Cart Functionality on eCommerce Playground")</span>
+                <span class="method-start">1585 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Add multiple quantities of the same product", "Add to Cart Functionality on eCommerce Playground")</span>
+                <span class="method-start">1587 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Scenario: User tries to add a product to cart without selecting size", "Add to Cart Functionality o...)</span>
+                <span class="method-start">1588 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Register a user and register as affiliate with valid and invalid inputs", "User Login and Affiliate...)</span>
-                <span class="method-start">1591 ms</span>
+                <span class="method-start">1661 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Modify the wishlist by removing a product", "User Account Management")</span>
-                <span class="method-start">1591 ms</span>
+                <span class="method-name">runScenario("Adding a valid comment to the blog", "Blog functionality")</span>
+                <span class="method-start">1667 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Submitting a blog comment without filling required details", "Blog functionality")</span>
+                <span class="method-start">1687 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("category wise selection and assertion", "Blog functionality")</span>
+                <span class="method-start">1695 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Submitting a blog comment without filling required details", "Blog functionality")</span>
+                <span class="method-start">1695 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Submitting a blog comment without filling required details", "Blog functionality")</span>
+                <span class="method-start">1697 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User requests a password reset link using valid email", "Forgot Password Functionality")</span>
+                <span class="method-start">74643 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User requests a password reset link using invalid email", "Forgot Password Functionality")</span>
+                <span class="method-start">76883 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User requests a password reset link without providing email", "Forgot Password Functionality")</span>
+                <span class="method-start">77312 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("To checkout view the order history after ordering", "My orders feature")</span>
+                <span class="method-start">82057 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("To reorder the product in the order  history", "My orders feature")</span>
+                <span class="method-start">82297 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("To checkout the shopping cart as a guest user", "Shopping Cart CheckOut functionality")</span>
+                <span class="method-start">92643 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("To checkout the empty shopping cart as a registered user", "Shopping Cart CheckOut functionality")</span>
+                <span class="method-start">93066 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("To checkout the  cart as a registered user", "Shopping Cart CheckOut functionality")</span>
+                <span class="method-start">112478 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("To checkout the  cart with existing email", "Shopping Cart CheckOut functionality")</span>
+                <span class="method-start">113240 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("To perform compare without adding products to list", "Product compare functionality")</span>
+                <span class="method-start">144889 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("To Add the products to comparision list", "Product compare functionality")</span>
+                <span class="method-start">144938 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("To Add the products to comparision list", "Product compare functionality")</span>
+                <span class="method-start">146357 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Submit a valid product review with rating and comment", "Product Review")</span>
+                <span class="method-start">154091 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Submit review without rating and without comment", "Product Review")</span>
+                <span class="method-start">162827 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Submit review without rating but with comment", "Product Review")</span>
+                <span class="method-start">200281 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Submit review with rating but without comment", "Product Review")</span>
+                <span class="method-start">212502 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search functionality with valid inputs", "Search functionality")</span>
+                <span class="method-start">214185 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search functionality with invalid inputs", "Search functionality")</span>
+                <span class="method-start">217272 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search functionality with case sensitive inputs", "Search functionality")</span>
+                <span class="method-start">217659 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search functionality with unnecessary indentation in search", "Search functionality")</span>
+                <span class="method-start">230004 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search functionality by category as input", "Search functionality")</span>
+                <span class="method-start">233842 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Edit user account details", "User Account Management")</span>
+                <span class="method-start">237094 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Adding new address", "User Account Management")</span>
-                <span class="method-start">1591 ms</span>
+                <span class="method-start">240481 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Modify the wishlist by removing a product", "User Account Management")</span>
+                <span class="method-start">243790 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Subscribe or Unsubscribe from newsletter", "User Account Management")</span>
-                <span class="method-start">1592 ms</span>
+                <span class="method-start">244801 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Subscribe or Unsubscribe from newsletter", "User Account Management")</span>
+                <span class="method-start">248239 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Change user password", "User Account Management")</span>
-                <span class="method-start">1734 ms</span>
+                <span class="method-start">253924 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Change user password without providing new password", "User Account Management")</span>
-                <span class="method-start">1735 ms</span>
+                <span class="method-start">255506 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User tries to login with valid credentials", "Login Functionality")</span>
+                <span class="method-start">262782 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User tries to login with invalid credentials", "Login Functionality")</span>
+                <span class="method-start">263621 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User tries to login with invalid credentials", "Login Functionality")</span>
+                <span class="method-start">282782 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User tries to login with invalid credentials", "Login Functionality")</span>
+                <span class="method-start">285881 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User tries to login with invalid credentials", "Login Functionality")</span>
+                <span class="method-start">286655 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User tries to login with valid credentials and logs out", "Login Functionality")</span>
+                <span class="method-start">286749 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Register with valid inputs", "User Registration Functionality")</span>
+                <span class="method-start">292911 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Register with valid inputs", "User Registration Functionality")</span>
+                <span class="method-start">302283 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Register with invalid inputs", "User Registration Functionality")</span>
+                <span class="method-start">303365 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Register with invalid inputs", "User Registration Functionality")</span>
+                <span class="method-start">308194 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Register with invalid inputs", "User Registration Functionality")</span>
+                <span class="method-start">308262 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Register with invalid inputs", "User Registration Functionality")</span>
+                <span class="method-start">314197 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Register with valid inputs  with out checking privacy policy", "User Registration Functionality")</span>
+                <span class="method-start">314744 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">55122 ms</span>
+                <span class="method-start">338898 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
