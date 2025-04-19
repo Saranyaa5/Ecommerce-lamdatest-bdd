@@ -11958,3 +11958,255 @@
 2025-04-17 12:24:08 [TestNG-PoolService-4] ERROR: Scenario failed: Adding new address
 2025-04-17 12:24:08 [TestNG-PoolService-3] INFO : Assertion Passed: Expected message 'Your Account Has Been Created!' is displayed successfully.
 2025-04-17 12:24:08 [TestNG-PoolService-3] INFO : Scenario passed: Register with valid inputs
+2025-04-17 12:51:07 [TestNG-PoolService-7] INFO : Scenario started: Submitting a blog comment without filling required details
+2025-04-17 12:51:08 [TestNG-PoolService-8] INFO : Scenario started: Submitting a blog comment without filling required details
+2025-04-17 12:51:08 [TestNG-PoolService-2] INFO : Scenario started: Remove a product from the cart
+2025-04-17 12:51:16 [TestNG-PoolService-5] INFO : Scenario started: Register a user and register as affiliate with valid and invalid inputs
+2025-04-17 12:51:16 [TestNG-PoolService-10] INFO : Scenario started: category wise selection and assertion
+2025-04-17 12:51:17 [TestNG-PoolService-3] INFO : Scenario started: Add multiple quantities of the same product
+2025-04-17 12:51:17 [TestNG-PoolService-9] INFO : Scenario started: Submitting a blog comment without filling required details
+2025-04-17 12:51:17 [TestNG-PoolService-1] INFO : Scenario started: Add a single product to the cart
+2025-04-17 12:51:17 [TestNG-PoolService-4] INFO : Scenario started: Scenario: User tries to add a product to cart without selecting size
+2025-04-17 12:51:17 [TestNG-PoolService-6] INFO : Scenario started: Adding a valid comment to the blog
+2025-04-17 12:51:46 [TestNG-PoolService-10] INFO : Scenario passed: category wise selection and assertion
+2025-04-17 12:52:16 [TestNG-PoolService-4] INFO : Scenario passed: Scenario: User tries to add a product to cart without selecting size
+2025-04-17 12:52:20 [TestNG-PoolService-1] INFO : Scenario passed: Add a single product to the cart
+2025-04-17 12:52:21 [TestNG-PoolService-8] INFO : Scenario passed: Submitting a blog comment without filling required details
+2025-04-17 12:52:22 [TestNG-PoolService-9] INFO : Scenario passed: Submitting a blog comment without filling required details
+2025-04-17 12:52:22 [TestNG-PoolService-6] INFO : Scenario passed: Adding a valid comment to the blog
+2025-04-17 12:52:28 [TestNG-PoolService-10] INFO : Scenario started: User requests a password reset link using valid email
+2025-04-17 12:52:29 [TestNG-PoolService-3] INFO : Scenario passed: Add multiple quantities of the same product
+2025-04-17 12:52:38 [TestNG-PoolService-5] INFO : Assertion Passed: Expected message 'Your Account Has Been Created!' is displayed successfully.
+2025-04-17 12:53:00 [TestNG-PoolService-4] INFO : Scenario started: User requests a password reset link using invalid email
+2025-04-17 12:53:17 [TestNG-PoolService-1] INFO : Scenario started: User requests a password reset link without providing email
+2025-04-17 12:53:35 [TestNG-PoolService-6] INFO : Scenario started: To reorder the product in the order  history
+2025-04-17 12:53:37 [TestNG-PoolService-9] INFO : Scenario started: To checkout view the order history after ordering
+2025-04-17 12:54:13 [TestNG-PoolService-8] INFO : Scenario started: To checkout the shopping cart as a guest user
+2025-04-17 12:54:20 [TestNG-PoolService-10] INFO : Scenario passed: User requests a password reset link using valid email
+2025-04-17 12:54:34 [TestNG-PoolService-5] INFO : Scenario passed: Register a user and register as affiliate with valid and invalid inputs
+2025-04-17 12:54:57 [TestNG-PoolService-1] INFO : Scenario passed: User requests a password reset link without providing email
+2025-04-17 12:55:05 [TestNG-PoolService-10] INFO : Scenario started: Subscribe or Unsubscribe from newsletter
+2025-04-17 12:55:06 [TestNG-PoolService-2] INFO : Scenario passed: Remove a product from the cart
+2025-04-17 12:55:06 [TestNG-PoolService-4] INFO : Scenario passed: User requests a password reset link using invalid email
+2025-04-17 12:55:06 [TestNG-PoolService-3] INFO : Scenario started: Subscribe or Unsubscribe from newsletter
+2025-04-17 12:55:19 [TestNG-PoolService-5] INFO : Scenario started: Change user password
+2025-04-17 12:55:34 [TestNG-PoolService-3] INFO : Scenario passed: Subscribe or Unsubscribe from newsletter
+2025-04-17 12:55:34 [TestNG-PoolService-10] INFO : Scenario passed: Subscribe or Unsubscribe from newsletter
+2025-04-17 12:55:44 [TestNG-PoolService-2] INFO : Scenario started: User tries to login with valid credentials
+2025-04-17 12:55:44 [TestNG-PoolService-4] INFO : Scenario started: Change user password without providing new password
+2025-04-17 12:55:45 [TestNG-PoolService-1] INFO : Scenario started: User tries to login with invalid credentials
+2025-04-17 12:55:50 [TestNG-PoolService-5] INFO : Scenario passed: Change user password
+2025-04-17 12:55:59 [TestNG-PoolService-1] INFO : Scenario passed: User tries to login with invalid credentials
+2025-04-17 12:56:00 [TestNG-PoolService-2] INFO : Scenario passed: User tries to login with valid credentials
+2025-04-17 12:56:03 [TestNG-PoolService-4] INFO : Scenario passed: Change user password without providing new password
+2025-04-17 12:56:06 [TestNG-PoolService-7] INFO : Scenario passed: Submitting a blog comment without filling required details
+2025-04-17 12:56:07 [TestNG-PoolService-8] INFO : Order placed successfully. Success message verified.
+2025-04-17 12:56:07 [TestNG-PoolService-8] INFO : Scenario passed: To checkout the shopping cart as a guest user
+2025-04-17 12:56:11 [TestNG-PoolService-9] ERROR: Scenario failed: To checkout view the order history after ordering
+2025-04-17 12:56:13 [TestNG-PoolService-3] INFO : Scenario started: User tries to login with invalid credentials
+2025-04-17 12:56:18 [TestNG-PoolService-10] INFO : Scenario started: User tries to login with invalid credentials
+2025-04-17 12:56:23 [TestNG-PoolService-1] INFO : Scenario started: User tries to login with invalid credentials
+2025-04-17 12:56:23 [TestNG-PoolService-6] INFO : Scenario passed: To reorder the product in the order  history
+2025-04-17 12:56:25 [TestNG-PoolService-3] INFO : Scenario passed: User tries to login with invalid credentials
+2025-04-17 12:56:30 [TestNG-PoolService-10] INFO : Scenario passed: User tries to login with invalid credentials
+2025-04-17 12:56:35 [TestNG-PoolService-1] INFO : Scenario passed: User tries to login with invalid credentials
+2025-04-17 12:56:37 [TestNG-PoolService-5] INFO : Scenario started: User tries to login with valid credentials and logs out
+2025-04-17 12:56:39 [TestNG-PoolService-7] INFO : Scenario started: Register with valid inputs
+2025-04-17 12:56:47 [TestNG-PoolService-8] INFO : Scenario started: Register with valid inputs
+2025-04-17 12:56:52 [TestNG-PoolService-2] INFO : Scenario started: Register with invalid inputs
+2025-04-17 12:56:54 [TestNG-PoolService-4] INFO : Scenario started: Register with invalid inputs
+2025-04-17 12:57:00 [TestNG-PoolService-5] INFO : Scenario passed: User tries to login with valid credentials and logs out
+2025-04-17 12:57:01 [TestNG-PoolService-9] INFO : Scenario started: Register with invalid inputs
+2025-04-17 12:57:07 [TestNG-PoolService-6] INFO : Scenario started: Register with invalid inputs
+2025-04-17 12:57:10 [TestNG-PoolService-3] INFO : Scenario started: Register with valid inputs  with out checking privacy policy
+2025-04-17 12:57:19 [TestNG-PoolService-7] INFO : Assertion Passed: Expected message 'Your Account Has Been Created!' is displayed successfully.
+2025-04-17 12:57:19 [TestNG-PoolService-7] INFO : Scenario passed: Register with valid inputs
+2025-04-17 12:57:20 [TestNG-PoolService-2] INFO : Assertion Passed for 'empty first name': Expected and actual message matched: 'First Name must be between 1 and 32 characters!'
+2025-04-17 12:57:20 [TestNG-PoolService-2] INFO : Scenario passed: Register with invalid inputs
+2025-04-17 12:57:28 [TestNG-PoolService-4] INFO : Assertion Passed for 'existing email': Expected and actual message matched: 'Warning: E-Mail Address is already registered!'
+2025-04-17 12:57:28 [TestNG-PoolService-4] INFO : Scenario passed: Register with invalid inputs
+2025-04-17 12:57:28 [TestNG-PoolService-8] INFO : Assertion Passed: Expected message 'Your Account Has Been Created!' is displayed successfully.
+2025-04-17 12:57:28 [TestNG-PoolService-8] INFO : Scenario passed: Register with valid inputs
+2025-04-17 12:57:48 [TestNG-PoolService-3] INFO : User didn't accept the privacy policy
+2025-04-17 12:57:48 [TestNG-PoolService-6] INFO : Assertion Passed for 'password mismatch': Expected and actual message matched: 'Password confirmation does not match password!'
+2025-04-17 12:57:48 [TestNG-PoolService-6] INFO : Scenario passed: Register with invalid inputs
+2025-04-17 12:57:49 [TestNG-PoolService-9] INFO : Assertion Passed for 'empty password': Expected and actual message matched: 'Password must be between 4 and 20 characters!'
+2025-04-17 12:57:49 [TestNG-PoolService-9] INFO : Scenario passed: Register with invalid inputs
+2025-04-17 12:57:52 [TestNG-PoolService-3] INFO : Assertion Passed for 'Not checking privacy policy': Expected and actual message matched: 'Warning: You must agree to the Privacy Policy!'
+2025-04-17 12:57:52 [TestNG-PoolService-3] INFO : Scenario passed: Register with valid inputs  with out checking privacy policy
+2025-04-17 14:02:24 [TestNG-PoolService-5] INFO : Scenario started: Register a user and register as affiliate with valid and invalid inputs
+2025-04-17 14:02:26 [TestNG-PoolService-7] INFO : Scenario started: Submitting a blog comment without filling required details
+2025-04-17 14:02:27 [TestNG-PoolService-1] INFO : Scenario started: Add a single product to the cart
+2025-04-17 14:02:29 [TestNG-PoolService-10] INFO : Scenario started: category wise selection and assertion
+2025-04-17 14:02:35 [TestNG-PoolService-4] INFO : Scenario started: Scenario: User tries to add a product to cart without selecting size
+2025-04-17 14:02:36 [TestNG-PoolService-9] INFO : Scenario started: Submitting a blog comment without filling required details
+2025-04-17 14:02:42 [TestNG-PoolService-3] INFO : Scenario started: Add multiple quantities of the same product
+2025-04-17 14:02:42 [TestNG-PoolService-2] INFO : Scenario started: Remove a product from the cart
+2025-04-17 14:02:43 [TestNG-PoolService-8] INFO : Scenario started: Submitting a blog comment without filling required details
+2025-04-17 14:02:43 [TestNG-PoolService-6] INFO : Scenario started: Adding a valid comment to the blog
+2025-04-17 14:03:11 [TestNG-PoolService-10] INFO : Scenario passed: category wise selection and assertion
+2025-04-17 14:03:30 [TestNG-PoolService-9] INFO : Scenario passed: Submitting a blog comment without filling required details
+2025-04-17 14:03:31 [TestNG-PoolService-4] INFO : Scenario passed: Scenario: User tries to add a product to cart without selecting size
+2025-04-17 14:03:38 [TestNG-PoolService-8] INFO : Scenario passed: Submitting a blog comment without filling required details
+2025-04-17 14:03:38 [TestNG-PoolService-6] INFO : Scenario passed: Adding a valid comment to the blog
+2025-04-17 14:03:40 [TestNG-PoolService-3] INFO : Scenario passed: Add multiple quantities of the same product
+2025-04-17 14:03:47 [TestNG-PoolService-5] INFO : Assertion Passed: Expected message 'Your Account Has Been Created!' is displayed successfully.
+2025-04-17 14:03:48 [TestNG-PoolService-10] INFO : Scenario started: User requests a password reset link using valid email
+2025-04-17 14:04:13 [TestNG-PoolService-5] INFO : Scenario passed: Register a user and register as affiliate with valid and invalid inputs
+2025-04-17 14:04:17 [TestNG-PoolService-9] INFO : Scenario started: User requests a password reset link using invalid email
+2025-04-17 14:04:29 [TestNG-PoolService-4] INFO : Scenario started: User requests a password reset link without providing email
+2025-04-17 14:04:30 [TestNG-PoolService-1] INFO : Scenario passed: Add a single product to the cart
+2025-04-17 14:04:32 [TestNG-PoolService-3] INFO : Scenario started: To checkout the shopping cart as a guest user
+2025-04-17 14:04:37 [TestNG-PoolService-6] INFO : Scenario started: To reorder the product in the order  history
+2025-04-17 14:04:37 [TestNG-PoolService-8] INFO : Scenario started: To checkout view the order history after ordering
+2025-04-17 14:04:53 [TestNG-PoolService-10] INFO : Scenario passed: User requests a password reset link using valid email
+2025-04-17 14:05:21 [TestNG-PoolService-5] INFO : Scenario started: To checkout the empty shopping cart as a registered user
+2025-04-17 14:05:32 [TestNG-PoolService-4] INFO : Scenario passed: User requests a password reset link without providing email
+2025-04-17 14:05:33 [TestNG-PoolService-1] INFO : Scenario started: To checkout the  cart as a registered user
+2025-04-17 14:05:34 [TestNG-PoolService-9] INFO : Scenario passed: User requests a password reset link using invalid email
+2025-04-17 14:06:02 [TestNG-PoolService-10] INFO : Scenario started: To checkout the  cart with existing email
+2025-04-17 14:06:12 [TestNG-PoolService-5] INFO : Verified: Cart is empty with correct message.
+2025-04-17 14:06:16 [TestNG-PoolService-5] INFO : Scenario passed: To checkout the empty shopping cart as a registered user
+2025-04-17 14:06:28 [TestNG-PoolService-9] INFO : Scenario started: To perform compare without adding products to list
+2025-04-17 14:06:29 [TestNG-PoolService-4] INFO : Scenario started: To Add the products to comparision list
+2025-04-17 14:06:46 [TestNG-PoolService-2] INFO : Scenario passed: Remove a product from the cart
+2025-04-17 14:07:01 [TestNG-PoolService-9] INFO : Scenario passed: To perform compare without adding products to list
+2025-04-17 14:07:08 [TestNG-PoolService-5] INFO : Scenario started: To Add the products to comparision list
+2025-04-17 14:07:09 [TestNG-PoolService-3] INFO : Order placed successfully. Success message verified.
+2025-04-17 14:07:09 [TestNG-PoolService-3] INFO : Scenario passed: To checkout the shopping cart as a guest user
+2025-04-17 14:07:12 [TestNG-PoolService-4] INFO : Scenario passed: To Add the products to comparision list
+2025-04-17 14:07:28 [TestNG-PoolService-7] ERROR: Scenario failed: Submitting a blog comment without filling required details
+2025-04-17 14:07:28 [TestNG-PoolService-6] ERROR: Scenario failed: To reorder the product in the order  history
+2025-04-17 14:07:36 [TestNG-PoolService-2] INFO : Scenario started: Submit a valid product review with rating and comment
+2025-04-17 14:07:37 [TestNG-PoolService-5] INFO : Scenario passed: To Add the products to comparision list
+2025-04-17 14:07:40 [TestNG-PoolService-1] INFO : Order placed successfully. Success message verified.
+2025-04-17 14:07:40 [TestNG-PoolService-1] INFO : Scenario passed: To checkout the  cart as a registered user
+2025-04-17 14:07:42 [TestNG-PoolService-8] INFO : Scenario passed: To checkout view the order history after ordering
+2025-04-17 14:07:47 [TestNG-PoolService-9] INFO : Scenario started: Submit review without rating and without comment
+2025-04-17 14:07:53 [TestNG-PoolService-10] INFO : Duplicate email error message verified successfully.
+2025-04-17 14:07:53 [TestNG-PoolService-10] INFO : Scenario passed: To checkout the  cart with existing email
+2025-04-17 14:08:01 [TestNG-PoolService-3] INFO : Scenario started: Submit review without rating but with comment
+2025-04-17 14:08:02 [TestNG-PoolService-4] INFO : Scenario started: Submit review with rating but without comment
+2025-04-17 14:08:13 [TestNG-PoolService-6] INFO : Scenario started: Search functionality with invalid inputs
+2025-04-17 14:08:14 [TestNG-PoolService-7] INFO : Scenario started: Search functionality with valid inputs
+2025-04-17 14:08:24 [TestNG-PoolService-2] INFO : Scenario passed: Submit a valid product review with rating and comment
+2025-04-17 14:08:32 [TestNG-PoolService-8] INFO : Scenario started: Search functionality with case sensitive inputs
+2025-04-17 14:08:33 [TestNG-PoolService-1] INFO : Scenario started: Search functionality by category as input
+2025-04-17 14:08:33 [TestNG-PoolService-5] INFO : Scenario started: Search functionality with unnecessary indentation in search
+2025-04-17 14:08:48 [TestNG-PoolService-7] INFO : Scenario passed: Search functionality with valid inputs
+2025-04-17 14:08:48 [TestNG-PoolService-6] INFO : Scenario passed: Search functionality with invalid inputs
+2025-04-17 14:08:48 [TestNG-PoolService-10] INFO : Scenario started: Edit user account details
+2025-04-17 14:08:51 [TestNG-PoolService-9] INFO : Scenario passed: Submit review without rating and without comment
+2025-04-17 14:08:53 [TestNG-PoolService-8] INFO : Scenario passed: Search functionality with case sensitive inputs
+2025-04-17 14:08:53 [TestNG-PoolService-4] INFO : Scenario passed: Submit review with rating but without comment
+2025-04-17 14:08:53 [TestNG-PoolService-3] INFO : Scenario passed: Submit review without rating but with comment
+2025-04-17 14:08:54 [TestNG-PoolService-5] INFO : Scenario passed: Search functionality with unnecessary indentation in search
+2025-04-17 14:08:55 [TestNG-PoolService-1] INFO : Scenario passed: Search functionality by category as input
+2025-04-17 14:09:16 [TestNG-PoolService-2] INFO : Scenario started: Adding new address
+2025-04-17 14:09:22 [TestNG-PoolService-10] INFO : Scenario passed: Edit user account details
+2025-04-17 14:09:25 [TestNG-PoolService-8] INFO : Scenario started: Modify the wishlist by removing a product
+2025-04-17 14:09:26 [TestNG-PoolService-6] INFO : Scenario started: Subscribe or Unsubscribe from newsletter
+2025-04-17 14:09:27 [TestNG-PoolService-9] INFO : Scenario started: Change user password
+2025-04-17 14:09:28 [TestNG-PoolService-7] INFO : Scenario started: Subscribe or Unsubscribe from newsletter
+2025-04-17 14:09:35 [TestNG-PoolService-3] INFO : Scenario started: Change user password without providing new password
+2025-04-17 14:09:39 [TestNG-PoolService-4] INFO : Scenario started: User tries to login with valid credentials
+2025-04-17 14:09:43 [TestNG-PoolService-5] INFO : Scenario started: User tries to login with invalid credentials
+2025-04-17 14:09:43 [TestNG-PoolService-1] INFO : Scenario started: User tries to login with invalid credentials
+2025-04-17 14:09:49 [TestNG-PoolService-8] INFO : product in the wish list
+2025-04-17 14:09:53 [TestNG-PoolService-8] INFO : Scenario passed: Modify the wishlist by removing a product
+2025-04-17 14:09:56 [TestNG-PoolService-4] INFO : Scenario passed: User tries to login with valid credentials
+2025-04-17 14:09:58 [TestNG-PoolService-5] INFO : Scenario passed: User tries to login with invalid credentials
+2025-04-17 14:09:58 [TestNG-PoolService-7] INFO : Scenario passed: Subscribe or Unsubscribe from newsletter
+2025-04-17 14:09:58 [TestNG-PoolService-1] INFO : Scenario passed: User tries to login with invalid credentials
+2025-04-17 14:09:58 [TestNG-PoolService-10] INFO : Scenario started: User tries to login with invalid credentials
+2025-04-17 14:09:59 [TestNG-PoolService-9] INFO : Scenario passed: Change user password
+2025-04-17 14:10:00 [TestNG-PoolService-6] INFO : Scenario passed: Subscribe or Unsubscribe from newsletter
+2025-04-17 14:10:00 [TestNG-PoolService-2] INFO : Scenario passed: Adding new address
+2025-04-17 14:10:01 [TestNG-PoolService-3] INFO : Scenario passed: Change user password without providing new password
+2025-04-17 14:10:05 [TestNG-PoolService-1] INFO : Scenario started: User tries to login with invalid credentials
+2025-04-17 14:10:05 [TestNG-PoolService-5] INFO : Scenario started: User tries to login with valid credentials and logs out
+2025-04-17 14:10:08 [TestNG-PoolService-8] INFO : Scenario started: Register with valid inputs
+2025-04-17 14:10:11 [TestNG-PoolService-4] INFO : Scenario started: Register with valid inputs
+2025-04-17 14:10:14 [TestNG-PoolService-10] INFO : Scenario passed: User tries to login with invalid credentials
+2025-04-17 14:10:17 [TestNG-PoolService-7] INFO : Scenario started: Register with invalid inputs
+2025-04-17 14:10:19 [TestNG-PoolService-9] INFO : Scenario started: Register with invalid inputs
+2025-04-17 14:10:20 [TestNG-PoolService-1] INFO : Scenario passed: User tries to login with invalid credentials
+2025-04-17 14:10:26 [TestNG-PoolService-2] INFO : Scenario started: Register with invalid inputs
+2025-04-17 14:10:26 [TestNG-PoolService-6] INFO : Scenario started: Register with invalid inputs
+2025-04-17 14:10:29 [TestNG-PoolService-5] INFO : Scenario passed: User tries to login with valid credentials and logs out
+2025-04-17 14:10:36 [TestNG-PoolService-8] INFO : Assertion Passed: Expected message 'Your Account Has Been Created!' is displayed successfully.
+2025-04-17 14:10:36 [TestNG-PoolService-8] INFO : Scenario passed: Register with valid inputs
+2025-04-17 14:10:38 [TestNG-PoolService-4] INFO : Assertion Passed: Expected message 'Your Account Has Been Created!' is displayed successfully.
+2025-04-17 14:10:38 [TestNG-PoolService-4] INFO : Scenario passed: Register with valid inputs
+2025-04-17 14:10:38 [TestNG-PoolService-7] INFO : Assertion Passed for 'empty first name': Expected and actual message matched: 'First Name must be between 1 and 32 characters!'
+2025-04-17 14:10:38 [TestNG-PoolService-7] INFO : Scenario passed: Register with invalid inputs
+2025-04-17 14:10:39 [TestNG-PoolService-9] INFO : Assertion Passed for 'existing email': Expected and actual message matched: 'Warning: E-Mail Address is already registered!'
+2025-04-17 14:10:39 [TestNG-PoolService-9] INFO : Scenario passed: Register with invalid inputs
+2025-04-17 14:10:39 [TestNG-PoolService-3] INFO : Scenario started: Register with valid inputs  with out checking privacy policy
+2025-04-17 14:10:40 [TestNG-PoolService-2] INFO : Assertion Passed for 'empty password': Expected and actual message matched: 'Password must be between 4 and 20 characters!'
+2025-04-17 14:10:40 [TestNG-PoolService-2] INFO : Scenario passed: Register with invalid inputs
+2025-04-17 14:10:41 [TestNG-PoolService-6] INFO : Assertion Passed for 'password mismatch': Expected and actual message matched: 'Password confirmation does not match password!'
+2025-04-17 14:10:41 [TestNG-PoolService-6] INFO : Scenario passed: Register with invalid inputs
+2025-04-17 14:10:47 [TestNG-PoolService-3] INFO : User didn't accept the privacy policy
+2025-04-17 14:10:51 [TestNG-PoolService-3] INFO : Assertion Passed for 'Not checking privacy policy': Expected and actual message matched: 'Warning: You must agree to the Privacy Policy!'
+2025-04-17 14:10:51 [TestNG-PoolService-3] INFO : Scenario passed: Register with valid inputs  with out checking privacy policy
+2025-04-19 11:16:45 [TestNG-PoolService-3] INFO : Scenario started: Subscribe or Unsubscribe from newsletter
+2025-04-19 11:16:50 [TestNG-PoolService-4] INFO : Scenario started: Subscribe or Unsubscribe from newsletter
+2025-04-19 11:16:52 [TestNG-PoolService-2] INFO : Scenario started: Modify the wishlist by removing a product
+2025-04-19 11:16:53 [TestNG-PoolService-5] INFO : Scenario started: Change user password
+2025-04-19 11:16:53 [TestNG-PoolService-6] INFO : Scenario started: Change user password without providing new password
+2025-04-19 11:16:54 [TestNG-PoolService-1] INFO : Scenario started: Adding new address
+2025-04-19 11:17:13 [TestNG-PoolService-6] INFO : Scenario passed: Change user password without providing new password
+2025-04-19 11:17:13 [TestNG-PoolService-2] INFO : product in the wish list
+2025-04-19 11:17:15 [TestNG-PoolService-5] INFO : Scenario passed: Change user password
+2025-04-19 11:17:15 [TestNG-PoolService-3] INFO : Scenario passed: Subscribe or Unsubscribe from newsletter
+2025-04-19 11:17:15 [TestNG-PoolService-4] INFO : Scenario passed: Subscribe or Unsubscribe from newsletter
+2025-04-19 11:17:16 [TestNG-PoolService-2] INFO : Scenario passed: Modify the wishlist by removing a product
+2025-04-19 11:17:20 [TestNG-PoolService-1] INFO : Scenario passed: Adding new address
+2025-04-19 11:22:42 [TestNG-PoolService-5] INFO : Scenario started: Register a user and register as affiliate with valid and invalid inputs
+2025-04-19 11:22:43 [TestNG-PoolService-3] INFO : Scenario started: Add multiple quantities of the same product
+2025-04-19 11:22:44 [TestNG-PoolService-1] INFO : Scenario started: Add a single product to the cart
+2025-04-19 11:22:44 [TestNG-PoolService-8] INFO : Scenario started: Submitting a blog comment without filling required details
+2025-04-19 11:22:44 [TestNG-PoolService-10] INFO : Scenario started: category wise selection and assertion
+2025-04-19 11:22:44 [TestNG-PoolService-9] INFO : Scenario started: Submitting a blog comment without filling required details
+2025-04-19 11:22:44 [TestNG-PoolService-4] INFO : Scenario started: Scenario: User tries to add a product to cart without selecting size
+2025-04-19 11:22:44 [TestNG-PoolService-7] INFO : Scenario started: Submitting a blog comment without filling required details
+2025-04-19 11:22:44 [TestNG-PoolService-2] INFO : Scenario started: Remove a product from the cart
+2025-04-19 11:22:45 [TestNG-PoolService-6] INFO : Scenario started: Adding a valid comment to the blog
+2025-04-19 11:26:04 [TestNG-PoolService-5] INFO : Assertion Passed: Expected message 'Your Account Has Been Created!' is displayed successfully.
+2025-04-19 11:27:55 [TestNG-PoolService-8] INFO : Scenario started: Change user password without providing new password
+2025-04-19 11:27:55 [TestNG-PoolService-5] INFO : Scenario started: Subscribe or Unsubscribe from newsletter
+2025-04-19 11:27:57 [TestNG-PoolService-4] INFO : Scenario started: Modify the wishlist by removing a product
+2025-04-19 11:27:57 [TestNG-PoolService-3] INFO : Scenario started: Adding new address
+2025-04-19 11:27:57 [TestNG-PoolService-1] INFO : Scenario started: Register a user and register as affiliate with valid and invalid inputs
+2025-04-19 11:27:58 [TestNG-PoolService-6] INFO : Scenario started: Subscribe or Unsubscribe from newsletter
+2025-04-19 11:27:58 [TestNG-PoolService-7] INFO : Scenario started: Change user password
+2025-04-19 11:27:58 [TestNG-PoolService-2] INFO : Scenario started: Edit user account details
+2025-04-19 11:29:29 [TestNG-PoolService-5] INFO : Scenario passed: Subscribe or Unsubscribe from newsletter
+2025-04-19 11:29:51 [TestNG-PoolService-8] INFO : Scenario passed: Change user password without providing new password
+2025-04-19 11:30:02 [TestNG-PoolService-2] INFO : Scenario passed: Edit user account details
+2025-04-19 11:30:18 [TestNG-PoolService-4] INFO : product in the wish list
+2025-04-19 11:30:20 [TestNG-PoolService-4] INFO : Scenario passed: Modify the wishlist by removing a product
+2025-04-19 11:30:29 [TestNG-PoolService-1] INFO : Assertion Passed: Expected message 'Your Account Has Been Created!' is displayed successfully.
+2025-04-19 11:30:30 [TestNG-PoolService-6] INFO : Scenario passed: Subscribe or Unsubscribe from newsletter
+2025-04-19 11:30:31 [TestNG-PoolService-7] INFO : Scenario passed: Change user password
+2025-04-19 11:30:38 [TestNG-PoolService-3] ERROR: Scenario failed: Adding new address
+2025-04-19 11:30:40 [TestNG-PoolService-1] INFO : Scenario passed: Register a user and register as affiliate with valid and invalid inputs
+2025-04-19 11:34:35 [TestNG-PoolService-5] INFO : Scenario started: Subscribe or Unsubscribe from newsletter
+2025-04-19 11:34:36 [TestNG-PoolService-2] INFO : Scenario started: Edit user account details
+2025-04-19 11:34:36 [TestNG-PoolService-4] INFO : Scenario started: Modify the wishlist by removing a product
+2025-04-19 11:34:36 [TestNG-PoolService-8] INFO : Scenario started: Change user password without providing new password
+2025-04-19 11:34:36 [TestNG-PoolService-6] INFO : Scenario started: Subscribe or Unsubscribe from newsletter
+2025-04-19 11:34:36 [TestNG-PoolService-3] INFO : Scenario started: Adding new address
+2025-04-19 11:34:36 [TestNG-PoolService-7] INFO : Scenario started: Change user password
+2025-04-19 11:34:36 [TestNG-PoolService-1] INFO : Scenario started: Register a user and register as affiliate with valid and invalid inputs
+2025-04-19 11:34:56 [TestNG-PoolService-4] INFO : product in the wish list
+2025-04-19 11:34:58 [TestNG-PoolService-8] INFO : Scenario passed: Change user password without providing new password
+2025-04-19 11:34:58 [TestNG-PoolService-4] INFO : Scenario passed: Modify the wishlist by removing a product
+2025-04-19 11:35:00 [TestNG-PoolService-5] INFO : Scenario passed: Subscribe or Unsubscribe from newsletter
+2025-04-19 11:35:03 [TestNG-PoolService-7] INFO : Scenario passed: Change user password
+2025-04-19 11:35:03 [TestNG-PoolService-2] INFO : Scenario passed: Edit user account details
+2025-04-19 11:35:03 [TestNG-PoolService-6] INFO : Scenario passed: Subscribe or Unsubscribe from newsletter
+2025-04-19 11:35:08 [TestNG-PoolService-1] INFO : Assertion Passed: Expected message 'Your Account Has Been Created!' is displayed successfully.
+2025-04-19 11:35:09 [TestNG-PoolService-3] INFO : Scenario passed: Adding new address
+2025-04-19 11:35:17 [TestNG-PoolService-1] INFO : Scenario passed: Register a user and register as affiliate with valid and invalid inputs

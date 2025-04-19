@@ -2,6 +2,7 @@ package com.actions;
 
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -22,73 +23,54 @@ public class ProductCompareAction {
         this.wait = new WebDriverWait(HelperClass.getDriver(), DEFAULT_WAIT);
     }
 
-    public void clickProductCompare() {
+    private WebElement waitForElementToBeClickable(WebElement element) {
         try {
-            wait.until(ExpectedConditions.elementToBeClickable(productCompareLocator.productCompare1)).click();
-        } catch (TimeoutException e) {
-            throw new RuntimeException("Product Compare button was not clickable within the timeout period", e);
-        } catch (NoSuchElementException e) {
-            throw new RuntimeException("Product Compare button element not found", e);
+            return wait.until(ExpectedConditions.elementToBeClickable(element));
+        } catch (TimeoutException | NoSuchElementException e) {
+            throw new RuntimeException("Element was not clickable within the timeout period", e);
         }
+    }
+
+    private WebElement waitForElementToBeVisible(WebElement element) {
+        try {
+            return wait.until(ExpectedConditions.visibilityOf(element));
+        } catch (TimeoutException | NoSuchElementException e) {
+            throw new RuntimeException("Element was not visible within the timeout period", e);
+        }
+    }
+
+    public void clickProductCompare() {
+        WebElement element = waitForElementToBeClickable(productCompareLocator.productCompare1);
+        element.click();
     }
 
     public void comparionButton() {
-        try {
-            wait.until(ExpectedConditions.elementToBeClickable(productCompareLocator.productCompare2)).click();
-        } catch (TimeoutException e) {
-            throw new RuntimeException("Comparison button was not clickable within the timeout period", e);
-        } catch (NoSuchElementException e) {
-            throw new RuntimeException("Comparison button element not found", e);
-        }
+        WebElement element = waitForElementToBeClickable(productCompareLocator.productCompare2);
+        element.click();
     }
 
     public boolean getNoProductsToCompareMessage() {
-        try {
-            return wait.until(ExpectedConditions.visibilityOf(productCompareLocator.noProducts)).isDisplayed();
-        } catch (TimeoutException e) {
-            throw new RuntimeException("No products message not visible within the timeout period", e);
-        } catch (NoSuchElementException e) {
-            throw new RuntimeException("No products message element not found", e);
-        }
+        WebElement element = waitForElementToBeVisible(productCompareLocator.noProducts);
+        return element.isDisplayed();
     }
 
     public void clickProduct() {
-        try {
-            wait.until(ExpectedConditions.elementToBeClickable(productCompareLocator.product1)).click();
-        } catch (TimeoutException e) {
-            throw new RuntimeException("Product was not clickable within the timeout period", e);
-        } catch (NoSuchElementException e) {
-            throw new RuntimeException("Product element not found", e);
-        }
+        WebElement element = waitForElementToBeClickable(productCompareLocator.product1);
+        element.click();
     }
 
     public void clickComparionArrow() {
-        try {
-            wait.until(ExpectedConditions.elementToBeClickable(productCompareLocator.comparisionArrow)).click();
-        } catch (TimeoutException e) {
-            throw new RuntimeException("Comparison arrow was not clickable within the timeout period", e);
-        } catch (NoSuchElementException e) {
-            throw new RuntimeException("Comparison arrow element not found", e);
-        }
+        WebElement element = waitForElementToBeClickable(productCompareLocator.comparisionArrow);
+        element.click();
     }
 
     public String getProductDescription() {
-        try {
-            return wait.until(ExpectedConditions.visibilityOf(productCompareLocator.ComparisionProductDesc)).getText();
-        } catch (TimeoutException e) {
-            throw new RuntimeException("Product description not visible within the timeout period", e);
-        } catch (NoSuchElementException e) {
-            throw new RuntimeException("Product description element not found", e);
-        }
+        WebElement element = waitForElementToBeVisible(productCompareLocator.ComparisionProductDesc);
+        return element.getText();
     }
 
     public boolean getNoProductsErrorMessage() {
-        try {
-            return wait.until(ExpectedConditions.visibilityOf(productCompareLocator.noProductsmatchError)).isDisplayed();
-        } catch (TimeoutException e) {
-            throw new RuntimeException("No products error message not visible within the timeout period", e);
-        } catch (NoSuchElementException e) {
-            throw new RuntimeException("No products error message element not found", e);
-        }
+        WebElement element = waitForElementToBeVisible(productCompareLocator.noProductsmatchError);
+        return element.isDisplayed();
     }
 }
