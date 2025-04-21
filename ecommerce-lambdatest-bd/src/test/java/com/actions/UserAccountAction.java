@@ -162,10 +162,15 @@ userAccountLocator.getFirstNameField.sendKeys( firstName);
     userAccountLocator.getPostcodeField.sendKeys(postcode);
     userAccountLocator.countrySelect.click();
     userAccountLocator.unitedstates.click();
-    
-    userAccountLocator.state.click();
 
-    userAccountLocator.Abeerdan.click();
+     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+
+         // Wait and click the dropdown
+         wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.state)).click();
+
+         // Wait and click the option inside the dropdown
+         wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.Abeerdan)).click();
+
 }
 
 	
