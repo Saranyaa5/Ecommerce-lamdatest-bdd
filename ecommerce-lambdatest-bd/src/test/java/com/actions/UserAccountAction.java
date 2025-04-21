@@ -162,9 +162,9 @@ userAccountLocator.getFirstNameField.sendKeys( firstName);
     userAccountLocator.getPostcodeField.sendKeys(postcode);
     userAccountLocator.countrySelect.click();
     userAccountLocator.unitedstates.click();
-    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    
     userAccountLocator.state.click();
-    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
     userAccountLocator.Abeerdan.click();
 }
 

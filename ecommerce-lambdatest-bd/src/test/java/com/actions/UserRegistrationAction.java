@@ -115,7 +115,7 @@ public class UserRegistrationAction {
 
     private String waitForElementText(WebElement element) {
         try {
-            return wait.until(ExpectedConditions.visibilityOf(element)).getText();
+            return wait.until(ExpectedConditions.stalenessOf(element)).getText();
         } catch (TimeoutException e) {
             return "";
         }
