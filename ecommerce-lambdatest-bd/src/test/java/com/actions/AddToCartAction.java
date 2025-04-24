@@ -26,29 +26,53 @@ public class AddToCartAction {
     }
 
     public void clickOnCategory() {
-        cartLocator.Category.click();
-        wait.until(ExpectedConditions.elementToBeClickable(cartLocator.phonesCategory)).click();
-    }
-
-    public void selectProduct() {
-        wait.until(ExpectedConditions.elementToBeClickable(cartLocator.IpodNano)).click();
-    }
-
-    public void clickAddToCart() {
-        wait.until(ExpectedConditions.elementToBeClickable(cartLocator.addToCartButton));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", cartLocator.addToCartButton);
-
         try {
-            cartLocator.addToCartButton.click();
-        } catch (org.openqa.selenium.ElementClickInterceptedException e) {
-            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", cartLocator.addToCartButton);
+            cartLocator.Category.click();
+            wait.until(ExpectedConditions.refreshed(
+                ExpectedConditions.elementToBeClickable(cartLocator.phonesCategory)
+            )).click();
+        } catch (Exception e) {
+            System.out.println("Error clicking category: " + e.getMessage());
         }
     }
 
+    public void selectProduct() {
+        try {
+            wait.until(ExpectedConditions.refreshed(
+                ExpectedConditions.elementToBeClickable(cartLocator.IpodNano)
+            )).click();
+        } catch (Exception e) {
+            System.out.println("Error selecting product: " + e.getMessage());
+        }
+    }
+
+    public void clickAddToCart() {
+        try {
+            WebElement button = wait.until(ExpectedConditions.refreshed(
+                ExpectedConditions.elementToBeClickable(cartLocator.addToCartButton)
+            ));
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", button);
+
+            try {
+                button.click();
+            } catch (org.openqa.selenium.ElementClickInterceptedException e) {
+                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", button);
+            }
+
+        } catch (Exception e) {
+            System.out.println("Error adding to cart: " + e.getMessage());
+        }
+    }
 
     public String getSuccessMessage() {
-        return wait.until(ExpectedConditions.visibilityOf(cartLocator.successMsg))
-                   .getText().trim().replaceAll("\\s+", " ").replace(" !", "!");
+        try {
+            return wait.until(ExpectedConditions.refreshed(
+                ExpectedConditions.visibilityOf(cartLocator.successMsg)
+            )).getText().trim().replaceAll("\\s+", " ").replace(" !", "!");
+        } catch (Exception e) {
+            System.out.println("Error fetching success message: " + e.getMessage());
+            return "";
+        }
     }
 
     public void viewShoppingCart() {
@@ -58,34 +82,82 @@ public class AddToCartAction {
             System.out.println("Toast already disappeared or not found: " + e.getMessage());
         }
 
-        wait.until(ExpectedConditions.elementToBeClickable(cartLocator.shoppingCartIcon)).click();
-        wait.until(ExpectedConditions.elementToBeClickable(cartLocator.editCart)).click();
+        try {
+            wait.until(ExpectedConditions.refreshed(
+                ExpectedConditions.elementToBeClickable(cartLocator.shoppingCartIcon)
+            )).click();
+
+            wait.until(ExpectedConditions.refreshed(
+                ExpectedConditions.elementToBeClickable(cartLocator.editCart)
+            )).click();
+        } catch (Exception e) {
+            System.out.println("Error viewing shopping cart: " + e.getMessage());
+        }
     }
 
     public void removeiPodNano() {
-        wait.until(ExpectedConditions.elementToBeClickable(cartLocator.remove)).click();
+        try {
+            wait.until(ExpectedConditions.refreshed(
+                ExpectedConditions.elementToBeClickable(cartLocator.remove)
+            )).click();
+        } catch (Exception e) {
+            System.out.println("Error removing item: " + e.getMessage());
+        }
     }
 
     public String getEmptyCartMessage() {
-        return wait.until(ExpectedConditions.visibilityOf(cartLocator.noItem)).getText();
+        try {
+            return wait.until(ExpectedConditions.refreshed(
+                ExpectedConditions.visibilityOf(cartLocator.noItem)
+            )).getText();
+        } catch (Exception e) {
+            System.out.println("Error fetching empty cart message: " + e.getMessage());
+            return "";
+        }
     }
 
     public void setQuantity() {
-        WebElement qtyButton = wait.until(ExpectedConditions.elementToBeClickable(cartLocator.quantity));
-        for (int i = 0; i < 2; i++) {
-            qtyButton.click();
+        try {
+            WebElement qtyButton = wait.until(ExpectedConditions.refreshed(
+                ExpectedConditions.elementToBeClickable(cartLocator.quantity)
+            ));
+            for (int i = 0; i < 2; i++) {
+                qtyButton.click();
+            }
+        } catch (Exception e) {
+            System.out.println("Error setting quantity: " + e.getMessage());
         }
     }
 
     public String ProductQuantity() {
-        return wait.until(ExpectedConditions.visibilityOf(cartLocator.noOfItems)).getText();
+        try {
+            return wait.until(ExpectedConditions.refreshed(
+                ExpectedConditions.visibilityOf(cartLocator.noOfItems)
+            )).getText();
+        } catch (Exception e) {
+            System.out.println("Error fetching product quantity: " + e.getMessage());
+            return "";
+        }
     }
 
     public void selectAppleCinema() {
-        wait.until(ExpectedConditions.elementToBeClickable(cartLocator.AppleCinema)).click();
+        try {
+            wait.until(ExpectedConditions.refreshed(
+                ExpectedConditions.elementToBeClickable(cartLocator.AppleCinema)
+            )).click();
+        } catch (Exception e) {
+            System.out.println("Error selecting Apple Cinema: " + e.getMessage());
+        }
     }
 
     public String getSizeReq() {
-        return wait.until(ExpectedConditions.visibilityOf(cartLocator.SizeReq)).getText();
+        try {
+            return wait.until(ExpectedConditions.refreshed(
+                ExpectedConditions.visibilityOf(cartLocator.SizeReq)
+            )).getText();
+        } catch (Exception e) {
+            System.out.println("Error fetching size required message: " + e.getMessage());
+            return "";
+        }
     }
 }

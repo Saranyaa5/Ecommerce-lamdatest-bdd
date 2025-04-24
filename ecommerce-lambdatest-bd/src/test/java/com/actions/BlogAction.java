@@ -4,12 +4,12 @@ import java.time.Duration;
 import java.util.NoSuchElementException;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.pages.AffiliateAccountLocator;
 import com.pages.BlogLocator;
 import com.utilities.HelperClass;
 
@@ -22,68 +22,137 @@ public class BlogAction {
 		this.blog = new BlogLocator();
 		PageFactory.initElements(driver, blog);
 	}
-	
+
+	private void refreshElements() {
+		blog = new BlogLocator();
+		PageFactory.initElements(driver, blog);
+	}
+
 	public void clickBlog() {
-		blog.blogbutton.click();
+		try {
+			blog.blogbutton.click();
+		} catch (StaleElementReferenceException e) {
+			refreshElements();
+			blog.blogbutton.click();
+		}
 	}
+
 	public void clickArticle() {
-		blog.article.click();
+		try {
+			blog.article.click();
+		} catch (StaleElementReferenceException e) {
+			refreshElements();
+			blog.article.click();
+		}
 	}
+
 	public void enterName(String name) {
-	    blog.yourName.clear();
-	    blog.yourName.sendKeys(name);
+		try {
+			blog.yourName.clear();
+			blog.yourName.sendKeys(name);
+		} catch (StaleElementReferenceException e) {
+			refreshElements();
+			blog.yourName.clear();
+			blog.yourName.sendKeys(name);
+		}
 	}
 
 	public void enterEmail(String email) {
-	    blog.email.clear();
-	    blog.email.sendKeys(email);
+		try {
+			blog.email.clear();
+			blog.email.sendKeys(email);
+		} catch (StaleElementReferenceException e) {
+			refreshElements();
+			blog.email.clear();
+			blog.email.sendKeys(email);
+		}
 	}
 
 	public void enterComment(String comment) {
-	    blog.comment.clear();
-	    blog.comment.sendKeys(comment);
+		try {
+			blog.comment.clear();
+			blog.comment.sendKeys(comment);
+		} catch (StaleElementReferenceException e) {
+			refreshElements();
+			blog.comment.clear();
+			blog.comment.sendKeys(comment);
+		}
 	}
 
 	public void clickPostComment() {
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	    wait.until(ExpectedConditions.visibilityOf(blog.postComment));
-	    wait.until(ExpectedConditions.elementToBeClickable(blog.postComment));
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			wait.until(ExpectedConditions.visibilityOf(blog.postComment));
+			wait.until(ExpectedConditions.elementToBeClickable(blog.postComment));
 
-	    JavascriptExecutor js = (JavascriptExecutor) driver;
-	    js.executeScript("arguments[0].click();", blog.postComment);
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("arguments[0].click();", blog.postComment);
+		} catch (StaleElementReferenceException e) {
+			refreshElements();
+			clickPostComment(); // retry
+		}
 	}
-
 
 	public String getSuccessMessage() {
-	    try {
-	        if (blog.validMessage.isDisplayed()) {
-	            return blog.validMessage.getText(); 
-	        } else {
-	            return "Success message not visible";
-	        }
-	    } catch (NoSuchElementException e) {
-	        return "Success message element not found";
-	    }
+		try {
+			if (blog.validMessage.isDisplayed()) {
+				return blog.validMessage.getText();
+			} else {
+				return "Success message not visible";
+			}
+		} catch (StaleElementReferenceException e) {
+			refreshElements();
+			if (blog.validMessage.isDisplayed()) {
+				return blog.validMessage.getText();
+			} else {
+				return "Success message not visible";
+			}
+		} catch (NoSuchElementException e) {
+			return "Success message element not found";
+		}
 	}
 
-	
 	public String getWarning1() {
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	    wait.until(ExpectedConditions.visibilityOf(blog.Warning1));
-	    return blog.Warning1.getText();
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			wait.until(ExpectedConditions.visibilityOf(blog.Warning1));
+			return blog.Warning1.getText();
+		} catch (StaleElementReferenceException e) {
+			refreshElements();
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			wait.until(ExpectedConditions.visibilityOf(blog.Warning1));
+			return blog.Warning1.getText();
+		}
 	}
 
 	public String getWarning2() {
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	    wait.until(ExpectedConditions.visibilityOf(blog.Warning2));
-	    return blog.Warning2.getText();
-	}
-	
-	public void clickBusiness() {
-		blog.business.click();
-	}
-	public String getArticleHeading() {
-		return blog.businessHeading.getText();
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			wait.until(ExpectedConditions.visibilityOf(blog.Warning2));
+			return blog.Warning2.getText();
+		} catch (StaleElementReferenceException e) {
+			refreshElements();
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			wait.until(ExpectedConditions.visibilityOf(blog.Warning2));
+			return blog.Warning2.getText();
+		}
 	}
 
+	public void clickBusiness() {
+		try {
+			blog.business.click();
+		} catch (StaleElementReferenceException e) {
+			refreshElements();
+			blog.business.click();
+		}
+	}
+
+	public String getArticleHeading() {
+		try {
+			return blog.businessHeading.getText();
+		} catch (StaleElementReferenceException e) {
+			refreshElements();
+			return blog.businessHeading.getText();
+		}
+	}
 }

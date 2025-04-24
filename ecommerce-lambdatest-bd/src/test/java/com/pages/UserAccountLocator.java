@@ -18,10 +18,10 @@ public class UserAccountLocator {
     
     
 
-    @FindBy(xpath="//*[@id='input-telephone']")
+    @FindBy(xpath="//small[@id='input-telephone-help']/ancestor::div/input")
     public WebElement Telephone;
 
-    @FindBy(xpath="//*[@id='content']/form/div/div[2]/input")
+    @FindBy(xpath="//div[@class='float-left']/following-sibling::div/input")
     public WebElement EditContinue;
 
     @FindBy(xpath="//*[@id='account-account']/div[1]")
