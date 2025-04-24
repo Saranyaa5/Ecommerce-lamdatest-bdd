@@ -162,6 +162,7 @@ userAccountLocator.getFirstNameField.sendKeys( firstName);
     userAccountLocator.getPostcodeField.sendKeys(postcode);
     userAccountLocator.countrySelect.click();
     userAccountLocator.unitedstates.click();
+
      WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
          // Wait and click the dropdown

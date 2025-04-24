@@ -16,7 +16,7 @@ public class HelperClass {
     private static ThreadLocal<WebDriverWait> wait = new ThreadLocal<>();
     public final static int TIMEOUT = 10;
 
-    // Relative path from the classpath root (src/test/resources)
+    
     public static final String ConfigPath = "Configuration.properties";
 
     private HelperClass() {
