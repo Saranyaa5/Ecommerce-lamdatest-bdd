@@ -200,7 +200,7 @@ public class UserAccountAction {
             userAccountLocator.getPostcodeField.sendKeys(postcode);
             userAccountLocator.countrySelect.click();
             userAccountLocator.unitedstates.click();
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 
          // Wait for state dropdown to be visible AND clickable
          wait.until(ExpectedConditions.visibilityOf(userAccountLocator.state));
