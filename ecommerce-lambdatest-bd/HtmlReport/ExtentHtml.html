@@ -40,7 +40,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -50,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Apr 17, 2025 04:08:01 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Apr 24, 2025 01:25:42 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -65,7 +64,7 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -77,12 +76,22 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@ModifyAddress</a></li>
-					<li><a href='#'>@ChangePassword</a></li>
-					<li><a href='#'>@Newsletter</a></li>
-					<li><a href='#'>@ModifyWishlist</a></li>
-					<li><a href='#'>@ChangePassword_EmptyNewPasswordField</a></li>
-					<li><a href='#'>@EditAccount</a></li>
+					<li><a href='#'>@CheckoutAsGuest</a></li>
+					<li><a href='#'>@AccessingOdersHistory</a></li>
+					<li><a href='#'>@CompareWithoutProducts</a></li>
+					<li><a href='#'>@ValidRegistrationInputs</a></li>
+					<li><a href='#'>@CheckOutEmptyCart</a></li>
+					<li><a href='#'>@Checkout</a></li>
+					<li><a href='#'>@CheckoutWithExistingEmail</a></li>
+					<li><a href='#'>@registration</a></li>
+					<li><a href='#'>@ProductCompare</a></li>
+					<li><a href='#'>@CheckoutAsRegisterUser</a></li>
+					<li><a href='#'>@AddProductToComparision</a></li>
+					<li><a href='#'>@MyOrders</a></li>
+					<li><a href='#'>@InValidRegistrationInputs</a></li>
+					<li><a href='#'>@ProductReOrdering</a></li>
+					<li><a href='#'>@RegistrationWithoutAcceptingPrivacyPolicy</a></li>
+					<li><a href='#'>@CompareInvalidProduct</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -124,12 +133,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$0%'>
-                    <span class='strong'>0</span> features passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
+                    <span class='strong'>4</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
-                    1</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> features failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -142,12 +151,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='85%'>
-                    <span class='strong'>6</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>16</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='14%'>
-                    1</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -162,12 +171,12 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='98%'>
-                    <span class='strong'>62</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>141</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='1%'>
-                    1</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> steps failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -190,11 +199,11 @@
 	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>User Account Management</span>
-						<span class='test-time'>Apr 17, 2025 04:08:03 pm</span>
-						<span class='test-status right fail'>Fail</span>
+						<span class='test-name'>Product compare functionality</span>
+						<span class='test-time'>Apr 24, 2025 01:25:44 pm</span>
+						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -206,414 +215,966 @@
 
 <div class='scenario node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 39.621</span>
+	<span class='duration right label'>00 00 35.802</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Modify the wishlist by removing a product</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: To perform compare without adding products to list</div>
 	</div>
 	
 	
 		<div class='category-list'>
-				<span class='category label'>@ModifyWishlist</span>
+				<span class='category label'>@CompareWithoutProducts</span>
+				<span class='category label'>@ProductCompare</span>
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='22' class='node given Pass' status='Pass'>
+		<li test-id='34' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</div>
 
 
 		</li>
-		<li test-id='30' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserLoginDefinition.the_user_clicks_on_my_account())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account</div>
+		<li test-id='37' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_searches(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user searches " "</div>
 
 
 		</li>
-		<li test-id='51' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserLoginDefinition.clicks_on_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on login</div>
+		<li test-id='56' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.ProductCompareDefinition.the_user_clicks_product_compare())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks product compare</div>
 
 
 		</li>
-		<li test-id='52' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserAccountDefinition.the_user_enters_the_valid_credentials())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters the valid credentials</div>
-
-
-		</li>
-		<li test-id='54' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserLoginDefinition.the_user_clicks_on_the_login_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on the Login button</div>
-
-
-		</li>
-		<li test-id='55' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserAccountDefinition.the_user_clicks_the_edit_account_info_page(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user clicks the "Modify your wish list" page</div>
-
-
-		</li>
-		<li test-id='75' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserAccountDefinition.ProductInTheWishList())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user has products in their wishlist</div>
-
-
-		</li>
-		<li test-id='76' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserAccountDefinition.RemoveFromWishList())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user removes a product from the wishlist</div>
-
-
-		</li>
-		<li test-id='80' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserAccountDefinition.user_should_see_success_message(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then user should see "Success: You have modified your wish list!"</div>
+		<li test-id='65' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.ProductCompareDefinition.the_user_should_see_no_products_to_compare_error(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see no products to compare error "You have not chosen any products to compare."</div>
 
 
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='3' status='fail'>
+<div class='scenario node' test-id='3' status='pass'>
 
-	<span class='duration right label'>00 00 50.769</span>
+	<span class='duration right label'>00 01 02.596</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Adding new address</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: To Add the products to comparision list</div>
 	</div>
 	
 	
 		<div class='category-list'>
-				<span class='category label'>@ModifyAddress</span>
+				<span class='category label'>@AddProductToComparision</span>
+				<span class='category label'>@ProductCompare</span>
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='23' class='node given Pass' status='Pass'>
+		<li test-id='30' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</div>
 
 
 		</li>
-		<li test-id='28' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserLoginDefinition.the_user_clicks_on_my_account())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account</div>
+		<li test-id='41' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_searches(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user searches "mac"</div>
 
 
 		</li>
-		<li test-id='47' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserLoginDefinition.clicks_on_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on login</div>
+		<li test-id='44' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.ProductCompareDefinition.user_selects_the_products_to_compare())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user selects the products to compare</div>
 
 
 		</li>
-		<li test-id='48' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserAccountDefinition.the_user_enters_the_valid_credentials())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters the valid credentials</div>
+		<li test-id='91' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.ProductCompareDefinition.the_user_clicks_the_comparion_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks the comparision button</div>
 
 
 		</li>
-		<li test-id='49' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserLoginDefinition.the_user_clicks_on_the_login_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on the Login button</div>
+		<li test-id='92' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.ProductCompareDefinition.the_user_clicks_the_comparision_arrow())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks the comparision arrow</div>
 
 
 		</li>
-		<li test-id='50' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserAccountDefinition.the_user_clicks_the_edit_account_info_page(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user clicks the "Modify your address book entries" page</div>
+		<li test-id='99' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.ProductCompareDefinition.the_user_should_see_the_comparison_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the comparison page</div>
 
 
-		</li>
-		<li test-id='72' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserAccountDefinition.ClickNewAddress())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks new address</div>
-
-
-		</li>
-		<li test-id='83' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserAccountDefinition.user_enters_valid_details())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user enters valid details</div>
-
-
-		</li>
-		<li test-id='84' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserAccountDefinition.clicks_on_the_continue_button(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on the "NewAddress" Continue button</div>
-
-
-		</li>
-		<li test-id='85' class='node then Fail' status='Fail'>
-			<div class="step-name" title="(com.definitions.UserAccountDefinition.user_should_see_success_message(java.lang.String))"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then user should see "Your address has been successfully added"</div>
-
-
-					<textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at com.definitions.UserAccountDefinition.user_should_see_success_message(UserAccountDefinition.java:93)
-	at ✽.user should see "Your address has been successfully added"(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/UserAccountManagement.feature:24)
-</textarea>
 		</li>
 	</ul>
 </div>
+<div class='scenario node' test-id='17' status='pass'>
+
+	<span class='duration right label'>00 00 27.608</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: To Add the products to comparision list</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@CompareInvalidProduct</span>
+				<span class='category label'>@ProductCompare</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='27' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</div>
+
+
+		</li>
+		<li test-id='45' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_searches(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user searches "mobile"</div>
+
+
+		</li>
+		<li test-id='46' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.ProductCompareDefinition.the_user_should_see_the_message_no_products_match())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the message no products match</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>Shopping Cart CheckOut functionality</span>
+						<span class='test-time'>Apr 24, 2025 01:25:44 pm</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
 <div class='scenario node' test-id='5' status='pass'>
 
-	<span class='duration right label'>00 00 36.163</span>
+	<span class='duration right label'>00 01 22.082</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Change user password without providing new password</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: To checkout the  cart with existing email</div>
 	</div>
 	
 	
 		<div class='category-list'>
-				<span class='category label'>@ChangePassword_EmptyNewPasswordField</span>
+				<span class='category label'>@Checkout</span>
+				<span class='category label'>@CheckoutWithExistingEmail</span>
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='17' class='node given Pass' status='Pass'>
+		<li test-id='35' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</div>
 
 
 		</li>
-		<li test-id='27' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserLoginDefinition.the_user_clicks_on_my_account())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account</div>
-
-
-		</li>
-		<li test-id='40' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserLoginDefinition.clicks_on_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on login</div>
-
-
-		</li>
-		<li test-id='41' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserAccountDefinition.the_user_enters_the_valid_credentials())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters the valid credentials</div>
-
-
-		</li>
-		<li test-id='42' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserLoginDefinition.the_user_clicks_on_the_login_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on the Login button</div>
-
-
-		</li>
-		<li test-id='56' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserAccountDefinition.the_user_clicks_the_edit_account_info_page(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user clicks the "Change your password" page</div>
-
-
-		</li>
-		<li test-id='65' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserAccountDefinition.clicks_on_the_continue_button(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on the "ChangePassword" Continue button</div>
-
-
-		</li>
-		<li test-id='70' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserAccountDefinition.user_should_see_success_message(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then user should see "Password must be between 4 and 20 characters!"</div>
-
-
-		</li>
-	</ul>
-</div>
-<div class='scenario outline node' test-id='6' status='pass'>
-
-	<span class='duration right label'>00 00 37.032</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Subscribe or Unsubscribe from newsletter</div>
-	</div>
-	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>action</td></tr><tr><td>subscribe</td></tr><tr><td>unsubscribe</td></tr></table><br><br><table class='markup-table table '><tr><td>action</td></tr><tr><td>subscribe</td></tr><tr><td>unsubscribe</td></tr></table></div>
-	
-	
-	<ul class='steps'>
-		<li test-id='7' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Subscribe or Unsubscribe from newsletter</div>
-
-				<div class='category-list'>
-						<span class='category label'>@Newsletter</span>
-				</div>
-
-			<ul class='gc steps'>
-				<li test-id='19' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</h6>
-
-				</li>
-				<li test-id='26' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_clicks_on_my_account()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account</h6>
-
-				</li>
-				<li test-id='37' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserLoginDefinition.clicks_on_login()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on login</h6>
-
-				</li>
-				<li test-id='38' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserAccountDefinition.the_user_enters_the_valid_credentials()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters the valid credentials</h6>
-
-				</li>
-				<li test-id='39' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_clicks_on_the_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on the Login button</h6>
-
-				</li>
-				<li test-id='58' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserAccountDefinition.the_user_clicks_the_edit_account_info_page(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks the "Newsletter" page</h6>
-
-				</li>
-				<li test-id='68' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserAccountDefinition.the_user_chooses_newsletter_action(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user chooses to "subscribe" the newsletter</h6>
-
-				</li>
-				<li test-id='69' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserAccountDefinition.clicks_on_the_continue_button(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on the "Newsletter" Continue button</h6>
-
-				</li>
-				<li test-id='73' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserAccountDefinition.user_should_see_success_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then user should see "Success: Your newsletter subscription has been successfully updated!"</h6>
-
-				</li>
-			</ul>
-		</li>
-		<li test-id='8' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Subscribe or Unsubscribe from newsletter</div>
-
-				<div class='category-list'>
-						<span class='category label'>@Newsletter</span>
-				</div>
-
-			<ul class='gc steps'>
-				<li test-id='18' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</h6>
-
-				</li>
-				<li test-id='29' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_clicks_on_my_account()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account</h6>
-
-				</li>
-				<li test-id='43' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserLoginDefinition.clicks_on_login()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on login</h6>
-
-				</li>
-				<li test-id='44' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserAccountDefinition.the_user_enters_the_valid_credentials()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters the valid credentials</h6>
-
-				</li>
-				<li test-id='45' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_clicks_on_the_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on the Login button</h6>
-
-				</li>
-				<li test-id='46' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserAccountDefinition.the_user_clicks_the_edit_account_info_page(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks the "Newsletter" page</h6>
-
-				</li>
-				<li test-id='60' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserAccountDefinition.the_user_chooses_newsletter_action(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user chooses to "unsubscribe" the newsletter</h6>
-
-				</li>
-				<li test-id='62' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserAccountDefinition.clicks_on_the_continue_button(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on the "Newsletter" Continue button</h6>
-
-				</li>
-				<li test-id='64' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserAccountDefinition.user_should_see_success_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then user should see "Success: Your newsletter subscription has been successfully updated!"</h6>
-
-				</li>
-			</ul>
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='10' status='pass'>
-
-	<span class='duration right label'>00 00 40.250</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Edit user account details</div>
-	</div>
-	
-	
-		<div class='category-list'>
-				<span class='category label'>@EditAccount</span>
-		</div>
-	
-	<ul class='steps'>
-		<li test-id='20' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</div>
-
-
-		</li>
-		<li test-id='25' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserLoginDefinition.the_user_clicks_on_my_account())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account</div>
-
-
-		</li>
-		<li test-id='31' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserLoginDefinition.clicks_on_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on login</div>
-
-
-		</li>
-		<li test-id='32' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserAccountDefinition.the_user_enters_the_valid_credentials())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters the valid credentials</div>
-
-
-		</li>
-		<li test-id='33' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserLoginDefinition.the_user_clicks_on_the_login_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on the Login button</div>
-
-
-		</li>
-		<li test-id='57' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserAccountDefinition.the_user_clicks_the_edit_account_info_page(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user clicks the "Edit your account information" page</div>
-
-
-		</li>
-		<li test-id='77' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserAccountDefinition.the_user_updates_telephone_number())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user updates telephone number</div>
-
-
-		</li>
-		<li test-id='78' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserAccountDefinition.clicks_on_the_continue_button(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on the "EditInfo" Continue button</div>
-
-
-		</li>
-		<li test-id='79' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserAccountDefinition.user_should_see_success_message(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then user should see "Success: Your account has been successfully updated."</div>
-
-
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='12' status='pass'>
-
-	<span class='duration right label'>00 00 35.690</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Change user password</div>
-	</div>
-	
-	
-		<div class='category-list'>
-				<span class='category label'>@ChangePassword</span>
-		</div>
-	
-	<ul class='steps'>
-		<li test-id='21' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</div>
-
-
-		</li>
-		<li test-id='24' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserLoginDefinition.the_user_clicks_on_my_account())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account</div>
-
-
-		</li>
-		<li test-id='34' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserLoginDefinition.clicks_on_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on login</div>
-
-
-		</li>
-		<li test-id='35' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserAccountDefinition.the_user_enters_the_valid_credentials())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters the valid credentials</div>
-
-
-		</li>
-		<li test-id='36' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserLoginDefinition.the_user_clicks_on_the_login_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on the Login button</div>
-
-
-		</li>
-		<li test-id='53' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserAccountDefinition.the_user_clicks_the_edit_account_info_page(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user clicks the "Change your password" page</div>
+		<li test-id='47' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_searches(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user searches "hp lp3065"</div>
 
 
 		</li>
 		<li test-id='59' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserAccountDefinition.EntersNewPass())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters current password and new password details</div>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.user_selects_the_product())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user selects the product</div>
 
 
 		</li>
-		<li test-id='61' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserAccountDefinition.clicks_on_the_continue_button(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on the "ChangePassword" Continue button</div>
+		<li test-id='76' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AddToCartDefinition.clickAddToCart())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user clicks on the Add to Cart button</div>
 
 
 		</li>
-		<li test-id='63' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserAccountDefinition.user_should_see_success_message(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then user should see "Success: Your password has been successfully updated."</div>
+		<li test-id='79' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AddToCartDefinition.viewShoppingCart())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user views the shopping cart</div>
 
 
+		</li>
+		<li test-id='105' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_clicks_check_out())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks CheckOut</div>
+
+
+		</li>
+		<li test-id='146' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.select_registered_user_check_out())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Select Registered user CheckOut</div>
+
+
+		</li>
+		<li test-id='148' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.enter_the_details_in_payment_register_form(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Enter the details in payment register form:</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>Field</td><td>Value</td></tr><tr><td>First Name</td><td>John</td></tr><tr><td>Last Name</td><td>Doe</td></tr><tr><td>Email</td><td>john@test.com</td></tr><tr><td>Telephone</td><td>1234567890</td></tr><tr><td>Pass</td><td>1234</td></tr><tr><td>Confirm pass</td><td>1234</td></tr><tr><td>Address</td><td>123 Main St</td></tr><tr><td>City</td><td>Salem</td></tr><tr><td>Postcode</td><td>12345</td></tr><tr><td>Country</td><td>United States</td></tr></table></div>
+		</li>
+		<li test-id='154' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_accepts_the_terms_and_condition())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user accepts the terms and condition</div>
+
+
+		</li>
+		<li test-id='155' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_accepts_the_privacy_policy())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user accepts the privacy policy</div>
+
+
+		</li>
+		<li test-id='156' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.clicks_continue_from_the_checkout_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks continue from the checkout page</div>
+
+
+		</li>
+		<li test-id='157' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_sould_see_the_email_alread_exist_error())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user sould see the email alread exist error</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='6' status='pass'>
+
+	<span class='duration right label'>00 01 41.258</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: To checkout the  cart as a registered user</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@Checkout</span>
+				<span class='category label'>@CheckoutAsRegisterUser</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='26' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</div>
+
+
+		</li>
+		<li test-id='36' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_searches(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user searches "hp lp3065"</div>
+
+
+		</li>
+		<li test-id='52' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.user_selects_the_product())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user selects the product</div>
+
+
+		</li>
+		<li test-id='87' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AddToCartDefinition.clickAddToCart())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user clicks on the Add to Cart button</div>
+
+
+		</li>
+		<li test-id='88' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AddToCartDefinition.viewShoppingCart())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user views the shopping cart</div>
+
+
+		</li>
+		<li test-id='112' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_clicks_check_out())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks CheckOut</div>
+
+
+		</li>
+		<li test-id='150' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.select_registered_user_check_out())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Select Registered user CheckOut</div>
+
+
+		</li>
+		<li test-id='151' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.UniqueCheckOutMail(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Enter the details in payment register form as new user in checkout:</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>Field</td><td>Value</td></tr><tr><td>First Name</td><td>John</td></tr><tr><td>Last Name</td><td>Doe</td></tr><tr><td>Email</td><td></td></tr><tr><td>Telephone</td><td>1234567890</td></tr><tr><td>Pass</td><td>1234</td></tr><tr><td>Confirm pass</td><td>1234</td></tr><tr><td>Address</td><td>123 Main St</td></tr><tr><td>City</td><td>Salem</td></tr><tr><td>Postcode</td><td>12345</td></tr><tr><td>Country</td><td>United States</td></tr></table></div>
+		</li>
+		<li test-id='160' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_accepts_the_terms_and_condition())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user accepts the terms and condition</div>
+
+
+		</li>
+		<li test-id='161' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_accepts_the_privacy_policy())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user accepts the privacy policy</div>
+
+
+		</li>
+		<li test-id='162' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.clicks_continue_from_the_checkout_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks continue from the checkout page</div>
+
+
+		</li>
+		<li test-id='163' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_clicks_confirm_order())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks confirm order</div>
+
+
+		</li>
+		<li test-id='179' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_success_message_should_be_displayed())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the order success message should be displayed</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='13' status='pass'>
+
+	<span class='duration right label'>00 01 36.301</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: To checkout the shopping cart as a guest user</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@Checkout</span>
+				<span class='category label'>@CheckoutAsGuest</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='28' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</div>
+
+
+		</li>
+		<li test-id='38' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_searches(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user searches "hp lp3065"</div>
+
+
+		</li>
+		<li test-id='58' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.user_selects_the_product())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user selects the product</div>
+
+
+		</li>
+		<li test-id='80' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AddToCartDefinition.clickAddToCart())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user clicks on the Add to Cart button</div>
+
+
+		</li>
+		<li test-id='83' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AddToCartDefinition.viewShoppingCart())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user views the shopping cart</div>
+
+
+		</li>
+		<li test-id='103' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_clicks_check_out())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks CheckOut</div>
+
+
+		</li>
+		<li test-id='127' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.select_guest_check_out())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Select Guest CheckOut</div>
+
+
+		</li>
+		<li test-id='129' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.enter_the_details_in_form(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Enter the details in form:</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>Field</td><td>Value</td></tr><tr><td>First Name</td><td>John</td></tr><tr><td>Last Name</td><td>Doe</td></tr><tr><td>Email</td><td>john126hvh@test.com</td></tr><tr><td>Telephone</td><td>1234567890</td></tr><tr><td>Address</td><td>123 Main St</td></tr><tr><td>City</td><td>Salem</td></tr><tr><td>Postcode</td><td>12345</td></tr><tr><td>Country</td><td>United States</td></tr></table></div>
+		</li>
+		<li test-id='135' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_accepts_the_terms_and_condition())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user accepts the terms and condition</div>
+
+
+		</li>
+		<li test-id='136' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.clicks_continue_from_the_checkout_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks continue from the checkout page</div>
+
+
+		</li>
+		<li test-id='137' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_clicks_confirm_order())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks confirm order</div>
+
+
+		</li>
+		<li test-id='175' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_success_message_should_be_displayed())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the order success message should be displayed</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='14' status='pass'>
+
+	<span class='duration right label'>00 00 37.683</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: To checkout the empty shopping cart as a registered user</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@Checkout</span>
+				<span class='category label'>@CheckOutEmptyCart</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='33' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</div>
+
+
+		</li>
+		<li test-id='39' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AddToCartDefinition.viewShoppingCart())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user views the shopping cart</div>
+
+
+		</li>
+		<li test-id='77' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_should_see_the_message_cart_is_empty())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the message cart is empty</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>My orders feature</span>
+						<span class='test-time'>Apr 24, 2025 01:25:44 pm</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+	<div class='test-desc'>  I want to check for the orders i made previously</div>
+
+<div class='scenario node' test-id='8' status='pass'>
+
+	<span class='duration right label'>00 01 43.191</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: To checkout view the order history after ordering</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@MyOrders</span>
+				<span class='category label'>@AccessingOdersHistory</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='29' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</div>
+
+
+		</li>
+		<li test-id='40' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_searches(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user searches "hp lp3065"</div>
+
+
+		</li>
+		<li test-id='55' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.user_selects_the_product())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user selects the product</div>
+
+
+		</li>
+		<li test-id='84' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AddToCartDefinition.clickAddToCart())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user clicks on the Add to Cart button</div>
+
+
+		</li>
+		<li test-id='85' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AddToCartDefinition.viewShoppingCart())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user views the shopping cart</div>
+
+
+		</li>
+		<li test-id='106' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_clicks_check_out())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks CheckOut</div>
+
+
+		</li>
+		<li test-id='132' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.select_registered_user_check_out())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Select Registered user CheckOut</div>
+
+
+		</li>
+		<li test-id='133' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.UniqueCheckOutMail(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Enter the details in payment register form as new user in checkout:</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>Field</td><td>Value</td></tr><tr><td>First Name</td><td>John</td></tr><tr><td>Last Name</td><td>Doe</td></tr><tr><td>Email</td><td></td></tr><tr><td>Telephone</td><td>1234567890</td></tr><tr><td>Pass</td><td>1234</td></tr><tr><td>Confirm pass</td><td>1234</td></tr><tr><td>Address</td><td>123 Main St</td></tr><tr><td>City</td><td>Salem</td></tr><tr><td>Postcode</td><td>12345</td></tr><tr><td>Country</td><td>United States</td></tr></table></div>
+		</li>
+		<li test-id='140' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_accepts_the_terms_and_condition())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user accepts the terms and condition</div>
+
+
+		</li>
+		<li test-id='141' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_accepts_the_privacy_policy())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user accepts the privacy policy</div>
+
+
+		</li>
+		<li test-id='142' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.clicks_continue_from_the_checkout_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks continue from the checkout page</div>
+
+
+		</li>
+		<li test-id='149' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_clicks_confirm_order())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks confirm order</div>
+
+
+		</li>
+		<li test-id='170' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.OrderDefinition.theUserClicksOnMyAccountInTheTop())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account in the top</div>
+
+
+		</li>
+		<li test-id='171' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.OrderDefinition.clicks_my_order_history())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks my order history</div>
+
+
+		</li>
+		<li test-id='190' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.OrderDefinition.the_order_history_is_displayed())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the order history is displayed</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='9' status='pass'>
+
+	<span class='duration right label'>00 02 03.316</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: To reorder the product in the order  history</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@MyOrders</span>
+				<span class='category label'>@ProductReOrdering</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='32' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</div>
+
+
+		</li>
+		<li test-id='48' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_searches(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user searches "hp lp3065"</div>
+
+
+		</li>
+		<li test-id='63' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.user_selects_the_product())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user selects the product</div>
+
+
+		</li>
+		<li test-id='97' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AddToCartDefinition.clickAddToCart())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user clicks on the Add to Cart button</div>
+
+
+		</li>
+		<li test-id='98' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AddToCartDefinition.viewShoppingCart())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user views the shopping cart</div>
+
+
+		</li>
+		<li test-id='164' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_clicks_check_out())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks CheckOut</div>
+
+
+		</li>
+		<li test-id='173' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.select_registered_user_check_out())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Select Registered user CheckOut</div>
+
+
+		</li>
+		<li test-id='174' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.UniqueCheckOutMail(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Enter the details in payment register form as new user in checkout:</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>Field</td><td>Value</td></tr><tr><td>First Name</td><td>John</td></tr><tr><td>Last Name</td><td>Doe</td></tr><tr><td>Email</td><td></td></tr><tr><td>Telephone</td><td>1234567890</td></tr><tr><td>Pass</td><td>1234</td></tr><tr><td>Confirm pass</td><td>1234</td></tr><tr><td>Address</td><td>123 Main St</td></tr><tr><td>City</td><td>Salem</td></tr><tr><td>Postcode</td><td>12345</td></tr><tr><td>Country</td><td>United States</td></tr></table></div>
+		</li>
+		<li test-id='176' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_accepts_the_terms_and_condition())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user accepts the terms and condition</div>
+
+
+		</li>
+		<li test-id='177' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_accepts_the_privacy_policy())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user accepts the privacy policy</div>
+
+
+		</li>
+		<li test-id='178' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.clicks_continue_from_the_checkout_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks continue from the checkout page</div>
+
+
+		</li>
+		<li test-id='181' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.CheckoutDefinition.the_user_clicks_confirm_order())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks confirm order</div>
+
+
+		</li>
+		<li test-id='187' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.OrderDefinition.theUserClicksOnMyAccountInTheTop())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account in the top</div>
+
+
+		</li>
+		<li test-id='192' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.OrderDefinition.clicks_my_order_history())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks my order history</div>
+
+
+		</li>
+		<li test-id='193' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.OrderDefinition.user_clicks_view_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user clicks view button</div>
+
+
+		</li>
+		<li test-id='194' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.OrderDefinition.the_user_clicks_reorder_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks reorder button</div>
+
+
+		</li>
+		<li test-id='195' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.OrderDefinition.the_product_reordered_message_should_be_displayed())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the product reordered message should be displayed</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>User Registration Functionality</span>
+						<span class='test-time'>Apr 24, 2025 01:25:44 pm</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+	<div class='test-desc'>  I want to register for the ecommerce LambdaTest account</div>
+
+<div class='scenario outline node' test-id='11' status='pass'>
+
+	<span class='duration right label'>00 01 41.809</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Register with valid inputs</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Telephone</td><td>Password</td><td>Confirm Password</td></tr><tr><td>priya</td><td>ram</td><td></td><td>1234567891</td><td>1234</td><td>1234</td></tr><tr><td>saran</td><td>A</td><td></td><td>1239306</td><td>12345</td><td>12345</td></tr></table><br><br><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Telephone</td><td>Password</td><td>Confirm Password</td></tr><tr><td>priya</td><td>ram</td><td></td><td>1234567891</td><td>1234</td><td>1234</td></tr><tr><td>saran</td><td>A</td><td></td><td>1239306</td><td>12345</td><td>12345</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='12' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Register with valid inputs</div>
+
+				<div class='category-list'>
+						<span class='category label'>@registration</span>
+						<span class='category label'>@ValidRegistrationInputs</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='31' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</h6>
+
+				</li>
+				<li test-id='42' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_clicks_on()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account.</h6>
+
+				</li>
+				<li test-id='43' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.clicks_the_register_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks the register button</h6>
+
+				</li>
+				<li test-id='53' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_should_see_the_registration_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the registration page</h6>
+
+				</li>
+				<li test-id='54' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_enters_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user enters "priya", "ram", "", "1234567891", "1234" and "1234"</h6>
+
+				</li>
+				<li test-id='60' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.agrees_to_the_privacy_policy()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And agrees to the Privacy Policy</h6>
+
+				</li>
+				<li test-id='61' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.submits_the_registration_form()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And submits the registration form</h6>
+
+				</li>
+				<li test-id='62' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_should_see(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see "Your Account Has Been Created!"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='50' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Register with valid inputs</div>
+
+				<div class='category-list'>
+						<span class='category label'>@registration</span>
+						<span class='category label'>@ValidRegistrationInputs</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='57' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</h6>
+
+				</li>
+				<li test-id='72' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_clicks_on()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account.</h6>
+
+				</li>
+				<li test-id='74' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.clicks_the_register_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks the register button</h6>
+
+				</li>
+				<li test-id='180' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_should_see_the_registration_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the registration page</h6>
+
+				</li>
+				<li test-id='182' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_enters_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user enters "saran", "A", "", "1239306", "12345" and "12345"</h6>
+
+				</li>
+				<li test-id='183' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.agrees_to_the_privacy_policy()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And agrees to the Privacy Policy</h6>
+
+				</li>
+				<li test-id='184' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.submits_the_registration_form()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And submits the registration form</h6>
+
+				</li>
+				<li test-id='185' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_should_see(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see "Your Account Has Been Created!"</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario outline node' test-id='67' status='pass'>
+
+	<span class='duration right label'>00 00 46.254</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Register with invalid inputs</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Telephone</td><td>Password</td><td>Confirm Password</td><td>ErrorMessage</td><td>Test Case Name</td></tr><tr><td></td><td>ram</td><td>priya123@gmail.com</td><td>1234567891</td><td>1234</td><td>1234</td><td>First Name must be between 1 and 32 characters!</td><td>empty first name</td></tr><tr><td>priya</td><td>ram</td><td>oign@gma.com</td><td>1234567891</td><td>1234</td><td>1234</td><td>Warning: E-Mail Address is already registered!</td><td>existing email</td></tr><tr><td>priya</td><td>ram</td><td>priya123@gmail.com</td><td>1234567891</td><td></td><td>1234</td><td>Password must be between 4 and 20 characters!</td><td>empty password</td></tr><tr><td>priya</td><td>ram</td><td>priya123@gmail.com</td><td>1234567891</td><td>1234</td><td>4321</td><td>Password confirmation does not match password!</td><td>password mismatch</td></tr></table><br><br><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Telephone</td><td>Password</td><td>Confirm Password</td><td>ErrorMessage</td><td>Test Case Name</td></tr><tr><td></td><td>ram</td><td>priya123@gmail.com</td><td>1234567891</td><td>1234</td><td>1234</td><td>First Name must be between 1 and 32 characters!</td><td>empty first name</td></tr><tr><td>priya</td><td>ram</td><td>oign@gma.com</td><td>1234567891</td><td>1234</td><td>1234</td><td>Warning: E-Mail Address is already registered!</td><td>existing email</td></tr><tr><td>priya</td><td>ram</td><td>priya123@gmail.com</td><td>1234567891</td><td></td><td>1234</td><td>Password must be between 4 and 20 characters!</td><td>empty password</td></tr><tr><td>priya</td><td>ram</td><td>priya123@gmail.com</td><td>1234567891</td><td>1234</td><td>4321</td><td>Password confirmation does not match password!</td><td>password mismatch</td></tr></table><br><br><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Telephone</td><td>Password</td><td>Confirm Password</td><td>ErrorMessage</td><td>Test Case Name</td></tr><tr><td></td><td>ram</td><td>priya123@gmail.com</td><td>1234567891</td><td>1234</td><td>1234</td><td>First Name must be between 1 and 32 characters!</td><td>empty first name</td></tr><tr><td>priya</td><td>ram</td><td>oign@gma.com</td><td>1234567891</td><td>1234</td><td>1234</td><td>Warning: E-Mail Address is already registered!</td><td>existing email</td></tr><tr><td>priya</td><td>ram</td><td>priya123@gmail.com</td><td>1234567891</td><td></td><td>1234</td><td>Password must be between 4 and 20 characters!</td><td>empty password</td></tr><tr><td>priya</td><td>ram</td><td>priya123@gmail.com</td><td>1234567891</td><td>1234</td><td>4321</td><td>Password confirmation does not match password!</td><td>password mismatch</td></tr></table><br><br><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Telephone</td><td>Password</td><td>Confirm Password</td><td>ErrorMessage</td><td>Test Case Name</td></tr><tr><td></td><td>ram</td><td>priya123@gmail.com</td><td>1234567891</td><td>1234</td><td>1234</td><td>First Name must be between 1 and 32 characters!</td><td>empty first name</td></tr><tr><td>priya</td><td>ram</td><td>oign@gma.com</td><td>1234567891</td><td>1234</td><td>1234</td><td>Warning: E-Mail Address is already registered!</td><td>existing email</td></tr><tr><td>priya</td><td>ram</td><td>priya123@gmail.com</td><td>1234567891</td><td></td><td>1234</td><td>Password must be between 4 and 20 characters!</td><td>empty password</td></tr><tr><td>priya</td><td>ram</td><td>priya123@gmail.com</td><td>1234567891</td><td>1234</td><td>4321</td><td>Password confirmation does not match password!</td><td>password mismatch</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='68' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Register with invalid inputs</div>
+
+				<div class='category-list'>
+						<span class='category label'>@registration</span>
+						<span class='category label'>@InValidRegistrationInputs</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='73' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</h6>
+
+				</li>
+				<li test-id='89' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_clicks_on()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account.</h6>
+
+				</li>
+				<li test-id='90' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.clicks_the_register_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks the register button</h6>
+
+				</li>
+				<li test-id='118' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_should_see_the_registration_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the registration page</h6>
+
+				</li>
+				<li test-id='119' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_enters_the_invalid_inputs_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user enters the invalid inputs "", "ram", "priya123@gmail.com", "1234567891", "1234" and "1234"</h6>
+
+				</li>
+				<li test-id='122' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.agrees_to_the_privacy_policy()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And agrees to the Privacy Policy</h6>
+
+				</li>
+				<li test-id='123' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.submits_the_registration_form()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And submits the registration form</h6>
+
+				</li>
+				<li test-id='124' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_should_see_for(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see "First Name must be between 1 and 32 characters!" for "empty first name"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='70' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Register with invalid inputs</div>
+
+				<div class='category-list'>
+						<span class='category label'>@registration</span>
+						<span class='category label'>@InValidRegistrationInputs</span>
+						<span class='category label'>@ProductCompare</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='75' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</h6>
+
+				</li>
+				<li test-id='95' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_clicks_on()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account.</h6>
+
+				</li>
+				<li test-id='96' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.clicks_the_register_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks the register button</h6>
+
+				</li>
+				<li test-id='125' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_should_see_the_registration_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the registration page</h6>
+
+				</li>
+				<li test-id='126' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_enters_the_invalid_inputs_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user enters the invalid inputs "priya", "ram", "oign@gma.com", "1234567891", "1234" and "1234"</h6>
+
+				</li>
+				<li test-id='128' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.agrees_to_the_privacy_policy()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And agrees to the Privacy Policy</h6>
+
+				</li>
+				<li test-id='130' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.submits_the_registration_form()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And submits the registration form</h6>
+
+				</li>
+				<li test-id='131' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_should_see_for(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see "Warning: E-Mail Address is already registered!" for "existing email"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='81' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Register with invalid inputs</div>
+
+				<div class='category-list'>
+						<span class='category label'>@registration</span>
+						<span class='category label'>@InValidRegistrationInputs</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='86' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</h6>
+
+				</li>
+				<li test-id='93' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_clicks_on()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account.</h6>
+
+				</li>
+				<li test-id='94' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.clicks_the_register_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks the register button</h6>
+
+				</li>
+				<li test-id='107' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_should_see_the_registration_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the registration page</h6>
+
+				</li>
+				<li test-id='108' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_enters_the_invalid_inputs_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user enters the invalid inputs "priya", "ram", "priya123@gmail.com", "1234567891", "" and "1234"</h6>
+
+				</li>
+				<li test-id='109' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.agrees_to_the_privacy_policy()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And agrees to the Privacy Policy</h6>
+
+				</li>
+				<li test-id='110' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.submits_the_registration_form()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And submits the registration form</h6>
+
+				</li>
+				<li test-id='111' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_should_see_for(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see "Password must be between 4 and 20 characters!" for "empty password"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='101' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Register with invalid inputs</div>
+
+				<div class='category-list'>
+						<span class='category label'>@registration</span>
+						<span class='category label'>@InValidRegistrationInputs</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='104' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</h6>
+
+				</li>
+				<li test-id='120' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_clicks_on()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account.</h6>
+
+				</li>
+				<li test-id='121' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.clicks_the_register_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks the register button</h6>
+
+				</li>
+				<li test-id='138' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_should_see_the_registration_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the registration page</h6>
+
+				</li>
+				<li test-id='139' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_enters_the_invalid_inputs_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user enters the invalid inputs "priya", "ram", "priya123@gmail.com", "1234567891", "1234" and "4321"</h6>
+
+				</li>
+				<li test-id='143' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.agrees_to_the_privacy_policy()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And agrees to the Privacy Policy</h6>
+
+				</li>
+				<li test-id='144' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.submits_the_registration_form()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And submits the registration form</h6>
+
+				</li>
+				<li test-id='145' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_should_see_for(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see "Password confirmation does not match password!" for "password mismatch"</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario outline node' test-id='114' status='pass'>
+
+	<span class='duration right label'>00 00 19.582</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Register with valid inputs  with out checking privacy policy</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Telephone</td><td>Password</td><td>Confirm Password</td><td>ErrorMessage</td><td>Test Case Name</td></tr><tr><td>priya</td><td>ram</td><td>priya123@gmail.com</td><td>1234567891</td><td>1234</td><td>1234</td><td>Warning: You must agree to the Privacy Policy!</td><td>Not checking privacy policy</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='115' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Register with valid inputs  with out checking privacy policy</div>
+
+				<div class='category-list'>
+						<span class='category label'>@registration</span>
+						<span class='category label'>@RegistrationWithoutAcceptingPrivacyPolicy</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='117' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</h6>
+
+				</li>
+				<li test-id='152' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_clicks_on()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account.</h6>
+
+				</li>
+				<li test-id='153' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.clicks_the_register_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks the register button</h6>
+
+				</li>
+				<li test-id='165' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_should_see_the_registration_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the registration page</h6>
+
+				</li>
+				<li test-id='166' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_enters_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user enters "priya", "ram", "priya123@gmail.com", "1234567891", "1234" and "1234"</h6>
+
+				</li>
+				<li test-id='167' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_not_agrees_to_the_privacy_policy()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user not agrees to the privacy policy</h6>
+
+				</li>
+				<li test-id='168' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.submits_the_registration_form()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And submits the registration form</h6>
+
+				</li>
+				<li test-id='169' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_should_see_for(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see "Warning: You must agree to the Privacy Policy!" for "Not checking privacy policy"</h6>
+
+				</li>
+			</ul>
 		</li>
 	</ul>
 </div>
@@ -661,40 +1222,7 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@ModifyAddress</span>
-						<span class='category-status right'>
-						<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Apr 17, 2025 04:08:03 pm</td>
-										<td class='linked' test-id='3'>Adding new address</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@ChangePassword</span>
+						<span class='category-name'>@CheckoutAsGuest</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -716,8 +1244,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 17, 2025 04:08:03 pm</td>
-										<td class='linked' test-id='12'>Change user password</td>
+										<td>Apr 24, 2025 01:25:44 pm</td>
+										<td class='linked' test-id='13'>To checkout the shopping cart as a guest user</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -727,7 +1255,73 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Newsletter</span>
+						<span class='category-name'>@AccessingOdersHistory</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 24, 2025 01:25:44 pm</td>
+										<td class='linked' test-id='8'>To checkout view the order history after ordering</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CompareWithoutProducts</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 24, 2025 01:25:44 pm</td>
+										<td class='linked' test-id='2'>To perform compare without adding products to list</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@ValidRegistrationInputs</span>
 						<span class='category-status right'>
 						<span class='label pass'>2</span>
 						</span>
@@ -749,13 +1343,13 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 17, 2025 04:08:03 pm</td>
-										<td class='linked' test-id='7'>Subscribe or Unsubscribe from newsletter</td>
+										<td>Apr 24, 2025 01:25:44 pm</td>
+										<td class='linked' test-id='12'>Register with valid inputs</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Apr 17, 2025 04:08:03 pm</td>
-										<td class='linked' test-id='8'>Subscribe or Unsubscribe from newsletter</td>
+										<td>Apr 24, 2025 01:26:11 pm</td>
+										<td class='linked' test-id='50'>Register with valid inputs</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -765,7 +1359,7 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@ModifyWishlist</span>
+						<span class='category-name'>@CheckOutEmptyCart</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -787,8 +1381,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 17, 2025 04:08:03 pm</td>
-										<td class='linked' test-id='2'>Modify the wishlist by removing a product</td>
+										<td>Apr 24, 2025 01:25:44 pm</td>
+										<td class='linked' test-id='14'>To checkout the empty shopping cart as a registered user</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -798,7 +1392,55 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@ChangePassword_EmptyNewPasswordField</span>
+						<span class='category-name'>@Checkout</span>
+						<span class='category-status right'>
+						<span class='label pass'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 4</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 24, 2025 01:25:44 pm</td>
+										<td class='linked' test-id='5'>To checkout the  cart with existing email</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 24, 2025 01:25:44 pm</td>
+										<td class='linked' test-id='6'>To checkout the  cart as a registered user</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 24, 2025 01:25:44 pm</td>
+										<td class='linked' test-id='13'>To checkout the shopping cart as a guest user</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 24, 2025 01:25:44 pm</td>
+										<td class='linked' test-id='14'>To checkout the empty shopping cart as a registered user</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CheckoutWithExistingEmail</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -820,8 +1462,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 17, 2025 04:08:03 pm</td>
-										<td class='linked' test-id='5'>Change user password without providing new password</td>
+										<td>Apr 24, 2025 01:25:44 pm</td>
+										<td class='linked' test-id='5'>To checkout the  cart with existing email</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -831,7 +1473,118 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@EditAccount</span>
+						<span class='category-name'>@registration</span>
+						<span class='category-status right'>
+						<span class='label pass'>7</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 7</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 24, 2025 01:25:44 pm</td>
+										<td class='linked' test-id='12'>Register with valid inputs</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 24, 2025 01:26:11 pm</td>
+										<td class='linked' test-id='50'>Register with valid inputs</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 24, 2025 01:26:19 pm</td>
+										<td class='linked' test-id='68'>Register with invalid inputs</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 24, 2025 01:26:20 pm</td>
+										<td class='linked' test-id='70'>Register with invalid inputs</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 24, 2025 01:26:22 pm</td>
+										<td class='linked' test-id='81'>Register with invalid inputs</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 24, 2025 01:26:46 pm</td>
+										<td class='linked' test-id='101'>Register with invalid inputs</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 24, 2025 01:26:54 pm</td>
+										<td class='linked' test-id='115'>Register with valid inputs  with out checking privacy policy</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@ProductCompare</span>
+						<span class='category-status right'>
+						<span class='label pass'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 4</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 24, 2025 01:25:44 pm</td>
+										<td class='linked' test-id='2'>To perform compare without adding products to list</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 24, 2025 01:25:44 pm</td>
+										<td class='linked' test-id='3'>To Add the products to comparision list</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 24, 2025 01:25:44 pm</td>
+										<td class='linked' test-id='17'>To Add the products to comparision list</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 24, 2025 01:26:20 pm</td>
+										<td class='linked' test-id='70'>Register with invalid inputs</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CheckoutAsRegisterUser</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -853,8 +1606,226 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 17, 2025 04:08:03 pm</td>
-										<td class='linked' test-id='10'>Edit user account details</td>
+										<td>Apr 24, 2025 01:25:44 pm</td>
+										<td class='linked' test-id='6'>To checkout the  cart as a registered user</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@AddProductToComparision</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 24, 2025 01:25:44 pm</td>
+										<td class='linked' test-id='3'>To Add the products to comparision list</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@MyOrders</span>
+						<span class='category-status right'>
+						<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 24, 2025 01:25:44 pm</td>
+										<td class='linked' test-id='8'>To checkout view the order history after ordering</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 24, 2025 01:25:44 pm</td>
+										<td class='linked' test-id='9'>To reorder the product in the order  history</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@InValidRegistrationInputs</span>
+						<span class='category-status right'>
+						<span class='label pass'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 4</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 24, 2025 01:26:19 pm</td>
+										<td class='linked' test-id='68'>Register with invalid inputs</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 24, 2025 01:26:20 pm</td>
+										<td class='linked' test-id='70'>Register with invalid inputs</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 24, 2025 01:26:22 pm</td>
+										<td class='linked' test-id='81'>Register with invalid inputs</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 24, 2025 01:26:46 pm</td>
+										<td class='linked' test-id='101'>Register with invalid inputs</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@ProductReOrdering</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 24, 2025 01:25:44 pm</td>
+										<td class='linked' test-id='9'>To reorder the product in the order  history</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@RegistrationWithoutAcceptingPrivacyPolicy</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 24, 2025 01:26:54 pm</td>
+										<td class='linked' test-id='115'>Register with valid inputs  with out checking privacy policy</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CompareInvalidProduct</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 24, 2025 01:25:44 pm</td>
+										<td class='linked' test-id='17'>To Add the products to comparision list</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -871,69 +1842,7 @@
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>java.lang.AssertionError</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>StackTrace</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Apr 17, 2025 04:08:53 pm</td>
-										<td class='linked' test-id='85'>Then user should see "Your address has been successfully added"</td>
-										<td>
-											<textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at com.definitions.UserAccountDefinition.user_should_see_success_message(UserAccountDefinition.java:93)
-	at ✽.user should see "Your address has been successfully added"(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/UserAccountManagement.feature:24)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -941,37 +1850,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>7</div>
+					<div class='panel-lead'>16</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>63</div>
+					<div class='panel-lead'>141</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Apr 17, 2025 04:08:01 pm</div>
+					<div class='panel-lead'>Apr 24, 2025 01:25:42 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Apr 17, 2025 04:08:54 pm</div>
+			 		<div class='panel-lead'>Apr 24, 2025 01:27:47 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 52.348</div>
+					<div class='panel-lead'>00 02 05.125</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -1007,16 +1916,7 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@ModifyAddress</td>
-							<td>0</td>
-							<td>1</td>
-							<td>0</td>
-							<td>
-									0%
-							</td>
-						</tr>
-						<tr>
-							<td>@ChangePassword</td>
+							<td>@CheckoutAsGuest</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -1025,7 +1925,25 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@Newsletter</td>
+							<td>@AccessingOdersHistory</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@CompareWithoutProducts</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@ValidRegistrationInputs</td>
 							<td>2</td>
 							<td>0</td>
 							<td>0</td>
@@ -1034,7 +1952,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@ModifyWishlist</td>
+							<td>@CheckOutEmptyCart</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -1043,7 +1961,16 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@ChangePassword_EmptyNewPasswordField</td>
+							<td>@Checkout</td>
+							<td>4</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@CheckoutWithExistingEmail</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -1052,7 +1979,79 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@EditAccount</td>
+							<td>@registration</td>
+							<td>7</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@ProductCompare</td>
+							<td>4</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@CheckoutAsRegisterUser</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@AddProductToComparision</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@MyOrders</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@InValidRegistrationInputs</td>
+							<td>4</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@ProductReOrdering</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@RegistrationWithoutAcceptingPrivacyPolicy</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@CompareInvalidProduct</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -1071,24 +2070,24 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 1,
-				passParent: 0,
-				failParent: 1,
+                parentCount: 4,
+				passParent: 4,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 7,
-				passChild: 6,
-				failChild: 1,
+				childCount: 16,
+				passChild: 16,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 63,
-				passGrandChild: 62,
-				failGrandChild: 1,
+				grandChildCount: 141,
+				passGrandChild: 141,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
@@ -1099,7 +2098,7 @@
 		
 		<script>
 			var timeline = {
-			        "User Account Management":50.782
+			        "Product compare functionality":62.61,"Shopping Cart CheckOut functionality":101.26,"My orders feature":123.317,"User Registration Functionality":101.809
 			};
 		</script>
 		

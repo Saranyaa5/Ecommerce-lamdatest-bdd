@@ -1,5 +1,5 @@
 @Checkout
-Feature: Shopping Cart CheckOut functionality
+Feature: Saranya_12APR2025_Shopping_Cart_CheckOut_functionality
 
 Background:
   Given the user is on the homepage 
@@ -16,7 +16,7 @@ Scenario: To checkout the shopping cart as a guest user
     | Field       | Value          |
     | First Name  | John           |
     | Last Name   | Doe            |
-    | Email       | john@test.com  |
+    | Email       | john126hvh@test.com  |
     | Telephone   | 1234567890     |
     | Address     | 123 Main St    |
     | City        | Salem          |
@@ -45,7 +45,7 @@ Scenario: To checkout the shopping cart as a guest user
     | Field       | Value          |
     | First Name  | John           |
     | Last Name   | Doe            |
-    | Email       |john@test.com   |
+    | Email       |   |
     | Telephone   | 1234567890     |
     |Pass|1234|
     |Confirm pass|1234|

@@ -1,7 +1,7 @@
 
 @MyOrders
 
-Feature: My orders feature
+Feature: Saranya_16APR2025_My_orders_feature
   I want to check for the orders i made previously
   
   Background:
