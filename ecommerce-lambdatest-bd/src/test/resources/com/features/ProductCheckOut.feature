@@ -1,5 +1,5 @@
 @Checkout
-Feature: Shopping Cart CheckOut functionality
+Feature: saranya_12APR2025_Shopping Cart CheckOut functionality
 
 Background:
   Given the user is on the homepage 
