@@ -1,4 +1,4 @@
-Feature: Product Review
+Feature: Soundar_16APR2025_LambdaTesters_ProductReview
 
 Background:
     Given the user is on the homepage

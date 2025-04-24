@@ -65,7 +65,7 @@ public class ForgotPasswordAction {
 // Enters the email address into the input field
     public void enterEmail(String email) {
         try {
-            waitAndClearAndSendKeys(forgotPage.emailInput, email);
+            forgotPage.emailInput.sendKeys(email);
         } catch (Exception e) {
             System.out.println("Error entering email: " + e.getMessage());
         }

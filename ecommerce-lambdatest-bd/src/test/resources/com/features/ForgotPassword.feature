@@ -1,4 +1,4 @@
-Feature: Forgot Password Functionality
+Feature: Soundar_09APR2025_LambdaTesters_ForgotPassword
 
   Background:
     Given the user is on the homepage

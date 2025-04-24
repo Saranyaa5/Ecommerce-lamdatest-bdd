@@ -15,13 +15,13 @@ public class ForgotPasswordLocator {
 
    
 
-    @FindBy(linkText = "Forgotten Password")
+    @FindBy(xpath = "//input[@type='password']/following-sibling::a")
     public WebElement forgotPasswordLink;
 
-    @FindBy(id = "input-email")
+    @FindBy(xpath = "//label[@for='input-email']/following-sibling::div/input")
     public WebElement emailInput;
 
-    @FindBy(xpath = "//*[@id=\"content\"]/form/div/div[2]/button")
+    @FindBy(xpath = "//div[@class='float-left']/following-sibling::div/button")
     public WebElement continueButton;
 
     @FindBy(xpath = "//*[@id=\"account-login\"]/div[1]")

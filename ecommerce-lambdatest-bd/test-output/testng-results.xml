@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="51" passed="47" failed="4" skipped="0">
+<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-19T12:42:20 IST" name="Default suite" finished-at="2025-04-19T12:48:06 IST" duration-ms="346387">
+  <suite started-at="2025-04-24T11:50:04 IST" name="Default suite" finished-at="2025-04-24T11:51:56 IST" duration-ms="111774">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-04-19T12:42:20 IST" name="Default test" finished-at="2025-04-19T12:48:06 IST" duration-ms="346387">
+    <test started-at="2025-04-24T11:50:04 IST" name="Default test" finished-at="2025-04-24T11:51:56 IST" duration-ms="111774">
       <class name="com.runner.RunnerTestNg">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:42:20 IST" name="setUpClass" finished-at="2025-04-19T12:42:21 IST" duration-ms="1542" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-24T11:50:04 IST" name="setUpClass" finished-at="2025-04-24T11:50:05 IST" duration-ms="1366" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4fa86cb8]]>
+                <![CDATA[org.testng.TestRunner@14168e1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:42:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:43:42 IST" duration-ms="80714" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-24T11:50:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-24T11:51:08 IST" duration-ms="62176" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,30 +30,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Add to Cart Functionality on eCommerce Playground"]]>
+                <![CDATA["Soundar_12APR2025_LambdaTesters_AddToCart"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:42:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:44:46 IST" duration-ms="144770" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Remove a product from the cart"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Add to Cart Functionality on eCommerce Playground"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:42:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:44:13 IST" duration-ms="111651" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-24T11:50:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-24T11:50:55 IST" duration-ms="49867" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -62,142 +46,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Add to Cart Functionality on eCommerce Playground"]]>
+                <![CDATA["Soundar_12APR2025_LambdaTesters_AddToCart"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:42:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:43:52 IST" duration-ms="91047" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Scenario: User tries to add a product to cart without selecting size"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Add to Cart Functionality on eCommerce Playground"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:42:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:43:37 IST" duration-ms="75649" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Register a user and register as affiliate with valid and invalid inputs"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Login and Affiliate Account Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:42:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:43:37 IST" duration-ms="75214" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Adding a valid comment to the blog"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Blog functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:42:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:44:12 IST" duration-ms="110787" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Submitting a blog comment without filling required details"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Blog functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:42:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:43:53 IST" duration-ms="91369" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Submitting a blog comment without filling required details"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Blog functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:42:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:43:34 IST" duration-ms="72937" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["category wise selection and assertion"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Blog functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:42:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:43:42 IST" duration-ms="80356" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Submitting a blog comment without filling required details"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Blog functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:43:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:44:45 IST" duration-ms="70294" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User requests a password reset link using valid email"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Forgot Password Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:43:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:44:54 IST" duration-ms="77206" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-24T11:50:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-24T11:51:43 IST" duration-ms="97544" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -206,356 +62,62 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Forgot Password Functionality"]]>
+                <![CDATA["Soundar_09APR2025_LambdaTesters_ForgotPassword"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:43:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:44:45 IST" duration-ms="67564" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-24T11:50:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-24T11:51:47 IST" duration-ms="101401" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User requests a password reset link without providing email"]]>
+                <![CDATA["Remove a product from the cart"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Forgot Password Functionality"]]>
+                <![CDATA["Soundar_12APR2025_LambdaTesters_AddToCart"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:43:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:45:52 IST" duration-ms="130440" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-24T11:50:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-24T11:51:19 IST" duration-ms="73146" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["To checkout view the order history after ordering"]]>
+                <![CDATA["User requests a password reset link using valid email"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["My orders feature"]]>
+                <![CDATA["Soundar_09APR2025_LambdaTesters_ForgotPassword"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:43:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:46:10 IST" duration-ms="147693" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-24T11:50:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-24T11:50:55 IST" duration-ms="49722" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["To reorder the product in the order  history"]]>
+                <![CDATA["Scenario: User tries to add a product to cart without selecting size"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["My orders feature"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='content']/div[2]/a[2]' (tried for 10 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='content']/div[2]/a[2]' (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.actions.CheckOutAction.getCheckoutFromCartButton(CheckOutAction.java:63)
-at com.actions.CheckOutAction.productCheckOut(CheckOutAction.java:67)
-at com.definitions.CheckoutDefinition.the_user_clicks_check_out(CheckoutDefinition.java:35)
-at ✽.the user clicks CheckOut(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/MyOrder.feature:13)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='content']/div[2]/a[2]"}
-  (Session info: chrome=135.0.7049.96)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e9f9c3765a65ce1223e5cd9b6f57354a, findElement {value=//*[@id='content']/div[2]/a[2], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\admi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63153}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63153/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e9f9c3765a65ce1223e5cd9b6f57354a
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy60.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 4 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:43:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:45:40 IST" duration-ms="107633" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To checkout the shopping cart as a guest user"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Shopping Cart CheckOut functionality"]]>
+                <![CDATA["Soundar_12APR2025_LambdaTesters_AddToCart"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:43:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:45:03 IST" duration-ms="69755" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To checkout the empty shopping cart as a registered user"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Shopping Cart CheckOut functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:44:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:46:20 IST" duration-ms="127997" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To checkout the  cart as a registered user"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Shopping Cart CheckOut functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='content']/div[2]/a[2]' (tried for 10 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='content']/div[2]/a[2]' (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.actions.CheckOutAction.getCheckoutFromCartButton(CheckOutAction.java:63)
-at com.actions.CheckOutAction.productCheckOut(CheckOutAction.java:67)
-at com.definitions.CheckoutDefinition.the_user_clicks_check_out(CheckoutDefinition.java:35)
-at ✽.the user clicks CheckOut(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/ProductCheckOut.feature:42)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='content']/div[2]/a[2]"}
-  (Session info: chrome=135.0.7049.96)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [677b91ac2e7ab699285b9ebeff845c59, findElement {value=//*[@id='content']/div[2]/a[2], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\admi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63296}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63296/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 677b91ac2e7ab699285b9ebeff845c59
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy60.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 4 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:44:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:46:25 IST" duration-ms="131555" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To checkout the  cart with existing email"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Shopping Cart CheckOut functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='content']/div[2]/a[2]' (tried for 10 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='content']/div[2]/a[2]' (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.actions.CheckOutAction.getCheckoutFromCartButton(CheckOutAction.java:63)
-at com.actions.CheckOutAction.productCheckOut(CheckOutAction.java:67)
-at com.definitions.CheckoutDefinition.the_user_clicks_check_out(CheckoutDefinition.java:35)
-at ✽.the user clicks CheckOut(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/ProductCheckOut.feature:68)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='content']/div[2]/a[2]"}
-  (Session info: chrome=135.0.7049.96)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bb2aa1b064974356aebac935c7f4108f, findElement {value=//*[@id='content']/div[2]/a[2], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\admi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63311}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63311/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bb2aa1b064974356aebac935c7f4108f
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy60.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 4 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:44:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:45:57 IST" duration-ms="72381" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To perform compare without adding products to list"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Product compare functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:44:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:46:14 IST" duration-ms="88901" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To Add the products to comparision list"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Product compare functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <span data-toggle="tooltip" title="Compare" class="icon svg-icon" style="width:35px;height:35px;">...</span> is not clickable at point (1122, 18). Other element would receive the click: <div class="toast-header">...</div>
-  (Session info: chrome=135.0.7049.96)
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ac4ba8943454624887df71079658339d, clickElement {id=f.3EFAD4EA9CD436C48A5D33B6369987B6.d.6B2BB5E779BCEFC9CF741B57AE3AB886.e.236}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\admi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63386}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63386/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ac4ba8943454624887df71079658339d)] -> xpath: //*[@id='entry_217823']/a/span]
-Session ID: ac4ba8943454624887df71079658339d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span data-toggle="tooltip" title="Compare" class="icon svg-icon" style="width:35px;height:35px;">...</span> is not clickable at point (1122, 18). Other element would receive the click: <div class="toast-header">...</div>
-  (Session info: chrome=135.0.7049.96)
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ac4ba8943454624887df71079658339d, clickElement {id=f.3EFAD4EA9CD436C48A5D33B6369987B6.d.6B2BB5E779BCEFC9CF741B57AE3AB886.e.236}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\admi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63386}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63386/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ac4ba8943454624887df71079658339d)] -> xpath: //*[@id='entry_217823']/a/span]
-Session ID: ac4ba8943454624887df71079658339d
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
-at com.actions.ProductCompareAction.clickComparionArrow(ProductCompareAction.java:64)
-at com.definitions.ProductCompareDefinition.the_user_clicks_the_comparision_arrow(ProductCompareDefinition.java:42)
-at ✽.the user clicks the comparision arrow(file:///C:/Users/admi/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/ProductCompare.feature:18)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:44:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:45:57 IST" duration-ms="71301" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To Add the products to comparision list"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Product compare functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:44:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:46:17 IST" duration-ms="82994" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-24T11:50:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-24T11:51:19 IST" duration-ms="73140" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -564,14 +126,30 @@ at ✽.the user clicks the comparision arrow(file:///C:/Users/admi/git/Ecommerce
             </param>
             <param index="1">
               <value>
-                <![CDATA["Product Review"]]>
+                <![CDATA["Soundar_16APR2025_LambdaTesters_ProductReview"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:45:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:45:54 IST" duration-ms="51352" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-24T11:50:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-24T11:51:02 IST" duration-ms="56396" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User requests a password reset link without providing email"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Soundar_09APR2025_LambdaTesters_ForgotPassword"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-24T11:50:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-24T11:50:59 IST" duration-ms="53398" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -580,14 +158,14 @@ at ✽.the user clicks the comparision arrow(file:///C:/Users/admi/git/Ecommerce
             </param>
             <param index="1">
               <value>
-                <![CDATA["Product Review"]]>
+                <![CDATA["Soundar_16APR2025_LambdaTesters_ProductReview"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:45:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:46:24 IST" duration-ms="43507" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-24T11:50:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-24T11:51:02 IST" duration-ms="56441" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -596,14 +174,14 @@ at ✽.the user clicks the comparision arrow(file:///C:/Users/admi/git/Ecommerce
             </param>
             <param index="1">
               <value>
-                <![CDATA["Product Review"]]>
+                <![CDATA["Soundar_16APR2025_LambdaTesters_ProductReview"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:45:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:46:43 IST" duration-ms="50278" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-24T11:50:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-24T11:51:47 IST" duration-ms="51750" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -612,94 +190,14 @@ at ✽.the user clicks the comparision arrow(file:///C:/Users/admi/git/Ecommerce
             </param>
             <param index="1">
               <value>
-                <![CDATA["Product Review"]]>
+                <![CDATA["Soundar_16APR2025_LambdaTesters_ProductReview"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:45:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:46:35 IST" duration-ms="41319" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search functionality with valid inputs"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:45:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:46:34 IST" duration-ms="36651" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search functionality with invalid inputs"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:45:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:46:28 IST" duration-ms="30577" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search functionality with case sensitive inputs"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:46:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:47:03 IST" duration-ms="52777" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search functionality with unnecessary indentation in search"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:46:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:46:43 IST" duration-ms="29778" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search functionality by category as input"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:46:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:47:06 IST" duration-ms="49557" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-24T11:50:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-24T11:51:47 IST" duration-ms="51377" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -708,14 +206,14 @@ at ✽.the user clicks the comparision arrow(file:///C:/Users/admi/git/Ecommerce
             </param>
             <param index="1">
               <value>
-                <![CDATA["User Account Management"]]>
+                <![CDATA["Soundar_15APR2025_LambdaTesters_UserAccountManagement"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:46:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:47:22 IST" duration-ms="61800" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-24T11:50:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-24T11:51:47 IST" duration-ms="47813" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -724,14 +222,14 @@ at ✽.the user clicks the comparision arrow(file:///C:/Users/admi/git/Ecommerce
             </param>
             <param index="1">
               <value>
-                <![CDATA["User Account Management"]]>
+                <![CDATA["Soundar_15APR2025_LambdaTesters_UserAccountManagement"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:46:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:47:13 IST" duration-ms="49120" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-24T11:51:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-24T11:51:49 IST" duration-ms="46706" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -740,14 +238,14 @@ at ✽.the user clicks the comparision arrow(file:///C:/Users/admi/git/Ecommerce
             </param>
             <param index="1">
               <value>
-                <![CDATA["User Account Management"]]>
+                <![CDATA["Soundar_15APR2025_LambdaTesters_UserAccountManagement"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:46:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:47:07 IST" duration-ms="41944" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-24T11:51:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-24T11:51:47 IST" duration-ms="45253" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -756,14 +254,14 @@ at ✽.the user clicks the comparision arrow(file:///C:/Users/admi/git/Ecommerce
             </param>
             <param index="1">
               <value>
-                <![CDATA["User Account Management"]]>
+                <![CDATA["Soundar_15APR2025_LambdaTesters_UserAccountManagement"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:46:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:47:23 IST" duration-ms="55124" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-24T11:51:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-24T11:51:46 IST" duration-ms="38583" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -772,14 +270,14 @@ at ✽.the user clicks the comparision arrow(file:///C:/Users/admi/git/Ecommerce
             </param>
             <param index="1">
               <value>
-                <![CDATA["User Account Management"]]>
+                <![CDATA["Soundar_15APR2025_LambdaTesters_UserAccountManagement"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:46:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:47:35 IST" duration-ms="60818" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-24T11:51:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-24T11:51:47 IST" duration-ms="28048" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -788,14 +286,14 @@ at ✽.the user clicks the comparision arrow(file:///C:/Users/admi/git/Ecommerce
             </param>
             <param index="1">
               <value>
-                <![CDATA["User Account Management"]]>
+                <![CDATA["Soundar_15APR2025_LambdaTesters_UserAccountManagement"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:46:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:47:47 IST" duration-ms="72012" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-24T11:51:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-24T11:51:48 IST" duration-ms="29739" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -804,222 +302,14 @@ at ✽.the user clicks the comparision arrow(file:///C:/Users/admi/git/Ecommerce
             </param>
             <param index="1">
               <value>
-                <![CDATA["User Account Management"]]>
+                <![CDATA["Soundar_15APR2025_LambdaTesters_UserAccountManagement"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:46:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:47:28 IST" duration-ms="45410" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User tries to login with valid credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:46:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:47:06 IST" duration-ms="22259" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User tries to login with invalid credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:47:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:47:34 IST" duration-ms="31414" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User tries to login with invalid credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:47:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:47:28 IST" duration-ms="22377" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User tries to login with invalid credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:47:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:47:48 IST" duration-ms="41823" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User tries to login with invalid credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:47:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:47:53 IST" duration-ms="46773" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User tries to login with valid credentials and logs out"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:47:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:47:54 IST" duration-ms="41548" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Register with valid inputs"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Registration Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:47:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:47:54 IST" duration-ms="32223" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Register with valid inputs"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Registration Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:47:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:47:54 IST" duration-ms="31191" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Register with invalid inputs"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Registration Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:47:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:47:59 IST" duration-ms="30701" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Register with invalid inputs"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Registration Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:47:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:47:55 IST" duration-ms="26638" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Register with invalid inputs"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Registration Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:47:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:47:57 IST" duration-ms="23073" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Register with invalid inputs"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Registration Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:47:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-19T12:47:58 IST" duration-ms="22997" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Register with valid inputs  with out checking privacy policy"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Registration Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-19T12:47:59 IST" name="tearDownClass" finished-at="2025-04-19T12:48:06 IST" duration-ms="7450" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.RunnerTestNg@26b3fd41]" started-at="2025-04-24T11:51:49 IST" name="tearDownClass" finished-at="2025-04-24T11:51:56 IST" duration-ms="7217" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
