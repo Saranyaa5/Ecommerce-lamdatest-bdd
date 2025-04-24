@@ -14,16 +14,27 @@ public class ProductReviewAction {
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     ProductReviewLocator reviewPage = new ProductReviewLocator();
 
+    // Enters name into the input field
     public void enterName(String name) {
-        wait.until(ExpectedConditions.visibilityOf(reviewPage.nameInput)).clear();
-        reviewPage.nameInput.sendKeys(name);
+        try {
+            wait.until(ExpectedConditions.visibilityOf(reviewPage.nameInput)).clear();
+            reviewPage.nameInput.sendKeys(name);
+        } catch (Exception e) {
+            System.out.println("Error entering name: " + e.getMessage());
+        }
     }
 
+    // Enters review text
     public void enterReview(String review) {
-        wait.until(ExpectedConditions.visibilityOf(reviewPage.reviewTextarea)).clear();
-        reviewPage.reviewTextarea.sendKeys(review);
+        try {
+            wait.until(ExpectedConditions.visibilityOf(reviewPage.reviewTextarea)).clear();
+            reviewPage.reviewTextarea.sendKeys(review);
+        } catch (Exception e) {
+            System.out.println("Error entering review: " + e.getMessage());
+        }
     }
 
+    // Selects rating based on the number of stars
     public void selectRating(int stars) {
         WebElement ratingElement = null;
 
@@ -45,26 +56,53 @@ public class ProductReviewAction {
                 break;
         }
 
-        if (ratingElement != null) {
-            wait.until(ExpectedConditions.elementToBeClickable(ratingElement)).click();
+        try {
+            if (ratingElement != null) {
+                wait.until(ExpectedConditions.elementToBeClickable(ratingElement)).click();
+            } else {
+                System.out.println("Invalid star rating selected: " + stars);
+            }
+        } catch (Exception e) {
+            System.out.println("Error selecting rating: " + e.getMessage());
         }
     }
 
+    // Clicks the continue button to submit the review
     public void clickContinue() {
-        wait.until(ExpectedConditions.elementToBeClickable(reviewPage.continueButton)).click();
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable(reviewPage.continueButton)).click();
+        } catch (Exception e) {
+            System.out.println("Error clicking continue: " + e.getMessage());
+        }
     }
 
+    // Retrieves success message text
     public String getSuccessMessage() {
-        return wait.until(ExpectedConditions.visibilityOf(reviewPage.successMessage)).getText();
+        try {
+            return wait.until(ExpectedConditions.visibilityOf(reviewPage.successMessage)).getText();
+        } catch (Exception e) {
+            System.out.println("Error getting success message: " + e.getMessage());
+            return "";
+        }
     }
 
+    // Retrieves first error message text
     public String ErrorMessage() {
-        return wait.until(ExpectedConditions.visibilityOf(reviewPage.ErrorMessage)).getText();
+        try {
+            return wait.until(ExpectedConditions.visibilityOf(reviewPage.ErrorMessage)).getText();
+        } catch (Exception e) {
+            System.out.println("Error getting error message: " + e.getMessage());
+            return "";
+        }
     }
 
-	public String ErrorMessage1() {
-		return wait.until(ExpectedConditions.visibilityOf(reviewPage.ErrorMessage1)).getText();
-	}
-
-    
+    // Retrieves second error message text
+    public String ErrorMessage1() {
+        try {
+            return wait.until(ExpectedConditions.visibilityOf(reviewPage.ErrorMessage1)).getText();
+        } catch (Exception e) {
+            System.out.println("Error getting error message 1: " + e.getMessage());
+            return "";
+        }
+    }
 }

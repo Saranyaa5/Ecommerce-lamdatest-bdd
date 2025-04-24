@@ -1,0 +1,58 @@
+package com.definitions;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
+
+import com.actions.HomePageAction;
+
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import jdk.internal.org.jline.utils.Log;
+
+public class HomePageDefinition {
+	HomePageAction homePageAction=new HomePageAction();
+	private static final Logger logger = LogManager.getLogger(HomePageDefinition.class);
+
+	@When("the user clicks the shop now in first block")
+	public void the_user_clicks_the_shop_now_in_first_block() {
+		homePageAction.block1click();
+	}
+
+	@Then("the user needs to redirect to the top of home page")
+	public void the_user_needs_to_redirect_to_the_top_of_home_page() {
+	    String expectedUrl="https://ecommerce-playground.lambdatest.io/#";
+	    String actual=homePageAction.block1homepageUrl();
+	   try {
+		   
+		   Assert.assertEquals(expectedUrl,actual);
+		   logger.info("asserting the home page block 1 element is successfull");
+	   }
+	   catch(Exception e) {
+		   System.out.println(e.getMessage());
+		   logger.error("asserting the home page block 1 element is not successfull");
+	   }
+	   
+		
+	}
+	
+	@When("the user clicks shop now in second block")
+	public void the_user_clicks_shop_now_in_second_block() {
+		homePageAction.block2click();
+	}
+
+	@Then("the user should see the {string} page")
+	public void the_user_should_see_the_page(String string) {
+		
+	    String actual=homePageAction.block2text();
+	   try {
+		   
+		   Assert.assertEquals(string,actual);
+		   logger.info("asserting the home page block 2 element is successfull");
+	   }
+	   catch(Exception e) {
+		   System.out.println(e.getMessage());
+		   logger.error("asserting the home page block 2 element is not successfull");
+	   }
+	}
+}

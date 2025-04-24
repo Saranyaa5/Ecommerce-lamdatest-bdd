@@ -1,4 +1,4 @@
-Feature: User Account Management
+Feature: Soundar_15APR2025_LambdaTesters_UserAccountManagement
 
 Background:
       Given the user is on the homepage

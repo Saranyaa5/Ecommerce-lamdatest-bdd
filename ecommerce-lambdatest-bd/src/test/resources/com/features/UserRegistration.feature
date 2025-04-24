@@ -1,5 +1,6 @@
 @registration
-Feature: User Registration Functionality
+Feature: Saranya_09APR2025_LambdaTesters_User_Registration_Functionality
+
   I want to register for the ecommerce LambdaTest account
   
    Background:  
@@ -46,6 +47,3 @@ Feature: User Registration Functionality
       | priya      | ram       | priya123@gmail.com | 1234567891  | 1234     | 1234             | Warning: You must agree to the Privacy Policy!|Not checking privacy policy|
    
    
-
-
-

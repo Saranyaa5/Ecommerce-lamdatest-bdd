@@ -63,7 +63,7 @@ public class CheckOutAction {
 	public void fillGuestCheckoutForm(String firstName, String lastName, String email, 
             String telephone, String address, String city, 
             String postcode, String country, String region) {
-			// Fill basic form fields
+			
 			checkOutPageLocator.paymentFname.sendKeys(firstName);
 			checkOutPageLocator.paymentLname.sendKeys(lastName);
 			checkOutPageLocator.paymentEmail.sendKeys(email);
@@ -72,16 +72,13 @@ public class CheckOutAction {
 			checkOutPageLocator.paymentCity.sendKeys(city);
 			checkOutPageLocator.paymentPostcode.sendKeys(postcode);
 			
-			// Handle country dropdown
 			selectDropdownByVisibleText(checkOutPageLocator.countryDropdown, "India");
-			
-			// Wait for region dropdown to load (may need AJAX wait)
 			try {
-			Thread.sleep(1000); // Simple wait - replace with proper wait in real implementation
-			} catch (InterruptedException e) {
+			Thread.sleep(1000); 
+			}
+			catch (InterruptedException e) {
 			Thread.currentThread().interrupt();
 			}
-			
 			selectDropdownByVisibleText(checkOutPageLocator.regionDropdown,"Assam");
 			
 			}

@@ -14,18 +14,17 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelReader {
-    // Centralized file paths
+    
     private static final String SEARCH_TEST_DATA_FILE = "src/test/resources/SearchTestData.xlsx";
     private static final String ADDRESS_DATA_FILE = "src/test/resources/Address.xlsx";
 
-    // Method to get search test data
     public static Map<String, String> getSearchTestData() {
         Map<String, String> testData = new HashMap<>();
         
         try (FileInputStream file = new FileInputStream(SEARCH_TEST_DATA_FILE);
              Workbook workbook = new XSSFWorkbook(file)) {
             
-            Sheet sheet = workbook.getSheetAt(0); // First sheet
+            Sheet sheet = workbook.getSheetAt(0);
             for (int i = 0; i <= sheet.getLastRowNum(); i++) {
                 Row row = sheet.getRow(i);
                 if (row != null) {
@@ -45,12 +44,11 @@ public class ExcelReader {
         return testData;
     }
     
-    // Method to get address data
     public static List<Map<String, String>> getAddressData() {
         return getData(ADDRESS_DATA_FILE, "Sheet1");
     }
 
-    // Generic method to read Excel data (kept private as it's an internal implementation)
+    
     private static List<Map<String, String>> getData(String filePath, String sheetName) {
         List<Map<String, String>> testData = new ArrayList<>();
         try (FileInputStream file = new FileInputStream(filePath);
