@@ -1,5 +1,5 @@
 @registration
-Feature: User Registration Functionality
+Feature: saranya_09APR2025_User Registration Functionality
   I want to register for the ecommerce LambdaTest account
   
    Background:  
