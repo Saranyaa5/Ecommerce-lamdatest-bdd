@@ -12990,3 +12990,7 @@
 2025-04-24 17:36:49 [TestNG-PoolService-5] INFO : Scenario passed: To checkout the  cart as a registered user
 2025-04-24 17:37:12 [TestNG-PoolService-1] INFO : Scenario passed: To checkout view the order history after ordering
 2025-04-24 17:37:53 [TestNG-PoolService-2] INFO : Scenario passed: To reorder the product in the order  history
+2025-04-24 22:03:03 [main] INFO : Scenario started: To assert the Functioning of Webelements in home page
+2025-04-24 22:06:38 [main] INFO : Scenario started: To assert the Functioning of Webelements in home page
+2025-04-24 22:07:11 [main] INFO : asserting the home page block 1 element is successfull
+2025-04-24 22:07:11 [main] INFO : Scenario passed: To assert the Functioning of Webelements in home page
