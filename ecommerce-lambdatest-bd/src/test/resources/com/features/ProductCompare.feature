@@ -1,5 +1,5 @@
 @ProductCompare
-Feature: Product compare functionality
+Feature: saranya_15APR2025_Product compare functionality
 
 Background:
     Given the user is on the homepage
