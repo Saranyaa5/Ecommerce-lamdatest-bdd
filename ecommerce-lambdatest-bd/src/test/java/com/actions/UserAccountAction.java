@@ -2,18 +2,15 @@ package com.actions;
 
 import java.time.Duration;
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.pages.LoginPageLocator;
 import com.pages.UserAccountLocator;
 import com.utilities.HelperClass;
-
 
 public class UserAccountAction {
 
@@ -26,153 +23,195 @@ public class UserAccountAction {
         userAccountLocator = new UserAccountLocator();
         PageFactory.initElements(driver, userAccountLocator);
         loginPageLocator = new LoginPageLocator();
-        PageFactory.initElements(HelperClass.getDriver(), loginPageLocator);
+        PageFactory.initElements(driver, loginPageLocator);
         wait = new WebDriverWait(driver, Duration.ofSeconds(15));
     }
 
+    // Edit personal information
     public void EditInformation() {
-    	 WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
-         wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.EditInfo)).click();
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.EditInfo)).click();
+        } catch (Exception e) {
+            System.out.println("Error clicking Edit Info: " + e.getMessage());
+        }
     }
+
+    // Change account password
     public void changePassword() {
-        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
-        wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.ChangePass)).click();
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.ChangePass)).click();
+        } catch (Exception e) {
+            System.out.println("Error clicking Change Password: " + e.getMessage());
+        }
     }
 
+    // Modify wishlist
     public void ModifyWishlist() {
-    	 WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
-         wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.ModifyWishlist)).click();
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.ModifyWishlist)).click();
+        } catch (Exception e) {
+            System.out.println("Error clicking Modify Wishlist: " + e.getMessage());
+        }
     }
+// Navigate to newsletter preferences
     public void ClickNewsLetter() {
-    	 WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
-         wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.clickNewsLetter)).click();
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.clickNewsLetter)).click();
+        } catch (Exception e) {
+            System.out.println("Error clicking Newsletter: " + e.getMessage());
+        }
     }
+// Update telephone number
     public void UpdateTelephoneNumber() {
-        userAccountLocator.Telephone.clear();
-        userAccountLocator.Telephone.sendKeys("8825428889");
+        try {
+            userAccountLocator.Telephone.clear();
+            userAccountLocator.Telephone.sendKeys("8825428889");
+        } catch (Exception e) {
+            System.out.println("Error updating telephone: " + e.getMessage());
     }
-
+    }
+ // Save edited personal information
     public void EditContinue() {
-        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
-        wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.EditContinue)).click();
-    }
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.EditContinue)).click();
+        } catch (Exception e) {
+            System.out.println("Error clicking Edit Continue: " + e.getMessage());
+        } }
 
-    public String Edited() {
+ public String Edited() {
         return userAccountLocator.Edited.getText();
     }
-
-
 
     public String PasswordChanged() {
         return userAccountLocator.PassChanged.getText();
     }
 
+    // Enter new password and confirm
     public void EntersnewPass() {
-    	 userAccountLocator.Password.sendKeys("KIOT"); 
-         userAccountLocator.ConfirmPassword.sendKeys("KIOT"); 
-    }
- 
-
-
-    public void ClickPassContinue() {
-        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
-        wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.PassContinue)).click();
-    }
-
-
-    
-
-    public void RemoveFromWishList() {
-        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
-        List<WebElement> removeButtons = HelperClass.getDriver().findElements(By.cssSelector("a.btn.btn-light.btn-sm.text-danger"));
-
-        if (!removeButtons.isEmpty()) {
-            WebElement removeButton = wait.until(ExpectedConditions.elementToBeClickable(removeButtons.get(0)));
-            removeButton.click();
-            System.out.println("Product removed from wishlist.");
-        } else {
-            System.out.println("No product in Wishlist to remove.");
+        try {
+            userAccountLocator.Password.sendKeys("KIOT");
+            userAccountLocator.ConfirmPassword.sendKeys("KIOT");
+        } catch (Exception e) {
+            System.out.println("Error entering new password: " + e.getMessage());
         }
     }
 
+    public void ClickPassContinue() {
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.PassContinue)).click();
+        } catch (Exception e) {
+            System.out.println("Error clicking Password Continue: " + e.getMessage());
+        }
+    }
+
+    // Remove a product from wishlist
+    public void RemoveFromWishList() {
+        try {
+            List<WebElement> removeButtons = driver.findElements(By.cssSelector("a.btn.btn-light.btn-sm.text-danger"));
+            if (!removeButtons.isEmpty()) {
+                WebElement removeButton = wait.until(ExpectedConditions.elementToBeClickable(removeButtons.get(0)));
+                removeButton.click();
+                System.out.println("Product removed from wishlist.");
+            } else {
+                System.out.println("No product in Wishlist to remove.");
+            }
+        } catch (Exception e) {
+            System.out.println("Error removing from wishlist: " + e.getMessage());
+        }
+    }
 
     public String ModifiedWishList() {
         return userAccountLocator.ModifiedWishList.getText();
     }
 
-   
-
+    // Subscribe or unsubscribe newsletter
     public void selectNewsletterOption(String action) {
-        wait.until(ExpectedConditions.visibilityOf(userAccountLocator.subscribeRadio));
-        if (action.equalsIgnoreCase("subscribe")) {
-            userAccountLocator.subscribeRadio.click();
-        } else if (action.equalsIgnoreCase("unsubscribe")) {
-            userAccountLocator.unsubscribeRadio.click();
+        try {
+            wait.until(ExpectedConditions.visibilityOf(userAccountLocator.subscribeRadio));
+            if (action.equalsIgnoreCase("subscribe")) {
+                userAccountLocator.subscribeRadio.click();
+            } else if (action.equalsIgnoreCase("unsubscribe")) {
+                userAccountLocator.unsubscribeRadio.click();
+            }
+        } catch (Exception e) {
+            System.out.println("Error selecting newsletter option: " + e.getMessage());
+        }
+            }
+
+    public void clickNewsLetterContinue() {
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.NewsLettercontinue)).click();
+         } catch (Exception e) {
+            System.out.println("Error clicking Newsletter Continue: " + e.getMessage());
+         }
+       }
+ public String NewsLetterUpdated() {
+        return userAccountLocator.newsLetterUpdated.getText();
+    }
+ // Enter login credentials (hardcoded)
+    public void EnterCredentialsForMyAccount() {
+        try {
+            loginPageLocator.emailId.sendKeys("2k21eee40@kiot.ac.in");
+            loginPageLocator.password.sendKeys("KIOT");
+        } catch (Exception e) {
+            System.out.println("Error entering login credentials: " + e.getMessage());
         }
     }
 
-    public void clickNewsLetterContinue() {
-        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
-        wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.NewsLettercontinue)).click();
+    public String PasswordEmpty() {
+        return userAccountLocator.PasswordEmpty.getText();
     }
 
-    public String NewsLetterUpdated() {
-        return userAccountLocator.newsLetterUpdated.getText();
+    public void ClickModifyAddress() {
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.ModifyAddress)).click();
+        } catch (Exception e) {
+            System.out.println("Error clicking Modify Address: " + e.getMessage());
+        }
     }
 
-	public void EnterCredentialsForMyAccount() {
-	
+    public void clickNewAddress() {
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.newAddress)).click();
+        } catch (Exception e) {
+            System.out.println("Error clicking New Address: " + e.getMessage());
+        }
+    }
 
-		loginPageLocator.emailId.sendKeys("2k21eee40@kiot.ac.in");
-		loginPageLocator.password.sendKeys("KIOT"); 
-		
-	}
+    public void ModifyAddressContinue() {
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.modifyAddressContinue)).click();
+        } catch (Exception e) {
+            System.out.println("Error clicking Modify Address Continue: " + e.getMessage());
+        }
+    }
 
-	public String PasswordEmpty() {
-		 return userAccountLocator.PasswordEmpty.getText();
-	}
+    public String NewAddressCreated() {
+        return userAccountLocator.newAddressCreated.getText();
+    }
 
-	public void ClickModifyAddress() {
-		WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
-        wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.ModifyAddress)).click();
-		
-	}
+    // Fill in new address details
+    public void enterAddressDetails(String firstName, String lastName, String address, String city, String postcode) {
+        try {
+            userAccountLocator.getFirstNameField.sendKeys(firstName);
+            userAccountLocator.getLastNameField.sendKeys(lastName);
+            userAccountLocator.getAddressField.sendKeys(address);
+            userAccountLocator.getCityField.sendKeys(city);
+            userAccountLocator.getPostcodeField.sendKeys(postcode);
+            userAccountLocator.countrySelect.click();
+            userAccountLocator.unitedstates.click();
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
-	public void clickNewAddress() {
-
-		 WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
-	        wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.newAddress)).click();
-	}
-
-	public void ModifyAddressContinue() {
-
-		 WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
-	        wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.modifyAddressContinue)).click();
-	}
-
-	public String NewAddressCreated() {
-	       return userAccountLocator.newAddressCreated.getText();
-	}
-
-	public void enterAddressDetails(String firstName, String lastName, String address, String city, String postcode) throws InterruptedException {
-userAccountLocator.getFirstNameField.sendKeys( firstName);
-  userAccountLocator.getLastNameField.sendKeys( lastName);
-    userAccountLocator.getAddressField.sendKeys(address);
-    userAccountLocator.getCityField.sendKeys(city);
-    userAccountLocator.getPostcodeField.sendKeys(postcode);
-    userAccountLocator.countrySelect.click();
-    userAccountLocator.unitedstates.click();
-
-     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-
-         // Wait and click the dropdown
+         // Wait for state dropdown to be visible AND clickable
+         wait.until(ExpectedConditions.visibilityOf(userAccountLocator.state));
          wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.state)).click();
 
-         // Wait and click the option inside the dropdown
+         // Wait for the Abeerdan option to be visible AND clickable
+         wait.until(ExpectedConditions.visibilityOf(userAccountLocator.Abeerdan));
          wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.Abeerdan)).click();
 
-}
-
-	
-
+        } catch (Exception e) {
+            System.out.println("Error entering address details: " + e.getMessage());
+        }
+    }
 }

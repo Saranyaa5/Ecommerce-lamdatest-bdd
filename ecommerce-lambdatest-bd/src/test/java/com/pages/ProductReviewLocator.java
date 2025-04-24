@@ -15,10 +15,10 @@ public class ProductReviewLocator {
     @FindBy(linkText = "Write a review")
     public WebElement writeReviewLink;
 
-    @FindBy(id = "input-name")
+    @FindBy(xpath = "//textarea[@id='input-review']/parent::div/preceding-sibling::div[1]/input")
     public WebElement nameInput;
 
-    @FindBy(id = "input-review")
+    @FindBy(xpath = "//textarea[@id='input-review']")
     public WebElement reviewTextarea;
 
     @FindBy(xpath = "//*[@id=\"form-review\"]/div[1]/span/label[5]")
@@ -36,7 +36,7 @@ public class ProductReviewLocator {
     @FindBy(xpath = "//*[@id=\"form-review\"]/div[1]/span/label[1]")
     public WebElement rating5;
 
-    @FindBy(id = "button-review")
+    @FindBy(xpath = "//div[@class='float-right']/ancestor::div[@class='buttons clearfix']//button")
     public WebElement continueButton;
 
     @FindBy(css = ".alert-success")

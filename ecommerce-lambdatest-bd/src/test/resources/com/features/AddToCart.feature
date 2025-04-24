@@ -1,4 +1,4 @@
-Feature: Add to Cart Functionality on eCommerce Playground
+Feature: Soundar_12APR2025_LambdaTesters_AddToCart
 
   Background:
     Given the user is on the homepage
