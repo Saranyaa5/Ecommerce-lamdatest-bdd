@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">17 methods, 1 failed,   16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Search functionality with invalid inputs&quot;, &quot;Jeevika_12APR2025_LambdaTesters_Search&quot;)">runScenario("Search functionality with invalid inputs", "Jeevika_12APR2025_LambdaTesters_Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,32 +117,82 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;User tries to login with invalid credentials&quot;, &quot;Login Functionality&quot;)">runScenario("User tries to login with invalid credentials", "Login Functionality")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;User tries to login with invalid credentials&quot;, &quot;Jeevika_09APR2025_LambdaTesters_Login&quot;)">runScenario("User tries to login with invalid credentials", "Jeevika_09APR2025_LambdaTesters_Login")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;User tries to login with valid credentials and logs out&quot;, &quot;Login Functionality&quot;)">runScenario("User tries to login with valid credentials and logs out", "Login Functionality")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Search functionality with case sensitive inputs&quot;, &quot;Jeevika_12APR2025_LambdaTesters_Search&quot;)">runScenario("Search functionality with case sensitive inputs", "Jeevika_12APR2025_LambdaTesters_Search")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;User tries to login with invalid credentials&quot;, &quot;Login Functionality&quot;)">runScenario("User tries to login with invalid credentials", "Login Functionality")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;User tries to login with invalid credentials&quot;, &quot;Jeevika_09APR2025_LambdaTesters_Login&quot;)">runScenario("User tries to login with invalid credentials", "Jeevika_09APR2025_LambdaTesters_Login")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;User tries to login with invalid credentials&quot;, &quot;Login Functionality&quot;)">runScenario("User tries to login with invalid credentials", "Login Functionality")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Submitting a blog comment without filling required details&quot;, &quot;Jeevika_16APR2025_LambdaTesters_Blog&quot;)">runScenario("Submitting a blog comment without filling required details", "Jeevika_16APR2025_LambdaTesters_Blog")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;User tries to login with invalid credentials&quot;, &quot;Login Functionality&quot;)">runScenario("User tries to login with invalid credentials", "Login Functionality")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Adding a valid comment to the blog&quot;, &quot;Jeevika_16APR2025_LambdaTesters_Blog&quot;)">runScenario("Adding a valid comment to the blog", "Jeevika_16APR2025_LambdaTesters_Blog")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;User tries to login with valid credentials&quot;, &quot;Login Functionality&quot;)">runScenario("User tries to login with valid credentials", "Login Functionality")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Search functionality with valid inputs&quot;, &quot;Jeevika_12APR2025_LambdaTesters_Search&quot;)">runScenario("Search functionality with valid inputs", "Jeevika_12APR2025_LambdaTesters_Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Register a user and register as affiliate with valid and invalid inputs&quot;, &quot;Jeevika_15APR2025_Lambda...)">runScenario("Register a user and register as affiliate with valid and invalid inputs", "Jeevika_15APR2025_Lambda...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Submitting a blog comment without filling required details&quot;, &quot;Jeevika_16APR2025_LambdaTesters_Blog&quot;)">runScenario("Submitting a blog comment without filling required details", "Jeevika_16APR2025_LambdaTesters_Blog")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;User tries to login with invalid credentials&quot;, &quot;Jeevika_09APR2025_LambdaTesters_Login&quot;)">runScenario("User tries to login with invalid credentials", "Jeevika_09APR2025_LambdaTesters_Login")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Search functionality by category as input&quot;, &quot;Jeevika_12APR2025_LambdaTesters_Search&quot;)">runScenario("Search functionality by category as input", "Jeevika_12APR2025_LambdaTesters_Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Search functionality with unnecessary indentation in search&quot;, &quot;Jeevika_12APR2025_LambdaTesters_Sear...)">runScenario("Search functionality with unnecessary indentation in search", "Jeevika_12APR2025_LambdaTesters_Sear...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;category wise selection and assertion&quot;, &quot;Jeevika_16APR2025_LambdaTesters_Blog&quot;)">runScenario("category wise selection and assertion", "Jeevika_16APR2025_LambdaTesters_Blog")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;User tries to login with valid credentials&quot;, &quot;Jeevika_09APR2025_LambdaTesters_Login&quot;)">runScenario("User tries to login with valid credentials", "Jeevika_09APR2025_LambdaTesters_Login")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Submitting a blog comment without filling required details&quot;, &quot;Jeevika_16APR2025_LambdaTesters_Blog&quot;)">runScenario("Submitting a blog comment without filling required details", "Jeevika_16APR2025_LambdaTesters_Blog")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;User tries to login with invalid credentials&quot;, &quot;Jeevika_09APR2025_LambdaTesters_Login&quot;)">runScenario("User tries to login with invalid credentials", "Jeevika_09APR2025_LambdaTesters_Login")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;User tries to login with valid credentials and logs out&quot;, &quot;Jeevika_09APR2025_LambdaTesters_Login&quot;)">runScenario("User tries to login with valid credentials and logs out", "Jeevika_09APR2025_LambdaTesters_Login")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -143,6 +207,52 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.runner.RunnerTestNg</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search functionality with invalid inputs&quot;, &quot;Jeevika_12APR2025_LambdaTesters_Search&quot;)">
+                  </a> <!-- runScenario("Search functionality with invalid inputs", "Jeevika_12APR2025_LambdaTesters_Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search functionality with invalid inputs","Jeevika_12APR2025_LambdaTesters_Search")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9513fd37ceac7a2c1153f5e350f8fc77, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.114, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\kirub\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63640}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63640/devtoo..., se:cdpVersion: 135.0.7049.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9513fd37ceac7a2c1153f5e350f8fc77
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:424)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1067)
+	at com.utilities.HelperClass.&lt;init&gt;(HelperClass.java:49)
+	at com.utilities.HelperClass.setUpDriver(HelperClass.java:67)
+	at com.definitions.Hooks.setUp(Hooks.java:25)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2920)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -151,60 +261,160 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;User tries to login with invalid credentials&quot;, &quot;Login Functionality&quot;)">
-                  </a> <!-- runScenario("User tries to login with invalid credentials", "Login Functionality") -->
+                  <a name="runScenario(&quot;User tries to login with invalid credentials&quot;, &quot;Jeevika_09APR2025_LambdaTesters_Login&quot;)">
+                  </a> <!-- runScenario("User tries to login with invalid credentials", "Jeevika_09APR2025_LambdaTesters_Login") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("User tries to login with invalid credentials","Login Functionality")</span>
+                  <span class="parameters">("User tries to login with invalid credentials","Jeevika_09APR2025_LambdaTesters_Login")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;User tries to login with valid credentials and logs out&quot;, &quot;Login Functionality&quot;)">
-                  </a> <!-- runScenario("User tries to login with valid credentials and logs out", "Login Functionality") -->
+                  <a name="runScenario(&quot;Search functionality with case sensitive inputs&quot;, &quot;Jeevika_12APR2025_LambdaTesters_Search&quot;)">
+                  </a> <!-- runScenario("Search functionality with case sensitive inputs", "Jeevika_12APR2025_LambdaTesters_Search") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("User tries to login with valid credentials and logs out","Login Functionality")</span>
+                  <span class="parameters">("Search functionality with case sensitive inputs","Jeevika_12APR2025_LambdaTesters_Search")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;User tries to login with invalid credentials&quot;, &quot;Login Functionality&quot;)">
-                  </a> <!-- runScenario("User tries to login with invalid credentials", "Login Functionality") -->
+                  <a name="runScenario(&quot;User tries to login with invalid credentials&quot;, &quot;Jeevika_09APR2025_LambdaTesters_Login&quot;)">
+                  </a> <!-- runScenario("User tries to login with invalid credentials", "Jeevika_09APR2025_LambdaTesters_Login") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("User tries to login with invalid credentials","Login Functionality")</span>
+                  <span class="parameters">("User tries to login with invalid credentials","Jeevika_09APR2025_LambdaTesters_Login")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;User tries to login with invalid credentials&quot;, &quot;Login Functionality&quot;)">
-                  </a> <!-- runScenario("User tries to login with invalid credentials", "Login Functionality") -->
+                  <a name="runScenario(&quot;Submitting a blog comment without filling required details&quot;, &quot;Jeevika_16APR2025_LambdaTesters_Blog&quot;)">
+                  </a> <!-- runScenario("Submitting a blog comment without filling required details", "Jeevika_16APR2025_LambdaTesters_Blog") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("User tries to login with invalid credentials","Login Functionality")</span>
+                  <span class="parameters">("Submitting a blog comment without filling required details","Jeevika_16APR2025_LambdaTesters_Blog")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;User tries to login with invalid credentials&quot;, &quot;Login Functionality&quot;)">
-                  </a> <!-- runScenario("User tries to login with invalid credentials", "Login Functionality") -->
+                  <a name="runScenario(&quot;Adding a valid comment to the blog&quot;, &quot;Jeevika_16APR2025_LambdaTesters_Blog&quot;)">
+                  </a> <!-- runScenario("Adding a valid comment to the blog", "Jeevika_16APR2025_LambdaTesters_Blog") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("User tries to login with invalid credentials","Login Functionality")</span>
+                  <span class="parameters">("Adding a valid comment to the blog","Jeevika_16APR2025_LambdaTesters_Blog")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;User tries to login with valid credentials&quot;, &quot;Login Functionality&quot;)">
-                  </a> <!-- runScenario("User tries to login with valid credentials", "Login Functionality") -->
+                  <a name="runScenario(&quot;Search functionality with valid inputs&quot;, &quot;Jeevika_12APR2025_LambdaTesters_Search&quot;)">
+                  </a> <!-- runScenario("Search functionality with valid inputs", "Jeevika_12APR2025_LambdaTesters_Search") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("User tries to login with valid credentials","Login Functionality")</span>
+                  <span class="parameters">("Search functionality with valid inputs","Jeevika_12APR2025_LambdaTesters_Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Register a user and register as affiliate with valid and invalid inputs&quot;, &quot;Jeevika_15APR2025_Lambda...)">
+                  </a> <!-- runScenario("Register a user and register as affiliate with valid and invalid inputs", "Jeevika_15APR2025_Lambda...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Register a user and register as affiliate with valid and invalid inputs","Jeevika_15APR2025_LambdaTesters_AffiliateAccount")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Submitting a blog comment without filling required details&quot;, &quot;Jeevika_16APR2025_LambdaTesters_Blog&quot;)">
+                  </a> <!-- runScenario("Submitting a blog comment without filling required details", "Jeevika_16APR2025_LambdaTesters_Blog") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Submitting a blog comment without filling required details","Jeevika_16APR2025_LambdaTesters_Blog")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User tries to login with invalid credentials&quot;, &quot;Jeevika_09APR2025_LambdaTesters_Login&quot;)">
+                  </a> <!-- runScenario("User tries to login with invalid credentials", "Jeevika_09APR2025_LambdaTesters_Login") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User tries to login with invalid credentials","Jeevika_09APR2025_LambdaTesters_Login")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search functionality by category as input&quot;, &quot;Jeevika_12APR2025_LambdaTesters_Search&quot;)">
+                  </a> <!-- runScenario("Search functionality by category as input", "Jeevika_12APR2025_LambdaTesters_Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search functionality by category as input","Jeevika_12APR2025_LambdaTesters_Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search functionality with unnecessary indentation in search&quot;, &quot;Jeevika_12APR2025_LambdaTesters_Sear...)">
+                  </a> <!-- runScenario("Search functionality with unnecessary indentation in search", "Jeevika_12APR2025_LambdaTesters_Sear...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search functionality with unnecessary indentation in search","Jeevika_12APR2025_LambdaTesters_Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;category wise selection and assertion&quot;, &quot;Jeevika_16APR2025_LambdaTesters_Blog&quot;)">
+                  </a> <!-- runScenario("category wise selection and assertion", "Jeevika_16APR2025_LambdaTesters_Blog") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("category wise selection and assertion","Jeevika_16APR2025_LambdaTesters_Blog")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User tries to login with valid credentials&quot;, &quot;Jeevika_09APR2025_LambdaTesters_Login&quot;)">
+                  </a> <!-- runScenario("User tries to login with valid credentials", "Jeevika_09APR2025_LambdaTesters_Login") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User tries to login with valid credentials","Jeevika_09APR2025_LambdaTesters_Login")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Submitting a blog comment without filling required details&quot;, &quot;Jeevika_16APR2025_LambdaTesters_Blog&quot;)">
+                  </a> <!-- runScenario("Submitting a blog comment without filling required details", "Jeevika_16APR2025_LambdaTesters_Blog") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Submitting a blog comment without filling required details","Jeevika_16APR2025_LambdaTesters_Blog")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User tries to login with invalid credentials&quot;, &quot;Jeevika_09APR2025_LambdaTesters_Login&quot;)">
+                  </a> <!-- runScenario("User tries to login with invalid credentials", "Jeevika_09APR2025_LambdaTesters_Login") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User tries to login with invalid credentials","Jeevika_09APR2025_LambdaTesters_Login")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User tries to login with valid credentials and logs out&quot;, &quot;Jeevika_09APR2025_LambdaTesters_Login&quot;)">
+                  </a> <!-- runScenario("User tries to login with valid credentials and logs out", "Jeevika_09APR2025_LambdaTesters_Login") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User tries to login with valid credentials and logs out","Jeevika_09APR2025_LambdaTesters_Login")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -271,36 +481,80 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(17);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.runner.RunnerTestNg')
-data.setCell(0, 3, 135948);
+data.setCell(0, 3, 388535);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'com.runner.RunnerTestNg')
-data.setCell(1, 3, 130157);
+data.setCell(1, 3, 108598);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'com.runner.RunnerTestNg')
-data.setCell(2, 3, 125797);
+data.setCell(2, 3, 81615);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'com.runner.RunnerTestNg')
-data.setCell(3, 3, 125408);
+data.setCell(3, 3, 79961);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'com.runner.RunnerTestNg')
-data.setCell(4, 3, 125121);
+data.setCell(4, 3, 79854);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'runScenario')
 data.setCell(5, 2, 'com.runner.RunnerTestNg')
-data.setCell(5, 3, 125028);
+data.setCell(5, 3, 79704);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'com.runner.RunnerTestNg')
+data.setCell(6, 3, 79388);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'com.runner.RunnerTestNg')
+data.setCell(7, 3, 79126);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'com.runner.RunnerTestNg')
+data.setCell(8, 3, 78938);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'com.runner.RunnerTestNg')
+data.setCell(9, 3, 78390);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'com.runner.RunnerTestNg')
+data.setCell(10, 3, 28855);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'com.runner.RunnerTestNg')
+data.setCell(11, 3, 28760);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'com.runner.RunnerTestNg')
+data.setCell(12, 3, 28442);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'com.runner.RunnerTestNg')
+data.setCell(13, 3, 28160);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'com.runner.RunnerTestNg')
+data.setCell(14, 3, 27971);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'com.runner.RunnerTestNg')
+data.setCell(15, 3, 27854);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'com.runner.RunnerTestNg')
+data.setCell(16, 3, 27696);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 minutes</span>
+              <span class="suite-total-time">Total running time: 22 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -332,32 +586,78 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("User tries to login with invalid credentials", "Login Functionality")</span>
-                <span class="method-start">3253 ms</span>
+                <span class="method-name">runScenario("Submitting a blog comment without filling required details", "Jeevika_16APR2025_LambdaTesters_Blog")</span>
+                <span class="method-start">1933 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("User tries to login with invalid credentials", "Login Functionality")</span>
-                <span class="method-start">3253 ms</span>
+                <span class="method-name">runScenario("Adding a valid comment to the blog", "Jeevika_16APR2025_LambdaTesters_Blog")</span>
+                <span class="method-start">1933 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("User tries to login with invalid credentials", "Login Functionality")</span>
-                <span class="method-start">3253 ms</span>
+                <span class="method-name">runScenario("Search functionality with valid inputs", "Jeevika_12APR2025_LambdaTesters_Search")</span>
+                <span class="method-start">1933 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("User tries to login with valid credentials and logs out", "Login Functionality")</span>
-                <span class="method-start">3254 ms</span>
+                <span class="method-name">runScenario("Register a user and register as affiliate with valid and invalid inputs", "Jeevika_15APR2025_Lambda...)</span>
+                <span class="method-start">1933 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("User tries to login with invalid credentials", "Login Functionality")</span>
-                <span class="method-start">3254 ms</span>
+                <span class="method-name">runScenario("Submitting a blog comment without filling required details", "Jeevika_16APR2025_LambdaTesters_Blog")</span>
+                <span class="method-start">1933 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("User tries to login with valid credentials", "Login Functionality")</span>
-                <span class="method-start">3254 ms</span>
+                <span class="method-name">runScenario("category wise selection and assertion", "Jeevika_16APR2025_LambdaTesters_Blog")</span>
+                <span class="method-start">1933 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Submitting a blog comment without filling required details", "Jeevika_16APR2025_LambdaTesters_Blog")</span>
+                <span class="method-start">1933 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Search functionality with invalid inputs", "Jeevika_12APR2025_LambdaTesters_Search")</span>
+                <span class="method-start">1934 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search functionality with case sensitive inputs", "Jeevika_12APR2025_LambdaTesters_Search")</span>
+                <span class="method-start">1934 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search functionality with unnecessary indentation in search", "Jeevika_12APR2025_LambdaTesters_Sear...)</span>
+                <span class="method-start">1934 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search functionality by category as input", "Jeevika_12APR2025_LambdaTesters_Search")</span>
+                <span class="method-start">80358 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User tries to login with valid credentials", "Jeevika_09APR2025_LambdaTesters_Login")</span>
+                <span class="method-start">80873 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User tries to login with invalid credentials", "Jeevika_09APR2025_LambdaTesters_Login")</span>
+                <span class="method-start">81063 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User tries to login with invalid credentials", "Jeevika_09APR2025_LambdaTesters_Login")</span>
+                <span class="method-start">81325 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User tries to login with invalid credentials", "Jeevika_09APR2025_LambdaTesters_Login")</span>
+                <span class="method-start">81640 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User tries to login with invalid credentials", "Jeevika_09APR2025_LambdaTesters_Login")</span>
+                <span class="method-start">81792 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User tries to login with valid credentials and logs out", "Jeevika_09APR2025_LambdaTesters_Login")</span>
+                <span class="method-start">81898 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">139208 ms</span>
+                <span class="method-start">390479 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

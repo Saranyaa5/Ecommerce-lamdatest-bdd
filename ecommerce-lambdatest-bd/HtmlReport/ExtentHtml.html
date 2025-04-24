@@ -40,6 +40,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -49,7 +50,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Apr 22, 2025 09:48:13 am</span>
+			<span class='label blue darken-3 suite-start-time'>Apr 24, 2025 03:15:56 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -65,6 +66,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -76,9 +78,17 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@login_valid_input</a></li>
+					<li><a href='#'>@ValidSearchInputs</a></li>
+					<li><a href='#'>@InValidSearchInputs</a></li>
+					<li><a href='#'>@CaseSensitiveSearchInputs</a></li>
 					<li><a href='#'>@login_invalid_input</a></li>
+					<li><a href='#'>@SearchByCategory</a></li>
+					<li><a href='#'>@login_valid_input</a></li>
 					<li><a href='#'>@logout</a></li>
+					<li><a href='#'>@IndentationSearchInputs</a></li>
+					<li><a href='#'>@invalid_blog_filling_without_required_details</a></li>
+					<li><a href='#'>@category_selection_for_blog</a></li>
+					<li><a href='#'>@valid_blog_filling_all_required_details</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -120,12 +130,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
-                    <span class='strong'>1</span> features passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$75%'>
+                    <span class='strong'>3</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='25%'>
+                    1</span> features failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -138,12 +148,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>6</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='94%'>
+                    <span class='strong'>16</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='5%'>
+                    1</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -158,14 +168,14 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>41</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='95%'>
+                    <span class='strong'>105</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='1%'>
+                    2</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='2%'>
+                    3</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
                 </div>
@@ -186,11 +196,11 @@
 	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Login Functionality</span>
-						<span class='test-time'>Apr 22, 2025 09:48:16 am</span>
-						<span class='test-status right pass'>Pass</span>
+						<span class='test-name'>Jeevika_12APR2025_LambdaTesters_Search</span>
+						<span class='test-time'>Apr 24, 2025 03:15:58 pm</span>
+						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -202,142 +212,385 @@
 
 <div class='scenario node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 02 14.842</span>
+	<span class='duration right label'>00 01 18.486</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: User tries to login with valid credentials and logs out</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Search functionality with unnecessary indentation in search</div>
 	</div>
 	
 	
 		<div class='category-list'>
-				<span class='category label'>@logout</span>
+				<span class='category label'>@IndentationSearchInputs</span>
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='15' class='node given Pass' status='Pass'>
+		<li test-id='34' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</div>
 
 
 		</li>
-		<li test-id='22' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserLoginDefinition.the_user_clicks_on_my_account())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account</div>
+		<li test-id='43' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.SearchDefinition.search_with_indented_input())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user searches with indented input from excel</div>
 
 
 		</li>
-		<li test-id='33' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserLoginDefinition.clicks_on_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on login</div>
-
-
-		</li>
-		<li test-id='34' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserLoginDefinition.the_user_enters_valid_credentials())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user enters valid credentials</div>
-
-
-		</li>
-		<li test-id='50' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserLoginDefinition.the_user_clicks_on_the_login_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on the Login button</div>
-
-
-		</li>
-		<li test-id='57' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserLoginDefinition.the_user_logs_out())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user logs out</div>
-
-
-		</li>
-		<li test-id='60' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.UserLoginDefinition.the_user_should_see_the_account_logout_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user should see the Account Logout page</div>
+		<li test-id='78' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.SearchDefinition.verify_products_displayed())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the products must be displayed</div>
 
 
 		</li>
 	</ul>
 </div>
-<div class='scenario outline node' test-id='4' status='pass'>
+<div class='scenario node' test-id='7' status='pass'>
 
-	<span class='duration right label'>00 02 04.609</span>
+	<span class='duration right label'>00 01 20.656</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: User tries to login with invalid credentials</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Search functionality with valid inputs</div>
 	</div>
 	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>email</td><td>password</td><td>expectedResult</td><td>check</td></tr><tr><td>atgs2@gmail.com</td><td>12345</td><td>Warning: No match for E-Mail Address and/or Password.</td><td>check1</td></tr><tr><td>atk62@gmail.com</td><td>1234</td><td>Warning: No match for E-Mail Address and/or Password.</td><td>check2</td></tr><tr><td></td><td>12345</td><td>Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.</td><td>check3</td></tr><tr><td></td><td></td><td>Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.</td><td>check4</td></tr></table><br><br><table class='markup-table table '><tr><td>email</td><td>password</td><td>expectedResult</td><td>check</td></tr><tr><td>atgs2@gmail.com</td><td>12345</td><td>Warning: No match for E-Mail Address and/or Password.</td><td>check1</td></tr><tr><td>atk62@gmail.com</td><td>1234</td><td>Warning: No match for E-Mail Address and/or Password.</td><td>check2</td></tr><tr><td></td><td>12345</td><td>Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.</td><td>check3</td></tr><tr><td></td><td></td><td>Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.</td><td>check4</td></tr></table><br><br><table class='markup-table table '><tr><td>email</td><td>password</td><td>expectedResult</td><td>check</td></tr><tr><td>atgs2@gmail.com</td><td>12345</td><td>Warning: No match for E-Mail Address and/or Password.</td><td>check1</td></tr><tr><td>atk62@gmail.com</td><td>1234</td><td>Warning: No match for E-Mail Address and/or Password.</td><td>check2</td></tr><tr><td></td><td>12345</td><td>Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.</td><td>check3</td></tr><tr><td></td><td></td><td>Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.</td><td>check4</td></tr></table><br><br><table class='markup-table table '><tr><td>email</td><td>password</td><td>expectedResult</td><td>check</td></tr><tr><td>atgs2@gmail.com</td><td>12345</td><td>Warning: No match for E-Mail Address and/or Password.</td><td>check1</td></tr><tr><td>atk62@gmail.com</td><td>1234</td><td>Warning: No match for E-Mail Address and/or Password.</td><td>check2</td></tr><tr><td></td><td>12345</td><td>Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.</td><td>check3</td></tr><tr><td></td><td></td><td>Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.</td><td>check4</td></tr></table></div>
+	
+		<div class='category-list'>
+				<span class='category label'>@ValidSearchInputs</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='35' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</div>
+
+
+		</li>
+		<li test-id='46' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.SearchDefinition.search_with_valid_input())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user searches with valid input from excel</div>
+
+
+		</li>
+		<li test-id='79' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.SearchDefinition.verify_products_displayed())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the products must be displayed</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='8' status='fail'>
+
+	<span class='duration right label'>00 06 27.574</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Search functionality with invalid inputs</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@InValidSearchInputs</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='12' class='node * Fail' status='Fail'>
+			<div class="step-name" title="(BEFORE)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>com.definitions.Hooks.setUp(io.cucumber.java.Scenario)</div>
+
+
+					<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9513fd37ceac7a2c1153f5e350f8fc77, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.114, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\kirub\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63640}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63640/devtoo..., se:cdpVersion: 135.0.7049.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9513fd37ceac7a2c1153f5e350f8fc77
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:424)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1067)
+	at com.utilities.HelperClass.<init>(HelperClass.java:49)
+	at com.utilities.HelperClass.setUpDriver(HelperClass.java:67)
+	at com.definitions.Hooks.setUp(Hooks.java:25)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2920)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+		</li>
+		<li test-id='163' class='node given Skip' status='Skip'>
+			<div class="step-name" title="(com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Given the user is on the homepage</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='164' class='node when Skip' status='Skip'>
+			<div class="step-name" title="(com.definitions.SearchDefinition.search_with_invalid_input())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When the user searches with invalid input from excel</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='165' class='node then Skip' status='Skip'>
+			<div class="step-name" title="(com.definitions.SearchDefinition.verify_no_products_displayed())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then no products should be displayed</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='166' class='node * Fail' status='Fail'>
+			<div class="step-name" title="(AFTER)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>com.definitions.Hooks.tearDown(io.cucumber.java.Scenario)</div>
+
+
+					<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9513fd37ceac7a2c1153f5e350f8fc77, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.114, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\kirub\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63640}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63640/devtoo..., se:cdpVersion: 135.0.7049.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9513fd37ceac7a2c1153f5e350f8fc77
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:424)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:334)
+	at com.definitions.Hooks.tearDown(Hooks.java:32)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2920)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='9' status='pass'>
+
+	<span class='duration right label'>00 01 18.892</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Search functionality with case sensitive inputs</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@CaseSensitiveSearchInputs</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='30' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</div>
+
+
+		</li>
+		<li test-id='36' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.SearchDefinition.search_with_case_sensitive_input())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user searches with case sensitive input from excel</div>
+
+
+		</li>
+		<li test-id='84' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.SearchDefinition.verify_products_displayed())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the products must be displayed</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='88' status='pass'>
+
+	<span class='duration right label'>00 00 28.723</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Search functionality by category as input</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@SearchByCategory</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='106' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</div>
+
+
+		</li>
+		<li test-id='115' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.SearchDefinition.search_with_category_input())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user searches with category input from excel</div>
+
+
+		</li>
+		<li test-id='151' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.SearchDefinition.verify_message_displayed(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the message "There is no product that matches the search criteria." should be displayed</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>Jeevika_16APR2025_LambdaTesters_Blog</span>
+						<span class='test-time'>Apr 24, 2025 03:15:58 pm</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario outline node' test-id='4' status='pass'>
+
+	<span class='duration right label'>00 01 46.737</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Submitting a blog comment without filling required details</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>name</td><td>email</td><td>comment</td><td>message</td><td>check</td></tr><tr><td>Jeev</td><td></td><td></td><td>Warning: Comment Text must be between 25 and 1000 characters!</td><td>check1</td></tr><tr><td></td><td>jeev@example.com</td><td>Viverra accumsan in nisl nisi scelerisque eu. Vestibulum lorem sed risus ultricies tristique.</td><td>Warning: Comment Name must be between 3 and 25 characters!</td><td>check2</td></tr><tr><td>Jeev</td><td>jeev@example.com</td><td>Hi</td><td>Warning: Comment Text must be between 25 and 1000 characters!</td><td>check3</td></tr></table><br><br><table class='markup-table table '><tr><td>name</td><td>email</td><td>comment</td><td>message</td><td>check</td></tr><tr><td>Jeev</td><td></td><td></td><td>Warning: Comment Text must be between 25 and 1000 characters!</td><td>check1</td></tr><tr><td></td><td>jeev@example.com</td><td>Viverra accumsan in nisl nisi scelerisque eu. Vestibulum lorem sed risus ultricies tristique.</td><td>Warning: Comment Name must be between 3 and 25 characters!</td><td>check2</td></tr><tr><td>Jeev</td><td>jeev@example.com</td><td>Hi</td><td>Warning: Comment Text must be between 25 and 1000 characters!</td><td>check3</td></tr></table><br><br><table class='markup-table table '><tr><td>name</td><td>email</td><td>comment</td><td>message</td><td>check</td></tr><tr><td>Jeev</td><td></td><td></td><td>Warning: Comment Text must be between 25 and 1000 characters!</td><td>check1</td></tr><tr><td></td><td>jeev@example.com</td><td>Viverra accumsan in nisl nisi scelerisque eu. Vestibulum lorem sed risus ultricies tristique.</td><td>Warning: Comment Name must be between 3 and 25 characters!</td><td>check2</td></tr><tr><td>Jeev</td><td>jeev@example.com</td><td>Hi</td><td>Warning: Comment Text must be between 25 and 1000 characters!</td><td>check3</td></tr></table><br><br><table class='markup-table table '><tr><td>email</td><td>password</td><td>expectedResult</td><td>check</td></tr><tr><td>atgs2@gmail.com</td><td>12345</td><td>Warning: No match for E-Mail Address and/or Password.</td><td>check1</td></tr><tr><td>atk62@gmail.com</td><td>1234</td><td>Warning: No match for E-Mail Address and/or Password.</td><td>check2</td></tr><tr><td></td><td>12345</td><td>Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.</td><td>check3</td></tr><tr><td></td><td></td><td>Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.</td><td>check4</td></tr></table></div>
 	
 	
 	<ul class='steps'>
 		<li test-id='5' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User tries to login with invalid credentials</div>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Submitting a blog comment without filling required details</div>
 
 				<div class='category-list'>
-						<span class='category label'>@login_invalid_input</span>
+						<span class='category label'>@invalid_blog_filling_without_required_details</span>
 				</div>
 
 			<ul class='gc steps'>
-				<li test-id='19' class='gc given Pass' status='Pass'>
+				<li test-id='31' class='gc given Pass' status='Pass'>
 					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</h6>
 
 				</li>
-				<li test-id='25' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_clicks_on_my_account()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account</h6>
+				<li test-id='37' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.BlogDefinition.the_user_clicks_on_the_blog_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on the Blog button</h6>
 
 				</li>
-				<li test-id='45' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserLoginDefinition.clicks_on_login()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on login</h6>
+				<li test-id='52' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.BlogDefinition.the_user_selects_any_article_from_the_blog()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user selects any article from the blog</h6>
 
 				</li>
-				<li test-id='46' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_enters_e_mail(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters E-Mail ""</h6>
+				<li test-id='62' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.BlogDefinition.the_user_is_navigated_to_the_selected_blog_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user is navigated to the selected blog page</h6>
 
 				</li>
-				<li test-id='48' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_enters_password(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters Password ""</h6>
+				<li test-id='63' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.BlogDefinition.the_user_enters_the_name(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user enters the name "Jeev"</h6>
 
 				</li>
-				<li test-id='52' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_clicks_on_the_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on the Login button</h6>
+				<li test-id='68' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.BlogDefinition.enters_the_email(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And enters the email ""</h6>
 
 				</li>
-				<li test-id='55' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_should_see_the_and(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the "Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour." and "check4"</h6>
+				<li test-id='73' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.BlogDefinition.adds_the_comment(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And adds the comment ""</h6>
+
+				</li>
+				<li test-id='76' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.BlogDefinition.clicks_on_the_post_comment_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on the Post Comment button</h6>
+
+				</li>
+				<li test-id='77' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.BlogDefinition.the_user_should_see_the_warning_message_and(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the warning message "Warning: Comment Text must be between 25 and 1000 characters!" and "check1"</h6>
 
 				</li>
 			</ul>
 		</li>
 		<li test-id='6' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User tries to login with invalid credentials</div>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Submitting a blog comment without filling required details</div>
 
 				<div class='category-list'>
-						<span class='category label'>@login_invalid_input</span>
+						<span class='category label'>@invalid_blog_filling_without_required_details</span>
 				</div>
 
 			<ul class='gc steps'>
-				<li test-id='16' class='gc given Pass' status='Pass'>
+				<li test-id='27' class='gc given Pass' status='Pass'>
 					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</h6>
 
 				</li>
-				<li test-id='20' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_clicks_on_my_account()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account</h6>
+				<li test-id='33' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.BlogDefinition.the_user_clicks_on_the_blog_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on the Blog button</h6>
 
 				</li>
-				<li test-id='26' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserLoginDefinition.clicks_on_login()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on login</h6>
+				<li test-id='45' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.BlogDefinition.the_user_selects_any_article_from_the_blog()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user selects any article from the blog</h6>
 
 				</li>
-				<li test-id='27' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_enters_e_mail(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters E-Mail "atgs2@gmail.com"</h6>
+				<li test-id='50' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.BlogDefinition.the_user_is_navigated_to_the_selected_blog_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user is navigated to the selected blog page</h6>
 
 				</li>
-				<li test-id='31' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_enters_password(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters Password "12345"</h6>
+				<li test-id='51' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.BlogDefinition.the_user_enters_the_name(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user enters the name "Jeev"</h6>
 
 				</li>
-				<li test-id='35' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_clicks_on_the_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on the Login button</h6>
+				<li test-id='55' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.BlogDefinition.enters_the_email(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And enters the email "jeev@example.com"</h6>
 
 				</li>
-				<li test-id='39' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_should_see_the_and(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the "Warning: No match for E-Mail Address and/or Password." and "check1"</h6>
+				<li test-id='64' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.BlogDefinition.adds_the_comment(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And adds the comment "Hi"</h6>
+
+				</li>
+				<li test-id='69' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.BlogDefinition.clicks_on_the_post_comment_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on the Post Comment button</h6>
+
+				</li>
+				<li test-id='70' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.BlogDefinition.the_user_should_see_the_warning_message_and(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the warning message "Warning: Comment Text must be between 25 and 1000 characters!" and "check3"</h6>
 
 				</li>
 			</ul>
 		</li>
-		<li test-id='8' class='node scenario Pass' status='Pass'>
+		<li test-id='17' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Submitting a blog comment without filling required details</div>
+
+				<div class='category-list'>
+						<span class='category label'>@invalid_blog_filling_without_required_details</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='32' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</h6>
+
+				</li>
+				<li test-id='41' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.BlogDefinition.the_user_clicks_on_the_blog_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on the Blog button</h6>
+
+				</li>
+				<li test-id='54' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.BlogDefinition.the_user_selects_any_article_from_the_blog()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user selects any article from the blog</h6>
+
+				</li>
+				<li test-id='60' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.BlogDefinition.the_user_is_navigated_to_the_selected_blog_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user is navigated to the selected blog page</h6>
+
+				</li>
+				<li test-id='61' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.BlogDefinition.the_user_enters_the_name(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user enters the name ""</h6>
+
+				</li>
+				<li test-id='66' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.BlogDefinition.enters_the_email(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And enters the email "jeev@example.com"</h6>
+
+				</li>
+				<li test-id='71' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.BlogDefinition.adds_the_comment(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And adds the comment "Viverra accumsan in nisl nisi scelerisque eu. Vestibulum lorem sed risus ultricies tristique."</h6>
+
+				</li>
+				<li test-id='74' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.BlogDefinition.clicks_on_the_post_comment_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on the Post Comment button</h6>
+
+				</li>
+				<li test-id='75' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.BlogDefinition.the_user_should_see_the_warning_message_and(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the warning message "Warning: Comment Name must be between 3 and 25 characters!" and "check2"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='98' class='node scenario Pass' status='Pass'>
 			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User tries to login with invalid credentials</div>
 
 				<div class='category-list'>
@@ -345,79 +598,235 @@
 				</div>
 
 			<ul class='gc steps'>
-				<li test-id='21' class='gc given Pass' status='Pass'>
+				<li test-id='111' class='gc given Pass' status='Pass'>
 					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</h6>
 
 				</li>
-				<li test-id='30' class='gc when Pass' status='Pass'>
+				<li test-id='121' class='gc when Pass' status='Pass'>
 					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_clicks_on_my_account()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account</h6>
 
 				</li>
-				<li test-id='43' class='gc and Pass' status='Pass'>
+				<li test-id='132' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="com.definitions.UserLoginDefinition.clicks_on_login()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on login</h6>
 
 				</li>
-				<li test-id='44' class='gc and Pass' status='Pass'>
+				<li test-id='133' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_enters_e_mail(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters E-Mail ""</h6>
 
 				</li>
-				<li test-id='47' class='gc and Pass' status='Pass'>
+				<li test-id='140' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_enters_password(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters Password "12345"</h6>
 
 				</li>
-				<li test-id='51' class='gc and Pass' status='Pass'>
+				<li test-id='142' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_clicks_on_the_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on the Login button</h6>
 
 				</li>
-				<li test-id='53' class='gc then Pass' status='Pass'>
+				<li test-id='154' class='gc then Pass' status='Pass'>
 					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_should_see_the_and(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the "Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour." and "check3"</h6>
-
-				</li>
-			</ul>
-		</li>
-		<li test-id='10' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User tries to login with invalid credentials</div>
-
-				<div class='category-list'>
-						<span class='category label'>@login_invalid_input</span>
-				</div>
-
-			<ul class='gc steps'>
-				<li test-id='18' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</h6>
-
-				</li>
-				<li test-id='23' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_clicks_on_my_account()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account</h6>
-
-				</li>
-				<li test-id='28' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserLoginDefinition.clicks_on_login()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on login</h6>
-
-				</li>
-				<li test-id='29' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_enters_e_mail(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters E-Mail "atk62@gmail.com"</h6>
-
-				</li>
-				<li test-id='32' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_enters_password(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters Password "1234"</h6>
-
-				</li>
-				<li test-id='36' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_clicks_on_the_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on the Login button</h6>
-
-				</li>
-				<li test-id='41' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_should_see_the_and(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the "Warning: No match for E-Mail Address and/or Password." and "check2"</h6>
 
 				</li>
 			</ul>
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='13' status='pass'>
+<div class='scenario node' test-id='15' status='pass'>
 
-	<span class='duration right label'>00 02 08.936</span>
+	<span class='duration right label'>00 01 18.148</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Adding a valid comment to the blog</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@valid_blog_filling_all_required_details</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='29' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</div>
+
+
+		</li>
+		<li test-id='38' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.BlogDefinition.the_user_clicks_on_the_blog_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on the Blog button</div>
+
+
+		</li>
+		<li test-id='44' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.BlogDefinition.the_user_selects_any_article_from_the_blog())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user selects any article from the blog</div>
+
+
+		</li>
+		<li test-id='47' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.BlogDefinition.the_user_is_navigated_to_the_selected_blog_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user is navigated to the selected blog page</div>
+
+
+		</li>
+		<li test-id='48' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.BlogDefinition.the_user_enters_the_following_comment_details(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user enters the following comment details:</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>name</td><td>email</td><td>comment</td></tr><tr><td>Jeev</td><td>jeev@example.com</td><td>This blog was very informative and well written. Keep it up!</td></tr></table></div>
+		</li>
+		<li test-id='59' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.BlogDefinition.clicks_on_the_post_comment_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on the Post Comment button</div>
+
+
+		</li>
+		<li test-id='65' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.BlogDefinition.the_user_should_see_the_message(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the message "Thank you for your comment. It has been submitted to the webmaster for approval."</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='24' status='pass'>
+
+	<span class='duration right label'>00 01 17.935</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: category wise selection and assertion</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@category_selection_for_blog</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='26' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</div>
+
+
+		</li>
+		<li test-id='40' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.BlogDefinition.the_user_clicks_on_the_blog_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on the Blog button</div>
+
+
+		</li>
+		<li test-id='49' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.BlogDefinition.the_user_selects_category())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user selects category</div>
+
+
+		</li>
+		<li test-id='57' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.BlogDefinition.the_user_should_see_article_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see article page</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>Jeevika_15APR2025_LambdaTesters_AffiliateAccount</span>
+						<span class='test-time'>Apr 24, 2025 03:15:58 pm</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario outline node' test-id='20' status='pass'>
+
+	<span class='duration right label'>00 01 47.603</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Register a user and register as affiliate with valid and invalid inputs</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Telephone</td><td>Password</td><td>Confirm Password</td><td>name</td><td>message</td><td>check</td></tr><tr><td>priya</td><td>ram</td><td>ppta112@gmail.com</td><td>1234567891</td><td>1234</td><td>1234</td><td>jeev</td><td>Success: Your account has been successfully updated.</td><td>valid</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='21' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Register a user and register as affiliate with valid and invalid inputs</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='28' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</h6>
+
+				</li>
+				<li test-id='39' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_clicks_on()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account.</h6>
+
+				</li>
+				<li test-id='42' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.clicks_the_register_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks the register button</h6>
+
+				</li>
+				<li test-id='53' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_should_see_the_registration_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the registration page</h6>
+
+				</li>
+				<li test-id='56' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_enters_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user enters "priya", "ram", "ppta112@gmail.com", "1234567891", "1234" and "1234"</h6>
+
+				</li>
+				<li test-id='86' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.agrees_to_the_privacy_policy()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And agrees to the Privacy Policy</h6>
+
+				</li>
+				<li test-id='87' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.submits_the_registration_form()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And submits the registration form</h6>
+
+				</li>
+				<li test-id='104' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_should_see(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see "Your Account Has Been Created!"</h6>
+
+				</li>
+				<li test-id='112' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.AffiliateAccountDefinition.the_user_clicks_on_continue_on_register()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on continue on register</h6>
+
+				</li>
+				<li test-id='122' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.AffiliateAccountDefinition.the_user_clicks_on_register_your_affiliate_information()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on register your affiliate information</h6>
+
+				</li>
+				<li test-id='143' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.AffiliateAccountDefinition.enters_payee_name(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And enters payee name "jeev"</h6>
+
+				</li>
+				<li test-id='149' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.AffiliateAccountDefinition.clicks_on_checkbox()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on checkbox</h6>
+
+				</li>
+				<li test-id='158' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.AffiliateAccountDefinition.clicks_on_register_continue_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on register continue button</h6>
+
+				</li>
+				<li test-id='161' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.AffiliateAccountDefinition.the_user_sees_based_on(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user sees "Success: Your account has been successfully updated." based on "valid"</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='90'>
+					<div class='test-heading'>
+						<span class='test-name'>Jeevika_09APR2025_LambdaTesters_Login</span>
+						<span class='test-time'>Apr 24, 2025 03:17:16 pm</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='91' status='pass'>
+
+	<span class='duration right label'>00 00 28.412</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: User tries to login with valid credentials</div>
 	</div>
@@ -428,33 +837,210 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='17' class='node given Pass' status='Pass'>
+		<li test-id='105' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</div>
 
 
 		</li>
-		<li test-id='24' class='node when Pass' status='Pass'>
+		<li test-id='114' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.definitions.UserLoginDefinition.the_user_clicks_on_my_account())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account</div>
 
 
 		</li>
-		<li test-id='37' class='node and Pass' status='Pass'>
+		<li test-id='119' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.definitions.UserLoginDefinition.clicks_on_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on login</div>
 
 
 		</li>
-		<li test-id='38' class='node and Pass' status='Pass'>
+		<li test-id='120' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.definitions.UserLoginDefinition.the_user_enters_valid_credentials())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters valid credentials</div>
 
 
 		</li>
-		<li test-id='49' class='node and Pass' status='Pass'>
+		<li test-id='138' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.definitions.UserLoginDefinition.the_user_clicks_on_the_login_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on the Login button</div>
 
 
 		</li>
-		<li test-id='58' class='node then Pass' status='Pass'>
+		<li test-id='153' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(com.definitions.UserLoginDefinition.the_user_should_see_the_my_account_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the My Account page</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario outline node' test-id='93' status='pass'>
+
+	<span class='duration right label'>00 00 29.110</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: User tries to login with invalid credentials</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>email</td><td>password</td><td>expectedResult</td><td>check</td></tr><tr><td>atgs2@gmail.com</td><td>12345</td><td>Warning: No match for E-Mail Address and/or Password.</td><td>check1</td></tr><tr><td>atk62@gmail.com</td><td>1234</td><td>Warning: No match for E-Mail Address and/or Password.</td><td>check2</td></tr><tr><td></td><td>12345</td><td>Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.</td><td>check3</td></tr><tr><td></td><td></td><td>Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.</td><td>check4</td></tr></table><br><br><table class='markup-table table '><tr><td>email</td><td>password</td><td>expectedResult</td><td>check</td></tr><tr><td>atgs2@gmail.com</td><td>12345</td><td>Warning: No match for E-Mail Address and/or Password.</td><td>check1</td></tr><tr><td>atk62@gmail.com</td><td>1234</td><td>Warning: No match for E-Mail Address and/or Password.</td><td>check2</td></tr><tr><td></td><td>12345</td><td>Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.</td><td>check3</td></tr><tr><td></td><td></td><td>Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.</td><td>check4</td></tr></table><br><br><table class='markup-table table '><tr><td>email</td><td>password</td><td>expectedResult</td><td>check</td></tr><tr><td>atgs2@gmail.com</td><td>12345</td><td>Warning: No match for E-Mail Address and/or Password.</td><td>check1</td></tr><tr><td>atk62@gmail.com</td><td>1234</td><td>Warning: No match for E-Mail Address and/or Password.</td><td>check2</td></tr><tr><td></td><td>12345</td><td>Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.</td><td>check3</td></tr><tr><td></td><td></td><td>Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.</td><td>check4</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='94' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User tries to login with invalid credentials</div>
+
+				<div class='category-list'>
+						<span class='category label'>@login_invalid_input</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='107' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</h6>
+
+				</li>
+				<li test-id='116' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_clicks_on_my_account()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account</h6>
+
+				</li>
+				<li test-id='123' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.clicks_on_login()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on login</h6>
+
+				</li>
+				<li test-id='124' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_enters_e_mail(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters E-Mail "atgs2@gmail.com"</h6>
+
+				</li>
+				<li test-id='130' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_enters_password(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters Password "12345"</h6>
+
+				</li>
+				<li test-id='134' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_clicks_on_the_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on the Login button</h6>
+
+				</li>
+				<li test-id='147' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_should_see_the_and(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the "Warning: No match for E-Mail Address and/or Password." and "check1"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='96' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User tries to login with invalid credentials</div>
+
+				<div class='category-list'>
+						<span class='category label'>@login_invalid_input</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='108' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</h6>
+
+				</li>
+				<li test-id='118' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_clicks_on_my_account()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account</h6>
+
+				</li>
+				<li test-id='128' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.clicks_on_login()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on login</h6>
+
+				</li>
+				<li test-id='129' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_enters_e_mail(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters E-Mail "atk62@gmail.com"</h6>
+
+				</li>
+				<li test-id='131' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_enters_password(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters Password "1234"</h6>
+
+				</li>
+				<li test-id='141' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_clicks_on_the_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on the Login button</h6>
+
+				</li>
+				<li test-id='150' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_should_see_the_and(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the "Warning: No match for E-Mail Address and/or Password." and "check2"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='100' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User tries to login with invalid credentials</div>
+
+				<div class='category-list'>
+						<span class='category label'>@login_invalid_input</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='110' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</h6>
+
+				</li>
+				<li test-id='113' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_clicks_on_my_account()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account</h6>
+
+				</li>
+				<li test-id='135' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.clicks_on_login()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on login</h6>
+
+				</li>
+				<li test-id='136' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_enters_e_mail(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters E-Mail ""</h6>
+
+				</li>
+				<li test-id='137' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_enters_password(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters Password ""</h6>
+
+				</li>
+				<li test-id='139' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_clicks_on_the_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on the Login button</h6>
+
+				</li>
+				<li test-id='145' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.UserLoginDefinition.the_user_should_see_the_and(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the "Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour." and "check4"</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='102' status='pass'>
+
+	<span class='duration right label'>00 00 27.850</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: User tries to login with valid credentials and logs out</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@logout</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='109' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.UserRegistrationDefinition.the_user_is_on_the_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the homepage</div>
+
+
+		</li>
+		<li test-id='117' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.UserLoginDefinition.the_user_clicks_on_my_account())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on My Account</div>
+
+
+		</li>
+		<li test-id='125' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.UserLoginDefinition.clicks_on_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on login</div>
+
+
+		</li>
+		<li test-id='126' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.UserLoginDefinition.the_user_enters_valid_credentials())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user enters valid credentials</div>
+
+
+		</li>
+		<li test-id='127' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.UserLoginDefinition.the_user_clicks_on_the_login_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on the Login button</div>
+
+
+		</li>
+		<li test-id='144' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.UserLoginDefinition.the_user_logs_out())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user logs out</div>
+
+
+		</li>
+		<li test-id='159' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.UserLoginDefinition.the_user_should_see_the_account_logout_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user should see the Account Logout page</div>
 
 
 		</li>
@@ -504,7 +1090,7 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@login_valid_input</span>
+						<span class='category-name'>@ValidSearchInputs</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -526,8 +1112,74 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 22, 2025 09:48:16 am</td>
-										<td class='linked' test-id='13'>User tries to login with valid credentials</td>
+										<td>Apr 24, 2025 03:15:58 pm</td>
+										<td class='linked' test-id='7'>Search functionality with valid inputs</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@InValidSearchInputs</span>
+						<span class='category-status right'>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 24, 2025 03:15:58 pm</td>
+										<td class='linked' test-id='8'>Search functionality with invalid inputs</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CaseSensitiveSearchInputs</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 24, 2025 03:15:58 pm</td>
+										<td class='linked' test-id='9'>Search functionality with case sensitive inputs</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -559,23 +1211,89 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 22, 2025 09:48:16 am</td>
-										<td class='linked' test-id='5'>User tries to login with invalid credentials</td>
+										<td>Apr 24, 2025 03:17:16 pm</td>
+										<td class='linked' test-id='94'>User tries to login with invalid credentials</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Apr 22, 2025 09:48:16 am</td>
-										<td class='linked' test-id='6'>User tries to login with invalid credentials</td>
+										<td>Apr 24, 2025 03:17:17 pm</td>
+										<td class='linked' test-id='96'>User tries to login with invalid credentials</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Apr 22, 2025 09:48:16 am</td>
-										<td class='linked' test-id='8'>User tries to login with invalid credentials</td>
+										<td>Apr 24, 2025 03:17:17 pm</td>
+										<td class='linked' test-id='98'>User tries to login with invalid credentials</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Apr 22, 2025 09:48:16 am</td>
-										<td class='linked' test-id='10'>User tries to login with invalid credentials</td>
+										<td>Apr 24, 2025 03:17:17 pm</td>
+										<td class='linked' test-id='100'>User tries to login with invalid credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@SearchByCategory</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 24, 2025 03:17:16 pm</td>
+										<td class='linked' test-id='88'>Search functionality by category as input</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@login_valid_input</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 24, 2025 03:17:16 pm</td>
+										<td class='linked' test-id='91'>User tries to login with valid credentials</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -607,8 +1325,150 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 22, 2025 09:48:16 am</td>
-										<td class='linked' test-id='2'>User tries to login with valid credentials and logs out</td>
+										<td>Apr 24, 2025 03:17:17 pm</td>
+										<td class='linked' test-id='102'>User tries to login with valid credentials and logs out</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@IndentationSearchInputs</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 24, 2025 03:15:58 pm</td>
+										<td class='linked' test-id='2'>Search functionality with unnecessary indentation in search</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@invalid_blog_filling_without_required_details</span>
+						<span class='category-status right'>
+						<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 24, 2025 03:15:58 pm</td>
+										<td class='linked' test-id='5'>Submitting a blog comment without filling required details</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 24, 2025 03:15:58 pm</td>
+										<td class='linked' test-id='6'>Submitting a blog comment without filling required details</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 24, 2025 03:15:58 pm</td>
+										<td class='linked' test-id='17'>Submitting a blog comment without filling required details</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@category_selection_for_blog</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 24, 2025 03:15:58 pm</td>
+										<td class='linked' test-id='24'>category wise selection and assertion</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@valid_blog_filling_all_required_details</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 24, 2025 03:15:58 pm</td>
+										<td class='linked' test-id='15'>Adding a valid comment to the blog</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -625,7 +1485,121 @@
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.TimeoutException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>StackTrace</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 24, 2025 03:15:58 pm</td>
+										<td class='linked' test-id='12'>com.definitions.Hooks.setUp(io.cucumber.java.Scenario)</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9513fd37ceac7a2c1153f5e350f8fc77, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.114, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\kirub\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63640}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63640/devtoo..., se:cdpVersion: 135.0.7049.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9513fd37ceac7a2c1153f5e350f8fc77
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:424)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1067)
+	at com.utilities.HelperClass.<init>(HelperClass.java:49)
+	at com.utilities.HelperClass.setUpDriver(HelperClass.java:67)
+	at com.definitions.Hooks.setUp(Hooks.java:25)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2920)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Apr 24, 2025 03:19:26 pm</td>
+										<td class='linked' test-id='166'>com.definitions.Hooks.tearDown(io.cucumber.java.Scenario)</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9513fd37ceac7a2c1153f5e350f8fc77, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.114, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\kirub\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63640}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63640/devtoo..., se:cdpVersion: 135.0.7049.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9513fd37ceac7a2c1153f5e350f8fc77
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:424)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1067)
+	at com.utilities.HelperClass.<init>(HelperClass.java:49)
+	at com.utilities.HelperClass.setUpDriver(HelperClass.java:67)
+	at com.definitions.Hooks.setUp(Hooks.java:25)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2920)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -633,37 +1607,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>6</div>
+					<div class='panel-lead'>17</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>41</div>
+					<div class='panel-lead'>110</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Apr 22, 2025 09:48:13 am</div>
+					<div class='panel-lead'>Apr 24, 2025 03:15:56 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Apr 22, 2025 09:50:31 am</div>
+			 		<div class='panel-lead'>Apr 24, 2025 03:22:26 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 02 18.175</div>
+					<div class='panel-lead'>00 06 30.125</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -699,7 +1673,25 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@login_valid_input</td>
+							<td>@ValidSearchInputs</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@InValidSearchInputs</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>@CaseSensitiveSearchInputs</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -717,7 +1709,61 @@
 							</td>
 						</tr>
 						<tr>
+							<td>@SearchByCategory</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@login_valid_input</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
 							<td>@logout</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@IndentationSearchInputs</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@invalid_blog_filling_without_required_details</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@category_selection_for_blog</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@valid_blog_filling_all_required_details</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -736,35 +1782,35 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 1,
-				passParent: 1,
-				failParent: 0,
+                parentCount: 4,
+				passParent: 3,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 6,
-				passChild: 6,
-				failChild: 0,
+				childCount: 17,
+				passChild: 16,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 41,
-				passGrandChild: 41,
-				failGrandChild: 0,
+				grandChildCount: 110,
+				passGrandChild: 105,
+				failGrandChild: 2,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 0,
+				skipGrandChild: 3,
 				infoGrandChild: 0,
 			};
 			</script>
 		
 		<script>
 			var timeline = {
-			        "Login Functionality":134.849
+			        "Jeevika_12APR2025_LambdaTesters_Search":387.647,"Jeevika_16APR2025_LambdaTesters_Blog":106.738,"Jeevika_15APR2025_LambdaTesters_AffiliateAccount":107.604,"Jeevika_09APR2025_LambdaTesters_Login":29.278
 			};
 		</script>
 		

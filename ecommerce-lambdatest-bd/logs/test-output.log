@@ -12298,3 +12298,36 @@
 2025-04-22 09:50:17 [TestNG-PoolService-5] INFO : Scenario passed: User tries to login with invalid credentials
 2025-04-22 09:50:24 [TestNG-PoolService-1] INFO : Scenario passed: User tries to login with valid credentials
 2025-04-22 09:50:31 [TestNG-PoolService-6] INFO : Scenario passed: User tries to login with valid credentials and logs out
+2025-04-24 15:16:17 [TestNG-PoolService-6] INFO : Scenario started: category wise selection and assertion
+2025-04-24 15:16:18 [TestNG-PoolService-5] INFO : Scenario started: Submitting a blog comment without filling required details
+2025-04-24 15:16:19 [TestNG-PoolService-1] INFO : Scenario started: Register a user and register as affiliate with valid and invalid inputs
+2025-04-24 15:16:20 [TestNG-PoolService-2] INFO : Scenario started: Adding a valid comment to the blog
+2025-04-24 15:16:21 [TestNG-PoolService-9] INFO : Scenario started: Search functionality with case sensitive inputs
+2025-04-24 15:16:23 [TestNG-PoolService-3] INFO : Scenario started: Submitting a blog comment without filling required details
+2025-04-24 15:16:25 [TestNG-PoolService-4] INFO : Scenario started: Submitting a blog comment without filling required details
+2025-04-24 15:16:27 [TestNG-PoolService-10] INFO : Scenario started: Search functionality with unnecessary indentation in search
+2025-04-24 15:16:27 [TestNG-PoolService-7] INFO : Scenario started: Search functionality with valid inputs
+2025-04-24 15:17:01 [TestNG-PoolService-6] INFO : Scenario passed: category wise selection and assertion
+2025-04-24 15:17:04 [TestNG-PoolService-2] INFO : Scenario passed: Adding a valid comment to the blog
+2025-04-24 15:17:08 [TestNG-PoolService-5] INFO : Scenario passed: Submitting a blog comment without filling required details
+2025-04-24 15:17:13 [TestNG-PoolService-4] INFO : Scenario passed: Submitting a blog comment without filling required details
+2025-04-24 15:17:13 [TestNG-PoolService-3] INFO : Scenario passed: Submitting a blog comment without filling required details
+2025-04-24 15:17:13 [TestNG-PoolService-10] INFO : Scenario passed: Search functionality with unnecessary indentation in search
+2025-04-24 15:17:14 [TestNG-PoolService-7] INFO : Scenario passed: Search functionality with valid inputs
+2025-04-24 15:17:14 [TestNG-PoolService-9] INFO : Scenario passed: Search functionality with case sensitive inputs
+2025-04-24 15:17:20 [TestNG-PoolService-6] INFO : Scenario started: User tries to login with valid credentials
+2025-04-24 15:17:21 [TestNG-PoolService-5] INFO : Scenario started: Search functionality by category as input
+2025-04-24 15:17:23 [TestNG-PoolService-2] INFO : Scenario started: User tries to login with invalid credentials
+2025-04-24 15:17:24 [TestNG-PoolService-10] INFO : Scenario started: User tries to login with invalid credentials
+2025-04-24 15:17:24 [TestNG-PoolService-3] INFO : Scenario started: User tries to login with valid credentials and logs out
+2025-04-24 15:17:24 [TestNG-PoolService-9] INFO : Scenario started: User tries to login with invalid credentials
+2025-04-24 15:17:24 [TestNG-PoolService-4] INFO : Scenario started: User tries to login with invalid credentials
+2025-04-24 15:17:24 [TestNG-PoolService-1] INFO : Assertion Passed: Expected message 'Your Account Has Been Created!' is displayed successfully.
+2025-04-24 15:17:41 [TestNG-PoolService-9] INFO : Scenario passed: User tries to login with invalid credentials
+2025-04-24 15:17:41 [TestNG-PoolService-2] INFO : Scenario passed: User tries to login with invalid credentials
+2025-04-24 15:17:43 [TestNG-PoolService-10] INFO : Scenario passed: User tries to login with invalid credentials
+2025-04-24 15:17:43 [TestNG-PoolService-5] INFO : Scenario passed: Search functionality by category as input
+2025-04-24 15:17:43 [TestNG-PoolService-4] INFO : Scenario passed: User tries to login with invalid credentials
+2025-04-24 15:17:43 [TestNG-PoolService-6] INFO : Scenario passed: User tries to login with valid credentials
+2025-04-24 15:17:44 [TestNG-PoolService-3] INFO : Scenario passed: User tries to login with valid credentials and logs out
+2025-04-24 15:17:45 [TestNG-PoolService-1] INFO : Scenario passed: Register a user and register as affiliate with valid and invalid inputs
