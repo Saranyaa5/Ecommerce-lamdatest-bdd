@@ -154,7 +154,7 @@ public class UserAccountAction {
 	       return userAccountLocator.newAddressCreated.getText();
 	}
 
-	public void enterAddressDetails(String firstName, String lastName, String address, String city, String postcode) {
+	public void enterAddressDetails(String firstName, String lastName, String address, String city, String postcode) throws InterruptedException {
 userAccountLocator.getFirstNameField.sendKeys( firstName);
   userAccountLocator.getLastNameField.sendKeys( lastName);
     userAccountLocator.getAddressField.sendKeys(address);
@@ -162,8 +162,12 @@ userAccountLocator.getFirstNameField.sendKeys( firstName);
     userAccountLocator.getPostcodeField.sendKeys(postcode);
     userAccountLocator.countrySelect.click();
     userAccountLocator.unitedstates.click();
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     userAccountLocator.state.click();
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     userAccountLocator.Abeerdan.click();
 }
+
+	
 
 }

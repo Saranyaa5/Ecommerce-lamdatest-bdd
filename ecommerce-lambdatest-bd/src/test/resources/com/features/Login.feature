@@ -1,4 +1,4 @@
-Feature: Login Functionality
+Feature: Jeevika_09APR2025_LambdaTesters_Login
 
  Background:
     Given the user is on the homepage
@@ -20,11 +20,11 @@ Feature: Login Functionality
     
 
     Examples:
-      | email          | password | expectedResult                                                                       |check  |
+      | email            | password | expectedResult                                                                       |check  |
       | atgs2@gmail.com  | 12345     | Warning: No match for E-Mail Address and/or Password.                                |check1 |
       | atk62@gmail.com  | 1234         | Warning: No match for E-Mail Address and/or Password.                                |check2 |
-      |  | 12345         |  Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.  |check3 |
-      |                 |          |Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.|check4|
+      |         | 12345         |  Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.  |check3 |
+      |                  |          |Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.|check4|
 
 
 

@@ -14,12 +14,14 @@ public class UserRegistrationAction {
     private final RegistrationPageLocator registrationLocators;
     private final Actions actions;
     private final WebDriverWait wait;
+    public WebDriver driver;
     private final JavascriptExecutor jsExecutor;
 
     public UserRegistrationAction() {
         this.registrationLocators = new RegistrationPageLocator();
         PageFactory.initElements(HelperClass.getDriver(), registrationLocators);
         this.actions = new Actions(HelperClass.getDriver());
+        driver=HelperClass.getDriver();
         this.wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
         this.jsExecutor = (JavascriptExecutor) HelperClass.getDriver();
     }
@@ -121,10 +123,8 @@ public class UserRegistrationAction {
 
     private void scrollToElement(WebElement element) {
         jsExecutor.executeScript("arguments[0].scrollIntoView({block: 'center', behavior: 'smooth'});", element);
-        try {
-            Thread.sleep(300);
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-        }
+        
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+       
     }
 }

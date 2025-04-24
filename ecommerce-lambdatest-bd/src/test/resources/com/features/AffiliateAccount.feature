@@ -1,5 +1,4 @@
-@AffiliateAccount
-Feature: User Login and Affiliate Account Functionality
+Feature: Jeevika_15APR2025_LambdaTesters_AffiliateAccount
 
 Scenario Outline: Register a user and register as affiliate with valid and invalid inputs
     Given the user is on the homepage  
