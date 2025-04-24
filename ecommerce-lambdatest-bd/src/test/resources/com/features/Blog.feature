@@ -1,4 +1,4 @@
-Feature: Blog functionality
+Feature: Jeevika_16APR2025_LambdaTesters_Blog
 
   Background:
     Given the user is on the homepage
