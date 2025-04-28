@@ -48,6 +48,10 @@ public class UserLoginAction {
         loginPageLocator.emailId.sendKeys(stremail);
     }
 
+    public void setPassword() {
+        loginPageLocator.password.sendKeys(strpassword);
+    }
+    
     public void setEmail2(String email) {
         loginPageLocator.emailId.sendKeys(email);
     }
@@ -56,25 +60,30 @@ public class UserLoginAction {
         loginPageLocator.password.sendKeys(pass);
     }
 
-    public void setPassword() {
-        loginPageLocator.password.sendKeys(strpassword);
-    }
-
     public void clickLoginButton() {
         loginPageLocator.loginButton.click();
     }
 
     public boolean isMyAccountPageDisplayed() {
-        System.out.println(loginPageLocator.titleMyAccount.getText());
-
-        return loginPageLocator.titleMyAccount.isDisplayed();
+        try {
+            System.out.println(loginPageLocator.titleMyAccount.getText());
+            return loginPageLocator.titleMyAccount.isDisplayed();
+        } catch (Exception e) {
+            System.out.println("Element not found or stale: " + e.getMessage());
+            return false;
+        }
     }
 
     public boolean getWarningMessage() {
-//        return loginPageLocator.warningMessage.getText();
-    	return loginPageLocator.warningMessage.isDisplayed();
+        try {
+            return loginPageLocator.warningMessage.isDisplayed();
+        } catch (Exception e) {
+            System.out.println("Warning message element not found or stale: " + e.getMessage());
+            return false;
+        }
     }
-
+    
+    
     public void clickLogout() {
     	loginPageLocator.logout.click();
     }

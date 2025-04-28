@@ -41,4 +41,11 @@ public WebElement business;
 @FindBy(xpath="//h1[@class='h1']")
 public WebElement businessHeading;
 
+@FindBy(xpath="//*[@id=\"swiper-wrapper-d2433b3b52f319d3\"]/div[1]/div/div[2]/h4/a")
+public WebElement img;
+
+@FindBy(xpath="//div[@aria-label='1 / 10']//a[@class='text-ellipsis-2'][normalize-space()='iMac']")
+public WebElement productName;
+
 }
+

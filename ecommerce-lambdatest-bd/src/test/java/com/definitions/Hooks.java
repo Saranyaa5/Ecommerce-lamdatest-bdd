@@ -37,10 +37,7 @@ public class Hooks {
 	            } catch (IOException e) {
 	                logger.error("Failed to save screenshot: " + e.getMessage());
 	            }
-
-	            byte[] screenshotBytes = ((TakesScreenshot) HelperClass.getDriver()).getScreenshotAs(OutputType.BYTES);
-	            scenario.attach(screenshotBytes, "image/png", "Failure Screenshot");
-	            logger.error("Scenario failed: " + scenario.getName());
+	        
 	        } else {
 	            logger.info("Scenario passed: " + scenario.getName());
 	        }
@@ -48,4 +45,63 @@ public class Hooks {
 	        HelperClass.tearDown();
 	    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//byte[] screenshotBytes = ((TakesScreenshot) HelperClass.getDriver()).getScreenshotAs(OutputType.BYTES);
+//scenario.attach(screenshotBytes, "image/png", "Failure Screenshot");
+//logger.error("Scenario failed: " + scenario.getName());
 

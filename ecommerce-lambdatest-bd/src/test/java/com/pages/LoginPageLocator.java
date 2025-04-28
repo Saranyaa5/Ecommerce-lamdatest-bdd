@@ -11,17 +11,25 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPageLocator {
 
-    @FindBy(xpath="//a[@class='icon-left both nav-link dropdown-toggle' and @href='https://ecommerce-playground.lambdatest.io/index.php?route=account/account']")
+//    @FindBy(xpath="//a[@class='icon-left both nav-link dropdown-toggle' and @href='https://ecommerce-playground.lambdatest.io/index.php?route=account/account']")
+//    public WebElement myAccount;
+    
+    @FindBy(xpath="(//div[@id='widget-navbar-217834']//li[@class='nav-item dropdown dropdown-hoverable']//descendant::a)[5]")
     public WebElement myAccount;
     
-  @FindBy(xpath="//*[@id=\"widget-navbar-217834\"]/ul/li[6]/ul/a")
- 
+    @FindBy(xpath="//*[@id=\"widget-navbar-217834\"]/ul/li[6]/ul/a")
     public WebElement login;
    
-    @FindBy(xpath="//input[@id='input-email']")
-    public WebElement emailId;
+//    @FindBy(xpath="//input[@id='input-email']")
+//    public WebElement emailId;
     
-    @FindBy(xpath="//input[@id='input-password']")
+    @FindBy(xpath="(//div[@class='form-group']//descendant::input)[1]")
+    public WebElement emailId;    
+    
+//    @FindBy(xpath="//input[@id='input-password']")
+//    public WebElement password;
+    
+    @FindBy(xpath="(//div[@class='form-group']//following::input[1])[2]")
     public WebElement password;
     
     @FindBy(xpath="//input[@class='btn btn-primary']")
@@ -32,7 +40,6 @@ public class LoginPageLocator {
     
     @FindBy(xpath = "//div[contains(@class,'alert-danger')]")
     public WebElement warningMessage;
-   
 
 @FindBy(xpath="//*[@id=\"column-right\"]/div/a[14]")
 public WebElement logout;

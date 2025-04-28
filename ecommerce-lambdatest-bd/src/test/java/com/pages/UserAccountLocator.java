@@ -14,6 +14,7 @@ public class UserAccountLocator {
     @FindBy(xpath="//*[@id='content']/div[1]/div/div/div[5]/a")
     public WebElement clickNewsLetter;
     
+
     
     
     
