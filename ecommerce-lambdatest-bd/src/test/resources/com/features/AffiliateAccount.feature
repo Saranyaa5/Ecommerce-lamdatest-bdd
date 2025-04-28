@@ -21,4 +21,4 @@ Scenario Outline: Register a user and register as affiliate with valid and inval
     Examples:  
     | First Name | Last Name | Email              | Telephone   | Password | Confirm Password | name | message                                               | check   |
     | priya      | ram       | ppta112@gmail.com  | 1234567891  | 1234     | 1234             | jeev | Success: Your account has been successfully updated.  | valid   |
-  
+  | jeev      | ram       | ppta113@gmail.com  | 1234567890 | 1234     | 1234             | jeev | Success: Your account has been successfully updated.  | valid   |

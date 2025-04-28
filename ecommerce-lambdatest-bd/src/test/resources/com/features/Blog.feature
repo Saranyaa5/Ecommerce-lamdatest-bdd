@@ -31,9 +31,16 @@ Examples:
   |      | jeev@example.com | Viverra accumsan in nisl nisi scelerisque eu. Vestibulum lorem sed risus ultricies tristique. | Warning: Comment Name must be between 3 and 25 characters!  |check2|
   | Jeev | jeev@example.com | Hi                                                                  | Warning: Comment Text must be between 25 and 1000 characters!             |check3|
 
-  
   @category_selection_for_blog
   Scenario: category wise selection and assertion
   When the user clicks on the Blog button
   And the user selects category
   Then the user should see article page
+  
+  
+  #@image_selection_on_blog
+  #Scenario: clicking the product image to navigate to product shopping page
+  #When the user clicks on the Blog button
+  #And clicks on the product image
+  #Then the product shopping page is displayed
+  

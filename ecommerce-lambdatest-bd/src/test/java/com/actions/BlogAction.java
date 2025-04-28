@@ -155,4 +155,25 @@ public class BlogAction {
 			return blog.businessHeading.getText();
 		}
 	}
+	
+	public void clickImage() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(blog.img));
+        blog.img.click();
+	}
+	
+	public boolean isProductNameDisplayed() {
+	    try {
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	        wait.until(ExpectedConditions.visibilityOf(blog.productName));
+	        return blog.productName.isDisplayed();
+	    } catch (StaleElementReferenceException e) {
+	        refreshElements();
+	        return blog.productName.isDisplayed();
+	    } catch (NoSuchElementException e) {
+	        return false;
+	    }
+	}
+
+
 }
