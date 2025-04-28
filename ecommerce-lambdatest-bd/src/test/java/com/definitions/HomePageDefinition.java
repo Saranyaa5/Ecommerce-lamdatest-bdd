@@ -38,21 +38,20 @@ public class HomePageDefinition {
 	
 	@When("the user clicks shop now in second block")
 	public void the_user_clicks_shop_now_in_second_block() {
-		homePageAction.block2click();
+		homePageAction.clickMpowBanner();
 	}
 
 	@Then("the user should see the {string} page")
 	public void the_user_should_see_the_page(String string) {
-		
-	    String actual=homePageAction.block2text();
-	   try {
-		   
-		   Assert.assertEquals(string,actual);
-		   logger.info("asserting the home page block 2 element is successfull");
-	   }
-	   catch(Exception e) {
-		   System.out.println(e.getMessage());
-		   logger.error("asserting the home page block 2 element is not successfull");
-	   }
+		try {
+            String actualTitle = homePageAction.getProductTitle();
+            String expectedTitle = string;
+            
+            Assert.assertEquals(actualTitle, expectedTitle);
+            logger.info("Successfully verified MPOW product page");
+        } catch(Exception e) {
+            logger.error("Failed to verify MPOW product page: " + e.getMessage());
+            throw e;
+        }
 	}
 }
