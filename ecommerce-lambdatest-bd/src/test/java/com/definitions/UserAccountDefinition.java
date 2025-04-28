@@ -1,7 +1,5 @@
 package com.definitions;
 
-import java.io.IOException;
-
 import java.util.List;
 import java.util.Map;
 
@@ -9,6 +7,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 
+import com.actions.EstimateShippingACtion;
 import com.actions.UserAccountAction;
 import com.utilities.ExcelReader;
 import com.utilities.HelperClass;
@@ -16,11 +15,11 @@ import com.utilities.HelperClass;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import jdk.internal.org.jline.utils.Log;
 
 public class UserAccountDefinition {
 
     UserAccountAction userAccountAction = new UserAccountAction();
+    EstimateShippingACtion estimateShippingAction = new EstimateShippingACtion();
     private static final Logger logger = LogManager.getLogger(UserAccountDefinition.class);
     
     @Given("the user is on the My Account Page")
@@ -86,6 +85,7 @@ public class UserAccountDefinition {
             case "Your address has been successfully added":
             	actualMessage = userAccountAction.NewAddressCreated();
             	break;
+         
             default:
                 throw new IllegalArgumentException("Unknown message: " + expectedMessage);
         }
