@@ -103,26 +103,4 @@ public class OrderPageAction {
         ));
         return heading.getText();
     }
-
-    // Optional: Uncomment if you want to print the order table
-    /*
-    public boolean printOrderHistoryTable() throws InterruptedException {
-        WebDriverWait tableWait = new WebDriverWait(driver, Duration.ofSeconds(60));
-        WebElement tbody = tableWait.until(ExpectedConditions.refreshed(
-            ExpectedConditions.visibilityOfElementLocated(
-                By.xpath("//div[@class='table-responsive']//table//tbody")
-            )
-        ));
-        Thread.sleep(4000);
-        List<WebElement> rows = tbody.findElements(By.tagName("tr"));
-        for (WebElement row : rows) {
-            List<WebElement> cols = row.findElements(By.tagName("td"));
-            for (WebElement col : cols) {
-                System.out.print(col.getText() + "\t");
-            }
-            System.out.println();
-        }
-        return true;
-    }
-    */
 }

@@ -76,6 +76,10 @@ public class BlogDefinition {
              case "check3":
                  actualWarning = blogAction.getWarning2(); 
                  break;
+             case "check4":
+                 actualWarning = blogAction.getWarning2(); 
+                 break;  
+                 
              default:
                  Assert.fail("Invalid check value provided");
          }
@@ -93,5 +97,17 @@ public class BlogDefinition {
     	  String heading = blogAction.getArticleHeading();
           Assert.assertTrue("Article heading not found!", heading != null && !heading.isEmpty());
       }
+    
+    @When("clicks on the product image")
+    public void clicks_on_the_product_image() {
+    	blogAction.clickImage();
+       
+    }
+
+    @Then("the product shopping page is displayed")
+    public void the_product_shopping_page_is_displayed() {
+        Assert.assertTrue("Product name is not displayed on the shopping page", blogAction.isProductNameDisplayed());
+    }
+
 
 }

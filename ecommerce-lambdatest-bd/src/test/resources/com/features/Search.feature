@@ -1,4 +1,4 @@
-Feature: Search functionality
+Feature: Jeevika_12APR2025_LambdaTesters_Search
 
   Background:
      Given the user is on the homepage  
