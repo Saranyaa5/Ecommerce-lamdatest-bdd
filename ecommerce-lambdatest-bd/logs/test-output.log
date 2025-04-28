@@ -12612,3 +12612,205 @@
 2025-04-24 13:06:00 [TestNG-PoolService-5] INFO : Scenario passed: Subscribe or Unsubscribe from newsletter
 2025-04-24 13:06:04 [TestNG-PoolService-6] INFO : Scenario passed: Change user password without providing new password
 2025-04-24 13:06:05 [TestNG-PoolService-10] INFO : Scenario passed: Change user password
+2025-04-24 14:05:19 [TestNG-PoolService-3] INFO : Scenario started: Modify the wishlist by removing a product
+2025-04-24 14:05:19 [TestNG-PoolService-7] INFO : Scenario started: Change user password without providing new password
+2025-04-24 14:05:19 [TestNG-PoolService-4] INFO : Scenario started: Subscribe or Unsubscribe from newsletter
+2025-04-24 14:05:19 [TestNG-PoolService-1] INFO : Scenario started: Edit user account details
+2025-04-24 14:05:20 [TestNG-PoolService-6] INFO : Scenario started: Change user password
+2025-04-24 14:05:20 [TestNG-PoolService-5] INFO : Scenario started: Subscribe or Unsubscribe from newsletter
+2025-04-24 14:05:20 [TestNG-PoolService-2] INFO : Scenario started: Adding new address
+2025-04-24 14:05:42 [TestNG-PoolService-7] INFO : Scenario passed: Change user password without providing new password
+2025-04-24 14:05:48 [TestNG-PoolService-5] INFO : Scenario passed: Subscribe or Unsubscribe from newsletter
+2025-04-24 14:05:50 [TestNG-PoolService-3] INFO : product in the wish list
+2025-04-24 14:05:52 [TestNG-PoolService-4] INFO : Scenario passed: Subscribe or Unsubscribe from newsletter
+2025-04-24 14:05:53 [TestNG-PoolService-3] INFO : Scenario passed: Modify the wishlist by removing a product
+2025-04-24 14:05:55 [TestNG-PoolService-1] INFO : Scenario passed: Edit user account details
+2025-04-24 14:05:56 [TestNG-PoolService-6] INFO : Scenario passed: Change user password
+2025-04-24 14:05:57 [TestNG-PoolService-2] INFO : Scenario passed: Adding new address
+2025-04-24 15:22:49 [TestNG-PoolService-5] INFO : Scenario started: User requests a password reset link using valid email
+2025-04-24 15:22:49 [TestNG-PoolService-10] INFO : Scenario started: Submit review without rating but with comment
+2025-04-24 15:22:49 [TestNG-PoolService-1] INFO : Scenario started: Add a single product to the cart
+2025-04-24 15:22:49 [TestNG-PoolService-4] INFO : Scenario started: Scenario: User tries to add a product to cart without selecting size
+2025-04-24 15:22:50 [TestNG-PoolService-8] INFO : Scenario started: Submit a valid product review with rating and comment
+2025-04-24 15:22:50 [TestNG-PoolService-3] INFO : Scenario started: Add multiple quantities of the same product
+2025-04-24 15:22:50 [TestNG-PoolService-9] INFO : Scenario started: Submit review without rating and without comment
+2025-04-24 15:22:50 [TestNG-PoolService-6] INFO : Scenario started: User requests a password reset link using invalid email
+2025-04-24 15:22:51 [TestNG-PoolService-2] INFO : Scenario started: Remove a product from the cart
+2025-04-24 15:22:51 [TestNG-PoolService-7] INFO : Scenario started: User requests a password reset link without providing email
+2025-04-24 15:23:20 [TestNG-PoolService-1] INFO : Scenario passed: Add a single product to the cart
+2025-04-24 15:23:21 [TestNG-PoolService-7] INFO : Scenario passed: User requests a password reset link without providing email
+2025-04-24 15:23:21 [TestNG-PoolService-6] INFO : Scenario passed: User requests a password reset link using invalid email
+2025-04-24 15:23:23 [TestNG-PoolService-5] INFO : Scenario passed: User requests a password reset link using valid email
+2025-04-24 15:23:24 [TestNG-PoolService-3] INFO : Scenario passed: Add multiple quantities of the same product
+2025-04-24 15:23:25 [TestNG-PoolService-10] INFO : Scenario passed: Submit review without rating but with comment
+2025-04-24 15:23:26 [TestNG-PoolService-4] INFO : Scenario passed: Scenario: User tries to add a product to cart without selecting size
+2025-04-24 15:23:31 [TestNG-PoolService-9] INFO : Scenario passed: Submit review without rating and without comment
+2025-04-24 15:23:32 [TestNG-PoolService-8] INFO : Scenario passed: Submit a valid product review with rating and comment
+2025-04-24 15:23:40 [TestNG-PoolService-6] INFO : Scenario started: Submit review with rating but without comment
+2025-04-24 15:23:45 [TestNG-PoolService-10] INFO : Scenario started: Edit user account details
+2025-04-24 15:23:49 [TestNG-PoolService-9] INFO : Scenario started: Modify the wishlist by removing a product
+2025-04-24 15:23:49 [TestNG-PoolService-8] INFO : Scenario started: Adding new address
+2025-04-24 15:23:55 [TestNG-PoolService-7] INFO : Scenario started: Subscribe or Unsubscribe from newsletter
+2025-04-24 15:24:03 [TestNG-PoolService-4] INFO : Scenario started: Subscribe or Unsubscribe from newsletter
+2025-04-24 15:24:03 [TestNG-PoolService-5] INFO : Scenario started: Change user password
+2025-04-24 15:24:07 [TestNG-PoolService-2] INFO : Scenario passed: Remove a product from the cart
+2025-04-24 15:24:08 [TestNG-PoolService-1] INFO : Scenario started: Change user password without providing new password
+2025-04-24 15:24:13 [TestNG-PoolService-6] INFO : Scenario passed: Submit review with rating but without comment
+2025-04-24 15:24:13 [TestNG-PoolService-10] INFO : Scenario passed: Edit user account details
+2025-04-24 15:24:15 [TestNG-PoolService-9] INFO : product in the wish list
+2025-04-24 15:24:17 [TestNG-PoolService-7] INFO : Scenario passed: Subscribe or Unsubscribe from newsletter
+2025-04-24 15:24:21 [TestNG-PoolService-4] INFO : Scenario passed: Subscribe or Unsubscribe from newsletter
+2025-04-24 15:24:22 [TestNG-PoolService-5] INFO : Scenario passed: Change user password
+2025-04-24 15:24:23 [TestNG-PoolService-1] INFO : Scenario passed: Change user password without providing new password
+2025-04-24 15:24:24 [TestNG-PoolService-8] INFO : Scenario passed: Adding new address
+2025-04-24 15:24:26 [TestNG-PoolService-9] ERROR: Scenario failed: Modify the wishlist by removing a product
+2025-04-24 17:00:37 [TestNG-PoolService-1] INFO : Scenario started: Adding new address
+2025-04-24 17:00:54 [TestNG-PoolService-1] INFO : Scenario passed: Adding new address
+2025-04-24 17:17:45 [TestNG-PoolService-2] INFO : Scenario started: Remove a product from the cart
+2025-04-24 17:17:46 [TestNG-PoolService-9] INFO : Scenario started: Submit review without rating and without comment
+2025-04-24 17:17:46 [TestNG-PoolService-7] INFO : Scenario started: User requests a password reset link without providing email
+2025-04-24 17:17:46 [TestNG-PoolService-10] INFO : Scenario started: Submit review without rating but with comment
+2025-04-24 17:17:46 [TestNG-PoolService-8] INFO : Scenario started: Submit a valid product review with rating and comment
+2025-04-24 17:17:46 [TestNG-PoolService-5] INFO : Scenario started: User requests a password reset link using valid email
+2025-04-24 17:17:46 [TestNG-PoolService-1] INFO : Scenario started: Add a single product to the cart
+2025-04-24 17:17:47 [TestNG-PoolService-3] INFO : Scenario started: Add multiple quantities of the same product
+2025-04-24 17:17:47 [TestNG-PoolService-4] INFO : Scenario started: Scenario: User tries to add a product to cart without selecting size
+2025-04-24 17:17:47 [TestNG-PoolService-6] INFO : Scenario started: User requests a password reset link using invalid email
+2025-04-24 17:18:21 [TestNG-PoolService-1] INFO : Scenario passed: Add a single product to the cart
+2025-04-24 17:18:21 [TestNG-PoolService-4] INFO : Scenario passed: Scenario: User tries to add a product to cart without selecting size
+2025-04-24 17:18:25 [TestNG-PoolService-9] INFO : Scenario passed: Submit review without rating and without comment
+2025-04-24 17:18:26 [TestNG-PoolService-3] INFO : Scenario passed: Add multiple quantities of the same product
+2025-04-24 17:18:27 [TestNG-PoolService-10] INFO : Scenario passed: Submit review without rating but with comment
+2025-04-24 17:18:27 [TestNG-PoolService-2] INFO : Scenario passed: Remove a product from the cart
+2025-04-24 17:18:27 [TestNG-PoolService-6] INFO : Scenario passed: User requests a password reset link using invalid email
+2025-04-24 17:18:28 [TestNG-PoolService-5] INFO : Scenario passed: User requests a password reset link using valid email
+2025-04-24 17:18:36 [TestNG-PoolService-7] INFO : Scenario passed: User requests a password reset link without providing email
+2025-04-24 17:18:41 [TestNG-PoolService-10] INFO : Scenario started: Submit review with rating but without comment
+2025-04-24 17:18:44 [TestNG-PoolService-6] INFO : Scenario started: Edit user account details
+2025-04-24 17:18:44 [TestNG-PoolService-2] INFO : Scenario started: Adding new address
+2025-04-24 17:18:46 [TestNG-PoolService-5] INFO : Scenario started: Modify the wishlist by removing a product
+2025-04-24 17:18:51 [TestNG-PoolService-1] INFO : Scenario started: Subscribe or Unsubscribe from newsletter
+2025-04-24 17:18:53 [TestNG-PoolService-4] INFO : Scenario started: Subscribe or Unsubscribe from newsletter
+2025-04-24 17:18:57 [TestNG-PoolService-3] INFO : Scenario started: Change user password
+2025-04-24 17:19:05 [TestNG-PoolService-5] INFO : product in the wish list
+2025-04-24 17:19:06 [TestNG-PoolService-10] INFO : Scenario passed: Submit review with rating but without comment
+2025-04-24 17:19:06 [TestNG-PoolService-5] INFO : Scenario passed: Modify the wishlist by removing a product
+2025-04-24 17:19:08 [TestNG-PoolService-6] INFO : Scenario passed: Edit user account details
+2025-04-24 17:19:10 [TestNG-PoolService-9] INFO : Scenario started: Change user password without providing new password
+2025-04-24 17:19:11 [TestNG-PoolService-1] INFO : Scenario passed: Subscribe or Unsubscribe from newsletter
+2025-04-24 17:19:11 [TestNG-PoolService-4] INFO : Scenario passed: Subscribe or Unsubscribe from newsletter
+2025-04-24 17:19:13 [TestNG-PoolService-3] INFO : Scenario passed: Change user password
+2025-04-24 17:19:14 [TestNG-PoolService-2] INFO : Scenario passed: Adding new address
+2025-04-24 17:19:22 [TestNG-PoolService-9] INFO : Scenario passed: Change user password without providing new password
+2025-04-24 17:20:31 [TestNG-PoolService-8] ERROR: Scenario failed: Submit a valid product review with rating and comment
+2025-04-24 17:23:50 [TestNG-PoolService-8] INFO : Scenario started: Submit a valid product review with rating and comment
+2025-04-24 17:23:50 [TestNG-PoolService-7] INFO : Scenario started: User requests a password reset link without providing email
+2025-04-24 17:23:52 [TestNG-PoolService-10] INFO : Scenario started: Submit review without rating but with comment
+2025-04-24 17:23:52 [TestNG-PoolService-1] INFO : Scenario started: Add a single product to the cart
+2025-04-24 17:23:52 [TestNG-PoolService-3] INFO : Scenario started: Add multiple quantities of the same product
+2025-04-24 17:23:52 [TestNG-PoolService-5] INFO : Scenario started: User requests a password reset link using valid email
+2025-04-24 17:23:52 [TestNG-PoolService-2] INFO : Scenario started: Remove a product from the cart
+2025-04-24 17:23:52 [TestNG-PoolService-4] INFO : Scenario started: Scenario: User tries to add a product to cart without selecting size
+2025-04-24 17:23:53 [TestNG-PoolService-9] INFO : Scenario started: Submit review without rating and without comment
+2025-04-24 17:23:53 [TestNG-PoolService-6] INFO : Scenario started: User requests a password reset link using invalid email
+2025-04-24 17:24:15 [TestNG-PoolService-7] INFO : Scenario passed: User requests a password reset link without providing email
+2025-04-24 17:24:20 [TestNG-PoolService-5] INFO : Scenario passed: User requests a password reset link using valid email
+2025-04-24 17:24:21 [TestNG-PoolService-9] INFO : Scenario passed: Submit review without rating and without comment
+2025-04-24 17:24:21 [TestNG-PoolService-4] INFO : Scenario passed: Scenario: User tries to add a product to cart without selecting size
+2025-04-24 17:24:22 [TestNG-PoolService-1] INFO : Scenario passed: Add a single product to the cart
+2025-04-24 17:24:22 [TestNG-PoolService-6] INFO : Scenario passed: User requests a password reset link using invalid email
+2025-04-24 17:24:23 [TestNG-PoolService-3] INFO : Scenario passed: Add multiple quantities of the same product
+2025-04-24 17:24:24 [TestNG-PoolService-10] INFO : Scenario passed: Submit review without rating but with comment
+2025-04-24 17:24:29 [TestNG-PoolService-4] INFO : Scenario started: Submit review with rating but without comment
+2025-04-24 17:24:29 [TestNG-PoolService-3] INFO : Scenario started: Edit user account details
+2025-04-24 17:24:31 [TestNG-PoolService-6] INFO : Scenario started: Adding new address
+2025-04-24 17:24:39 [TestNG-PoolService-8] INFO : Scenario passed: Submit a valid product review with rating and comment
+2025-04-24 17:24:42 [TestNG-PoolService-1] INFO : Scenario started: Modify the wishlist by removing a product
+2025-04-24 17:24:43 [TestNG-PoolService-9] INFO : Scenario started: Subscribe or Unsubscribe from newsletter
+2025-04-24 17:24:55 [TestNG-PoolService-10] INFO : Scenario started: Change user password
+2025-04-24 17:24:58 [TestNG-PoolService-7] INFO : Scenario started: Subscribe or Unsubscribe from newsletter
+2025-04-24 17:25:06 [TestNG-PoolService-5] INFO : Scenario started: Change user password without providing new password
+2025-04-24 17:25:09 [TestNG-PoolService-3] INFO : Scenario passed: Edit user account details
+2025-04-24 17:25:22 [TestNG-PoolService-1] INFO : product in the wish list
+2025-04-24 17:25:24 [TestNG-PoolService-5] INFO : Scenario passed: Change user password without providing new password
+2025-04-24 17:25:24 [TestNG-PoolService-10] INFO : Scenario passed: Change user password
+2025-04-24 17:25:27 [TestNG-PoolService-7] INFO : Scenario passed: Subscribe or Unsubscribe from newsletter
+2025-04-24 17:25:27 [TestNG-PoolService-1] INFO : Scenario passed: Modify the wishlist by removing a product
+2025-04-24 17:25:27 [TestNG-PoolService-9] INFO : Scenario passed: Subscribe or Unsubscribe from newsletter
+2025-04-24 17:25:27 [TestNG-PoolService-6] INFO : Scenario passed: Adding new address
+2025-04-24 17:25:30 [TestNG-PoolService-4] ERROR: Scenario failed: Submit review with rating but without comment
+2025-04-24 17:26:25 [TestNG-PoolService-2] ERROR: Scenario failed: Remove a product from the cart
+2025-04-24 19:47:54 [TestNG-PoolService-2] INFO : Scenario started: Remove a product from the cart
+2025-04-24 19:47:56 [TestNG-PoolService-4] INFO : Scenario started: Scenario: User tries to add a product to cart without selecting size
+2025-04-24 19:47:56 [TestNG-PoolService-6] INFO : Scenario started: User requests a password reset link using invalid email
+2025-04-24 19:47:56 [TestNG-PoolService-8] INFO : Scenario started: Submit a valid product review with rating and comment
+2025-04-24 19:47:56 [TestNG-PoolService-5] INFO : Scenario started: User requests a password reset link using valid email
+2025-04-24 19:47:57 [TestNG-PoolService-9] INFO : Scenario started: Submit review without rating and without comment
+2025-04-24 19:47:57 [TestNG-PoolService-1] INFO : Scenario started: Add a single product to the cart
+2025-04-24 19:47:57 [TestNG-PoolService-7] INFO : Scenario started: User requests a password reset link without providing email
+2025-04-24 19:47:57 [TestNG-PoolService-10] INFO : Scenario started: Submit review without rating but with comment
+2025-04-24 19:48:02 [TestNG-PoolService-3] INFO : Scenario started: Add multiple quantities of the same product
+2025-04-24 19:48:48 [TestNG-PoolService-4] INFO : Scenario passed: Scenario: User tries to add a product to cart without selecting size
+2025-04-24 19:48:51 [TestNG-PoolService-6] INFO : Scenario passed: User requests a password reset link using invalid email
+2025-04-24 19:48:53 [TestNG-PoolService-3] INFO : Scenario passed: Add multiple quantities of the same product
+2025-04-24 19:49:12 [TestNG-PoolService-2] INFO : Scenario passed: Remove a product from the cart
+2025-04-24 19:49:14 [TestNG-PoolService-10] INFO : Scenario passed: Submit review without rating but with comment
+2025-04-24 19:49:17 [TestNG-PoolService-7] INFO : Scenario passed: User requests a password reset link without providing email
+2025-04-24 19:49:17 [TestNG-PoolService-1] INFO : Scenario passed: Add a single product to the cart
+2025-04-24 19:49:18 [TestNG-PoolService-5] INFO : Scenario passed: User requests a password reset link using valid email
+2025-04-24 19:49:21 [TestNG-PoolService-6] INFO : Scenario started: Submit review with rating but without comment
+2025-04-24 19:49:23 [TestNG-PoolService-3] INFO : Scenario started: Edit user account details
+2025-04-24 19:49:27 [TestNG-PoolService-4] INFO : Scenario started: Adding new address
+2025-04-24 19:49:32 [TestNG-PoolService-2] INFO : Scenario started: Modify the wishlist by removing a product
+2025-04-24 19:49:38 [TestNG-PoolService-10] INFO : Scenario started: Subscribe or Unsubscribe from newsletter
+2025-04-24 19:49:39 [TestNG-PoolService-1] INFO : Scenario started: Subscribe or Unsubscribe from newsletter
+2025-04-24 19:49:44 [TestNG-PoolService-5] INFO : Scenario started: Change user password
+2025-04-24 19:49:49 [TestNG-PoolService-3] INFO : Scenario passed: Edit user account details
+2025-04-24 19:49:54 [TestNG-PoolService-2] INFO : product in the wish list
+2025-04-24 19:49:54 [TestNG-PoolService-7] INFO : Scenario started: Change user password without providing new password
+2025-04-24 19:49:56 [TestNG-PoolService-6] INFO : Scenario passed: Submit review with rating but without comment
+2025-04-24 19:50:03 [TestNG-PoolService-4] INFO : Scenario passed: Adding new address
+2025-04-24 19:50:04 [TestNG-PoolService-1] INFO : Scenario passed: Subscribe or Unsubscribe from newsletter
+2025-04-24 19:50:05 [TestNG-PoolService-10] INFO : Scenario passed: Subscribe or Unsubscribe from newsletter
+2025-04-24 19:50:05 [TestNG-PoolService-5] INFO : Scenario passed: Change user password
+2025-04-24 19:50:05 [TestNG-PoolService-2] ERROR: Scenario failed: Modify the wishlist by removing a product
+2025-04-24 19:50:08 [TestNG-PoolService-7] INFO : Scenario passed: Change user password without providing new password
+2025-04-24 19:50:35 [TestNG-PoolService-9] ERROR: Scenario failed: Submit review without rating and without comment
+2025-04-24 19:50:56 [TestNG-PoolService-8] ERROR: Scenario failed: Submit a valid product review with rating and comment
+2025-04-24 20:34:37 [TestNG-PoolService-6] INFO : Scenario started: User requests a password reset link using invalid email
+2025-04-24 20:34:38 [TestNG-PoolService-1] INFO : Scenario started: Add a single product to the cart
+2025-04-24 20:34:38 [TestNG-PoolService-7] INFO : Scenario started: User requests a password reset link without providing email
+2025-04-24 20:34:38 [TestNG-PoolService-4] INFO : Scenario started: Scenario: User tries to add a product to cart without selecting size
+2025-04-24 20:34:38 [TestNG-PoolService-9] INFO : Scenario started: Submit review without rating and without comment
+2025-04-24 20:34:38 [TestNG-PoolService-8] INFO : Scenario started: Submit a valid product review with rating and comment
+2025-04-24 20:34:38 [TestNG-PoolService-3] INFO : Scenario started: Add multiple quantities of the same product
+2025-04-24 20:34:38 [TestNG-PoolService-2] INFO : Scenario started: Remove a product from the cart
+2025-04-24 20:34:38 [TestNG-PoolService-10] INFO : Scenario started: Submit review without rating but with comment
+2025-04-24 20:34:39 [TestNG-PoolService-5] INFO : Scenario started: User requests a password reset link using valid email
+2025-04-24 20:35:01 [TestNG-PoolService-6] INFO : Scenario passed: User requests a password reset link using invalid email
+2025-04-24 20:35:06 [TestNG-PoolService-5] INFO : Scenario passed: User requests a password reset link using valid email
+2025-04-24 20:35:06 [TestNG-PoolService-7] INFO : Scenario passed: User requests a password reset link without providing email
+2025-04-24 20:35:08 [TestNG-PoolService-4] INFO : Scenario passed: Scenario: User tries to add a product to cart without selecting size
+2025-04-24 20:35:10 [TestNG-PoolService-1] INFO : Scenario passed: Add a single product to the cart
+2025-04-24 20:35:11 [TestNG-PoolService-10] INFO : Scenario passed: Submit review without rating but with comment
+2025-04-24 20:35:11 [TestNG-PoolService-3] INFO : Scenario passed: Add multiple quantities of the same product
+2025-04-24 20:35:11 [TestNG-PoolService-8] INFO : Scenario passed: Submit a valid product review with rating and comment
+2025-04-24 20:35:17 [TestNG-PoolService-4] INFO : Scenario started: Edit user account details
+2025-04-24 20:35:18 [TestNG-PoolService-7] INFO : Scenario started: Adding new address
+2025-04-24 20:35:18 [TestNG-PoolService-6] INFO : Scenario started: Submit review with rating but without comment
+2025-04-24 20:35:20 [TestNG-PoolService-9] INFO : Scenario passed: Submit review without rating and without comment
+2025-04-24 20:35:25 [TestNG-PoolService-3] INFO : Scenario started: Modify the wishlist by removing a product
+2025-04-24 20:35:27 [TestNG-PoolService-8] INFO : Scenario started: Subscribe or Unsubscribe from newsletter
+2025-04-24 20:35:30 [TestNG-PoolService-1] INFO : Scenario started: Subscribe or Unsubscribe from newsletter
+2025-04-24 20:35:37 [TestNG-PoolService-10] INFO : Scenario started: Change user password
+2025-04-24 20:35:42 [TestNG-PoolService-5] INFO : Scenario started: Change user password without providing new password
+2025-04-24 20:35:46 [TestNG-PoolService-2] INFO : Scenario passed: Remove a product from the cart
+2025-04-24 20:35:47 [TestNG-PoolService-3] INFO : product in the wish list
+2025-04-24 20:35:50 [TestNG-PoolService-3] INFO : Scenario passed: Modify the wishlist by removing a product
+2025-04-24 20:35:51 [TestNG-PoolService-4] INFO : Scenario passed: Edit user account details
+2025-04-24 20:35:56 [TestNG-PoolService-8] INFO : Scenario passed: Subscribe or Unsubscribe from newsletter
+2025-04-24 20:35:56 [TestNG-PoolService-1] INFO : Scenario passed: Subscribe or Unsubscribe from newsletter
+2025-04-24 20:35:57 [TestNG-PoolService-5] INFO : Scenario passed: Change user password without providing new password
+2025-04-24 20:35:58 [TestNG-PoolService-10] INFO : Scenario passed: Change user password
+2025-04-24 20:36:00 [TestNG-PoolService-7] INFO : Scenario passed: Adding new address
+2025-04-24 20:36:00 [TestNG-PoolService-6] INFO : Scenario passed: Submit review with rating but without comment
