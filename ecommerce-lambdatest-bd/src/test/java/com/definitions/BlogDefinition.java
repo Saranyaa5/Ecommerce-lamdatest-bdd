@@ -61,7 +61,6 @@ public class BlogDefinition {
     public void clicks_on_the_post_comment_button() {
         blogAction.clickPostComment();
     }
-
     @Then("the user should see the warning message {string} and {string}")
     public void the_user_should_see_the_warning_message_and(String expectedWarning, String check) {
     	 String actualWarning = "";
@@ -108,6 +107,4 @@ public class BlogDefinition {
     public void the_product_shopping_page_is_displayed() {
         Assert.assertTrue("Product name is not displayed on the shopping page", blogAction.isProductNameDisplayed());
     }
-
-
 }

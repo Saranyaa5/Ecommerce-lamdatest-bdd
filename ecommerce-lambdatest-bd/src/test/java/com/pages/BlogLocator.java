@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class BlogLocator {
+	
 @FindBy(xpath="(//span[@class='title'][normalize-space()='Blog'])[2]")
 public WebElement blogbutton;
 
@@ -21,7 +22,6 @@ public WebElement comment;
 
 @FindBy(xpath="(//button[normalize-space()='Post comment'])[1]")
 public WebElement postComment;
-
 
 @FindBy(css="#form-comment .alert-success")
 public WebElement validMessage;
@@ -41,11 +41,17 @@ public WebElement business;
 @FindBy(xpath="//h1[@class='h1']")
 public WebElement businessHeading;
 
-@FindBy(xpath="//*[@id=\"swiper-wrapper-d2433b3b52f319d3\"]/div[1]/div/div[2]/h4/a")
+@FindBy(xpath="//div[h1]/h1")
+public WebElement productName;
+
+@FindBy(xpath="//img[contains(@src,'inner-banner-1920x200.webp')]")
 public WebElement img;
 
-@FindBy(xpath="//div[@aria-label='1 / 10']//a[@class='text-ellipsis-2'][normalize-space()='iMac']")
-public WebElement productName;
+@FindBy(xpath="(//div/div[@class='invalid-feedback'])[1]")
+public WebElement errorName;
+
+@FindBy(xpath="(//div/div[@class='invalid-feedback'])[3]")
+public WebElement errorComment;
 
 }
 
