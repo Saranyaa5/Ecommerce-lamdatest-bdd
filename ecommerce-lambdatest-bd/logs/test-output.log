@@ -14478,3 +14478,9 @@
 2025-04-29 08:02:47 [TestNG-PoolService-6] INFO : Scenario started: User tries to login with valid credentials and logs out
 2025-04-29 08:02:48 [TestNG-PoolService-5] INFO : Scenario passed: User tries to login with invalid credentials
 2025-04-29 08:02:58 [TestNG-PoolService-6] INFO : Scenario passed: User tries to login with valid credentials and logs out
+2025-04-29 21:24:22 [main] INFO : Scenario started: To assert special offer button in homepage
+2025-04-29 21:24:26 [main] INFO : Scenario passed: To assert special offer button in homepage
+2025-04-29 21:44:31 [TestNG-PoolService-1] INFO : Scenario started: To assert special offer button in homepage
+2025-04-29 21:49:48 [TestNG-PoolService-1] INFO : Scenario started: To assert special offer button in homepage
+2025-04-29 21:55:50 [TestNG-PoolService-1] INFO : Scenario started: To assert special offer button in homepage
+2025-04-29 21:55:56 [TestNG-PoolService-1] INFO : Scenario passed: To assert special offer button in homepage
