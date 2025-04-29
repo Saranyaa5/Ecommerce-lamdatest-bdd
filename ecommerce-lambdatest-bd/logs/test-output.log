@@ -14438,3 +14438,49 @@
 2025-04-29 07:32:10 [TestNG-PoolService-1] INFO : Scenario passed: Register with invalid inputs
 2025-04-29 07:32:11 [TestNG-PoolService-6] INFO : Assertion Passed for 'Not checking privacy policy': Expected and actual message matched: 'Warning: You must agree to the Privacy Policy!'
 2025-04-29 07:32:11 [TestNG-PoolService-6] INFO : Scenario passed: Register with valid inputs  with out checking privacy policy
+2025-04-29 08:01:22 [TestNG-PoolService-4] INFO : Scenario started: Submitting a blog comment without filling required details
+2025-04-29 08:01:23 [TestNG-PoolService-3] INFO : Scenario started: Adding a valid comment to the blog
+2025-04-29 08:01:23 [TestNG-PoolService-2] INFO : Scenario started: Register a user and register as affiliate with valid and invalid inputs
+2025-04-29 08:01:24 [TestNG-PoolService-9] INFO : Scenario started: Search functionality with valid inputs
+2025-04-29 08:01:24 [TestNG-PoolService-10] INFO : Scenario started: Search functionality with invalid inputs
+2025-04-29 08:01:24 [TestNG-PoolService-6] INFO : Scenario started: Submitting a blog comment without filling required details
+2025-04-29 08:01:28 [TestNG-PoolService-1] INFO : Scenario started: Register a user and register as affiliate with valid and invalid inputs
+2025-04-29 08:01:41 [TestNG-PoolService-8] INFO : Scenario started: clicking the product image to navigate to product shopping page
+2025-04-29 08:01:56 [TestNG-PoolService-9] INFO : Scenario passed: Search functionality with valid inputs
+2025-04-29 08:01:57 [TestNG-PoolService-10] INFO : Scenario passed: Search functionality with invalid inputs
+2025-04-29 08:02:01 [TestNG-PoolService-6] INFO : Scenario passed: Submitting a blog comment without filling required details
+2025-04-29 08:02:03 [TestNG-PoolService-5] INFO : Scenario started: Submitting a blog comment without filling required details
+2025-04-29 08:02:04 [TestNG-PoolService-3] INFO : Scenario passed: Adding a valid comment to the blog
+2025-04-29 08:02:05 [TestNG-PoolService-8] INFO : Scenario passed: clicking the product image to navigate to product shopping page
+2025-04-29 08:02:05 [TestNG-PoolService-7] INFO : Scenario started: category wise selection and assertion
+2025-04-29 08:02:07 [TestNG-PoolService-4] INFO : Scenario passed: Submitting a blog comment without filling required details
+2025-04-29 08:02:12 [TestNG-PoolService-1] INFO : Assertion Passed: Expected message 'Your Account Has Been Created!' is displayed successfully.
+2025-04-29 08:02:14 [TestNG-PoolService-3] INFO : Scenario started: Search functionality with unnecessary indentation in search
+2025-04-29 08:02:15 [TestNG-PoolService-10] INFO : Scenario started: Search functionality with case sensitive inputs
+2025-04-29 08:02:17 [TestNG-PoolService-2] INFO : Assertion Passed: Expected message 'Your Account Has Been Created!' is displayed successfully.
+2025-04-29 08:02:17 [TestNG-PoolService-7] INFO : Scenario passed: category wise selection and assertion
+2025-04-29 08:02:22 [TestNG-PoolService-6] INFO : Scenario started: Search functionality by category as input
+2025-04-29 08:02:24 [TestNG-PoolService-9] INFO : Scenario started: User tries to login with valid credentials
+2025-04-29 08:02:24 [TestNG-PoolService-8] INFO : Scenario started: User tries to login with invalid credentials
+2025-04-29 08:02:26 [TestNG-PoolService-4] INFO : Scenario started: User tries to login with invalid credentials
+2025-04-29 08:02:26 [TestNG-PoolService-5] INFO : Scenario passed: Submitting a blog comment without filling required details
+2025-04-29 08:02:31 [TestNG-PoolService-10] INFO : Scenario passed: Search functionality with case sensitive inputs
+2025-04-29 08:02:33 [TestNG-PoolService-3] INFO : Scenario passed: Search functionality with unnecessary indentation in search
+2025-04-29 08:02:35 [TestNG-PoolService-1] INFO : Scenario passed: Register a user and register as affiliate with valid and invalid inputs
+2025-04-29 08:02:36 [TestNG-PoolService-7] INFO : Scenario started: User tries to login with invalid credentials
+2025-04-29 08:02:39 [TestNG-PoolService-6] INFO : Scenario passed: Search functionality by category as input
+2025-04-29 08:02:40 [TestNG-PoolService-5] INFO : Scenario started: User tries to login with invalid credentials
+2025-04-29 08:02:41 [TestNG-PoolService-4] INFO : Scenario passed: User tries to login with invalid credentials
+2025-04-29 08:02:43 [TestNG-PoolService-2] INFO : Scenario passed: Register a user and register as affiliate with valid and invalid inputs
+2025-04-29 08:02:43 [TestNG-PoolService-9] INFO : Scenario passed: User tries to login with valid credentials
+2025-04-29 08:02:43 [TestNG-PoolService-8] INFO : Scenario passed: User tries to login with invalid credentials
+2025-04-29 08:02:46 [TestNG-PoolService-7] INFO : Scenario passed: User tries to login with invalid credentials
+2025-04-29 08:02:47 [TestNG-PoolService-6] INFO : Scenario started: User tries to login with valid credentials and logs out
+2025-04-29 08:02:48 [TestNG-PoolService-5] INFO : Scenario passed: User tries to login with invalid credentials
+2025-04-29 08:02:58 [TestNG-PoolService-6] INFO : Scenario passed: User tries to login with valid credentials and logs out
+2025-04-29 21:24:22 [main] INFO : Scenario started: To assert special offer button in homepage
+2025-04-29 21:24:26 [main] INFO : Scenario passed: To assert special offer button in homepage
+2025-04-29 21:44:31 [TestNG-PoolService-1] INFO : Scenario started: To assert special offer button in homepage
+2025-04-29 21:49:48 [TestNG-PoolService-1] INFO : Scenario started: To assert special offer button in homepage
+2025-04-29 21:55:50 [TestNG-PoolService-1] INFO : Scenario started: To assert special offer button in homepage
+2025-04-29 21:55:56 [TestNG-PoolService-1] INFO : Scenario passed: To assert special offer button in homepage
