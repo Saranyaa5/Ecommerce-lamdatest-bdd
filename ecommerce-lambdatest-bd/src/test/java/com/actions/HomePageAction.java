@@ -20,10 +20,11 @@ public class HomePageAction {
         homePageLocator = new HomePageLocator();
         driver = HelperClass.getDriver();
         PageFactory.initElements(driver, homePageLocator);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        
     }
     
     public void block1click() {
+    	wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(homePageLocator.blk1Shopnow))
             .click();
     }
@@ -33,12 +34,27 @@ public class HomePageAction {
     }
     
     public void clickMpowBanner() {
+    	wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(homePageLocator.mpowBanner))
             .click();
     }
     
     public String getProductTitle() {
+    	 wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         return wait.until(ExpectedConditions.visibilityOf(homePageLocator.productTitle))
             .getText();
     }
+    
+    public void clickHeadphonesBanner() {
+    	wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        wait.until(ExpectedConditions.elementToBeClickable(homePageLocator.HeadphonesBanner))
+            .click();
+    }
+    
+    public String getHeadPhonesProductTitle() {
+   	 wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+       return wait.until(ExpectedConditions.visibilityOf(homePageLocator.productTitle))
+           .getText();
+   }
+    
 }

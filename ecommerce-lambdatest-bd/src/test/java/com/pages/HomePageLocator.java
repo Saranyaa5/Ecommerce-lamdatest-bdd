@@ -12,4 +12,11 @@ public class HomePageLocator {
     
     @FindBy(xpath = "//*[@id='entry_216816']/h1")
     public WebElement productTitle;
+    
+    @FindBy(id="entry_217976")
+    public WebElement HeadphonesBanner;
+    
+    @FindBy(xpath="//*[@id='entry_216816']/h1")
+    public WebElement headPhones;
+    
 }

@@ -54,4 +54,23 @@ public class HomePageDefinition {
             throw e;
         }
 	}
+	
+	@When("the user clicks hp25 Headphones poster")
+	public void the_user_clicks_hp25_headphones_poster() {
+		homePageAction.clickHeadphonesBanner();
+	}
+
+	@Then("the user should see the {string} product page")
+	public void the_user_should_see_the_product_page(String string) {
+		try {
+            String actualTitle = homePageAction.getHeadPhonesProductTitle();
+            String expectedTitle = string;
+            
+            Assert.assertEquals(actualTitle, expectedTitle);
+            logger.info("Successfully verified MPOW product page");
+        } catch(Exception e) {
+            logger.error("Failed to verify MPOW product page: " + e.getMessage());
+            throw e;
+        }
+	}
 }
