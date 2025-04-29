@@ -111,7 +111,7 @@ public class BlogAction {
 			return "Success message element not found";
 		}
 	}
-
+	
 	public String getWarning1() {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -174,6 +174,4 @@ public class BlogAction {
 	        return false;
 	    }
 	}
-
-
 }

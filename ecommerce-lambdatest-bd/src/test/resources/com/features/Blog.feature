@@ -36,11 +36,12 @@ Examples:
   When the user clicks on the Blog button
   And the user selects category
   Then the user should see article page
+
   
+  @image_selection_on_blog
+  Scenario: clicking the product image to navigate to product shopping page
+  When the user clicks on the Blog button
+  And clicks on the product image
+  Then the product shopping page is displayed
   
-  #@image_selection_on_blog
-  #Scenario: clicking the product image to navigate to product shopping page
-  #When the user clicks on the Blog button
-  #And clicks on the product image
-  #Then the product shopping page is displayed
-  
+ 
