@@ -4,18 +4,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class HomePageLocator {
-
-	@FindBy(css="#entry_217964 a:first-of-type")
-	public WebElement blk1Shopnow;
-	
-//	@FindBy(css="#entry_217967 > a")
-//	@FindBy(css="#entry_217967")
-//	@FindBy(css="#entry_217967 > a > div > img")
-	@FindBy(xpath="//*[@id='entry_217967']/a")
-	public WebElement blk2Shopnow;
-	
-	@FindBy(css="#entry_216815 > div : first-of-type")
-	public WebElement blk2redirPage;
-	
-	
+    @FindBy(css="#entry_217964 a:first-of-type")
+    public WebElement blk1Shopnow;
+ 
+    @FindBy(id = "entry_217967")
+    public WebElement mpowBanner;
+    
+    @FindBy(xpath = "//*[@id='entry_216816']/h1")
+    public WebElement productTitle;
+    
+    @FindBy(id="entry_217976")
+    public WebElement HeadphonesBanner;
+    
+    @FindBy(xpath="//*[@id='entry_216816']/h1")
+    public WebElement headPhones;
+    
 }

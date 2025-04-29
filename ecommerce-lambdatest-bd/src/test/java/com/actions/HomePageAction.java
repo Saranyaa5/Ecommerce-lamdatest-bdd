@@ -1,39 +1,60 @@
 package com.actions;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.pages.HomePageLocator;
 import com.utilities.HelperClass;
 
+import java.time.Duration;
+
 public class HomePageAction {
 
-	HomePageLocator homePageLocator=null;
-	WebDriver driver;
-	
-	public HomePageAction(){
-		homePageLocator=new HomePageLocator();
-		PageFactory.initElements(HelperClass.getDriver(),homePageLocator);
-		driver=HelperClass.getDriver();
-	}
-	
-	
-	public void block1click() {
-		homePageLocator.blk1Shopnow.click();
-		
-	}
-	public String block1homepageUrl() {
-		return driver.getCurrentUrl();
-		
-	}
-	
-	public String block2text() {
-		return homePageLocator.blk2redirPage.getText();
-		
-	}
-	public void block2click() {
-		homePageLocator.blk2Shopnow.click();
-		
-	}
+    HomePageLocator homePageLocator = null;
+    WebDriver driver;
+    WebDriverWait wait;
+    
+    public HomePageAction() {
+        homePageLocator = new HomePageLocator();
+        driver = HelperClass.getDriver();
+        PageFactory.initElements(driver, homePageLocator);
+        
+    }
+    
+    public void block1click() {
+    	wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(homePageLocator.blk1Shopnow))
+            .click();
+    }
+    
+    public String block1homepageUrl() {
+        return driver.getCurrentUrl();
+    }
+    
+    public void clickMpowBanner() {
+    	wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(homePageLocator.mpowBanner))
+            .click();
+    }
+    
+    public String getProductTitle() {
+    	 wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        return wait.until(ExpectedConditions.visibilityOf(homePageLocator.productTitle))
+            .getText();
+    }
+    
+    public void clickHeadphonesBanner() {
+    	wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        wait.until(ExpectedConditions.elementToBeClickable(homePageLocator.HeadphonesBanner))
+            .click();
+    }
+    
+    public String getHeadPhonesProductTitle() {
+   	 wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+       return wait.until(ExpectedConditions.visibilityOf(homePageLocator.productTitle))
+           .getText();
+   }
+    
 }
