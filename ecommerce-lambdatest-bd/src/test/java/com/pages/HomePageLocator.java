@@ -19,4 +19,11 @@ public class HomePageLocator {
     @FindBy(xpath="//*[@id='entry_216816']/h1")
     public WebElement headPhones;
     
+    @FindBy(css = "a.carousel-control-next[href='#mz-carousel-217960']")
+    public WebElement nextButton;
+    
+    @FindBy(css = "div.carousel-item.active img")
+    public WebElement activeBanner;
+    
+    
 }
