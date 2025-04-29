@@ -15,6 +15,11 @@ Feature: Saranya_20APR2025_LamdaTesters_Feature file for HomePage Assertion
   When the user clicks shop now in second block
   Then the user should see the "Canon EOS 5D" page
   
+  @HeadPhonesBlock
+  Scenario: To redirected to the product page after clicking Head phones poster
+  When the user clicks hp25 Headphones poster
+  Then the user should see the "HP LP3065" product page
+  
   
   
   
