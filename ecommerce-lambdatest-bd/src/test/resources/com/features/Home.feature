@@ -1,5 +1,5 @@
 @HomePage
-Feature: Feature file for HomePage Assertion
+Feature: Saranya_20APR2025_LamdaTesters_Feature file for HomePage Assertion
   I want to use this template for my feature file
   
   Background:
@@ -16,5 +16,5 @@ Feature: Feature file for HomePage Assertion
   Then the user should see the "Canon EOS 5D" page
   
   
-
-     
+  
+  

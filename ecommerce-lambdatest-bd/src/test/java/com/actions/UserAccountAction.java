@@ -193,25 +193,29 @@ public class UserAccountAction {
     // Fill in new address details
     public void enterAddressDetails(String firstName, String lastName, String address, String city, String postcode) {
         try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
             userAccountLocator.getFirstNameField.sendKeys(firstName);
             userAccountLocator.getLastNameField.sendKeys(lastName);
             userAccountLocator.getAddressField.sendKeys(address);
             userAccountLocator.getCityField.sendKeys(city);
             userAccountLocator.getPostcodeField.sendKeys(postcode);
-            userAccountLocator.countrySelect.click();
-            userAccountLocator.unitedstates.click();
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
-         // Wait for state dropdown to be visible AND clickable
-         wait.until(ExpectedConditions.visibilityOf(userAccountLocator.state));
-         wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.state)).click();
+            // Click country dropdown and select United States
+            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.countrySelect)).click();
+            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.unitedstates)).click();
 
-         // Wait for the Abeerdan option to be visible AND clickable
-         wait.until(ExpectedConditions.visibilityOf(userAccountLocator.Abeerdan));
-         wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.Abeerdan)).click();
+            // Wait until state dropdown is visible and clickable
+            wait.until(ExpectedConditions.visibilityOf(userAccountLocator.state));
+            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.state)).click();
+
+            // Wait until Abeerdan is visible and clickable
+            wait.until(ExpectedConditions.visibilityOf(userAccountLocator.Abeerdan));
+            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.Abeerdan)).click();
 
         } catch (Exception e) {
             System.out.println("Error entering address details: " + e.getMessage());
         }
     }
+
 }
