@@ -19,4 +19,18 @@ public class HomePageLocator {
     @FindBy(xpath="//*[@id='entry_216816']/h1")
     public WebElement headPhones;
     
+    @FindBy(css = "a.carousel-control-next[href='#mz-carousel-217960']")
+    public WebElement nextButton;
+    
+    @FindBy(css = "div.carousel-item.active img")
+    public WebElement activeBanner;
+    
+    @FindBy(xpath = "//a[.//img[@alt='Laptops']]") 
+//    @FindBy(xpath="//*[@id=\"swiper-wrapper-724637ff468e749c\"]/div[2]/a/figure/div[1]/img")
+    public WebElement trendingProduct;
+    
+    @FindBy(xpath="//*[@id='entry_212395']/div/p")
+    public WebElement trendingProductParagraph;
+    
+    
 }
