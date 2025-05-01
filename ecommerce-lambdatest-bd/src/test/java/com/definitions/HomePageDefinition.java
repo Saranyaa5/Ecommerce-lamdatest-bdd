@@ -73,4 +73,18 @@ public class HomePageDefinition {
             throw e;
         }
 	}
+	@When("the user clicks the left control arrow on the banner")
+	public void the_user_clicks_the_left_control_arrow_on_the_banner() {
+		homePageAction.clickNextButton();
+	}
+
+	@Then("the {string} banner should be displayed")
+	public void the_banner_should_be_displayed(String string) throws InterruptedException {
+		Thread.sleep(3000);
+		String actualBannerAltText =homePageAction.getActiveBannerAltText();
+		System.out.println(actualBannerAltText);
+        Assert.assertEquals(string, actualBannerAltText);
+    }
+	
+
 }
