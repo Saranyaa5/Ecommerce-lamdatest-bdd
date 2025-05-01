@@ -25,5 +25,12 @@ public class HomePageLocator {
     @FindBy(css = "div.carousel-item.active img")
     public WebElement activeBanner;
     
+    @FindBy(xpath = "//a[.//img[@alt='Laptops']]") 
+//    @FindBy(xpath="//*[@id=\"swiper-wrapper-724637ff468e749c\"]/div[2]/a/figure/div[1]/img")
+    public WebElement trendingProduct;
+    
+    @FindBy(xpath="//*[@id='entry_212395']/div/p")
+    public WebElement trendingProductParagraph;
+    
     
 }

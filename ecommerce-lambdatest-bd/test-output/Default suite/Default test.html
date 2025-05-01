@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>57/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Apr 30 00:52:14 IST 2025</td>
+<td>Started on:</td><td>Thu May 01 17:14:14 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>135 seconds (135803 ms)</td>
+<tr><td>Total time:</td><td>74 seconds (74103 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,52 +76,202 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To Add the products to comparision list", "Saranya_15APR2025_LambdaTesters_Product_compare_functionality"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span data-toggle=&quot;tooltip&quot; title=&quot;Compare&quot; class=&quot;icon svg-icon&quot; style=&quot;width:35px;height:35px;&quot;&gt;...&lt;/span&gt; is not clickable at point (1208, 17). Other element would receive the click: &lt;div class=&quot;toast-header&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=136.0.7103.48)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2ef1a0c4a0f9974a34fafcbae110b91f, clickElement {id=f.83A34E0D87D99B4F65DA2FD402112969.d.26EB4C23C4346BE9FB70738BC757A6F0.e.304}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.48, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63962}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63962/devtoo..., se:cdpVersion: 136.0.7103.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2ef1a0c4a0f9974a34fafcbae110b91f)] -&gt; xpath: //*[@id=&apos;entry_217823&apos;]/a/span]
+Session ID: 2ef1a0c4a0f9974a34fafcbae110b91f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
+	at com.actions.ProductCompareAction.clickComparionArrow(ProductCompareAction.java:99)
+	at com.definitions.ProductCompareDefinition.the_user_clicks_the_comparision_arrow(ProductCompareDefinition.java:42)
+	at ✽.the user clicks the comparision arrow(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/ProductCompare.feature:18)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1631716611", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1631716611'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span data-toggle=&quot;tooltip&quot; title=&quot;Compare&quot; class=&quot;icon svg-icon&quot; style=&quot;width:35px;height:35px;&quot;&gt;...&lt;/span&gt; is not clickable at point (1208, 17). Other element would receive the click: &lt;div class=&quot;toast-header&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=136.0.7103.48)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2ef1a0c4a0f9974a34fafcbae110b91f, clickElement {id=f.83A34E0D87D99B4F65DA2FD402112969.d.26EB4C23C4346BE9FB70738BC757A6F0.e.304}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.48, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63962}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63962/devtoo..., se:cdpVersion: 136.0.7103.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2ef1a0c4a0f9974a34fafcbae110b91f)] -&gt; xpath: //*[@id=&apos;entry_217823&apos;]/a/span]
+Session ID: 2ef1a0c4a0f9974a34fafcbae110b91f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
+	at com.actions.ProductCompareAction.clickComparionArrow(ProductCompareAction.java:99)
+	at com.definitions.ProductCompareDefinition.the_user_clicks_the_comparision_arrow(ProductCompareDefinition.java:42)
+	at ✽.the user clicks the comparision arrow(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/ProductCompare.feature:18)
+</pre></div></td>
+<td>39</td>
+<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To checkout the  cart with existing email", "Saranya_12APR2025_LambdaTesters_Shopping_Cart_CheckOut_functionality"</td>
+<td><div><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
+  (Session info: chrome=136.0.7103.48)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [129f83b95b2995f9b43c5efc698930c0, actions {actions=[org.openqa.selenium.interactions.Sequence@2c998795]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.48, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63703}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63703/devtoo..., se:cdpVersion: 136.0.7103.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 129f83b95b2995f9b43c5efc698930c0
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:631)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
+	at com.actions.CheckOutAction.clickContinueCheckout(CheckOutAction.java:122)
+	at com.definitions.CheckoutDefinition.clicks_continue_from_the_checkout_page(CheckoutDefinition.java:66)
+	at ✽.clicks continue from the checkout page(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/ProductCheckOut.feature:83)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1948782442", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1948782442'><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
+  (Session info: chrome=136.0.7103.48)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [129f83b95b2995f9b43c5efc698930c0, actions {actions=[org.openqa.selenium.interactions.Sequence@2c998795]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.48, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63703}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63703/devtoo..., se:cdpVersion: 136.0.7103.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 129f83b95b2995f9b43c5efc698930c0
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:631)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
+	at com.actions.CheckOutAction.clickContinueCheckout(CheckOutAction.java:122)
+	at com.definitions.CheckoutDefinition.clicks_continue_from_the_checkout_page(CheckoutDefinition.java:66)
+	at ✽.clicks continue from the checkout page(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/ProductCheckOut.feature:83)
+</pre></div></td>
+<td>57</td>
+<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
+<tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate banner images using the left control arrow", "Saranya_20APR2025_LamdaTesters_Feature file for HomePage Assertion"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (645fea9b15733d5a5785dc6e902239de)] -&gt; css selector: a.carousel-control-next[href=&apos;#mz-carousel-217960&apos;]] (tried for 10 second(s) with 500 milliseconds interval)
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (176f8334858fd6e4e2e499e170aaca6e)] -&gt; css selector: a.carousel-control-next[href=&apos;#mz-carousel-217960&apos;]] (tried for 5 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61581}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61581/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 645fea9b15733d5a5785dc6e902239de
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.48, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63702}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63702/devtoo..., se:cdpVersion: 136.0.7103.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 176f8334858fd6e4e2e499e170aaca6e
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at com.actions.HomePageAction.clickNextButton(HomePageAction.java:63)
-	at com.definitions.HomePageDefinition.the_user_clicks_the_left_control_arrow_on_the_banner(HomePageDefinition.java:78)
+	at com.definitions.HomePageDefinition.the_user_clicks_the_left_control_arrow_on_the_banner(HomePageDefinition.java:79)
 	at ✽.the user clicks the left control arrow on the banner(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/Home.feature:25)
-</pre></div><a href='#' onClick='toggleBox("stack-trace114736671", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace114736671'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (645fea9b15733d5a5785dc6e902239de)] -&gt; css selector: a.carousel-control-next[href=&apos;#mz-carousel-217960&apos;]] (tried for 10 second(s) with 500 milliseconds interval)
+</pre></div><a href='#' onClick='toggleBox("stack-trace903938421", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace903938421'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (176f8334858fd6e4e2e499e170aaca6e)] -&gt; css selector: a.carousel-control-next[href=&apos;#mz-carousel-217960&apos;]] (tried for 5 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61581}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61581/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 645fea9b15733d5a5785dc6e902239de
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.48, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63702}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63702/devtoo..., se:cdpVersion: 136.0.7103.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 176f8334858fd6e4e2e499e170aaca6e
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at com.actions.HomePageAction.clickNextButton(HomePageAction.java:63)
-	at com.definitions.HomePageDefinition.the_user_clicks_the_left_control_arrow_on_the_banner(HomePageDefinition.java:78)
+	at com.definitions.HomePageDefinition.the_user_clicks_the_left_control_arrow_on_the_banner(HomePageDefinition.java:79)
 	at ✽.the user clicks the left control arrow on the banner(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/Home.feature:25)
 </pre></div></td>
-<td>19</td>
+<td>18</td>
 <td>com.runner.RunnerTestNg@26b3fd41</td></tr>
 <tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality"</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.navigate()&quot; because the return value of &quot;com.utilities.HelperClass.getDriver()&quot; is null
-	at com.definitions.Hooks.setUp(Hooks.java:26)
-</pre></div><a href='#' onClick='toggleBox("stack-trace345711509", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace345711509'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.navigate()&quot; because the return value of &quot;com.utilities.HelperClass.getDriver()&quot; is null
-	at com.definitions.Hooks.setUp(Hooks.java:26)
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To checkout view the order history after ordering", "Saranya_16APR2025_LambdaTesters_My_orders_feature"</td>
+<td><div><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
+  (Session info: chrome=136.0.7103.48)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3d19b71cc7148334816a382eafa01833, actions {actions=[org.openqa.selenium.interactions.Sequence@2119b1bb]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.48, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63704}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63704/devtoo..., se:cdpVersion: 136.0.7103.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3d19b71cc7148334816a382eafa01833
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:631)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
+	at com.actions.CheckOutAction.clickContinueCheckout(CheckOutAction.java:122)
+	at com.definitions.CheckoutDefinition.clicks_continue_from_the_checkout_page(CheckoutDefinition.java:66)
+	at ✽.clicks continue from the checkout page(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/MyOrder.feature:28)
+</pre></div><a href='#' onClick='toggleBox("stack-trace20894232", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace20894232'><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
+  (Session info: chrome=136.0.7103.48)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3d19b71cc7148334816a382eafa01833, actions {actions=[org.openqa.selenium.interactions.Sequence@2119b1bb]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.48, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63704}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63704/devtoo..., se:cdpVersion: 136.0.7103.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3d19b71cc7148334816a382eafa01833
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:631)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
+	at com.actions.CheckOutAction.clickContinueCheckout(CheckOutAction.java:122)
+	at com.definitions.CheckoutDefinition.clicks_continue_from_the_checkout_page(CheckoutDefinition.java:66)
+	at ✽.clicks continue from the checkout page(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/MyOrder.feature:28)
 </pre></div></td>
-<td>0</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with valid inputs  with out checking privacy policy", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality"</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.navigate()&quot; because the return value of &quot;com.utilities.HelperClass.getDriver()&quot; is null
-	at com.definitions.Hooks.setUp(Hooks.java:26)
-</pre></div><a href='#' onClick='toggleBox("stack-trace764573037", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace764573037'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.navigate()&quot; because the return value of &quot;com.utilities.HelperClass.getDriver()&quot; is null
-	at com.definitions.Hooks.setUp(Hooks.java:26)
-</pre></div></td>
-<td>0</td>
+<td>54</td>
 <td>com.runner.RunnerTestNg@26b3fd41</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -133,289 +283,84 @@ Session ID: 645fea9b15733d5a5785dc6e902239de
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Jeevika_09APR2025_LambdaTesters_Login"</td>
-<td></td>
-<td>10</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add multiple quantities of the same product", "Soundar_12APR2025_LambdaTesters_AddToCart"</td>
-<td></td>
-<td>26</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Jeevika_09APR2025_LambdaTesters_Login"</td>
-<td></td>
-<td>10</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality with unnecessary indentation in search", "Jeevika_12APR2025_LambdaTesters_Search"</td>
-<td></td>
-<td>10</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding new address", "Soundar_15APR2025_LambdaTesters_UserAccountManagement"</td>
-<td></td>
-<td>20</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Estimate the shipping and taxes", "Soundar_28APR2025_LambdaTesters_EstimateShippingStatus"</td>
-<td></td>
-<td>21</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To checkout the empty shopping cart as a registered user", "Saranya_12APR2025_LambdaTesters_Shopping_Cart_CheckOut_functionality"</td>
-<td></td>
-<td>18</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To Add the products to comparision list", "Saranya_15APR2025_LambdaTesters_Product_compare_functionality"</td>
-<td></td>
-<td>39</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit review without rating and without comment", "Soundar_16APR2025_LambdaTesters_ProductReview"</td>
-<td></td>
-<td>15</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality with valid inputs", "Jeevika_12APR2025_LambdaTesters_Search"</td>
-<td></td>
-<td>9</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Change user password without providing new password", "Soundar_15APR2025_LambdaTesters_UserAccountManagement"</td>
-<td></td>
-<td>15</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To assert the Functioning of Webelements in home page", "Saranya_20APR2025_LamdaTesters_Feature file for HomePage Assertion"</td>
-<td></td>
-<td>6</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submitting a blog comment without filling required details", "Jeevika_16APR2025_LambdaTesters_Blog"</td>
-<td></td>
-<td>25</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To redirected to the product page after clicking Head phones poster", "Saranya_20APR2025_LamdaTesters_Feature file for HomePage Assertion"</td>
-<td></td>
-<td>13</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To Add the products to comparision list", "Saranya_15APR2025_LambdaTesters_Product_compare_functionality"</td>
-<td></td>
-<td>10</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality"</td>
-<td></td>
-<td>14</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register a user and register as affiliate with valid and invalid inputs", "Jeevika_15APR2025_LambdaTesters_AffiliateAccount"</td>
-<td></td>
-<td>39</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking the product image to navigate to product shopping page", "Jeevika_16APR2025_LambdaTesters_Blog"</td>
-<td></td>
-<td>16</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submitting a blog comment without filling required details", "Jeevika_16APR2025_LambdaTesters_Blog"</td>
-<td></td>
-<td>21</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To checkout view the order history after ordering", "Saranya_16APR2025_LambdaTesters_My_orders_feature"</td>
-<td></td>
-<td>60</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Change user password", "Soundar_15APR2025_LambdaTesters_UserAccountManagement"</td>
-<td></td>
-<td>16</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to add a product to cart without selecting size", "Soundar_12APR2025_LambdaTesters_AddToCart"</td>
-<td></td>
-<td>25</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality with invalid inputs", "Jeevika_12APR2025_LambdaTesters_Search"</td>
-<td></td>
-<td>8</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit review with rating but without comment", "Soundar_16APR2025_LambdaTesters_ProductReview"</td>
-<td></td>
-<td>15</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To perform compare without adding products to list", "Saranya_15APR2025_LambdaTesters_Product_compare_functionality"</td>
-<td></td>
-<td>23</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To redirected to the product page after clicking Shop Now button in Block 2", "Saranya_20APR2025_LamdaTesters_Feature file for HomePage Assertion"</td>
-<td></td>
-<td>13</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate all FAQ messages displayed for iPod Nano under Phones & PDAs category", "Soundar_29APR2025_LambdaTesters_FrequentlyAskedQuestion"</td>
-<td></td>
-<td>19</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User requests a password reset link using invalid email", "Soundar_09APR2025_LambdaTesters_ForgotPassword"</td>
-<td></td>
-<td>14</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Modify the wishlist by removing a product", "Soundar_15APR2025_LambdaTesters_UserAccountManagement"</td>
-<td></td>
-<td>16</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with valid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality"</td>
-<td></td>
-<td>15</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality by category as input", "Jeevika_12APR2025_LambdaTesters_Search"</td>
-<td></td>
-<td>9</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit a valid product review with rating and comment", "Soundar_16APR2025_LambdaTesters_ProductReview"</td>
 <td></td>
 <td>17</td>
 <td>com.runner.RunnerTestNg@26b3fd41</td></tr>
 <tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit review without rating but with comment", "Soundar_16APR2025_LambdaTesters_ProductReview"</td>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To perform compare without adding products to list", "Saranya_15APR2025_LambdaTesters_Product_compare_functionality"</td>
 <td></td>
-<td>16</td>
+<td>28</td>
 <td>com.runner.RunnerTestNg@26b3fd41</td></tr>
 <tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "category wise selection and assertion", "Jeevika_16APR2025_LambdaTesters_Blog"</td>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To redirected to the product page after clicking Head phones poster", "Saranya_20APR2025_LamdaTesters_Feature file for HomePage Assertion"</td>
 <td></td>
-<td>15</td>
+<td>24</td>
 <td>com.runner.RunnerTestNg@26b3fd41</td></tr>
 <tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Subscribe or Unsubscribe from newsletter", "Soundar_15APR2025_LambdaTesters_UserAccountManagement"</td>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To checkout the empty shopping cart as a registered user", "Saranya_12APR2025_LambdaTesters_Shopping_Cart_CheckOut_functionality"</td>
+<td></td>
+<td>27</td>
+<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with valid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality"</td>
+<td></td>
+<td>19</td>
+<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To Add the products to comparision list", "Saranya_15APR2025_LambdaTesters_Product_compare_functionality"</td>
+<td></td>
+<td>13</td>
+<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To redirected to the product page after clicking Shop Now button in Block 2", "Saranya_20APR2025_LamdaTesters_Feature file for HomePage Assertion"</td>
+<td></td>
+<td>23</td>
+<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To reorder the product in the order  history", "Saranya_16APR2025_LambdaTesters_My_orders_feature"</td>
+<td></td>
+<td>57</td>
+<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality"</td>
+<td></td>
+<td>18</td>
+<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with valid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality"</td>
 <td></td>
 <td>16</td>
 <td>com.runner.RunnerTestNg@26b3fd41</td></tr>
 <tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To checkout the shopping cart as a guest user", "Saranya_12APR2025_LambdaTesters_Shopping_Cart_CheckOut_functionality"</td>
 <td></td>
-<td>53</td>
+<td>57</td>
 <td>com.runner.RunnerTestNg@26b3fd41</td></tr>
 <tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with valid credentials", "Jeevika_09APR2025_LambdaTesters_Login"</td>
-<td></td>
-<td>11</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality"</td>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To assert the Functioning of Webelements in home page", "Saranya_20APR2025_LamdaTesters_Feature file for HomePage Assertion"</td>
 <td></td>
 <td>14</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Jeevika_09APR2025_LambdaTesters_Login"</td>
-<td></td>
-<td>9</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Remove a product from the cart", "Soundar_12APR2025_LambdaTesters_AddToCart"</td>
-<td></td>
-<td>53</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User requests a password reset link without providing email", "Soundar_09APR2025_LambdaTesters_ForgotPassword"</td>
-<td></td>
-<td>16</td>
 <td>com.runner.RunnerTestNg@26b3fd41</td></tr>
 <tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To checkout the  cart as a registered user", "Saranya_12APR2025_LambdaTesters_Shopping_Cart_CheckOut_functionality"</td>
 <td></td>
-<td>55</td>
+<td>65</td>
 <td>com.runner.RunnerTestNg@26b3fd41</td></tr>
 <tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To reorder the product in the order  history", "Saranya_16APR2025_LambdaTesters_My_orders_feature"</td>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality"</td>
 <td></td>
-<td>63</td>
+<td>17</td>
 <td>com.runner.RunnerTestNg@26b3fd41</td></tr>
 <tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Subscribe or Unsubscribe from newsletter", "Soundar_15APR2025_LambdaTesters_UserAccountManagement"</td>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with valid inputs  with out checking privacy policy", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality"</td>
 <td></td>
-<td>15</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with valid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality"</td>
-<td></td>
-<td>14</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To checkout the  cart with existing email", "Saranya_12APR2025_LambdaTesters_Shopping_Cart_CheckOut_functionality"</td>
-<td></td>
-<td>51</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with valid credentials and logs out", "Jeevika_09APR2025_LambdaTesters_Login"</td>
-<td></td>
-<td>13</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register a user and register as affiliate with valid and invalid inputs", "Jeevika_15APR2025_LambdaTesters_AffiliateAccount"</td>
-<td></td>
-<td>37</td>
+<td>16</td>
 <td>com.runner.RunnerTestNg@26b3fd41</td></tr>
 <tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality"</td>
 <td></td>
 <td>15</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submitting a blog comment without filling required details", "Jeevika_16APR2025_LambdaTesters_Blog"</td>
-<td></td>
-<td>24</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To assert special offer button in homepage", "Jeevika_29APR2025_LamdaTesters_SpecialOffer_in_homePage"</td>
-<td></td>
-<td>9</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit user account details", "Soundar_15APR2025_LambdaTesters_UserAccountManagement"</td>
-<td></td>
-<td>16</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Jeevika_09APR2025_LambdaTesters_Login"</td>
-<td></td>
-<td>10</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a single product to the cart", "Soundar_12APR2025_LambdaTesters_AddToCart"</td>
-<td></td>
-<td>27</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding a valid comment to the blog", "Jeevika_16APR2025_LambdaTesters_Blog"</td>
-<td></td>
-<td>22</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality with case sensitive inputs", "Jeevika_12APR2025_LambdaTesters_Search"</td>
-<td></td>
-<td>10</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
-<tr>
-<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User requests a password reset link using valid email", "Soundar_09APR2025_LambdaTesters_ForgotPassword"</td>
-<td></td>
-<td>17</td>
 <td>com.runner.RunnerTestNg@26b3fd41</td></tr>
 </table><p>
 </body>

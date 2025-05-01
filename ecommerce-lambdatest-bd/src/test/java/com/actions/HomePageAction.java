@@ -59,10 +59,9 @@ public class HomePageAction {
    }
     
     public void clickNextButton() {
-    	wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-        wait.until(ExpectedConditions.elementToBeClickable(homePageLocator.nextButton))
-            .click();
-        
+    	wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.elementToBeClickable(homePageLocator.nextButton)).click();
+//    	homePageLocator.nextButton.click();
     }
     
     public String getActiveBannerAltText() {
@@ -72,5 +71,15 @@ public class HomePageAction {
     }
     
     
+    public void clickTrendingProduct() {
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(homePageLocator.trendingProduct))
+            .click();
+    }
     
+    public String getTrendingProductParagraphText() {
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+       return driver.getCurrentUrl();
+     
+    }
 }
