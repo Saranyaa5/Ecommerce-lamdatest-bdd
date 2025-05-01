@@ -14819,3 +14819,22 @@ Session ID: a69b9dd60b15c9843d68072c76518019
 2025-04-30 01:17:47 [TestNG-PoolService-10] INFO : Scenario passed: Register with invalid inputs
 2025-04-30 01:17:48 [TestNG-PoolService-7] INFO : Assertion Passed for 'Not checking privacy policy': Expected and actual message matched: 'Warning: You must agree to the Privacy Policy!'
 2025-04-30 01:17:48 [TestNG-PoolService-7] INFO : Scenario passed: Register with valid inputs  with out checking privacy policy
+2025-04-30 09:07:22 [main] INFO : Scenario started: To assert the Functioning of Webelements in home page
+2025-04-30 09:07:28 [main] INFO : asserting the home page block 1 element is successfull
+2025-04-30 09:07:28 [main] INFO : Scenario passed: To assert the Functioning of Webelements in home page
+2025-04-30 09:07:30 [main] INFO : Scenario started: To redirected to the product page after clicking Shop Now button in Block 2
+2025-04-30 09:07:39 [main] INFO : Successfully verified MPOW product page
+2025-04-30 09:07:39 [main] INFO : Scenario passed: To redirected to the product page after clicking Shop Now button in Block 2
+2025-04-30 09:07:40 [main] INFO : Scenario started: To redirected to the product page after clicking Head phones poster
+2025-04-30 09:07:59 [main] INFO : Successfully verified MPOW product page
+2025-04-30 09:07:59 [main] INFO : Scenario passed: To redirected to the product page after clicking Head phones poster
+2025-04-30 09:08:00 [main] INFO : Scenario started: Navigate banner images using the left control arrow
+2025-04-30 09:09:40 [main] INFO : Scenario started: Navigate banner images using the left control arrow
+2025-04-30 09:21:21 [main] INFO : Scenario started: Navigate banner images using the left control arrow
+2025-04-30 09:22:17 [main] INFO : Scenario started: Navigate banner images using the left control arrow
+2025-04-30 09:22:25 [main] INFO : Scenario passed: Navigate banner images using the left control arrow
+2025-04-30 09:24:30 [main] INFO : Scenario started: Navigate banner images using the left control arrow
+2025-04-30 09:25:50 [main] INFO : Scenario started: Navigate banner images using the left control arrow
+2025-04-30 09:27:38 [main] INFO : Scenario started: Navigate banner images using the left control arrow
+2025-04-30 09:29:34 [main] INFO : Scenario started: Navigate banner images using the left control arrow
+2025-04-30 09:38:30 [main] INFO : Scenario started: Navigate banner images using the left control arrow
