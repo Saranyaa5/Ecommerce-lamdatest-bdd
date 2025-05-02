@@ -14,11 +14,6 @@ public class UserAccountLocator {
     @FindBy(xpath="//*[@id='content']/div[1]/div/div/div[5]/a")
     public WebElement clickNewsLetter;
     
-
-    
-    
-    
-
     @FindBy(xpath="//small[@id='input-telephone-help']/ancestor::div/input")
     public WebElement Telephone;
 
