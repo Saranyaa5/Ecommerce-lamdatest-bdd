@@ -21,19 +21,19 @@ public class ProductReviewLocator {
     @FindBy(xpath = "//textarea[@id='input-review']")
     public WebElement reviewTextarea;
 
-    @FindBy(xpath = "//*[@id=\"form-review\"]/div[1]/span/label[5]")
+    @FindBy(xpath = "(//input[@name='rating']/following-sibling::label)[5]")
     public WebElement rating1;
 
-    @FindBy(xpath = "//*[@id=\"form-review\"]/div[1]/span/label[4]")
+    @FindBy(xpath = "(//input[@name='rating']/following-sibling::label)[4]")
     public WebElement rating2;
 
-    @FindBy(xpath = "//*[@id=\"form-review\"]/div[1]/span/label[3]")
+    @FindBy(xpath = "(//input[@name='rating']/following-sibling::label)[3]")
     public WebElement rating3;
 
-    @FindBy(xpath = "//*[@id=\"form-review\"]/div[1]/span/label[2]")
+    @FindBy(xpath = "(//input[@name='rating']/following-sibling::label)[2]")
     public WebElement rating4;
 
-    @FindBy(xpath = "//*[@id=\"form-review\"]/div[1]/span/label[1]")
+    @FindBy(xpath = "(//input[@name='rating']/following-sibling::label)[1]")
     public WebElement rating5;
 
     @FindBy(xpath = "//div[@class='float-right']/ancestor::div[@class='buttons clearfix']//button")
