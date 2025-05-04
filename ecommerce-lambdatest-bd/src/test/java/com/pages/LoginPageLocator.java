@@ -10,24 +10,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPageLocator {
-
-//    @FindBy(xpath="//a[@class='icon-left both nav-link dropdown-toggle' and @href='https://ecommerce-playground.lambdatest.io/index.php?route=account/account']")
-//    public WebElement myAccount;
-    
-    @FindBy(xpath="(//div[@id='widget-navbar-217834']//li[@class='nav-item dropdown dropdown-hoverable']//descendant::a)[5]")
+    @FindBy(xpath="(//div[@id='entry_217834']/descendant::a[@class='icon-left both nav-link dropdown-toggle'])[3]")
     public WebElement myAccount;
     
-    @FindBy(xpath="//*[@id=\"widget-navbar-217834\"]/ul/li[6]/ul/a")
+    @FindBy(xpath = "//a[@class='icon-left both nav-link dropdown-toggle']/following::a[@class='icon-left both dropdown-item active']")
     public WebElement login;
-   
-//    @FindBy(xpath="//input[@id='input-email']")
-//    public WebElement emailId;
     
     @FindBy(xpath="(//div[@class='form-group']//descendant::input)[1]")
     public WebElement emailId;    
-    
-//    @FindBy(xpath="//input[@id='input-password']")
-//    public WebElement password;
     
     @FindBy(xpath="(//div[@class='form-group']//following::input[1])[2]")
     public WebElement password;
@@ -35,15 +25,16 @@ public class LoginPageLocator {
     @FindBy(xpath="//input[@class='btn btn-primary']")
     public WebElement loginButton;
 
-    @FindBy(xpath="//*[@id=\"content\"]/div[1]/h2")
+    @FindBy(xpath = "(//div/h2[@class='card-header h5'])[1]")
     public WebElement titleMyAccount;
     
     @FindBy(xpath = "//div[contains(@class,'alert-danger')]")
     public WebElement warningMessage;
 
-@FindBy(xpath="//*[@id=\"column-right\"]/div/a[14]")
-public WebElement logout;
+    @FindBy(xpath = "//div[@class='list-group mb-3']/a[13]/following-sibling::a")
+    public WebElement logout;
+    
+    @FindBy(xpath = "//div[@id='content']/h1")
+    public WebElement accountLogout;
 
-@FindBy(xpath="//*[@id=\"content\"]/h1")
-public WebElement accountLogout;
 }

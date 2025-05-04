@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class SearchLocator {
-    @FindBy(xpath = "//input[@placeholder='Search' or @name='search']")
+	@FindBy(xpath = "//input[@placeholder='Search' or @name='search']")
     public WebElement searchbox;
     
     @FindBy(xpath = "//button[contains(text(),'Search')]")
