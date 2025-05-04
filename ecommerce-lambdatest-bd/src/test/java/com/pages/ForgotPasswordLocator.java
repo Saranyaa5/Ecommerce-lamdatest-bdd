@@ -24,9 +24,10 @@ public class ForgotPasswordLocator {
     @FindBy(xpath = "//div[@class='float-left']/following-sibling::div/button")
     public WebElement continueButton;
 
-    @FindBy(xpath = "//*[@id=\"account-login\"]/div[1]")
+    @FindBy(xpath = "//div[contains(@class, 'alert-success')]")
     public WebElement successAlert;
 
-    @FindBy(xpath = "//*[@id=\"account-forgotten\"]/div[1]")
+    @FindBy(xpath = "//div[contains(@class, 'alert-danger')]")
     public WebElement errorAlert;
+
 }

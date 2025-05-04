@@ -38,5 +38,3 @@ Scenario: User tries to add a product to cart without selecting size
 And user selects the Apple Cinema 30 product
 And user clicks on the Add to Cart button
 Then user should see a message "Size required!"
-
-

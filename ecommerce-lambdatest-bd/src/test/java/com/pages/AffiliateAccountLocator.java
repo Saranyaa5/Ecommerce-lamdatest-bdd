@@ -4,17 +4,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class AffiliateAccountLocator {
-	 @FindBy(xpath="//input[@id='input-email']")
-	    public WebElement emailId;
+	@FindBy(xpath="//input[@id='input-email']")
+	public WebElement emailId;
 	    
-	    @FindBy(xpath="//input[@id='input-password']")
-	    public WebElement password;
+	@FindBy(xpath="//input[@id='input-password']")
+	public WebElement password;
 	    
-	    @FindBy(xpath="//input[@class='btn btn-primary']")
-	    public WebElement loginButton;
+	@FindBy(xpath="//input[@class='btn btn-primary']")
+	public WebElement loginButton;
 	    
-	    
-	
 	@FindBy(xpath="//a[@class='btn btn-primary']")
 	public WebElement accContinue;
 	
@@ -33,16 +31,16 @@ public class AffiliateAccountLocator {
 	@FindBy(xpath="(//div[@class='alert alert-success alert-dismissible'])[1]")
 	public WebElement affText;
 	
-	@FindBy(xpath="(//a[normalize-space()='Register for an affiliate account'])[1]")
+	@FindBy(xpath="//div[@class='card-body text-center text-sm-left']/descendant::a")
 	public WebElement registerAffiliate;
 	
-	@FindBy(xpath="//*[@id=\"input-cheque\"]")
+	@FindBy(xpath="//div[@class='col-sm-10']/descendant::input[@name='cheque']")
 	public WebElement payeeName;
 	
-	@FindBy(xpath="//*[@id=\"content\"]/form/div/div/input[1]")
+	@FindBy(xpath="//input[@type='checkbox']")
 	public WebElement checkbox;
 	
-	@FindBy(xpath="//*[@id=\"content\"]/form/div/div/input[2]")
+	@FindBy(xpath="//input[@class='btn btn-primary']")
 	public WebElement affContinue1;
 
 	@FindBy(xpath="(//div[@class='alert alert-success alert-dismissible'])[1]")
@@ -51,13 +49,13 @@ public class AffiliateAccountLocator {
 	@FindBy(xpath="(//div[@class='text-danger'])[1]")
 	public WebElement errorMsg;
 	
-	@FindBy(xpath="//*[@id=\"content\"]/div[3]/div/a[2]/text()")
+	@FindBy(xpath="//div[@class='card-body text-center text-sm-left']//a/following-sibling::a")
 	public WebElement trackingAffiliate;
 	
-	@FindBy(xpath="//*[@id=\"input-code\"]")
+	@FindBy(xpath="//div[@class='form-group row']/descendant::div[@class='col-md-10']/textarea[@id='input-code']")
 	public WebElement trackingCode;
 	
-	@FindBy(xpath="//*[@id=\"content\"]/div/div/a")
+	@FindBy(xpath="//div[@class='buttons clearfix mb-3']/descendant::a")
 	public WebElement affContinue3;
 	
 }
