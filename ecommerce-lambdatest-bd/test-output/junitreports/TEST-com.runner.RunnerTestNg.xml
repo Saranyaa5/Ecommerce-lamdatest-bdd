@@ -36,7 +36,7 @@ at com.definitions.CheckoutDefinition.the_user_accepts_the_terms_and_condition(C
 at ✽.the user accepts the terms and condition(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/ProductCheckOut.feature:24)
 ]]>
     </error>
-  </testcase> <!-- runScenario -->
+  </testcase>
   <testcase classname="com.runner.RunnerTestNg" name="runScenario" time="52.769"/>
   <testcase classname="com.runner.RunnerTestNg" name="runScenario" time="46.760"/>
   <testcase classname="com.runner.RunnerTestNg" name="runScenario" time="92.674"/>
