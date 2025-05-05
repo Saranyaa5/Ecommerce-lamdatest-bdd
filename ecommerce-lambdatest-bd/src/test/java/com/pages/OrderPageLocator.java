@@ -24,7 +24,7 @@ public class OrderPageLocator {
     @FindBy(xpath = "//a[contains(@href,'reorder')]")
 	public WebElement reorderButton;
 
-    @FindBy(css = ".alert-success")  // Assuming the success message has this class
+    @FindBy(css = ".alert-success")  
 	public WebElement reorderSuccessMessage;
     
     @FindBy(xpath="//*[@id=\"content\"]/div[1]/table/tbody/tr/td[1]")
