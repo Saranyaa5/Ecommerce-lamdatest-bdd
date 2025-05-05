@@ -75,16 +75,22 @@ public class HomePageDefinition {
 	}
 	@When("the user clicks the left control arrow on the banner")
 	public void the_user_clicks_the_left_control_arrow_on_the_banner() throws InterruptedException{
-	    Thread.sleep(30);
+	    ;
 		homePageAction.clickNextButton();
 	}
 
 	@Then("the {string} banner should be displayed")
 	public void the_banner_should_be_displayed(String string) throws InterruptedException {
-		Thread.sleep(3000);
-		String actualBannerAltText =homePageAction.getActiveBannerAltText();
-		System.out.println(actualBannerAltText);
-        Assert.assertEquals(string, actualBannerAltText);
+		try {
+			String actualBannerAltText =homePageAction.getActiveBannerAltText();
+			System.out.println(actualBannerAltText);
+	        Assert.assertEquals(string, actualBannerAltText);
+            logger.info("Successfully is successfull");
+        } catch(Exception e) {
+            logger.error("Failed to verify " + e.getMessage());
+            throw e;
+        }
+		
     }
 	
 	
@@ -93,11 +99,16 @@ public class HomePageDefinition {
 	    homePageAction.clickTrendingProduct();
 	}
 	@Then("the user should redirect to the product page")
-	public void the_user_should_redirect_to_the_product_page() {
-//		System.out.println(homePageAction.getTrendingProductParagraphText());
-		String url="https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=18";
-		Assert.assertEquals(homePageAction.getTrendingProductParagraphText(),url);
-		
+	public void the_user_should_redirect_to_the_product_page() {	
+		try {
+//			System.out.println(homePageAction.getTrendingProductParagraphText());
+			String url="https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=18";
+			Assert.assertEquals(homePageAction.getTrendingProductParagraphText(),url);
+            logger.info("Successfully is successfull");
+        } catch(Exception e) {
+            logger.error("Failed to verify " + e.getMessage());
+            throw e;
+        }
 	}
 	
 

@@ -83,7 +83,8 @@ public class UserRegistrationAction {
     }
 
     private void waitAndClick(WebElement element) {
-        WebElement el = wait.until(ExpectedConditions.elementToBeClickable(element));
+        WebElement el = wait.until(ExpectedConditions.
+        		elementToBeClickable(element));
         el.click();
     }
 

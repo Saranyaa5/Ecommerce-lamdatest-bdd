@@ -9,41 +9,41 @@ public class RegistrationPageLocator {
     
     @FindBy(xpath = "//a[@class='icon-left both dropdown-item' and @href='https://ecommerce-playground.lambdatest.io/index.php?route=account/register']")
     public WebElement Register;
-    
-    @FindBy(xpath = "//div[@id='content']//h1")
+  
+    @FindBy(xpath = "//form/preceding::h1[1]")
     public WebElement RegisterPageTitle;
     
-    @FindBy(id = "input-firstname")
+    @FindBy(xpath = "//label[contains(text(),'First Name')]/following::input[1]")
     public WebElement FirstName;
-    
-    @FindBy(id = "input-lastname")
+   
+    @FindBy(xpath = "//label[contains(text(),'Last Name')]/following::input[1]")
     public WebElement LastName;
     
-    @FindBy(id = "input-email")
+    @FindBy(css="fieldset:first-of-type div > label[for='input-email'] ~ div > input")
     public WebElement RegisterEmail;
     
-    @FindBy(id = "input-telephone")
+    @FindBy(xpath ="//label[contains(text(), 'Telephone')]/ancestor::div[contains(@class, 'form-group')]//input")
     public WebElement Telephone;
     
-    @FindBy(id = "input-password")
+    @FindBy(css="fieldset:nth-of-type(2)>div >div>input")
     public WebElement password;
     
-    @FindBy(id = "input-confirm")
+    @FindBy(css="fieldset:nth-of-type(2)>div:nth-of-type(2) >div>input")
     public WebElement cofirmpass;
     
-    @FindBy(id = "input-newsletter-yes")
+    @FindBy(css="fieldset legend:contains('Newsletter') ~ div input[value='1']")
     public WebElement NewsRadioYes;
     
-    @FindBy(id = "input-newsletter-no")
+    @FindBy(css="fieldset legend:contains('Newsletter') ~ div input[value='0']")
     public WebElement NewsRadioNo;
     
-    @FindBy(xpath = "//div[@id='content']/form/div/div/div/label")
+    @FindBy(xpath = "//div[contains(@id,'content')]/form/div/div/div/label")
     public WebElement PolicyCheckBox;
     
     @FindBy(xpath = "//input[@type='submit' and @value='Continue']")
     public WebElement RegiterSubmitButton;
     
-    @FindBy(xpath = "//div[@id='content']//h1")
+    @FindBy(xpath = "//div[@id='content']//h1[contains(@class, 'page-title')]")
     public WebElement RegistrationSuccessMsg;
     
     @FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']")
