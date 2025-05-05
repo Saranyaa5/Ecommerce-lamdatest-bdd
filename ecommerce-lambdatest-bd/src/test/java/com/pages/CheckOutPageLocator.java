@@ -12,87 +12,91 @@ public class CheckOutPageLocator {
     @FindBy(xpath = "//button[contains(text(),'Search')]")
     public WebElement searchbutton;
     
-    @FindBy(xpath = "//*[@id='mz-product-grid-image-47-212469']/div/div[1]/img")
+    @FindBy(xpath = "//a[starts-with(@id,'mz-product-grid-image')]/div/div[1]/img")
     public WebElement productImage;
+
     
-    @FindBy(xpath = "//*[@id='content']/div[2]/a[2]")
+    @FindBy(xpath = "//*[@id='content']//a[contains(text(),'Checkout')]")
     public WebElement CheckoutFromCart;
+
     
-    @FindBy(xpath = "//*[@id='form-checkout']/div/div[1]/div/div[1]/div/div[3]")
+    @FindBy(xpath = "//*[@id='form-checkout']//label[contains(text(),'Guest')]")
     public WebElement guestUser;
     
-    @FindBy(xpath = "//*[@id='form-checkout']/div/div[1]/div/div[1]/div/div[2]/label")
+    @FindBy(xpath = "//*[@id='form-checkout']//label[contains(text(),'Register')]")
     public WebElement registerUser;
     
-    @FindBy(xpath = "//*[@id='checkout-cart']/table/tbody/tr/td[3]/div/div/button[2]")
+    @FindBy(xpath = "//*[@id='checkout-cart']//button[@data-original-title='Remove']")
     public WebElement removeProduct;
     
-    @FindBy(xpath = "//input[@id='input-payment-firstname']")
+    @FindBy(xpath = "//label[contains(text(),'First Name') and not(contains(@for,'shipping'))]/following-sibling::div/input")
     public WebElement paymentFname;
     
     @FindBy(xpath = "//input[@id='input-payment-lastname']")
     public WebElement paymentLname;
-    
-    @FindBy(xpath = "//input[@id='input-payment-email']")
+
+
+    @FindBy(xpath = "//label[contains(text(),'E-Mail')]/following-sibling::div//input")
     public WebElement paymentEmail;
-    
-    @FindBy(xpath = "//input[@id='input-payment-telephone']")
+
+    @FindBy(xpath = "//label[contains(text(),'Telephone')]/following-sibling::div//input")
     public WebElement paymentTelephone;
-    
-    @FindBy(xpath = "//input[@id='input-payment-address-1']")
+
+    @FindBy(xpath = "//label[contains(text(),'Address 1')]/following-sibling::div//input")
     public WebElement paymentAddress;
-    
-    @FindBy(xpath = "//input[@id='input-payment-city']")
+
+    @FindBy(xpath = "//label[contains(text(),'City')]/following-sibling::div//input")
     public WebElement paymentCity;
-    
-    @FindBy(xpath = "//input[@id='input-payment-postcode']")
+
+    @FindBy(xpath = "//label[contains(text(),'Post Code')]/following-sibling::div//input")
     public WebElement paymentPostcode;
     
-    @FindBy(xpath = "//input[@id='input-payment-password']")
+    @FindBy(xpath = "//input[contains(@id,'input-payment-password')]")
     public WebElement pass;
-    
-    @FindBy(xpath = "//input[@id='input-payment-confirm']")
+
+    @FindBy(xpath = "//input[contains(@id,'input-payment-confirm')]")
     public WebElement confirmpass;
     
-    @FindBy(xpath = "//*[@id='form-checkout']/div/div[2]/div/div[5]/label")
+    @FindBy(xpath = "//*[@id='form-checkout']//label[contains(text(),'I have read and agree')]")
     public WebElement paymentCheckBox;
-    
-    @FindBy(xpath = "//button[@id='button-save']")
+
+    @FindBy(xpath = "//button[starts-with(@id,'button-save')]")
     public WebElement continuePayment;
-    
-    @FindBy(xpath = "//select[@id='input-payment-country']")
+
+    @FindBy(xpath = "//select[starts-with(@id,'input-payment-country')]")
     public WebElement countryDropdown;
-    
-    @FindBy(xpath = "//select[@id='input-payment-zone']")
+
+    @FindBy(xpath = "//select[contains(@id,'input-payment-zone')]")
     public WebElement regionDropdown;
-    
-    @FindBy(xpath = "//*[@id='form-checkout']/div/div[2]/div/div[5]/label")
+
+    @FindBy(xpath = "//*[@id='form-checkout']//label[contains(text(),'Terms') or contains(text(),'terms')]")
     public WebElement termsCheckbox;
-    
-    @FindBy(xpath = "//*[@id='form-checkout']/div/div[2]/div/div[4]/label")
+
+    @FindBy(xpath = "//*[@id='form-checkout']//label[contains(text(),'Privacy')]")
     public WebElement PrivacyCheckbox;
-    
-    @FindBy(xpath = "//*[@id='button-save']")
+
+    @FindBy(xpath = "//button[starts-with(@id,'button-save')]")
     public WebElement continueButton;
-    
-    @FindBy(xpath = "//*[@id='button-confirm']")
+
+    @FindBy(xpath = "//button[starts-with(@id,'button-confirm')]")
     public WebElement confirmOrder;
-    
-    @FindBy(xpath = "//*[@id='content']/p[2]")
+
+    @FindBy(xpath = "//*[@id='content']//p[contains(text(),'Your order has')]")
     public WebElement orderSuccessMessage;
-    
-    @FindBy(xpath = "//*[@id='form-checkout']/div[1]")
+
+    @FindBy(xpath = "//*[@id='form-checkout']//div[contains(@class,'alert') and contains(text(),'checkbox')]")
     public WebElement checkBoxWarn;
-    
-    @FindBy(xpath = "//*[@id='content']/p")
+
+    @FindBy(xpath = "//*[@id='content']//p[contains(text(),'empty') or contains(text(),'Your shopping cart')]")
     public WebElement emptyCartMessage;
-    
-    @FindBy(xpath = "//*[@id='payment-address']/div[1]/div[1]")
+
+    @FindBy(xpath = "//*[@id='payment-address']//div[contains(@class,'radio')][1]")
     public WebElement ExistingAdd;
-    
-    @FindBy(xpath = "//*[@id='payment-address']/div[2]/div/label")
+
+    @FindBy(xpath = "//*[@id='payment-address']//label[contains(text(),'New') or contains(text(),'new')]")
     public WebElement newAdd;
-    
-    @FindBy(xpath = "//*[@id='account-detail']/div[4]/div/div")
+
+    @FindBy(xpath = "//*[@id='account-detail']//div[contains(text(),'already registered') or contains(text(),'already exists')]")
     public WebElement duplicateEmail;
+
 }
