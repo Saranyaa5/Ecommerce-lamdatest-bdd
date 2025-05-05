@@ -73,8 +73,12 @@ public class CheckOutAction {
 			checkOutPageLocator.paymentPostcode.sendKeys(postcode);
 			
 			selectDropdownByVisibleText(checkOutPageLocator.countryDropdown, "India");
-			
-			
+			try {
+			Thread.sleep(1000); 
+			}
+			catch (InterruptedException e) {
+			Thread.currentThread().interrupt();
+			}
 			selectDropdownByVisibleText(checkOutPageLocator.regionDropdown,"Assam");
 			
 			}
@@ -88,29 +92,23 @@ public class CheckOutAction {
 			public void acceptGuestTermsCondition() {
 			    try {
 			        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
-
-			        wait.until(ExpectedConditions.visibilityOf(checkOutPageLocator.PrivacyCheckbox));
-			        wait.until(ExpectedConditions.visibilityOf(checkOutPageLocator.termsCheckbox));
-
-			        ((JavascriptExecutor) HelperClass.getDriver()).executeScript(
-			            "arguments[0].scrollIntoView({block: 'center', behavior: 'smooth'});",
-			            checkOutPageLocator.termsCheckbox
-			        );
-
+			       
+			        WebElement termsCheckbox = wait.until(ExpectedConditions.presenceOfElementLocated(
+			            By.xpath("//*[@id='form-checkout']/div/div[2]/div/div[5]/label")));
 			        
-			        wait.until(ExpectedConditions.elementToBeClickable(checkOutPageLocator.termsCheckbox));
-
 			        ((JavascriptExecutor) HelperClass.getDriver()).executeScript(
-			            "arguments[0].click();",
-			            checkOutPageLocator.termsCheckbox
-			        );
-
+			            "arguments[0].scrollIntoView({block: 'center', behavior: 'smooth'});", 
+			            termsCheckbox);
+			        
+			        wait.until(ExpectedConditions.elementToBeClickable(termsCheckbox));
+			        ((JavascriptExecutor) HelperClass.getDriver()).executeScript(
+			            "arguments[0].click();", termsCheckbox);
+			        
 			    } catch (Exception e) {
 			        System.out.println("Exception while accepting terms: " + e.getMessage());
 			        throw e;
 			    }
 			}
-
 			
 			public void clickPrivacyPolicy() {
 				checkOutPageLocator.PrivacyCheckbox.click();
@@ -151,7 +149,11 @@ public class CheckOutAction {
 					
 					selectDropdownByVisibleText(checkOutPageLocator.countryDropdown, "India");
 					
-					
+					try {
+					Thread.sleep(1000); 
+					} catch (InterruptedException e) {
+					Thread.currentThread().interrupt();
+					}
 					
 					selectDropdownByVisibleText(checkOutPageLocator.regionDropdown,"Assam");
 					
