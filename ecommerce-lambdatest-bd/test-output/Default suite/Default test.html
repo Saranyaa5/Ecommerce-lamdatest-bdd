@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/7/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>54/8/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun May 04 09:44:32 IST 2025</td>
+<td>Started on:</td><td>Mon May 05 23:30:39 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>138 seconds (138304 ms)</td>
+<tr><td>Total time:</td><td>125 seconds (125351 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,214 +77,371 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with valid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (73cd076af88b920af81e8f3a173294b2)] -&gt; xpath: //a[contains(@class,&apos;nav-link&apos;) and contains(@href,&apos;account/account&apos;)]] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.48, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53002}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53002/devtoo..., se:cdpVersion: 136.0.7103.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 73cd076af88b920af81e8f3a173294b2
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.actions.UserRegistrationAction.waitAndMoveToElement(UserRegistrationAction.java:111)
-	at com.actions.UserRegistrationAction.clickMyAccounts(UserRegistrationAction.java:30)
-	at com.definitions.UserRegistrationDefinition.the_user_clicks_on(UserRegistrationDefinition.java:29)
-	at ✽.the user clicks on My Account.(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/UserRegistration.feature:8)
-</pre></div><a href='#' onClick='toggleBox("stack-trace625172480", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace625172480'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (73cd076af88b920af81e8f3a173294b2)] -&gt; xpath: //a[contains(@class,&apos;nav-link&apos;) and contains(@href,&apos;account/account&apos;)]] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.48, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53002}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53002/devtoo..., se:cdpVersion: 136.0.7103.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 73cd076af88b920af81e8f3a173294b2
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.actions.UserRegistrationAction.waitAndMoveToElement(UserRegistrationAction.java:111)
-	at com.actions.UserRegistrationAction.clickMyAccounts(UserRegistrationAction.java:30)
-	at com.definitions.UserRegistrationDefinition.the_user_clicks_on(UserRegistrationDefinition.java:29)
-	at ✽.the user clicks on My Account.(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/UserRegistration.feature:8)
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.navigate()&quot; because the return value of &quot;com.utilities.HelperClass.getDriver()&quot; is null
+	at com.definitions.Hooks.setUp(Hooks.java:26)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2100702711", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2100702711'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.navigate()&quot; because the return value of &quot;com.utilities.HelperClass.getDriver()&quot; is null
+	at com.definitions.Hooks.setUp(Hooks.java:26)
 </pre></div></td>
-<td>130</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
+<td>0</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
 <tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (3a48e2a69bfb5623bdb06ed88144a3e5)] -&gt; xpath: //a[contains(@class,&apos;nav-link&apos;) and contains(@href,&apos;account/account&apos;)]] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.48, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53065}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53065/devtoo..., se:cdpVersion: 136.0.7103.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3a48e2a69bfb5623bdb06ed88144a3e5
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.actions.UserRegistrationAction.waitAndMoveToElement(UserRegistrationAction.java:111)
-	at com.actions.UserRegistrationAction.clickMyAccounts(UserRegistrationAction.java:30)
-	at com.definitions.UserRegistrationDefinition.the_user_clicks_on(UserRegistrationDefinition.java:29)
-	at ✽.the user clicks on My Account.(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/UserRegistration.feature:8)
-</pre></div><a href='#' onClick='toggleBox("stack-trace934212987", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace934212987'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (3a48e2a69bfb5623bdb06ed88144a3e5)] -&gt; xpath: //a[contains(@class,&apos;nav-link&apos;) and contains(@href,&apos;account/account&apos;)]] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.48, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53065}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53065/devtoo..., se:cdpVersion: 136.0.7103.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3a48e2a69bfb5623bdb06ed88144a3e5
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.actions.UserRegistrationAction.waitAndMoveToElement(UserRegistrationAction.java:111)
-	at com.actions.UserRegistrationAction.clickMyAccounts(UserRegistrationAction.java:30)
-	at com.definitions.UserRegistrationDefinition.the_user_clicks_on(UserRegistrationDefinition.java:29)
-	at ✽.the user clicks on My Account.(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/UserRegistration.feature:8)
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.navigate()&quot; because the return value of &quot;com.utilities.HelperClass.getDriver()&quot; is null
+	at com.definitions.Hooks.setUp(Hooks.java:26)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1724767468", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1724767468'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.navigate()&quot; because the return value of &quot;com.utilities.HelperClass.getDriver()&quot; is null
+	at com.definitions.Hooks.setUp(Hooks.java:26)
 </pre></div></td>
-<td>133</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
+<td>0</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
 <tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (9f25baf37872f54d1403153143facc1d)] -&gt; xpath: //a[contains(@class,&apos;nav-link&apos;) and contains(@href,&apos;account/account&apos;)]] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.48, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52867}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52867/devtoo..., se:cdpVersion: 136.0.7103.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9f25baf37872f54d1403153143facc1d
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.actions.UserRegistrationAction.waitAndMoveToElement(UserRegistrationAction.java:111)
-	at com.actions.UserRegistrationAction.clickMyAccounts(UserRegistrationAction.java:30)
-	at com.definitions.UserRegistrationDefinition.the_user_clicks_on(UserRegistrationDefinition.java:29)
-	at ✽.the user clicks on My Account.(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/UserRegistration.feature:8)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2049397825", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2049397825'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (9f25baf37872f54d1403153143facc1d)] -&gt; xpath: //a[contains(@class,&apos;nav-link&apos;) and contains(@href,&apos;account/account&apos;)]] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.48, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52867}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52867/devtoo..., se:cdpVersion: 136.0.7103.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9f25baf37872f54d1403153143facc1d
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.actions.UserRegistrationAction.waitAndMoveToElement(UserRegistrationAction.java:111)
-	at com.actions.UserRegistrationAction.clickMyAccounts(UserRegistrationAction.java:30)
-	at com.definitions.UserRegistrationDefinition.the_user_clicks_on(UserRegistrationDefinition.java:29)
-	at ✽.the user clicks on My Account.(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/UserRegistration.feature:8)
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.navigate()&quot; because the return value of &quot;com.utilities.HelperClass.getDriver()&quot; is null
+	at com.definitions.Hooks.setUp(Hooks.java:26)
+</pre></div><a href='#' onClick='toggleBox("stack-trace49738727", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace49738727'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.navigate()&quot; because the return value of &quot;com.utilities.HelperClass.getDriver()&quot; is null
+	at com.definitions.Hooks.setUp(Hooks.java:26)
 </pre></div></td>
-<td>107</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
+<td>0</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
 <tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with valid inputs  with out checking privacy policy", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (fb5680b69261bb1cc1d9a65de6352f35)] -&gt; xpath: //a[contains(@class,&apos;nav-link&apos;) and contains(@href,&apos;account/account&apos;)]] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.48, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53022}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53022/devtoo..., se:cdpVersion: 136.0.7103.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fb5680b69261bb1cc1d9a65de6352f35
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.actions.UserRegistrationAction.waitAndMoveToElement(UserRegistrationAction.java:111)
-	at com.actions.UserRegistrationAction.clickMyAccounts(UserRegistrationAction.java:30)
-	at com.definitions.UserRegistrationDefinition.the_user_clicks_on(UserRegistrationDefinition.java:29)
-	at ✽.the user clicks on My Account.(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/UserRegistration.feature:8)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2128636329", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2128636329'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (fb5680b69261bb1cc1d9a65de6352f35)] -&gt; xpath: //a[contains(@class,&apos;nav-link&apos;) and contains(@href,&apos;account/account&apos;)]] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.48, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53022}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53022/devtoo..., se:cdpVersion: 136.0.7103.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fb5680b69261bb1cc1d9a65de6352f35
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.actions.UserRegistrationAction.waitAndMoveToElement(UserRegistrationAction.java:111)
-	at com.actions.UserRegistrationAction.clickMyAccounts(UserRegistrationAction.java:30)
-	at com.definitions.UserRegistrationDefinition.the_user_clicks_on(UserRegistrationDefinition.java:29)
-	at ✽.the user clicks on My Account.(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/UserRegistration.feature:8)
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.navigate()&quot; because the return value of &quot;com.utilities.HelperClass.getDriver()&quot; is null
+	at com.definitions.Hooks.setUp(Hooks.java:26)
+</pre></div><a href='#' onClick='toggleBox("stack-trace679198904", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace679198904'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.navigate()&quot; because the return value of &quot;com.utilities.HelperClass.getDriver()&quot; is null
+	at com.definitions.Hooks.setUp(Hooks.java:26)
 </pre></div></td>
-<td>131</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
+<td>0</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
 <tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (28a7199226dd565d96ecf2d50da515a5)] -&gt; xpath: //a[contains(@class,&apos;nav-link&apos;) and contains(@href,&apos;account/account&apos;)]] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.48, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52886}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52886/devtoo..., se:cdpVersion: 136.0.7103.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 28a7199226dd565d96ecf2d50da515a5
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.actions.UserRegistrationAction.waitAndMoveToElement(UserRegistrationAction.java:111)
-	at com.actions.UserRegistrationAction.clickMyAccounts(UserRegistrationAction.java:30)
-	at com.definitions.UserRegistrationDefinition.the_user_clicks_on(UserRegistrationDefinition.java:29)
-	at ✽.the user clicks on My Account.(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/UserRegistration.feature:8)
-</pre></div><a href='#' onClick='toggleBox("stack-trace76782872", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace76782872'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (28a7199226dd565d96ecf2d50da515a5)] -&gt; xpath: //a[contains(@class,&apos;nav-link&apos;) and contains(@href,&apos;account/account&apos;)]] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.48, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52886}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52886/devtoo..., se:cdpVersion: 136.0.7103.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 28a7199226dd565d96ecf2d50da515a5
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.actions.UserRegistrationAction.waitAndMoveToElement(UserRegistrationAction.java:111)
-	at com.actions.UserRegistrationAction.clickMyAccounts(UserRegistrationAction.java:30)
-	at com.definitions.UserRegistrationDefinition.the_user_clicks_on(UserRegistrationDefinition.java:29)
-	at ✽.the user clicks on My Account.(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/UserRegistration.feature:8)
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.navigate()&quot; because the return value of &quot;com.utilities.HelperClass.getDriver()&quot; is null
+	at com.definitions.Hooks.setUp(Hooks.java:26)
+</pre></div><a href='#' onClick='toggleBox("stack-trace68263476", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace68263476'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.navigate()&quot; because the return value of &quot;com.utilities.HelperClass.getDriver()&quot; is null
+	at com.definitions.Hooks.setUp(Hooks.java:26)
 </pre></div></td>
-<td>103</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
+<td>0</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on a iPod Nano product and verify the URL", "Soundar_01MAY2025_LambdaTesters_Verify_product_url"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.navigate()&quot; because the return value of &quot;com.utilities.HelperClass.getDriver()&quot; is null
+	at com.definitions.Hooks.setUp(Hooks.java:26)
+</pre></div><a href='#' onClick='toggleBox("stack-trace513737395", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace513737395'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.navigate()&quot; because the return value of &quot;com.utilities.HelperClass.getDriver()&quot; is null
+	at com.definitions.Hooks.setUp(Hooks.java:26)
+</pre></div></td>
+<td>0</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
 <tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (154ae45f1840f0b569a304494f75189e)] -&gt; xpath: //a[contains(@class,&apos;nav-link&apos;) and contains(@href,&apos;account/account&apos;)]] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.48, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52923}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52923/devtoo..., se:cdpVersion: 136.0.7103.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 154ae45f1840f0b569a304494f75189e
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.actions.UserRegistrationAction.waitAndMoveToElement(UserRegistrationAction.java:111)
-	at com.actions.UserRegistrationAction.clickMyAccounts(UserRegistrationAction.java:30)
-	at com.definitions.UserRegistrationDefinition.the_user_clicks_on(UserRegistrationDefinition.java:29)
-	at ✽.the user clicks on My Account.(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/UserRegistration.feature:8)
-</pre></div><a href='#' onClick='toggleBox("stack-trace766675324", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace766675324'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (154ae45f1840f0b569a304494f75189e)] -&gt; xpath: //a[contains(@class,&apos;nav-link&apos;) and contains(@href,&apos;account/account&apos;)]] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.48, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52923}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52923/devtoo..., se:cdpVersion: 136.0.7103.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 154ae45f1840f0b569a304494f75189e
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.actions.UserRegistrationAction.waitAndMoveToElement(UserRegistrationAction.java:111)
-	at com.actions.UserRegistrationAction.clickMyAccounts(UserRegistrationAction.java:30)
-	at com.definitions.UserRegistrationDefinition.the_user_clicks_on(UserRegistrationDefinition.java:29)
-	at ✽.the user clicks on My Account.(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/UserRegistration.feature:8)
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.navigate()&quot; because the return value of &quot;com.utilities.HelperClass.getDriver()&quot; is null
+	at com.definitions.Hooks.setUp(Hooks.java:26)
+</pre></div><a href='#' onClick='toggleBox("stack-trace405413399", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace405413399'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.navigate()&quot; because the return value of &quot;com.utilities.HelperClass.getDriver()&quot; is null
+	at com.definitions.Hooks.setUp(Hooks.java:26)
 </pre></div></td>
-<td>124</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
+<td>0</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality with valid inputs", "Jeevika_12APR2025_LambdaTesters_Search"</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.definitions.SearchDefinition.verify_products_displayed(SearchDefinition.java:112)
+	at ✽.the products must be displayed(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/Search.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2015594621", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2015594621'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.definitions.SearchDefinition.verify_products_displayed(SearchDefinition.java:112)
+	at ✽.the products must be displayed(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/Search.feature:9)
+</pre></div></td>
+<td>10</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality with case sensitive inputs", "Jeevika_12APR2025_LambdaTesters_Search"</td>
+<td></td>
+<td>8</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To reorder the product in the order  history", "Saranya_16APR2025_LambdaTesters_My_orders_feature"</td>
+<td></td>
+<td>63</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit review with rating but without comment", "Soundar_16APR2025_LambdaTesters_ProductReview"</td>
+<td></td>
+<td>13</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Jeevika_09APR2025_LambdaTesters_Login"</td>
+<td></td>
+<td>8</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Change user password without providing new password", "Soundar_15APR2025_LambdaTesters_UserAccountManagement"</td>
+<td></td>
+<td>16</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Jeevika_09APR2025_LambdaTesters_Login"</td>
+<td></td>
+<td>8</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit review without rating and without comment", "Soundar_16APR2025_LambdaTesters_ProductReview"</td>
+<td></td>
+<td>14</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add multiple quantities of the same product", "Soundar_12APR2025_LambdaTesters_AddToCart"</td>
+<td></td>
+<td>20</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To assert the Functioning of Webelements in home page", "Saranya_20APR2025_LamdaTesters_Feature file for HomePage Assertion"</td>
+<td></td>
+<td>7</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality by category as input", "Jeevika_12APR2025_LambdaTesters_Search"</td>
+<td></td>
+<td>9</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "category wise selection and assertion", "Jeevika_16APR2025_LambdaTesters_Blog"</td>
+<td></td>
+<td>10</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding a valid comment to the blog", "Jeevika_16APR2025_LambdaTesters_Blog"</td>
+<td></td>
+<td>17</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register a user and register as affiliate with valid and invalid inputs", "Jeevika_15APR2025_LambdaTesters_AffiliateAccount"</td>
+<td></td>
+<td>30</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Subscribe or Unsubscribe from newsletter", "Soundar_15APR2025_LambdaTesters_UserAccountManagement"</td>
+<td></td>
+<td>15</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Modify the wishlist by removing a product", "Soundar_15APR2025_LambdaTesters_UserAccountManagement"</td>
+<td></td>
+<td>17</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submitting a blog comment without filling required details", "Jeevika_16APR2025_LambdaTesters_Blog"</td>
+<td></td>
+<td>12</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Change user password", "Soundar_15APR2025_LambdaTesters_UserAccountManagement"</td>
+<td></td>
+<td>16</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality with invalid inputs", "Jeevika_12APR2025_LambdaTesters_Search"</td>
+<td></td>
+<td>9</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Estimate the shipping and taxes", "Soundar_28APR2025_LambdaTesters_EstimateShippingStatus"</td>
+<td></td>
+<td>19</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User requests a password reset link with various email inputs", "Soundar_09APR2025_LambdaTesters_ForgotPassword"</td>
+<td></td>
+<td>43</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To checkout view the order history after ordering", "Saranya_16APR2025_LambdaTesters_My_orders_feature"</td>
+<td></td>
+<td>59</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit a valid product review with rating and comment", "Soundar_16APR2025_LambdaTesters_ProductReview"</td>
+<td></td>
+<td>16</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit review without rating but with comment", "Soundar_16APR2025_LambdaTesters_ProductReview"</td>
+<td></td>
+<td>13</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To Add the products to comparision list", "Saranya_15APR2025_LambdaTesters_Product_compare_functionality"</td>
+<td></td>
+<td>42</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submitting a blog comment without filling required details", "Jeevika_16APR2025_LambdaTesters_Blog"</td>
+<td></td>
+<td>16</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Jeevika_09APR2025_LambdaTesters_Login"</td>
+<td></td>
+<td>11</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To Add the products to comparision list", "Saranya_15APR2025_LambdaTesters_Product_compare_functionality"</td>
+<td></td>
+<td>11</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To checkout the  cart as a registered user", "Saranya_12APR2025_LambdaTesters_Shopping_Cart_CheckOut_functionality"</td>
+<td></td>
+<td>55</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To redirected to the product page after clicking Shop Now button in Block 2", "Saranya_20APR2025_LamdaTesters_Feature file for HomePage Assertion"</td>
+<td></td>
+<td>9</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To perform compare without adding products to list", "Saranya_15APR2025_LambdaTesters_Product_compare_functionality"</td>
+<td></td>
+<td>27</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To checkout the shopping cart as a guest user", "Saranya_12APR2025_LambdaTesters_Shopping_Cart_CheckOut_functionality"</td>
+<td></td>
+<td>54</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
 <tr>
 <td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with valid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (16f7334b46b142e864cca729d12df651)] -&gt; xpath: //a[contains(@class,&apos;nav-link&apos;) and contains(@href,&apos;account/account&apos;)]] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.48, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52840}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52840/devtoo..., se:cdpVersion: 136.0.7103.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 16f7334b46b142e864cca729d12df651
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.actions.UserRegistrationAction.waitAndMoveToElement(UserRegistrationAction.java:111)
-	at com.actions.UserRegistrationAction.clickMyAccounts(UserRegistrationAction.java:30)
-	at com.definitions.UserRegistrationDefinition.the_user_clicks_on(UserRegistrationDefinition.java:29)
-	at ✽.the user clicks on My Account.(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/UserRegistration.feature:8)
-</pre></div><a href='#' onClick='toggleBox("stack-trace6620154", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace6620154'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (16f7334b46b142e864cca729d12df651)] -&gt; xpath: //a[contains(@class,&apos;nav-link&apos;) and contains(@href,&apos;account/account&apos;)]] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.48, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52840}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52840/devtoo..., se:cdpVersion: 136.0.7103.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 16f7334b46b142e864cca729d12df651
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.actions.UserRegistrationAction.waitAndMoveToElement(UserRegistrationAction.java:111)
-	at com.actions.UserRegistrationAction.clickMyAccounts(UserRegistrationAction.java:30)
-	at com.definitions.UserRegistrationDefinition.the_user_clicks_on(UserRegistrationDefinition.java:29)
-	at ✽.the user clicks on My Account.(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/UserRegistration.feature:8)
-</pre></div></td>
-<td>89</td>
-<td>com.runner.RunnerTestNg@26b3fd41</td></tr>
+<td></td>
+<td>11</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with invalid credentials", "Jeevika_09APR2025_LambdaTesters_Login"</td>
+<td></td>
+<td>11</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User requests a password reset link with various email inputs", "Soundar_09APR2025_LambdaTesters_ForgotPassword"</td>
+<td></td>
+<td>43</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To redirect to the trending product page when clicking the product", "Saranya_20APR2025_LamdaTesters_Feature file for HomePage Assertion"</td>
+<td></td>
+<td>9</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register a user and register as affiliate with valid and invalid inputs", "Jeevika_15APR2025_LambdaTesters_AffiliateAccount"</td>
+<td></td>
+<td>33</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To checkout the  cart with existing email", "Saranya_12APR2025_LambdaTesters_Shopping_Cart_CheckOut_functionality"</td>
+<td></td>
+<td>50</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to add a product to cart without selecting size", "Soundar_12APR2025_LambdaTesters_AddToCart"</td>
+<td></td>
+<td>20</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User requests a password reset link with various email inputs", "Soundar_09APR2025_LambdaTesters_ForgotPassword"</td>
+<td></td>
+<td>15</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To assert special offer button in homepage", "Jeevika_29APR2025_LamdaTesters_SpecialOffer_in_homePage"</td>
+<td></td>
+<td>8</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submitting a blog comment without filling required details", "Jeevika_16APR2025_LambdaTesters_Blog"</td>
+<td></td>
+<td>17</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Remove a product from the cart", "Soundar_12APR2025_LambdaTesters_AddToCart"</td>
+<td></td>
+<td>46</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user clicks on designs of addOns", "Jeevika_01MAY2025_LambdaTesters_AddOns"</td>
+<td></td>
+<td>16</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate all FAQ messages displayed for iPod Nano under Phones & PDAs category", "Soundar_29APR2025_LambdaTesters_FrequentlyAskedQuestion"</td>
+<td></td>
+<td>16</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search functionality with unnecessary indentation in search", "Jeevika_12APR2025_LambdaTesters_Search"</td>
+<td></td>
+<td>8</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking the product image to navigate to product shopping page", "Jeevika_16APR2025_LambdaTesters_Blog"</td>
+<td></td>
+<td>13</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To checkout the empty shopping cart as a registered user", "Saranya_12APR2025_LambdaTesters_Shopping_Cart_CheckOut_functionality"</td>
+<td></td>
+<td>19</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Subscribe or Unsubscribe from newsletter", "Soundar_15APR2025_LambdaTesters_UserAccountManagement"</td>
+<td></td>
+<td>15</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding new address", "Soundar_15APR2025_LambdaTesters_UserAccountManagement"</td>
+<td></td>
+<td>22</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To redirect to the product page after clicking Head phones poster", "Saranya_20APR2025_LamdaTesters_Feature file for HomePage Assertion"</td>
+<td></td>
+<td>9</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with valid credentials and logs out", "Jeevika_09APR2025_LambdaTesters_Login"</td>
+<td></td>
+<td>11</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to login with valid credentials", "Jeevika_09APR2025_LambdaTesters_Login"</td>
+<td></td>
+<td>12</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit user account details", "Soundar_15APR2025_LambdaTesters_UserAccountManagement"</td>
+<td></td>
+<td>15</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
+<tr>
+<td title='com.runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a single product to the cart", "Soundar_12APR2025_LambdaTesters_AddToCart"</td>
+<td></td>
+<td>19</td>
+<td>com.runner.RunnerTestNg@5a56cdac</td></tr>
 </table><p>
 </body>
 </html>

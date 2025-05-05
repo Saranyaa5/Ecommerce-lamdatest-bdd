@@ -6,23 +6,14 @@ Feature: Soundar_09APR2025_LambdaTesters_ForgotPassword
     And clicks on login
     When user clicks on Forgotten Password link
 
-  @ForgotPasswordWithValidEmail
-  Scenario: User requests a password reset link using valid email
- And user enters valid email to receive reset link
-      | email              |
-      | 2k21eee65@kiot.ac.in |
+  @ForgotPasswordOutline
+  Scenario Outline: User requests a password reset link with various email inputs
+    And user enters "<email>" to receive reset link
     And user clicks continue
-    Then user should see an email sent confirmation message
+    Then user should a message "<message>"
 
-  @ForgotPasswordWithInValidEmail
-  Scenario: User requests a password reset link using invalid email
-    And user enters Invalid email to receive reset link
-      | email              |
-      | 2k21eee33@kiot.ac.in |
-    And user clicks continue
-    Then user should see an Error Message
-    
-      @ForgotPasswordWithoutProvidingEmail
-  Scenario: User requests a password reset link without providing email
-    And user clicks continue
-    Then user should see an Error Message
+    Examples:
+      | email                | message                                                                |
+      | 2k21eee65@kiot.ac.in | An email with a confirmation link has been sent your email address.    |
+      | 2k21eee33@kiot.ac.in | Warning: The E-Mail Address was not found in our records, please try again! |
+      |                      | Warning: The E-Mail Address was not found in our records, please try again! |
