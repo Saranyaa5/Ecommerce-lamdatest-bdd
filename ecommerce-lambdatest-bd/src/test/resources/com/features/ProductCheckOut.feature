@@ -32,7 +32,7 @@ Scenario: To checkout the shopping cart as a guest user
   And user views the shopping cart
   Then the user should see the message cart is empty
 
-  @CheckoutAsRegisterUser0307
+  @CheckoutAsRegisterUser
   Scenario: To checkout the  cart as a registered user
      When the user searches "hp lp3065"
 	  And user selects the product
