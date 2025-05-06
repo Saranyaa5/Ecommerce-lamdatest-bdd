@@ -27,3 +27,9 @@ Feature: Jeevika_12APR2025_LambdaTesters_Search
   Scenario: Search functionality by category as input
     When the user searches with category input from excel
     Then the message "There is no product that matches the search criteria." should be displayed
+    
+ #@MinimumAndMaximumSegregation
+#	Scenario: Display products between minimum and maximum values
+    #When the user enters the minimum value
+    #And the user enters the maximum value
+    #Then the user should see all products within that value range
