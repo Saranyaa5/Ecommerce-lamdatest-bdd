@@ -1,9 +1,16 @@
 package com.pages;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class HomePageLocator {
+	
+	
+	@FindBy(xpath = "//*[contains(@class,'nav-item')]//a")
+	public List<WebElement> allLinks;
+	
     @FindBy(css="#entry_217964 a:first-of-type")
     public WebElement blk1Shopnow;
  
