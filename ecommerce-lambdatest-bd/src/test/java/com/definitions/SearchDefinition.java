@@ -138,5 +138,28 @@ public class SearchDefinition{
     public void the_user_should_see_all_products_within_that_value_range() {
         Assert.assertTrue("Products are not within the value range!", searchAction.isPriceWithinRange(602,2000));
     }
+    
+    
+    @When("the user clicks on Shop by Category")
+    public void the_user_clicks_on_shop_by_category() {
+        searchAction.clickShopByCategory();
+    }
+
+    @When("selects a specific category from the list")
+    public void selects_a_specific_category_from_the_list() {
+        searchAction.clickCategory();
+    }
+
+    @When("chooses a desired number of products to display from the dropdown")
+    public void chooses_a_desired_number_of_products_to_display_from_the_dropdown() throws InterruptedException {
+    	searchAction.selectProductCountFromDropdown("25"); 
+    }
+
+    @Then("the user should see exactly that number of products displayed on the page")
+    public void the_user_should_see_exactly_that_number_of_products_displayed_on_the_page() {
+    	boolean isMatching = searchAction.isProductCountMatchingDropdown();
+        Assert.assertTrue("Product count does not match the selected dropdown value.", isMatching);
+    }
+    
 }
 
