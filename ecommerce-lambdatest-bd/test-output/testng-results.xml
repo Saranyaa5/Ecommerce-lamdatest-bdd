@@ -1,26 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+=======
 <testng-results ignored="0" total="62" passed="54" failed="8" skipped="0">
+>>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
+  <suite started-at="2025-05-06T07:29:33 IST" name="Suite" finished-at="2025-05-06T07:30:17 IST" duration-ms="44138">
+=======
   <suite started-at="2025-05-05T23:30:39 IST" name="Default suite" finished-at="2025-05-05T23:32:44 IST" duration-ms="125351">
+>>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@5a56cdac]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
+<<<<<<< HEAD
+    <test started-at="2025-05-06T07:29:33 IST" name="Test" finished-at="2025-05-06T07:30:17 IST" duration-ms="44138">
+=======
     <test started-at="2025-05-05T23:30:39 IST" name="Default test" finished-at="2025-05-05T23:32:44 IST" duration-ms="125351">
+>>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
       <class name="com.runner.RunnerTestNg">
+<<<<<<< HEAD
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.RunnerTestNg@58a9760d]" started-at="2025-05-06T07:29:33 IST" name="setUpClass" finished-at="2025-05-06T07:29:34 IST" duration-ms="1439" status="PASS">
+=======
         <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.RunnerTestNg@5a56cdac]" started-at="2025-05-05T23:30:39 IST" name="setUpClass" finished-at="2025-05-05T23:30:40 IST" duration-ms="1075" status="PASS">
+>>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
+                <![CDATA[org.testng.TestRunner@c88a337]]>
+=======
                 <![CDATA[org.testng.TestRunner@b5aa65b]]>
+>>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
+<<<<<<< HEAD
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@58a9760d]" started-at="2025-05-06T07:29:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-06T07:30:12 IST" duration-ms="38118" status="FAIL">
+=======
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@5a56cdac]" started-at="2025-05-05T23:30:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-05T23:31:00 IST" duration-ms="20335" status="PASS">
           <params>
             <param index="0">
@@ -673,21 +696,77 @@ at ✽.the products must be displayed(file:///C:/Users/saran/git/SeleniumFinalCu
           </reporter-output>
         </test-method> <!-- runScenario -->
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@5a56cdac]" started-at="2025-05-05T23:32:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-05T23:32:19 IST" duration-ms="8776" status="PASS">
+>>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
           <params>
             <param index="0">
               <value>
-                <![CDATA["To assert special offer button in homepage"]]>
+                <![CDATA["Register a user and register as affiliate with valid and invalid inputs"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Jeevika_29APR2025_LamdaTesters_SpecialOffer_in_homePage"]]>
+                <![CDATA["Jeevika_15APR2025_LambdaTesters_AffiliateAccount"]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "element" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "element" is null
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at com.actions.AffiliateAccountAction.clickCheckbox(AffiliateAccountAction.java:93)
+at com.definitions.AffiliateAccountDefinition.clicks_on_checkbox(AffiliateAccountDefinition.java:37)
+at ✽.clicks on checkbox(file:///C:/Users/kirub/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/AffiliateAccount.feature:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@58a9760d]" started-at="2025-05-06T07:29:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-06T07:30:15 IST" duration-ms="40139" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Register a user and register as affiliate with valid and invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Jeevika_15APR2025_LambdaTesters_AffiliateAccount"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "element" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "element" is null
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at com.actions.AffiliateAccountAction.clickCheckbox(AffiliateAccountAction.java:93)
+at com.definitions.AffiliateAccountDefinition.clicks_on_checkbox(AffiliateAccountDefinition.java:37)
+at ✽.clicks on checkbox(file:///C:/Users/kirub/git/Ecommerce-lamdatest-bdd/ecommerce-lambdatest-bd/src/test/resources/com/features/AffiliateAccount.feature:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.RunnerTestNg@58a9760d]" started-at="2025-05-06T07:30:15 IST" name="tearDownClass" finished-at="2025-05-06T07:30:17 IST" duration-ms="2475" status="PASS">
+=======
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerTestNg@5a56cdac]" started-at="2025-05-05T23:32:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-05T23:32:26 IST" duration-ms="15303" status="PASS">
           <params>
             <param index="0">
@@ -1095,6 +1174,7 @@ at com.definitions.Hooks.setUp(Hooks.java:26)
           </reporter-output>
         </test-method> <!-- runScenario -->
         <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.RunnerTestNg@5a56cdac]" started-at="2025-05-05T23:32:41 IST" name="tearDownClass" finished-at="2025-05-05T23:32:44 IST" duration-ms="3726" status="PASS">
+>>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

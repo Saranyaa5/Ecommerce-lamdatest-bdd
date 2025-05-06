@@ -94,5 +94,27 @@ public class SearchAction {
     public String getNoProductMessageText() {
         return wait.until(ExpectedConditions.visibilityOf(searchLocator.noProductMessage)).getText();
     }
+    
+    public void enterMinimumValue(String min) {
+        wait.until(ExpectedConditions.visibilityOf(searchLocator.mindragger)).clear();
+        searchLocator.mindragger.sendKeys(min);
+    }
+
+    public void enterMaximumValue(String max) {
+        wait.until(ExpectedConditions.visibilityOf(searchLocator.maxdragger)).clear();
+        searchLocator.maxdragger.sendKeys(max);
+    }
+
+    public boolean isPriceWithinRange(int min, int max) {
+        try {
+            wait.until(ExpectedConditions.visibilityOf(searchLocator.price));
+            String priceText = searchLocator.price.getText().replaceAll("[^0-9]", "");
+            int priceValue = Integer.parseInt(priceText);
+            return priceValue >= min && priceValue <= max;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
 }
 

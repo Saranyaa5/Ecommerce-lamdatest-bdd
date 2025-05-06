@@ -27,5 +27,18 @@ public class SearchLocator {
     
     @FindBy(xpath = "//select[@id='input-limit']")
     public WebElement showCountDropdown;
+    
+    @FindBy(xpath="(//div[@class='d-flex align-items-center']/descendant::input[@class='form-control' and @placeholder='Minimum Price'])[2]")
+    public WebElement mindragger;
+    
+    @FindBy(xpath="(//div[@class='d-flex align-items-center']/descendant::input[@class='form-control' and @placeholder='Maximum Price'])[2]")
+    public WebElement maxdragger;
+    
+    @FindBy(xpath="(//div[@class='ui-slider-range ui-corner-all ui-widget-header'])[2]")
+    public WebElement dragger;
+    
+    @FindBy(xpath="(//div[@class='price']/span[@class='price-new'])[1]")
+    public WebElement price;
+    
 }
 

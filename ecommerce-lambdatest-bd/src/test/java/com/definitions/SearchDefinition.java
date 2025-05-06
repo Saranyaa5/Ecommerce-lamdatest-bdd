@@ -123,5 +123,20 @@ public class SearchDefinition{
        
         Assert.assertEquals(message, searchAction.getNoProductMessageText());
     }
+    
+    @When("the user enters the minimum value")
+    public void the_user_enters_the_minimum_value() {
+        searchAction.enterMinimumValue("602"); 
+    }
+
+    @When("the user enters the maximum value")
+    public void the_user_enters_the_maximum_value() {
+        searchAction.enterMaximumValue("2000"); 
+    }
+
+    @Then("the user should see all products within that value range")
+    public void the_user_should_see_all_products_within_that_value_range() {
+        Assert.assertTrue("Products are not within the value range!", searchAction.isPriceWithinRange(602,2000));
+    }
 }
 
