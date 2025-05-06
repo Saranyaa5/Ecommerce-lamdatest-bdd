@@ -33,3 +33,11 @@ Feature: Jeevika_12APR2025_LambdaTesters_Search
     #When the user enters the minimum value
     #And the user enters the maximum value
     #Then the user should see all products within that value range
+    
+		@display_the_count_of_product_in_page
+   Scenario: Display the Count of Products Selected in Dropdown
+		Given the user is on the homepage
+		When the user clicks on Shop by Category
+		And selects a specific category from the list
+		And chooses a desired number of products to display from the dropdown
+		Then the user should see exactly that number of products displayed on the page

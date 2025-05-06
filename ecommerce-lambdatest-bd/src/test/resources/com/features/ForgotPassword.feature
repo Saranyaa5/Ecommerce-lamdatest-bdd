@@ -9,8 +9,8 @@ Feature: Soundar_09APR2025_LambdaTesters_ForgotPassword
   @ForgotPasswordOutline
   Scenario Outline: User requests a password reset link with various email inputs
     And user enters "<email>" to receive reset link
-    And user clicks continue
-    Then user should a message "<message>"
+     And user clicks continue
+     Then user should a message "<message>"
 
     Examples:
       | email                | message                                                                |

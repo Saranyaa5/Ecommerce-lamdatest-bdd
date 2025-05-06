@@ -1,5 +1,7 @@
 package com.pages;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -40,5 +42,26 @@ public class SearchLocator {
     @FindBy(xpath="(//div[@class='price']/span[@class='price-new'])[1]")
     public WebElement price;
     
+    @FindBy(xpath = "//span[@class='ui-slider-handle ui-state-default ui-corner-all'][1]") 
+    public WebElement leftSliderHandle;
+
+    @FindBy(xpath = "//span[@class='ui-slider-handle ui-state-default ui-corner-all'][2]") 
+    public WebElement rightSliderHandle;
+    
+    @FindBy(xpath="//div[@id='entry_217832']/descendant::a")
+    public WebElement shopbycategory;
+    
+    @FindBy(xpath="(//li[@class='nav-item']//following-sibling::a[@class='icon-left both nav-link']/div/span)[1]")
+    public WebElement components;
+    
+    @FindBy(xpath="//select[@id='input-limit-212402']")
+    public WebElement select;
+    
+    @FindBy(xpath="//select[@id='input-limit-212402']//option[2]")
+    public WebElement option2;
+    
+    @FindBy(xpath = "//div[@data-grid='product-layout product-grid no-desc col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6']/div[@class='product-layout product-grid no-desc col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6']")
+    public List<WebElement> productList;
+     
 }
 
