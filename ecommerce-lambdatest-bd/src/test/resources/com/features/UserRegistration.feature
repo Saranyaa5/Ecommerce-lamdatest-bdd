@@ -7,7 +7,7 @@ Feature: Saranya_09APR2025_LambdaTesters_User_Registration_Functionality
     Given the user is on the homepage  
     When the user clicks on My Account.  
     And clicks the register button  
-    Then the user should see the registration page  
+    And the user should see the registration page  
 
   @ValidRegistrationInputs
   Scenario Outline: Register with valid inputs  

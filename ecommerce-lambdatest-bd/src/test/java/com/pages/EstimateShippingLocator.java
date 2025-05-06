@@ -8,17 +8,18 @@ public class EstimateShippingLocator {
 	@FindBy(xpath = "//div[@id=\"collapse-shipping\"]/preceding-sibling::h5")
     public WebElement EstimateShipping;
 
-	@FindBy(xpath = "//button[@id='button-quote']")
-    public WebElement getquotes;
-	
-	@FindBy(xpath = "//div[@class='form-check']/label/input")
-    public WebElement flatshippingradiobutton;
-	
-	@FindBy(xpath = "//button[@id='button-shipping']")
-    public WebElement applyshippingbutton;
-	
-	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
-    public WebElement EstimateShippingSuccessMsg;
+	@FindBy(xpath = "//button[contains(@id, 'button-quote')]")
+	public WebElement getquotes;
+
+	@FindBy(xpath = "//div[contains(@class, 'form-check')]/label/input")
+	public WebElement flatshippingradiobutton;
+
+	@FindBy(xpath = "//button[contains(@id, 'button-shipping')]")
+	public WebElement applyshippingbutton;
+
+	@FindBy(xpath = "//div[contains(@class, 'alert') and contains(@class, 'alert-success')]")
+	public WebElement EstimateShippingSuccessMsg;
+
 	
 	
 }
