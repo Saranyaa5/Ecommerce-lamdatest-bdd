@@ -15464,3 +15464,42 @@ Session ID: a69b9dd60b15c9843d68072c76518019
 2025-05-04 19:47:56 [TestNG-PoolService-1] INFO : Scenario passed: user clicks on designs of addOns
 2025-05-04 19:54:59 [TestNG-PoolService-1] INFO : Scenario started: To assert special offer button in homepage
 2025-05-04 19:55:05 [TestNG-PoolService-1] INFO : Scenario passed: To assert special offer button in homepage
+2025-05-05 20:31:31 [TestNG-PoolService-1] INFO : Scenario started: User requests a password reset link using valid email
+2025-05-05 20:31:31 [TestNG-PoolService-3] INFO : Scenario started: User requests a password reset link without providing email
+2025-05-05 20:31:31 [TestNG-PoolService-2] INFO : Scenario started: User requests a password reset link using invalid email
+2025-05-05 20:31:44 [TestNG-PoolService-2] INFO : Scenario passed: User requests a password reset link using invalid email
+2025-05-05 20:31:45 [TestNG-PoolService-1] INFO : Scenario passed: User requests a password reset link using valid email
+2025-05-05 20:31:49 [TestNG-PoolService-3] INFO : Scenario passed: User requests a password reset link without providing email
+2025-05-05 20:39:40 [TestNG-PoolService-3] INFO : Scenario started: User requests a password reset link with various email inputs
+2025-05-05 20:39:40 [TestNG-PoolService-2] INFO : Scenario started: User requests a password reset link with various email inputs
+2025-05-05 20:39:40 [TestNG-PoolService-1] INFO : Scenario started: User requests a password reset link with various email inputs
+2025-05-05 20:39:52 [TestNG-PoolService-1] INFO : Scenario passed: User requests a password reset link with various email inputs
+2025-05-05 20:40:21 [TestNG-PoolService-3] INFO : Scenario passed: User requests a password reset link with various email inputs
+2025-05-05 20:40:22 [TestNG-PoolService-2] INFO : Scenario passed: User requests a password reset link with various email inputs
+2025-05-05 20:41:40 [TestNG-PoolService-3] INFO : Scenario started: User requests a password reset link with various email inputs
+2025-05-05 20:41:40 [TestNG-PoolService-2] INFO : Scenario started: User requests a password reset link with various email inputs
+2025-05-05 20:41:40 [TestNG-PoolService-1] INFO : Scenario started: User requests a password reset link with various email inputs
+2025-05-05 20:41:51 [TestNG-PoolService-1] INFO : Scenario passed: User requests a password reset link with various email inputs
+2025-05-05 20:42:20 [TestNG-PoolService-2] INFO : Scenario passed: User requests a password reset link with various email inputs
+2025-05-05 20:42:21 [TestNG-PoolService-3] INFO : Scenario passed: User requests a password reset link with various email inputs
+2025-05-05 20:50:26 [TestNG-PoolService-3] INFO : Scenario started: Add multiple quantities of the same product
+2025-05-05 20:50:26 [TestNG-PoolService-1] INFO : Scenario started: Add a single product to the cart
+2025-05-05 20:50:26 [TestNG-PoolService-2] INFO : Scenario started: Remove a product from the cart
+2025-05-05 20:50:26 [TestNG-PoolService-4] INFO : Scenario started: User tries to add a product to cart without selecting size
+2025-05-05 20:50:42 [TestNG-PoolService-1] INFO : Scenario passed: Add a single product to the cart
+2025-05-05 20:50:42 [TestNG-PoolService-4] INFO : Scenario passed: User tries to add a product to cart without selecting size
+2025-05-05 20:50:43 [TestNG-PoolService-3] INFO : Scenario passed: Add multiple quantities of the same product
+2025-05-05 20:51:05 [TestNG-PoolService-2] INFO : Scenario passed: Remove a product from the cart
+2025-05-05 20:56:14 [TestNG-PoolService-2] INFO : Scenario started: Remove a product from the cart
+2025-05-05 20:56:14 [TestNG-PoolService-4] INFO : Scenario started: User tries to add a product to cart without selecting size
+2025-05-05 20:56:14 [TestNG-PoolService-3] INFO : Scenario started: Add multiple quantities of the same product
+2025-05-05 20:56:14 [TestNG-PoolService-1] INFO : Scenario started: Add a single product to the cart
+2025-05-05 20:57:31 [TestNG-PoolService-4] INFO : Scenario passed: User tries to add a product to cart without selecting size
+2025-05-05 20:57:58 [TestNG-PoolService-4] INFO : Scenario started: User tries to add a product to cart without selecting size
+2025-05-05 20:57:58 [TestNG-PoolService-2] INFO : Scenario started: Remove a product from the cart
+2025-05-05 20:57:58 [TestNG-PoolService-3] INFO : Scenario started: Add multiple quantities of the same product
+2025-05-05 20:57:58 [TestNG-PoolService-1] INFO : Scenario started: Add a single product to the cart
+2025-05-05 20:58:13 [TestNG-PoolService-4] INFO : Scenario passed: User tries to add a product to cart without selecting size
+2025-05-05 20:58:14 [TestNG-PoolService-1] INFO : Scenario passed: Add a single product to the cart
+2025-05-05 20:58:15 [TestNG-PoolService-3] INFO : Scenario passed: Add multiple quantities of the same product
+2025-05-05 20:58:37 [TestNG-PoolService-2] INFO : Scenario passed: Remove a product from the cart
