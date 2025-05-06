@@ -148,7 +148,7 @@ public class UserAccountAction {
  public String NewsLetterUpdated() {
         return userAccountLocator.newsLetterUpdated.getText();
     }
- // Enter login credentials (hardcoded)
+
     public void EnterCredentialsForMyAccount() {
         try {
             loginPageLocator.emailId.sendKeys("2k21eee40@kiot.ac.in");
