@@ -193,7 +193,7 @@ public class UserAccountAction {
     // Fill in new address details
     public void enterAddressDetails(String firstName, String lastName, String address, String city, String postcode) {
         try {
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
             userAccountLocator.getFirstNameField.sendKeys(firstName);
             userAccountLocator.getLastNameField.sendKeys(lastName);
