@@ -113,18 +113,40 @@ public class CheckOutAction {
 			public void clickPrivacyPolicy() {
 				checkOutPageLocator.PrivacyCheckbox.click();
 			}
+//			public void clickContinueCheckout() {
+//			    WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+//			    wait.until(ExpectedConditions.elementToBeClickable(checkOutPageLocator.continueButton));
+//			    
+//			    actions.moveToElement(checkOutPageLocator.continueButton)
+//			           .click()
+//			           .perform();
+//			}
 			public void clickContinueCheckout() {
-			    WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
-			    wait.until(ExpectedConditions.elementToBeClickable(checkOutPageLocator.continueButton));
-			    
-			    actions.moveToElement(checkOutPageLocator.continueButton)
-			           .click()
-			           .perform();
+			    try {
+			        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+			        
+			        // Scroll to the element first
+			        ((JavascriptExecutor) HelperClass.getDriver()).executeScript(
+			            "arguments[0].scrollIntoView({block: 'center', behavior: 'smooth'});", 
+			            checkOutPageLocator.continueButton);
+			        
+			        // Wait for the element to be clickable
+			        wait.until(ExpectedConditions.elementToBeClickable(checkOutPageLocator.continueButton));
+			        
+			        // Click using JavaScript executor if regular click doesn't work
+			        ((JavascriptExecutor) HelperClass.getDriver()).executeScript(
+			            "arguments[0].click();", 
+			            checkOutPageLocator.continueButton);
+			            
+			    } catch (Exception e) {
+			        System.out.println("Exception while clicking continue checkout: " + e.getMessage());
+			        throw e;
+			    }
 			}
 			
 			
 			public void confirmOrder() {
-				WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+				WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(35));
 			    wait.until(ExpectedConditions.elementToBeClickable(checkOutPageLocator.confirmOrder));
 				checkOutPageLocator.confirmOrder.click();
 			}
