@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import com.pages.ShoppingCartTableVerificationLocator;
 import com.utilities.HelperClass;
 public class ShoppingCartTableVerificationAction {
@@ -20,7 +21,7 @@ public class ShoppingCartTableVerificationAction {
     }
     public String verifyProductIsInTable(String expected) {  
         List<WebElement> productNames = TableLocator.allProductNames;
-   
+    
         for (int i = 0; i < productNames.size(); i++) {
             String name = productNames.get(i).getText().trim();
             if (name.equalsIgnoreCase(expected)) {
