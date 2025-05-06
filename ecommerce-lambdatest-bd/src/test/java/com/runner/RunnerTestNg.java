@@ -12,8 +12,8 @@ import org.testng.annotations.DataProvider;
       "src/test/resources/com/features/UserAccountManagement.feature",
       "src/test/resources/com/features/ProductReview.feature",
       "src/test/resources/com/features/EstimateShippingStatus.feature",
-      "src/test/resources/com/features/FAQ.feature",
       "src/test/resources/com/features/ShoppingCartTableVerification.feature",
+      "src/test/resources/com/features/FAQ.feature",
       "src/test/resources/com/features/Verify_product_url.feature",
       
 
