@@ -35,27 +35,46 @@ public class OrderPageAction {
         int attempts = 0;
         while (attempts < 2) {
             try {
-                // Reinitialize the locator to make sure it's up to date
                 orderPageLocator = new OrderPageLocator(); 
                 PageFactory.initElements(driver, orderPageLocator);
 
-                // Wait and click the 'Continue' button after refreshing the element
                 WebElement continueBtn = wait.until(ExpectedConditions.refreshed(
                     ExpectedConditions.elementToBeClickable(orderPageLocator.accContinue)
                 ));
                 continueBtn.click();
-                break;  // Exit the loop if successful
+
+                wait.until(ExpectedConditions.visibilityOf(orderPageLocator.myAccount));
+                break;
             } catch (StaleElementReferenceException e) {
                 attempts++;
                 System.out.println("Retrying due to stale element...");
                 if (attempts == 2) {
-                    throw e;  // Throw the exception if retry fails
+                    throw e;
                 }
             }
         }
     }
+    
+    public void clickLoginUnderMyAccount() {
+        Actions actions = new Actions(driver);
 
-    public void clickOrderHistory() throws InterruptedException {
+        // Wait until the URL is the expected success page
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.urlToBe("https://ecommerce-playground.lambdatest.io/index.php?route=checkout/success"));
+
+        // Hover over "My Account"
+        actions.moveToElement(orderPageLocator.myAccount).perform();
+
+        // Wait until the login link is visible
+        wait.until(ExpectedConditions.visibilityOf(orderPageLocator.loginLink));
+
+        // Click on the login link
+        orderPageLocator.loginLink.click();
+    }
+
+
+
+    public void clickOrderHistory() {
         WebElement myAccountElement = wait.until(ExpectedConditions.refreshed(
             ExpectedConditions.visibilityOf(orderPageLocator.myAccount)
         ));
@@ -64,9 +83,10 @@ public class OrderPageAction {
         WebElement myOrderElement = wait.until(ExpectedConditions.refreshed(
             ExpectedConditions.elementToBeClickable(orderPageLocator.orders)
         ));
-        Thread.sleep(1000); // optional small pause
         myOrderElement.click();
-        Thread.sleep(1000); // optional
+
+        // Wait for order history section or any identifier to load
+        wait.until(ExpectedConditions.visibilityOf(orderPageLocator.orderhistory));
     }
 
     public boolean eyeDisplayed() {
@@ -81,6 +101,9 @@ public class OrderPageAction {
             ExpectedConditions.elementToBeClickable(orderPageLocator.viewOrderButton)
         ));
         viewBtn.click();
+
+        // Wait for reorder button or order details to be visible after clicking
+        wait.until(ExpectedConditions.visibilityOf(orderPageLocator.reorderButton));
     }
 
     public void clickReorderButton() {
@@ -88,6 +111,8 @@ public class OrderPageAction {
             ExpectedConditions.elementToBeClickable(orderPageLocator.reorderButton)
         ));
         reorderBtn.click();
+
+        wait.until(ExpectedConditions.visibilityOf(orderPageLocator.reorderSuccessMessage));
     }
 
     public boolean isReorderMessageDisplayed() {
@@ -102,5 +127,14 @@ public class OrderPageAction {
             ExpectedConditions.visibilityOf(orderPageLocator.orderhistory)
         ));
         return heading.getText();
+    }
+    
+    public void clickOnOrderHistory() {
+    	orderPageLocator.GuestMyOrder.click();
+    }
+
+    public boolean isPageScrolledToTop() {
+        Long scrollY = (Long) jsExecutor.executeScript("return window.scrollY;");
+        return scrollY == 0L;
     }
 }
