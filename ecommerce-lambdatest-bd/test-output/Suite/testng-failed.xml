@@ -12,8 +12,12 @@
 =======
           <include name="runScenario" invocation-numbers="3"/>
 >>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
+<<<<<<< HEAD
 =======
           <include name="runScenario" invocation-numbers="2"/>
+>>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
+=======
+>>>>>>> branch 'soundaranarayanan' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
 >>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
           <include name="tearDownClass"/>
         </methods>

@@ -28,6 +28,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
   <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="21.213"/>
   <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="21.912"/>
 >>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
+<<<<<<< HEAD
 =======
 <testsuite ignored="0" hostname="Saranya" failures="0" tests="22" name="Test" time="137.712" errors="0" timestamp="2025-05-07T14:19:46 IST">
   <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="26.641"/>
@@ -52,5 +53,8 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
   <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="24.01"/>
   <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="24.313"/>
   <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="24.575"/>
+>>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
+=======
+>>>>>>> branch 'soundaranarayanan' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
 >>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
 </testsuite> <!-- Test -->
