@@ -7,7 +7,6 @@ import org.testng.annotations.DataProvider;
 @CucumberOptions(
 
     features = {
-    
     		 "src/test/resources/com/features/ForgotPassword.feature",
     	      "src/test/resources/com/features/Search.feature",
     	      "src/test/resources/com/features/AddToCart.feature",
@@ -27,7 +26,6 @@ import org.testng.annotations.DataProvider;
     	      "src/test/resources/com/features/Verify_product_url.feature",
     	      "src/test/resources/com/features/AddOns.feature",
               "src/test/resources/com/features/ShoppingCartTableVerification.feature"
-     
     },
     glue = {"com.definitions"},
     plugin = {
