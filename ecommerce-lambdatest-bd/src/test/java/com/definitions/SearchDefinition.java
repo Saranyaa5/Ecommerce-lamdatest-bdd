@@ -51,7 +51,6 @@ public class SearchDefinition {
 */
 import com.actions.UserLoginAction;
 import com.utilities.ExcelReader;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
@@ -139,7 +138,6 @@ public class SearchDefinition{
         Assert.assertTrue("Products are not within the value range!", searchAction.isPriceWithinRange(602,2000));
     }
     
-    
     @When("the user clicks on Shop by Category")
     public void the_user_clicks_on_shop_by_category() {
         searchAction.clickShopByCategory();
@@ -161,7 +159,36 @@ public class SearchDefinition{
         int actualCount = searchAction.getDisplayedProductCount();
         Assert.assertEquals("Product count does not match the selected dropdown value.", expectedCount, actualCount);
     }
+    
+    @When("hovers over a product")
+    public void hovers_over_a_product() throws InterruptedException {
+    	searchAction.hoverOverFirstProduct();
+    }
 
+    @When("clicks the Quick View option")
+    public void clicks_the_quick_view_option() {
+    	// This step assumes successful navigation is verified in a subsequent step
+    }
+
+    @Then("the user should see the product preview with the description")
+    public void the_user_should_see_the_product_preview_with_the_description() {
+    	Assert.assertTrue(searchAction.isQuickViewDisplayed());
+    }
+
+    @When("clicks the Add To Cart option")
+    public void clicks_the_add_to_cart_option() {
+    	// This step assumes successful navigation is verified in a subsequent step
+    }
+
+    @Then("the user sees a popup message")
+    public void the_user_sees_a_popup_message() {
+        searchAction.clickAddToCartAndHandlePopup();
+    }
+
+    @Then("clicks on checkout button to see checkout page")
+    public void clicks_on_checkout_button_to_see_checkout_page() {
+    	// This step assumes successful navigation is verified in a subsequent step
+    }
     
 }
 

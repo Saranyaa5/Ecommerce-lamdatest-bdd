@@ -48,9 +48,23 @@ Feature: Jeevika_12APR2025_LambdaTesters_Search
       | 50    |
       | 75    |
       
-      #@select_quikview_in_products
-      #Scenario: selecting the quick view option in product
-      #Given the user is on the homepage
-      #When the user clicks
+  @select_quickview_in_products
+  Scenario: Selecting the Quick View option for a product
+  Given the user is on the homepage  
+  When the user clicks on Shop by Category  
+  And selects a specific category from the list  
+  And hovers over a product  
+  And clicks the Quick View option  
+  Then the user should see the product preview with the description
+  
+  #@select_addtocart_in_products
+  #Scenario: Selecting the add to cart option for a product
+  #Given the user is on the homepage  
+  #When the user clicks on Shop by Category  
+  #And selects a specific category from the list  
+  #And hovers over a product  
+  #And clicks the Add To Cart option
+  #Then the user sees a popup message
+  #And clicks on checkout button to see checkout page
 
-
+      

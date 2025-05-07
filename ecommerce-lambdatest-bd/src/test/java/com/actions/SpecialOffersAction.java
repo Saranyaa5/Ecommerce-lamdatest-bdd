@@ -3,12 +3,12 @@ package com.actions;
 import java.time.Duration;
 
 
+
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.pages.SpecialOffersLocator;
 import com.utilities.HelperClass;
 

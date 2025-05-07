@@ -1,11 +1,7 @@
 package com.actions;
 
 import java.time.Duration;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -40,24 +36,4 @@ public class AddOnsAction {
     public String getAlertText() {
         return wait.until(ExpectedConditions.visibilityOf(addon.alerttext)).getText();
     }
-    
-//    public void clickCamera() {
-//    	wait.until(ExpectedConditions.elementToBeClickable(addon.camera)).click();  
-//    }
-//    
-//    public void clickCamera() {
-//        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", addon.camera);
-//
-//        try {
-//            Thread.sleep(500); // half a second
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-//
-//        wait.until(ExpectedConditions.elementToBeClickable(addon.camera)).click();
-//    }
-//    
-//    public String getCameraText() {
-//    	return wait.until(ExpectedConditions.visibilityOf(addon.cameraText)).getText();
-//    }
 }
