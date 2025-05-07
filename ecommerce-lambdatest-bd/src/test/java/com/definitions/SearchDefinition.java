@@ -150,16 +150,18 @@ public class SearchDefinition{
         searchAction.clickCategory();
     }
 
-    @When("chooses a desired number of products to display from the dropdown")
-    public void chooses_a_desired_number_of_products_to_display_from_the_dropdown() throws InterruptedException {
-    	searchAction.selectProductCountFromDropdown("25"); 
+    @When("the user selects {string} products to display from the dropdown")
+    public void the_user_selects_products_to_display_from_the_dropdown(String count){
+        searchAction.selectProductCountFromDropdown(count);
     }
 
-    @Then("the user should see exactly that number of products displayed on the page")
-    public void the_user_should_see_exactly_that_number_of_products_displayed_on_the_page() {
-    	boolean isMatching = searchAction.isProductCountMatchingDropdown();
-        Assert.assertTrue("Product count does not match the selected dropdown value.", isMatching);
+    @Then("the user should see exactly {string} products displayed on the page")
+    public void the_user_should_see_exactly_products_displayed_on_the_page(String count) {
+        int expectedCount = Integer.parseInt(count);
+        int actualCount = searchAction.getDisplayedProductCount();
+        Assert.assertEquals("Product count does not match the selected dropdown value.", expectedCount, actualCount);
     }
+
     
 }
 

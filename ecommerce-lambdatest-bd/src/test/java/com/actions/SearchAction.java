@@ -145,14 +145,12 @@ public class SearchAction {
     	searchLocator.components.click();
     }
    
-
-    public void selectProductCountFromDropdown(String value) throws InterruptedException {
+    public void selectProductCountFromDropdown(String value){
         wait.until(ExpectedConditions.elementToBeClickable(searchLocator.select));
         Select dropdown = new Select(searchLocator.select);
-        dropdown.selectByVisibleText("75");
-        Thread.sleep(3000);
+        dropdown.selectByVisibleText(value);
     }
-
+    
     public int getSelectedDropdownValue() {
         Select dropdown = new Select(searchLocator.select);
         String selectedOption = dropdown.getFirstSelectedOption().getText();
@@ -172,6 +170,12 @@ public class SearchAction {
         int actualCount = getDisplayedProductCount();
         return expectedCount == actualCount;
     }
+    
+//    Actions actions = new Actions(driver);
+//    WebElement productImage = driver.findElement(By.xpath("//img[@class='product-image']")); // Replace with the actual XPath
+//    actions.moveToElement(productImage).perform();
+
+    
 }
 
 
