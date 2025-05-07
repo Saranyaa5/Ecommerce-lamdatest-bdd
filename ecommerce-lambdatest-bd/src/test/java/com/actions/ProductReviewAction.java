@@ -54,6 +54,8 @@ public class ProductReviewAction {
             case 5:
                 ratingElement = reviewPage.rating5;
                 break;
+            default:
+                throw new IllegalArgumentException("Invalid rating: " + stars);
         }
 
         try {
@@ -89,7 +91,7 @@ public class ProductReviewAction {
     // Retrieves first error message text
     public String ErrorMessage() {
         try {
-            return wait.until(ExpectedConditions.visibilityOf(reviewPage.ErrorMessage)).getText();
+            return wait.until(ExpectedConditions.visibilityOf(reviewPage.errorMessage)).getText();
         } catch (Exception e) {
             System.out.println("Error getting error message: " + e.getMessage());
             return "";
@@ -99,7 +101,7 @@ public class ProductReviewAction {
     // Retrieves second error message text
     public String ErrorMessage1() {
         try {
-            return wait.until(ExpectedConditions.visibilityOf(reviewPage.ErrorMessage1)).getText();
+            return wait.until(ExpectedConditions.visibilityOf(reviewPage.reviewTextLengthError)).getText();
         } catch (Exception e) {
             System.out.println("Error getting error message 1: " + e.getMessage());
             return "";

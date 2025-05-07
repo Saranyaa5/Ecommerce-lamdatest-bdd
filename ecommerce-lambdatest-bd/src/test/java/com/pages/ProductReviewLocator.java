@@ -3,11 +3,9 @@ package com.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import com.utilities.HelperClass;
 
 public class ProductReviewLocator {
-
     public ProductReviewLocator() {
         PageFactory.initElements(HelperClass.getDriver(), this);
     }
@@ -42,10 +40,9 @@ public class ProductReviewLocator {
     @FindBy(css = ".alert-success")
     public WebElement successMessage;
 
-    @FindBy(css = ".alert-danger") 
-    public WebElement ErrorMessage;
-    
-    @FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']//i[contains(@class, 'fa-exclamation-circle')]/following-sibling::text()[contains(., 'Review Text must be between 25 and 1000 characters!')]") 
-    public WebElement ErrorMessage1;
+    @FindBy(css = ".alert-danger")
+    public WebElement errorMessage;  // Renamed to 'errorMessage'
 
+    @FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']//i[contains(@class, 'fa-exclamation-circle')]/following-sibling::text()[contains(., 'Review Text must be between 25 and 1000 characters!')]") 
+    public WebElement reviewTextLengthError;  // Renamed to 'reviewTextLengthError'
 }

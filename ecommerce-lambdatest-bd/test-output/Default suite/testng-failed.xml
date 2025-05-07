@@ -7,7 +7,7 @@
         <methods>
           <include name="setUpClass"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="49 2 3"/>
+          <include name="runScenario" invocation-numbers="16 3 9"/>
         </methods>
       </class> <!-- com.runner.RunnerTestNg -->
     </classes>

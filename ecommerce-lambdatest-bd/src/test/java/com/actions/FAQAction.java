@@ -1,15 +1,9 @@
 package com.actions;
 
 import java.time.Duration;
-import java.util.ArrayList;
-//import java.util.Arrays;
-import java.util.List;
-
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.pages.FAQLocator;
 import com.utilities.HelperClass;
 
@@ -25,15 +19,11 @@ public class FAQAction {
     }
 
     public void validateFAQButtons() {
-    	faqlocator.changeshippingaddress.click();
-//    	faqlocator.activateaccount.click();
-//    	faqlocator.points.click();
-//    	faqlocator.checkoutlimit.click();
-//    	faqlocator.paymentimmediate.click();
-    	
+        faqlocator.changeshippingaddress.click();
+       
     }
 
     public String faqmessageList() {
-    	return faqlocator.changeshippingaddressmsg.getText();
+        return faqlocator.changeshippingaddressmsg.getText();
     }
 }
