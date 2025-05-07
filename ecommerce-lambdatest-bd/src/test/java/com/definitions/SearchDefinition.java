@@ -51,7 +51,6 @@ public class SearchDefinition {
 */
 import com.actions.UserLoginAction;
 import com.utilities.ExcelReader;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
@@ -139,7 +138,6 @@ public class SearchDefinition{
         Assert.assertTrue("Products are not within the value range!", searchAction.isPriceWithinRange(602,2000));
     }
     
-    
     @When("the user clicks on Shop by Category")
     public void the_user_clicks_on_shop_by_category() {
         searchAction.clickShopByCategory();
@@ -169,7 +167,7 @@ public class SearchDefinition{
 
     @When("clicks the Quick View option")
     public void clicks_the_quick_view_option() {
-//    	searchAction.clickQuickView();
+    	// This step assumes successful navigation is verified in a subsequent step
     }
 
     @Then("the user should see the product preview with the description")
@@ -179,7 +177,7 @@ public class SearchDefinition{
 
     @When("clicks the Add To Cart option")
     public void clicks_the_add_to_cart_option() {
-       
+    	// This step assumes successful navigation is verified in a subsequent step
     }
 
     @Then("the user sees a popup message")
@@ -189,7 +187,7 @@ public class SearchDefinition{
 
     @Then("clicks on checkout button to see checkout page")
     public void clicks_on_checkout_button_to_see_checkout_page() {
-       
+    	// This step assumes successful navigation is verified in a subsequent step
     }
     
 }

@@ -1,11 +1,8 @@
 package com.definitions;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
 import org.junit.Assert;
-
 import com.actions.BlogAction;
-
 import java.util.List;
 import java.util.Map;
 
@@ -25,7 +22,7 @@ public class BlogDefinition {
 
     @Then("the user is navigated to the selected blog page")
     public void the_user_is_navigated_to_the_selected_blog_page() {
-      
+    	// This step assumes successful navigation is verified in a subsequent step
     }
 
     @When("the user enters the following comment details:")

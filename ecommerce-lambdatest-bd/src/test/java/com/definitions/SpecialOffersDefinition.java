@@ -1,9 +1,7 @@
 package com.definitions;
 
 import org.testng.Assert;
-
 import com.actions.SpecialOffersAction;
-
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
@@ -18,6 +16,6 @@ public class SpecialOffersDefinition {
 	@Then("the user should see the special offers available")
 	public void the_user_should_see_the_special_offers_available() {
 		String headingText = specialOffersAction.getSpecialOfferText();
-        Assert.assertEquals("Special Offers", headingText);
+		Assert.assertEquals(headingText, "Special Offers");
 	}
 }

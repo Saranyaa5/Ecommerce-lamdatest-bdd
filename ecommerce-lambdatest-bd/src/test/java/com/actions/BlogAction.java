@@ -2,7 +2,6 @@ package com.actions;
 
 import java.time.Duration;
 import java.util.NoSuchElementException;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
@@ -115,26 +114,26 @@ public class BlogAction {
 	public String getWarning1() {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-			wait.until(ExpectedConditions.visibilityOf(blog.Warning1));
-			return blog.Warning1.getText();
+			wait.until(ExpectedConditions.visibilityOf(blog.warningName));
+			return blog.warningName.getText();
 		} catch (StaleElementReferenceException e) {
 			refreshElements();
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-			wait.until(ExpectedConditions.visibilityOf(blog.Warning1));
-			return blog.Warning1.getText();
+			wait.until(ExpectedConditions.visibilityOf(blog.warningName));
+			return blog.warningName.getText();
 		}
 	}
 
 	public String getWarning2() {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-			wait.until(ExpectedConditions.visibilityOf(blog.Warning2));
-			return blog.Warning2.getText();
+			wait.until(ExpectedConditions.visibilityOf(blog.warningComment));
+			return blog.warningComment.getText();
 		} catch (StaleElementReferenceException e) {
 			refreshElements();
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-			wait.until(ExpectedConditions.visibilityOf(blog.Warning2));
-			return blog.Warning2.getText();
+			wait.until(ExpectedConditions.visibilityOf(blog.warningComment));
+			return blog.warningComment.getText();
 		}
 	}
 

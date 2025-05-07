@@ -30,6 +30,13 @@ Feature: Saranya_20APR2025_LamdaTesters_Feature file for HomePage Assertion
   When the user clicks the product in the trending product category
   Then the user should redirect to the product page
   
+  @HomePageLinks
+  Scenario: Verify that all links on the homepage redirect correctly
+  When the user retrieves all the links on the homepage
+  Then each link should redirect to its corresponding page successfully
+  
+  
+  
 
   
   

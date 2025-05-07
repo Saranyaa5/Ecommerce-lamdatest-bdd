@@ -1,8 +1,6 @@
 package com.actions;
 
 import java.time.Duration;
-
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -17,10 +15,11 @@ public class UserLoginAction {
     String stremail, strpassword;
     Actions actions;
 
-    public static final String UserCredentialsPath = "Configuration.properties";
+    public static final String USER_CREDENTIALS_PATH = "Configuration.properties";
+
 
     public UserLoginAction() {
-        ConfigReader.loadProperties(UserCredentialsPath);
+        ConfigReader.loadProperties(USER_CREDENTIALS_PATH);
         
         this.stremail = ConfigReader.getProperty("email");
         this.strpassword = ConfigReader.getProperty("password");
@@ -37,7 +36,6 @@ public class UserLoginAction {
 
     public void clickMyAccounts() {
         loginPageLocator.myAccount.click();
-//    	actions.moveToElement(loginPageLocator.myAccount).perform();
     }
 
     public void clickLoginMenu() {

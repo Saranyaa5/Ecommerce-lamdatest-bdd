@@ -28,18 +28,18 @@ public class AffiliateAccountAction {
 	private WebDriverWait getWait() {
 		return new WebDriverWait(driver, Duration.ofSeconds(40));
 	}
-
-	public void clickaccContinue() throws InterruptedException {
-		Thread.sleep(3000);
-		try {
-			getWait().until(ExpectedConditions.elementToBeClickable(affiliate.accContinue)).click();
-		} catch (StaleElementReferenceException e) {
-			// Refresh element
-			affiliate = new AffiliateAccountLocator();
-			PageFactory.initElements(driver, affiliate);
-			getWait().until(ExpectedConditions.elementToBeClickable(affiliate.accContinue)).click();
-		}
+	
+	public void clickaccContinue() {
+	    try {
+	        getWait().until(ExpectedConditions.elementToBeClickable(affiliate.accContinue)).click();
+	    } catch (StaleElementReferenceException e) {
+	        
+	        affiliate = new AffiliateAccountLocator();
+	        PageFactory.initElements(driver, affiliate);
+	        getWait().until(ExpectedConditions.elementToBeClickable(affiliate.accContinue)).click();
+	    }
 	}
+
 
 	public void clickRegister() {
 		try {

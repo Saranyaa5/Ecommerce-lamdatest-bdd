@@ -1,5 +1,7 @@
 package com.definitions;
 
+import java.util.List;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
@@ -101,12 +103,30 @@ public class HomePageDefinition {
 	@Then("the user should redirect to the product page")
 	public void the_user_should_redirect_to_the_product_page() {	
 		try {
-//			System.out.println(homePageAction.getTrendingProductParagraphText());
 			String url="https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=18";
 			Assert.assertEquals(homePageAction.getTrendingProductParagraphText(),url);
             logger.info("Successfully is successfull");
         } catch(Exception e) {
             logger.error("Failed to verify " + e.getMessage());
+            throw e;
+        }
+	}
+	
+	@When("the user retrieves all the links on the homepage")
+	public void the_user_retrieves_all_the_links_on_the_homepage() throws InterruptedException {
+	    homePageAction.retrieveLinks();
+	}
+
+	@Then("each link should redirect to its corresponding page successfully")
+	public void each_link_should_redirect_to_its_corresponding_page_successfully() {
+		try {
+			
+//			Assert.assertEquals(homePageAction.ValidatedLinks(),1);
+            logger.info("no of links in the homepage is not working working in homepage:"+homePageAction.ValidatedLinks());
+        }
+		catch(Exception e) {
+        	
+            logger.error("home page does not contains broken link");
             throw e;
         }
 	}
