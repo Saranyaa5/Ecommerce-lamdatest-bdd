@@ -17,10 +17,10 @@ public class HelperClass {
     public final static int TIMEOUT = 10;
 
     
-    public static final String ConfigPath = "Configuration.properties";
+    public static final String CONFIG_PATH = "Configuration.properties";
 
     private HelperClass() {
-        ConfigReader.loadProperties(ConfigPath);
+    	ConfigReader.loadProperties(CONFIG_PATH);
 
         String browser = ConfigReader.getProperty("browser");
         WebDriver localDriver = null;

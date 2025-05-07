@@ -2,56 +2,17 @@ package com.actions;
 
 import com.pages.SearchLocator;
 import com.utilities.HelperClass;
-
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
-/*
-
-public class SearchAction {
-
-    WebDriver driver;
-    SearchLocator searchLocator;
-
-    public SearchAction() {
-        this.driver = HelperClass.getDriver();
-        this.searchLocator = new SearchLocator();
-        PageFactory.initElements(driver, searchLocator);
-    }
-
-    public void searchProduct(String product) {
-        searchLocator.searchbox.clear();
-        searchLocator.searchbox.sendKeys(product);
-        searchLocator.searchbutton.click();
-    }
-
-    public String getSearchResultText(String expected) {
-        try {
-            if (expected.equalsIgnoreCase("MacBook") && searchLocator.macbook.isDisplayed()) {
-                return searchLocator.macbook.getText();
-            } else if (expected.equalsIgnoreCase("iPhone") && searchLocator.iphone.isDisplayed()) {
-                return searchLocator.iphone.getText();
-            } else if (expected.equalsIgnoreCase("iMac") && searchLocator.imac.isDisplayed()) {
-                return searchLocator.imac.getText();
-            } else if (expected.equalsIgnoreCase("HTC Touch HD") && searchLocator.htc.isDisplayed()) {
-                return searchLocator.htc.getText();
-            } else if (expected.contains("There is no product that matches the search criteria.") && searchLocator.errormessage.isDisplayed()) {
-                return searchLocator.errormessage.getText();
-            }
-        } catch (Exception e) {
-            return "No element found";
-        }
-        return "No element matched";
-    }
-}
-*/
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
-import java.util.ArrayList;
 import java.util.List;
 
 public class SearchAction {
@@ -170,12 +131,42 @@ public class SearchAction {
         int actualCount = getDisplayedProductCount();
         return expectedCount == actualCount;
     }
+ 
     
-//    Actions actions = new Actions(driver);
-//    WebElement productImage = driver.findElement(By.xpath("//img[@class='product-image']")); // Replace with the actual XPath
-//    actions.moveToElement(productImage).perform();
+    public void hoverOverFirstProduct()  {
+        Actions actions = new Actions(driver);
+        WebElement firstProduct = driver.findElement(By.xpath("(//div[@class='carousel-item active']//img)[1]"));
+        actions.moveToElement(firstProduct).perform();
+        
+        WebElement quickViewButton = driver.findElement(By.xpath("//button[@class='btn btn-quick-view quick-view-28']/i"));
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].click();", quickViewButton);
+    }     
 
+    public boolean isQuickViewDisplayed() {
+        return wait.until(ExpectedConditions.visibilityOf(searchLocator.textQuickView)).isDisplayed();
+    }
     
+    public void clickAddToCartAndHandlePopup() {
+        try {
+            WebElement addToCartBtn = wait.until(ExpectedConditions.elementToBeClickable(searchLocator.addToCartButton));
+            
+            // Use JS click for reliability
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].click();", addToCartBtn);
+
+            // Wait for the notification popup or message
+            WebElement popup = wait.until(ExpectedConditions.visibilityOf(searchLocator.popupMessage));
+            System.out.println("Popup text: " + popup.getText());
+
+            // Click the Checkout button if visible
+            WebElement checkoutBtn = wait.until(ExpectedConditions.elementToBeClickable(searchLocator.checkoutButton));
+            checkoutBtn.click();
+
+        } catch (Exception e) {
+            System.out.println("Failed to click Add to Cart or handle popup: " + e.getMessage());
+        }
+    }   
 }
 
 
