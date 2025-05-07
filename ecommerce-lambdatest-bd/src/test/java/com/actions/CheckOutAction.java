@@ -73,12 +73,8 @@ public class CheckOutAction {
 			checkOutPageLocator.paymentPostcode.sendKeys(postcode);
 			
 			selectDropdownByVisibleText(checkOutPageLocator.countryDropdown, "India");
-			try {
-			Thread.sleep(1000); 
-			}
-			catch (InterruptedException e) {
-			Thread.currentThread().interrupt();
-			}
+			WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+		    wait.until(ExpectedConditions.elementToBeClickable(checkOutPageLocator.regionDropdown));
 			selectDropdownByVisibleText(checkOutPageLocator.regionDropdown,"Assam");
 			
 			}
@@ -125,15 +121,12 @@ public class CheckOutAction {
 			    try {
 			        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
 			        
-			        // Scroll to the element first
 			        ((JavascriptExecutor) HelperClass.getDriver()).executeScript(
 			            "arguments[0].scrollIntoView({block: 'center', behavior: 'smooth'});", 
 			            checkOutPageLocator.continueButton);
 			        
-			        // Wait for the element to be clickable
 			        wait.until(ExpectedConditions.elementToBeClickable(checkOutPageLocator.continueButton));
 			        
-			        // Click using JavaScript executor if regular click doesn't work
 			        ((JavascriptExecutor) HelperClass.getDriver()).executeScript(
 			            "arguments[0].click();", 
 			            checkOutPageLocator.continueButton);
@@ -171,11 +164,8 @@ public class CheckOutAction {
 					
 					selectDropdownByVisibleText(checkOutPageLocator.countryDropdown, "India");
 					
-					try {
-					Thread.sleep(1000); 
-					} catch (InterruptedException e) {
-					Thread.currentThread().interrupt();
-					}
+					WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+				    wait.until(ExpectedConditions.elementToBeClickable(checkOutPageLocator.regionDropdown));
 					
 					selectDropdownByVisibleText(checkOutPageLocator.regionDropdown,"Assam");
 					
@@ -203,15 +193,12 @@ public class CheckOutAction {
 			   			checkOutPageLocator.paymentPostcode.sendKeys(postcode);
 			   			
 			   			
-			   			selectDropdownByVisibleText(checkOutPageLocator.countryDropdown, "India");
+			   			selectDropdownByVisibleText(checkOutPageLocator.countryDropdown, "Taiwan");
 			   			
-			   			try {
-			   			Thread.sleep(1000);
-			   			} catch (InterruptedException e) {
-			   			Thread.currentThread().interrupt();
-			   			}
+			   			WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+			   		    wait.until(ExpectedConditions.elementToBeClickable(checkOutPageLocator.regionDropdown));
 			   			
-			   			selectDropdownByVisibleText(checkOutPageLocator.regionDropdown,"Assam");
+			   			selectDropdownByVisibleText(checkOutPageLocator.regionDropdown,"Chi-lung");
 			   			
 			   			}
 			       

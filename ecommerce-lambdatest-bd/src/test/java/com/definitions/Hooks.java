@@ -34,7 +34,12 @@ public class Hooks {
 	            try {
 	                File destinationFile = new File("screenshots/" + scenario.getName().replaceAll(" ", "_") + ".png");
 	                FileUtils.copyFile(screenshotFile, destinationFile);
-	            } catch (IOException e) {
+	                
+	              byte[] screenshotBytes = ((TakesScreenshot) HelperClass.getDriver()).getScreenshotAs(OutputType.BYTES);
+	              scenario.attach(screenshotBytes, "image/png", "Failure Screenshot");
+	              logger.error("Scenario failed: " + scenario.getName());
+	            }
+	            catch (IOException e) {
 	                logger.error("Failed to save screenshot: " + e.getMessage());
 	            }
 	        
@@ -48,60 +53,4 @@ public class Hooks {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//byte[] screenshotBytes = ((TakesScreenshot) HelperClass.getDriver()).getScreenshotAs(OutputType.BYTES);
-//scenario.attach(screenshotBytes, "image/png", "Failure Screenshot");
-//logger.error("Scenario failed: " + scenario.getName());
 

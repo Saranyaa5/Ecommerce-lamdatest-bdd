@@ -6,11 +6,7 @@
       <class name="com.runner.RunnerTestNg">
         <methods>
           <include name="setUpClass"/>
-<<<<<<< HEAD
-          <include name="runScenario" invocation-numbers="5 6 7"/>
-=======
-          <include name="runScenario" invocation-numbers="3"/>
->>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
+          <include name="runScenario" invocation-numbers="2"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- com.runner.RunnerTestNg -->
