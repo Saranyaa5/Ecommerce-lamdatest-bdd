@@ -4,19 +4,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class AddToCartLocator {
-
     @FindBy(xpath = "//a[text()=' Shop by Category']")
-    public WebElement Category;
+    public WebElement category;  // Renamed to 'category'
 
     @FindBy(xpath = "//div[contains(@class, 'info')]//span[contains(@class, 'title') and normalize-space(text())='Phone, Tablets & Ipod']")
     public WebElement phonesCategory;
 
     @FindBy(xpath = "//*[@id='mz-product-grid-image-36-212408']/div/div[1]/img")
-    public WebElement IpodNano;
+    public WebElement ipodNano;  // Renamed to 'ipodNano'
 
     @FindBy(xpath = "(//button[text()='Add to Cart'])[2]")
     public WebElement addToCartButton;
-
 
     @FindBy(xpath = "//*[@id='notification-box-top']/div/div[2]/div[1]/p")
     public WebElement successMsg;
@@ -40,8 +38,8 @@ public class AddToCartLocator {
     public WebElement noOfItems;
 
     @FindBy(xpath = "//a[contains(@href, 'product_id=42') and contains(text(), 'Apple Cinema')]")
-    public WebElement AppleCinema;
+    public WebElement appleCinema;  // Renamed to 'appleCinema'
 
     @FindBy(xpath = "(//select[starts-with(@id,'input-option231')]/following-sibling::div[@class='text-danger' and normalize-space()='Size required!'])[1]")
-    public WebElement SizeReq;
+    public WebElement sizeReq;  // Renamed to 'sizeReq'
 }

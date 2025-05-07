@@ -27,7 +27,7 @@ public class AddToCartAction {
 
     public void clickOnCategory() {
         try {
-            cartLocator.Category.click();
+            cartLocator.category.click();
             wait.until(ExpectedConditions.refreshed(
                 ExpectedConditions.elementToBeClickable(cartLocator.phonesCategory)
             )).click();
@@ -39,7 +39,7 @@ public class AddToCartAction {
     public void selectProduct() {
         try {
             wait.until(ExpectedConditions.refreshed(
-                ExpectedConditions.elementToBeClickable(cartLocator.IpodNano)
+                ExpectedConditions.elementToBeClickable(cartLocator.ipodNano)
             )).click();
         } catch (Exception e) {
             System.out.println("Error selecting product: " + e.getMessage());
@@ -143,7 +143,7 @@ public class AddToCartAction {
     public void selectAppleCinema() {
         try {
             wait.until(ExpectedConditions.refreshed(
-                ExpectedConditions.elementToBeClickable(cartLocator.AppleCinema)
+                ExpectedConditions.elementToBeClickable(cartLocator.appleCinema)
             )).click();
         } catch (Exception e) {
             System.out.println("Error selecting Apple Cinema: " + e.getMessage());
@@ -153,7 +153,7 @@ public class AddToCartAction {
     public String getSizeReq() {
         try {
             return wait.until(ExpectedConditions.refreshed(
-                ExpectedConditions.visibilityOf(cartLocator.SizeReq)
+                ExpectedConditions.visibilityOf(cartLocator.sizeReq)
             )).getText();
         } catch (Exception e) {
             System.out.println("Error fetching size required message: " + e.getMessage());
