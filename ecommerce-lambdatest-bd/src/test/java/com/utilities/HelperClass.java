@@ -15,7 +15,7 @@ public class HelperClass {
     private static HelperClass helperClass;
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
     private static ThreadLocal<WebDriverWait> wait = new ThreadLocal<>();
-    public final static int TIMEOUT = 10;
+    public  static final int TIMEOUT = 10;
 
     
 

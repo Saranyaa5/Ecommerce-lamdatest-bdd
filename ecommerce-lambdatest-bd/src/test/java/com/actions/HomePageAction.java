@@ -1,8 +1,14 @@
 package com.actions;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 
+
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -11,6 +17,7 @@ import com.pages.HomePageLocator;
 import com.utilities.HelperClass;
 
 import java.io.IOException;
+import java.lang.System.Logger;
 import java.time.Duration;
 import java.util.*;
 import java.net.HttpURLConnection;
@@ -67,15 +74,15 @@ public class HomePageAction {
     }
     
    
+	@SuppressWarnings("deprecation")
 	public String getActiveBannerAltText() {
         wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         WebElement visibleBanner = wait.until(ExpectedConditions.visibilityOf(homePageLocator.activeBanner));
         return visibleBanner.getAttribute("alt");
     }
     
-    
     public void clickTrendingProduct() {
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         wait.until(ExpectedConditions.elementToBeClickable(homePageLocator.trendingProduct))
             .click();
     }
@@ -86,11 +93,13 @@ public class HomePageAction {
      
     }
     
-    public void retrieveLinks(){
+    @SuppressWarnings("deprecation")
+	public void retrieveLinks(){
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         List<WebElement> allLinks = homePageLocator.allLinks;
         for (WebElement link : allLinks) {
-            String href = link.getAttribute("href");
+           
+			String href = link.getAttribute("href");
             if (href != null && !href.isEmpty()) {
                 list.add(href);
             }
@@ -107,7 +116,8 @@ public class HomePageAction {
         return list.size()-this.validlinkCount;
     }
 
-    public void checkLinks(String url) {
+    @SuppressWarnings("deprecation")
+	public void checkLinks(String url) {
         try {
             HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
             connection.setConnectTimeout(5000);

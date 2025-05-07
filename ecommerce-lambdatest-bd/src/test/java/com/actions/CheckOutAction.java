@@ -170,7 +170,7 @@ public class CheckOutAction {
 			       }
 			   
 			       public void fillRegisterCheckoutForm(String firstName, String lastName, String email, 
-			               String telephone,String password,String confirm_pass, String address, String city, 
+			               String telephone,String password,String confirmPass, String address, String city, 
 			               String postcode, String country,String region) {
 			   			
 			   			checkOutPageLocator.paymentFname.sendKeys(firstName);
@@ -178,7 +178,7 @@ public class CheckOutAction {
 			   			checkOutPageLocator.paymentEmail.sendKeys(email);
 			   			checkOutPageLocator.paymentTelephone.sendKeys(telephone);
 			   			checkOutPageLocator.pass.sendKeys(password);
-			   			checkOutPageLocator.confirmpass.sendKeys(confirm_pass);
+			   			checkOutPageLocator.confirmpass.sendKeys(confirmPass);
 			   			checkOutPageLocator.paymentAddress.sendKeys(address);
 			   			checkOutPageLocator.paymentCity.sendKeys(city);
 			   			checkOutPageLocator.paymentPostcode.sendKeys(postcode);

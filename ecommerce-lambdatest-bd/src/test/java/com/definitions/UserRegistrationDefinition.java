@@ -45,7 +45,7 @@ public class UserRegistrationDefinition {
     }
 
     @When("agrees to the Privacy Policy")
-    public void agrees_to_the_privacy_policy() throws InterruptedException {
+    public void agrees_to_the_privacy_policy(){
     	
         userRegistrationAction.agreeToPrivacyPolicy();
     	
@@ -64,7 +64,7 @@ public class UserRegistrationDefinition {
     }
 
     @Then("the user should see {string}")
-    public void the_user_should_see(String expectedMessage) throws InterruptedException {
+    public void the_user_should_see(String expectedMessage){
         
         try {
             Assert.assertEquals(expectedMessage, userRegistrationAction.RegisterationSuccess());
@@ -84,7 +84,7 @@ public class UserRegistrationDefinition {
     }
 
     @Then("the user should see {string} for {string}")
-    public void the_user_should_see_for(String expectedMessage, String testCaseName) throws InterruptedException {
+    public void the_user_should_see_for(String expectedMessage, String testCaseName){
         String actualMessage = "";
         
         try {

@@ -10,14 +10,14 @@ import io.cucumber.java.en.When;
 public class ProductCompareDefinition {
 	ProductCompareAction productCompareAction =new ProductCompareAction();
 	@When("the user clicks product compare")
-	public void the_user_clicks_product_compare() throws InterruptedException {
+	public void the_user_clicks_product_compare(){
 		
 		productCompareAction.clickProductCompare();
 		
 	}
 	
 	@Then("the user should see no products to compare error {string}")
-	public void the_user_should_see_no_products_to_compare_error(String string) throws InterruptedException {
+	public void the_user_should_see_no_products_to_compare_error(String string){
 		
 		Assert.assertTrue(productCompareAction.getNoProductsToCompareMessage());
 	}

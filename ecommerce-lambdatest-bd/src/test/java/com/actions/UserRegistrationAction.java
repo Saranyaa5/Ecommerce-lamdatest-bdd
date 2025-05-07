@@ -46,42 +46,42 @@ public class UserRegistrationAction {
                                        String telephone, String password, String confirmPassword) {
         waitAndSendKeys(registrationLocators.firstName, firstName);
         waitAndSendKeys(registrationLocators.lastName, lastName);
-        waitAndSendKeys(registrationLocators.RegisterEmail, email);
-        waitAndSendKeys(registrationLocators.Telephone, telephone);
+        waitAndSendKeys(registrationLocators.registerEmail, email);
+        waitAndSendKeys(registrationLocators.telephone, telephone);
         waitAndSendKeys(registrationLocators.password, password);
         waitAndSendKeys(registrationLocators.cofirmpass, confirmPassword);
     }
 
     public void agreeToPrivacyPolicy() {
-        waitAndClickWithRetry(registrationLocators.PolicyCheckBox);
+        waitAndClickWithRetry(registrationLocators.policyCheckBox);
     }
 
     public void submitRegistration() {
-        waitAndClickWithRetry(registrationLocators.RegiterSubmitButton);
+        waitAndClickWithRetry(registrationLocators.regiterSubmitButton);
     }
 
     public String RegisterationSuccess() {
-        return waitForElementText(registrationLocators.RegistrationSuccessMsg);
+        return waitForElementText(registrationLocators.registrationSuccessMsg);
     }
 
     public String existingMailError() {
-        return waitForElementText(registrationLocators.ExistingEmailError);
+        return waitForElementText(registrationLocators.existingEmailError);
     }
 
     public String emptyFirstNameError() {
-        return waitForElementText(registrationLocators.EmptyFirstNameError);
+        return waitForElementText(registrationLocators.emptyFirstNameError);
     }
 
     public String emptyPasswordError() {
-        return waitForElementText(registrationLocators.EmptyPasswordError);
+        return waitForElementText(registrationLocators.emptyPasswordError);
     }
 
     public String passwordMisMathError() {
-        return waitForElementText(registrationLocators.PasswordMisMathError);
+        return waitForElementText(registrationLocators.passwordMisMathError);
     }
 
     public String uncheckedError() {
-        return waitForElementText(registrationLocators.UncheckedError);
+        return waitForElementText(registrationLocators.uncheckedError);
     }
 
     private void waitAndClick(WebElement element) {
