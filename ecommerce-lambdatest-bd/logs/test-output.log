@@ -16900,3 +16900,76 @@ Session ID: a69b9dd60b15c9843d68072c76518019
 2025-05-06 20:11:41 [TestNG-PoolService-1] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
 2025-05-06 20:11:42 [TestNG-PoolService-2] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
 2025-05-06 20:11:43 [TestNG-PoolService-3] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-07 06:31:41 [main] INFO : Scenario started: Search functionality with valid inputs
+2025-05-07 06:32:18 [main] INFO : Scenario passed: Search functionality with valid inputs
+2025-05-07 06:32:20 [main] INFO : Scenario started: Search functionality with invalid inputs
+2025-05-07 06:32:48 [main] INFO : Scenario started: Search functionality with valid inputs
+2025-05-07 06:33:05 [main] INFO : Scenario passed: Search functionality with valid inputs
+2025-05-07 06:33:06 [main] INFO : Scenario started: Search functionality with invalid inputs
+2025-05-07 06:33:34 [main] INFO : Scenario passed: Search functionality with invalid inputs
+2025-05-07 06:33:35 [main] INFO : Scenario started: Search functionality with case sensitive inputs
+2025-05-07 06:33:55 [main] INFO : Scenario passed: Search functionality with case sensitive inputs
+2025-05-07 06:33:57 [main] INFO : Scenario started: Search functionality with unnecessary indentation in search
+2025-05-07 06:36:06 [main] INFO : Scenario passed: Search functionality with unnecessary indentation in search
+2025-05-07 06:36:08 [main] INFO : Scenario started: Search functionality by category as input
+2025-05-07 06:36:26 [main] INFO : Scenario passed: Search functionality by category as input
+2025-05-07 06:36:27 [main] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-07 06:36:43 [main] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-07 06:36:44 [main] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-07 06:36:59 [main] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-07 06:37:01 [main] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-07 06:37:18 [main] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-07 06:37:20 [main] INFO : Scenario started: Selecting the Quick View option for a product
+2025-05-07 06:37:32 [main] INFO : Scenario passed: Selecting the Quick View option for a product
+2025-05-07 06:49:17 [TestNG-PoolService-1] INFO : Scenario started: Selecting the Quick View option for a product
+2025-05-07 06:50:16 [TestNG-PoolService-1] INFO : Scenario started: Selecting the Quick View option for a product
+2025-05-07 06:53:19 [TestNG-PoolService-1] INFO : Scenario started: Selecting the Quick View option for a product
+2025-05-07 07:19:29 [TestNG-PoolService-1] INFO : Scenario started: Selecting the Quick View option for a product
+2025-05-07 07:20:08 [TestNG-PoolService-1] INFO : Scenario started: Selecting the Quick View option for a product
+2025-05-07 07:30:15 [TestNG-PoolService-1] INFO : Scenario started: Selecting the Quick View option for a product
+2025-05-07 07:39:36 [TestNG-PoolService-1] INFO : Scenario started: Selecting the Quick View option for a product
+2025-05-07 07:46:11 [TestNG-PoolService-1] INFO : Scenario started: Selecting the Quick View option for a product
+2025-05-07 07:51:26 [TestNG-PoolService-1] INFO : Scenario started: Selecting the Quick View option for a product
+2025-05-07 09:13:48 [TestNG-PoolService-1] INFO : Scenario started: Selecting the Quick View option for a product
+2025-05-07 09:15:55 [TestNG-PoolService-1] INFO : Scenario started: Selecting the Quick View option for a product
+2025-05-07 09:18:06 [TestNG-PoolService-1] INFO : Scenario started: Selecting the Quick View option for a product
+2025-05-07 09:50:26 [TestNG-PoolService-1] INFO : Scenario started: Selecting the Quick View option for a product
+2025-05-07 09:53:02 [TestNG-PoolService-1] INFO : Scenario started: Selecting the Quick View option for a product
+2025-05-07 09:54:31 [TestNG-PoolService-1] INFO : Scenario started: Selecting the Quick View option for a product
+2025-05-07 11:01:42 [TestNG-PoolService-1] INFO : Scenario started: Selecting the Quick View option for a product
+2025-05-07 11:03:30 [TestNG-PoolService-1] INFO : Scenario started: Selecting the Quick View option for a product
+2025-05-07 13:12:39 [TestNG-PoolService-1] INFO : Scenario started: Selecting the Quick View option for a product
+2025-05-07 13:18:16 [TestNG-PoolService-1] INFO : Scenario started: Selecting the Quick View option for a product
+2025-05-07 13:20:28 [TestNG-PoolService-1] INFO : Scenario started: Selecting the Quick View option for a product
+2025-05-07 14:24:17 [TestNG-PoolService-1] INFO : Scenario started: Selecting the Quick View option for a product
+2025-05-07 14:24:49 [TestNG-PoolService-1] INFO : Scenario passed: Selecting the Quick View option for a product
+2025-05-07 14:26:09 [TestNG-PoolService-1] INFO : Scenario started: Selecting the Quick View option for a product
+2025-05-07 14:26:38 [TestNG-PoolService-1] INFO : Scenario passed: Selecting the Quick View option for a product
+2025-05-07 15:07:07 [main] INFO : Scenario started: Search functionality with valid inputs
+2025-05-07 15:07:20 [main] INFO : Scenario passed: Search functionality with valid inputs
+2025-05-07 15:07:23 [main] INFO : Scenario started: Search functionality with invalid inputs
+2025-05-07 15:07:34 [main] INFO : Scenario passed: Search functionality with invalid inputs
+2025-05-07 15:07:37 [main] INFO : Scenario started: Search functionality with case sensitive inputs
+2025-05-07 15:07:53 [main] INFO : Scenario passed: Search functionality with case sensitive inputs
+2025-05-07 15:07:56 [main] INFO : Scenario started: Search functionality with unnecessary indentation in search
+2025-05-07 15:08:06 [main] INFO : Scenario passed: Search functionality with unnecessary indentation in search
+2025-05-07 15:08:08 [main] INFO : Scenario started: Search functionality by category as input
+2025-05-07 15:08:18 [main] INFO : Scenario passed: Search functionality by category as input
+2025-05-07 15:08:20 [main] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-07 15:08:49 [main] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-07 15:08:54 [main] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-07 15:09:10 [main] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-07 15:09:12 [main] INFO : Scenario started: Selecting the Quick View option for a product
+2025-05-07 15:09:32 [main] INFO : Scenario passed: Selecting the Quick View option for a product
+2025-05-07 15:09:35 [main] INFO : Scenario started: Selecting the add to cart option for a product
+2025-05-07 15:09:54 [main] INFO : Scenario passed: Selecting the add to cart option for a product
+2025-05-07 19:51:16 [TestNG-PoolService-1] INFO : Scenario started: Selecting the add to cart option for a product
+2025-05-07 19:51:36 [TestNG-PoolService-1] INFO : Scenario passed: Selecting the add to cart option for a product
+2025-05-07 19:52:05 [TestNG-PoolService-1] INFO : Scenario started: Selecting the add to cart option for a product
+2025-05-07 19:52:24 [TestNG-PoolService-1] INFO : Scenario passed: Selecting the add to cart option for a product
+2025-05-07 19:58:41 [TestNG-PoolService-1] INFO : Scenario started: Selecting the add to cart option for a product
+2025-05-07 19:59:01 [TestNG-PoolService-1] INFO : Scenario passed: Selecting the add to cart option for a product
+2025-05-07 19:59:25 [TestNG-PoolService-1] INFO : Scenario started: Selecting the add to cart option for a product
+2025-05-07 19:59:58 [TestNG-PoolService-1] INFO : Scenario passed: Selecting the add to cart option for a product
+2025-05-07 20:06:24 [TestNG-PoolService-1] INFO : Scenario started: Selecting the add to cart option for a product
+2025-05-07 20:06:50 [TestNG-PoolService-1] INFO : Scenario passed: Selecting the add to cart option for a product

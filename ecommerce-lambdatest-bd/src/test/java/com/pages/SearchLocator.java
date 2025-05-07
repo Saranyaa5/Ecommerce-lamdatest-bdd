@@ -64,14 +64,23 @@ public class SearchLocator {
     public List<WebElement> productList;
     
     
-    @FindBy(xpath="//div[@class='carousel-item active']//img]")
-    public WebElement img;	
+    @FindBy(xpath="(//div[@class='carousel-item active']//img)[1]")
+    public WebElement firstProduct;	
     
     @FindBy(xpath="//div[@id='entry_212948']/h1")
-    public WebElement quickviewproduct;
+    public WebElement textQuickView;
     
-    @FindBy(xpath="//div[@class='product-action']//button[@class='btn btn-cart cart-54']//i")
-    public WebElement eye;
-     
+    @FindBy(xpath="//button[@class='btn btn-cart cart-28']/span")
+    public WebElement addToCartButton;
+    
+    @FindBy(xpath="//*[@id=\"notification-box-top\"]/div[1]")
+    public WebElement popupMessage;
+    
+    @FindBy(xpath="//div[@class='col-md-12']//h1")
+    public WebElement textShoppingCart;
+    
+    @FindBy(xpath="//*[@id=\"notification-box-top\"]/div/div[2]/div[2]/div[2]/a")
+    public WebElement checkoutButton;
+        
 }
 

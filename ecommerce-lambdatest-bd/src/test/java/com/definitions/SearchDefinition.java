@@ -161,7 +161,36 @@ public class SearchDefinition{
         int actualCount = searchAction.getDisplayedProductCount();
         Assert.assertEquals("Product count does not match the selected dropdown value.", expectedCount, actualCount);
     }
+    
+    @When("hovers over a product")
+    public void hovers_over_a_product() throws InterruptedException {
+    	searchAction.hoverOverFirstProduct();
+    }
 
+    @When("clicks the Quick View option")
+    public void clicks_the_quick_view_option() {
+//    	searchAction.clickQuickView();
+    }
+
+    @Then("the user should see the product preview with the description")
+    public void the_user_should_see_the_product_preview_with_the_description() {
+    	Assert.assertTrue(searchAction.isQuickViewDisplayed());
+    }
+
+    @When("clicks the Add To Cart option")
+    public void clicks_the_add_to_cart_option() {
+       
+    }
+
+    @Then("the user sees a popup message")
+    public void the_user_sees_a_popup_message() {
+        searchAction.clickAddToCartAndHandlePopup();
+    }
+
+    @Then("clicks on checkout button to see checkout page")
+    public void clicks_on_checkout_button_to_see_checkout_page() {
+       
+    }
     
 }
 

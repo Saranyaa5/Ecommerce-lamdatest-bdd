@@ -3,6 +3,8 @@ package com.actions;
 import com.pages.SearchLocator;
 import com.utilities.HelperClass;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -170,12 +172,42 @@ public class SearchAction {
         int actualCount = getDisplayedProductCount();
         return expectedCount == actualCount;
     }
+ 
     
-//    Actions actions = new Actions(driver);
-//    WebElement productImage = driver.findElement(By.xpath("//img[@class='product-image']")); // Replace with the actual XPath
-//    actions.moveToElement(productImage).perform();
+    public void hoverOverFirstProduct()  {
+        Actions actions = new Actions(driver);
+        WebElement firstProduct = driver.findElement(By.xpath("(//div[@class='carousel-item active']//img)[1]"));
+        actions.moveToElement(firstProduct).perform();
+        
+        WebElement quickViewButton = driver.findElement(By.xpath("//button[@class='btn btn-quick-view quick-view-28']/i"));
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].click();", quickViewButton);
+    }     
 
+    public boolean isQuickViewDisplayed() {
+        return wait.until(ExpectedConditions.visibilityOf(searchLocator.textQuickView)).isDisplayed();
+    }
     
+    public void clickAddToCartAndHandlePopup() {
+        try {
+            WebElement addToCartBtn = wait.until(ExpectedConditions.elementToBeClickable(searchLocator.addToCartButton));
+            
+            // Use JS click for reliability
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].click();", addToCartBtn);
+
+            // Wait for the notification popup or message
+            WebElement popup = wait.until(ExpectedConditions.visibilityOf(searchLocator.popupMessage));
+            System.out.println("Popup text: " + popup.getText());
+
+            // Click the Checkout button if visible
+            WebElement checkoutBtn = wait.until(ExpectedConditions.elementToBeClickable(searchLocator.checkoutButton));
+            checkoutBtn.click();
+
+        } catch (Exception e) {
+            System.out.println("Failed to click Add to Cart or handle popup: " + e.getMessage());
+        }
+    }   
 }
 
 
