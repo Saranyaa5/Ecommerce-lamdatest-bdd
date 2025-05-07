@@ -1,6 +1,7 @@
 package com.actions;
 
 import java.time.Duration;
+
 import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -24,13 +25,13 @@ public class UserAccountAction {
         PageFactory.initElements(driver, userAccountLocator);
         loginPageLocator = new LoginPageLocator();
         PageFactory.initElements(driver, loginPageLocator);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(20));
     }
 
     // Edit personal information
     public void EditInformation() {
         try {
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.EditInfo)).click();
+            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.editInfo)).click();
         } catch (Exception e) {
             System.out.println("Error clicking Edit Info: " + e.getMessage());
         }
@@ -39,7 +40,7 @@ public class UserAccountAction {
     // Change account password
     public void changePassword() {
         try {
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.ChangePass)).click();
+            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.changePass)).click();
         } catch (Exception e) {
             System.out.println("Error clicking Change Password: " + e.getMessage());
         }
@@ -48,7 +49,7 @@ public class UserAccountAction {
     // Modify wishlist
     public void ModifyWishlist() {
         try {
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.ModifyWishlist)).click();
+            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.modifyWishlist)).click();
         } catch (Exception e) {
             System.out.println("Error clicking Modify Wishlist: " + e.getMessage());
         }
@@ -64,8 +65,8 @@ public class UserAccountAction {
 // Update telephone number
     public void UpdateTelephoneNumber() {
         try {
-            userAccountLocator.Telephone.clear();
-            userAccountLocator.Telephone.sendKeys("8825428889");
+            userAccountLocator.telephone.clear();
+            userAccountLocator.telephone.sendKeys("8825428889");
         } catch (Exception e) {
             System.out.println("Error updating telephone: " + e.getMessage());
     }
@@ -73,24 +74,24 @@ public class UserAccountAction {
  // Save edited personal information
     public void EditContinue() {
         try {
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.EditContinue)).click();
+            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.editContinue)).click();
         } catch (Exception e) {
             System.out.println("Error clicking Edit Continue: " + e.getMessage());
         } }
 
  public String Edited() {
-        return userAccountLocator.Edited.getText();
+        return userAccountLocator.edited.getText();
     }
 
     public String PasswordChanged() {
-        return userAccountLocator.PassChanged.getText();
+        return userAccountLocator.passChanged.getText();
     }
 
     // Enter new password and confirm
     public void EntersnewPass() {
         try {
-            userAccountLocator.Password.sendKeys("KIOT");
-            userAccountLocator.ConfirmPassword.sendKeys("KIOT");
+            userAccountLocator.password.sendKeys("KIOT");
+            userAccountLocator.confirmPassword.sendKeys("KIOT");
         } catch (Exception e) {
             System.out.println("Error entering new password: " + e.getMessage());
         }
@@ -98,7 +99,7 @@ public class UserAccountAction {
 
     public void ClickPassContinue() {
         try {
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.PassContinue)).click();
+            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.passContinue)).click();
         } catch (Exception e) {
             System.out.println("Error clicking Password Continue: " + e.getMessage());
         }
@@ -121,7 +122,7 @@ public class UserAccountAction {
     }
 
     public String ModifiedWishList() {
-        return userAccountLocator.ModifiedWishList.getText();
+        return userAccountLocator.modifiedWishList.getText();
     }
 
     // Subscribe or unsubscribe newsletter
@@ -140,7 +141,7 @@ public class UserAccountAction {
 
     public void clickNewsLetterContinue() {
         try {
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.NewsLettercontinue)).click();
+            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.newsletterContinue)).click();
          } catch (Exception e) {
             System.out.println("Error clicking Newsletter Continue: " + e.getMessage());
          }
@@ -159,12 +160,12 @@ public class UserAccountAction {
     }
 
     public String PasswordEmpty() {
-        return userAccountLocator.PasswordEmpty.getText();
+        return userAccountLocator.passwordEmpty.getText();
     }
 
     public void ClickModifyAddress() {
         try {
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.ModifyAddress)).click();
+            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.modifyAddress)).click();
         } catch (Exception e) {
             System.out.println("Error clicking Modify Address: " + e.getMessage());
         }
@@ -193,29 +194,23 @@ public class UserAccountAction {
     // Fill in new address details
     public void enterAddressDetails(String firstName, String lastName, String address, String city, String postcode) {
         try {
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-
             userAccountLocator.getFirstNameField.sendKeys(firstName);
             userAccountLocator.getLastNameField.sendKeys(lastName);
             userAccountLocator.getAddressField.sendKeys(address);
             userAccountLocator.getCityField.sendKeys(city);
             userAccountLocator.getPostcodeField.sendKeys(postcode);
-
-            // Click country dropdown and select United States
+            
             wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.countrySelect)).click();
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.unitedstates)).click();
+            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.unitedStates)).click();
 
-            // Wait until state dropdown is visible and clickable
             wait.until(ExpectedConditions.visibilityOf(userAccountLocator.state));
             wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.state)).click();
-
-            // Wait until Abeerdan is visible and clickable
-            wait.until(ExpectedConditions.visibilityOf(userAccountLocator.Abeerdan));
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.Abeerdan)).click();
-
+            wait.until(ExpectedConditions.visibilityOf(userAccountLocator.aberdeen));
+            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.aberdeen)).click();
         } catch (Exception e) {
             System.out.println("Error entering address details: " + e.getMessage());
         }
     }
+
 
 }

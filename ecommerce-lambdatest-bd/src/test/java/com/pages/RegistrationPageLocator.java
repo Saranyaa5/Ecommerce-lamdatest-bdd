@@ -5,19 +5,19 @@ import org.openqa.selenium.support.FindBy;
 
 public class RegistrationPageLocator {
     @FindBy(xpath = "//a[@class='icon-left both nav-link dropdown-toggle' and @href='https://ecommerce-playground.lambdatest.io/index.php?route=account/account']")
-    public WebElement MyAccount; 
+    public WebElement myAccount; 
     
     @FindBy(xpath = "//a[@class='icon-left both dropdown-item' and @href='https://ecommerce-playground.lambdatest.io/index.php?route=account/register']")
-    public WebElement Register;
+    public WebElement register;
   
     @FindBy(xpath = "//form/preceding::h1[1]")
-    public WebElement RegisterPageTitle;
+    public WebElement registerPageTitle;
     
     @FindBy(xpath = "//label[contains(text(),'First Name')]/following::input[1]")
-    public WebElement FirstName;
+    public WebElement firstName;
    
     @FindBy(xpath = "//label[contains(text(),'Last Name')]/following::input[1]")
-    public WebElement LastName;
+    public WebElement lastName;
     
     @FindBy(css="fieldset:first-of-type div > label[for='input-email'] ~ div > input")
     public WebElement RegisterEmail;

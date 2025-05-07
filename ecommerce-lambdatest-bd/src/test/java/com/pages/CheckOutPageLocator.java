@@ -1,6 +1,4 @@
 package com.pages;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -16,7 +14,7 @@ public class CheckOutPageLocator {
     public WebElement productImage;
     
     @FindBy(xpath = "//div[contains(@class,'row mb-3 align-items-end')]/following-sibling::div[@class='buttons d-flex']//a[2]")
-    public WebElement CheckoutFromCart;
+    public WebElement checkoutFromCart;
     
     @FindBy(xpath = "//div[contains(@class,'sticky-top')]/child::div[contains(@class,'mb-5')]//div[1]//div[3]")
     public WebElement guestUser;
@@ -70,7 +68,7 @@ public class CheckOutPageLocator {
     public WebElement termsCheckbox;
     
     @FindBy(xpath = "//*[@id='form-checkout']/div/div[2]/div/div[4]/child::label")
-    public WebElement PrivacyCheckbox;
+    public WebElement privacyCheckbox;
     
     @FindBy(xpath = "//*[starts-with(@id,'button-save')]")
     public WebElement continueButton;
@@ -88,7 +86,7 @@ public class CheckOutPageLocator {
     public WebElement emptyCartMessage;
     
     @FindBy(xpath = "//*[@id='payment-address']/div[1]/div[1]")
-    public WebElement ExistingAdd;
+    public WebElement existingAdd;
     
     @FindBy(xpath = "//*[@id='payment-address']/div[2]/div/label")
     public WebElement newAdd;
