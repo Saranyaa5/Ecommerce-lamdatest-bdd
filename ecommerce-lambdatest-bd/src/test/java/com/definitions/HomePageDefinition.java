@@ -109,7 +109,7 @@ public class HomePageDefinition {
 	}
 	
 	@When("the user retrieves all the links on the homepage")
-	public void the_user_retrieves_all_the_links_on_the_homepage() throws InterruptedException {
+	public void the_user_retrieves_all_the_links_on_the_homepage(){
 	    homePageAction.retrieveLinks();
 	}
 
