@@ -81,7 +81,6 @@ public class UserLoginAction {
         }
     }
     
-    
     public void clickLogout() {
     	loginPageLocator.logout.click();
     }

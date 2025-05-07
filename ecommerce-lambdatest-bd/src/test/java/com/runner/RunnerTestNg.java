@@ -28,7 +28,6 @@ import org.testng.annotations.DataProvider;
               "src/test/resources/com/features/ShoppingCartTableVerification.feature"
 
     },
-    tags="@select_addtocart_in_products",
     glue = {"com.definitions"},
     plugin = {
         "pretty",
