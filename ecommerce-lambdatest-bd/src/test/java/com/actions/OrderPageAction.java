@@ -60,11 +60,8 @@ public class OrderPageAction {
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.urlToBe("https://ecommerce-playground.lambdatest.io/index.php?route=checkout/success"));
-
         actions.moveToElement(orderPageLocator.myAccount).perform();
-
         wait.until(ExpectedConditions.visibilityOf(orderPageLocator.loginLink));
-
         orderPageLocator.loginLink.click();
     }
 

@@ -3,6 +3,7 @@ package com.actions;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
@@ -15,7 +16,7 @@ import com.pages.ProductCompareLocator;
 import com.utilities.HelperClass;
 
 public class ProductCompareAction {
-    private static final Duration DEFAULT_WAIT = Duration.ofSeconds(15); // Increased wait time
+    private static final Duration DEFAULT_WAIT = Duration.ofSeconds(15); 
     private ProductCompareLocator productCompareLocator;
     private WebDriverWait wait;
 
@@ -25,7 +26,6 @@ public class ProductCompareAction {
         this.wait = new WebDriverWait(HelperClass.getDriver(), DEFAULT_WAIT);
     }
 
-    // Wait for element to be clickable
     private WebElement waitForElementToBeClickable(WebElement element) {
         try {
             return wait.until(ExpectedConditions.elementToBeClickable(element));
@@ -34,7 +34,6 @@ public class ProductCompareAction {
         }
     }
 
-    // Wait for element to be visible
     private WebElement waitForElementToBeVisible(WebElement element) {
         try {
             return wait.until(ExpectedConditions.visibilityOf(element));
@@ -43,7 +42,6 @@ public class ProductCompareAction {
         }
     }
 
-    // Close the toast or any overlay element that might be blocking the clickable element
     public void closeToastIfVisible() {
         try {
             WebElement toast = HelperClass.getDriver().findElement(By.cssSelector(".toast-header"));
@@ -52,18 +50,16 @@ public class ProductCompareAction {
                 closeButton.click();
             }
         } catch (NoSuchElementException e) {
-            // Toast not found, no action needed
+            
         }
     }
 
-    // Scroll the element into view before clicking it
     private void scrollToElement(WebElement element) {
         ((JavascriptExecutor) HelperClass.getDriver()).executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
-    // Click the Product Compare button
     public void clickProductCompare() {
-        closeToastIfVisible();  // Ensure no toast is blocking the element
+        closeToastIfVisible();  
         WebElement element = waitForElementToBeClickable(productCompareLocator.productCompare1);
         scrollToElement(element); // Scroll the element into view
         element.click();
@@ -85,27 +81,40 @@ public class ProductCompareAction {
 
     // Click a product for comparison
     public void clickProduct() {
-        closeToastIfVisible();  // Ensure no toast is blocking the element
+        closeToastIfVisible();  
         WebElement element = waitForElementToBeClickable(productCompareLocator.product1);
-        scrollToElement(element); // Scroll the element into view
+        scrollToElement(element); 
         element.click();
     }
 
-    // Click the comparison arrow
+//    public void clickComparionArrow() {
+//        closeToastIfVisible();  
+//        WebElement element = waitForElementToBeClickable(productCompareLocator.comparisionArrow);
+//        scrollToElement(element); 
+//        element.click();
+//    }
+    
     public void clickComparionArrow() {
-        closeToastIfVisible();  // Ensure no toast is blocking the element
+        closeToastIfVisible();  
+        
         WebElement element = waitForElementToBeClickable(productCompareLocator.comparisionArrow);
-        scrollToElement(element); // Scroll the element into view
-        element.click();
+        scrollToElement(element); 
+        
+        try {
+            
+            ((JavascriptExecutor) HelperClass.getDriver()).executeScript("arguments[0].click();", element);
+        } catch (ElementClickInterceptedException e) {
+            System.out.println("Standard click intercepted, using JavaScriptExecutor: " + e.getMessage());
+            
+        }
     }
 
-    // Get the product description text
+
     public String getProductDescription() {
         WebElement element = waitForElementToBeVisible(productCompareLocator.ComparisionProductDesc);
         return element.getText();
     }
 
-    // Get the error message when no products match
     public boolean getNoProductsErrorMessage() {
         WebElement element = waitForElementToBeVisible(productCompareLocator.noProductsmatchError);
         return element.isDisplayed();
