@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class ShoppingCartTableVerificationLocator {
 	
-    @FindBy(xpath = "//*[@id='content']/form/div/table/tbody/tr/td[2]")
+    @FindBy(xpath = "//div[@id='content']/form/div/table/tbody/tr/td[2]")
     public List<WebElement> allProductNames;
     
 }
