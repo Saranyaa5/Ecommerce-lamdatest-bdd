@@ -56,23 +56,18 @@ public class HomePageAction {
     
     public void clickHeadphonesBanner() {
     	wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        wait.until(ExpectedConditions.elementToBeClickable(homePageLocator.HeadphonesBanner))
+        wait.until(ExpectedConditions.elementToBeClickable(homePageLocator.headphonesBanner))
             .click();
     }
     
-    public String getHeadPhonesProductTitle() {
-   	 wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-       return wait.until(ExpectedConditions.visibilityOf(homePageLocator.productTitle))
-           .getText();
-   }
     
     public void clickNextButton() {
     	wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.elementToBeClickable(homePageLocator.nextButton)).click();
-//    	homePageLocator.nextButton.click();
     }
     
-    public String getActiveBannerAltText() {
+   
+	public String getActiveBannerAltText() {
         wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         WebElement visibleBanner = wait.until(ExpectedConditions.visibilityOf(homePageLocator.activeBanner));
         return visibleBanner.getAttribute("alt");
@@ -91,7 +86,7 @@ public class HomePageAction {
      
     }
     
-    public void retrieveLinks() throws InterruptedException {
+    public void retrieveLinks(){
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         List<WebElement> allLinks = homePageLocator.allLinks;
         for (WebElement link : allLinks) {

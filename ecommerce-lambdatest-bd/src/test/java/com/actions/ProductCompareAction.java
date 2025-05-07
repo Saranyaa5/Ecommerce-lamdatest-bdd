@@ -2,6 +2,7 @@ package com.actions;
 
 import java.time.Duration;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
@@ -50,7 +51,7 @@ public class ProductCompareAction {
                 closeButton.click();
             }
         } catch (NoSuchElementException e) {
-            
+        	throw new RuntimeException("Element was not clickable within the timeout period", e);
         }
     }
 
@@ -65,7 +66,6 @@ public class ProductCompareAction {
         element.click();
     }
 
-    // Click the comparison button
     public void comparionButton() {
         closeToastIfVisible();  // Ensure no toast is blocking the element
         WebElement element = waitForElementToBeClickable(productCompareLocator.productCompare2);
@@ -73,26 +73,17 @@ public class ProductCompareAction {
         element.click();
     }
 
-    // Get the "No Products to Compare" message
     public boolean getNoProductsToCompareMessage() {
         WebElement element = waitForElementToBeVisible(productCompareLocator.noProducts);
         return element.isDisplayed();
     }
 
-    // Click a product for comparison
     public void clickProduct() {
         closeToastIfVisible();  
         WebElement element = waitForElementToBeClickable(productCompareLocator.product1);
         scrollToElement(element); 
         element.click();
     }
-
-//    public void clickComparionArrow() {
-//        closeToastIfVisible();  
-//        WebElement element = waitForElementToBeClickable(productCompareLocator.comparisionArrow);
-//        scrollToElement(element); 
-//        element.click();
-//    }
     
     public void clickComparionArrow() {
         closeToastIfVisible();  
@@ -111,7 +102,7 @@ public class ProductCompareAction {
 
 
     public String getProductDescription() {
-        WebElement element = waitForElementToBeVisible(productCompareLocator.ComparisionProductDesc);
+        WebElement element = waitForElementToBeVisible(productCompareLocator.comparisionProductDesc);
         return element.getText();
     }
 

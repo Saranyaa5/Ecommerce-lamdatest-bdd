@@ -2,6 +2,7 @@ package com.actions;
 
 import java.time.Duration;
 
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
@@ -27,21 +28,24 @@ public class UserRegistrationAction {
     }
 
     public void clickMyAccounts() {
-        waitAndMoveToElement(registrationLocators.MyAccount);
+        waitAndMoveToElement(registrationLocators.myAccount);
     }
 
+//    completed
     public void clickRegister() {
-        waitAndClick(registrationLocators.Register);
+    	 WebElement el = wait.until(ExpectedConditions.
+         		elementToBeClickable(registrationLocators.register));
+    	 BaseAction.clickElement(el);
     }
 
     public boolean isRegistrationPageDisplayed() {
-        return wait.until(ExpectedConditions.visibilityOf(registrationLocators.RegisterPageTitle)).isDisplayed();
+        return wait.until(ExpectedConditions.visibilityOf(registrationLocators.registerPageTitle)).isDisplayed();
     }
 
     public void enterRegistrationDetails(String firstName, String lastName, String email,
                                        String telephone, String password, String confirmPassword) {
-        waitAndSendKeys(registrationLocators.FirstName, firstName);
-        waitAndSendKeys(registrationLocators.LastName, lastName);
+        waitAndSendKeys(registrationLocators.firstName, firstName);
+        waitAndSendKeys(registrationLocators.lastName, lastName);
         waitAndSendKeys(registrationLocators.RegisterEmail, email);
         waitAndSendKeys(registrationLocators.Telephone, telephone);
         waitAndSendKeys(registrationLocators.password, password);
@@ -58,7 +62,6 @@ public class UserRegistrationAction {
 
     public String RegisterationSuccess() {
         return waitForElementText(registrationLocators.RegistrationSuccessMsg);
-//      return HelperClass.getDriver().getTitle();
     }
 
     public String existingMailError() {
@@ -78,7 +81,6 @@ public class UserRegistrationAction {
     }
 
     public String uncheckedError() {
-//    	return HelperClass.getDriver().getTitle();
         return waitForElementText(registrationLocators.UncheckedError);
     }
 

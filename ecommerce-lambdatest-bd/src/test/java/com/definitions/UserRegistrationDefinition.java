@@ -1,11 +1,7 @@
 package com.definitions;
 
-import java.time.Duration;
-
 import org.junit.Assert;
 
-
-import org.openqa.selenium.interactions.Action;
 import com.actions.UserRegistrationAction;
 import com.utilities.HelperClass;
 
@@ -69,7 +65,7 @@ public class UserRegistrationDefinition {
 
     @Then("the user should see {string}")
     public void the_user_should_see(String expectedMessage) throws InterruptedException {
-        Thread.sleep(3000);
+        
         try {
             Assert.assertEquals(expectedMessage, userRegistrationAction.RegisterationSuccess());
             logger.info("Assertion Passed: Expected message '{}' is displayed successfully.", expectedMessage);
@@ -90,8 +86,7 @@ public class UserRegistrationDefinition {
     @Then("the user should see {string} for {string}")
     public void the_user_should_see_for(String expectedMessage, String testCaseName) throws InterruptedException {
         String actualMessage = "";
-        Thread.sleep(3000);
-
+        
         try {
             switch (testCaseName) {
                 case "empty first name":

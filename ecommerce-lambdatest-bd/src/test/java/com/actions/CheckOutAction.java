@@ -23,13 +23,11 @@ public class CheckOutAction {
 	SearchLocator searchLocator;
 	 AddToCartLocator cartLocator;
 	 WebDriverWait wait;
-	 private final Actions actions;
-	
-	public CheckOutAction() {
+	 public CheckOutAction() {
 		 this.searchLocator = new SearchLocator();
 		checkOutPageLocator =new CheckOutPageLocator();
 		PageFactory.initElements(HelperClass.getDriver(),checkOutPageLocator);
-		this.actions = new Actions(HelperClass.getDriver());
+		new Actions(HelperClass.getDriver());
 	}
 	
 	public void searchProdut(String string) {
@@ -46,7 +44,7 @@ public class CheckOutAction {
     }
 	
 	public void productCheckOut() {
-		checkOutPageLocator.CheckoutFromCart.click();
+		checkOutPageLocator.checkoutFromCart.click();
 	}
 	
 	public void selectGuestUser() {
@@ -72,10 +70,11 @@ public class CheckOutAction {
 			checkOutPageLocator.paymentCity.sendKeys(city);
 			checkOutPageLocator.paymentPostcode.sendKeys(postcode);
 			
-			selectDropdownByVisibleText(checkOutPageLocator.countryDropdown, "India");
-			WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+			selectDropdownByVisibleText(checkOutPageLocator.countryDropdown, country);
+			wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
 		    wait.until(ExpectedConditions.elementToBeClickable(checkOutPageLocator.regionDropdown));
-			selectDropdownByVisibleText(checkOutPageLocator.regionDropdown,"Assam");
+		    
+			selectDropdownByVisibleText(checkOutPageLocator.regionDropdown,region);
 			
 			}
 	
@@ -87,7 +86,7 @@ public class CheckOutAction {
 			
 			public void acceptGuestTermsCondition() {
 			    try {
-			        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+			       wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
 			       
 			        WebElement termsCheckbox = wait.until(ExpectedConditions.presenceOfElementLocated(
 			            By.xpath("//*[@id='form-checkout']/div/div[2]/div/div[5]/label")));
@@ -107,19 +106,11 @@ public class CheckOutAction {
 			}
 			
 			public void clickPrivacyPolicy() {
-				checkOutPageLocator.PrivacyCheckbox.click();
+				checkOutPageLocator.privacyCheckbox.click();
 			}
-//			public void clickContinueCheckout() {
-//			    WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
-//			    wait.until(ExpectedConditions.elementToBeClickable(checkOutPageLocator.continueButton));
-//			    
-//			    actions.moveToElement(checkOutPageLocator.continueButton)
-//			           .click()
-//			           .perform();
-//			}
 			public void clickContinueCheckout() {
 			    try {
-			        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+			        wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
 			        
 			        ((JavascriptExecutor) HelperClass.getDriver()).executeScript(
 			            "arguments[0].scrollIntoView({block: 'center', behavior: 'smooth'});", 
@@ -139,7 +130,7 @@ public class CheckOutAction {
 			
 			
 			public void confirmOrder() {
-				WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(35));
+				wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(35));
 			    wait.until(ExpectedConditions.elementToBeClickable(checkOutPageLocator.confirmOrder));
 				checkOutPageLocator.confirmOrder.click();
 			}
@@ -154,7 +145,7 @@ public class CheckOutAction {
 			
 			public void fillPaymentCheckoutForm(String firstName, String lastName, 
 		            String address, String city, 
-		            String postcode) {
+		            String postcode, String country,String region) {
 				
 			    checkOutPageLocator.paymentFname.sendKeys(firstName);
 					checkOutPageLocator.paymentLname.sendKeys(lastName);
@@ -162,17 +153,17 @@ public class CheckOutAction {
 					checkOutPageLocator.paymentCity.sendKeys(city);
 					checkOutPageLocator.paymentPostcode.sendKeys(postcode);
 					
-					selectDropdownByVisibleText(checkOutPageLocator.countryDropdown, "India");
+					selectDropdownByVisibleText(checkOutPageLocator.countryDropdown,country);
 					
-					WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+					wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
 				    wait.until(ExpectedConditions.elementToBeClickable(checkOutPageLocator.regionDropdown));
 					
-					selectDropdownByVisibleText(checkOutPageLocator.regionDropdown,"Assam");
+					selectDropdownByVisibleText(checkOutPageLocator.regionDropdown,region);
 					
 					}
 			
 			       public void clickExistingAddButton() {
-			    	   checkOutPageLocator.ExistingAdd.click();
+			    	   checkOutPageLocator.existingAdd.click();
 			       }
 			       public void clickNewAddressButton() {
 			    	   checkOutPageLocator.newAdd.click();
@@ -180,7 +171,7 @@ public class CheckOutAction {
 			   
 			       public void fillRegisterCheckoutForm(String firstName, String lastName, String email, 
 			               String telephone,String password,String confirm_pass, String address, String city, 
-			               String postcode, String country) {
+			               String postcode, String country,String region) {
 			   			
 			   			checkOutPageLocator.paymentFname.sendKeys(firstName);
 			   			checkOutPageLocator.paymentLname.sendKeys(lastName);
@@ -193,12 +184,12 @@ public class CheckOutAction {
 			   			checkOutPageLocator.paymentPostcode.sendKeys(postcode);
 			   			
 			   			
-			   			selectDropdownByVisibleText(checkOutPageLocator.countryDropdown, "Taiwan");
+			   			selectDropdownByVisibleText(checkOutPageLocator.countryDropdown,country);
 			   			
-			   			WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+			   			wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
 			   		    wait.until(ExpectedConditions.elementToBeClickable(checkOutPageLocator.regionDropdown));
 			   			
-			   			selectDropdownByVisibleText(checkOutPageLocator.regionDropdown,"Chi-lung");
+			   			selectDropdownByVisibleText(checkOutPageLocator.regionDropdown,region);
 			   			
 			   			}
 			       

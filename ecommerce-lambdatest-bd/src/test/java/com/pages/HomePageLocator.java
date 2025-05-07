@@ -21,7 +21,7 @@ public class HomePageLocator {
     public WebElement productTitle;
     
     @FindBy(id="entry_217976")
-    public WebElement HeadphonesBanner;
+    public WebElement headphonesBanner;
     
     @FindBy(xpath="//*[@id='entry_216816']/h1")
     public WebElement headPhones;
