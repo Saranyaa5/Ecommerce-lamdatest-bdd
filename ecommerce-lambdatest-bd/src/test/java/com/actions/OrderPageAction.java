@@ -58,17 +58,13 @@ public class OrderPageAction {
     public void clickLoginUnderMyAccount() {
         Actions actions = new Actions(driver);
 
-        // Wait until the URL is the expected success page
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.urlToBe("https://ecommerce-playground.lambdatest.io/index.php?route=checkout/success"));
 
-        // Hover over "My Account"
         actions.moveToElement(orderPageLocator.myAccount).perform();
 
-        // Wait until the login link is visible
         wait.until(ExpectedConditions.visibilityOf(orderPageLocator.loginLink));
 
-        // Click on the login link
         orderPageLocator.loginLink.click();
     }
 
@@ -79,13 +75,10 @@ public class OrderPageAction {
             ExpectedConditions.visibilityOf(orderPageLocator.myAccount)
         ));
         actions.moveToElement(myAccountElement).perform();
-
         WebElement myOrderElement = wait.until(ExpectedConditions.refreshed(
             ExpectedConditions.elementToBeClickable(orderPageLocator.orders)
         ));
         myOrderElement.click();
-
-        // Wait for order history section or any identifier to load
         wait.until(ExpectedConditions.visibilityOf(orderPageLocator.orderhistory));
     }
 
@@ -101,8 +94,6 @@ public class OrderPageAction {
             ExpectedConditions.elementToBeClickable(orderPageLocator.viewOrderButton)
         ));
         viewBtn.click();
-
-        // Wait for reorder button or order details to be visible after clicking
         wait.until(ExpectedConditions.visibilityOf(orderPageLocator.reorderButton));
     }
 

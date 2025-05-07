@@ -148,7 +148,7 @@ public class UserAccountAction {
  public String NewsLetterUpdated() {
         return userAccountLocator.newsLetterUpdated.getText();
     }
- // Enter login credentials (hardcoded)
+
     public void EnterCredentialsForMyAccount() {
         try {
             loginPageLocator.emailId.sendKeys("2k21eee40@kiot.ac.in");
@@ -193,7 +193,7 @@ public class UserAccountAction {
     // Fill in new address details
     public void enterAddressDetails(String firstName, String lastName, String address, String city, String postcode) {
         try {
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
             userAccountLocator.getFirstNameField.sendKeys(firstName);
             userAccountLocator.getLastNameField.sendKeys(lastName);
