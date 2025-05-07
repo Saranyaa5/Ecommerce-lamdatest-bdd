@@ -2,7 +2,7 @@ package com.actions;
 
 import java.time.Duration;
 import java.util.ArrayList;
-import java.util.Arrays;
+//import java.util.Arrays;
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
@@ -36,7 +36,4 @@ public class FAQAction {
     public String faqmessageList() {
     	return faqlocator.changeshippingaddressmsg.getText();
     }
-
-
-    
 }
