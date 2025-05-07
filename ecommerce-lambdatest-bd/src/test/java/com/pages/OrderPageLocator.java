@@ -10,8 +10,13 @@ public class OrderPageLocator {
 	
 	@FindBy(xpath="//a[@class='icon-left both nav-link dropdown-toggle' and @href='https://ecommerce-playground.lambdatest.io/index.php?route=account/account']")
 	public WebElement myAccount;
-    
+	
+	@FindBy(xpath = "//a[contains(@href, 'route=account/login') and contains(., 'Login')]")
+	public WebElement loginLink;
 
+    
+	@FindBy(css="#column-right>div a:nth-of-type(7)")
+	public WebElement GuestMyOrder;
     @FindBy(xpath="//*[@id=\"content\"]/div[2]/div/div/div[1]/a")
     public WebElement myOrders;
     
