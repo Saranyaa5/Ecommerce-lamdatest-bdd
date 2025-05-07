@@ -16813,3 +16813,90 @@ Session ID: a69b9dd60b15c9843d68072c76518019
 >>>>>>> branch 'soundaranarayanan' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
 2025-05-06 17:32:00 [TestNG-PoolService-1] INFO : Scenario started: Display the Count of Products Selected in Dropdown
 2025-05-06 17:32:23 [TestNG-PoolService-1] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-06 19:46:32 [TestNG-PoolService-6] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-06 19:46:32 [TestNG-PoolService-3] INFO : Scenario started: Search functionality with case sensitive inputs
+2025-05-06 19:46:32 [TestNG-PoolService-2] INFO : Scenario started: Search functionality with invalid inputs
+2025-05-06 19:46:32 [TestNG-PoolService-4] INFO : Scenario started: Search functionality with unnecessary indentation in search
+2025-05-06 19:46:32 [TestNG-PoolService-5] INFO : Scenario started: Search functionality by category as input
+2025-05-06 19:46:32 [TestNG-PoolService-1] INFO : Scenario started: Search functionality with valid inputs
+2025-05-06 19:46:47 [TestNG-PoolService-2] INFO : Scenario passed: Search functionality with invalid inputs
+2025-05-06 19:46:47 [TestNG-PoolService-3] INFO : Scenario passed: Search functionality with case sensitive inputs
+2025-05-06 19:46:47 [TestNG-PoolService-5] INFO : Scenario passed: Search functionality by category as input
+2025-05-06 19:46:47 [TestNG-PoolService-4] INFO : Scenario passed: Search functionality with unnecessary indentation in search
+2025-05-06 19:46:48 [TestNG-PoolService-1] INFO : Scenario passed: Search functionality with valid inputs
+2025-05-06 19:46:55 [TestNG-PoolService-6] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-06 19:49:37 [main] INFO : Scenario started: Search functionality with valid inputs
+2025-05-06 19:49:49 [main] INFO : Scenario passed: Search functionality with valid inputs
+2025-05-06 19:49:50 [main] INFO : Scenario started: Search functionality with invalid inputs
+2025-05-06 19:49:57 [main] INFO : Scenario passed: Search functionality with invalid inputs
+2025-05-06 19:49:59 [main] INFO : Scenario started: Search functionality with case sensitive inputs
+2025-05-06 19:50:06 [main] INFO : Scenario passed: Search functionality with case sensitive inputs
+2025-05-06 19:50:07 [main] INFO : Scenario started: Search functionality with unnecessary indentation in search
+2025-05-06 19:50:13 [main] INFO : Scenario passed: Search functionality with unnecessary indentation in search
+2025-05-06 19:50:15 [main] INFO : Scenario started: Search functionality by category as input
+2025-05-06 19:50:21 [main] INFO : Scenario passed: Search functionality by category as input
+2025-05-06 19:50:23 [main] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-06 19:50:31 [main] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-06 19:50:33 [main] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-06 19:50:41 [main] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-06 19:50:42 [main] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-06 19:50:50 [main] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-06 20:01:14 [TestNG-PoolService-6] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-06 20:01:14 [TestNG-PoolService-1] INFO : Scenario started: Search functionality with valid inputs
+2025-05-06 20:01:15 [TestNG-PoolService-4] INFO : Scenario started: Search functionality with unnecessary indentation in search
+2025-05-06 20:01:15 [TestNG-PoolService-5] INFO : Scenario started: Search functionality by category as input
+2025-05-06 20:01:16 [TestNG-PoolService-8] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-06 20:01:16 [TestNG-PoolService-3] INFO : Scenario started: Search functionality with case sensitive inputs
+2025-05-06 20:01:16 [TestNG-PoolService-7] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-06 20:01:20 [TestNG-PoolService-2] INFO : Scenario started: Search functionality with invalid inputs
+2025-05-06 20:01:32 [TestNG-PoolService-4] INFO : Scenario passed: Search functionality with unnecessary indentation in search
+2025-05-06 20:01:35 [TestNG-PoolService-3] INFO : Scenario passed: Search functionality with case sensitive inputs
+2025-05-06 20:01:35 [TestNG-PoolService-5] INFO : Scenario passed: Search functionality by category as input
+2025-05-06 20:01:36 [TestNG-PoolService-2] INFO : Scenario passed: Search functionality with invalid inputs
+2025-05-06 20:01:37 [TestNG-PoolService-1] INFO : Scenario passed: Search functionality with valid inputs
+2025-05-06 20:01:43 [TestNG-PoolService-6] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-06 20:01:43 [TestNG-PoolService-7] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-06 20:01:44 [TestNG-PoolService-8] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-06 20:02:43 [TestNG-PoolService-7] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-06 20:02:43 [TestNG-PoolService-1] INFO : Scenario started: Search functionality with valid inputs
+2025-05-06 20:02:43 [TestNG-PoolService-4] INFO : Scenario started: Search functionality with unnecessary indentation in search
+2025-05-06 20:02:43 [TestNG-PoolService-2] INFO : Scenario started: Search functionality with invalid inputs
+2025-05-06 20:02:43 [TestNG-PoolService-8] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-06 20:02:43 [TestNG-PoolService-6] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-06 20:02:43 [TestNG-PoolService-5] INFO : Scenario started: Search functionality by category as input
+2025-05-06 20:02:44 [TestNG-PoolService-3] INFO : Scenario started: Search functionality with case sensitive inputs
+2025-05-06 20:03:02 [TestNG-PoolService-2] INFO : Scenario passed: Search functionality with invalid inputs
+2025-05-06 20:03:05 [TestNG-PoolService-3] INFO : Scenario passed: Search functionality with case sensitive inputs
+2025-05-06 20:03:05 [TestNG-PoolService-5] INFO : Scenario passed: Search functionality by category as input
+2025-05-06 20:03:08 [TestNG-PoolService-6] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-06 20:03:09 [TestNG-PoolService-1] INFO : Scenario passed: Search functionality with valid inputs
+2025-05-06 20:03:11 [TestNG-PoolService-8] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-06 20:03:11 [TestNG-PoolService-7] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-06 20:04:11 [TestNG-PoolService-7] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-06 20:04:11 [TestNG-PoolService-8] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-06 20:04:11 [TestNG-PoolService-3] INFO : Scenario started: Search functionality with case sensitive inputs
+2025-05-06 20:04:11 [TestNG-PoolService-1] INFO : Scenario started: Search functionality with valid inputs
+2025-05-06 20:04:12 [TestNG-PoolService-4] INFO : Scenario started: Search functionality with unnecessary indentation in search
+2025-05-06 20:04:13 [TestNG-PoolService-6] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-06 20:04:14 [TestNG-PoolService-5] INFO : Scenario started: Search functionality by category as input
+2025-05-06 20:04:21 [TestNG-PoolService-2] INFO : Scenario started: Search functionality with invalid inputs
+2025-05-06 20:04:31 [TestNG-PoolService-2] INFO : Scenario passed: Search functionality with invalid inputs
+2025-05-06 20:04:32 [TestNG-PoolService-5] INFO : Scenario passed: Search functionality by category as input
+2025-05-06 20:04:34 [TestNG-PoolService-3] INFO : Scenario passed: Search functionality with case sensitive inputs
+2025-05-06 20:04:36 [TestNG-PoolService-4] INFO : Scenario passed: Search functionality with unnecessary indentation in search
+2025-05-06 20:04:36 [TestNG-PoolService-1] INFO : Scenario passed: Search functionality with valid inputs
+2025-05-06 20:04:42 [TestNG-PoolService-7] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-06 20:04:43 [TestNG-PoolService-6] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-06 20:04:45 [TestNG-PoolService-8] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-06 20:05:20 [TestNG-PoolService-2] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-06 20:05:20 [TestNG-PoolService-3] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-06 20:05:20 [TestNG-PoolService-1] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-06 20:05:35 [TestNG-PoolService-1] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-06 20:05:35 [TestNG-PoolService-2] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-06 20:05:36 [TestNG-PoolService-3] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-06 20:11:27 [TestNG-PoolService-1] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-06 20:11:27 [TestNG-PoolService-2] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-06 20:11:28 [TestNG-PoolService-3] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-06 20:11:41 [TestNG-PoolService-1] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-06 20:11:42 [TestNG-PoolService-2] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-06 20:11:43 [TestNG-PoolService-3] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
