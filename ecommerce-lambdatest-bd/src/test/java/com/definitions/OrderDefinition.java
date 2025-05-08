@@ -58,7 +58,7 @@ public class OrderDefinition {
     }
 
     @Then("the page should scroll to the top")
-    public void the_page_should_scroll_to_the_top() throws InterruptedException {
+    public void the_page_should_scroll_to_the_top(){
         Assert.assertTrue(orderPageAction.isPageScrolledToTop(),"page not scrolled to top");
         
     }

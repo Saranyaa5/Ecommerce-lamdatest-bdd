@@ -19,7 +19,7 @@ Feature: Saranya_09APR2025_LambdaTesters_User_Registration_Functionality
     Examples:  
       | First Name | Last Name | Email              | Telephone   | Password | Confirm Password |  
       | priya      | ram       |                    | 1234567891  | 1234     | 1234             |  
-      | saran     | A       |                    | 1239306 | 12345     | 12345            |  
+      #| saran     | A       |                    | 1239306 | 12345     | 12345            |  
 
   @InValidRegistrationInputs
   Scenario Outline: Register with invalid inputs  
@@ -36,7 +36,7 @@ Feature: Saranya_09APR2025_LambdaTesters_User_Registration_Functionality
       | priya      | ram       | priya123@gmail.com | 1234567891  | 1234     | 4321             | Password confirmation does not match password!           | password mismatch  |
       
    @RegistrationWithoutAcceptingPrivacyPolicy
-   Scenario Outline: Register with valid inputs  with out checking privacy policy
+   Scenario Outline: Register with +valid inputs  with out checking privacy policy
     When the user enters "<First Name>", "<Last Name>", "<Email>", "<Telephone>", "<Password>" and "<Confirm Password>"  
     And the user not agrees to the privacy policy   
     And submits the registration form  

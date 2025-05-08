@@ -1,7 +1,5 @@
 package com.definitions;
 
-import java.util.List;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
@@ -10,7 +8,6 @@ import com.actions.HomePageAction;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import jdk.internal.org.jline.utils.Log;
 
 public class HomePageDefinition {
 	HomePageAction homePageAction=new HomePageAction();
@@ -52,7 +49,7 @@ public class HomePageDefinition {
             Assert.assertEquals(actualTitle, expectedTitle);
             logger.info("Successfully verified MPOW product page");
         } catch(Exception e) {
-            logger.error("Failed to verify MPOW product page: " + e.getMessage());
+            logger.error("Failed to verify MPOW product page: {}",e.getMessage());
             throw e;
         }
 	}
@@ -65,31 +62,30 @@ public class HomePageDefinition {
 	@Then("the user should see the {string} product page")
 	public void the_user_should_see_the_product_page(String string) {
 		try {
-            String actualTitle = homePageAction.getHeadPhonesProductTitle();
+            String actualTitle = homePageAction.getProductTitle();
             String expectedTitle = string;
             
             Assert.assertEquals(actualTitle, expectedTitle);
             logger.info("Successfully verified MPOW product page");
         } catch(Exception e) {
-            logger.error("Failed to verify MPOW product page: " + e.getMessage());
+            logger.error("Failed to verify MPOW product page: {}",e.getMessage());
             throw e;
         }
 	}
 	@When("the user clicks the left control arrow on the banner")
-	public void the_user_clicks_the_left_control_arrow_on_the_banner() throws InterruptedException{
-	    ;
+	public void the_user_clicks_the_left_control_arrow_on_the_banner(){
 		homePageAction.clickNextButton();
 	}
 
 	@Then("the {string} banner should be displayed")
-	public void the_banner_should_be_displayed(String string) throws InterruptedException {
+	public void the_banner_should_be_displayed(String string){
 		try {
 			String actualBannerAltText =homePageAction.getActiveBannerAltText();
 			System.out.println(actualBannerAltText);
 	        Assert.assertEquals(string, actualBannerAltText);
             logger.info("Successfully is successfull");
         } catch(Exception e) {
-            logger.error("Failed to verify " + e.getMessage());
+            logger.error("Failed to verify {}",e.getMessage());
             throw e;
         }
 		
@@ -107,13 +103,13 @@ public class HomePageDefinition {
 			Assert.assertEquals(homePageAction.getTrendingProductParagraphText(),url);
             logger.info("Successfully is successfull");
         } catch(Exception e) {
-            logger.error("Failed to verify " + e.getMessage());
+            logger.error("Failed to verify {}",e.getMessage());
             throw e;
         }
 	}
 	
 	@When("the user retrieves all the links on the homepage")
-	public void the_user_retrieves_all_the_links_on_the_homepage() throws InterruptedException {
+	public void the_user_retrieves_all_the_links_on_the_homepage(){
 	    homePageAction.retrieveLinks();
 	}
 
@@ -121,8 +117,7 @@ public class HomePageDefinition {
 	public void each_link_should_redirect_to_its_corresponding_page_successfully() {
 		try {
 			
-//			Assert.assertEquals(homePageAction.ValidatedLinks(),1);
-            logger.info("no of links in the homepage is not working working in homepage:"+homePageAction.ValidatedLinks());
+            logger.info("no of links in the homepage is not working working in homepage: {}",homePageAction.ValidatedLinks());
         }
 		catch(Exception e) {
         	

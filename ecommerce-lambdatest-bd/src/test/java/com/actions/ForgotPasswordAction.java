@@ -1,9 +1,11 @@
 package com.actions;
 
 import java.time.Duration;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import com.pages.ForgotPasswordLocator;
 import com.utilities.HelperClass;
 
@@ -18,7 +20,8 @@ public class ForgotPasswordAction {
         this.wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
         this.jsExecutor = (JavascriptExecutor) HelperClass.getDriver();
     }
-// Clicks on the "Forgotten Password" link
+
+    // Clicks on the "Forgotten Password" link
     public void clickForgotPassword() {
         try {
             waitAndClick(forgotPage.forgotPasswordLink);
@@ -26,7 +29,8 @@ public class ForgotPasswordAction {
             System.out.println("Error clicking Forgot Password link: " + e.getMessage());
         }
     }
-// Enters the email address into the input field
+
+    // Enters the email address into the input field
     public void enterEmail(String email) {
         try {
             forgotPage.emailInput.sendKeys(email);
@@ -34,7 +38,8 @@ public class ForgotPasswordAction {
             System.out.println("Error entering email: " + e.getMessage());
         }
     }
-// Clicks the Continue button to submit the request
+
+    // Clicks the Continue button to submit the request
     public void clickContinueButton() {
         try {
             waitAndClickWithRetry(forgotPage.continueButton);
@@ -42,7 +47,8 @@ public class ForgotPasswordAction {
             System.out.println("Error clicking Continue button: " + e.getMessage());
         }
     }
-// Verifies the success alert message after password reset request
+
+    // Verifies the success alert message after password reset request
     public String verifySuccessMessage() {
         try {
             return waitForAlertText(forgotPage.successAlert);
@@ -51,7 +57,8 @@ public class ForgotPasswordAction {
             return "";
         }
     }
-// Verifies the error alert message for invalid/empty email input
+
+    // Verifies the error alert message for invalid/empty email input
     public String verifyErrorMessage() {
         try {
             return waitForAlertText(forgotPage.errorAlert);
@@ -67,7 +74,6 @@ public class ForgotPasswordAction {
             scrollToElement(element);
             wait.until(ExpectedConditions.elementToBeClickable(element)).click();
         } catch (StaleElementReferenceException e) {
-            // Retry once if element becomes stale
             wait.until(ExpectedConditions.elementToBeClickable(element)).click();
         }
     }
@@ -89,34 +95,13 @@ public class ForgotPasswordAction {
         }
     }
 
-    // Helper method to clear and enter text into input field
-    private void waitAndClearAndSendKeys(WebElement element, String text) {
-        try {
-            WebElement el = wait.until(ExpectedConditions.elementToBeClickable(element));
-            el.clear();
-            el.sendKeys(text);
-        } catch (Exception e) {
-            System.out.println("Error in waitAndClearAndSendKeys: " + e.getMessage());
-        }
-    }
-
-    // Helper method to get the text of alert (success or error)
-    private String waitForAlertText(WebElement alertElement) {
-        try {
-            return wait.until(ExpectedConditions.visibilityOf(alertElement)).getText();
-        } catch (TimeoutException e) {
-            System.out.println("Alert not visible in time: " + e.getMessage());
-            return "";
-        }
-    }
-
-    // Scrolls to the element using JavaScript
+    // Helper method to scroll element into view
     private void scrollToElement(WebElement element) {
-        try {
-            jsExecutor.executeScript("arguments[0].scrollIntoView();", element);
-            Thread.sleep(200); // Small pause after scroll
-        }  catch (Exception e) {
-            System.out.println("Error while scrolling to element: " + e.getMessage());
-        }
+        jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
+    // Helper method to wait for alert text
+    private String waitForAlertText(WebElement alertElement) {
+        return wait.until(ExpectedConditions.visibilityOf(alertElement)).getText();
     }
 }

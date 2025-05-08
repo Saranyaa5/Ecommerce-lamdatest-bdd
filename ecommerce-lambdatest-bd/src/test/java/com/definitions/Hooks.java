@@ -24,7 +24,7 @@ public class Hooks {
 	    public void setUp(Scenario scenario) {
 	        HelperClass.setUpDriver();
 	        HelperClass.getDriver().navigate().refresh();
-	        logger.info("Scenario started: " + scenario.getName());
+	        logger.info("Scenario started: {}",scenario.getName());
 	    }
 	    @After
 	    public void tearDown(Scenario scenario) {
@@ -37,14 +37,14 @@ public class Hooks {
 	                
 	              byte[] screenshotBytes = ((TakesScreenshot) HelperClass.getDriver()).getScreenshotAs(OutputType.BYTES);
 	              scenario.attach(screenshotBytes, "image/png", "Failure Screenshot");
-	              logger.error("Scenario failed: " + scenario.getName());
+	              logger.error("Scenario failed: {}",scenario.getName());
 	            }
 	            catch (IOException e) {
-	                logger.error("Failed to save screenshot: " + e.getMessage());
+	                logger.error("Failed to save screenshot: {}",e.getMessage());
 	            }
 	        
 	        } else {
-	            logger.info("Scenario passed: " + scenario.getName());
+	            logger.info("Scenario passed: {}",scenario.getName());
 	        }
 
 	        HelperClass.tearDown();

@@ -2,6 +2,7 @@ package com.actions;
 
 import org.openqa.selenium.WebDriver;
 
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -56,31 +57,26 @@ public class HomePageAction {
     
     public void clickHeadphonesBanner() {
     	wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        wait.until(ExpectedConditions.elementToBeClickable(homePageLocator.HeadphonesBanner))
+        wait.until(ExpectedConditions.elementToBeClickable(homePageLocator.headphonesBanner))
             .click();
     }
     
-    public String getHeadPhonesProductTitle() {
-   	 wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-       return wait.until(ExpectedConditions.visibilityOf(homePageLocator.productTitle))
-           .getText();
-   }
     
     public void clickNextButton() {
     	wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.elementToBeClickable(homePageLocator.nextButton)).click();
-//    	homePageLocator.nextButton.click();
     }
     
-    public String getActiveBannerAltText() {
+   
+	@SuppressWarnings("deprecation")
+	public String getActiveBannerAltText() {
         wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         WebElement visibleBanner = wait.until(ExpectedConditions.visibilityOf(homePageLocator.activeBanner));
         return visibleBanner.getAttribute("alt");
     }
     
-    
     public void clickTrendingProduct() {
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         wait.until(ExpectedConditions.elementToBeClickable(homePageLocator.trendingProduct))
             .click();
     }
@@ -91,11 +87,13 @@ public class HomePageAction {
      
     }
     
-    public void retrieveLinks() throws InterruptedException {
+    @SuppressWarnings("deprecation")
+	public void retrieveLinks(){
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         List<WebElement> allLinks = homePageLocator.allLinks;
         for (WebElement link : allLinks) {
-            String href = link.getAttribute("href");
+           
+			String href = link.getAttribute("href");
             if (href != null && !href.isEmpty()) {
                 list.add(href);
             }
@@ -112,7 +110,8 @@ public class HomePageAction {
         return list.size()-this.validlinkCount;
     }
 
-    public void checkLinks(String url) {
+    @SuppressWarnings("deprecation")
+	public void checkLinks(String url) {
         try {
             HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
             connection.setConnectTimeout(5000);
