@@ -1,6 +1,7 @@
 package com.pages;
 
 import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.support.FindBy;
 
 public class ProductCompareLocator {
@@ -21,7 +22,7 @@ public class ProductCompareLocator {
     public WebElement comparisionArrow;
     
     @FindBy(xpath="//*[@id='content']/table/tbody[1]/tr[8]/td[2]")
-    public WebElement ComparisionProductDesc;
+    public WebElement comparisionProductDesc;
     
     @FindBy(xpath="//*[@id='entry_212469']/p")
     public WebElement noProductsmatchError;

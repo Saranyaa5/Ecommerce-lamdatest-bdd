@@ -24,12 +24,12 @@ public class BlogLocator {
 
 	@FindBy(css="#form-comment .alert-success")
 	public WebElement validMessage;
-
+	
 	@FindBy(xpath="//div[@class='invalid-feedback' and contains(text(), 'Warning: Comment Name must be between 3 and 25 characters!')]")
-	public WebElement Warning1;
+	public WebElement warningName;
 
 	@FindBy(xpath="//div[@class='invalid-feedback' and contains(text(), 'Warning: Comment Text must be between 25 and 1000 characters!')]")
-	public WebElement Warning2;
+	public WebElement warningComment;
 
 	@FindBy(xpath="//div[@class='list-group']//a[2]/preceding-sibling::a")
 	public WebElement business;

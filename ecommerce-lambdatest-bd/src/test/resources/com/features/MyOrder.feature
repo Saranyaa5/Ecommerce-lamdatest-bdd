@@ -25,7 +25,8 @@ Feature: Saranya_16APR2025_LambdaTesters_My_orders_feature
     | Address     | 123 Main St    |
     | City        | Salem          |
     | Postcode    | 12345          |
-    | Country     | United States  |
+    | Country     | India          |
+    | Region      | Assam          |
 	  And the user accepts the terms and condition
 	  And the user accepts the privacy policy
 	  And clicks continue from the checkout page
@@ -53,7 +54,8 @@ Feature: Saranya_16APR2025_LambdaTesters_My_orders_feature
     | Address     | 123 Main St    |
     | City        | Salem          |
     | Postcode    | 12345          |
-    | Country     | United States  |
+    | Country     | India          |
+    | Region      | Assam          |
 	  And the user accepts the terms and condition
 	  And the user accepts the privacy policy
 	  And clicks continue from the checkout page
@@ -81,7 +83,8 @@ Feature: Saranya_16APR2025_LambdaTesters_My_orders_feature
     | Address     | 123 Main St    |
     | City        | Salem          |
     | Postcode    | 12345          |
-    | Country     | United States  |
+    | Country     | India          |
+    | Region      | Assam          |
   And the user accepts the terms and condition
   And clicks continue from the checkout page
   When the user clicks confirm order

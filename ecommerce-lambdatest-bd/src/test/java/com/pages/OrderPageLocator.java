@@ -16,7 +16,7 @@ public class OrderPageLocator {
 
     
 	@FindBy(css="#column-right>div a:nth-of-type(7)")
-	public WebElement GuestMyOrder;
+	public WebElement guestMyOrder;
     @FindBy(xpath="//*[@id=\"content\"]/div[2]/div/div/div[1]/a")
     public WebElement myOrders;
     

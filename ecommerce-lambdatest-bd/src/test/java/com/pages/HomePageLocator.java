@@ -1,7 +1,6 @@
 package com.pages;
 
 import java.util.List;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -21,7 +20,7 @@ public class HomePageLocator {
     public WebElement productTitle;
     
     @FindBy(id="entry_217976")
-    public WebElement HeadphonesBanner;
+    public WebElement headphonesBanner;
     
     @FindBy(xpath="//*[@id='entry_216816']/h1")
     public WebElement headPhones;

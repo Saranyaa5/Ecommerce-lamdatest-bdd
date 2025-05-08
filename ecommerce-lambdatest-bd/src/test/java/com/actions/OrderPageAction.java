@@ -2,6 +2,7 @@ package com.actions;
 
 import java.time.Duration;
 
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
@@ -18,7 +19,7 @@ public class OrderPageAction {
 
     public OrderPageLocator orderPageLocator = null;
     private final WebDriver driver;
-    private final WebDriverWait wait;
+    WebDriverWait wait;
     private final Actions actions;
     private final JavascriptExecutor jsExecutor;
 
@@ -56,9 +57,7 @@ public class OrderPageAction {
     }
     
     public void clickLoginUnderMyAccount() {
-        Actions actions = new Actions(driver);
-
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.urlToBe("https://ecommerce-playground.lambdatest.io/index.php?route=checkout/success"));
         actions.moveToElement(orderPageLocator.myAccount).perform();
         wait.until(ExpectedConditions.visibilityOf(orderPageLocator.loginLink));
@@ -118,7 +117,7 @@ public class OrderPageAction {
     }
     
     public void clickOnOrderHistory() {
-    	orderPageLocator.GuestMyOrder.click();
+    	orderPageLocator.guestMyOrder.click();
     }
 
     public boolean isPageScrolledToTop() {

@@ -1,6 +1,7 @@
 package com.utilities;
 
 import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -14,13 +15,14 @@ public class HelperClass {
     private static HelperClass helperClass;
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
     private static ThreadLocal<WebDriverWait> wait = new ThreadLocal<>();
-    public final static int TIMEOUT = 10;
+    public  static final int TIMEOUT = 10;
 
     
-    public static final String ConfigPath = "Configuration.properties";
+
+    public static final String CONFIG_PATH = "Configuration.properties";
 
     private HelperClass() {
-        ConfigReader.loadProperties(ConfigPath);
+    	ConfigReader.loadProperties(CONFIG_PATH);
 
         String browser = ConfigReader.getProperty("browser");
         WebDriver localDriver = null;

@@ -43,6 +43,8 @@ public class CheckoutDefinition {
     @When("Enter the details in form:")
     public void enter_the_details_in_form(DataTable dataTable) {
         Map<String, String> formData = dataTable.asMap(String.class, String.class);
+        
+        System.out.println(formData.get("Region"));
         checkOutAction.fillGuestCheckoutForm(
             formData.get("First Name"),
             formData.get("Last Name"),
@@ -109,7 +111,9 @@ public class CheckoutDefinition {
             formData.get("Last Name"),
             formData.get("Address"),
             formData.get("City"),
-            formData.get("Postcode")
+            formData.get("Postcode"),
+            formData.get("Country"),
+            formData.get("Region")
         );
     }
 
@@ -151,7 +155,8 @@ public class CheckoutDefinition {
             formData.get("Address"),
             formData.get("City"),
             formData.get("Postcode"),
-            formData.get("Country")
+            formData.get("Country"),
+            formData.get("Region")
         );
     }
 
@@ -169,7 +174,8 @@ public class CheckoutDefinition {
             formData.get("Address"),
             formData.get("City"),
             formData.get("Postcode"),
-            formData.get("Country")
+            formData.get("Country"),
+            formData.get("Region")
         );
     }
 

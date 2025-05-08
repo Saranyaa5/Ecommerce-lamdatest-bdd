@@ -2,9 +2,6 @@ package com.definitions;
 
 import org.testng.Assert;
 import com.actions.UserLoginAction;
-import com.utilities.ConfigReader;
-import com.utilities.HelperClass;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
@@ -18,7 +15,7 @@ public class UserLoginDefinition {
 
     @When("clicks on login")
     public void clicks_on_login() {
-//        userLoginAction.clickLoginMenu();
+    	// This step assumes successful navigation is verified in a subsequent step
     }
 
     @When("the user enters valid credentials")
@@ -46,31 +43,18 @@ public class UserLoginDefinition {
     public void the_user_enters_password(String password) {
         userLoginAction.setPassword2(password);
     }
-
+    
     	@Then("the user should see the {string} and {string}")
     	public void the_user_should_see_the_and(String expectedResult, String check) {
-//    	    String actualResult;
-    		boolean actualResult;
+    	    boolean actualResult;
 
     	    switch (check) {
     	        case "check1":
-    	            actualResult = userLoginAction.getWarningMessage();    	            
-    	            Assert.assertTrue(actualResult);
-    	            break;
-
     	        case "check2":
-    	            actualResult = userLoginAction.getWarningMessage();
-    	            Assert.assertTrue(actualResult);
-    	            break;
-
     	        case "check3":
-    	            actualResult = userLoginAction.getWarningMessage();
-    	            Assert.assertTrue(actualResult);
-    	            break;
-
     	        case "check4":
     	            actualResult = userLoginAction.getWarningMessage();
-    	            Assert.assertTrue(actualResult);
+    	            Assert.assertTrue(actualResult, "Warning message not displayed for: " + check);
     	            break;
 
     	        default:
