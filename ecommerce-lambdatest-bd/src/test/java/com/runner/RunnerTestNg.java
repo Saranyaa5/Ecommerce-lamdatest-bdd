@@ -26,7 +26,6 @@ import org.testng.annotations.DataProvider;
     	      "src/test/resources/com/features/Verify_product_url.feature",
     	      "src/test/resources/com/features/AddOns.feature",
               "src/test/resources/com/features/ShoppingCartTableVerification.feature"
-
     },
     glue = {"com.definitions"},
     plugin = {
