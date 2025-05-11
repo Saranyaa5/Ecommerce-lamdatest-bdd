@@ -3,8 +3,9 @@ package com.actions;
 import java.time.Duration;
 
 
+
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
+
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -13,29 +14,28 @@ import com.utilities.HelperClass;
 
 public class UserRegistrationAction {
     private final RegistrationPageLocator registrationLocators;
-    private final Actions actions;
+
     private final WebDriverWait wait;
     public WebDriver driver;
-    private final JavascriptExecutor jsExecutor;
+ 
 
     public UserRegistrationAction() {
         this.registrationLocators = new RegistrationPageLocator();
         PageFactory.initElements(HelperClass.getDriver(), registrationLocators);
-        this.actions = new Actions(HelperClass.getDriver());
         driver=HelperClass.getDriver();
         this.wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
-        this.jsExecutor = (JavascriptExecutor) HelperClass.getDriver();
+        
     }
 
     public void clickMyAccounts() {
-        waitAndMoveToElement(registrationLocators.myAccount);
+    	wait.until(ExpectedConditions.visibilityOf(registrationLocators.myAccount));
+    	BaseAction.moveToElement(registrationLocators.myAccount);
     }
 
-//    completed
     public void clickRegister() {
-    	 WebElement el = wait.until(ExpectedConditions.
+    	 wait.until(ExpectedConditions.
          		elementToBeClickable(registrationLocators.register));
-    	 BaseAction.clickElement(el);
+    	 BaseAction.clickElement(registrationLocators.register);
     }
 
     public boolean isRegistrationPageDisplayed() {
@@ -44,12 +44,19 @@ public class UserRegistrationAction {
 
     public void enterRegistrationDetails(String firstName, String lastName, String email,
                                        String telephone, String password, String confirmPassword) {
-        waitAndSendKeys(registrationLocators.firstName, firstName);
-        waitAndSendKeys(registrationLocators.lastName, lastName);
-        waitAndSendKeys(registrationLocators.registerEmail, email);
-        waitAndSendKeys(registrationLocators.telephone, telephone);
-        waitAndSendKeys(registrationLocators.password, password);
-        waitAndSendKeys(registrationLocators.cofirmpass, confirmPassword);
+    	wait.until(ExpectedConditions.elementToBeClickable(registrationLocators.firstName));
+    	 BaseAction.sendKeysElement(registrationLocators.firstName,firstName);
+    	 wait.until(ExpectedConditions.elementToBeClickable(registrationLocators.lastName));
+    	 BaseAction.sendKeysElement(registrationLocators. lastName, lastName);
+    	 wait.until(ExpectedConditions.elementToBeClickable(registrationLocators.registerEmail));
+    	 BaseAction.sendKeysElement(registrationLocators.registerEmail, email);
+    	 wait.until(ExpectedConditions.elementToBeClickable(registrationLocators.telephone));
+    	 BaseAction.sendKeysElement(registrationLocators.telephone, telephone);
+    	 wait.until(ExpectedConditions.elementToBeClickable(registrationLocators.password));
+    	 BaseAction.sendKeysElement(registrationLocators.password,password);
+    	 wait.until(ExpectedConditions.elementToBeClickable(registrationLocators.cofirmpass));
+    	 BaseAction.sendKeysElement(registrationLocators.cofirmpass,confirmPassword);
+        
     }
 
     public void agreeToPrivacyPolicy() {
@@ -84,18 +91,14 @@ public class UserRegistrationAction {
         return waitForElementText(registrationLocators.uncheckedError);
     }
 
-    private void waitAndClick(WebElement element) {
-        WebElement el = wait.until(ExpectedConditions.
-        		elementToBeClickable(element));
-        el.click();
-    }
 
     private void waitAndClickWithRetry(WebElement element) {
         int attempts = 0;
         while (attempts < 3) {
             try {
-                scrollToElement(element);
-                waitAndClick(element);
+                BaseAction.scrollToElement(element);
+                wait.until(ExpectedConditions.elementToBeClickable(element));
+                BaseAction.clickElement(element);
                 return;
             } catch (StaleElementReferenceException e) {
                 attempts++;
@@ -104,16 +107,7 @@ public class UserRegistrationAction {
         }
     }
 
-    private void waitAndSendKeys(WebElement element, String text) {
-        WebElement el = wait.until(ExpectedConditions.elementToBeClickable(element));
-        el.clear();
-        el.sendKeys(text);
-    }
-
-    private void waitAndMoveToElement(WebElement element) {
-        WebElement el = wait.until(ExpectedConditions.visibilityOf(element));
-        actions.moveToElement(el).perform();
-    }
+    
 
 
     private String waitForElementText(WebElement element) {
@@ -124,10 +118,4 @@ public class UserRegistrationAction {
         }
     }
 
-    private void scrollToElement(WebElement element) {
-        jsExecutor.executeScript("arguments[0].scrollIntoView({block: 'center', behavior: 'smooth'});", element);
-        
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-       
-    }
 }
