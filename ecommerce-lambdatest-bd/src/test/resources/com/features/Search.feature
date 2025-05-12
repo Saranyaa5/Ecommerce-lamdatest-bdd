@@ -28,11 +28,11 @@ Feature: Jeevika_12APR2025_LambdaTesters_Search
     When the user searches with category input from excel
     Then the message "There is no product that matches the search criteria." should be displayed
     
- #@MinimumAndMaximumSegregation
-#	Scenario: Display products between minimum and maximum values
-    #When the user enters the minimum value
-    #And the user enters the maximum value
-    #Then the user should see all products within that value range
+ @MinimumAndMaximumSegregation
+	Scenario: Display products between minimum and maximum values
+    When the user enters the minimum value
+    And the user enters the maximum value
+    Then the user should see all products within that value range
     
 		@display_the_count_of_product_in_page
    Scenario Outline: Display the Count of Products Selected in Dropdown

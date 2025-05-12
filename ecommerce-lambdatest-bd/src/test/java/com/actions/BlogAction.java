@@ -91,6 +91,12 @@ public class BlogAction {
 			clickPostComment(); // retry
 		}
 	}
+	
+	public void clickRegister() {
+   	 WebElement el = wait.until(ExpectedConditions.
+        		elementToBeClickable(registrationLocators.register));
+   	 BaseAction.clickElement(el);
+    }
 
 	public String getSuccessMessage() {
 		try {
@@ -173,4 +179,6 @@ public class BlogAction {
 	        return false;
 	    }
 	}
+	
+	
 }

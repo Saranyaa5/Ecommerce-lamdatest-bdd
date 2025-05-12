@@ -35,7 +35,7 @@ public class UserRegistrationAction {
     public void clickRegister() {
     	 WebElement el = wait.until(ExpectedConditions.
          		elementToBeClickable(registrationLocators.register));
-    	 BaseAction.clickElement(el);
+    	 BaseAction.scrollAndClick(el);
     }
 
     public boolean isRegistrationPageDisplayed() {

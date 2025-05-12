@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.pages.AffiliateAccountLocator;
 import com.utilities.HelperClass;
 
-public class AffiliateAccountAction {
+public class AffiliateAccountAction extends BaseAction {
 
 	WebDriver driver;
 	AffiliateAccountLocator affiliate;
@@ -33,7 +33,6 @@ public class AffiliateAccountAction {
 	    try {
 	        getWait().until(ExpectedConditions.elementToBeClickable(affiliate.accContinue)).click();
 	    } catch (StaleElementReferenceException e) {
-	        
 	        affiliate = new AffiliateAccountLocator();
 	        PageFactory.initElements(driver, affiliate);
 	        getWait().until(ExpectedConditions.elementToBeClickable(affiliate.accContinue)).click();
@@ -42,16 +41,15 @@ public class AffiliateAccountAction {
 
 
 	public void clickRegister() {
-		try {
-			JavascriptExecutor js = (JavascriptExecutor) driver;
-			WebElement registerBtn = getWait().until(ExpectedConditions.elementToBeClickable(affiliate.registerAffiliate));
-			js.executeScript("arguments[0].scrollIntoView(true);", registerBtn);
-			js.executeScript("arguments[0].click();", registerBtn);
-		} catch (StaleElementReferenceException e) {
-			affiliate = new AffiliateAccountLocator();
-			PageFactory.initElements(driver, affiliate);
-			clickRegister(); // retry
-		}
+	    try {
+	        WebElement registerBtn = getWait().until(ExpectedConditions.elementToBeClickable(affiliate.registerAffiliate));
+	        scrollToElement(registerBtn);
+	        clickElement(registerBtn);
+	    } catch (StaleElementReferenceException e) {
+	        affiliate = new AffiliateAccountLocator();
+	        PageFactory.initElements(driver, affiliate);
+	        clickRegister(); // retry
+	    }
 	}
 
 	public void enterPayee() {
@@ -97,6 +95,7 @@ public class AffiliateAccountAction {
 				By.xpath("//div[contains(@class, 'alert-success')]")
 			));
 			return successMsg.getText();
+	
 		}
 	}
 }
