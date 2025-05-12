@@ -1,55 +1,6 @@
 package com.definitions;
 
 import com.actions.SearchAction;
-/*
-import com.utilities.ExcelReader;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-import org.junit.Assert;
-
-import java.util.List;
-import java.util.Map;
-
-public class SearchDefinition {
-
-    SearchAction searchAction = new SearchAction();
-    Map<String, String> rowData;
-    String expectedResult;
-
-    @When("the user searches from excel for {string}")
-    public void the_user_searches_from_excel_for(String scenarioType) {
-        String path = "src\\test\\resources\\testdata.xlsx";
-        String sheetName = "Sheet1"; // Make sure this matches your actual sheet name
-
-        List<Map<String, String>> data = ExcelReader.readExcelData(path, sheetName);
-
-        for (Map<String, String> row : data) {
-            if (row.get("ScenarioType").equalsIgnoreCase(scenarioType)) {
-                rowData = row;
-                break;
-            }
-        }
-
-        if (rowData == null) {
-            throw new RuntimeException("Scenario type not found in Excel: " + scenarioType);
-        }
-
-        String input = rowData.get("Input").trim().replace("\"", "");
-        expectedResult = rowData.get("Expected").trim();
-
-        searchAction.searchProduct(input);
-    }
-
-    @Then("the search results should be validated based on excel data")
-    public void the_search_results_should_be_validated_based_on_excel_data() {
-        String actualText = searchAction.getSearchResultText(expectedResult).trim();
-        System.out.println("Expected: " + expectedResult);
-        System.out.println("Actual: " + actualText);
-        Assert.assertTrue("Expected text not found in search result", actualText.equalsIgnoreCase(expectedResult));
-    }
-}
-*/
-import com.actions.UserLoginAction;
 import com.utilities.ExcelReader;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
@@ -58,14 +9,11 @@ import java.util.Map;
 
 public class SearchDefinition{
     private final SearchAction searchAction;
-    private final UserLoginAction userLoginAction;
     private static Map<String, String> testData;
     private String currentSearchTerm;
 
     public SearchDefinition() {
-        this.searchAction = new SearchAction();
-        this.userLoginAction = new UserLoginAction();
-        
+        this.searchAction = new SearchAction();   
         if (testData == null) {
             testData = ExcelReader.getSearchTestData();
         }
@@ -167,17 +115,17 @@ public class SearchDefinition{
 
     @When("clicks the Quick View option")
     public void clicks_the_quick_view_option() {
-    	// This step assumes successful navigation is verified in a subsequent step
+        // Already handled in hover method
     }
 
     @Then("the user should see the product preview with the description")
     public void the_user_should_see_the_product_preview_with_the_description() {
-    	Assert.assertTrue(searchAction.isQuickViewDisplayed());
+        Assert.assertTrue("Quick View was not displayed!", searchAction.isQuickViewDisplayed());
     }
 
     @When("clicks the Add To Cart option")
     public void clicks_the_add_to_cart_option() {
-    	// This step assumes successful navigation is verified in a subsequent step
+        // Already handled in next step
     }
 
     @Then("the user sees a popup message")
@@ -187,7 +135,7 @@ public class SearchDefinition{
 
     @Then("clicks on checkout button to see checkout page")
     public void clicks_on_checkout_button_to_see_checkout_page() {
-    	// This step assumes successful navigation is verified in a subsequent step
+        Assert.assertTrue("Checkout page was not displayed.", searchAction.isCheckoutPageDisplayed());
     }
     
 }
