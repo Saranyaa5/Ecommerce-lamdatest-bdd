@@ -11,11 +11,11 @@ public class AffiliateAccountDefinition {
 	AffiliateAccountAction action = new AffiliateAccountAction(); 
 
 	@Given("the user is already registered and on the account page")
-	public void the_user_is_already_registered_and_on_the_account_page() throws InterruptedException {
+	public void the_user_is_already_registered_and_on_the_account_page() {
 		// This step is assumed to be handled in the background 
 	}
 	@When("the user clicks on continue on register")
-	public void the_user_clicks_on_continue_on_register() throws InterruptedException {
+	public void the_user_clicks_on_continue_on_register() {
 	   action.clickaccContinue();
 	}	
 	

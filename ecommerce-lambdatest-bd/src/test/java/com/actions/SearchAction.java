@@ -146,27 +146,28 @@ public class SearchAction {
     public boolean isQuickViewDisplayed() {
         return wait.until(ExpectedConditions.visibilityOf(searchLocator.textQuickView)).isDisplayed();
     }
-    
+
     public void clickAddToCartAndHandlePopup() {
         try {
             WebElement addToCartBtn = wait.until(ExpectedConditions.elementToBeClickable(searchLocator.addToCartButton));
-            
-            // Use JS click for reliability
-            JavascriptExecutor js = (JavascriptExecutor) driver;
-            js.executeScript("arguments[0].click();", addToCartBtn);
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", addToCartBtn);
 
-            // Wait for the notification popup or message
             WebElement popup = wait.until(ExpectedConditions.visibilityOf(searchLocator.popupMessage));
             System.out.println("Popup text: " + popup.getText());
 
-            // Click the Checkout button if visible
             WebElement checkoutBtn = wait.until(ExpectedConditions.elementToBeClickable(searchLocator.checkoutButton));
             checkoutBtn.click();
-
         } catch (Exception e) {
-            System.out.println("Failed to click Add to Cart or handle popup: " + e.getMessage());
+            System.out.println("Error handling Add to Cart or popup: " + e.getMessage());
         }
-    }   
+    }
+
+    public boolean isCheckoutPageDisplayed() {
+        try {
+            wait.until(ExpectedConditions.visibilityOf(searchLocator.textShoppingCart));
+            return searchLocator.textShoppingCart.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
 }
-
-
