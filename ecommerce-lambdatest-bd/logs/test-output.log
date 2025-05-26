@@ -22953,6 +22953,23 @@ Session ID: a69b9dd60b15c9843d68072c76518019
 2025-05-08 09:34:49 [TestNG-PoolService-9] INFO : Assertion Passed for 'password mismatch': Expected and actual message matched: 'Password confirmation does not match password!'
 2025-05-08 09:34:49 [TestNG-PoolService-9] INFO : Scenario passed: Register with invalid inputs
 2025-05-08 09:34:50 [TestNG-PoolService-10] INFO : Scenario passed: Click on a iPod Nano product and verify the URL
+<<<<<<< HEAD
+2025-05-26 12:21:30 [main] INFO : Scenario started: Verify product is in the shopping cart
+2025-05-26 12:51:48 [TestNG-PoolService-1] INFO : Scenario started: Count all links and verify they are not broken
+2025-05-26 12:54:39 [TestNG-PoolService-1] INFO : Scenario passed: Count all links and verify they are not broken
+2025-05-26 12:57:32 [TestNG-PoolService-1] INFO : Scenario started: Count all links and verify they are not broken
+2025-05-26 12:58:39 [TestNG-PoolService-1] INFO : Scenario started: Count all links and verify they are not broken
+2025-05-26 14:52:39 [TestNG-PoolService-8] INFO : Scenario started: User requests a password reset link with various email inputs
+2025-05-26 14:52:39 [TestNG-PoolService-5] INFO : Scenario started: Estimate the shipping and taxes
+2025-05-26 14:52:39 [TestNG-PoolService-1] INFO : Scenario started: Add a single product to the cart
+2025-05-26 14:52:39 [TestNG-PoolService-6] INFO : Scenario started: Validate all FAQ messages displayed for iPod Nano under Phones & PDAs category
+2025-05-26 14:52:40 [TestNG-PoolService-9] INFO : Scenario started: User requests a password reset link with various email inputs
+2025-05-26 14:52:40 [TestNG-PoolService-4] INFO : Scenario started: User tries to add a product to cart without selecting size
+2025-05-26 14:52:40 [TestNG-PoolService-3] INFO : Scenario started: Add multiple quantities of the same product
+2025-05-26 14:52:41 [TestNG-PoolService-2] INFO : Scenario started: Remove a product from the cart
+2025-05-26 14:52:42 [TestNG-PoolService-7] INFO : Scenario started: User requests a password reset link with various email inputs
+2025-05-26 14:52:42 [TestNG-PoolService-10] INFO : Scenario started: Submit a valid product review with rating and comment
+=======
 2025-05-08 09:49:58 [TestNG-PoolService-4] INFO : Scenario started: Adding a valid comment to the blog
 2025-05-08 09:49:58 [TestNG-PoolService-8] INFO : Scenario started: category wise selection and assertion
 2025-05-08 09:49:58 [TestNG-PoolService-5] INFO : Scenario started: Submitting a blog comment without filling required details
@@ -23950,41 +23967,15 @@ Session ID: a69b9dd60b15c9843d68072c76518019
 2025-05-26 11:06:49 [TestNG-PoolService-9] INFO : Scenario passed: To checkout the shopping cart as a guest user
 2025-05-26 11:06:49 [TestNG-PoolService-7] INFO : Scenario passed: To reorder the product in the order  history
 >>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
-2025-05-26 12:58:04 [main] INFO : Scenario started: User chooses Apple from main menu
-2025-05-26 12:58:08 [main] INFO : Scenario passed: User chooses Apple from main menu
-2025-05-26 13:05:00 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
-2025-05-26 13:05:17 [TestNG-PoolService-1] ERROR: Scenario failed: User chooses Apple from main menu
-2025-05-26 13:09:54 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
-2025-05-26 13:10:36 [TestNG-PoolService-1] ERROR: Scenario failed: User chooses Apple from main menu
-2025-05-26 13:14:06 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
-2025-05-26 13:14:55 [TestNG-PoolService-1] ERROR: Scenario failed: User chooses Apple from main menu
-2025-05-26 13:18:06 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
-2025-05-26 13:18:52 [TestNG-PoolService-1] ERROR: Scenario failed: User chooses Apple from main menu
-2025-05-26 14:10:34 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
-2025-05-26 14:11:23 [TestNG-PoolService-1] ERROR: Scenario failed: User chooses Apple from main menu
-2025-05-26 14:15:09 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
-2025-05-26 14:15:52 [TestNG-PoolService-1] ERROR: Scenario failed: User chooses Apple from main menu
-2025-05-26 14:22:34 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
-2025-05-26 14:23:17 [TestNG-PoolService-1] ERROR: Scenario failed: User chooses Apple from main menu
-2025-05-26 14:33:39 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
-2025-05-26 14:34:24 [TestNG-PoolService-1] ERROR: Scenario failed: User chooses Apple from main menu
-2025-05-26 14:41:36 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
-2025-05-26 14:42:18 [TestNG-PoolService-1] ERROR: Scenario failed: User chooses Apple from main menu
-2025-05-26 14:45:57 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
-2025-05-26 14:46:10 [TestNG-PoolService-1] INFO : Scenario passed: User chooses Apple from main menu
-2025-05-26 14:46:47 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
-2025-05-26 14:46:59 [TestNG-PoolService-1] INFO : Scenario passed: User chooses Apple from main menu
-2025-05-26 14:50:10 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
-2025-05-26 14:50:23 [TestNG-PoolService-1] INFO : Scenario passed: User chooses Apple from main menu
-2025-05-26 14:52:56 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
-2025-05-26 14:53:09 [TestNG-PoolService-1] INFO : Scenario passed: User chooses Apple from main menu
-2025-05-26 14:53:22 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
-2025-05-26 14:53:33 [TestNG-PoolService-1] INFO : Scenario passed: User chooses Apple from main menu
-2025-05-26 14:58:58 [TestNG-PoolService-2] INFO : Scenario started: user clicks on camera text to navigate to camera product page
-2025-05-26 14:58:58 [TestNG-PoolService-1] INFO : Scenario started: user clicks on designs of addOns
-2025-05-26 14:59:12 [TestNG-PoolService-1] INFO : Scenario passed: user clicks on designs of addOns
-2025-05-26 14:59:19 [TestNG-PoolService-2] INFO : Scenario passed: user clicks on camera text to navigate to camera product page
-2025-05-26 14:59:39 [TestNG-PoolService-2] INFO : Scenario started: user clicks on camera text to navigate to camera product page
-2025-05-26 14:59:39 [TestNG-PoolService-1] INFO : Scenario started: user clicks on designs of addOns
-2025-05-26 14:59:52 [TestNG-PoolService-1] INFO : Scenario passed: user clicks on designs of addOns
-2025-05-26 15:00:00 [TestNG-PoolService-2] INFO : Scenario passed: user clicks on camera text to navigate to camera product page
+>>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
+2025-05-26 15:14:43 [TestNG-PoolService-1] INFO : Scenario started: user clicks on designs of addOns
+2025-05-26 15:14:43 [TestNG-PoolService-2] INFO : Scenario started: user clicks on camera text to navigate to camera product page
+2025-05-26 15:14:43 [TestNG-PoolService-9] INFO : Scenario started: Adding a valid comment to the blog
+2025-05-26 15:14:43 [TestNG-PoolService-3] INFO : Scenario started: Add a single product to the cart
+2025-05-26 15:14:43 [TestNG-PoolService-8] INFO : Scenario started: Register a user and register as affiliate with valid and invalid inputs
+2025-05-26 15:14:43 [TestNG-PoolService-5] INFO : Scenario started: Add multiple quantities of the same product
+2025-05-26 15:14:43 [TestNG-PoolService-10] INFO : Scenario started: Submitting a blog comment without filling required details
+2025-05-26 15:14:43 [TestNG-PoolService-4] INFO : Scenario started: Remove a product from the cart
+2025-05-26 15:14:43 [TestNG-PoolService-7] INFO : Scenario started: Register a user and register as affiliate with valid and invalid inputs
+2025-05-26 15:14:43 [TestNG-PoolService-6] INFO : Scenario started: User tries to add a product to cart without selecting size
+2025-05-26 15:16:30 [TestNG-PoolService-1] INFO : Scenario passed: user clicks on designs of addOns
