@@ -23988,3 +23988,123 @@ Session ID: a69b9dd60b15c9843d68072c76518019
 2025-05-26 14:59:39 [TestNG-PoolService-1] INFO : Scenario started: user clicks on designs of addOns
 2025-05-26 14:59:52 [TestNG-PoolService-1] INFO : Scenario passed: user clicks on designs of addOns
 2025-05-26 15:00:00 [TestNG-PoolService-2] INFO : Scenario passed: user clicks on camera text to navigate to camera product page
+2025-05-26 15:26:59 [TestNG-PoolService-6] INFO : Scenario started: Submitting a blog comment without filling required details
+2025-05-26 15:27:00 [TestNG-PoolService-2] INFO : Scenario started: user clicks on camera text to navigate to camera product page
+2025-05-26 15:27:01 [TestNG-PoolService-10] INFO : Scenario started: clicking the product image to navigate to product shopping page
+2025-05-26 15:27:02 [TestNG-PoolService-9] INFO : Scenario started: category wise selection and assertion
+2025-05-26 15:27:02 [TestNG-PoolService-3] INFO : Scenario started: Register a user and register as affiliate with valid and invalid inputs
+2025-05-26 15:27:03 [TestNG-PoolService-8] INFO : Scenario started: Submitting a blog comment without filling required details
+2025-05-26 15:27:05 [TestNG-PoolService-5] INFO : Scenario started: Adding a valid comment to the blog
+2025-05-26 15:27:06 [TestNG-PoolService-4] INFO : Scenario started: Register a user and register as affiliate with valid and invalid inputs
+2025-05-26 15:27:09 [TestNG-PoolService-7] INFO : Scenario started: Submitting a blog comment without filling required details
+2025-05-26 15:27:20 [TestNG-PoolService-1] INFO : Scenario started: user clicks on designs of addOns
+2025-05-26 15:27:32 [TestNG-PoolService-9] INFO : Scenario passed: category wise selection and assertion
+2025-05-26 15:27:42 [TestNG-PoolService-10] INFO : Scenario passed: clicking the product image to navigate to product shopping page
+2025-05-26 15:27:42 [TestNG-PoolService-8] INFO : Scenario passed: Submitting a blog comment without filling required details
+2025-05-26 15:27:44 [TestNG-PoolService-2] INFO : Scenario passed: user clicks on camera text to navigate to camera product page
+2025-05-26 15:27:45 [TestNG-PoolService-1] INFO : Scenario passed: user clicks on designs of addOns
+2025-05-26 15:27:46 [TestNG-PoolService-6] INFO : Scenario passed: Submitting a blog comment without filling required details
+2025-05-26 15:27:47 [TestNG-PoolService-7] INFO : Scenario passed: Submitting a blog comment without filling required details
+2025-05-26 15:27:47 [TestNG-PoolService-5] INFO : Scenario passed: Adding a valid comment to the blog
+2025-05-26 15:27:52 [TestNG-PoolService-2] INFO : Scenario started: User chooses Apple from main menu
+2025-05-26 15:27:52 [TestNG-PoolService-9] INFO : Scenario started: Search functionality with valid inputs
+2025-05-26 15:27:52 [TestNG-PoolService-10] INFO : Scenario started: Search functionality with invalid inputs
+2025-05-26 15:27:52 [TestNG-PoolService-3] INFO : Assertion Passed: Expected message 'Your Account Has Been Created!' is displayed successfully.
+2025-05-26 15:27:52 [TestNG-PoolService-4] INFO : Assertion Passed: Expected message 'Your Account Has Been Created!' is displayed successfully.
+2025-05-26 15:27:56 [TestNG-PoolService-1] INFO : Scenario started: Search functionality with case sensitive inputs
+2025-05-26 15:27:58 [TestNG-PoolService-6] INFO : Scenario started: Search functionality with unnecessary indentation in search
+2025-05-26 15:28:00 [TestNG-PoolService-7] INFO : Scenario started: Search functionality by category as input
+2025-05-26 15:28:00 [TestNG-PoolService-5] INFO : Scenario started: Display products between minimum and maximum values
+2025-05-26 15:28:07 [TestNG-PoolService-2] INFO : Scenario passed: User chooses Apple from main menu
+2025-05-26 15:28:14 [TestNG-PoolService-8] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-26 15:28:15 [TestNG-PoolService-3] INFO : Scenario passed: Register a user and register as affiliate with valid and invalid inputs
+2025-05-26 15:28:16 [TestNG-PoolService-1] INFO : Scenario passed: Search functionality with case sensitive inputs
+2025-05-26 15:28:17 [TestNG-PoolService-10] INFO : Scenario passed: Search functionality with invalid inputs
+2025-05-26 15:28:19 [TestNG-PoolService-6] INFO : Scenario passed: Search functionality with unnecessary indentation in search
+2025-05-26 15:28:20 [TestNG-PoolService-7] INFO : Scenario passed: Search functionality by category as input
+2025-05-26 15:28:21 [TestNG-PoolService-9] INFO : Scenario passed: Search functionality with valid inputs
+2025-05-26 15:28:21 [TestNG-PoolService-4] INFO : Scenario passed: Register a user and register as affiliate with valid and invalid inputs
+2025-05-26 15:28:28 [TestNG-PoolService-6] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-26 15:28:28 [TestNG-PoolService-2] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-26 15:28:29 [TestNG-PoolService-1] INFO : Scenario started: Selecting the Quick View option for a product
+2025-05-26 15:28:32 [TestNG-PoolService-5] ERROR: Scenario failed: Display products between minimum and maximum values
+2025-05-26 15:28:34 [TestNG-PoolService-4] INFO : Scenario started: Selecting the add to cart option for a product
+2025-05-26 15:28:35 [TestNG-PoolService-10] INFO : Scenario started: To assert special offer button in homepage
+2025-05-26 15:28:43 [TestNG-PoolService-7] INFO : Scenario started: User tries to login with valid credentials
+2025-05-26 15:28:45 [TestNG-PoolService-8] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-26 15:28:48 [TestNG-PoolService-9] INFO : Scenario started: User tries to login with invalid credentials
+2025-05-26 15:28:48 [TestNG-PoolService-10] INFO : Scenario passed: To assert special offer button in homepage
+2025-05-26 15:28:54 [TestNG-PoolService-1] INFO : Scenario passed: Selecting the Quick View option for a product
+2025-05-26 15:28:57 [TestNG-PoolService-2] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-26 15:28:58 [TestNG-PoolService-6] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-26 15:28:59 [TestNG-PoolService-3] INFO : Scenario started: User tries to login with invalid credentials
+2025-05-26 15:28:59 [TestNG-PoolService-7] INFO : Scenario passed: User tries to login with valid credentials
+2025-05-26 15:28:59 [TestNG-PoolService-9] INFO : Scenario passed: User tries to login with invalid credentials
+2025-05-26 15:29:01 [TestNG-PoolService-1] INFO : Scenario started: User tries to login with invalid credentials
+2025-05-26 15:29:03 [TestNG-PoolService-7] INFO : Scenario started: User tries to login with invalid credentials
+2025-05-26 15:29:03 [TestNG-PoolService-2] INFO : Scenario started: User tries to login with valid credentials and logs out
+2025-05-26 15:29:09 [TestNG-PoolService-3] INFO : Scenario passed: User tries to login with invalid credentials
+2025-05-26 15:29:11 [TestNG-PoolService-1] INFO : Scenario passed: User tries to login with invalid credentials
+2025-05-26 15:29:12 [TestNG-PoolService-7] INFO : Scenario passed: User tries to login with invalid credentials
+2025-05-26 15:29:16 [TestNG-PoolService-2] INFO : Scenario passed: User tries to login with valid credentials and logs out
+2025-05-26 15:29:24 [TestNG-PoolService-4] ERROR: Scenario failed: Selecting the add to cart option for a product
+2025-05-26 15:34:05 [TestNG-PoolService-5] INFO : Scenario started: Adding a valid comment to the blog
+2025-05-26 15:34:05 [TestNG-PoolService-4] INFO : Scenario started: Register a user and register as affiliate with valid and invalid inputs
+2025-05-26 15:34:05 [TestNG-PoolService-7] INFO : Scenario started: Submitting a blog comment without filling required details
+2025-05-26 15:34:06 [TestNG-PoolService-2] INFO : Scenario started: user clicks on camera text to navigate to camera product page
+2025-05-26 15:34:06 [TestNG-PoolService-1] INFO : Scenario started: user clicks on designs of addOns
+2025-05-26 15:34:06 [TestNG-PoolService-9] INFO : Scenario started: category wise selection and assertion
+2025-05-26 15:34:07 [TestNG-PoolService-3] INFO : Scenario started: Register a user and register as affiliate with valid and invalid inputs
+2025-05-26 15:34:07 [TestNG-PoolService-6] INFO : Scenario started: Submitting a blog comment without filling required details
+2025-05-26 15:34:07 [TestNG-PoolService-10] INFO : Scenario started: clicking the product image to navigate to product shopping page
+2025-05-26 15:34:09 [TestNG-PoolService-8] INFO : Scenario started: Submitting a blog comment without filling required details
+2025-05-26 15:34:35 [TestNG-PoolService-9] INFO : Scenario passed: category wise selection and assertion
+2025-05-26 15:34:40 [TestNG-PoolService-1] INFO : Scenario passed: user clicks on designs of addOns
+2025-05-26 15:34:41 [TestNG-PoolService-2] INFO : Scenario passed: user clicks on camera text to navigate to camera product page
+2025-05-26 15:34:42 [TestNG-PoolService-10] INFO : Scenario passed: clicking the product image to navigate to product shopping page
+2025-05-26 15:34:45 [TestNG-PoolService-5] INFO : Scenario passed: Adding a valid comment to the blog
+2025-05-26 15:34:45 [TestNG-PoolService-6] INFO : Scenario passed: Submitting a blog comment without filling required details
+2025-05-26 15:34:50 [TestNG-PoolService-7] INFO : Scenario passed: Submitting a blog comment without filling required details
+2025-05-26 15:34:50 [TestNG-PoolService-8] INFO : Scenario passed: Submitting a blog comment without filling required details
+2025-05-26 15:34:53 [TestNG-PoolService-3] INFO : Assertion Passed: Expected message 'Your Account Has Been Created!' is displayed successfully.
+2025-05-26 15:34:54 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
+2025-05-26 15:34:54 [TestNG-PoolService-10] INFO : Scenario started: Search functionality with valid inputs
+2025-05-26 15:34:54 [TestNG-PoolService-2] INFO : Scenario started: Search functionality with invalid inputs
+2025-05-26 15:34:54 [TestNG-PoolService-4] INFO : Assertion Passed: Expected message 'Your Account Has Been Created!' is displayed successfully.
+2025-05-26 15:34:56 [TestNG-PoolService-9] INFO : Scenario started: Search functionality with case sensitive inputs
+2025-05-26 15:34:59 [TestNG-PoolService-7] INFO : Scenario started: Search functionality with unnecessary indentation in search
+2025-05-26 15:35:02 [TestNG-PoolService-8] INFO : Scenario started: Search functionality by category as input
+2025-05-26 15:35:10 [TestNG-PoolService-1] INFO : Scenario passed: User chooses Apple from main menu
+2025-05-26 15:35:11 [TestNG-PoolService-10] INFO : Scenario passed: Search functionality with valid inputs
+2025-05-26 15:35:12 [TestNG-PoolService-9] INFO : Scenario passed: Search functionality with case sensitive inputs
+2025-05-26 15:35:12 [TestNG-PoolService-3] INFO : Scenario passed: Register a user and register as affiliate with valid and invalid inputs
+2025-05-26 15:35:12 [TestNG-PoolService-2] INFO : Scenario passed: Search functionality with invalid inputs
+2025-05-26 15:35:15 [TestNG-PoolService-4] INFO : Scenario passed: Register a user and register as affiliate with valid and invalid inputs
+2025-05-26 15:35:16 [TestNG-PoolService-8] INFO : Scenario passed: Search functionality by category as input
+2025-05-26 15:35:16 [TestNG-PoolService-7] INFO : Scenario passed: Search functionality with unnecessary indentation in search
+2025-05-26 15:35:18 [TestNG-PoolService-2] INFO : Scenario started: Display products between minimum and maximum values
+2025-05-26 15:35:19 [TestNG-PoolService-9] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-26 15:35:21 [TestNG-PoolService-6] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-26 15:35:21 [TestNG-PoolService-10] INFO : Scenario started: Display the Count of Products Selected in Dropdown
+2025-05-26 15:35:22 [TestNG-PoolService-5] INFO : Scenario started: Selecting the Quick View option for a product
+2025-05-26 15:35:23 [TestNG-PoolService-4] INFO : Scenario started: Selecting the add to cart option for a product
+2025-05-26 15:35:26 [TestNG-PoolService-8] INFO : Scenario started: To assert special offer button in homepage
+2025-05-26 15:35:39 [TestNG-PoolService-8] INFO : Scenario passed: To assert special offer button in homepage
+2025-05-26 15:35:40 [TestNG-PoolService-1] INFO : Scenario started: User tries to login with valid credentials
+2025-05-26 15:35:42 [TestNG-PoolService-2] ERROR: Scenario failed: Display products between minimum and maximum values
+2025-05-26 15:35:43 [TestNG-PoolService-5] INFO : Scenario passed: Selecting the Quick View option for a product
+2025-05-26 15:35:47 [TestNG-PoolService-3] INFO : Scenario started: User tries to login with invalid credentials
+2025-05-26 15:35:47 [TestNG-PoolService-7] INFO : Scenario started: User tries to login with invalid credentials
+2025-05-26 15:35:50 [TestNG-PoolService-9] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-26 15:35:55 [TestNG-PoolService-10] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-26 15:35:57 [TestNG-PoolService-6] INFO : Scenario passed: Display the Count of Products Selected in Dropdown
+2025-05-26 15:35:58 [TestNG-PoolService-7] INFO : Scenario passed: User tries to login with invalid credentials
+2025-05-26 15:35:58 [TestNG-PoolService-3] INFO : Scenario passed: User tries to login with invalid credentials
+2025-05-26 15:35:59 [TestNG-PoolService-1] INFO : Scenario passed: User tries to login with valid credentials
+2025-05-26 15:36:02 [TestNG-PoolService-10] INFO : Scenario started: User tries to login with valid credentials and logs out
+2025-05-26 15:36:02 [TestNG-PoolService-8] INFO : Scenario started: User tries to login with invalid credentials
+2025-05-26 15:36:02 [TestNG-PoolService-2] INFO : Scenario started: User tries to login with invalid credentials
+2025-05-26 15:36:11 [TestNG-PoolService-2] INFO : Scenario passed: User tries to login with invalid credentials
+2025-05-26 15:36:11 [TestNG-PoolService-8] INFO : Scenario passed: User tries to login with invalid credentials
+2025-05-26 15:36:14 [TestNG-PoolService-4] ERROR: Scenario failed: Selecting the add to cart option for a product
+2025-05-26 15:36:15 [TestNG-PoolService-10] INFO : Scenario passed: User tries to login with valid credentials and logs out
