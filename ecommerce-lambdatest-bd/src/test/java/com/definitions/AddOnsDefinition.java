@@ -1,6 +1,7 @@
 package com.definitions;
 
-import org.junit.Assert;
+
+import org.testng.Assert;
 
 import com.actions.AddOnsAction;
 import io.cucumber.java.en.Then;
@@ -25,7 +26,18 @@ public class AddOnsDefinition {
     public void the_user_should_see_the_design_page() {
         String expectedText = "Alert"; 
         String actualText = addonAction.getAlertText();
-        Assert.assertTrue("Design page is not visible!", actualText.contains(expectedText));
+        Assert.assertTrue(actualText.contains(expectedText));
+    }
+    @When("clicks on camera text")
+    public void clicks_on_camera_text() {
+     addonAction.clickCam();
+    }
+
+    @Then("the user should be navigated to camera page")
+    public void the_user_should_be_navigated_to_camera_page() {
+    	String expectedText="HTC Touch HD";
+       String actualText=addonAction.cameraPageText();
+       Assert.assertTrue(actualText.contains(expectedText));
     }
     
     @When("the user romoves one of the alert")

@@ -16,7 +16,7 @@
     <artifactId>cucumber-testng</artifactId>
     <version>7.22.0</version>
 </dependency>
-     <!-- Selenium -->
+     <!-- Selenisum -->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>

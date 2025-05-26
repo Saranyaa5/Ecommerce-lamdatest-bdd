@@ -5,8 +5,8 @@ import com.actions.SearchAction;
 import com.utilities.ExcelReader;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
-import org.junit.Assert;
 import java.util.Map;
+import org.testng.Assert;
 
 public class SearchDefinition{
     private final SearchAction searchAction;
@@ -84,7 +84,7 @@ public class SearchDefinition{
 
     @Then("the user should see all products within that value range")
     public void the_user_should_see_all_products_within_that_value_range() {
-        Assert.assertTrue("Products are not within the value range!", searchAction.isPriceWithinRange(602,2000));
+        Assert.assertTrue(searchAction.isPriceWithinRange(602,2000));
     }
     
     @When("the user clicks on Shop by Category")
@@ -106,7 +106,7 @@ public class SearchDefinition{
     public void the_user_should_see_exactly_products_displayed_on_the_page(String count) {
         int expectedCount = Integer.parseInt(count);
         int actualCount = searchAction.getDisplayedProductCount();
-        Assert.assertEquals("Product count does not match the selected dropdown value.", expectedCount, actualCount);
+        Assert.assertEquals(expectedCount, actualCount);
     }
     
     @When("hovers over a product")
@@ -121,7 +121,7 @@ public class SearchDefinition{
 
     @Then("the user should see the product preview with the description")
     public void the_user_should_see_the_product_preview_with_the_description() {
-        Assert.assertTrue("Quick View was not displayed!", searchAction.isQuickViewDisplayed());
+        Assert.assertTrue(searchAction.isQuickViewDisplayed());
     }
 
     @When("clicks the Add To Cart option")
@@ -136,7 +136,7 @@ public class SearchDefinition{
 
     @Then("clicks on checkout button to see checkout page")
     public void clicks_on_checkout_button_to_see_checkout_page() {
-        Assert.assertTrue("Checkout page was not displayed.", searchAction.isCheckoutPageDisplayed());
+        Assert.assertTrue(searchAction.isCheckoutPageDisplayed());
     }
     
 }

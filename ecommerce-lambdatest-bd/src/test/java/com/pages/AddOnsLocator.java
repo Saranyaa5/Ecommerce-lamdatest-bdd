@@ -14,7 +14,7 @@ public class AddOnsLocator {
 
 	@FindBy(xpath="(//div//h2[@class='mb-4'])[1]")
 	public WebElement alerttext;
-
+	
 	@FindBy(xpath="(//div[@class='menu-items d-flex align-items-start']/following::a[@title='Cameras'])[1]")
 	public WebElement camera;
 
@@ -26,4 +26,11 @@ public class AddOnsLocator {
 	
 	@FindBy(xpath="//div[contains(@id,'entry_214960')]/div/button")
 	public WebElement alterReomveBtn;
+
+	@FindBy(xpath="(//div[@class='menu-items d-flex align-items-start']/descendant::a[@class='nav-link icon-left text'])[33]")
+	public WebElement cam;
+	
+	@FindBy(xpath="(//div[@class='caption']/h4/a[@class='text-ellipsis-2'])[1]")
+	public WebElement camPageText;
+	
 }

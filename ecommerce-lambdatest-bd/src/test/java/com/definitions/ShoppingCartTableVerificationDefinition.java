@@ -14,7 +14,4 @@ public class ShoppingCartTableVerificationDefinition {
 	    System.out.println("text:" +text);
 	    Assert.assertTrue(text.contains(expected));
 	}
-
-	
-	
 }
