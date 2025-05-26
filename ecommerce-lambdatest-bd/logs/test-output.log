@@ -22952,3 +22952,18 @@ Session ID: a69b9dd60b15c9843d68072c76518019
 2025-05-08 09:34:49 [TestNG-PoolService-9] INFO : Assertion Passed for 'password mismatch': Expected and actual message matched: 'Password confirmation does not match password!'
 2025-05-08 09:34:49 [TestNG-PoolService-9] INFO : Scenario passed: Register with invalid inputs
 2025-05-08 09:34:50 [TestNG-PoolService-10] INFO : Scenario passed: Click on a iPod Nano product and verify the URL
+2025-05-26 12:21:30 [main] INFO : Scenario started: Verify product is in the shopping cart
+2025-05-26 12:51:48 [TestNG-PoolService-1] INFO : Scenario started: Count all links and verify they are not broken
+2025-05-26 12:54:39 [TestNG-PoolService-1] INFO : Scenario passed: Count all links and verify they are not broken
+2025-05-26 12:57:32 [TestNG-PoolService-1] INFO : Scenario started: Count all links and verify they are not broken
+2025-05-26 12:58:39 [TestNG-PoolService-1] INFO : Scenario started: Count all links and verify they are not broken
+2025-05-26 14:52:39 [TestNG-PoolService-8] INFO : Scenario started: User requests a password reset link with various email inputs
+2025-05-26 14:52:39 [TestNG-PoolService-5] INFO : Scenario started: Estimate the shipping and taxes
+2025-05-26 14:52:39 [TestNG-PoolService-1] INFO : Scenario started: Add a single product to the cart
+2025-05-26 14:52:39 [TestNG-PoolService-6] INFO : Scenario started: Validate all FAQ messages displayed for iPod Nano under Phones & PDAs category
+2025-05-26 14:52:40 [TestNG-PoolService-9] INFO : Scenario started: User requests a password reset link with various email inputs
+2025-05-26 14:52:40 [TestNG-PoolService-4] INFO : Scenario started: User tries to add a product to cart without selecting size
+2025-05-26 14:52:40 [TestNG-PoolService-3] INFO : Scenario started: Add multiple quantities of the same product
+2025-05-26 14:52:41 [TestNG-PoolService-2] INFO : Scenario started: Remove a product from the cart
+2025-05-26 14:52:42 [TestNG-PoolService-7] INFO : Scenario started: User requests a password reset link with various email inputs
+2025-05-26 14:52:42 [TestNG-PoolService-10] INFO : Scenario started: Submit a valid product review with rating and comment
