@@ -9,10 +9,11 @@ Feature: Jeevika_01MAY2025_LambdaTesters_AddOns
     And clicks on designs option
     Then the user should see the design page
     
-   #@add_Design_Camera
-   #Scenario: when user clicks of camera and check it naivigated to camera page
-   #When the user clicks on addons
-    #And clicks on designs option
-    #When click on camera option 
-    #Then the user should see camera page
+    @addOns_camera_text_click
+    Scenario: user clicks on camera text to navigate to camera product page
+    When the user clicks on addons
+    And clicks on designs option
+    And clicks on camera text
+   	Then the user should be navigated to camera page
+    
     
