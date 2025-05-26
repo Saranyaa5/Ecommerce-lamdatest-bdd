@@ -62,23 +62,22 @@ public class SearchLocator {
     @FindBy(xpath = "//div[@data-grid='product-layout product-grid no-desc col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6']/div[@class='product-layout product-grid no-desc col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6']")
     public List<WebElement> productList;
     
-    
     @FindBy(xpath="(//div[@class='carousel-item active']//img)[1]")
     public WebElement firstProduct;	
     
     @FindBy(xpath="//div[@id='entry_212948']/h1")
     public WebElement textQuickView;
     
-    @FindBy(xpath="//button[@class='btn btn-cart cart-28']/span")
+    @FindBy(xpath="//button[@class='btn btn-cart cart-28']/i")
     public WebElement addToCartButton;
     
-    @FindBy(xpath="//*[@id=\"notification-box-top\"]/div[1]")
+    @FindBy(xpath="//div[@class='toast-body']//p")
     public WebElement popupMessage;
     
     @FindBy(xpath="//div[@class='col-md-12']//h1")
     public WebElement textShoppingCart;
     
-    @FindBy(xpath="//*[@id=\"notification-box-top\"]/div/div[2]/div[2]/div[2]/a")
+    @FindBy(xpath="//a[@class='btn btn-secondary btn-block' and contains(text(),'Checkout')]")
     public WebElement checkoutButton;
         
 }

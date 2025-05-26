@@ -13,10 +13,11 @@ public class AddOnsLocator {
 
 	@FindBy(xpath="(//div//h2[@class='mb-4'])[1]")
 	public WebElement alerttext;
-
-	@FindBy(xpath="(//div[@class='menu-items d-flex align-items-start']/following::a[@title='Cameras'])[1]")
-	public WebElement camera;
-
-	@FindBy(xpath="//h1[@class='h4']")
-	public WebElement cameraText;
+	
+	@FindBy(xpath="(//div[@class='menu-items d-flex align-items-start']/descendant::a[@class='nav-link icon-left text'])[33]")
+	public WebElement cam;
+	
+	@FindBy(xpath="(//div[@class='caption']/h4/a[@class='text-ellipsis-2'])[1]")
+	public WebElement camPageText;
+	
 }
