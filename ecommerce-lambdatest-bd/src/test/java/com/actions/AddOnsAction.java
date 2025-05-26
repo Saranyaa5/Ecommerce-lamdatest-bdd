@@ -32,8 +32,14 @@ public class AddOnsAction {
         wait.until(ExpectedConditions.elementToBeClickable(addon.design)).click();
     }
 
-
     public String getAlertText() {
         return wait.until(ExpectedConditions.visibilityOf(addon.alerttext)).getText();
+    }
+    
+    public void clickCam() {
+    	addon.cam.click();
+    }
+    public String cameraPageText() {
+    	return wait.until(ExpectedConditions.visibilityOf(addon.camPageText)).getText();
     }
 }
