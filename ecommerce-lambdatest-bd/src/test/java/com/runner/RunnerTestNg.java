@@ -1,12 +1,13 @@
 package com.runner;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
+
 import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
-    features = {
 
+    features = {
     		 "src/test/resources/com/features/ForgotPassword.feature",
     	      "src/test/resources/com/features/Search.feature",
     	      "src/test/resources/com/features/AddToCart.feature",
@@ -27,8 +28,7 @@ import org.testng.annotations.DataProvider;
     	      "src/test/resources/com/features/Verify_product_url.feature",
     	      "src/test/resources/com/features/AddOns.feature",
               "src/test/resources/com/features/ShoppingCartTableVerification.feature",
-    		              "src/test/resources/com/features/linkchecker.feature"
-
+              "src/test/resources/com/features/linkchecker.feature"
     },
     glue = {"com.definitions"},
     plugin = {
