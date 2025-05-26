@@ -36,11 +36,9 @@ public class linkcheckerAction {
                     System.out.println("Empty or null href found. Skipping...");
                     continue;
                 }
-
                 HttpURLConnection connection = (HttpURLConnection) new URL(href).openConnection();
                 connection.setRequestMethod("HEAD");
                 connection.connect();
-
                 int responseCode = connection.getResponseCode();
                 if (responseCode != 200) {
                     System.out.println("Broken Link: " + href + " [HTTP " + responseCode + "]");
@@ -49,7 +47,7 @@ public class linkcheckerAction {
                 }
 
             } catch (Exception e) {
-                System.out.println("⚠️ Exception for link: " + link.getAttribute("href"));
+                System.out.println("Exception for link: " + link.getAttribute("href"));
                 System.out.println("   → " + e.getMessage());
             }
         }
