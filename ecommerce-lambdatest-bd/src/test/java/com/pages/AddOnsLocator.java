@@ -1,6 +1,7 @@
 package com.pages;
 
 import org.openqa.selenium.WebElement;
+import java.util.*;
 
 import org.openqa.selenium.support.FindBy;
 
@@ -19,4 +20,10 @@ public class AddOnsLocator {
 
 	@FindBy(xpath="//h1[@class='h4']")
 	public WebElement cameraText;
+	
+	@FindBy(xpath="//div[contains(@id,'entry_214956')]/div/div")
+	public List<WebElement> alterdiv;
+	
+	@FindBy(xpath="//div[contains(@id,'entry_214960')]/div/button")
+	public WebElement alterReomveBtn;
 }
