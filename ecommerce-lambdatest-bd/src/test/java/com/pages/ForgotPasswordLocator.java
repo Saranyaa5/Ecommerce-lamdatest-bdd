@@ -12,8 +12,6 @@ public class ForgotPasswordLocator {
         PageFactory.initElements(HelperClass.getDriver(), this);
     }
 
-   
-
     @FindBy(xpath = "//input[@type='password']/following-sibling::a")
     public WebElement forgotPasswordLink;
 
