@@ -27,7 +27,7 @@ public class linkcheckerAction {
     }
 
     public void verifyAllLinks() {
-        System.out.println("Verifying all collected links...");
+        System.out.println("🔍 Verifying all collected links...");
         for (WebElement link : allLinks) {
             try {
                 String href = link.getAttribute("href");
@@ -36,11 +36,13 @@ public class linkcheckerAction {
                     System.out.println("Empty or null href found. Skipping...");
                     continue;
                 }
+
                 HttpURLConnection connection = (HttpURLConnection) new URL(href).openConnection();
                 connection.setRequestMethod("HEAD");
                 connection.connect();
+
                 int responseCode = connection.getResponseCode();
-                if (responseCode != 200) {
+                if (responseCode >= 400) {
                     System.out.println("Broken Link: " + href + " [HTTP " + responseCode + "]");
                 } else {
                     System.out.println("Valid Link: " + href + " [HTTP " + responseCode + "]");

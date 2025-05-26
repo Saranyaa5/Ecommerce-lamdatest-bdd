@@ -109,23 +109,23 @@ public class SearchDefinition{
     }
     
     @When("hovers over a product")
-    public void hovers_over_a_product() throws InterruptedException {
+    public void hovers_over_a_product() {
     	searchAction.hoverOverFirstProduct();
     }
 
     @When("clicks the Quick View option")
     public void clicks_the_quick_view_option() {
-    	// This step assumes successful navigation is verified in a subsequent step
+        // Already handled in hover method
     }
 
     @Then("the user should see the product preview with the description")
     public void the_user_should_see_the_product_preview_with_the_description() {
-    	Assert.assertTrue(searchAction.isQuickViewDisplayed());
+        Assert.assertTrue("Quick View was not displayed!", searchAction.isQuickViewDisplayed());
     }
 
     @When("clicks the Add To Cart option")
     public void clicks_the_add_to_cart_option() {
-    	// This step assumes successful navigation is verified in a subsequent step
+        // Already handled in next step
     }
 
     @Then("the user sees a popup message")
@@ -135,7 +135,7 @@ public class SearchDefinition{
 
     @Then("clicks on checkout button to see checkout page")
     public void clicks_on_checkout_button_to_see_checkout_page() {
-    	// This step assumes successful navigation is verified in a subsequent step
+        Assert.assertTrue("Checkout page was not displayed.", searchAction.isCheckoutPageDisplayed());
     }
     
 }
