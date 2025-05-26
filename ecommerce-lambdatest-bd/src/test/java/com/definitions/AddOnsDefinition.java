@@ -1,6 +1,6 @@
 package com.definitions;
 
-import org.junit.Assert;
+import org.testng.Assert;
 import com.actions.AddOnsAction;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -23,7 +23,7 @@ public class AddOnsDefinition {
     public void the_user_should_see_the_design_page() {
         String expectedText = "Alert"; 
         String actualText = addonAction.getAlertText();
-        Assert.assertTrue("Design page is not visible!", actualText.contains(expectedText));
+        Assert.assertTrue(actualText.contains(expectedText));
     }
     @When("clicks on camera text")
     public void clicks_on_camera_text() {
@@ -34,6 +34,6 @@ public class AddOnsDefinition {
     public void the_user_should_be_navigated_to_camera_page() {
     	String expectedText="HTC Touch HD";
        String actualText=addonAction.cameraPageText();
-       Assert.assertTrue("cam page not opened after clicking the cam text",actualText.contains(expectedText));
+       Assert.assertTrue(actualText.contains(expectedText));
     }
 }

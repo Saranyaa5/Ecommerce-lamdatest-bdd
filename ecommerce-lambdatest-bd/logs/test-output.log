@@ -23950,3 +23950,41 @@ Session ID: a69b9dd60b15c9843d68072c76518019
 2025-05-26 11:06:49 [TestNG-PoolService-9] INFO : Scenario passed: To checkout the shopping cart as a guest user
 2025-05-26 11:06:49 [TestNG-PoolService-7] INFO : Scenario passed: To reorder the product in the order  history
 >>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
+2025-05-26 12:58:04 [main] INFO : Scenario started: User chooses Apple from main menu
+2025-05-26 12:58:08 [main] INFO : Scenario passed: User chooses Apple from main menu
+2025-05-26 13:05:00 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
+2025-05-26 13:05:17 [TestNG-PoolService-1] ERROR: Scenario failed: User chooses Apple from main menu
+2025-05-26 13:09:54 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
+2025-05-26 13:10:36 [TestNG-PoolService-1] ERROR: Scenario failed: User chooses Apple from main menu
+2025-05-26 13:14:06 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
+2025-05-26 13:14:55 [TestNG-PoolService-1] ERROR: Scenario failed: User chooses Apple from main menu
+2025-05-26 13:18:06 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
+2025-05-26 13:18:52 [TestNG-PoolService-1] ERROR: Scenario failed: User chooses Apple from main menu
+2025-05-26 14:10:34 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
+2025-05-26 14:11:23 [TestNG-PoolService-1] ERROR: Scenario failed: User chooses Apple from main menu
+2025-05-26 14:15:09 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
+2025-05-26 14:15:52 [TestNG-PoolService-1] ERROR: Scenario failed: User chooses Apple from main menu
+2025-05-26 14:22:34 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
+2025-05-26 14:23:17 [TestNG-PoolService-1] ERROR: Scenario failed: User chooses Apple from main menu
+2025-05-26 14:33:39 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
+2025-05-26 14:34:24 [TestNG-PoolService-1] ERROR: Scenario failed: User chooses Apple from main menu
+2025-05-26 14:41:36 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
+2025-05-26 14:42:18 [TestNG-PoolService-1] ERROR: Scenario failed: User chooses Apple from main menu
+2025-05-26 14:45:57 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
+2025-05-26 14:46:10 [TestNG-PoolService-1] INFO : Scenario passed: User chooses Apple from main menu
+2025-05-26 14:46:47 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
+2025-05-26 14:46:59 [TestNG-PoolService-1] INFO : Scenario passed: User chooses Apple from main menu
+2025-05-26 14:50:10 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
+2025-05-26 14:50:23 [TestNG-PoolService-1] INFO : Scenario passed: User chooses Apple from main menu
+2025-05-26 14:52:56 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
+2025-05-26 14:53:09 [TestNG-PoolService-1] INFO : Scenario passed: User chooses Apple from main menu
+2025-05-26 14:53:22 [TestNG-PoolService-1] INFO : Scenario started: User chooses Apple from main menu
+2025-05-26 14:53:33 [TestNG-PoolService-1] INFO : Scenario passed: User chooses Apple from main menu
+2025-05-26 14:58:58 [TestNG-PoolService-2] INFO : Scenario started: user clicks on camera text to navigate to camera product page
+2025-05-26 14:58:58 [TestNG-PoolService-1] INFO : Scenario started: user clicks on designs of addOns
+2025-05-26 14:59:12 [TestNG-PoolService-1] INFO : Scenario passed: user clicks on designs of addOns
+2025-05-26 14:59:19 [TestNG-PoolService-2] INFO : Scenario passed: user clicks on camera text to navigate to camera product page
+2025-05-26 14:59:39 [TestNG-PoolService-2] INFO : Scenario started: user clicks on camera text to navigate to camera product page
+2025-05-26 14:59:39 [TestNG-PoolService-1] INFO : Scenario started: user clicks on designs of addOns
+2025-05-26 14:59:52 [TestNG-PoolService-1] INFO : Scenario passed: user clicks on designs of addOns
+2025-05-26 15:00:00 [TestNG-PoolService-2] INFO : Scenario passed: user clicks on camera text to navigate to camera product page

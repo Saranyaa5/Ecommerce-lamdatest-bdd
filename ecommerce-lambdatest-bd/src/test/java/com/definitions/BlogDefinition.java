@@ -1,10 +1,10 @@
 package com.definitions;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
 import com.actions.BlogAction;
 import java.util.List;
 import java.util.Map;
+import org.testng.Assert;
 
 public class BlogDefinition {
 
@@ -91,7 +91,7 @@ public class BlogDefinition {
     @Then("the user should see article page")
     public void the_user_should_see_article_page() {
     	  String heading = blogAction.getArticleHeading();
-          Assert.assertTrue("Article heading not found!", heading != null && !heading.isEmpty());
+          Assert.assertTrue(heading != null && !heading.isEmpty());
       }
     
     @When("clicks on the product image")
@@ -102,6 +102,6 @@ public class BlogDefinition {
 
     @Then("the product shopping page is displayed")
     public void the_product_shopping_page_is_displayed() {
-        Assert.assertTrue("Product name is not displayed on the shopping page", blogAction.isProductNameDisplayed());
+        Assert.assertTrue(blogAction.isProductNameDisplayed());
     }
 }
