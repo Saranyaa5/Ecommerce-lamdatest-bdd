@@ -68,6 +68,7 @@ public class UserRegistrationAction {
     }
 
     public String RegisterationSuccess() {
+    	wait.until(ExpectedConditions.urlToBe("https://ecommerce-playground.lambdatest.io/index.php?route=account/success"));
         return waitForElementText(registrationLocators.registrationSuccessMsg);
     }
 
