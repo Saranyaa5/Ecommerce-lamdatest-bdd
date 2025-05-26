@@ -9,7 +9,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.pages.AddToCartLocator;
 import com.pages.EstimateShippingLocator;
-import com.pages.LoginPageLocator;
 import com.pages.UserAccountLocator;
 import com.utilities.HelperClass;
 

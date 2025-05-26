@@ -109,7 +109,7 @@ public class SearchDefinition{
     }
     
     @When("hovers over a product")
-    public void hovers_over_a_product() throws InterruptedException {
+    public void hovers_over_a_product() {
     	searchAction.hoverOverFirstProduct();
     }
 
