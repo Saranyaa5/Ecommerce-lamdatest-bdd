@@ -20,7 +20,7 @@ import org.testng.annotations.DataProvider;
     	      "src/test/resources/com/features/MyOrder.feature",
     	      "src/test/resources/com/features/Home.feature",
     	      "src/test/resources/com/features/AddOnsDesigns.feature",
-    	      "src/test/resources/com/features/UserRegistration.feature",
+    	      "src/test/resources/com/features/UserRegistration.feature"
 //    	      "src/test/resources/com/features/EstimateShippingStatus.feature",
 //    	      "src/test/resources/com/features/FAQ.feature",
 //    	      "src/test/resources/com/features/SpecialOffer.feature",
@@ -28,7 +28,9 @@ import org.testng.annotations.DataProvider;
 //    	      "src/test/resources/com/features/Verify_product_url.feature",
 //    	      "src/test/resources/com/features/AddOns.feature",
 //              "src/test/resources/com/features/ShoppingCartTableVerification.feature",
-//              "src/test/resources/com/features/linkchecker.feature"
+//              "src/test/resources/com/features/linkchecker.feature",
+//	    	  "src/test/resources/com/features/MegaMenu.feature",
+              
     },
     glue = {"com.definitions"},
     plugin = {

@@ -126,7 +126,7 @@ public class SearchAction {
         
     }
 
-    public boolean isProductCountMatchingDropdown() {
+    public boolean isProductCountMatchingDropdown() { 
         int expectedCount = getSelectedDropdownValue();
         int actualCount = getDisplayedProductCount();
         return expectedCount == actualCount;

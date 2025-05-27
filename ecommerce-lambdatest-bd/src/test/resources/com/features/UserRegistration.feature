@@ -9,7 +9,7 @@ Feature: Saranya_09APR2025_LambdaTesters_User_Registration_Functionality
     And clicks the register button  
     And the user should see the registration page  
 
-  @ValidRegistrationInputs
+  @ValidRegistrationInputs @smoke
   Scenario Outline: Register with valid inputs  
     When the user enters "<First Name>", "<Last Name>", "<Email>", "<Telephone>", "<Password>" and "<Confirm Password>"  
     And agrees to the Privacy Policy  
