@@ -27,7 +27,7 @@ public class linkcheckerAction {
     }
 
     public void verifyAllLinks() {
-        System.out.println("🔍 Verifying all collected links...");
+        System.out.println("-Verifying all collected links...");
         for (WebElement link : allLinks) {
             try {
                 String href = link.getAttribute("href");

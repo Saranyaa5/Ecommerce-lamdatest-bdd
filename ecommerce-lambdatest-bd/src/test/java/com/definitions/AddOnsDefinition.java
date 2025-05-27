@@ -1,6 +1,8 @@
 package com.definitions;
 
+
 import org.testng.Assert;
+
 import com.actions.AddOnsAction;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -8,6 +10,7 @@ import io.cucumber.java.en.When;
 public class AddOnsDefinition {
 
     AddOnsAction addonAction = new AddOnsAction();
+    int intial_alt_count=0;
 
     @When("the user clicks on addons")
     public void the_user_clicks_on_addons() {
@@ -35,5 +38,26 @@ public class AddOnsDefinition {
     	String expectedText="HTC Touch HD";
        String actualText=addonAction.cameraPageText();
        Assert.assertTrue(actualText.contains(expectedText));
+    }
+    
+    @When("the user romoves one of the alert")
+    public void the_user_romoves_one_of_the_alert() throws InterruptedException {
+    	intial_alt_count=addonAction.getAlertDivsCount();
+    	addonAction.removeAlert();
+    	Thread.sleep(10000);
+    }
+
+    @Then("the alert count should be reduced")
+    public void the_alert_count_should_be_reduced() {
+    	int current_alt_count=addonAction.getAlertDivsCount();
+    	boolean removed=current_alt_count<=intial_alt_count;
+    	try {
+    	Assert.assertTrue(removed);
+    	}
+    	catch(AssertionError e){
+    		System.out.println("alerts not removed");
+    		throw e;
+    	}
+      
     }
 }

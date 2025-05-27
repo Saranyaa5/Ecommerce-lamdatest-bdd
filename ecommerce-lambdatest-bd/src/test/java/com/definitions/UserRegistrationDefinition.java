@@ -1,7 +1,5 @@
 package com.definitions;
 
-import com.actions.UserRegistrationAction;
-import com.utilities.HelperClass;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -9,6 +7,9 @@ import io.cucumber.java.en.When;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
+
+import com.actions.UserRegistrationAction;
+import com.utilities.HelperClass;
 
 public class UserRegistrationDefinition {
     UserRegistrationAction userRegistrationAction = new UserRegistrationAction();
