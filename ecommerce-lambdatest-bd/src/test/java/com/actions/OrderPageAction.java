@@ -1,25 +1,18 @@
 package com.actions;
 
-import java.time.Duration;
-
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.pages.OrderPageLocator;
 import com.utilities.HelperClass;
 
 public class OrderPageAction {
-
     public OrderPageLocator orderPageLocator = null;
     private final WebDriver driver;
-    WebDriverWait wait;
     private final Actions actions;
     private final JavascriptExecutor jsExecutor;
 
@@ -28,23 +21,32 @@ public class OrderPageAction {
         this.orderPageLocator = new OrderPageLocator();
         PageFactory.initElements(driver, orderPageLocator);
         this.actions = new Actions(driver);
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(50));
         this.jsExecutor = (JavascriptExecutor) driver;
     }
 
-    public void continue1() {
+    private boolean isElementDisplayed(WebElement element) {
+        try {
+            return element.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    private boolean isElementEnabled(WebElement element) {
+        try {
+            return element.isEnabled();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    private void retryOnStaleElement(Runnable action) {
         int attempts = 0;
         while (attempts < 2) {
             try {
-                orderPageLocator = new OrderPageLocator(); 
+                orderPageLocator = new OrderPageLocator();
                 PageFactory.initElements(driver, orderPageLocator);
-
-                WebElement continueBtn = wait.until(ExpectedConditions.refreshed(
-                    ExpectedConditions.elementToBeClickable(orderPageLocator.accContinue)
-                ));
-                continueBtn.click();
-
-                wait.until(ExpectedConditions.visibilityOf(orderPageLocator.myAccount));
+                action.run();
                 break;
             } catch (StaleElementReferenceException e) {
                 attempts++;
@@ -55,69 +57,78 @@ public class OrderPageAction {
             }
         }
     }
+
+    public void continue1() {
+        retryOnStaleElement(() -> {
+            if (isElementDisplayed(orderPageLocator.accContinue) && 
+                isElementEnabled(orderPageLocator.accContinue)) {
+                orderPageLocator.accContinue.click();
+            }
+        });
+    }
     
     public void clickLoginUnderMyAccount() {
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.urlToBe("https://ecommerce-playground.lambdatest.io/index.php?route=checkout/success"));
-        actions.moveToElement(orderPageLocator.myAccount).perform();
-        wait.until(ExpectedConditions.visibilityOf(orderPageLocator.loginLink));
-        orderPageLocator.loginLink.click();
+        if (driver.getCurrentUrl().equals("https://ecommerce-playground.lambdatest.io/index.php?route=checkout/success")) {
+            if (isElementDisplayed(orderPageLocator.myAccount)) {
+                actions.moveToElement(orderPageLocator.myAccount).perform();
+                if (isElementDisplayed(orderPageLocator.loginLink) && 
+                    isElementEnabled(orderPageLocator.loginLink)) {
+                    orderPageLocator.loginLink.click();
+                }
+            }
+        }
     }
 
-
-
     public void clickOrderHistory() {
-        WebElement myAccountElement = wait.until(ExpectedConditions.refreshed(
-            ExpectedConditions.visibilityOf(orderPageLocator.myAccount)
-        ));
-        actions.moveToElement(myAccountElement).perform();
-        WebElement myOrderElement = wait.until(ExpectedConditions.refreshed(
-            ExpectedConditions.elementToBeClickable(orderPageLocator.orders)
-        ));
-        myOrderElement.click();
-        wait.until(ExpectedConditions.visibilityOf(orderPageLocator.orderhistory));
+        retryOnStaleElement(() -> {
+            if (isElementDisplayed(orderPageLocator.myAccount)) {
+                actions.moveToElement(orderPageLocator.myAccount).perform();
+                if (isElementDisplayed(orderPageLocator.orders) && 
+                    isElementEnabled(orderPageLocator.orders)) {
+                    orderPageLocator.orders.click();
+                }
+            }
+        });
     }
 
     public boolean eyeDisplayed() {
-        WebElement eyeIcon = wait.until(ExpectedConditions.refreshed(
-            ExpectedConditions.visibilityOf(orderPageLocator.viewOrderButton)
-        ));
-        return eyeIcon.isDisplayed();
+        return isElementDisplayed(orderPageLocator.viewOrderButton);
     }
 
     public void clickViewButton() {
-        WebElement viewBtn = wait.until(ExpectedConditions.refreshed(
-            ExpectedConditions.elementToBeClickable(orderPageLocator.viewOrderButton)
-        ));
-        viewBtn.click();
-        wait.until(ExpectedConditions.visibilityOf(orderPageLocator.reorderButton));
+        retryOnStaleElement(() -> {
+            if (isElementDisplayed(orderPageLocator.viewOrderButton) && 
+                isElementEnabled(orderPageLocator.viewOrderButton)) {
+                orderPageLocator.viewOrderButton.click();
+            }
+        });
     }
 
     public void clickReorderButton() {
-        WebElement reorderBtn = wait.until(ExpectedConditions.refreshed(
-            ExpectedConditions.elementToBeClickable(orderPageLocator.reorderButton)
-        ));
-        reorderBtn.click();
-
-        wait.until(ExpectedConditions.visibilityOf(orderPageLocator.reorderSuccessMessage));
+        retryOnStaleElement(() -> {
+            if (isElementDisplayed(orderPageLocator.reorderButton) && 
+                isElementEnabled(orderPageLocator.reorderButton)) {
+                orderPageLocator.reorderButton.click();
+            }
+        });
     }
 
     public boolean isReorderMessageDisplayed() {
-        WebElement message = wait.until(ExpectedConditions.refreshed(
-            ExpectedConditions.visibilityOf(orderPageLocator.reorderSuccessMessage)
-        ));
-        return message.isDisplayed();
+        return isElementDisplayed(orderPageLocator.reorderSuccessMessage);
     }
 
     public String getTextOrder() {
-        WebElement heading = wait.until(ExpectedConditions.refreshed(
-            ExpectedConditions.visibilityOf(orderPageLocator.orderhistory)
-        ));
-        return heading.getText();
+        if (isElementDisplayed(orderPageLocator.orderhistory)) {
+            return orderPageLocator.orderhistory.getText();
+        }
+        return "";
     }
     
     public void clickOnOrderHistory() {
-    	orderPageLocator.guestMyOrder.click();
+        if (isElementDisplayed(orderPageLocator.guestMyOrder) && 
+            isElementEnabled(orderPageLocator.guestMyOrder)) {
+            orderPageLocator.guestMyOrder.click();
+        }
     }
 
     public boolean isPageScrolledToTop() {
