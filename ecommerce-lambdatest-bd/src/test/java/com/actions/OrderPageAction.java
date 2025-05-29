@@ -3,7 +3,6 @@ package com.actions;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
@@ -22,22 +21,6 @@ public class OrderPageAction {
         PageFactory.initElements(driver, orderPageLocator);
         this.actions = new Actions(driver);
         this.jsExecutor = (JavascriptExecutor) driver;
-    }
-
-    private boolean isElementDisplayed(WebElement element) {
-        try {
-            return element.isDisplayed();
-        } catch (Exception e) {
-            return false;
-        }
-    }
-
-    private boolean isElementEnabled(WebElement element) {
-        try {
-            return element.isEnabled();
-        } catch (Exception e) {
-            return false;
-        }
     }
 
     private void retryOnStaleElement(Runnable action) {
@@ -60,74 +43,110 @@ public class OrderPageAction {
 
     public void continue1() {
         retryOnStaleElement(() -> {
-            if (isElementDisplayed(orderPageLocator.accContinue) && 
-                isElementEnabled(orderPageLocator.accContinue)) {
-                orderPageLocator.accContinue.click();
+            try {
+                if (orderPageLocator.accContinue.isDisplayed() && 
+                    orderPageLocator.accContinue.isEnabled()) {
+                    orderPageLocator.accContinue.click();
+                }
+            } catch (Exception e) {
+                System.out.println("Element not found or not interactable");
             }
         });
     }
     
     public void clickLoginUnderMyAccount() {
         if (driver.getCurrentUrl().equals("https://ecommerce-playground.lambdatest.io/index.php?route=checkout/success")) {
-            if (isElementDisplayed(orderPageLocator.myAccount)) {
-                actions.moveToElement(orderPageLocator.myAccount).perform();
-                if (isElementDisplayed(orderPageLocator.loginLink) && 
-                    isElementEnabled(orderPageLocator.loginLink)) {
-                    orderPageLocator.loginLink.click();
+            try {
+                if (orderPageLocator.myAccount.isDisplayed()) {
+                    actions.moveToElement(orderPageLocator.myAccount).perform();
+                    if (orderPageLocator.loginLink.isDisplayed() && 
+                        orderPageLocator.loginLink.isEnabled()) {
+                        orderPageLocator.loginLink.click();
+                    }
                 }
+            } catch (Exception e) {
+                System.out.println("Element not found or not interactable");
             }
         }
     }
 
     public void clickOrderHistory() {
         retryOnStaleElement(() -> {
-            if (isElementDisplayed(orderPageLocator.myAccount)) {
-                actions.moveToElement(orderPageLocator.myAccount).perform();
-                if (isElementDisplayed(orderPageLocator.orders) && 
-                    isElementEnabled(orderPageLocator.orders)) {
-                    orderPageLocator.orders.click();
+            try {
+                if (orderPageLocator.myAccount.isDisplayed()) {
+                    actions.moveToElement(orderPageLocator.myAccount).perform();
+                    if (orderPageLocator.orders.isDisplayed() && 
+                        orderPageLocator.orders.isEnabled()) {
+                        orderPageLocator.orders.click();
+                    }
                 }
+            } catch (Exception e) {
+                System.out.println("Element not found or not interactable");
             }
         });
     }
 
     public boolean eyeDisplayed() {
-        return isElementDisplayed(orderPageLocator.viewOrderButton);
+        try {
+            return orderPageLocator.viewOrderButton.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
     }
 
     public void clickViewButton() {
         retryOnStaleElement(() -> {
-            if (isElementDisplayed(orderPageLocator.viewOrderButton) && 
-                isElementEnabled(orderPageLocator.viewOrderButton)) {
-                orderPageLocator.viewOrderButton.click();
+            try {
+                if (orderPageLocator.viewOrderButton.isDisplayed() && 
+                    orderPageLocator.viewOrderButton.isEnabled()) {
+                    orderPageLocator.viewOrderButton.click();
+                }
+            } catch (Exception e) {
+                System.out.println("Element not found or not interactable");
             }
         });
     }
 
     public void clickReorderButton() {
         retryOnStaleElement(() -> {
-            if (isElementDisplayed(orderPageLocator.reorderButton) && 
-                isElementEnabled(orderPageLocator.reorderButton)) {
-                orderPageLocator.reorderButton.click();
+            try {
+                if (orderPageLocator.reorderButton.isDisplayed() && 
+                    orderPageLocator.reorderButton.isEnabled()) {
+                    orderPageLocator.reorderButton.click();
+                }
+            } catch (Exception e) {
+                System.out.println("Element not found or not interactable");
             }
         });
     }
 
     public boolean isReorderMessageDisplayed() {
-        return isElementDisplayed(orderPageLocator.reorderSuccessMessage);
+        try {
+            return orderPageLocator.reorderSuccessMessage.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
     }
 
     public String getTextOrder() {
-        if (isElementDisplayed(orderPageLocator.orderhistory)) {
-            return orderPageLocator.orderhistory.getText();
+        try {
+            if (orderPageLocator.orderhistory.isDisplayed()) {
+                return orderPageLocator.orderhistory.getText();
+            }
+        } catch (Exception e) {
+            System.out.println("Element not found");
         }
         return "";
     }
     
     public void clickOnOrderHistory() {
-        if (isElementDisplayed(orderPageLocator.guestMyOrder) && 
-            isElementEnabled(orderPageLocator.guestMyOrder)) {
-            orderPageLocator.guestMyOrder.click();
+        try {
+            if (orderPageLocator.guestMyOrder.isDisplayed() && 
+                orderPageLocator.guestMyOrder.isEnabled()) {
+                orderPageLocator.guestMyOrder.click();
+            }
+        } catch (Exception e) {
+            System.out.println("Element not found or not interactable");
         }
     }
 
