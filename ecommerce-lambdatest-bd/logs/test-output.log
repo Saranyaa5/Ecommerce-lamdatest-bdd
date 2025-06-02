@@ -25941,3 +25941,16 @@ Session ID: a69b9dd60b15c9843d68072c76518019
 2025-05-30 00:29:10 [TestNG-PoolService-8] INFO : Scenario passed: Register with +valid inputs  with out checking privacy policy
 2025-05-30 00:29:13 [TestNG-PoolService-1] INFO : Scenario passed: Click on a iPod Nano product and verify the URL
 2025-05-30 00:30:24 [TestNG-PoolService-5] INFO : Scenario passed: Count all links and verify they are not broken
+2025-06-02 14:30:34 [main] INFO : Scenario started: To assert the Functioning of Webelements in home page
+2025-06-02 14:30:41 [main] ERROR: Scenario failed: To assert the Functioning of Webelements in home page
+2025-06-02 14:30:42 [main] INFO : Scenario started: To redirected to the product page after clicking Shop Now button in Block 2
+2025-06-02 14:30:48 [main] ERROR: Scenario failed: To redirected to the product page after clicking Shop Now button in Block 2
+2025-06-02 14:30:50 [main] INFO : Scenario started: To redirect to the product page after clicking Head phones poster
+2025-06-02 14:31:01 [main] INFO : Successfully verified MPOW product page
+2025-06-02 14:31:01 [main] INFO : Scenario passed: To redirect to the product page after clicking Head phones poster
+2025-06-02 14:31:02 [main] INFO : Scenario started: To redirect to the trending product page when clicking the product
+2025-06-02 14:31:14 [main] INFO : Successfully is successfull
+2025-06-02 14:31:14 [main] INFO : Scenario passed: To redirect to the trending product page when clicking the product
+2025-06-02 14:31:15 [main] INFO : Scenario started: Verify that all links on the homepage redirect correctly
+2025-06-02 14:32:04 [main] INFO : no of links in the homepage is not working working in homepage: 1
+2025-06-02 14:32:04 [main] INFO : Scenario passed: Verify that all links on the homepage redirect correctly
