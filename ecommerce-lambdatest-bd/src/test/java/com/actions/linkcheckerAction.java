@@ -1,8 +1,6 @@
 package com.actions;
 
 import com.pages.linkcheckerLocator;
-import com.utilities.HelperClass;
-import com.utilities.ConfigReader;
 import org.openqa.selenium.WebElement;
 
 import java.net.HttpURLConnection;
@@ -28,6 +26,8 @@ public class linkcheckerAction {
 
     public void verifyAllLinks() {
         System.out.println("🔍 Verifying all collected links...");
+        int brokenLinkCount = 0; // Counter for broken links
+
         for (WebElement link : allLinks) {
             try {
                 String href = link.getAttribute("href");
@@ -43,15 +43,19 @@ public class linkcheckerAction {
 
                 int responseCode = connection.getResponseCode();
                 if (responseCode >= 400) {
-                    System.out.println("Broken Link: " + href + " [HTTP " + responseCode + "]");
+                    System.out.println("❌ Broken Link: " + href + " [HTTP " + responseCode + "]");
+                    brokenLinkCount++;
                 } else {
-                    System.out.println("Valid Link: " + href + " [HTTP " + responseCode + "]");
+                    System.out.println(" Valid Link: " + href + " [HTTP " + responseCode + "]");
                 }
 
             } catch (Exception e) {
-                System.out.println("Exception for link: " + link.getAttribute("href"));
+                System.out.println(" Exception for link: " + link.getAttribute("href"));
                 System.out.println("   → " + e.getMessage());
+                brokenLinkCount++;
             }
         }
+
+        System.out.println(" Total Broken Links: " + brokenLinkCount); 
     }
 }
