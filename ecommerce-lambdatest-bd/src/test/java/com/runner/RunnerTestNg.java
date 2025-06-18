@@ -30,7 +30,7 @@ import org.testng.annotations.DataProvider;
 //              "src/test/resources/com/features/ShoppingCartTableVerification.feature",
 //              "src/test/resources/com/features/linkchecker.feature",
 	    	  "src/test/resources/com/features/MegaMenu.feature"
- 
+
     },
     glue = {"com.definitions"},
 //    tags= "@display_the_count_of_product_in_page",
