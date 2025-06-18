@@ -13,7 +13,8 @@ public class CheckOutPageLocator {
     @FindBy(xpath = "//a[contains(@id,'mz-product-grid-image-47-212469')]//div//div[1]/child::img")
     public WebElement productImage;
     
-    @FindBy(xpath = "//div[contains(@class,'row mb-3 align-items-end')]/following-sibling::div[@class='buttons d-flex']//a[2]")
+//    @FindBy(xpath = "//div[contains(@class,'row mb-3 align-items-end')]/following-sibling::div[@class='buttons d-flex']//a[2]")
+    @FindBy(xpath="//*[contains(@id,'content')]/div[2]/a[2]")
     public WebElement checkoutFromCart;
     
     @FindBy(xpath = "//div[contains(@class,'sticky-top')]/child::div[contains(@class,'mb-5')]//div[1]//div[3]")
