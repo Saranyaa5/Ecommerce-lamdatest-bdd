@@ -1,7 +1,5 @@
 package com.definitions;
 
-import com.actions.UserRegistrationAction;
-import com.utilities.HelperClass;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -10,13 +8,13 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 
+import com.actions.UserRegistrationAction;
+import com.utilities.HelperClass;
+
 public class UserRegistrationDefinition {
     UserRegistrationAction userRegistrationAction = new UserRegistrationAction();
     private static final Logger logger = LogManager.getLogger(UserRegistrationDefinition.class);
-    @Given("the user is on the homepage")
-    public void the_user_is_on_the_homepage() {
-        HelperClass.openPage();
-    }
+    
 
     @When("the user clicks on My Account.")
     public void the_user_clicks_on() {

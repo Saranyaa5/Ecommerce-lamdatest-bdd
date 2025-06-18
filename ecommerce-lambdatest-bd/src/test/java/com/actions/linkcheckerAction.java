@@ -25,8 +25,10 @@ public class linkcheckerAction {
     }
 
     public void verifyAllLinks() {
+
         System.out.println("🔍 Verifying all collected links...");
         int brokenLinkCount = 0; // Counter for broken links
+
 
         for (WebElement link : allLinks) {
             try {

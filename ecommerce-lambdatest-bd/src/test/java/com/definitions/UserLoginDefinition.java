@@ -2,11 +2,18 @@ package com.definitions;
 
 import org.testng.Assert;
 import com.actions.UserLoginAction;
+import com.utilities.HelperClass;
+
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class UserLoginDefinition {
     UserLoginAction userLoginAction = new UserLoginAction();
+    @Given("the user is on the homepage")
+    public void the_user_is_on_the_homepage() {
+        HelperClass.openPage();
+    }
 
     @When("the user clicks on My Account")
     public void the_user_clicks_on_my_account() {
