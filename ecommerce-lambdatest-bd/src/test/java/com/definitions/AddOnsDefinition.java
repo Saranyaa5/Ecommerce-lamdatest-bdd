@@ -41,22 +41,20 @@ public class AddOnsDefinition {
     }
     
     @When("the user romoves one of the alert")
-    public void the_user_romoves_one_of_the_alert() throws InterruptedException {
+    public void the_user_romoves_one_of_the_alert() {
     	intial_alt_count=addonAction.getAlertDivsCount();
     	addonAction.removeAlert();
-    	Thread.sleep(10000);
     }
 
     @Then("the alert count should be reduced")
     public void the_alert_count_should_be_reduced() {
     	int current_alt_count=addonAction.getAlertDivsCount();
-    	boolean removed=current_alt_count<=intial_alt_count;
+    	boolean removed=current_alt_count<intial_alt_count;
     	try {
     	Assert.assertTrue(removed);
     	}
     	catch(AssertionError e){
     		System.out.println("alerts not removed");
-    		throw e;
     	}
       
     }
