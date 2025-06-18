@@ -14,10 +14,7 @@ import com.utilities.HelperClass;
 public class UserRegistrationDefinition {
     UserRegistrationAction userRegistrationAction = new UserRegistrationAction();
     private static final Logger logger = LogManager.getLogger(UserRegistrationDefinition.class);
-    @Given("the user is on the homepage")
-    public void the_user_is_on_the_homepage() {
-        HelperClass.openPage();
-    }
+    
 
     @When("the user clicks on My Account.")
     public void the_user_clicks_on() {

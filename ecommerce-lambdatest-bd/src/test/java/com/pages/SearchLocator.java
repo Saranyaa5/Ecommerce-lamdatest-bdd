@@ -53,10 +53,10 @@ public class SearchLocator {
     @FindBy(xpath="(//li[@class='nav-item']//following-sibling::a[@class='icon-left both nav-link']/div/span)[1]")
     public WebElement components;
     
-    @FindBy(xpath="//select[@id='input-limit-212402']")
+    @FindBy(xpath="//select[@id='input-limit-212463']")
     public WebElement select;
     
-    @FindBy(xpath="//select[@id='input-limit-212402']//option[2]")
+    @FindBy(xpath="//select[@id='input-limit-212463']//option[2]")
     public WebElement option2;
     
     @FindBy(xpath = "//div[@data-grid='product-layout product-grid no-desc col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6']/div[@class='product-layout product-grid no-desc col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6']")
@@ -68,7 +68,7 @@ public class SearchLocator {
     @FindBy(xpath="//div[@id='entry_212948']/h1")
     public WebElement textQuickView;
     
-    @FindBy(xpath="//button[@class='btn btn-cart cart-28']/i")
+    @FindBy(xpath="//button[@class='btn btn-cart cart-47']/i")
     public WebElement addToCartButton;
     
     @FindBy(xpath="//div[@class='toast-body']//p")

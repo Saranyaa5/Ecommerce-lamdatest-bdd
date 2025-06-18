@@ -138,7 +138,7 @@ public class SearchAction {
         WebElement firstProduct = driver.findElement(By.xpath("(//div[@class='carousel-item active']//img)[1]"));
         actions.moveToElement(firstProduct).perform();
         
-        WebElement quickViewButton = driver.findElement(By.xpath("//button[@class='btn btn-quick-view quick-view-28']/i"));
+        WebElement quickViewButton = driver.findElement(By.xpath("//button[@class='btn btn-quick-view quick-view-41']/i"));
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", quickViewButton);
     }     

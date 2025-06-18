@@ -26,4 +26,10 @@ public class ProductCompareLocator {
     
     @FindBy(xpath="//*[@id='entry_212469']/p")
     public WebElement noProductsmatchError;
+    
+    @FindBy(css=".toast-header")
+    public WebElement toastHeader;
+    
+    @FindBy(css=".close")
+    public WebElement toastCloseButton;
 }
