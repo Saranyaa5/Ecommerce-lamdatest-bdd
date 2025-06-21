@@ -1,9 +1,12 @@
 package com.actions;
 
 import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import com.pages.FAQLocator;
 import com.utilities.HelperClass;
 
@@ -19,11 +22,12 @@ public class FAQAction {
     }
 
     public void validateFAQButtons() {
-        faqlocator.changeshippingaddress.click();
-       
+        wait.until(ExpectedConditions.elementToBeClickable(faqlocator.changeshippingaddress)).click();
     }
 
     public String faqmessageList() {
-        return faqlocator.changeshippingaddressmsg.getText();
+        wait.until(ExpectedConditions.visibilityOf(faqlocator.changeshippingaddressmsg));
+        String msg = faqlocator.changeshippingaddressmsg.getText().trim().replaceAll("\\s+", " ");
+        return msg;
     }
 }

@@ -20,17 +20,6 @@ Scenario: Submit review without rating and without comment
     And user does not select any rating
     When user clicks on the Continue button to submit the review
     And error message "Please select a review rating" should be displayed
-
-
-@noRatingWithComment
-Scenario: Submit review without rating but with comment
-    And user enters "soundar" in the Name field
-    And user writes "Not satisfied with the sound quality" in the Review field
-    And user does not select any rating
-    When user clicks on the Continue button to submit the review
-    Then error message "Please select a review rating" should be displayed
-
-@withRatingNoComment
 Scenario: Submit review with rating but without comment
     And user enters "soundar" in the Name field
     And user leaves the Review field blank

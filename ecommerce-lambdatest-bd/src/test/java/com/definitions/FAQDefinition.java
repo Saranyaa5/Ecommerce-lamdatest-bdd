@@ -22,6 +22,7 @@ FAQAction faqaction = new FAQAction();
 	public void user_should_see_the_faq_message(String expectedText) {
 
 	   String actualMessages = faqaction.faqmessageList();
+	   System.out.print("Message found:"+actualMessages);
 	    Assert.assertTrue(actualMessages.contains(expectedText));
 	}
 
