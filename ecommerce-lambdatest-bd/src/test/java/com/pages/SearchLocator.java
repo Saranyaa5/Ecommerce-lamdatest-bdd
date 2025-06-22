@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class SearchLocator {
-	@FindBy(xpath = "//input[@placeholder='Search' or @name='search']")
+	@FindBy(xpath = "(//input[@placeholder='Search' or @name='search'])[1]")
     public WebElement searchbox;
     
     @FindBy(xpath = "//button[contains(text(),'Search')]")
@@ -37,9 +37,9 @@ public class SearchLocator {
     
     @FindBy(xpath="(//div[@class='ui-slider-range ui-corner-all ui-widget-header'])[2]")
     public WebElement dragger;
-    
-    @FindBy(xpath="(//div[@class='price']/span[@class='price-new'])[1]")
-    public WebElement price;
+
+    @FindBy(xpath = "//span[@class='price-new']")
+    public List<WebElement> allProductPrices;
     
     @FindBy(xpath = "//span[@class='ui-slider-handle ui-state-default ui-corner-all'][1]") 
     public WebElement leftSliderHandle;
@@ -53,10 +53,10 @@ public class SearchLocator {
     @FindBy(xpath="(//li[@class='nav-item']//following-sibling::a[@class='icon-left both nav-link']/div/span)[1]")
     public WebElement components;
     
-    @FindBy(xpath="//select[@id='input-limit-212402']")
+    @FindBy(xpath="(//div[@class='input-group flex-nowrap']/descendant::select)[1]")
     public WebElement select;
     
-    @FindBy(xpath="//select[@id='input-limit-212402']//option[2]")
+    @FindBy(xpath="(//div[@class='input-group flex-nowrap']/descendant::select)[1]/option[2]")
     public WebElement option2;
     
     @FindBy(xpath = "//div[@data-grid='product-layout product-grid no-desc col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6']/div[@class='product-layout product-grid no-desc col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6']")
@@ -65,10 +65,10 @@ public class SearchLocator {
     @FindBy(xpath="(//div[@class='carousel-item active']//img)[1]")
     public WebElement firstProduct;	
     
-    @FindBy(xpath="//div[@id='entry_212948']/h1")
+    @FindBy(xpath="(//div[@class='entry-col col-12 col-lg-6 order-1 flex-column']/div)[1]/h1")
     public WebElement textQuickView;
     
-    @FindBy(xpath="//button[@class='btn btn-cart cart-28']/i")
+    @FindBy(xpath="(//div[@class='product-action']/button/i)[1]")
     public WebElement addToCartButton;
     
     @FindBy(xpath="//div[@class='toast-body']//p")
