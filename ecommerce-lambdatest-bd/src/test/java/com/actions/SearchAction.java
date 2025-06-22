@@ -5,8 +5,11 @@ import com.utilities.HelperClass;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 
 public class SearchAction {
@@ -175,7 +178,22 @@ public class SearchAction {
         }
     }
 
+//    public boolean isCheckoutPageDisplayed() {
+//        return searchLocator.textShoppingCart != null && searchLocator.textShoppingCart.isDisplayed();
+//    }
     public boolean isCheckoutPageDisplayed() {
-        return searchLocator.textShoppingCart != null && searchLocator.textShoppingCart.isDisplayed();
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+            WebElement checkoutHeader = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.xpath("//div[@class='col-md-12']//h1")
+            ));
+            return checkoutHeader.isDisplayed();
+        } catch (TimeoutException e) {
+            System.out.println("❌ Checkout page did not load in time.");
+            return false;
+        } catch (NoSuchElementException e) {
+            System.out.println("❌ Checkout header not found.");
+            return false;
+        }
     }
 }

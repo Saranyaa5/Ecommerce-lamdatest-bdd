@@ -45,6 +45,7 @@ Feature: Jeevika_12APR2025_LambdaTesters_Search
 
     Examples:
       | count |
+      | 15    |
       | 25    |
       | 50    |
       | 75    |
