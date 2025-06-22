@@ -41,10 +41,9 @@ public class AddOnsDefinition {
     }
     
     @When("the user romoves one of the alert")
-    public void the_user_romoves_one_of_the_alert(){
+    public void the_user_romoves_one_of_the_alert() {
     	intial_alt_count=addonAction.getAlertDivsCount();
     	addonAction.removeAlert();
-    	
     }
 
     @Then("the alert count should be reduced")

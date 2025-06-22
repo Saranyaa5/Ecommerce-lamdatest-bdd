@@ -30,6 +30,8 @@ Feature: Jeevika_12APR2025_LambdaTesters_Search
     
  @MinimumAndMaximumSegregation
 	Scenario: Display products between minimum and maximum values
+		When the user clicks on Shop by Category
+		And selects a specific category from the list
     When the user enters the minimum value
     And the user enters the maximum value
     Then the user should see all products within that value range
