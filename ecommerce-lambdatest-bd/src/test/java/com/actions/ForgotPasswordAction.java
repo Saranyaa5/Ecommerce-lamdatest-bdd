@@ -14,14 +14,12 @@ public class ForgotPasswordAction {
     private final WebDriverWait wait;
     private final JavascriptExecutor jsExecutor;
 
-    // Constructor initializing the page locator, WebDriverWait, and JavaScript executor
     public ForgotPasswordAction() {
         this.forgotPage = new ForgotPasswordLocator();
         this.wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
         this.jsExecutor = (JavascriptExecutor) HelperClass.getDriver();
     }
 
-    // Clicks on the "Forgotten Password" link
     public void clickForgotPassword() {
         try {
             waitAndClick(forgotPage.forgotPasswordLink);
@@ -29,8 +27,6 @@ public class ForgotPasswordAction {
             System.out.println("Error clicking Forgot Password link: " + e.getMessage());
         }
     }
-
-    // Enters the email address into the input field
     public void enterEmail(String email) {
         try {
             forgotPage.emailInput.sendKeys(email);
@@ -39,7 +35,6 @@ public class ForgotPasswordAction {
         }
     }
 
-    // Clicks the Continue button to submit the request
     public void clickContinueButton() {
         try {
             waitAndClickWithRetry(forgotPage.continueButton);
@@ -48,7 +43,7 @@ public class ForgotPasswordAction {
         }
     }
 
-    // Verifies the success alert message after password reset request
+ 
     public String verifySuccessMessage() {
         try {
             return waitForAlertText(forgotPage.successAlert);
@@ -57,8 +52,6 @@ public class ForgotPasswordAction {
             return "";
         }
     }
-
-    // Verifies the error alert message for invalid/empty email input
     public String verifyErrorMessage() {
         try {
             return waitForAlertText(forgotPage.errorAlert);
@@ -68,7 +61,6 @@ public class ForgotPasswordAction {
         }
     }
 
-    // Helper method to scroll and click element with wait
     private void waitAndClick(WebElement element) {
         try {
             scrollToElement(element);
@@ -78,7 +70,6 @@ public class ForgotPasswordAction {
         }
     }
 
-    // Helper method to retry clicking in case of stale element
     private void waitAndClickWithRetry(WebElement element) {
         int attempts = 0;
         while (attempts < 3) {
