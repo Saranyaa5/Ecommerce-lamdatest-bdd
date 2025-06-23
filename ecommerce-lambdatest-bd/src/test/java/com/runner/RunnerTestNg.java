@@ -6,15 +6,15 @@ import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
     features = {
-//   		             "src/test/resources/com/features/ForgotPassword.feature",    
+   		             "src/test/resources/com/features/ForgotPassword.feature",    
    		             "src/test/resources/com/features/AddToCart.feature",
-//   		    	     "src/test/resources/com/features/UserAccountManagement.feature",
-//    		    	     "src/test/resources/com/features/ProductReview.feature",
-//   		             "src/test/resources/com/features/EstimateShippingStatus.feature",
- //  		 	         "src/test/resources/com/features/FAQ.feature",
- //   		 	         "src/test/resources/com/features/Verify_product_url.feature",
- // 		              "src/test/resources/com/features/ShoppingCartTableVerification.feature",
-//    		              "src/test/resources/com/features/linkchecker.feature"
+   		    	     "src/test/resources/com/features/UserAccountManagement.feature",
+    		    	     "src/test/resources/com/features/ProductReview.feature",
+   		             "src/test/resources/com/features/EstimateShippingStatus.feature",
+   		 	         "src/test/resources/com/features/FAQ.feature",
+    		 	         "src/test/resources/com/features/Verify_product_url.feature",
+  		              "src/test/resources/com/features/ShoppingCartTableVerification.feature",
+    		              "src/test/resources/com/features/linkchecker.feature"
     },
     glue = {"com.definitions"},
     plugin = {
