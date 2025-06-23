@@ -19,7 +19,12 @@ public class Verify_product_url_action {
 
     // This method waits until the URL contains the expected keyword, then returns the current URL
     public String getProductUrl(String expectedKeywordInUrl) {
-        wait.until(ExpectedConditions.urlContains(expectedKeywordInUrl));
+        try {
+            Thread.sleep(1000);
+            wait.until(ExpectedConditions.urlContains(expectedKeywordInUrl));
+        } catch (InterruptedException e) {
+            System.out.println("Thread interrupted: " + e.getMessage());
+        }
         return driver.getCurrentUrl();
     }
 }

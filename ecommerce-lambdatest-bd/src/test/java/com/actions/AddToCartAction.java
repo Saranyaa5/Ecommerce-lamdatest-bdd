@@ -66,6 +66,7 @@ public class AddToCartAction {
 
     public String getSuccessMessage() {
         try {
+            Thread.sleep(1000); // Sleep before assertion
             return wait.until(ExpectedConditions.refreshed(
                 ExpectedConditions.visibilityOf(cartLocator.successMsg)
             )).getText().trim().replaceAll("\\s+", " ").replace(" !", "!");
@@ -107,6 +108,7 @@ public class AddToCartAction {
 
     public String getEmptyCartMessage() {
         try {
+            Thread.sleep(1000); // Sleep before assertion
             return wait.until(ExpectedConditions.refreshed(
                 ExpectedConditions.visibilityOf(cartLocator.noItem)
             )).getText();
@@ -131,6 +133,7 @@ public class AddToCartAction {
 
     public String ProductQuantity() {
         try {
+            Thread.sleep(1000); // Sleep before assertion
             return wait.until(ExpectedConditions.refreshed(
                 ExpectedConditions.visibilityOf(cartLocator.noOfItems)
             )).getText();
@@ -152,6 +155,7 @@ public class AddToCartAction {
 
     public String getSizeReq() {
         try {
+            Thread.sleep(1000); // Sleep before assertion
             return wait.until(ExpectedConditions.refreshed(
                 ExpectedConditions.visibilityOf(cartLocator.sizeReq)
             )).getText();
