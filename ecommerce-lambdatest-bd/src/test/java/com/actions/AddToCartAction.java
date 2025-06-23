@@ -22,7 +22,7 @@ public class AddToCartAction {
     public AddToCartAction() {
         cartLocator = new AddToCartLocator();
         PageFactory.initElements(driver, cartLocator);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(20));
     }
 
     public void clickOnCategory() {
