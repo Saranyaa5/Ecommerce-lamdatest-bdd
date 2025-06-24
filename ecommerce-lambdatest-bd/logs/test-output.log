@@ -28356,3 +28356,138 @@ Session ID: 0b632e760104e59694513e2fc82239b7
 2025-06-22 21:58:57 [TestNG-PoolService-6] ERROR: Scenario failed: Selecting the add to cart option for a product
 2025-06-22 21:59:03 [TestNG-PoolService-5] INFO : Scenario passed: User tries to login with valid credentials and logs out
 >>>>>>> branch 'main' of https://github.com/Saranyaa5/Ecommerce-lamdatest-bdd.git
+2025-06-24 17:18:33 [TestNG-PoolService-6] INFO : Scenario started: Verify that all links on the homepage redirect correctly
+2025-06-24 17:18:33 [TestNG-PoolService-1] INFO : Scenario started: user clicks on alert designs of addOns
+2025-06-24 17:18:33 [TestNG-PoolService-8] INFO : Scenario started: To reorder the product in the order  history
+2025-06-24 17:18:33 [TestNG-PoolService-4] INFO : Scenario started: To redirect to the product page after clicking Head phones poster
+2025-06-24 17:18:33 [TestNG-PoolService-5] INFO : Scenario started: To redirect to the trending product page when clicking the product
+2025-06-24 17:18:33 [TestNG-PoolService-3] INFO : Scenario started: To redirected to the product page after clicking Shop Now button in Block 2
+2025-06-24 17:18:33 [TestNG-PoolService-2] INFO : Scenario started: To assert the Functioning of Webelements in home page
+2025-06-24 17:18:33 [TestNG-PoolService-7] INFO : Scenario started: To checkout view the order history after ordering
+2025-06-24 17:18:33 [TestNG-PoolService-9] INFO : Scenario started: to view the order history after ordering as a guest user
+2025-06-24 17:18:33 [TestNG-PoolService-10] INFO : Scenario started: To checkout the shopping cart as a guest user
+2025-06-24 17:18:38 [TestNG-PoolService-2] INFO : asserting the home page block 1 element is successfull
+2025-06-24 17:18:38 [TestNG-PoolService-2] INFO : Scenario passed: To assert the Functioning of Webelements in home page
+2025-06-24 17:18:40 [TestNG-PoolService-2] INFO : Scenario started: To checkout the empty shopping cart as a registered user
+2025-06-24 17:18:41 [TestNG-PoolService-5] INFO : Successfully is successfull
+2025-06-24 17:18:41 [TestNG-PoolService-5] INFO : Scenario passed: To redirect to the trending product page when clicking the product
+2025-06-24 17:18:42 [TestNG-PoolService-3] INFO : Successfully verified MPOW product page
+2025-06-24 17:18:42 [TestNG-PoolService-3] INFO : Scenario passed: To redirected to the product page after clicking Shop Now button in Block 2
+2025-06-24 17:18:43 [TestNG-PoolService-5] INFO : Scenario started: To checkout the  cart as a registered user
+2025-06-24 17:18:43 [TestNG-PoolService-3] INFO : Scenario started: To checkout the  cart with existing email
+2025-06-24 17:18:43 [TestNG-PoolService-1] INFO : Scenario passed: user clicks on alert designs of addOns
+2025-06-24 17:18:45 [TestNG-PoolService-1] INFO : Scenario started: To perform compare without adding products to list
+2025-06-24 17:18:57 [TestNG-PoolService-2] INFO : Verified: Cart is empty with correct message.
+2025-06-24 17:18:57 [TestNG-PoolService-2] INFO : Scenario passed: To checkout the empty shopping cart as a registered user
+2025-06-24 17:18:59 [TestNG-PoolService-2] INFO : Scenario started: To Add the products to comparision list
+2025-06-24 17:19:03 [TestNG-PoolService-1] INFO : Scenario passed: To perform compare without adding products to list
+2025-06-24 17:19:05 [TestNG-PoolService-1] INFO : Scenario started: To Add the products to comparision list
+2025-06-24 17:19:11 [TestNG-PoolService-1] INFO : Scenario passed: To Add the products to comparision list
+2025-06-24 17:19:12 [TestNG-PoolService-1] INFO : Scenario started: Register with valid inputs
+2025-06-24 17:19:15 [TestNG-PoolService-6] INFO : no of links in the homepage is not working working in homepage: 1
+2025-06-24 17:19:15 [TestNG-PoolService-6] INFO : Scenario passed: Verify that all links on the homepage redirect correctly
+2025-06-24 17:19:16 [TestNG-PoolService-6] INFO : Scenario started: Register with invalid inputs
+2025-06-24 17:19:22 [TestNG-PoolService-9] ERROR: Scenario failed: to view the order history after ordering as a guest user
+2025-06-24 17:19:22 [TestNG-PoolService-10] ERROR: Scenario failed: To checkout the shopping cart as a guest user
+2025-06-24 17:19:22 [TestNG-PoolService-8] ERROR: Scenario failed: To reorder the product in the order  history
+2025-06-24 17:19:23 [TestNG-PoolService-1] INFO : Assertion Passed: Expected message 'Your Account Has Been Created!' is displayed successfully.
+2025-06-24 17:19:23 [TestNG-PoolService-1] INFO : Scenario passed: Register with valid inputs
+2025-06-24 17:19:23 [TestNG-PoolService-7] ERROR: Scenario failed: To checkout view the order history after ordering
+2025-06-24 17:19:23 [TestNG-PoolService-9] INFO : Scenario started: Register with invalid inputs
+2025-06-24 17:19:24 [TestNG-PoolService-10] INFO : Scenario started: Register with invalid inputs
+2025-06-24 17:19:24 [TestNG-PoolService-8] INFO : Scenario started: Register with invalid inputs
+2025-06-24 17:19:24 [TestNG-PoolService-1] INFO : Scenario started: Register with +valid inputs  with out checking privacy policy
+2025-06-24 17:19:25 [TestNG-PoolService-6] INFO : Assertion Passed for 'empty first name': Expected and actual message matched: 'First Name must be between 1 and 32 characters!'
+2025-06-24 17:19:25 [TestNG-PoolService-6] INFO : Scenario passed: Register with invalid inputs
+2025-06-24 17:19:31 [TestNG-PoolService-5] ERROR: Scenario failed: To checkout the  cart as a registered user
+2025-06-24 17:19:32 [TestNG-PoolService-1] INFO : User didn't accept the privacy policy
+2025-06-24 17:19:32 [TestNG-PoolService-3] ERROR: Scenario failed: To checkout the  cart with existing email
+2025-06-24 17:19:32 [TestNG-PoolService-9] INFO : Assertion Passed for 'existing email': Expected and actual message matched: 'Warning: E-Mail Address is already registered!'
+2025-06-24 17:19:32 [TestNG-PoolService-9] INFO : Scenario passed: Register with invalid inputs
+2025-06-24 17:19:32 [TestNG-PoolService-10] INFO : Assertion Passed for 'empty password': Expected and actual message matched: 'Password must be between 4 and 20 characters!'
+2025-06-24 17:19:32 [TestNG-PoolService-10] INFO : Scenario passed: Register with invalid inputs
+2025-06-24 17:19:33 [TestNG-PoolService-1] INFO : Assertion Passed for 'Not checking privacy policy': Expected and actual message matched: 'Warning: You must agree to the Privacy Policy!'
+2025-06-24 17:19:33 [TestNG-PoolService-1] INFO : Scenario passed: Register with +valid inputs  with out checking privacy policy
+2025-06-24 17:19:33 [TestNG-PoolService-8] INFO : Assertion Passed for 'password mismatch': Expected and actual message matched: 'Password confirmation does not match password!'
+2025-06-24 17:19:33 [TestNG-PoolService-8] INFO : Scenario passed: Register with invalid inputs
+2025-06-24 17:19:38 [TestNG-PoolService-4] ERROR: Scenario failed: To redirect to the product page after clicking Head phones poster
+2025-06-24 17:19:39 [TestNG-PoolService-2] INFO : Scenario passed: To Add the products to comparision list
+2025-06-24 17:20:22 [TestNG-PoolService-3] INFO : Scenario started: To Add the products to comparision list
+2025-06-24 17:20:22 [TestNG-PoolService-1] INFO : Scenario started: To perform compare without adding products to list
+2025-06-24 17:20:22 [TestNG-PoolService-2] INFO : Scenario started: To Add the products to comparision list
+2025-06-24 17:20:29 [TestNG-PoolService-3] INFO : Scenario passed: To Add the products to comparision list
+2025-06-24 17:20:40 [TestNG-PoolService-1] INFO : Scenario passed: To perform compare without adding products to list
+2025-06-24 17:21:06 [TestNG-PoolService-2] INFO : Scenario passed: To Add the products to comparision list
+2025-06-24 17:22:33 [TestNG-PoolService-4] INFO : Scenario started: To checkout the  cart with existing email
+2025-06-24 17:22:33 [TestNG-PoolService-3] INFO : Scenario started: To checkout the  cart as a registered user
+2025-06-24 17:22:33 [TestNG-PoolService-1] INFO : Scenario started: To checkout the shopping cart as a guest user
+2025-06-24 17:22:33 [TestNG-PoolService-2] INFO : Scenario started: To checkout the empty shopping cart as a registered user
+2025-06-24 17:22:50 [TestNG-PoolService-2] INFO : Verified: Cart is empty with correct message.
+2025-06-24 17:22:50 [TestNG-PoolService-2] INFO : Scenario passed: To checkout the empty shopping cart as a registered user
+2025-06-24 17:23:21 [TestNG-PoolService-1] ERROR: Scenario failed: To checkout the shopping cart as a guest user
+2025-06-24 17:23:21 [TestNG-PoolService-4] ERROR: Scenario failed: To checkout the  cart with existing email
+2025-06-24 17:23:22 [TestNG-PoolService-3] ERROR: Scenario failed: To checkout the  cart as a registered user
+2025-06-24 17:26:23 [TestNG-PoolService-2] INFO : Scenario started: To checkout the empty shopping cart as a registered user
+2025-06-24 17:26:23 [TestNG-PoolService-4] INFO : Scenario started: To checkout the  cart with existing email
+2025-06-24 17:26:23 [TestNG-PoolService-1] INFO : Scenario started: To checkout the shopping cart as a guest user
+2025-06-24 17:26:23 [TestNG-PoolService-3] INFO : Scenario started: To checkout the  cart as a registered user
+2025-06-24 17:26:40 [TestNG-PoolService-2] INFO : Verified: Cart is empty with correct message.
+2025-06-24 17:26:40 [TestNG-PoolService-2] INFO : Scenario passed: To checkout the empty shopping cart as a registered user
+2025-06-24 17:27:11 [TestNG-PoolService-3] ERROR: Scenario failed: To checkout the  cart as a registered user
+2025-06-24 17:27:11 [TestNG-PoolService-1] ERROR: Scenario failed: To checkout the shopping cart as a guest user
+2025-06-24 17:27:11 [TestNG-PoolService-4] ERROR: Scenario failed: To checkout the  cart with existing email
+2025-06-24 17:28:41 [TestNG-PoolService-4] INFO : Scenario started: To checkout the  cart with existing email
+2025-06-24 17:28:41 [TestNG-PoolService-3] INFO : Scenario started: To checkout the  cart as a registered user
+2025-06-24 17:28:41 [TestNG-PoolService-2] INFO : Scenario started: To checkout the empty shopping cart as a registered user
+2025-06-24 17:28:41 [TestNG-PoolService-1] INFO : Scenario started: To checkout the shopping cart as a guest user
+2025-06-24 17:28:59 [TestNG-PoolService-2] INFO : Verified: Cart is empty with correct message.
+2025-06-24 17:28:59 [TestNG-PoolService-2] INFO : Scenario passed: To checkout the empty shopping cart as a registered user
+2025-06-24 17:29:21 [TestNG-PoolService-4] INFO : Duplicate email error message verified successfully.
+2025-06-24 17:29:21 [TestNG-PoolService-4] INFO : Scenario passed: To checkout the  cart with existing email
+2025-06-24 17:29:23 [TestNG-PoolService-3] INFO : Order placed successfully. Success message verified.
+2025-06-24 17:29:23 [TestNG-PoolService-3] INFO : Scenario passed: To checkout the  cart as a registered user
+2025-06-24 17:29:24 [TestNG-PoolService-1] INFO : Order placed successfully. Success message verified.
+2025-06-24 17:29:24 [TestNG-PoolService-1] INFO : Scenario passed: To checkout the shopping cart as a guest user
+2025-06-24 17:30:44 [TestNG-PoolService-1] INFO : Scenario started: To checkout the shopping cart as a guest user
+2025-06-24 17:30:44 [TestNG-PoolService-3] INFO : Scenario started: To checkout the  cart as a registered user
+2025-06-24 17:30:44 [TestNG-PoolService-4] INFO : Scenario started: To checkout the  cart with existing email
+2025-06-24 17:30:44 [TestNG-PoolService-2] INFO : Scenario started: To checkout the empty shopping cart as a registered user
+2025-06-24 17:31:01 [TestNG-PoolService-2] INFO : Verified: Cart is empty with correct message.
+2025-06-24 17:31:01 [TestNG-PoolService-2] INFO : Scenario passed: To checkout the empty shopping cart as a registered user
+2025-06-24 17:31:32 [TestNG-PoolService-1] ERROR: Scenario failed: To checkout the shopping cart as a guest user
+2025-06-24 17:31:33 [TestNG-PoolService-3] ERROR: Scenario failed: To checkout the  cart as a registered user
+2025-06-24 17:31:33 [TestNG-PoolService-4] ERROR: Scenario failed: To checkout the  cart with existing email
+2025-06-24 20:31:01 [TestNG-PoolService-1] INFO : Scenario started: To checkout the shopping cart as a guest user
+2025-06-24 20:31:04 [TestNG-PoolService-2] INFO : Scenario started: To checkout the empty shopping cart as a registered user
+2025-06-24 20:31:05 [TestNG-PoolService-3] INFO : Scenario started: To checkout the  cart as a registered user
+2025-06-24 20:31:06 [TestNG-PoolService-4] INFO : Scenario started: To checkout the  cart with existing email
+2025-06-24 20:31:21 [TestNG-PoolService-2] INFO : Verified: Cart is empty with correct message.
+2025-06-24 20:31:21 [TestNG-PoolService-2] INFO : Scenario passed: To checkout the empty shopping cart as a registered user
+2025-06-24 20:32:14 [TestNG-PoolService-4] INFO : Scenario started: To checkout the  cart with existing email
+2025-06-24 20:32:14 [TestNG-PoolService-1] INFO : Scenario started: To checkout the shopping cart as a guest user
+2025-06-24 20:32:14 [TestNG-PoolService-3] INFO : Scenario started: To checkout the  cart as a registered user
+2025-06-24 20:32:14 [TestNG-PoolService-2] INFO : Scenario started: To checkout the empty shopping cart as a registered user
+2025-06-24 20:32:32 [TestNG-PoolService-2] INFO : Verified: Cart is empty with correct message.
+2025-06-24 20:32:32 [TestNG-PoolService-2] INFO : Scenario passed: To checkout the empty shopping cart as a registered user
+2025-06-24 20:33:07 [TestNG-PoolService-1] ERROR: Scenario failed: To checkout the shopping cart as a guest user
+2025-06-24 20:33:10 [TestNG-PoolService-3] ERROR: Scenario failed: To checkout the  cart as a registered user
+2025-06-24 20:33:13 [TestNG-PoolService-4] ERROR: Scenario failed: To checkout the  cart with existing email
+2025-06-24 20:38:25 [TestNG-PoolService-2] INFO : Scenario started: To checkout the empty shopping cart as a registered user
+2025-06-24 20:38:25 [TestNG-PoolService-4] INFO : Scenario started: To checkout the  cart with existing email
+2025-06-24 20:38:25 [TestNG-PoolService-1] INFO : Scenario started: To checkout the shopping cart as a guest user
+2025-06-24 20:38:26 [TestNG-PoolService-3] INFO : Scenario started: To checkout the  cart as a registered user
+2025-06-24 20:38:47 [TestNG-PoolService-2] INFO : Verified: Cart is empty with correct message.
+2025-06-24 20:38:47 [TestNG-PoolService-2] INFO : Scenario passed: To checkout the empty shopping cart as a registered user
+2025-06-24 20:39:21 [TestNG-PoolService-4] ERROR: Scenario failed: To checkout the  cart with existing email
+2025-06-24 20:39:22 [TestNG-PoolService-1] ERROR: Scenario failed: To checkout the shopping cart as a guest user
+2025-06-24 20:39:23 [TestNG-PoolService-3] ERROR: Scenario failed: To checkout the  cart as a registered user
+2025-06-24 22:22:14 [TestNG-PoolService-2] INFO : Scenario started: To checkout the empty shopping cart as a registered user
+2025-06-24 22:22:14 [TestNG-PoolService-3] INFO : Scenario started: To checkout the  cart as a registered user
+2025-06-24 22:22:16 [TestNG-PoolService-1] INFO : Scenario started: To checkout the shopping cart as a guest user
+2025-06-24 22:22:17 [TestNG-PoolService-4] INFO : Scenario started: To checkout the  cart with existing email
+2025-06-24 22:22:43 [TestNG-PoolService-2] INFO : Verified: Cart is empty with correct message.
+2025-06-24 22:22:43 [TestNG-PoolService-2] INFO : Scenario passed: To checkout the empty shopping cart as a registered user
+2025-06-24 22:23:28 [TestNG-PoolService-3] ERROR: Scenario failed: To checkout the  cart as a registered user
+2025-06-24 22:24:12 [TestNG-PoolService-1] INFO : Order placed successfully. Success message verified.
+2025-06-24 22:24:12 [TestNG-PoolService-1] INFO : Scenario passed: To checkout the shopping cart as a guest user
+2025-06-24 22:24:29 [TestNG-PoolService-4] ERROR: Scenario failed: To checkout the  cart with existing email
