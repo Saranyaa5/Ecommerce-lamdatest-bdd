@@ -49,6 +49,7 @@ public class ProductReviewDefinition {
     public void error_message_should_be_displayed(String expectedMessage) {
     	
     		String text =  reviewAction.ErrorMessage();
+    		 System.out.println("Actual:"+text);
     		Assert.assertTrue(text.contains(expectedMessage));
     	
     	

@@ -28,6 +28,7 @@ public class AddToCartDefinition {
     @Then("user should see a confirmation message stating {string}")
     public void verifySuccessMessage(String expectedMessage) {
         String actualMsg = cartAction.getSuccessMessage();
+        System.out.println("Actual:"+actualMsg);
         Assert.assertTrue(actualMsg.contains(expectedMessage), "Actual message: " + actualMsg);
     }
 
@@ -48,6 +49,7 @@ public class AddToCartDefinition {
         Assert.assertTrue(text.contains(expectedMessage), "Actual message: " + text);}
     	else {
     		String text1 = cartAction.ProductQuantity();
+    		 System.out.println("Actual:"+text1);
             Assert.assertTrue(text1.contains(expectedMessage), "Actual message: " + text1);
     	}
     }
@@ -66,6 +68,7 @@ public class AddToCartDefinition {
     @Then("user should see a message {string}")
     public void sizeReq(String expectedMessage) {
         String actualMsg = cartAction.getSizeReq();
+        System.out.println("Actual:"+actualMsg);
         Assert.assertTrue(actualMsg.contains(expectedMessage), "Actual message: " + actualMsg);
     }
     

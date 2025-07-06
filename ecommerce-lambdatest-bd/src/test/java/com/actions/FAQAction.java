@@ -22,11 +22,11 @@ public class FAQAction {
     }
 
     public void validateFAQButtons() {
-        try {
-            Thread.sleep(1000); // Wait 1 second before clicking FAQ
-        } catch (InterruptedException e) {
-            System.out.println("Thread interrupted: " + e.getMessage());
-        }
+//        try {
+//            Thread.sleep(1000); // Wait 1 second before clicking FAQ
+//        } catch (InterruptedException e) {
+//            System.out.println("Thread interrupted: " + e.getMessage());
+//        }
         wait.until(ExpectedConditions.elementToBeClickable(faqlocator.changeshippingaddress)).click();
     }
 
