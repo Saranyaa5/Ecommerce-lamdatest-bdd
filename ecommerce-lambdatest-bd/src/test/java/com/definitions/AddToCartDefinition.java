@@ -45,7 +45,8 @@ public class AddToCartDefinition {
     public void verifyEmptyCartMessage(String expectedMessage) {
     	if(expectedMessage.equals("Your shopping cart is empty!")) {
         String text = cartAction.getEmptyCartMessage();
-        //Assert.assertTrue(text.contains(expectedMessage), "Actual message: " + text);}
+        //Assert.assertTrue(text.contains(expectedMessage), "Actual message: " + text);
+        }
     	else {
     		String text1 = cartAction.ProductQuantity();
            // Assert.assertTrue(text1.contains(expectedMessage), "Actual message: " + text1);
