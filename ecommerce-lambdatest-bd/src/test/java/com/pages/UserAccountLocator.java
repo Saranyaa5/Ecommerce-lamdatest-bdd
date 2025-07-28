@@ -23,7 +23,7 @@ public class UserAccountLocator {
     @FindBy(xpath="//div[@class='float-left']/following-sibling::div/input")
     public WebElement editContinue;  // Renamed to 'editContinue'
 
-    @FindBy(xpath="//div[text()=' Success: Your account has been successfully updated.']")
+    @FindBy(xpath="//*[@id='account-account']/div[1]")
     public WebElement edited;  // Renamed to 'edited'
 
     @FindBy(xpath="//*[@id='input-password']")
@@ -35,13 +35,13 @@ public class UserAccountLocator {
     @FindBy(xpath="//*[@id='content']/form/div[3]/div[2]/input")
     public WebElement passContinue;  // Renamed to 'passContinue'
 
-    @FindBy(xpath="//div[text()=' Success: Your password has been successfully updated.']")
+    @FindBy(xpath="//*[@id='account-account']/div[1]")
     public WebElement passChanged;  // Renamed to 'passChanged'
 
     @FindBy(xpath="//*[@id=\"content\"]/div[1]/table/tbody/tr/td[6]/a")
     public WebElement removeFromWishlist;  // Renamed to 'removeFromWishlist'
 
-    @FindBy(xpath="//button[text()='×']/parent::div")
+    @FindBy(xpath="//*[@id='account-wishlist']/div[1]")
     public WebElement modifiedWishList;  // Renamed to 'modifiedWishList'
 
     @FindBy(xpath="//*[@id='content']/form/fieldset/div/div/div[1]/label")
@@ -53,10 +53,10 @@ public class UserAccountLocator {
     @FindBy(xpath="//input[@value='Continue']")
     public WebElement newsletterContinue;  // Renamed to 'newsletterContinue'
 
-    @FindBy(xpath="//div[text()=' Success: Your newsletter subscription has been successfully updated!']")
+    @FindBy(xpath="//*[@id='account-account']/div[1]")
     public WebElement newsLetterUpdated;  
 
-    @FindBy(xpath="//div[text()='Password must be between 4 and 20 characters!']")
+    @FindBy(xpath="//*[@id=\"content\"]/form/div[1]/div/div")
     public WebElement passwordEmpty;  // Renamed to 'passwordEmpty'
 
     @FindBy(xpath="//*[@id=\"content\"]/div[1]/div/div/div[3]/a")
@@ -68,7 +68,7 @@ public class UserAccountLocator {
     @FindBy(xpath="//*[@id=\"content\"]/form/div/div[2]/input")
     public WebElement modifyAddressContinue;  
 
-    @FindBy(xpath="//div[text()=' Your address has been successfully added']")
+    @FindBy(xpath="//*[@id=\"account-address\"]/div[1]")
     public WebElement newAddressCreated;  
 
     @FindBy(xpath="//*[@id=\"input-firstname\"]")
