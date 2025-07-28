@@ -33,60 +33,41 @@ public class EstimateShippingACtion {
     }
 
     public void Shoppingcart() {
-        wait.until(ExpectedConditions.elementToBeClickable(addTocartLocator.shoppingCartIcon)).click();
+        addTocartLocator.shoppingCartIcon.click();
     }
 
     public void EditCartbutton() {
-        wait.until(ExpectedConditions.elementToBeClickable(addTocartLocator.editCart)).click();
+        addTocartLocator.editCart.click();
     }
 
     public void EstimateShippingButton() {
-        try {
-            wait.until(ExpectedConditions.visibilityOf(estimateShippingLocator.estimateShipping));
-            wait.until(ExpectedConditions.elementToBeClickable(estimateShippingLocator.estimateShipping)).click();
-        } catch (Exception e) {
-            System.out.println("Estimate Shipping button not found or not clickable: " + e.getMessage());
-        }
+        estimateShippingLocator.estimateShipping.click();
     }
 
     public void EnterDetails() {
-        try {
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.countrySelect)).click();
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.unitedStates)).click();
+        // Click country dropdown and select United States
+        wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.countrySelect)).click();
+        wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.unitedStates)).click();
 
-            wait.until(ExpectedConditions.visibilityOf(userAccountLocator.state));
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.state)).click();
+        // Wait until state dropdown is visible and clickable
+        wait.until(ExpectedConditions.visibilityOf(userAccountLocator.state));
+        wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.state)).click();
 
-            wait.until(ExpectedConditions.visibilityOf(userAccountLocator.aberdeen));
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.aberdeen)).click();
-        } catch (Exception e) {
-            System.out.println("Error entering shipping details: " + e.getMessage());
-        }
+        // Wait until Abeerdan is visible and clickable
+        wait.until(ExpectedConditions.visibilityOf(userAccountLocator.aberdeen));
+        wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.aberdeen)).click();
     }
 
     public void GetQuotesButton() {
-        try {
-            wait.until(ExpectedConditions.elementToBeClickable(estimateShippingLocator.getQuotes)).click();
-        } catch (Exception e) {
-            System.out.println("Error clicking Get Quotes button: " + e.getMessage());
-        }
+        estimateShippingLocator.getQuotes.click();
     }
 
     public void selectsFlatShippingRate() {
-        try {
-            wait.until(ExpectedConditions.elementToBeClickable(estimateShippingLocator.flatShippingRadioButton)).click();
-            wait.until(ExpectedConditions.elementToBeClickable(estimateShippingLocator.applyShippingButton)).click();
-        } catch (Exception e) {
-            System.out.println("Error selecting flat rate shipping: " + e.getMessage());
-        }
+        estimateShippingLocator.flatShippingRadioButton.click();
+        estimateShippingLocator.applyShippingButton.click();
     }
 
     public String EstimateShippingSuccessmsg() {
-        try {
-            return wait.until(ExpectedConditions.visibilityOf(estimateShippingLocator.estimateShippingSuccessMsg)).getText();
-        } catch (Exception e) {
-            System.out.println("Shipping success message not found: " + e.getMessage());
-            return null;
-        }
+        return estimateShippingLocator.estimateShippingSuccessMsg.getText();
     }
 }
