@@ -89,7 +89,7 @@ public class UserAccountDefinition {
             default:
                 throw new IllegalArgumentException("Unknown message: " + expectedMessage);
         }
-
+System.out.println("Actual:"+actualMessage);
         //Assert.assertTrue(actualMessage.contains(expectedMessage));
     }
 
