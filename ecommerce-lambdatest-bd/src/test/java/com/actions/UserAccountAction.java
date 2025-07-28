@@ -1,7 +1,6 @@
 package com.actions;
 
 import java.time.Duration;
-
 import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -28,7 +27,6 @@ public class UserAccountAction {
         wait = new WebDriverWait(driver, Duration.ofSeconds(15));
     }
 
-    // Edit personal information
     public void EditInformation() {
         try {
             wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.editInfo)).click();
@@ -37,7 +35,6 @@ public class UserAccountAction {
         }
     }
 
-    // Change account password
     public void changePassword() {
         try {
             wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.changePass)).click();
@@ -46,7 +43,6 @@ public class UserAccountAction {
         }
     }
 
-    // Modify wishlist
     public void ModifyWishlist() {
         try {
             wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.modifyWishlist)).click();
@@ -54,7 +50,7 @@ public class UserAccountAction {
             System.out.println("Error clicking Modify Wishlist: " + e.getMessage());
         }
     }
-// Navigate to newsletter preferences
+
     public void ClickNewsLetter() {
         try {
             wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.clickNewsLetter)).click();
@@ -62,24 +58,25 @@ public class UserAccountAction {
             System.out.println("Error clicking Newsletter: " + e.getMessage());
         }
     }
-// Update telephone number
+
     public void UpdateTelephoneNumber() {
         try {
             userAccountLocator.telephone.clear();
             userAccountLocator.telephone.sendKeys("8825428889");
         } catch (Exception e) {
             System.out.println("Error updating telephone: " + e.getMessage());
+        }
     }
-    }
- // Save edited personal information
+
     public void EditContinue() {
         try {
             wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.editContinue)).click();
         } catch (Exception e) {
             System.out.println("Error clicking Edit Continue: " + e.getMessage());
-        } }
+        }
+    }
 
- public String Edited() {
+    public String Edited() {
         return userAccountLocator.edited.getText();
     }
 
@@ -87,7 +84,6 @@ public class UserAccountAction {
         return userAccountLocator.passChanged.getText();
     }
 
-    // Enter new password and confirm
     public void EntersnewPass() {
         try {
             userAccountLocator.password.sendKeys("KIOT");
@@ -105,7 +101,6 @@ public class UserAccountAction {
         }
     }
 
-    // Remove a product from wishlist
     public void RemoveFromWishList() {
         try {
             List<WebElement> removeButtons = driver.findElements(By.cssSelector("a.btn.btn-light.btn-sm.text-danger"));
@@ -122,10 +117,17 @@ public class UserAccountAction {
     }
 
     public String ModifiedWishList() {
-        return userAccountLocator.modifiedWishList.getText();
+        try {
+            WebElement successAlert = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.xpath("//div[contains(@class,'alert-success') and contains(text(),'Success: You have modified your wish list')]")
+            ));
+            return successAlert.getText();
+        } catch (Exception e) {
+            System.out.println("Error fetching wishlist success message: " + e.getMessage());
+            return "Success message not found.";
+        }
     }
 
-    // Subscribe or unsubscribe newsletter
     public void selectNewsletterOption(String action) {
         try {
             wait.until(ExpectedConditions.visibilityOf(userAccountLocator.subscribeRadio));
@@ -137,16 +139,17 @@ public class UserAccountAction {
         } catch (Exception e) {
             System.out.println("Error selecting newsletter option: " + e.getMessage());
         }
-            }
+    }
 
     public void clickNewsLetterContinue() {
         try {
             wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.newsletterContinue)).click();
-         } catch (Exception e) {
+        } catch (Exception e) {
             System.out.println("Error clicking Newsletter Continue: " + e.getMessage());
-         }
-       }
- public String NewsLetterUpdated() {
+        }
+    }
+
+    public String NewsLetterUpdated() {
         return userAccountLocator.newsLetterUpdated.getText();
     }
 
@@ -191,7 +194,6 @@ public class UserAccountAction {
         return userAccountLocator.newAddressCreated.getText();
     }
 
-    // Fill in new address details
     public void enterAddressDetails(String firstName, String lastName, String address, String city, String postcode) {
         try {
             userAccountLocator.getFirstNameField.sendKeys(firstName);
@@ -199,19 +201,13 @@ public class UserAccountAction {
             userAccountLocator.getAddressField.sendKeys(address);
             userAccountLocator.getCityField.sendKeys(city);
             userAccountLocator.getPostcodeField.sendKeys(postcode);
-            
+
             wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.countrySelect)).click();
             wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.unitedStates)).click();
-
-           
             wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.state)).click();
-           
-            
             wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.aberdeen)).click();
         } catch (Exception e) {
             System.out.println("Error entering address details: " + e.getMessage());
         }
     }
-
-
 }
