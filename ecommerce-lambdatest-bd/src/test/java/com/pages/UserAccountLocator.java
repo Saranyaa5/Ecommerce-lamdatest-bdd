@@ -23,7 +23,7 @@ public class UserAccountLocator {
     @FindBy(xpath="//div[@class='float-left']/following-sibling::div/input")
     public WebElement editContinue;  // Renamed to 'editContinue'
 
-    @FindBy(xpath="//div[text()=' Success: Your account has been successfully updated.']")
+    @FindBy(xpath="//div[text()='Success: Your account has been successfully updated.']")
     public WebElement edited;  // Renamed to 'edited'
 
     @FindBy(xpath="//*[@id='input-password']")
@@ -35,7 +35,7 @@ public class UserAccountLocator {
     @FindBy(xpath="//*[@id='content']/form/div[3]/div[2]/input")
     public WebElement passContinue;  // Renamed to 'passContinue'
 
-    @FindBy(xpath="//div[text()=' Success: Your password has been successfully updated.']")
+    @FindBy(xpath="//div[text()='Success: Your password has been successfully updated.']")
     public WebElement passChanged;  // Renamed to 'passChanged'
 
     @FindBy(xpath="//*[@id=\"content\"]/div[1]/table/tbody/tr/td[6]/a")
