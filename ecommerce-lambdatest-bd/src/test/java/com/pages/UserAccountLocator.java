@@ -5,75 +5,51 @@ import org.openqa.selenium.support.FindBy;
 
 public class UserAccountLocator {
 
-    // Edit Info
-    @FindBy(xpath = "//a[text()='Edit your account information']")
-    public WebElement editInfoLink;
+    // Login
+    @FindBy(xpath = "//span[text()='My account']")
+    public WebElement myAccountDropdown;
 
-    @FindBy(xpath = "//input[@id='input-firstname']")
-    public WebElement getFirstNameField;
-
-    @FindBy(xpath = "//input[@id='input-lastname']")
-    public WebElement getLastNameField;
+    @FindBy(xpath = "//a[text()='Login']")
+    public WebElement loginLink;
 
     @FindBy(xpath = "//input[@id='input-email']")
-    public WebElement getEmailField;
+    public WebElement emailField;
 
-    @FindBy(xpath = "//input[@id='input-telephone']")
-    public WebElement getPhoneField;
+    @FindBy(xpath = "//input[@id='input-password']")
+    public WebElement passwordField;
+
+    @FindBy(xpath = "//input[@value='Login']")
+    public WebElement loginButton;
+
+    // Account Info
+    @FindBy(xpath = "//a[text()='Edit your account information']")
+    public WebElement editAccountLink;
+
+    @FindBy(id = "input-telephone")
+    public WebElement telephoneField;
 
     @FindBy(xpath = "//input[@value='Continue']")
-    public WebElement editContinueBtn;
+    public WebElement continueBtn;
+
+    @FindBy(xpath = "//div[contains(@class, 'alert-success')]")
+    public WebElement successMessage;
 
     // Change Password
     @FindBy(xpath = "//a[text()='Change your password']")
     public WebElement changePasswordLink;
 
-    @FindBy(xpath = "//input[@id='input-password']")
-    public WebElement newPasswordField;
+    @FindBy(id = "input-password")
+    public WebElement newPassword;
 
-    @FindBy(xpath = "//input[@id='input-confirm']")
-    public WebElement confirmPasswordField;
-
-    @FindBy(xpath = "//input[@value='Continue']")
-    public WebElement changePasswordContinueBtn;
+    @FindBy(id = "input-confirm")
+    public WebElement confirmPassword;
 
     // Wish List
     @FindBy(xpath = "//a[text()='Modify your wish list']")
     public WebElement wishListLink;
 
-    // Address Book
-    @FindBy(xpath = "//a[text()='Modify your address book entries']")
-    public WebElement addressBookLink;
-
-    @FindBy(xpath = "//a[text()='New Address']")
-    public WebElement newAddressLink;
-
-    @FindBy(xpath = "//input[@id='input-firstname']")
-    public WebElement addressFirstName;
-
-    @FindBy(xpath = "//input[@id='input-lastname']")
-    public WebElement addressLastName;
-
-    @FindBy(xpath = "//input[@id='input-address-1']")
-    public WebElement address1;
-
-    @FindBy(xpath = "//input[@id='input-city']")
-    public WebElement city;
-
-    @FindBy(xpath = "//input[@id='input-postcode']")
-    public WebElement postCode;
-
-    @FindBy(xpath = "//select[@id='input-country']")
-    public WebElement countryDropdown;
-
-    @FindBy(xpath = "//select[@id='input-zone']")
-    public WebElement stateDropdown;
-
-    @FindBy(xpath = "//input[@name='default' and @value='1']")
-    public WebElement defaultAddressYesRadio;
-
-    @FindBy(xpath = "//input[@value='Continue']")
-    public WebElement newAddressContinueBtn;
+    @FindBy(xpath = "//a[@data-original-title='Remove']")
+    public WebElement removeWishListItem;
 
     // Newsletter
     @FindBy(xpath = "//a[text()='Subscribe / unsubscribe to newsletter']")
@@ -82,10 +58,40 @@ public class UserAccountLocator {
     @FindBy(xpath = "//input[@name='newsletter' and @value='1']")
     public WebElement subscribeYesRadio;
 
-    @FindBy(xpath = "//input[@value='Continue']")
-    public WebElement newsletterContinueBtn;
+    @FindBy(xpath = "//input[@name='newsletter' and @value='0']")
+    public WebElement subscribeNoRadio;
 
-    // Common Success Message
-    @FindBy(xpath = "//div[contains(@class,'alert-success')]")
-    public WebElement successAlert;
+    // Address Book
+    @FindBy(xpath = "//a[text()='Modify your address book entries']")
+    public WebElement addressBookLink;
+
+    @FindBy(xpath = "//a[text()='New Address']")
+    public WebElement newAddressBtn;
+
+    @FindBy(id = "input-firstname")
+    public WebElement firstNameField;
+
+    @FindBy(id = "input-lastname")
+    public WebElement lastNameField;
+
+    @FindBy(id = "input-address-1")
+    public WebElement address1Field;
+
+    @FindBy(id = "input-city")
+    public WebElement cityField;
+
+    @FindBy(id = "input-postcode")
+    public WebElement postCodeField;
+
+    @FindBy(id = "input-country")
+    public WebElement countryDropdown;
+
+    @FindBy(id = "input-zone")
+    public WebElement regionDropdown;
+
+    @FindBy(xpath = "//input[@name='default' and @value='1']")
+    public WebElement defaultAddressYes;
+
+    @FindBy(xpath = "//input[@value='Continue']")
+    public WebElement addressContinueBtn;
 }
