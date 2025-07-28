@@ -1,9 +1,12 @@
 package com.actions;
 
 import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import com.pages.FAQLocator;
 import com.utilities.HelperClass;
 
@@ -19,11 +22,17 @@ public class FAQAction {
     }
 
     public void validateFAQButtons() {
-        faqlocator.changeshippingaddress.click();
-       
+//        try {
+//            Thread.sleep(1000); // Wait 1 second before clicking FAQ
+//        } catch (InterruptedException e) {
+//            System.out.println("Thread interrupted: " + e.getMessage());
+//        }
+        wait.until(ExpectedConditions.elementToBeClickable(faqlocator.changeshippingaddress)).click();
     }
 
     public String faqmessageList() {
-        return faqlocator.changeshippingaddressmsg.getText();
+        wait.until(ExpectedConditions.visibilityOf(faqlocator.changeshippingaddressmsg));
+        String msg = faqlocator.changeshippingaddressmsg.getText().trim().replaceAll("\\s+", " ");
+        return msg;
     }
 }

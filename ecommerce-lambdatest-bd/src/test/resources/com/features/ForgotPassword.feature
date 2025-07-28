@@ -15,5 +15,5 @@ Feature: Soundar_09APR2025_LambdaTesters_ForgotPassword
     Examples:
       | email                | message                                                                |
       | 2k21eee65@kiot.ac.in | An email with a confirmation link has been sent your email address.    |
-      | 2k21eee33@kiot.ac.in | Warning: The E-Mail Address was not found in our records, please try again! |
+      | 2k21eee89@kiot.ac.in | Warning: The E-Mail Address was not found in our records, please try again! |
       |                      | Warning: The E-Mail Address was not found in our records, please try again! |

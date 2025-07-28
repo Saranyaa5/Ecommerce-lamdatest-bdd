@@ -1,17 +1,19 @@
 package com.actions;
 
 import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import com.pages.ProductReviewLocator;
 import com.utilities.HelperClass;
 
 public class ProductReviewAction {
 
     WebDriver driver = HelperClass.getDriver();
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
     ProductReviewLocator reviewPage = new ProductReviewLocator();
 
     // Enters name into the input field
@@ -59,6 +61,7 @@ public class ProductReviewAction {
         }
 
         try {
+            Thread.sleep(1000); // Wait 1 second before clicking rating
             if (ratingElement != null) {
                 wait.until(ExpectedConditions.elementToBeClickable(ratingElement)).click();
             } else {
@@ -72,6 +75,7 @@ public class ProductReviewAction {
     // Clicks the continue button to submit the review
     public void clickContinue() {
         try {
+            Thread.sleep(1000); // Optional wait before clicking continue
             wait.until(ExpectedConditions.elementToBeClickable(reviewPage.continueButton)).click();
         } catch (Exception e) {
             System.out.println("Error clicking continue: " + e.getMessage());
