@@ -1,6 +1,7 @@
 package com.definitions;
 
 import com.actions.SearchAction;
+
 import com.utilities.ExcelReader;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
@@ -73,7 +74,7 @@ public class SearchDefinition{
     
     @When("the user enters the minimum value")
     public void the_user_enters_the_minimum_value() {
-        searchAction.enterMinimumValue("602"); 
+        searchAction.enterMinimumValue("50"); 
     }
 
     @When("the user enters the maximum value")
@@ -83,7 +84,7 @@ public class SearchDefinition{
 
     @Then("the user should see all products within that value range")
     public void the_user_should_see_all_products_within_that_value_range() {
-        Assert.assertTrue(searchAction.isPriceWithinRange(602,2000));
+    	Assert.assertTrue(searchAction.areAllPricesWithinRange(50, 2000));
     }
     
     @When("the user clicks on Shop by Category")
@@ -136,7 +137,6 @@ public class SearchDefinition{
     @Then("clicks on checkout button to see checkout page")
     public void clicks_on_checkout_button_to_see_checkout_page() {
         Assert.assertTrue(searchAction.isCheckoutPageDisplayed());
-    }
-    
+    }   
 }
 

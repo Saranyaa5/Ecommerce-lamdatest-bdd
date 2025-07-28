@@ -68,7 +68,10 @@ public class AddToCartDefinition {
     @Then("user should see a message {string}")
     public void sizeReq(String expectedMessage) {
         String actualMsg = cartAction.getSizeReq();
+
         System.out.println("Actual: " + actualMsg);
         // Assert.assertTrue(actualMsg.contains(expectedMessage), "Actual message: " + actualMsg);
     }
+
+     
 }

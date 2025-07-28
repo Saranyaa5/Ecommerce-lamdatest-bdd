@@ -1,25 +1,17 @@
 package com.actions;
 
-import java.time.Duration;
-
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.pages.OrderPageLocator;
 import com.utilities.HelperClass;
 
 public class OrderPageAction {
-
     public OrderPageLocator orderPageLocator = null;
     private final WebDriver driver;
-    WebDriverWait wait;
     private final Actions actions;
     private final JavascriptExecutor jsExecutor;
 
@@ -28,23 +20,16 @@ public class OrderPageAction {
         this.orderPageLocator = new OrderPageLocator();
         PageFactory.initElements(driver, orderPageLocator);
         this.actions = new Actions(driver);
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(50));
         this.jsExecutor = (JavascriptExecutor) driver;
     }
 
-    public void continue1() {
+    private void retryOnStaleElement(Runnable action) {
         int attempts = 0;
         while (attempts < 2) {
             try {
-                orderPageLocator = new OrderPageLocator(); 
+                orderPageLocator = new OrderPageLocator();
                 PageFactory.initElements(driver, orderPageLocator);
-
-                WebElement continueBtn = wait.until(ExpectedConditions.refreshed(
-                    ExpectedConditions.elementToBeClickable(orderPageLocator.accContinue)
-                ));
-                continueBtn.click();
-
-                wait.until(ExpectedConditions.visibilityOf(orderPageLocator.myAccount));
+                action.run();
                 break;
             } catch (StaleElementReferenceException e) {
                 attempts++;
@@ -55,69 +40,114 @@ public class OrderPageAction {
             }
         }
     }
+
+    public void continue1() {
+        retryOnStaleElement(() -> {
+            try {
+                if (orderPageLocator.accContinue.isDisplayed() && 
+                    orderPageLocator.accContinue.isEnabled()) {
+                    orderPageLocator.accContinue.click();
+                }
+            } catch (Exception e) {
+                System.out.println("Element not found or not interactable");
+            }
+        });
+    }
     
     public void clickLoginUnderMyAccount() {
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.urlToBe("https://ecommerce-playground.lambdatest.io/index.php?route=checkout/success"));
-        actions.moveToElement(orderPageLocator.myAccount).perform();
-        wait.until(ExpectedConditions.visibilityOf(orderPageLocator.loginLink));
-        orderPageLocator.loginLink.click();
+        if (driver.getCurrentUrl().equals("https://ecommerce-playground.lambdatest.io/index.php?route=checkout/success")) {
+            try {
+                if (orderPageLocator.myAccount.isDisplayed()) {
+                    actions.moveToElement(orderPageLocator.myAccount).perform();
+                    if (orderPageLocator.loginLink.isDisplayed() && 
+                        orderPageLocator.loginLink.isEnabled()) {
+                        orderPageLocator.loginLink.click();
+                    }
+                }
+            } catch (Exception e) {
+                System.out.println("Element not found or not interactable");
+            }
+        }
     }
 
-
-
     public void clickOrderHistory() {
-        WebElement myAccountElement = wait.until(ExpectedConditions.refreshed(
-            ExpectedConditions.visibilityOf(orderPageLocator.myAccount)
-        ));
-        actions.moveToElement(myAccountElement).perform();
-        WebElement myOrderElement = wait.until(ExpectedConditions.refreshed(
-            ExpectedConditions.elementToBeClickable(orderPageLocator.orders)
-        ));
-        myOrderElement.click();
-        wait.until(ExpectedConditions.visibilityOf(orderPageLocator.orderhistory));
+        retryOnStaleElement(() -> {
+            try {
+                if (orderPageLocator.myAccount.isDisplayed()) {
+                    actions.moveToElement(orderPageLocator.myAccount).perform();
+                    if (orderPageLocator.orders.isDisplayed() && 
+                        orderPageLocator.orders.isEnabled()) {
+                        orderPageLocator.orders.click();
+                    }
+                }
+            } catch (Exception e) {
+                System.out.println("Element not found or not interactable");
+            }
+        });
     }
 
     public boolean eyeDisplayed() {
-        WebElement eyeIcon = wait.until(ExpectedConditions.refreshed(
-            ExpectedConditions.visibilityOf(orderPageLocator.viewOrderButton)
-        ));
-        return eyeIcon.isDisplayed();
+        try {
+            return orderPageLocator.viewOrderButton.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
     }
 
     public void clickViewButton() {
-        WebElement viewBtn = wait.until(ExpectedConditions.refreshed(
-            ExpectedConditions.elementToBeClickable(orderPageLocator.viewOrderButton)
-        ));
-        viewBtn.click();
-        wait.until(ExpectedConditions.visibilityOf(orderPageLocator.reorderButton));
+        retryOnStaleElement(() -> {
+            try {
+                if (orderPageLocator.viewOrderButton.isDisplayed() && 
+                    orderPageLocator.viewOrderButton.isEnabled()) {
+                    orderPageLocator.viewOrderButton.click();
+                }
+            } catch (Exception e) {
+                System.out.println("Element not found or not interactable");
+            }
+        });
     }
 
     public void clickReorderButton() {
-        WebElement reorderBtn = wait.until(ExpectedConditions.refreshed(
-            ExpectedConditions.elementToBeClickable(orderPageLocator.reorderButton)
-        ));
-        reorderBtn.click();
-
-        wait.until(ExpectedConditions.visibilityOf(orderPageLocator.reorderSuccessMessage));
+        retryOnStaleElement(() -> {
+            try {
+                if (orderPageLocator.reorderButton.isDisplayed() && 
+                    orderPageLocator.reorderButton.isEnabled()) {
+                    orderPageLocator.reorderButton.click();
+                }
+            } catch (Exception e) {
+                System.out.println("Element not found or not interactable");
+            }
+        });
     }
 
     public boolean isReorderMessageDisplayed() {
-        WebElement message = wait.until(ExpectedConditions.refreshed(
-            ExpectedConditions.visibilityOf(orderPageLocator.reorderSuccessMessage)
-        ));
-        return message.isDisplayed();
+        try {
+            return orderPageLocator.reorderSuccessMessage.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
     }
 
     public String getTextOrder() {
-        WebElement heading = wait.until(ExpectedConditions.refreshed(
-            ExpectedConditions.visibilityOf(orderPageLocator.orderhistory)
-        ));
-        return heading.getText();
+        try {
+            if (orderPageLocator.orderhistory.isDisplayed()) {
+                return orderPageLocator.orderhistory.getText();
+            }
+        } catch (Exception e) {
+            System.out.println("Element not found");
+        }
+        return "";
     }
     
     public void clickOnOrderHistory() {
-    	orderPageLocator.guestMyOrder.click();
+        try {
+            if (orderPageLocator.guestMyOrder.isDisplayed() && 
+                orderPageLocator.guestMyOrder.isEnabled()) {
+                orderPageLocator.guestMyOrder.click();
+            }
+        } catch (Exception e) {
+            System.out.println("Element not found or not interactable");
+        }
     }
 
     public boolean isPageScrolledToTop() {

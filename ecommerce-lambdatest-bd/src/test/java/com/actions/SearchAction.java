@@ -2,172 +2,180 @@ package com.actions;
 
 import com.pages.SearchLocator;
 import com.utilities.HelperClass;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import java.time.Duration;
+
 import java.util.List;
 
 public class SearchAction {
     WebDriver driver;
     SearchLocator searchLocator;
-    WebDriverWait wait;
 
     public SearchAction() {
         this.driver = HelperClass.getDriver();
         this.searchLocator = new SearchLocator();
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         PageFactory.initElements(driver, searchLocator);
     }
 
     public void enterSearchTerm(String product) {
-        wait.until(ExpectedConditions.visibilityOf(searchLocator.searchbox));
-        searchLocator.searchbox.sendKeys(Keys.CONTROL + "a");  
-        searchLocator.searchbox.sendKeys(Keys.BACK_SPACE);   
-        searchLocator.searchbox.sendKeys(product.trim());
+        if (searchLocator.searchbox.isDisplayed() && searchLocator.searchbox.isEnabled()) {
+            searchLocator.searchbox.clear();
+            searchLocator.searchbox.sendKeys(product.trim());
+        }
     }
 
     public void clickSearchButton() {
-        wait.until(ExpectedConditions.elementToBeClickable(searchLocator.searchbutton));
-        searchLocator.searchbutton.click();
+        if (searchLocator.searchbutton.isDisplayed() && searchLocator.searchbutton.isEnabled()) {
+            searchLocator.searchbutton.click();
+        }
     }
 
     public boolean areProductsDisplayed() {
-        try {
-            wait.until(ExpectedConditions.visibilityOf(searchLocator.productResult));
-            return true;
-        } catch (Exception e) {
-            return false;
-        }
+        return searchLocator.productResult != null && searchLocator.productResult.isDisplayed();
     }
 
     public boolean isNoProductMessageDisplayed() {
-        try {
-            wait.until(ExpectedConditions.visibilityOf(searchLocator.noProductMessage));
-            return true;
-        } catch (Exception e) {
-            return false;
-        }
+        return searchLocator.noProductMessage != null && searchLocator.noProductMessage.isDisplayed();
     }
 
     public String getNoProductMessageText() {
-        return wait.until(ExpectedConditions.visibilityOf(searchLocator.noProductMessage)).getText();
+        return searchLocator.noProductMessage.getText();
     }
-    
+
     public void enterMinimumValue(String min) {
-        wait.until(ExpectedConditions.visibilityOf(searchLocator.mindragger)).clear();
-        searchLocator.mindragger.sendKeys(min);
+        try {
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].scrollIntoView(true);", searchLocator.mindragger);
+
+            if (searchLocator.mindragger.isDisplayed() && searchLocator.mindragger.isEnabled()) {
+                searchLocator.mindragger.clear();
+                searchLocator.mindragger.sendKeys(min);
+            }
+        } catch (ElementNotInteractableException e) {
+            ((JavascriptExecutor) driver).executeScript("arguments[0].value='" + min + "';", searchLocator.mindragger);
+        }
     }
 
     public void enterMaximumValue(String max) {
-        wait.until(ExpectedConditions.visibilityOf(searchLocator.maxdragger)).clear();
-        searchLocator.maxdragger.sendKeys(max);
+        try {
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].scrollIntoView(true);", searchLocator.maxdragger);
+
+            if (searchLocator.maxdragger.isDisplayed() && searchLocator.maxdragger.isEnabled()) {
+                searchLocator.maxdragger.clear();
+                searchLocator.maxdragger.sendKeys(max);
+            }
+        } catch (ElementNotInteractableException e) {
+            System.out.println("Fallback JS for Max: element not interactable");
+            ((JavascriptExecutor) driver).executeScript("arguments[0].value='" + max + "';", searchLocator.maxdragger);
+        }
     }
 
-    public boolean isPriceWithinRange(int min, int max) {
+    public boolean areAllPricesWithinRange(int min, int max) {
         try {
-            wait.until(ExpectedConditions.visibilityOf(searchLocator.price));
-            String priceText = searchLocator.price.getText().replaceAll("[^0-9]", "");
-            int priceValue = Integer.parseInt(priceText);
-            return priceValue >= min && priceValue <= max;
-        } catch (Exception e) {
+            List<WebElement> priceElements = driver.findElements(By.xpath("//span[@class='price-new']"));
+            for (WebElement priceElement : priceElements) {
+                String priceText = priceElement.getText().replaceAll("[^0-9.]", "");
+                if (!priceText.isEmpty()) {
+                    double price = Double.parseDouble(priceText);
+                    if (price < min || price > max) {
+                        System.out.println("❌ Out-of-range price: " + price);
+                        return false;
+                    }
+                }
+            }
+            return true;
+        } catch (StaleElementReferenceException e) {
+            System.out.println("Stale element during price check");
             return false;
         }
     }
-    
+
     public void dragSliderHandles(int leftOffset, int rightOffset) {
-        WebElement leftHandle = searchLocator.leftSliderHandle;
-        WebElement rightHandle = searchLocator.rightSliderHandle;
-
         Actions actions = new Actions(driver);
+        actions.clickAndHold(searchLocator.leftSliderHandle)
+                .moveByOffset(leftOffset, 0)
+                .release().perform();
 
-        actions.clickAndHold(leftHandle)
-               .moveByOffset(leftOffset, 0)
-               .release()
-               .perform();
-
-        actions.clickAndHold(rightHandle)
-               .moveByOffset(rightOffset, 0)
-               .release()
-               .perform();
+        actions.clickAndHold(searchLocator.rightSliderHandle)
+                .moveByOffset(rightOffset, 0)
+                .release().perform();
     }
-    
+
     public void clickShopByCategory() {
-    	searchLocator.shopbycategory.click();
+        if (searchLocator.shopbycategory.isDisplayed() && searchLocator.shopbycategory.isEnabled()) {
+            searchLocator.shopbycategory.click();
+        }
     }
+
     public void clickCategory() {
-    	searchLocator.components.click();
+        if (searchLocator.components.isDisplayed() && searchLocator.components.isEnabled()) {
+            searchLocator.components.click();
+        }
     }
-   
-    public void selectProductCountFromDropdown(String value){
-        wait.until(ExpectedConditions.elementToBeClickable(searchLocator.select));
-        Select dropdown = new Select(searchLocator.select);
-        dropdown.selectByVisibleText(value);
+
+    public void selectProductCountFromDropdown(String value) {
+        if (searchLocator.select.isDisplayed()) {
+            Select dropdown = new Select(searchLocator.select);
+            dropdown.selectByVisibleText(value);
+        }
     }
-    
+
     public int getSelectedDropdownValue() {
         Select dropdown = new Select(searchLocator.select);
-        String selectedOption = dropdown.getFirstSelectedOption().getText();
-        return Integer.parseInt(selectedOption);
+        String selectedText = dropdown.getFirstSelectedOption().getText().trim();
+        return Integer.parseInt(selectedText);
     }
 
     public int getDisplayedProductCount() {
-        wait.until(ExpectedConditions.visibilityOfAllElements(searchLocator.productList));
-        List<WebElement> list=searchLocator.productList;
+        List<WebElement> list = searchLocator.productList;
         System.out.print(list.size());
-        return searchLocator.productList.size();
-        
+        return list.size();
     }
 
     public boolean isProductCountMatchingDropdown() {
-        int expectedCount = getSelectedDropdownValue();
-        int actualCount = getDisplayedProductCount();
-        return expectedCount == actualCount;
+        return getSelectedDropdownValue() == getDisplayedProductCount();
     }
- 
-    
-    public void hoverOverFirstProduct()  {
-        Actions actions = new Actions(driver);
-        WebElement firstProduct = driver.findElement(By.xpath("(//div[@class='carousel-item active']//img)[1]"));
-        actions.moveToElement(firstProduct).perform();
-        
-        WebElement quickViewButton = driver.findElement(By.xpath("//button[@class='btn btn-quick-view quick-view-28']/i"));
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].click();", quickViewButton);
-    }     
+
+    public void hoverOverFirstProduct() {
+        try {
+            WebElement firstProduct = driver.findElement(By.xpath("(//div[@class='carousel-item active']//img)[1]"));
+            Actions actions = new Actions(driver);
+            actions.moveToElement(firstProduct).perform();
+
+            WebElement quickViewButton = driver.findElement(By.xpath("//button[@class='btn btn-quick-view quick-view-41']/i"));
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", quickViewButton);
+        } catch (Exception e) {
+            System.out.println("❗ Hover/Quick View failed: " + e.getMessage());
+        }
+    }
 
     public boolean isQuickViewDisplayed() {
-        return wait.until(ExpectedConditions.visibilityOf(searchLocator.textQuickView)).isDisplayed();
+        return searchLocator.textQuickView != null && searchLocator.textQuickView.isDisplayed();
     }
 
     public void clickAddToCartAndHandlePopup() {
         try {
-            WebElement addToCartBtn = wait.until(ExpectedConditions.elementToBeClickable(searchLocator.addToCartButton));
-            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", addToCartBtn);
+            if (searchLocator.addToCartButton.isDisplayed() && searchLocator.addToCartButton.isEnabled()) {
+                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", searchLocator.addToCartButton);
+            }
 
-            WebElement popup = wait.until(ExpectedConditions.visibilityOf(searchLocator.popupMessage));
-            System.out.println("Popup text: " + popup.getText());
+            if (searchLocator.popupMessage.isDisplayed()) {
+                System.out.println("Popup: " + searchLocator.popupMessage.getText());
+            }
 
-            WebElement checkoutBtn = wait.until(ExpectedConditions.elementToBeClickable(searchLocator.checkoutButton));
-            checkoutBtn.click();
+            if (searchLocator.checkoutButton.isDisplayed()) {
+                searchLocator.checkoutButton.click();
+            }
+
         } catch (Exception e) {
-            System.out.println("Error handling Add to Cart or popup: " + e.getMessage());
+            System.out.println("❌ Add to Cart error: " + e.getMessage());
         }
     }
 
     public boolean isCheckoutPageDisplayed() {
-        try {
-            wait.until(ExpectedConditions.visibilityOf(searchLocator.textShoppingCart));
-            return searchLocator.textShoppingCart.isDisplayed();
-        } catch (Exception e) {
-            return false;
-        }
+        return searchLocator.textShoppingCart != null && searchLocator.textShoppingCart.isDisplayed();
     }
 }

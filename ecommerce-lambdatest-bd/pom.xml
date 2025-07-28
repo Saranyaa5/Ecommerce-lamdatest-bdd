@@ -16,7 +16,7 @@
     <artifactId>cucumber-testng</artifactId>
     <version>7.22.0</version>
 </dependency>
-     <!-- Selenium -->
+     <!-- Selenisum -->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
@@ -125,7 +125,6 @@
           <suiteXmlFiles>
             <suiteXmlFile>testng.xml</suiteXmlFile>
           </suiteXmlFiles>
-<!--           <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory> -->
         </configuration>
       </plugin>
       
