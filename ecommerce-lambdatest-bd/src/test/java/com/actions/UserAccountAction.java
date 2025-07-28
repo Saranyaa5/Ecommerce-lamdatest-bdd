@@ -25,7 +25,7 @@ public class UserAccountAction {
         PageFactory.initElements(driver, userAccountLocator);
         loginPageLocator = new LoginPageLocator();
         PageFactory.initElements(driver, loginPageLocator);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(15));
     }
 
     // Edit personal information
@@ -203,9 +203,10 @@ public class UserAccountAction {
             wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.countrySelect)).click();
             wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.unitedStates)).click();
 
-            wait.until(ExpectedConditions.visibilityOf(userAccountLocator.state));
+           
             wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.state)).click();
-            wait.until(ExpectedConditions.visibilityOf(userAccountLocator.aberdeen));
+           
+            
             wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.aberdeen)).click();
         } catch (Exception e) {
             System.out.println("Error entering address details: " + e.getMessage());
