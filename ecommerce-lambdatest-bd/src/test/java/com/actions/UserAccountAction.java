@@ -1,213 +1,126 @@
 package com.actions;
 
-import java.time.Duration;
-import java.util.List;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import com.pages.LoginPageLocator;
+import org.openqa.selenium.support.ui.Select;
+
 import com.pages.UserAccountLocator;
 import com.utilities.HelperClass;
 
 public class UserAccountAction {
 
-    WebDriver driver = HelperClass.getDriver();
-    UserAccountLocator userAccountLocator;
-    LoginPageLocator loginPageLocator;
-    WebDriverWait wait;
+    UserAccountLocator locator = new UserAccountLocator();
 
     public UserAccountAction() {
-        userAccountLocator = new UserAccountLocator();
-        PageFactory.initElements(driver, userAccountLocator);
-        loginPageLocator = new LoginPageLocator();
-        PageFactory.initElements(driver, loginPageLocator);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        PageFactory.initElements(HelperClass.getDriver(), locator);
+    }
+
+    public void EnterCredentialsForMyAccount() {
+        locator.myAccountDropdown.click();
+        locator.loginLink.click();
+        locator.emailField.sendKeys("testuser@example.com");
+        locator.passwordField.sendKeys("password123");
+        locator.loginButton.click();
     }
 
     public void EditInformation() {
-        try {
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.editInfo)).click();
-        } catch (Exception e) {
-            System.out.println("Error clicking Edit Info: " + e.getMessage());
-        }
-    }
-
-    public void changePassword() {
-        try {
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.changePass)).click();
-        } catch (Exception e) {
-            System.out.println("Error clicking Change Password: " + e.getMessage());
-        }
-    }
-
-    public void ModifyWishlist() {
-        try {
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.modifyWishlist)).click();
-        } catch (Exception e) {
-            System.out.println("Error clicking Modify Wishlist: " + e.getMessage());
-        }
-    }
-
-    public void ClickNewsLetter() {
-        try {
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.clickNewsLetter)).click();
-        } catch (Exception e) {
-            System.out.println("Error clicking Newsletter: " + e.getMessage());
-        }
+        locator.editAccountLink.click();
     }
 
     public void UpdateTelephoneNumber() {
-        try {
-            userAccountLocator.telephone.clear();
-            userAccountLocator.telephone.sendKeys("8825428889");
-        } catch (Exception e) {
-            System.out.println("Error updating telephone: " + e.getMessage());
-        }
+        locator.telephoneField.clear();
+        locator.telephoneField.sendKeys("9876543210");
     }
 
     public void EditContinue() {
-        try {
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.editContinue)).click();
-        } catch (Exception e) {
-            System.out.println("Error clicking Edit Continue: " + e.getMessage());
-        }
+        locator.continueBtn.click();
     }
 
     public String Edited() {
-        return userAccountLocator.edited.getText();
+        return locator.successMessage.getText();
     }
 
-    public String PasswordChanged() {
-        return userAccountLocator.passChanged.getText();
+    public void changePassword() {
+        locator.changePasswordLink.click();
     }
 
     public void EntersnewPass() {
-        try {
-            userAccountLocator.password.sendKeys("KIOT");
-            userAccountLocator.confirmPassword.sendKeys("KIOT");
-        } catch (Exception e) {
-            System.out.println("Error entering new password: " + e.getMessage());
-        }
+        locator.newPassword.sendKeys("test1234");
+        locator.confirmPassword.sendKeys("test1234");
     }
 
     public void ClickPassContinue() {
-        try {
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.passContinue)).click();
-        } catch (Exception e) {
-            System.out.println("Error clicking Password Continue: " + e.getMessage());
-        }
+        locator.continueBtn.click();
+    }
+
+    public String PasswordChanged() {
+        return locator.successMessage.getText();
+    }
+
+    public String PasswordEmpty() {
+        return locator.newPassword.getAttribute("validationMessage");
+    }
+
+    public void ModifyWishlist() {
+        locator.wishListLink.click();
     }
 
     public void RemoveFromWishList() {
-        try {
-            List<WebElement> removeButtons = driver.findElements(By.cssSelector("a.btn.btn-light.btn-sm.text-danger"));
-            if (!removeButtons.isEmpty()) {
-                WebElement removeButton = wait.until(ExpectedConditions.elementToBeClickable(removeButtons.get(0)));
-                removeButton.click();
-                System.out.println("Product removed from wishlist.");
-            } else {
-                System.out.println("No product in Wishlist to remove.");
-            }
-        } catch (Exception e) {
-            System.out.println("Error removing from wishlist: " + e.getMessage());
-        }
+        locator.removeWishListItem.click();
     }
 
     public String ModifiedWishList() {
-        try {
-            WebElement successAlert = wait.until(ExpectedConditions.visibilityOfElementLocated(
-                By.xpath("//div[contains(@class,'alert-success') and contains(text(),'Success: You have modified your wish list')]")
-            ));
-            return successAlert.getText();
-        } catch (Exception e) {
-            System.out.println("Error fetching wishlist success message: " + e.getMessage());
-            return "Success message not found.";
-        }
+        return locator.successMessage.getText();
     }
 
-    public void selectNewsletterOption(String action) {
-        try {
-            wait.until(ExpectedConditions.visibilityOf(userAccountLocator.subscribeRadio));
-            if (action.equalsIgnoreCase("subscribe")) {
-                userAccountLocator.subscribeRadio.click();
-            } else if (action.equalsIgnoreCase("unsubscribe")) {
-                userAccountLocator.unsubscribeRadio.click();
-            }
-        } catch (Exception e) {
-            System.out.println("Error selecting newsletter option: " + e.getMessage());
+    public void ClickNewsLetter() {
+        locator.newsletterLink.click();
+    }
+
+    public void selectNewsletterOption(String option) {
+        if (option.equalsIgnoreCase("subscribe")) {
+            locator.subscribeYesRadio.click();
+        } else {
+            locator.subscribeNoRadio.click();
         }
     }
 
     public void clickNewsLetterContinue() {
-        try {
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.newsletterContinue)).click();
-        } catch (Exception e) {
-            System.out.println("Error clicking Newsletter Continue: " + e.getMessage());
-        }
+        locator.continueBtn.click();
     }
 
     public String NewsLetterUpdated() {
-        return userAccountLocator.newsLetterUpdated.getText();
-    }
-
-    public void EnterCredentialsForMyAccount() {
-        try {
-            loginPageLocator.emailId.sendKeys("2k21eee40@kiot.ac.in");
-            loginPageLocator.password.sendKeys("KIOT");
-        } catch (Exception e) {
-            System.out.println("Error entering login credentials: " + e.getMessage());
-        }
-    }
-
-    public String PasswordEmpty() {
-        return userAccountLocator.passwordEmpty.getText();
+        return locator.successMessage.getText();
     }
 
     public void ClickModifyAddress() {
-        try {
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.modifyAddress)).click();
-        } catch (Exception e) {
-            System.out.println("Error clicking Modify Address: " + e.getMessage());
-        }
+        locator.addressBookLink.click();
     }
 
     public void clickNewAddress() {
-        try {
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.newAddress)).click();
-        } catch (Exception e) {
-            System.out.println("Error clicking New Address: " + e.getMessage());
-        }
+        locator.newAddressBtn.click();
+    }
+
+    public void enterAddressDetails(String fname, String lname, String address, String city, String postcode) {
+        locator.firstNameField.sendKeys(fname);
+        locator.lastNameField.sendKeys(lname);
+        locator.address1Field.sendKeys(address);
+        locator.cityField.sendKeys(city);
+        locator.postCodeField.sendKeys(postcode);
+
+        Select country = new Select(locator.countryDropdown);
+        country.selectByVisibleText("United States");
+
+        Select region = new Select(locator.regionDropdown);
+        region.selectByVisibleText("California");
+
+        locator.defaultAddressYes.click();
     }
 
     public void ModifyAddressContinue() {
-        try {
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.modifyAddressContinue)).click();
-        } catch (Exception e) {
-            System.out.println("Error clicking Modify Address Continue: " + e.getMessage());
-        }
+        locator.addressContinueBtn.click();
     }
 
     public String NewAddressCreated() {
-        return userAccountLocator.newAddressCreated.getText();
-    }
-
-    public void enterAddressDetails(String firstName, String lastName, String address, String city, String postcode) {
-        try {
-            userAccountLocator.getFirstNameField.sendKeys(firstName);
-            userAccountLocator.getLastNameField.sendKeys(lastName);
-            userAccountLocator.getAddressField.sendKeys(address);
-            userAccountLocator.getCityField.sendKeys(city);
-            userAccountLocator.getPostcodeField.sendKeys(postcode);
-
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.countrySelect)).click();
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.unitedStates)).click();
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.state)).click();
-            wait.until(ExpectedConditions.elementToBeClickable(userAccountLocator.aberdeen)).click();
-        } catch (Exception e) {
-            System.out.println("Error entering address details: " + e.getMessage());
-        }
+        return locator.successMessage.getText();
     }
 }
