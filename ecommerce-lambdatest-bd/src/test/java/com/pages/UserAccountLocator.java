@@ -53,7 +53,7 @@ public class UserAccountLocator {
     @FindBy(xpath="//input[@value='Continue']")
     public WebElement newsletterContinue;  // Renamed to 'newsletterContinue'
 
-    @FindBy(xpath="//div[text()=' Success: Your newsletter subscription has been successfully updated!']")
+    @FindBy(xpath="//div[text()='Success: Your newsletter subscription has been successfully updated!']")
     public WebElement newsLetterUpdated;  
 
     @FindBy(xpath="//div[text()='Password must be between 4 and 20 characters!']")
@@ -68,7 +68,7 @@ public class UserAccountLocator {
     @FindBy(xpath="//*[@id=\"content\"]/form/div/div[2]/input")
     public WebElement modifyAddressContinue;  
 
-    @FindBy(xpath="//div[text()=' Your address has been successfully added']")
+    @FindBy(xpath="//div[text()='Your address has been successfully added']")
     public WebElement newAddressCreated;  
 
     @FindBy(xpath="//*[@id=\"input-firstname\"]")
