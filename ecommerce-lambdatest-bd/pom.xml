@@ -8,34 +8,34 @@
   <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-java</artifactId>
-    <version>7.22.0</version>
+    <version>RELEASE</version>
 </dependency>
 <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
 <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-testng</artifactId>
-    <version>7.22.0</version>
+    <version>RELEASE</version>
 </dependency>
      <!-- Selenisum -->
     <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.34.0</version>
+    <version>RELEASE</version>
 </dependency>
 
     <!-- TestNG -->
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
-      <version>7.11.0</version>
+      <version>RELEASE</version>
       <scope>test</scope>
     </dependency>
     <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest -->
 <dependency>
     <groupId>org.hamcrest</groupId>
     <artifactId>hamcrest</artifactId>
-    <version>3.0</version>
+    <version>RELEASE</version>
     <scope>test</scope>
 </dependency>
 
@@ -50,19 +50,19 @@
 <dependency>
     <groupId>org.apache.poi</groupId>
     <artifactId>poi</artifactId>
-    <version>5.4.1</version>
+    <version>RELEASE</version>
 </dependency>
 <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 <dependency>
     <groupId>org.apache.poi</groupId>
     <artifactId>poi-ooxml</artifactId>
-    <version>5.4.1</version>
+    <version>RELEASE</version>
 </dependency>
 <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
 <dependency>
     <groupId>commons-io</groupId>
     <artifactId>commons-io</artifactId>
-    <version>2.18.0</version>
+    <version>RELEASE</version>
 </dependency>
 <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
 <dependency>
@@ -93,13 +93,13 @@
 <dependency>
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>
-    <version>5.1.2</version>
+    <version>RELEASE</version>
 </dependency>
 <!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
 <dependency>
     <groupId>tech.grasshopper</groupId>
     <artifactId>extentreports-cucumber7-adapter</artifactId>
-    <version>1.14.0</version>
+    <version>RELEASE</version>
 </dependency>
   </dependencies>
    <build>

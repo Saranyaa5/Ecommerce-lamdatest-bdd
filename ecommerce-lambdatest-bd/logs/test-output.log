@@ -28874,3 +28874,121 @@ Session ID: 0b632e760104e59694513e2fc82239b7
 2025-07-28 21:44:46 [TestNG-test-Test-1] ERROR: Scenario failed: Click on a iPod Nano product and verify the URL
 2025-07-28 21:44:47 [TestNG-test-Test-1] INFO : Scenario started: Count all links and verify they are not broken
 2025-07-28 21:49:42 [TestNG-test-Test-1] INFO : Scenario passed: Count all links and verify they are not broken
+2025-07-28 22:00:44 [main] INFO : Scenario started: user clicks on alert designs of addOns
+2025-07-28 22:01:03 [main] INFO : Scenario passed: user clicks on alert designs of addOns
+2025-07-28 22:01:04 [main] INFO : Scenario started: To assert the Functioning of Webelements in home page
+2025-07-28 22:01:14 [main] INFO : asserting the home page block 1 element is successfull
+2025-07-28 22:01:14 [main] INFO : Scenario passed: To assert the Functioning of Webelements in home page
+2025-07-28 22:01:15 [main] INFO : Scenario started: To redirected to the product page after clicking Shop Now button in Block 2
+2025-07-28 22:01:32 [main] INFO : Successfully verified MPOW product page
+2025-07-28 22:01:32 [main] INFO : Scenario passed: To redirected to the product page after clicking Shop Now button in Block 2
+2025-07-28 22:01:34 [main] INFO : Scenario started: To redirect to the product page after clicking Head phones poster
+2025-07-28 22:02:44 [main] ERROR: Scenario failed: To redirect to the product page after clicking Head phones poster
+2025-07-28 22:02:46 [main] INFO : Scenario started: To redirect to the trending product page when clicking the product
+2025-07-28 22:04:02 [main] ERROR: Scenario failed: To redirect to the trending product page when clicking the product
+2025-07-28 22:04:03 [main] INFO : Scenario started: Verify that all links on the homepage redirect correctly
+2025-07-28 22:05:21 [main] INFO : no of links in the homepage is not working working in homepage: 1
+2025-07-28 22:05:21 [main] INFO : Scenario passed: Verify that all links on the homepage redirect correctly
+2025-07-28 22:05:22 [main] INFO : Scenario started: To checkout view the order history after ordering
+2025-07-28 22:07:10 [main] ERROR: Scenario failed: To checkout view the order history after ordering
+2025-07-28 22:07:11 [main] INFO : Scenario started: To reorder the product in the order  history
+2025-07-28 22:08:29 [main] ERROR: Scenario failed: To reorder the product in the order  history
+2025-07-28 22:08:30 [main] INFO : Scenario started: to view the order history after ordering as a guest user
+2025-07-28 22:10:28 [main] ERROR: Scenario failed: to view the order history after ordering as a guest user
+2025-07-28 22:10:29 [main] INFO : Scenario started: To checkout the shopping cart as a guest user
+2025-07-28 22:12:07 [main] ERROR: Scenario failed: To checkout the shopping cart as a guest user
+2025-07-28 22:12:08 [main] INFO : Scenario started: To checkout the empty shopping cart as a registered user
+2025-07-28 22:12:55 [main] INFO : Verified: Cart is empty with correct message.
+2025-07-28 22:12:55 [main] INFO : Scenario passed: To checkout the empty shopping cart as a registered user
+2025-07-28 22:12:57 [main] INFO : Scenario started: To checkout the  cart as a registered user
+2025-07-28 22:14:20 [main] ERROR: Scenario failed: To checkout the  cart as a registered user
+2025-07-28 22:14:21 [main] INFO : Scenario started: To checkout the  cart with existing email
+2025-07-28 22:16:06 [main] ERROR: Scenario failed: To checkout the  cart with existing email
+2025-07-28 22:16:07 [main] INFO : Scenario started: To perform compare without adding products to list
+2025-07-28 22:17:34 [main] INFO : Scenario passed: To perform compare without adding products to list
+2025-07-28 22:17:36 [main] INFO : Scenario started: To Add the products to comparision list
+2025-07-28 22:19:06 [main] INFO : Scenario passed: To Add the products to comparision list
+2025-07-28 22:19:08 [main] INFO : Scenario started: To Add the products to comparision list
+2025-07-28 22:19:25 [main] INFO : Scenario passed: To Add the products to comparision list
+2025-07-28 22:19:26 [main] INFO : Scenario started: Register with valid inputs
+2025-07-28 22:19:44 [main] INFO : Assertion Passed: Expected message 'Your Account Has Been Created!' is displayed successfully.
+2025-07-28 22:19:44 [main] INFO : Scenario passed: Register with valid inputs
+2025-07-28 22:19:45 [main] INFO : Scenario started: Register with invalid inputs
+2025-07-28 22:19:58 [main] INFO : Assertion Passed for 'empty first name': Expected and actual message matched: 'First Name must be between 1 and 32 characters!'
+2025-07-28 22:19:58 [main] INFO : Scenario passed: Register with invalid inputs
+2025-07-28 22:19:59 [main] INFO : Scenario started: Register with invalid inputs
+2025-07-28 22:20:14 [main] INFO : Assertion Passed for 'existing email': Expected and actual message matched: 'Warning: E-Mail Address is already registered!'
+2025-07-28 22:20:14 [main] INFO : Scenario passed: Register with invalid inputs
+2025-07-28 22:20:15 [main] INFO : Scenario started: Register with invalid inputs
+2025-07-28 22:20:36 [main] INFO : Assertion Passed for 'empty password': Expected and actual message matched: 'Password must be between 4 and 20 characters!'
+2025-07-28 22:20:36 [main] INFO : Scenario passed: Register with invalid inputs
+2025-07-28 22:20:37 [main] INFO : Scenario started: Register with invalid inputs
+2025-07-28 22:20:56 [main] INFO : Assertion Passed for 'password mismatch': Expected and actual message matched: 'Password confirmation does not match password!'
+2025-07-28 22:20:56 [main] INFO : Scenario passed: Register with invalid inputs
+2025-07-28 22:20:57 [main] INFO : Scenario started: Register with +valid inputs  with out checking privacy policy
+2025-07-28 22:21:09 [main] INFO : User didn't accept the privacy policy
+2025-07-28 22:21:10 [main] INFO : Assertion Passed for 'Not checking privacy policy': Expected and actual message matched: 'Warning: You must agree to the Privacy Policy!'
+2025-07-28 22:21:10 [main] INFO : Scenario passed: Register with +valid inputs  with out checking privacy policy
+2025-07-29 22:16:58 [TestNG-test-Test-1] INFO : Scenario started: user clicks on alert designs of addOns
+2025-07-29 22:17:09 [TestNG-test-Test-1] INFO : Scenario passed: user clicks on alert designs of addOns
+2025-07-29 22:17:09 [TestNG-test-Test-1] INFO : Scenario started: To assert the Functioning of Webelements in home page
+2025-07-29 22:17:15 [TestNG-test-Test-1] INFO : asserting the home page block 1 element is successfull
+2025-07-29 22:17:15 [TestNG-test-Test-1] INFO : Scenario passed: To assert the Functioning of Webelements in home page
+2025-07-29 22:17:16 [TestNG-test-Test-1] INFO : Scenario started: To redirected to the product page after clicking Shop Now button in Block 2
+2025-07-29 22:17:26 [TestNG-test-Test-1] INFO : Successfully verified MPOW product page
+2025-07-29 22:17:26 [TestNG-test-Test-1] INFO : Scenario passed: To redirected to the product page after clicking Shop Now button in Block 2
+2025-07-29 22:17:27 [TestNG-test-Test-1] INFO : Scenario started: To redirect to the product page after clicking Head phones poster
+2025-07-29 22:18:35 [TestNG-test-Test-1] ERROR: Scenario failed: To redirect to the product page after clicking Head phones poster
+2025-07-29 22:18:36 [TestNG-test-Test-1] INFO : Scenario started: To redirect to the trending product page when clicking the product
+2025-07-29 22:19:48 [TestNG-test-Test-1] ERROR: Scenario failed: To redirect to the trending product page when clicking the product
+2025-07-29 22:19:49 [TestNG-test-Test-1] INFO : Scenario started: Verify that all links on the homepage redirect correctly
+2025-07-29 22:20:41 [TestNG-test-Test-1] INFO : no of links in the homepage is not working working in homepage: 1
+2025-07-29 22:20:41 [TestNG-test-Test-1] INFO : Scenario passed: Verify that all links on the homepage redirect correctly
+2025-07-29 22:20:41 [TestNG-test-Test-1] INFO : Scenario started: To checkout view the order history after ordering
+2025-07-29 22:21:37 [TestNG-test-Test-1] ERROR: Scenario failed: To checkout view the order history after ordering
+2025-07-29 22:21:38 [TestNG-test-Test-1] INFO : Scenario started: To reorder the product in the order  history
+2025-07-29 22:22:38 [TestNG-test-Test-1] ERROR: Scenario failed: To reorder the product in the order  history
+2025-07-29 22:22:39 [TestNG-test-Test-1] INFO : Scenario started: to view the order history after ordering as a guest user
+2025-07-29 22:23:43 [TestNG-test-Test-1] ERROR: Scenario failed: to view the order history after ordering as a guest user
+2025-07-29 22:23:44 [TestNG-test-Test-1] INFO : Scenario started: To checkout the shopping cart as a guest user
+2025-07-29 22:24:55 [TestNG-test-Test-1] ERROR: Scenario failed: To checkout the shopping cart as a guest user
+2025-07-29 22:24:56 [TestNG-test-Test-1] INFO : Scenario started: To checkout the empty shopping cart as a registered user
+2025-07-29 22:25:22 [TestNG-test-Test-1] INFO : Verified: Cart is empty with correct message.
+2025-07-29 22:25:22 [TestNG-test-Test-1] INFO : Scenario passed: To checkout the empty shopping cart as a registered user
+2025-07-29 22:25:23 [TestNG-test-Test-1] INFO : Scenario started: To checkout the  cart as a registered user
+2025-07-29 22:26:34 [TestNG-test-Test-1] ERROR: Scenario failed: To checkout the  cart as a registered user
+2025-07-29 22:26:34 [TestNG-test-Test-1] INFO : Scenario started: To checkout the  cart with existing email
+2025-07-29 22:27:50 [TestNG-test-Test-1] ERROR: Scenario failed: To checkout the  cart with existing email
+2025-07-29 22:27:51 [TestNG-test-Test-1] INFO : Scenario started: To perform compare without adding products to list
+2025-07-29 22:28:38 [TestNG-test-Test-1] INFO : Scenario passed: To perform compare without adding products to list
+2025-07-29 22:28:39 [TestNG-test-Test-1] INFO : Scenario started: To Add the products to comparision list
+2025-07-29 22:30:12 [TestNG-test-Test-1] INFO : Scenario passed: To Add the products to comparision list
+2025-07-29 22:30:13 [TestNG-test-Test-1] INFO : Scenario started: To Add the products to comparision list
+2025-07-29 22:30:28 [TestNG-test-Test-1] INFO : Scenario passed: To Add the products to comparision list
+2025-07-29 22:30:29 [TestNG-test-Test-1] INFO : Scenario started: Register with valid inputs
+2025-07-29 22:31:07 [TestNG-test-Test-1] INFO : Assertion Passed: Expected message 'Your Account Has Been Created!' is displayed successfully.
+2025-07-29 22:31:07 [TestNG-test-Test-1] INFO : Scenario passed: Register with valid inputs
+2025-07-29 22:31:08 [TestNG-test-Test-1] INFO : Scenario started: Register with invalid inputs
+2025-07-29 22:32:56 [TestNG-test-Test-1] ERROR: Scenario failed: Register with invalid inputs
+2025-07-29 22:32:57 [TestNG-test-Test-1] INFO : Scenario started: Register with invalid inputs
+2025-07-29 22:34:24 [TestNG-test-Test-1] INFO : Assertion Passed for 'existing email': Expected and actual message matched: 'Warning: E-Mail Address is already registered!'
+2025-07-29 22:34:24 [TestNG-test-Test-1] INFO : Scenario passed: Register with invalid inputs
+2025-07-29 22:34:25 [TestNG-test-Test-1] INFO : Scenario started: Register with invalid inputs
+2025-07-29 22:35:24 [TestNG-test-Test-1] INFO : Assertion Passed for 'empty password': Expected and actual message matched: 'Password must be between 4 and 20 characters!'
+2025-07-29 22:35:24 [TestNG-test-Test-1] INFO : Scenario passed: Register with invalid inputs
+2025-07-29 22:35:25 [TestNG-test-Test-1] INFO : Scenario started: Register with invalid inputs
+2025-07-29 22:37:52 [TestNG-test-Test-1] ERROR: Scenario failed: Register with invalid inputs
+2025-07-29 22:37:53 [TestNG-test-Test-1] INFO : Scenario started: Register with +valid inputs  with out checking privacy policy
+2025-07-29 22:41:16 [TestNG-test-Test-1] ERROR: Scenario failed: Register with +valid inputs  with out checking privacy policy
+2025-07-29 23:02:17 [TestNG-test-Test-1] INFO : Scenario started: To perform compare without adding products to list
+2025-07-29 23:02:42 [TestNG-test-Test-1] INFO : Scenario passed: To perform compare without adding products to list
+2025-07-29 23:02:43 [TestNG-test-Test-1] INFO : Scenario started: To Add the products to comparision list
+2025-07-29 23:03:28 [TestNG-test-Test-1] INFO : Scenario passed: To Add the products to comparision list
+2025-07-29 23:03:29 [TestNG-test-Test-1] INFO : Scenario started: To Add the products to comparision list
+2025-07-29 23:03:37 [TestNG-test-Test-1] INFO : Scenario passed: To Add the products to comparision list
+2025-07-29 23:41:26 [TestNG-test-Test-1] INFO : Scenario started: To perform compare without adding products to list
+2025-07-29 23:41:47 [TestNG-test-Test-1] INFO : Scenario passed: To perform compare without adding products to list
+2025-07-29 23:41:47 [TestNG-test-Test-1] INFO : Scenario started: To Add the products to comparision list
+2025-07-29 23:42:33 [TestNG-test-Test-1] INFO : Scenario passed: To Add the products to comparision list
+2025-07-29 23:42:34 [TestNG-test-Test-1] INFO : Scenario started: To Add the products to comparision list
+2025-07-29 23:42:43 [TestNG-test-Test-1] INFO : Scenario passed: To Add the products to comparision list
