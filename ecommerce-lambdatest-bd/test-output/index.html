@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 8 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\saran\AppData\Local\Temp\testng-eclipse-1926751348\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\saran\git\SeleniumFinalCucumber\ecommerce-lambdatest-bd\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
                     <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,31 +92,135 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">22 methods, 8 failed,   14 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;To redirect to the product page after clicking Head phones poster&quot;, &quot;Saranya_20APR2025_LamdaTesters...)">runScenario("To redirect to the product page after clicking Head phones poster", "Saranya_20APR2025_LamdaTesters...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;To checkout view the order history after ordering&quot;, &quot;Saranya_16APR2025_LambdaTesters_My_orders_feat...)">runScenario("To checkout view the order history after ordering", "Saranya_16APR2025_LambdaTesters_My_orders_feat...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;to view the order history after ordering as a guest user&quot;, &quot;Saranya_16APR2025_LambdaTesters_My_orde...)">runScenario("to view the order history after ordering as a guest user", "Saranya_16APR2025_LambdaTesters_My_orde...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;To checkout the  cart as a registered user&quot;, &quot;Saranya_12APR2025_LambdaTesters_Shopping_Cart_CheckOu...)">runScenario("To checkout the  cart as a registered user", "Saranya_12APR2025_LambdaTesters_Shopping_Cart_CheckOu...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Register with +valid inputs  with out checking privacy policy&quot;, &quot;Saranya_09APR2025_LambdaTesters_Us...)">runScenario("Register with +valid inputs  with out checking privacy policy", "Saranya_09APR2025_LambdaTesters_Us...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;To checkout the shopping cart as a guest user&quot;, &quot;Saranya_12APR2025_LambdaTesters_Shopping_Cart_Chec...)">runScenario("To checkout the shopping cart as a guest user", "Saranya_12APR2025_LambdaTesters_Shopping_Cart_Chec...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;To reorder the product in the order  history&quot;, &quot;Saranya_16APR2025_LambdaTesters_My_orders_feature&quot;)">runScenario("To reorder the product in the order  history", "Saranya_16APR2025_LambdaTesters_My_orders_feature")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;To checkout the  cart with existing email&quot;, &quot;Saranya_12APR2025_LambdaTesters_Shopping_Cart_CheckOut...)">runScenario("To checkout the  cart with existing email", "Saranya_12APR2025_LambdaTesters_Shopping_Cart_CheckOut...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;To Add the products to comparision list&quot;, &quot;Saranya_15APR2025_LambdaTesters_Product_compare_function...)">runScenario("To Add the products to comparision list", "Saranya_15APR2025_LambdaTesters_Product_compare_function...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Register with invalid inputs&quot;, &quot;Saranya_09APR2025_LambdaTesters_User_Registration_Functionality&quot;)">runScenario("Register with invalid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;To Add the products to comparision list&quot;, &quot;Saranya_15APR2025_LambdaTesters_Product_compare_function...)">runScenario("To Add the products to comparision list", "Saranya_15APR2025_LambdaTesters_Product_compare_function...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;To assert the Functioning of Webelements in home page&quot;, &quot;Saranya_20APR2025_LamdaTesters_Feature fil...)">runScenario("To assert the Functioning of Webelements in home page", "Saranya_20APR2025_LamdaTesters_Feature fil...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;To perform compare without adding products to list&quot;, &quot;Saranya_15APR2025_LambdaTesters_Product_compa...)">runScenario("To perform compare without adding products to list", "Saranya_15APR2025_LambdaTesters_Product_compa...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;To redirect to the trending product page when clicking the product&quot;, &quot;Saranya_20APR2025_LamdaTester...)">runScenario("To redirect to the trending product page when clicking the product", "Saranya_20APR2025_LamdaTester...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;user clicks on alert designs of addOns&quot;, &quot;Saranya_26MAY2025_LambdaTesters_AddOnsDesign&quot;)">runScenario("user clicks on alert designs of addOns", "Saranya_26MAY2025_LambdaTesters_AddOnsDesign")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;To checkout the empty shopping cart as a registered user&quot;, &quot;Saranya_12APR2025_LambdaTesters_Shoppin...)">runScenario("To checkout the empty shopping cart as a registered user", "Saranya_12APR2025_LambdaTesters_Shoppin...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;To perform compare without adding products to list&quot;, &quot;Saranya_15APR2025_LambdaTesters_Product_compa...)">runScenario("To perform compare without adding products to list", "Saranya_15APR2025_LambdaTesters_Product_compa...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Register with valid inputs&quot;, &quot;Saranya_09APR2025_LambdaTesters_User_Registration_Functionality&quot;)">runScenario("Register with valid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Verify that all links on the homepage redirect correctly&quot;, &quot;Saranya_20APR2025_LamdaTesters_Feature ...)">runScenario("Verify that all links on the homepage redirect correctly", "Saranya_20APR2025_LamdaTesters_Feature ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;To Add the products to comparision list&quot;, &quot;Saranya_15APR2025_LambdaTesters_Product_compare_function...)">runScenario("To Add the products to comparision list", "Saranya_15APR2025_LambdaTesters_Product_compare_function...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;To Add the products to comparision list&quot;, &quot;Saranya_15APR2025_LambdaTesters_Product_compare_function...)">runScenario("To Add the products to comparision list", "Saranya_15APR2025_LambdaTesters_Product_compare_function...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;To redirected to the product page after clicking Shop Now button in Block 2&quot;, &quot;Saranya_20APR2025_La...)">runScenario("To redirected to the product page after clicking Shop Now button in Block 2", "Saranya_20APR2025_La...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Register with invalid inputs&quot;, &quot;Saranya_09APR2025_LambdaTesters_User_Registration_Functionality&quot;)">runScenario("Register with invalid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Register with invalid inputs&quot;, &quot;Saranya_09APR2025_LambdaTesters_User_Registration_Functionality&quot;)">runScenario("Register with invalid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.RunnerTestNg" class="method navigator-link" hash-for-method="runScenario(&quot;Register with invalid inputs&quot;, &quot;Saranya_09APR2025_LambdaTesters_User_Registration_Functionality&quot;)">runScenario("Register with invalid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -127,8 +231,300 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.runner.RunnerTestNg</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To redirect to the product page after clicking Head phones poster&quot;, &quot;Saranya_20APR2025_LamdaTesters...)">
+                  </a> <!-- runScenario("To redirect to the product page after clicking Head phones poster", "Saranya_20APR2025_LamdaTesters...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To redirect to the product page after clicking Head phones poster","Saranya_20APR2025_LamdaTesters_Feature file for HomePage Assertion")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [HP LP3065] but found []
+	at com.definitions.HomePageDefinition.the_user_should_see_the_product_page(HomePageDefinition.java:68)
+	at ✽.the user should see the &quot;HP LP3065&quot; product page(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/Home.feature:21)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To checkout view the order history after ordering&quot;, &quot;Saranya_16APR2025_LambdaTesters_My_orders_feat...)">
+                  </a> <!-- runScenario("To checkout view the order history after ordering", "Saranya_16APR2025_LambdaTesters_My_orders_feat...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To checkout view the order history after ordering","Saranya_16APR2025_LambdaTesters_My_orders_feature")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(@id,&apos;content&apos;)]/div[2]/a[2]&quot;}
+  (Session info: chrome=138.0.7204.169)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [12ffce1286cbdc9c9fbd2fe5751fff38, findElement {using=xpath, value=//*[contains(@id,&apos;content&apos;)]/div[2]/a[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62525}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62525/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 12ffce1286cbdc9c9fbd2fe5751fff38
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.isEnabled(Unknown Source)
+	at com.actions.CheckOutAction.productCheckOut(CheckOutAction.java:42)
+	at com.definitions.CheckoutDefinition.the_user_clicks_check_out(CheckoutDefinition.java:35)
+	at ✽.the user clicks CheckOut(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/MyOrder.feature:15)
+... Removed 5 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;to view the order history after ordering as a guest user&quot;, &quot;Saranya_16APR2025_LambdaTesters_My_orde...)">
+                  </a> <!-- runScenario("to view the order history after ordering as a guest user", "Saranya_16APR2025_LambdaTesters_My_orde...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("to view the order history after ordering as a guest user","Saranya_16APR2025_LambdaTesters_My_orders_feature")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(@id,&apos;content&apos;)]/div[2]/a[2]&quot;}
+  (Session info: chrome=138.0.7204.169)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f102bbe60947f121f6d3b6cff2e00ef9, findElement {using=xpath, value=//*[contains(@id,&apos;content&apos;)]/div[2]/a[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62593}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62593/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f102bbe60947f121f6d3b6cff2e00ef9
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.isEnabled(Unknown Source)
+	at com.actions.CheckOutAction.productCheckOut(CheckOutAction.java:42)
+	at com.definitions.CheckoutDefinition.the_user_clicks_check_out(CheckoutDefinition.java:35)
+	at ✽.the user clicks CheckOut(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/MyOrder.feature:75)
+... Removed 5 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To checkout the  cart as a registered user&quot;, &quot;Saranya_12APR2025_LambdaTesters_Shopping_Cart_CheckOu...)">
+                  </a> <!-- runScenario("To checkout the  cart as a registered user", "Saranya_12APR2025_LambdaTesters_Shopping_Cart_CheckOu...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To checkout the  cart as a registered user","Saranya_12APR2025_LambdaTesters_Shopping_Cart_CheckOut_functionality")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(@id,&apos;content&apos;)]/div[2]/a[2]&quot;}
+  (Session info: chrome=138.0.7204.169)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d9a73a0074b3c49e558ef4bdaf24fd78, findElement {using=xpath, value=//*[contains(@id,&apos;content&apos;)]/div[2]/a[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62722}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62722/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d9a73a0074b3c49e558ef4bdaf24fd78
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.isEnabled(Unknown Source)
+	at com.actions.CheckOutAction.productCheckOut(CheckOutAction.java:42)
+	at com.definitions.CheckoutDefinition.the_user_clicks_check_out(CheckoutDefinition.java:35)
+	at ✽.the user clicks CheckOut(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/ProductCheckOut.feature:42)
+... Removed 5 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Register with +valid inputs  with out checking privacy policy&quot;, &quot;Saranya_09APR2025_LambdaTesters_Us...)">
+                  </a> <!-- runScenario("Register with +valid inputs  with out checking privacy policy", "Saranya_09APR2025_LambdaTesters_Us...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Register with +valid inputs  with out checking privacy policy","Saranya_09APR2025_LambdaTesters_User_Registration_Functionality")</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=138.0.7204.169)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d61fa681ade6338c145fbdbc4250ff9b, isElementDisplayed {id=f.2A35A8584FF0679A45F2FC5A2B59C862.d.70A7350B33C5F7906EF78BD28DE988BD.e.94}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63066}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63066/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d61fa681ade6338c145fbdbc4250ff9b)] -&gt; xpath: //div[@id=&apos;account-register&apos;]/div[1]]
+Session ID: d61fa681ade6338c145fbdbc4250ff9b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at com.actions.UserRegistrationAction.waitForElementText(UserRegistrationAction.java:116)
+	at com.actions.UserRegistrationAction.uncheckedError(UserRegistrationAction.java:92)
+	at com.definitions.UserRegistrationDefinition.the_user_should_see_for(UserRegistrationDefinition.java:101)
+	at ✽.the user should see &quot;Warning: You must agree to the Privacy Policy!&quot; for &quot;Not checking privacy policy&quot;(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/UserRegistration.feature:43)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To checkout the shopping cart as a guest user&quot;, &quot;Saranya_12APR2025_LambdaTesters_Shopping_Cart_Chec...)">
+                  </a> <!-- runScenario("To checkout the shopping cart as a guest user", "Saranya_12APR2025_LambdaTesters_Shopping_Cart_Chec...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To checkout the shopping cart as a guest user","Saranya_12APR2025_LambdaTesters_Shopping_Cart_CheckOut_functionality")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(@id,&apos;content&apos;)]/div[2]/a[2]&quot;}
+  (Session info: chrome=138.0.7204.169)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5959633f03aa44f2373d7e1eabe4fc0a, findElement {using=xpath, value=//*[contains(@id,&apos;content&apos;)]/div[2]/a[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62626}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62626/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5959633f03aa44f2373d7e1eabe4fc0a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.isEnabled(Unknown Source)
+	at com.actions.CheckOutAction.productCheckOut(CheckOutAction.java:42)
+	at com.definitions.CheckoutDefinition.the_user_clicks_check_out(CheckoutDefinition.java:35)
+	at ✽.the user clicks CheckOut(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/ProductCheckOut.feature:12)
+... Removed 5 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To reorder the product in the order  history&quot;, &quot;Saranya_16APR2025_LambdaTesters_My_orders_feature&quot;)">
+                  </a> <!-- runScenario("To reorder the product in the order  history", "Saranya_16APR2025_LambdaTesters_My_orders_feature") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To reorder the product in the order  history","Saranya_16APR2025_LambdaTesters_My_orders_feature")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(@id,&apos;content&apos;)]/div[2]/a[2]&quot;}
+  (Session info: chrome=138.0.7204.169)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2c9a842c38b78db7d1b621e7dfbde3ad, findElement {using=xpath, value=//*[contains(@id,&apos;content&apos;)]/div[2]/a[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62559}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62559/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2c9a842c38b78db7d1b621e7dfbde3ad
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.isEnabled(Unknown Source)
+	at com.actions.CheckOutAction.productCheckOut(CheckOutAction.java:42)
+	at com.definitions.CheckoutDefinition.the_user_clicks_check_out(CheckoutDefinition.java:35)
+	at ✽.the user clicks CheckOut(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/MyOrder.feature:44)
+... Removed 5 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To checkout the  cart with existing email&quot;, &quot;Saranya_12APR2025_LambdaTesters_Shopping_Cart_CheckOut...)">
+                  </a> <!-- runScenario("To checkout the  cart with existing email", "Saranya_12APR2025_LambdaTesters_Shopping_Cart_CheckOut...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To checkout the  cart with existing email","Saranya_12APR2025_LambdaTesters_Shopping_Cart_CheckOut_functionality")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(@id,&apos;content&apos;)]/div[2]/a[2]&quot;}
+  (Session info: chrome=138.0.7204.169)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d4e75c65b6bb2257a732b981e29e5a70, findElement {using=xpath, value=//*[contains(@id,&apos;content&apos;)]/div[2]/a[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62757}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62757/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d4e75c65b6bb2257a732b981e29e5a70
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.isEnabled(Unknown Source)
+	at com.actions.CheckOutAction.productCheckOut(CheckOutAction.java:42)
+	at com.definitions.CheckoutDefinition.the_user_clicks_check_out(CheckoutDefinition.java:35)
+	at ✽.the user clicks CheckOut(file:///C:/Users/saran/git/SeleniumFinalCucumber/ecommerce-lambdatest-bd/src/test/resources/com/features/ProductCheckOut.feature:69)
+... Removed 4 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.runner.RunnerTestNg</span>
@@ -136,20 +532,50 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;To Add the products to comparision list&quot;, &quot;Saranya_15APR2025_LambdaTesters_Product_compare_function...)">
-                  </a> <!-- runScenario("To Add the products to comparision list", "Saranya_15APR2025_LambdaTesters_Product_compare_function...) -->
+                  <a name="runScenario(&quot;Register with invalid inputs&quot;, &quot;Saranya_09APR2025_LambdaTesters_User_Registration_Functionality&quot;)">
+                  </a> <!-- runScenario("Register with invalid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("To Add the products to comparision list","Saranya_15APR2025_LambdaTesters_Product_compare_functionality")</span>
+                  <span class="parameters">("Register with invalid inputs","Saranya_09APR2025_LambdaTesters_User_Registration_Functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;To Add the products to comparision list&quot;, &quot;Saranya_15APR2025_LambdaTesters_Product_compare_function...)">
-                  </a> <!-- runScenario("To Add the products to comparision list", "Saranya_15APR2025_LambdaTesters_Product_compare_function...) -->
+                  <a name="runScenario(&quot;To assert the Functioning of Webelements in home page&quot;, &quot;Saranya_20APR2025_LamdaTesters_Feature fil...)">
+                  </a> <!-- runScenario("To assert the Functioning of Webelements in home page", "Saranya_20APR2025_LamdaTesters_Feature fil...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("To Add the products to comparision list","Saranya_15APR2025_LambdaTesters_Product_compare_functionality")</span>
+                  <span class="parameters">("To assert the Functioning of Webelements in home page","Saranya_20APR2025_LamdaTesters_Feature file for HomePage Assertion")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To redirect to the trending product page when clicking the product&quot;, &quot;Saranya_20APR2025_LamdaTester...)">
+                  </a> <!-- runScenario("To redirect to the trending product page when clicking the product", "Saranya_20APR2025_LamdaTester...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To redirect to the trending product page when clicking the product","Saranya_20APR2025_LamdaTesters_Feature file for HomePage Assertion")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user clicks on alert designs of addOns&quot;, &quot;Saranya_26MAY2025_LambdaTesters_AddOnsDesign&quot;)">
+                  </a> <!-- runScenario("user clicks on alert designs of addOns", "Saranya_26MAY2025_LambdaTesters_AddOnsDesign") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user clicks on alert designs of addOns","Saranya_26MAY2025_LambdaTesters_AddOnsDesign")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To checkout the empty shopping cart as a registered user&quot;, &quot;Saranya_12APR2025_LambdaTesters_Shoppin...)">
+                  </a> <!-- runScenario("To checkout the empty shopping cart as a registered user", "Saranya_12APR2025_LambdaTesters_Shoppin...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To checkout the empty shopping cart as a registered user","Saranya_12APR2025_LambdaTesters_Shopping_Cart_CheckOut_functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -164,42 +590,122 @@
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Register with valid inputs&quot;, &quot;Saranya_09APR2025_LambdaTesters_User_Registration_Functionality&quot;)">
+                  </a> <!-- runScenario("Register with valid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Register with valid inputs","Saranya_09APR2025_LambdaTesters_User_Registration_Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify that all links on the homepage redirect correctly&quot;, &quot;Saranya_20APR2025_LamdaTesters_Feature ...)">
+                  </a> <!-- runScenario("Verify that all links on the homepage redirect correctly", "Saranya_20APR2025_LamdaTesters_Feature ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify that all links on the homepage redirect correctly","Saranya_20APR2025_LamdaTesters_Feature file for HomePage Assertion")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To Add the products to comparision list&quot;, &quot;Saranya_15APR2025_LambdaTesters_Product_compare_function...)">
+                  </a> <!-- runScenario("To Add the products to comparision list", "Saranya_15APR2025_LambdaTesters_Product_compare_function...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To Add the products to comparision list","Saranya_15APR2025_LambdaTesters_Product_compare_functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To Add the products to comparision list&quot;, &quot;Saranya_15APR2025_LambdaTesters_Product_compare_function...)">
+                  </a> <!-- runScenario("To Add the products to comparision list", "Saranya_15APR2025_LambdaTesters_Product_compare_function...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To Add the products to comparision list","Saranya_15APR2025_LambdaTesters_Product_compare_functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To redirected to the product page after clicking Shop Now button in Block 2&quot;, &quot;Saranya_20APR2025_La...)">
+                  </a> <!-- runScenario("To redirected to the product page after clicking Shop Now button in Block 2", "Saranya_20APR2025_La...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To redirected to the product page after clicking Shop Now button in Block 2","Saranya_20APR2025_LamdaTesters_Feature file for HomePage Assertion")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Register with invalid inputs&quot;, &quot;Saranya_09APR2025_LambdaTesters_User_Registration_Functionality&quot;)">
+                  </a> <!-- runScenario("Register with invalid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Register with invalid inputs","Saranya_09APR2025_LambdaTesters_User_Registration_Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Register with invalid inputs&quot;, &quot;Saranya_09APR2025_LambdaTesters_User_Registration_Functionality&quot;)">
+                  </a> <!-- runScenario("Register with invalid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Register with invalid inputs","Saranya_09APR2025_LambdaTesters_User_Registration_Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Register with invalid inputs&quot;, &quot;Saranya_09APR2025_LambdaTesters_User_Registration_Functionality&quot;)">
+                  </a> <!-- runScenario("Register with invalid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Register with invalid inputs","Saranya_09APR2025_LambdaTesters_User_Registration_Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\saran\AppData\Local\Temp\testng-eclipse-1926751348\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\saran\git\SeleniumFinalCucumber\ecommerce-lambdatest-bd\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite parallel=&quot;methods&quot; name=&quot;Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.runner.RunnerTestNg&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
@@ -212,58 +718,134 @@
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(22);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.runner.RunnerTestNg')
-data.setCell(0, 3, 44204);
+data.setCell(0, 3, 67461);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'com.runner.RunnerTestNg')
-data.setCell(1, 3, 25764);
+data.setCell(1, 3, 61006);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'com.runner.RunnerTestNg')
-data.setCell(2, 3, 7838);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(2, 3, 59147);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'com.runner.RunnerTestNg')
+data.setCell(3, 3, 57572);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'com.runner.RunnerTestNg')
+data.setCell(4, 3, 57230);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'com.runner.RunnerTestNg')
+data.setCell(5, 3, 54772);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'com.runner.RunnerTestNg')
+data.setCell(6, 3, 54044);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'com.runner.RunnerTestNg')
+data.setCell(7, 3, 53764);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'com.runner.RunnerTestNg')
+data.setCell(8, 3, 53460);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'com.runner.RunnerTestNg')
+data.setCell(9, 3, 23868);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'com.runner.RunnerTestNg')
+data.setCell(10, 3, 20494);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'com.runner.RunnerTestNg')
+data.setCell(11, 3, 20243);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'com.runner.RunnerTestNg')
+data.setCell(12, 3, 19492);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'com.runner.RunnerTestNg')
+data.setCell(13, 3, 18735);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'com.runner.RunnerTestNg')
+data.setCell(14, 3, 15210);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'com.runner.RunnerTestNg')
+data.setCell(15, 3, 14575);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'com.runner.RunnerTestNg')
+data.setCell(16, 3, 14158);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'runScenario')
+data.setCell(17, 2, 'com.runner.RunnerTestNg')
+data.setCell(17, 3, 13818);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'runScenario')
+data.setCell(18, 2, 'com.runner.RunnerTestNg')
+data.setCell(18, 3, 13274);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'runScenario')
+data.setCell(19, 2, 'com.runner.RunnerTestNg')
+data.setCell(19, 3, 12360);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'runScenario')
+data.setCell(20, 2, 'com.runner.RunnerTestNg')
+data.setCell(20, 3, 10916);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'runScenario')
+data.setCell(21, 2, 'com.runner.RunnerTestNg')
+data.setCell(21, 3, 7491);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 12 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -271,24 +853,116 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.runner.RunnerTestNg</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@73b8ab2c)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@3527942a)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <span class="method-name">runScenario("user clicks on alert designs of addOns", "Saranya_26MAY2025_LambdaTesters_AddOnsDesign")</span>
+                <span class="method-start">1166 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("To assert the Functioning of Webelements in home page", "Saranya_20APR2025_LamdaTesters_Feature fil...)</span>
+                <span class="method-start">19913 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("To redirected to the product page after clicking Shop Now button in Block 2", "Saranya_20APR2025_La...)</span>
+                <span class="method-start">27406 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("To redirect to the product page after clicking Head phones poster", "Saranya_20APR2025_LamdaTesters...)</span>
+                <span class="method-start">40680 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("To redirect to the trending product page when clicking the product", "Saranya_20APR2025_LamdaTester...)</span>
+                <span class="method-start">108141 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify that all links on the homepage redirect correctly", "Saranya_20APR2025_LamdaTesters_Feature ...)</span>
+                <span class="method-start">119057 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("To checkout view the order history after ordering", "Saranya_16APR2025_LambdaTesters_My_orders_feat...)</span>
+                <span class="method-start">172823 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("To reorder the product in the order  history", "Saranya_16APR2025_LambdaTesters_My_orders_feature")</span>
+                <span class="method-start">230399 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("to view the order history after ordering as a guest user", "Saranya_16APR2025_LambdaTesters_My_orde...)</span>
+                <span class="method-start">283862 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("To checkout the shopping cart as a guest user", "Saranya_12APR2025_LambdaTesters_Shopping_Cart_Chec...)</span>
+                <span class="method-start">341094 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("To checkout the empty shopping cart as a registered user", "Saranya_12APR2025_LambdaTesters_Shoppin...)</span>
+                <span class="method-start">400243 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("To checkout the  cart as a registered user", "Saranya_12APR2025_LambdaTesters_Shopping_Cart_CheckOu...)</span>
+                <span class="method-start">420489 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("To checkout the  cart with existing email", "Saranya_12APR2025_LambdaTesters_Shopping_Cart_CheckOut...)</span>
+                <span class="method-start">475261 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">runScenario("To perform compare without adding products to list", "Saranya_15APR2025_LambdaTesters_Product_compa...)</span>
-                <span class="method-start">1472 ms</span>
+                <span class="method-start">536269 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("To Add the products to comparision list", "Saranya_15APR2025_LambdaTesters_Product_compare_function...)</span>
-                <span class="method-start">27248 ms</span>
+                <span class="method-start">560138 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("To Add the products to comparision list", "Saranya_15APR2025_LambdaTesters_Product_compare_function...)</span>
-                <span class="method-start">71454 ms</span>
+                <span class="method-start">614184 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Register with valid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality")</span>
+                <span class="method-start">628761 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Register with invalid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality")</span>
+                <span class="method-start">643972 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Register with invalid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality")</span>
+                <span class="method-start">657792 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Register with invalid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality")</span>
+                <span class="method-start">677286 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Register with invalid inputs", "Saranya_09APR2025_LambdaTesters_User_Registration_Functionality")</span>
+                <span class="method-start">697782 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Register with +valid inputs  with out checking privacy policy", "Saranya_09APR2025_LambdaTesters_Us...)</span>
+                <span class="method-start">711942 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">79296 ms</span>
+                <span class="method-start">724306 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
