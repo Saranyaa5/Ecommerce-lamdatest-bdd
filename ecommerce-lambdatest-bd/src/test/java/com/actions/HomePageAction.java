@@ -81,7 +81,7 @@ public class HomePageAction {
     }
 
     public void clickHeadphonesBanner() {
-        waitAndClick(homePageLocator.headphonesBanner, 5, 1000);
+        waitAndClick(homePageLocator.headphonesBanner, 5, 3000);
     }
 
     public void clickNextButton() {
