@@ -29223,3 +29223,114 @@ Session ID: 0b632e760104e59694513e2fc82239b7
 2025-07-31 15:19:01 [TestNG-test-Test-1] ERROR: Scenario failed: Click on a iPod Nano product and verify the URL
 2025-07-31 15:19:02 [TestNG-test-Test-1] INFO : Scenario started: Count all links and verify they are not broken
 2025-07-31 15:21:57 [TestNG-test-Test-1] INFO : Scenario passed: Count all links and verify they are not broken
+2025-07-31 17:29:05 [TestNG-test-Test-1] INFO : Scenario started: user clicks on alert designs of addOns
+2025-07-31 17:29:16 [TestNG-test-Test-1] INFO : Scenario passed: user clicks on alert designs of addOns
+2025-07-31 17:29:18 [TestNG-test-Test-1] INFO : Scenario started: To assert the Functioning of Webelements in home page
+2025-07-31 17:29:24 [TestNG-test-Test-1] INFO : asserting the home page block 1 element is successfull
+2025-07-31 17:29:24 [TestNG-test-Test-1] INFO : Scenario passed: To assert the Functioning of Webelements in home page
+2025-07-31 17:29:25 [TestNG-test-Test-1] INFO : Scenario started: To redirected to the product page after clicking Shop Now button in Block 2
+2025-07-31 17:29:38 [TestNG-test-Test-1] INFO : Successfully verified MPOW product page
+2025-07-31 17:29:38 [TestNG-test-Test-1] INFO : Scenario passed: To redirected to the product page after clicking Shop Now button in Block 2
+2025-07-31 17:29:39 [TestNG-test-Test-1] INFO : Scenario started: To redirect to the product page after clicking Head phones poster
+2025-07-31 17:30:45 [TestNG-test-Test-1] ERROR: Scenario failed: To redirect to the product page after clicking Head phones poster
+2025-07-31 17:30:47 [TestNG-test-Test-1] INFO : Scenario started: To redirect to the trending product page when clicking the product
+2025-07-31 17:31:59 [TestNG-test-Test-1] ERROR: Scenario failed: To redirect to the trending product page when clicking the product
+2025-07-31 17:32:01 [TestNG-test-Test-1] INFO : Scenario started: Verify that all links on the homepage redirect correctly
+2025-07-31 17:32:55 [TestNG-test-Test-1] INFO : no of links in the homepage is not working working in homepage: 1
+2025-07-31 17:32:55 [TestNG-test-Test-1] INFO : Scenario passed: Verify that all links on the homepage redirect correctly
+2025-07-31 17:32:57 [TestNG-test-Test-1] INFO : Scenario started: To checkout view the order history after ordering
+2025-07-31 17:33:50 [TestNG-test-Test-1] ERROR: Scenario failed: To checkout view the order history after ordering
+2025-07-31 17:33:51 [TestNG-test-Test-1] INFO : Scenario started: To reorder the product in the order  history
+2025-07-31 17:34:50 [TestNG-test-Test-1] ERROR: Scenario failed: To reorder the product in the order  history
+2025-07-31 17:34:51 [TestNG-test-Test-1] INFO : Scenario started: to view the order history after ordering as a guest user
+2025-07-31 17:35:41 [TestNG-test-Test-1] ERROR: Scenario failed: to view the order history after ordering as a guest user
+2025-07-31 17:35:43 [TestNG-test-Test-1] INFO : Scenario started: To checkout the shopping cart as a guest user
+2025-07-31 17:36:40 [TestNG-test-Test-1] ERROR: Scenario failed: To checkout the shopping cart as a guest user
+2025-07-31 17:36:41 [TestNG-test-Test-1] INFO : Scenario started: To checkout the empty shopping cart as a registered user
+2025-07-31 17:37:01 [TestNG-test-Test-1] INFO : Verified: Cart is empty with correct message.
+2025-07-31 17:37:01 [TestNG-test-Test-1] INFO : Scenario passed: To checkout the empty shopping cart as a registered user
+2025-07-31 17:37:02 [TestNG-test-Test-1] INFO : Scenario started: To checkout the  cart as a registered user
+2025-07-31 17:38:06 [TestNG-test-Test-1] ERROR: Scenario failed: To checkout the  cart as a registered user
+2025-07-31 17:38:08 [TestNG-test-Test-1] INFO : Scenario started: To checkout the  cart with existing email
+2025-07-31 17:39:02 [TestNG-test-Test-1] ERROR: Scenario failed: To checkout the  cart with existing email
+2025-07-31 17:39:04 [TestNG-test-Test-1] INFO : Scenario started: To perform compare without adding products to list
+2025-07-31 17:39:30 [TestNG-test-Test-1] INFO : Scenario passed: To perform compare without adding products to list
+2025-07-31 17:39:31 [TestNG-test-Test-1] INFO : Scenario started: To Add the products to comparision list
+2025-07-31 17:40:25 [TestNG-test-Test-1] INFO : Scenario passed: To Add the products to comparision list
+2025-07-31 17:40:26 [TestNG-test-Test-1] INFO : Scenario started: To Add the products to comparision list
+2025-07-31 17:40:37 [TestNG-test-Test-1] INFO : Scenario passed: To Add the products to comparision list
+2025-07-31 17:40:38 [TestNG-test-Test-1] INFO : Scenario started: Register with valid inputs
+2025-07-31 17:40:53 [TestNG-test-Test-1] INFO : Assertion Passed: Expected message 'Your Account Has Been Created!' is displayed successfully.
+2025-07-31 17:40:53 [TestNG-test-Test-1] INFO : Scenario passed: Register with valid inputs
+2025-07-31 17:40:55 [TestNG-test-Test-1] INFO : Scenario started: Register with invalid inputs
+2025-07-31 17:41:08 [TestNG-test-Test-1] INFO : Assertion Passed for 'empty first name': Expected and actual message matched: 'First Name must be between 1 and 32 characters!'
+2025-07-31 17:41:08 [TestNG-test-Test-1] INFO : Scenario passed: Register with invalid inputs
+2025-07-31 17:41:09 [TestNG-test-Test-1] INFO : Scenario started: Register with invalid inputs
+2025-07-31 17:41:23 [TestNG-test-Test-1] INFO : Assertion Passed for 'existing email': Expected and actual message matched: 'Warning: E-Mail Address is already registered!'
+2025-07-31 17:41:23 [TestNG-test-Test-1] INFO : Scenario passed: Register with invalid inputs
+2025-07-31 17:41:24 [TestNG-test-Test-1] INFO : Scenario started: Register with invalid inputs
+2025-07-31 17:41:38 [TestNG-test-Test-1] INFO : Assertion Passed for 'empty password': Expected and actual message matched: 'Password must be between 4 and 20 characters!'
+2025-07-31 17:41:38 [TestNG-test-Test-1] INFO : Scenario passed: Register with invalid inputs
+2025-07-31 17:41:39 [TestNG-test-Test-1] INFO : Scenario started: Register with invalid inputs
+2025-07-31 17:42:38 [TestNG-test-Test-1] ERROR: Assertion Failed for 'password mismatch': Expected 'Password confirmation does not match password!', but got ''
+2025-07-31 17:42:38 [TestNG-test-Test-1] ERROR: Scenario failed: Register with invalid inputs
+2025-07-31 17:42:40 [TestNG-test-Test-1] INFO : Scenario started: Register with +valid inputs  with out checking privacy policy
+2025-07-31 17:42:50 [TestNG-test-Test-1] INFO : User didn't accept the privacy policy
+2025-07-31 17:42:52 [TestNG-test-Test-1] INFO : Assertion Passed for 'Not checking privacy policy': Expected and actual message matched: 'Warning: You must agree to the Privacy Policy!'
+2025-07-31 17:42:52 [TestNG-test-Test-1] INFO : Scenario passed: Register with +valid inputs  with out checking privacy policy
+2025-08-01 15:15:02 [TestNG-test-Test-1] INFO : Scenario started: user clicks on alert designs of addOns
+2025-08-01 15:15:13 [TestNG-test-Test-1] INFO : Scenario passed: user clicks on alert designs of addOns
+2025-08-01 15:15:14 [TestNG-test-Test-1] INFO : Scenario started: To assert the Functioning of Webelements in home page
+2025-08-01 15:15:20 [TestNG-test-Test-1] INFO : asserting the home page block 1 element is successfull
+2025-08-01 15:15:20 [TestNG-test-Test-1] INFO : Scenario passed: To assert the Functioning of Webelements in home page
+2025-08-01 15:15:21 [TestNG-test-Test-1] INFO : Scenario started: To redirected to the product page after clicking Shop Now button in Block 2
+2025-08-01 15:15:32 [TestNG-test-Test-1] INFO : Successfully verified MPOW product page
+2025-08-01 15:15:32 [TestNG-test-Test-1] INFO : Scenario passed: To redirected to the product page after clicking Shop Now button in Block 2
+2025-08-01 15:15:33 [TestNG-test-Test-1] INFO : Scenario started: To redirect to the product page after clicking Head phones poster
+2025-08-01 15:16:41 [TestNG-test-Test-1] ERROR: Scenario failed: To redirect to the product page after clicking Head phones poster
+2025-08-01 15:16:42 [TestNG-test-Test-1] INFO : Scenario started: To redirect to the trending product page when clicking the product
+2025-08-01 15:16:55 [TestNG-test-Test-1] INFO : Successfully is successfull
+2025-08-01 15:16:55 [TestNG-test-Test-1] INFO : Scenario passed: To redirect to the trending product page when clicking the product
+2025-08-01 15:16:56 [TestNG-test-Test-1] INFO : Scenario started: Verify that all links on the homepage redirect correctly
+2025-08-01 15:17:43 [TestNG-test-Test-1] INFO : no of links in the homepage is not working working in homepage: 1
+2025-08-01 15:17:43 [TestNG-test-Test-1] INFO : Scenario passed: Verify that all links on the homepage redirect correctly
+2025-08-01 15:17:44 [TestNG-test-Test-1] INFO : Scenario started: To checkout view the order history after ordering
+2025-08-01 15:18:36 [TestNG-test-Test-1] ERROR: Scenario failed: To checkout view the order history after ordering
+2025-08-01 15:18:37 [TestNG-test-Test-1] INFO : Scenario started: To reorder the product in the order  history
+2025-08-01 15:19:31 [TestNG-test-Test-1] ERROR: Scenario failed: To reorder the product in the order  history
+2025-08-01 15:19:32 [TestNG-test-Test-1] INFO : Scenario started: to view the order history after ordering as a guest user
+2025-08-01 15:20:24 [TestNG-test-Test-1] ERROR: Scenario failed: to view the order history after ordering as a guest user
+2025-08-01 15:20:24 [TestNG-test-Test-1] INFO : Scenario started: To checkout the shopping cart as a guest user
+2025-08-01 15:21:17 [TestNG-test-Test-1] ERROR: Scenario failed: To checkout the shopping cart as a guest user
+2025-08-01 15:21:18 [TestNG-test-Test-1] INFO : Scenario started: To checkout the empty shopping cart as a registered user
+2025-08-01 15:21:37 [TestNG-test-Test-1] INFO : Verified: Cart is empty with correct message.
+2025-08-01 15:21:37 [TestNG-test-Test-1] INFO : Scenario passed: To checkout the empty shopping cart as a registered user
+2025-08-01 15:21:38 [TestNG-test-Test-1] INFO : Scenario started: To checkout the  cart as a registered user
+2025-08-01 15:22:30 [TestNG-test-Test-1] ERROR: Scenario failed: To checkout the  cart as a registered user
+2025-08-01 15:22:31 [TestNG-test-Test-1] INFO : Scenario started: To checkout the  cart with existing email
+2025-08-01 15:23:23 [TestNG-test-Test-1] ERROR: Scenario failed: To checkout the  cart with existing email
+2025-08-01 15:23:24 [TestNG-test-Test-1] INFO : Scenario started: To perform compare without adding products to list
+2025-08-01 15:23:46 [TestNG-test-Test-1] INFO : Scenario passed: To perform compare without adding products to list
+2025-08-01 15:23:47 [TestNG-test-Test-1] INFO : Scenario started: To Add the products to comparision list
+2025-08-01 15:24:30 [TestNG-test-Test-1] INFO : Scenario passed: To Add the products to comparision list
+2025-08-01 15:24:31 [TestNG-test-Test-1] INFO : Scenario started: To Add the products to comparision list
+2025-08-01 15:24:38 [TestNG-test-Test-1] INFO : Scenario passed: To Add the products to comparision list
+2025-08-01 15:24:39 [TestNG-test-Test-1] INFO : Scenario started: Register with valid inputs
+2025-08-01 15:24:51 [TestNG-test-Test-1] INFO : Assertion Passed: Expected message 'Your Account Has Been Created!' is displayed successfully.
+2025-08-01 15:24:51 [TestNG-test-Test-1] INFO : Scenario passed: Register with valid inputs
+2025-08-01 15:24:52 [TestNG-test-Test-1] INFO : Scenario started: Register with invalid inputs
+2025-08-01 15:25:02 [TestNG-test-Test-1] INFO : Assertion Passed for 'empty first name': Expected and actual message matched: 'First Name must be between 1 and 32 characters!'
+2025-08-01 15:25:02 [TestNG-test-Test-1] INFO : Scenario passed: Register with invalid inputs
+2025-08-01 15:25:03 [TestNG-test-Test-1] INFO : Scenario started: Register with invalid inputs
+2025-08-01 15:25:14 [TestNG-test-Test-1] INFO : Assertion Passed for 'existing email': Expected and actual message matched: 'Warning: E-Mail Address is already registered!'
+2025-08-01 15:25:14 [TestNG-test-Test-1] INFO : Scenario passed: Register with invalid inputs
+2025-08-01 15:25:15 [TestNG-test-Test-1] INFO : Scenario started: Register with invalid inputs
+2025-08-01 15:25:25 [TestNG-test-Test-1] INFO : Assertion Passed for 'empty password': Expected and actual message matched: 'Password must be between 4 and 20 characters!'
+2025-08-01 15:25:25 [TestNG-test-Test-1] INFO : Scenario passed: Register with invalid inputs
+2025-08-01 15:25:26 [TestNG-test-Test-1] INFO : Scenario started: Register with invalid inputs
+2025-08-01 15:25:36 [TestNG-test-Test-1] INFO : Assertion Passed for 'password mismatch': Expected and actual message matched: 'Password confirmation does not match password!'
+2025-08-01 15:25:36 [TestNG-test-Test-1] INFO : Scenario passed: Register with invalid inputs
+2025-08-01 15:25:37 [TestNG-test-Test-1] INFO : Scenario started: Register with +valid inputs  with out checking privacy policy
+2025-08-01 15:25:48 [TestNG-test-Test-1] INFO : User didn't accept the privacy policy
+2025-08-01 15:25:49 [TestNG-test-Test-1] INFO : Assertion Passed for 'Not checking privacy policy': Expected and actual message matched: 'Warning: You must agree to the Privacy Policy!'
+2025-08-01 15:25:49 [TestNG-test-Test-1] INFO : Scenario passed: Register with +valid inputs  with out checking privacy policy
